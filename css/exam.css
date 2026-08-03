@@ -74,8 +74,9 @@
 }
 
 .palette-panel.collapsed,
-.calculator-panel.collapsed {
-    display: none;
+.calculator-panel.collapsed,
+.side-panel.collapsed {
+    display: none !important;
     opacity: 0;
     transform: scale(0.95);
     pointer-events: none;

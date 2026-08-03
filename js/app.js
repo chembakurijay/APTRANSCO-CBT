@@ -83,21 +83,22 @@ const bindPanelActions = () => {
     const calculatorPanel = qs('#calculatorPanel');
     const questionCard = qs('.question-card');
 
-    qs('#togglePalette')?.addEventListener('click', () => {
-        if (!palettePanel) return;
-        const expanded = palettePanel.classList.toggle('collapsed');
-        qs('#togglePalette')?.setAttribute('aria-expanded', String(!expanded));
-    });
+    const togglePanel = (panel, button) => {
+        if (!panel || !button) return;
+        const isHidden = panel.classList.toggle('collapsed');
+        panel.hidden = isHidden;
+        panel.style.display = isHidden ? 'none' : '';
+        button.setAttribute('aria-expanded', String(!isHidden));
+    };
 
-    qs('#toggleCalculator')?.addEventListener('click', () => {
-        if (!calculatorPanel) return;
-        const expanded = calculatorPanel.classList.toggle('collapsed');
-        qs('#toggleCalculator')?.setAttribute('aria-expanded', String(!expanded));
-    });
-
+    const paletteToggle = qs('#togglePalette');
+    const calculatorToggle = qs('#toggleCalculator');
     const fullscreenButton = qs('#fullscreenButton');
 
-    qs('#fullscreenButton')?.addEventListener('click', async () => {
+    paletteToggle?.addEventListener('click', () => togglePanel(palettePanel, paletteToggle));
+    calculatorToggle?.addEventListener('click', () => togglePanel(calculatorPanel, calculatorToggle));
+
+    fullscreenButton?.addEventListener('click', async () => {
         const examPage = qs('.exam-page');
         if (!examPage) return;
 
@@ -110,20 +111,30 @@ const bindPanelActions = () => {
             return;
         }
 
-        if (document.exitFullscreen) {
-            await document.exitFullscreen();
+        try {
+            if (document.exitFullscreen) {
+                await document.exitFullscreen();
+            }
+        } catch (err) {
+            console.error('Exit fullscreen failed', err);
         }
     });
 
     document.addEventListener('fullscreenchange', () => {
         if (!fullscreenButton) return;
-        if (document.fullscreenElement) {
-            fullscreenButton.textContent = 'Exit Fullscreen';
-        } else {
-            fullscreenButton.textContent = 'Fullscreen';
-        }
+        fullscreenButton.textContent = document.fullscreenElement ? 'Exit Fullscreen' : 'Fullscreen';
     });
 
+    if (questionCard) {
+        questionCard.addEventListener('click', () => {
+            if (palettePanel && !palettePanel.classList.contains('collapsed')) {
+                palettePanel.classList.add('collapsed');
+                palettePanel.hidden = true;
+                palettePanel.style.display = 'none';
+                paletteToggle?.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 };
 
 const initializeApp = () => {
