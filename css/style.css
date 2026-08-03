@@ -31,10 +31,8 @@ button, a {
     font: inherit;
 }
 
-.page-shell {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 24px;
+.page-shell.exam-shell {
+    max-width: min(1600px, 100%);
 }
 
 .page-header {
@@ -221,10 +219,10 @@ button, a {
     margin-bottom: 18px;
 }
 
-.calculator-panel {
-    margin-top: 24px;
+.exam-body > .calculator-panel {
+    margin-top: 0;
     padding-top: 24px;
-    border-top: 1px solid #e2e8f0;
+    border-top: none;
 }
 
 .calculator-panel h3 {
@@ -372,6 +370,156 @@ button, a {
 .score-card p {
     margin: 0 0 8px;
     color: #475569;
+}
+
+/* Post-exam detailed review */
+.review-section {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.review-section h3 {
+    margin: 0 0 8px;
+    font-size: 1.35rem;
+}
+
+.review-section > .review-hint {
+    margin: 0 0 16px;
+    color: #64748b;
+}
+
+.review-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.review-filter {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.review-filter.active {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.review-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.review-palette-btn {
+    min-height: 48px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.review-palette-btn.correct {
+    background: #16a34a;
+}
+
+.review-palette-btn.wrong {
+    background: #dc2626;
+}
+
+.review-palette-btn.unattempted {
+    background: #94a3b8;
+}
+
+.review-palette-btn.active {
+    outline: 3px solid #0f172a;
+    outline-offset: 2px;
+}
+
+.review-detail {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 22px;
+}
+
+.review-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.review-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.review-badge.correct {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.review-badge.wrong {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.review-badge.unattempted {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.review-option {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: start;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review-option.correct-option {
+    border-color: #16a34a;
+    background: #f0fdf4;
+}
+
+.review-option.wrong-option {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+.review-solution {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+.review-solution h4 {
+    margin: 0 0 8px;
+}
+
+.review-solution p {
+    margin: 0 0 8px;
+    color: #0f172a;
 }
 
 @media (max-width: 768px) {

@@ -84,13 +84,13 @@
                     <div id="countdown" class="timer-display">03:00:00</div>
                 </div>
                 <div class="exam-controls">
-                    <button class="button button-secondary" id="togglePalette" type="button" aria-expanded="true">Toggle Palette</button>
-                    <button class="button button-secondary" id="toggleCalculator" type="button" aria-expanded="true">Toggle Calculator</button>
+                    <button class="button button-secondary" id="togglePalette" type="button" aria-expanded="true">Hide Palette</button>
+                    <button class="button button-secondary" id="toggleCalculator" type="button" aria-expanded="false">Show Calculator</button>
                     <button class="button button-secondary" id="fullscreenButton" type="button">Fullscreen</button>
                 </div>
             </header>
 
-            <div class="exam-body">
+            <div class="exam-body no-calculator" id="examBody">
                 <aside class="side-panel palette-panel" id="palettePanel">
                     <div class="palette-header">
                         <h3>Question Palette</h3>
@@ -116,7 +116,7 @@
                     </div>
                 </article>
 
-                <aside class="side-panel calculator-panel" id="calculatorPanel">
+                <aside class="side-panel calculator-panel collapsed" id="calculatorPanel" hidden>
                     <h3>Engineering Calculator</h3>
                     <div id="calculator"></div>
                 </aside>
@@ -155,6 +155,21 @@
                     <p id="percentageScore">0%</p>
                     <p id="timeTaken">Time Taken: 0m 0s</p>
                 </div>
+
+                <section class="review-section" id="reviewSection" aria-label="Detailed answer review">
+                    <h3>Detailed Answer Analysis</h3>
+                    <p class="review-hint">Green = correct, Red = wrong, Grey = not attempted. Click a number for full solution.</p>
+                    <div class="review-filters" id="reviewFilters">
+                        <button type="button" class="review-filter active" data-filter="all">All</button>
+                        <button type="button" class="review-filter" data-filter="correct">Correct</button>
+                        <button type="button" class="review-filter" data-filter="wrong">Wrong</button>
+                        <button type="button" class="review-filter" data-filter="unattempted">Not Attempted</button>
+                    </div>
+                    <div class="review-palette" id="reviewPalette"></div>
+                    <div class="review-detail" id="reviewDetail">
+                        <p>Select a question number above to view the detailed solution.</p>
+                    </div>
+                </section>
 
                 <div class="actions-row">
                     <button class="button button-secondary" id="returnHomeButton" type="button">Return Home</button>

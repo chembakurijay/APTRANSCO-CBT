@@ -79,24 +79,47 @@ const bindBackButtons = () => {
 };
 
 const bindPanelActions = () => {
+    const examBody = qs('#examBody');
     const palettePanel = qs('#palettePanel');
     const calculatorPanel = qs('#calculatorPanel');
-    const questionCard = qs('.question-card');
-
-    const togglePanel = (panel, button) => {
-        if (!panel || !button) return;
-        const isHidden = panel.classList.toggle('collapsed');
-        panel.hidden = isHidden;
-        panel.style.display = isHidden ? 'none' : '';
-        button.setAttribute('aria-expanded', String(!isHidden));
-    };
-
     const paletteToggle = qs('#togglePalette');
     const calculatorToggle = qs('#toggleCalculator');
     const fullscreenButton = qs('#fullscreenButton');
 
-    paletteToggle?.addEventListener('click', () => togglePanel(palettePanel, paletteToggle));
-    calculatorToggle?.addEventListener('click', () => togglePanel(calculatorPanel, calculatorToggle));
+    const syncExamLayout = () => {
+        if (!examBody) return;
+        const paletteHidden = !palettePanel || palettePanel.classList.contains('collapsed');
+        const calcHidden = !calculatorPanel || calculatorPanel.classList.contains('collapsed');
+        examBody.classList.toggle('no-palette', paletteHidden);
+        examBody.classList.toggle('no-calculator', calcHidden);
+    };
+
+    const setPanelVisible = (panel, button, visible, showLabel, hideLabel) => {
+        if (!panel || !button) return;
+        panel.classList.toggle('collapsed', !visible);
+        panel.hidden = !visible;
+        panel.style.display = visible ? '' : 'none';
+        button.setAttribute('aria-expanded', String(visible));
+        button.textContent = visible ? hideLabel : showLabel;
+        syncExamLayout();
+    };
+
+    const togglePanel = (panel, button, showLabel, hideLabel) => {
+        if (!panel || !button) return;
+        const willShow = panel.classList.contains('collapsed');
+        setPanelVisible(panel, button, willShow, showLabel, hideLabel);
+    };
+
+    // Default: palette visible, calculator hidden — question area gets most width
+    setPanelVisible(palettePanel, paletteToggle, true, 'Show Palette', 'Hide Palette');
+    setPanelVisible(calculatorPanel, calculatorToggle, false, 'Show Calculator', 'Hide Calculator');
+
+    paletteToggle?.addEventListener('click', () => {
+        togglePanel(palettePanel, paletteToggle, 'Show Palette', 'Hide Palette');
+    });
+    calculatorToggle?.addEventListener('click', () => {
+        togglePanel(calculatorPanel, calculatorToggle, 'Show Calculator', 'Hide Calculator');
+    });
 
     fullscreenButton?.addEventListener('click', async () => {
         const examPage = qs('.exam-page');
@@ -124,17 +147,6 @@ const bindPanelActions = () => {
         if (!fullscreenButton) return;
         fullscreenButton.textContent = document.fullscreenElement ? 'Exit Fullscreen' : 'Fullscreen';
     });
-
-    if (questionCard) {
-        questionCard.addEventListener('click', () => {
-            if (palettePanel && !palettePanel.classList.contains('collapsed')) {
-                palettePanel.classList.add('collapsed');
-                palettePanel.hidden = true;
-                palettePanel.style.display = 'none';
-                paletteToggle?.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
 };
 
 const initializeApp = () => {

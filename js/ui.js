@@ -14,6 +14,10 @@ export const switchPage = (pageId) => {
         }
     });
     appState.currentPage = pageId;
+    const shell = qs('.page-shell');
+    if (shell) {
+        shell.classList.toggle('exam-shell', pageId === 'examPage');
+    }
 };
 
 export const populateHomePage = (mockList) => {
@@ -139,10 +143,125 @@ export const populateResultPage = () => {
     qs('#finalScore').textContent = summary.score;
     qs('#percentageScore').textContent = summary.percentage;
     qs('#timeTaken').textContent = `Time Taken: ${summary.timeTaken}`;
+    renderAnswerReview('all');
+};
+
+const optionLetter = (index) => String.fromCharCode(65 + index);
+
+const getReviewStatus = (index) => {
+    const question = appState.questions[index];
+    const selected = appState.answers[index];
+    if (selected === undefined) return 'unattempted';
+    return selected === question.answer ? 'correct' : 'wrong';
+};
+
+const renderReviewDetail = (index) => {
+    const detail = qs('#reviewDetail');
+    if (!detail) return;
+    const question = appState.questions[index];
+    if (!question) {
+        detail.innerHTML = '<p>Select a question number above to view the detailed solution.</p>';
+        return;
+    }
+
+    const selected = appState.answers[index];
+    const status = getReviewStatus(index);
+    const statusLabel = status === 'correct' ? 'Correct' : status === 'wrong' ? 'Wrong' : 'Not Attempted';
+    const yourAnswer = selected === undefined
+        ? 'Not attempted'
+        : `${optionLetter(selected)}. ${question.options[selected]}`;
+    const correctAnswer = `${optionLetter(question.answer)}. ${question.options[question.answer]}`;
+
+    const optionsHtml = question.options.map((option, optionIndex) => {
+        const classes = ['review-option'];
+        if (optionIndex === question.answer) classes.push('correct-option');
+        if (selected !== undefined && optionIndex === selected && selected !== question.answer) {
+            classes.push('wrong-option');
+        }
+        const tags = [];
+        if (optionIndex === question.answer) tags.push('<strong>Correct</strong>');
+        if (selected !== undefined && optionIndex === selected) tags.push('<em>Your answer</em>');
+        return `
+            <div class="${classes.join(' ')}">
+                <span>${optionLetter(optionIndex)}.</span>
+                <div>
+                    <div>${option}</div>
+                    ${tags.length ? `<div>${tags.join(' · ')}</div>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    const imageHtml = question.image
+        ? `<div class="question-media"><img src="${question.image}" alt="Question diagram" loading="lazy" /></div>`
+        : '';
+
+    detail.innerHTML = `
+        <div class="review-detail-meta">
+            <span class="review-badge ${status}">Q${index + 1} · ${statusLabel}</span>
+            <span class="review-badge">${question.subject || 'General'}${question.topic ? ` · ${question.topic}` : ''}</span>
+            <span class="review-badge">${question.difficulty || ''}</span>
+            <span class="review-badge">${question.questionType || ''}</span>
+        </div>
+        <h4>${question.question}</h4>
+        ${imageHtml}
+        ${optionsHtml}
+        <div class="review-solution">
+            <h4>Detailed Solution</h4>
+            <p><strong>Your answer:</strong> ${yourAnswer}</p>
+            <p><strong>Correct answer:</strong> ${correctAnswer}</p>
+            ${question.formula ? `<p><strong>Formula:</strong> ${question.formula}</p>` : ''}
+            <p><strong>Explanation:</strong> ${question.explanation || 'No explanation recorded for this question.'}</p>
+        </div>
+    `;
+
+    qs('#reviewPalette')?.querySelectorAll('.review-palette-btn').forEach((btn) => {
+        btn.classList.toggle('active', Number(btn.dataset.index) === index);
+    });
+};
+
+export const renderAnswerReview = (filter = 'all') => {
+    const palette = qs('#reviewPalette');
+    if (!palette) return;
+    clearElement(palette);
+
+    appState.questions.forEach((_, index) => {
+        const status = getReviewStatus(index);
+        if (filter !== 'all' && status !== filter) return;
+
+        const button = createElement('button', {
+            className: `review-palette-btn ${status}`,
+            textContent: String(index + 1).padStart(2, '0'),
+            attributes: {
+                type: 'button',
+                'data-index': String(index),
+                'aria-label': `Question ${index + 1}, ${status}`,
+            },
+        });
+        button.addEventListener('click', () => renderReviewDetail(index));
+        palette.appendChild(button);
+    });
+
+    const firstVisible = palette.querySelector('.review-palette-btn');
+    if (firstVisible) {
+        renderReviewDetail(Number(firstVisible.dataset.index));
+    } else {
+        const detail = qs('#reviewDetail');
+        if (detail) detail.innerHTML = '<p>No questions in this filter.</p>';
+    }
 };
 
 export const bindResultActions = () => {
     qs('#returnHomeButton')?.addEventListener('click', () => {
         window.location.reload();
+    });
+
+    qs('#reviewFilters')?.addEventListener('click', (event) => {
+        const button = event.target.closest('.review-filter');
+        if (!button) return;
+        qs('#reviewFilters')?.querySelectorAll('.review-filter').forEach((el) => {
+            el.classList.toggle('active', el === button);
+        });
+        renderAnswerReview(button.dataset.filter || 'all');
     });
 };
