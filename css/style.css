@@ -653,6 +653,108 @@ button, a {
     color: #0f172a;
 }
 
+.attempt-history {
+    margin-top: 28px;
+}
+
+.attempt-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.attempt-history-header h2 {
+    margin: 0 0 6px;
+}
+
+.attempt-history-hint,
+.attempt-history-empty {
+    margin: 0;
+    color: #64748b;
+}
+
+.attempt-history-list {
+    display: grid;
+    gap: 12px;
+}
+
+.attempt-row {
+    display: grid;
+    gap: 10px;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #f8fafc;
+}
+
+.attempt-row-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.attempt-meta {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.attempt-row-stats {
+    display: grid;
+    gap: 4px;
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.attempt-key-panel {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.attempt-key-toolbar {
+    margin-bottom: 12px;
+}
+
+.attempt-key-table-wrap {
+    overflow-x: auto;
+    max-height: 420px;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.attempt-key-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.attempt-key-table th,
+.attempt-key-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.attempt-key-table th {
+    position: sticky;
+    top: 0;
+    background: #f1f5f9;
+}
+
+.attempt-key-correct td:last-child { color: #15803d; font-weight: 700; }
+.attempt-key-wrong td:last-child { color: #b91c1c; font-weight: 700; }
+.attempt-key-unattempted td:last-child { color: #64748b; }
+
+.attempt-result-meta {
+    margin-top: 8px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
 @media (max-width: 768px) {
     .page-shell {
         padding: 18px;
@@ -666,6 +768,10 @@ button, a {
     }
 
     .actions-row {
+        flex-direction: column;
+    }
+
+    .attempt-history-header {
         flex-direction: column;
     }
 }

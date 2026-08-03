@@ -90,6 +90,7 @@
     display: flex;
     flex-direction: column;
     max-height: calc(100vh - 140px);
+    min-height: 0;
     overflow: hidden;
 }
 
@@ -101,18 +102,27 @@
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     padding-right: 4px;
+    scrollbar-gutter: stable;
 }
 
 .exam-navigation-row {
     flex: 0 0 auto;
-    margin-top: 16px;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
 }
 
 .exam-submit-row {
     flex: 0 0 auto;
     display: flex;
     justify-content: flex-end;
-    margin-top: 12px;
+    margin-top: 10px;
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
 }
 
 .exam-submit-row .button-danger {
@@ -131,15 +141,15 @@
     max-width: 260px;
 }
 
-/* Floating calculator is outside the exam flex row */
+/* Floating calculator is outside the exam flex row — wide horizontal keypad */
 .calculator-panel.calculator-float {
     flex: none !important;
-    width: 320px;
-    height: 480px;
-    max-width: min(92vw, 560px);
-    max-height: min(90vh, 720px);
-    min-width: 260px;
-    min-height: 300px;
+    width: 640px;
+    height: auto;
+    max-width: min(96vw, 720px);
+    max-height: min(92vh, 520px);
+    min-width: 420px;
+    min-height: 280px;
 }
 
 /* Hidden panels leave the flex row so question expands fully */
@@ -186,20 +196,39 @@
     overflow: visible;
 }
 
-/* Fullscreen: each column scrolls independently (drag/scroll to see all) */
+/* Fullscreen: question column fills height; only stem/options scroll; nav+submit stay visible */
 .exam-page:fullscreen .question-card,
 .exam-page:-webkit-full-screen .question-card {
+    height: 100%;
     max-height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
+    padding: 16px 20px 12px;
 }
 
 .exam-page:fullscreen .question-card-scroll,
 .exam-page:-webkit-full-screen .question-card-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     scrollbar-gutter: stable;
+}
+
+.exam-page:fullscreen .exam-navigation-row,
+.exam-page:-webkit-full-screen .exam-navigation-row,
+.exam-page:fullscreen .exam-submit-row,
+.exam-page:-webkit-full-screen .exam-submit-row {
+    flex: 0 0 auto;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    background: #ffffff;
 }
 
 /* Fullscreen floating calculator already handled above; keep palette scroll */
@@ -350,7 +379,8 @@
 .exam-page:fullscreen .calculator-panel.calculator-float,
 .exam-page:-webkit-full-screen .calculator-panel.calculator-float {
     position: absolute;
-    max-height: min(90%, 720px);
+    max-height: min(90%, 520px);
+    width: min(640px, 92%);
 }
 
 .calculator-titlebar {
@@ -404,9 +434,8 @@ body.calculator-dragging .calculator-titlebar {
 .calculator-float-body {
     flex: 1 1 auto;
     min-height: 0;
-    overflow: auto;
-    padding: 12px;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
+    padding: 10px 12px 14px;
 }
 
 .calculator-resize-handle {
@@ -423,20 +452,27 @@ body.calculator-dragging .calculator-titlebar {
 }
 
 .calculator-panel.calculator-float .calculator {
-    height: 100%;
-    min-height: 100%;
+    height: auto;
+    min-height: 0;
     box-sizing: border-box;
+    gap: 10px;
+    padding: 12px;
+}
+
+.calculator-panel.calculator-float .calculator-screen {
+    min-height: 56px;
+    padding: 10px 12px;
 }
 
 .calculator-panel.calculator-float .calculator-buttons {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 6px;
 }
 
 .calculator-panel.calculator-float .calculator-button {
-    min-height: 36px;
-    padding: 6px 4px;
-    font-size: 0.78rem;
+    min-height: 40px;
+    padding: 8px 4px;
+    font-size: 0.82rem;
     border-radius: 10px;
 }
 
@@ -684,7 +720,9 @@ body.calculator-dragging iframe {
 
     .calculator-panel.calculator-float {
         position: fixed;
-        max-width: min(94vw, 560px);
+        width: min(96vw, 640px);
+        max-width: min(96vw, 720px);
+        min-width: min(96vw, 420px);
     }
 }
 

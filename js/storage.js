@@ -11,7 +11,9 @@ export const appState = {
     selectedFlt: 'civil01',
     selectedTest: null,
     examStarted: false,
+    examStartedAt: null,
     submitted: false,
+    lastAttemptId: null,
 };
 
 export const resetState = () => {
@@ -22,6 +24,8 @@ export const resetState = () => {
     appState.remainingTime = EXAM_DURATION;
     appState.timerId = null;
     appState.examStarted = false;
+    appState.examStartedAt = null;
     appState.submitted = false;
     appState.selectedTest = null;
+    appState.lastAttemptId = null;
 };

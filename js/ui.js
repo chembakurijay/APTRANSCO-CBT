@@ -3,6 +3,7 @@ import { qs, clearElement, createElement } from './utils.js';
 import { renderDiagram } from './diagram.js';
 import { renderPalette, updatePalette } from './palette.js';
 import { getCurrentQuestion, saveCurrentAnswer, buildResultSummary } from './result.js';
+import { getAttemptHistory, getAttemptById, clearAttemptHistory } from './attemptHistory.js';
 
 export const switchPage = (pageId) => {
     const pageIds = ['homePage', 'instructionPage', 'examPage', 'resultPage'];
@@ -45,6 +46,97 @@ export const populateHomePage = (mockList) => {
             window.dispatchEvent(new CustomEvent('startInstructions'));
         });
         container.appendChild(card);
+    });
+    renderAttemptHistory();
+};
+
+export const renderAttemptHistory = () => {
+    const listEl = qs('#attemptHistoryList');
+    const emptyEl = qs('#attemptHistoryEmpty');
+    if (!listEl) return;
+
+    const history = getAttemptHistory();
+    clearElement(listEl);
+
+    if (emptyEl) {
+        emptyEl.hidden = history.length > 0;
+    }
+
+    history.forEach((attempt) => {
+        const row = createElement('article', { className: 'attempt-row' });
+        row.innerHTML = `
+            <div class="attempt-row-main">
+                <strong>${attempt.title || attempt.fltId}</strong>
+                <span class="attempt-meta">${attempt.category || ''}</span>
+            </div>
+            <div class="attempt-row-stats">
+                <span>Score <strong>${attempt.score}</strong> (${attempt.percentage})</span>
+                <span>Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · NA ${attempt.notAnsweredCount}</span>
+                <span>Completed ${attempt.completedAtLocal || attempt.completedAt}</span>
+                <span>Started ${attempt.startedAtLocal || attempt.startedAt}</span>
+                <span>Time ${attempt.timeTaken}</span>
+            </div>
+            <div class="attempt-row-actions">
+                <button type="button" class="button button-secondary attempt-view-key" data-attempt-id="${attempt.id}">View Answer Key</button>
+            </div>
+        `;
+        row.querySelector('.attempt-view-key')?.addEventListener('click', () => {
+            showAttemptAnswerKey(attempt.id);
+        });
+        listEl.appendChild(row);
+    });
+};
+
+export const showAttemptAnswerKey = (attemptId) => {
+    const attempt = getAttemptById(attemptId);
+    const panel = qs('#attemptKeyPanel');
+    const body = qs('#attemptKeyBody');
+    if (!panel || !body || !attempt) return;
+
+    const rows = (attempt.answerKey || []).map((item) => `
+        <tr class="attempt-key-${item.status}">
+            <td>Q${item.q}</td>
+            <td>${item.subject || '—'}</td>
+            <td>${item.selectedLetter}</td>
+            <td>${item.correctLetter}</td>
+            <td>${item.status}</td>
+        </tr>
+    `).join('');
+
+    body.innerHTML = `
+        <div class="attempt-key-header">
+            <h3>${attempt.title} — Answer Key</h3>
+            <p>Completed: ${attempt.completedAtLocal || attempt.completedAt} · Score: ${attempt.score} (${attempt.percentage})</p>
+        </div>
+        <div class="attempt-key-table-wrap">
+            <table class="attempt-key-table">
+                <thead>
+                    <tr><th>Q</th><th>Subject</th><th>Your Ans</th><th>Key</th><th>Status</th></tr>
+                </thead>
+                <tbody>${rows}</tbody>
+            </table>
+        </div>
+    `;
+    panel.hidden = false;
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
+export const bindAttemptHistoryActions = () => {
+    qs('#clearAttemptHistory')?.addEventListener('click', () => {
+        if (!window.confirm('Clear all saved attempt history on this browser?')) return;
+        clearAttemptHistory();
+        renderAttemptHistory();
+        const panel = qs('#attemptKeyPanel');
+        if (panel) {
+            panel.hidden = true;
+            const body = qs('#attemptKeyBody');
+            if (body) body.innerHTML = '';
+        }
+    });
+
+    qs('#closeAttemptKey')?.addEventListener('click', () => {
+        const panel = qs('#attemptKeyPanel');
+        if (panel) panel.hidden = true;
     });
 };
 
@@ -179,7 +271,20 @@ export const populateResultPage = () => {
     qs('#finalScore').textContent = summary.score;
     qs('#percentageScore').textContent = summary.percentage;
     qs('#timeTaken').textContent = `Time Taken: ${summary.timeTaken}`;
+
+    const meta = qs('#attemptResultMeta');
+    if (meta) {
+        const attempt = appState.lastAttemptId ? getAttemptById(appState.lastAttemptId) : getAttemptHistory()[0];
+        if (attempt) {
+            meta.textContent = `Attempt saved · Started ${attempt.startedAtLocal} · Completed ${attempt.completedAtLocal}`;
+            meta.hidden = false;
+        } else {
+            meta.hidden = true;
+        }
+    }
+
     renderAnswerReview('all');
+    renderAttemptHistory();
 };
 
 const optionLetter = (index) => String.fromCharCode(65 + index);
