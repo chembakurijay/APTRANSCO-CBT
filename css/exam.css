@@ -42,6 +42,7 @@
 .exam-page {
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .exam-page:fullscreen,
@@ -54,6 +55,7 @@
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    position: relative;
 }
 
 .exam-page:fullscreen .exam-header,
@@ -85,18 +87,59 @@
     min-width: 0;
     width: auto;
     max-width: none;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 140px);
+    overflow: hidden;
+}
+
+.question-card-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-right: 4px;
+}
+
+.exam-navigation-row {
+    flex: 0 0 auto;
+    margin-top: 16px;
+}
+
+.exam-submit-row {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.exam-submit-row .button-danger {
+    min-width: 160px;
 }
 
 .exam-body .palette-panel {
-    flex: 0 0 220px;
-    width: 220px;
-    max-width: 220px;
+    flex: 0 0 240px;
+    width: 240px;
+    max-width: 240px;
 }
 
 .exam-body .calculator-panel {
     flex: 0 0 260px;
     width: 260px;
     max-width: 260px;
+}
+
+/* Floating calculator is outside the exam flex row */
+.calculator-panel.calculator-float {
+    flex: none !important;
+    width: 320px;
+    height: 480px;
+    max-width: min(92vw, 560px);
+    max-height: min(90vh, 720px);
+    min-width: 260px;
+    min-height: 300px;
 }
 
 /* Hidden panels leave the flex row so question expands fully */
@@ -128,7 +171,7 @@
 }
 
 .palette-panel {
-    max-width: 220px;
+    max-width: 240px;
     width: 100%;
 }
 
@@ -145,11 +188,23 @@
 
 /* Fullscreen: each column scrolls independently (drag/scroll to see all) */
 .exam-page:fullscreen .question-card,
-.exam-page:-webkit-full-screen .question-card,
+.exam-page:-webkit-full-screen .question-card {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.exam-page:fullscreen .question-card-scroll,
+.exam-page:-webkit-full-screen .question-card-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+/* Fullscreen floating calculator already handled above; keep palette scroll */
 .exam-page:fullscreen .palette-panel,
-.exam-page:-webkit-full-screen .palette-panel,
-.exam-page:fullscreen .calculator-panel,
-.exam-page:-webkit-full-screen .calculator-panel {
+.exam-page:-webkit-full-screen .palette-panel {
     max-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
@@ -159,16 +214,13 @@
 }
 
 .exam-page:fullscreen .palette-panel,
-.exam-page:-webkit-full-screen .palette-panel,
-.exam-page:fullscreen .calculator-panel,
-.exam-page:-webkit-full-screen .calculator-panel {
+.exam-page:-webkit-full-screen .palette-panel {
     position: relative;
     top: auto;
 }
 
 .palette-panel.collapsed,
-.calculator-panel.collapsed,
-.side-panel.collapsed {
+.side-panel.collapsed:not(.calculator-float) {
     display: none !important;
     opacity: 0;
     pointer-events: none;
@@ -187,9 +239,7 @@
 }
 
 :fullscreen .palette-panel,
-:fullscreen .calculator-panel,
-.exam-page:fullscreen .palette-panel,
-.exam-page:fullscreen .calculator-panel {
+.exam-page:fullscreen .palette-panel {
     border-radius: 20px;
 }
 
@@ -256,8 +306,7 @@
 }
 
 .palette-panel,
-.calculator-panel,
-.side-panel {
+.side-panel:not(.calculator-float) {
     position: sticky;
     top: 24px;
     background: #ffffff;
@@ -271,6 +320,133 @@
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     transition: opacity 0.2s ease;
+}
+
+/* Floating calculator: pan + resize anywhere over the exam */
+.calculator-panel.calculator-float {
+    position: fixed;
+    z-index: 9000;
+    left: auto;
+    top: auto;
+    right: 24px;
+    bottom: 24px;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+    overflow: hidden;
+    touch-action: none;
+}
+
+.calculator-panel.calculator-float:not(.collapsed):not([hidden]) {
+    display: flex;
+}
+
+.exam-page:fullscreen .calculator-panel.calculator-float,
+.exam-page:-webkit-full-screen .calculator-panel.calculator-float {
+    position: absolute;
+    max-height: min(90%, 720px);
+}
+
+.calculator-titlebar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+    border-bottom: 1px solid #e2e8f0;
+    cursor: grab;
+    user-select: none;
+}
+
+.calculator-titlebar:active,
+body.calculator-dragging .calculator-titlebar {
+    cursor: grabbing;
+}
+
+.calculator-titlebar-text h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.calculator-hint {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.72rem;
+    color: #64748b;
+}
+
+.calculator-close {
+    border: none;
+    background: #e2e8f0;
+    color: #0f172a;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.calculator-close:hover {
+    background: #cbd5e1;
+}
+
+.calculator-float-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+    padding: 12px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.calculator-resize-handle {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 18px;
+    height: 18px;
+    cursor: nwse-resize;
+    background:
+        linear-gradient(135deg, transparent 55%, #94a3b8 55%, #94a3b8 65%, transparent 65%),
+        linear-gradient(135deg, transparent 70%, #94a3b8 70%, #94a3b8 80%, transparent 80%);
+    border-radius: 0 0 14px 0;
+}
+
+.calculator-panel.calculator-float .calculator {
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.calculator-panel.calculator-float .calculator-buttons {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.calculator-panel.calculator-float .calculator-button {
+    min-height: 36px;
+    padding: 6px 4px;
+    font-size: 0.78rem;
+    border-radius: 10px;
+}
+
+body.calculator-dragging {
+    user-select: none;
+    cursor: grabbing;
+}
+
+body.calculator-dragging iframe {
+    pointer-events: none;
 }
 
 .calculator {
@@ -351,43 +527,102 @@
     font-size: 0.95rem;
 }
 
+.palette-summary {
+    display: grid;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+}
+
+.palette-summary-item {
+    display: grid;
+    grid-template-columns: 14px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: #334155;
+}
+
+.palette-summary-item strong {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.9rem;
+}
+
+.palette-summary-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.palette-summary-item.is-answered .palette-summary-dot {
+    background: #22c55e;
+}
+
+.palette-summary-item.is-answered strong {
+    color: #15803d;
+}
+
+.palette-summary-item.is-unanswered .palette-summary-dot {
+    background: #ef4444;
+}
+
+.palette-summary-item.is-unanswered strong {
+    color: #dc2626;
+}
+
+.palette-summary-item.is-review .palette-summary-dot {
+    background: #7c3aed;
+}
+
+.palette-summary-item.is-review strong {
+    color: #6d28d9;
+}
+
 .question-palette {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .palette-button {
     width: 100%;
     min-height: 48px;
-    border: 2px solid transparent;
+    border: 2px solid #cbd5e1;
     border-radius: 10px;
-    background: #ef4444;
-    color: #ffffff;
+    background: #ffffff;
+    color: #0f172a;
     font-weight: 700;
     cursor: pointer;
 }
 
-/* TCS iON-style palette colours */
+/* During exam: unanswered = white; red is only in the palette summary track */
 .palette-button.answered {
     background: #22c55e;
+    border-color: transparent;
     color: #ffffff;
 }
 
 .palette-button.unanswered {
-    background: #ef4444;
-    color: #ffffff;
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
 }
 
 .palette-button.review {
     background: #7c3aed;
+    border-color: transparent;
     color: #ffffff;
 }
 
 /* Answered + marked for review */
 .palette-button.answered.review {
     background: #7c3aed;
+    border-color: transparent;
     box-shadow: inset 0 -5px 0 #22c55e;
 }
 
@@ -401,7 +636,8 @@
 }
 
 .palette-button.unanswered.current {
-    background: #ef4444;
+    background: #ffffff;
+    color: #0f172a;
 }
 
 .palette-button.review.current,
@@ -434,18 +670,21 @@
         flex-direction: column;
     }
 
-    .exam-body .palette-panel,
-    .exam-body .calculator-panel {
+    .exam-body .palette-panel {
         flex: 1 1 auto;
         width: 100%;
         max-width: none;
     }
 
-    .palette-panel,
-    .calculator-panel {
+    .palette-panel {
         position: relative;
         top: auto;
         max-width: none;
+    }
+
+    .calculator-panel.calculator-float {
+        position: fixed;
+        max-width: min(94vw, 560px);
     }
 }
 

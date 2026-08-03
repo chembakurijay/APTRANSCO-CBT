@@ -18,7 +18,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 ### High-efficiency generation rules
 1. One concept → one question (no duplicate concepts in the same paper)
 2. Every numerical must be dual-method verified before inclusion
-3. Every diagram question must use a **cropped relevant figure** from approved sources (civil-core / PYQ / question banks) — never paste a full page in the CBT
+3. Every diagram question must use a **neat cropped relevant figure** from approved sources (see **Diagram Source Priority by Stream** below) — never paste a full PDF page in the CBT; crop must be tight, readable, and fit the question
 4. Reject any question that fails the scored Quality Rubric (total < 9/10) or a separate Human Examiner REJECT
 5. Do not inflate Easy count to “fill” the paper
 6. The question setter must NEVER self-assign ACCEPT. ACCEPT / MODIFY / REJECT is allowed only in a separate Human Examiner pass
@@ -176,10 +176,11 @@ No diagram question may be submitted for approval without this declaration.
 - Avoid duplicate concepts, formulas, numerical patterns, diagrams, and answer patterns.
 
 ### Diagram Rules
-- Search uploaded source files first.
-- Use original diagrams when available.
-- Only generate simple engineering schematics when necessary.
+- Search **all** uploaded source files under `sourcefiles-ce/Aptransco_sourcefiles/` (and extracted image folders) before inventing a figure.
+- Prefer original PYQ / core / bank diagrams when available and neat enough for CBT use.
+- Only generate simple engineering schematics when no suitable source figure exists.
 - Use standard engineering symbols and labels.
+- Follow **Diagram Source Priority by Stream** (Electrical vs Civil) — do not use a single flat priority for both.
 
 ### Solution & Review Rules
 - Provide detailed solutions for every question.
@@ -363,7 +364,7 @@ A diagram may be used ONLY if ALL of the following are true:
 - Decorative icons, screenshots
 - Paragraphs converted to images
 - Tables (unless the question requires table interpretation)
-- Cropped or incomplete diagrams
+- Over-cropped or incomplete engineering figures (essential labels/parts missing)
 - Duplicate diagrams
 - Blurry images
 - Images unrelated to the question
@@ -411,26 +412,52 @@ Before attaching any diagram:
 6. Prefer textbook-quality engineering diagrams.
 7. If no suitable diagram exists, generate the question as text-only.
 
-### Diagram Source Priority
-When multiple diagrams exist for the same concept:
-1. Previous APTRANSCO / APPSC AEE papers
-2. SSC JE / RRB JE papers
-3. GATE papers
-4. Standard engineering textbooks
-5. Clean black-and-white line diagrams with standard engineering symbols
+### Diagram Source Priority by Stream (Mandatory)
 
-Never prefer AI-generated or decorative illustrations over the above sources.
+Priorities differ for Electrical vs Civil. Always **search the full source tree** (`sourcefiles-ce/Aptransco_sourcefiles/` + extracted diagram folders). If any relevant neat figure exists anywhere in sources, prefer it over AI drawing.
+
+#### Electrical — Priority Order (strict)
+Same utility family papers drive the real exam style (APTRANSCO / APGENCO / APEPDCL / APCPDCL / APSPDCL). Use in this order:
+
+| Rank | Source | Local / folder cues |
+|------|--------|---------------------|
+| **1 (highest)** | **PYQ diagram pages** from APTRANSCO, APGENCO, APEPDCL, APCPDCL, APSPDCL (and related DISCOM/GENCO/TRANSCO papers) | `APTRANSCO.pdf`, `APGENCO.pdf`, `APCPDCL.pdf`, `APSPDCL.pdf`, `Paper Analysis-EE/`, `images/diagram-questions-EE/`, other EE PYQ extracts |
+| **2** | **Electrical core textbook diagrams** (vector-extracted core-7) | `images/electrical-core-diagrams/` from AnalogDigital, ControlSystems, Circuits, Machines, Measurements, PowerElectronics, PowerSystems |
+| **3** | Other EE question banks / SSC JE / RRB JE / GATE (Easy–Moderate) diagram pages | banks under `Electrical/` and shared PYQ sets |
+| **4 (lowest)** | Clean standard line schematic only if ranks 1–3 have no usable figure | hand-drawn / AI schematic last resort |
+
+**Electrical rule of thumb:** Prefer a **real PYQ figure** (same board family) over a textbook core figure when both fit the concept and crop cleanly.
+
+#### Civil — Priority & Fitness Rule
+Civil does **not** force PYQ-first. Main requirement: the figure must be **neat and fit for question usage** (tight crop, readable labels, options depend on it).
+
+| Rank | Source | Local / folder cues |
+|------|--------|---------------------|
+| **1 (equal preference)** | **Civil core diagrams** + **PYQ diagrams** — use whichever is neater and better matched to the stem | `images/civil-core-diagrams/` (SOM, DDRC, Steel, Fluid, Soil) **and** PYQ / bank extracts (`images/diagram-questions/`, APTRANSCO/APPSC/related civil papers) |
+| **2** | Any other relevant figure found by searching **all** Civil + shared source files | `sourcefiles-ce/Aptransco_sourcefiles/Civil/`, steel/RCC/SOM question banks, SSC JE / RRB JE / GATE Easy–Moderate |
+| **3 (lowest)** | Clean standard line schematic only if no usable source figure | last resort |
+
+**Civil rule of thumb:** Mix PYQ + core freely. Reject a PYQ or core page if the crop is messy, over-cropped, or not needed to answer — quality of fit beats source rank.
+
+#### Shared crop / usage rules (both streams)
+- Never paste a full PDF page into the CBT.
+- Crop only the **figure region** needed for the question; keep all essential labels/dimensions; strip headers, footers, page chrome, adjacent unrelated text.
+- “Complete figure” means the **engineering figure is intact**, not that the whole textbook page is kept.
+- Always scan **all** source files for a relevant diagram before concluding “no diagram available.”
+
+Never prefer AI-generated or decorative illustrations over ranked sources above.
 
 ### Diagram Final Validation Checklist
 Approve a diagram only if ALL of the following pass:
 - ✓ Correct subject
 - ✓ Correct topic
-- ✓ Clear and readable
-- ✓ Complete figure (nothing cropped)
-- ✓ Relevant to the question
+- ✓ Clear and readable (neat CBT crop)
+- ✓ Engineering figure intact (no essential labels/parts cut off)
+- ✓ Relevant to the question and **fit for usage**
 - ✓ Options depend on the diagram
-- ✓ No unnecessary graphics
+- ✓ No unnecessary graphics / full-page paste
 - ✓ No screenshots or decorative images
+- ✓ Source follows stream priority (EE: PYQ → core → others; CE: neat fit from core/PYQ/all sources)
 - ✓ Engineering value is high
 
 If any check fails → reject the image and generate a text-only question.
@@ -461,13 +488,13 @@ Stage 3 — Pattern Validation
 Stage 4 — Diagram Validation (10-Point Check)
   ✓ Diagram exists at the declared file path
   ✓ Diagram is correct engineering type (not screenshot/logo/header)
-  ✓ Diagram is readable and complete — no cropping
+  ✓ Diagram is neat, readable, and CBT-cropped (figure intact — no essential parts cut off)
   ✓ All labels, dimensions, arrows, values visible
   ✓ Question CANNOT be solved without the diagram
   ✓ All options depend on reading the diagram
   ✓ Correct subject match
   ✓ No watermarks, page numbers, or decorative elements
-  ✓ Diagram is from approved source (textbook / past paper)
+  ✓ Source follows stream priority (EE: PYQ → electrical-core → others; CE: neat core/PYQ/any relevant source)
   ✓ Engineering value is high
   Fail any check → remove image, reclassify or rewrite question.
 

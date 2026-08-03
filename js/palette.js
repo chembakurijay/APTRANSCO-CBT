@@ -1,7 +1,7 @@
 import { appState } from './storage.js';
 import { qs, clearElement, createElement } from './utils.js';
 
-/** TCS iON-style status classes for palette buttons. */
+/** Palette button status classes (during exam: unanswered stays white). */
 export const paletteStatus = (index) => {
     const classes = [];
     const answered = appState.answers[index] !== undefined;
@@ -24,19 +24,34 @@ export const paletteStatus = (index) => {
     return classes.join(' ');
 };
 
+export const updatePaletteSummary = () => {
+    const total = appState.questions.length;
+    const answered = appState.answers.filter((value) => value !== undefined).length;
+    const review = appState.reviewFlags.filter(Boolean).length;
+    const unanswered = Math.max(0, total - answered);
+
+    const answeredEl = qs('#paletteAnsweredCount');
+    const unansweredEl = qs('#paletteUnansweredCount');
+    const reviewEl = qs('#paletteReviewCount');
+    if (answeredEl) answeredEl.textContent = String(answered);
+    if (unansweredEl) unansweredEl.textContent = String(unanswered);
+    if (reviewEl) reviewEl.textContent = String(review);
+};
+
 export const renderPalette = () => {
     const palette = qs('#questionPalette');
     if (!palette) return;
     clearElement(palette);
 
     appState.questions.forEach((_, index) => {
+        const status = paletteStatus(index);
         const button = createElement('button', {
-            className: `palette-button ${paletteStatus(index)}`,
+            className: `palette-button ${status}`,
             textContent: String(index + 1).padStart(2, '0'),
             attributes: {
                 type: 'button',
                 'data-question-index': index,
-                title: paletteStatus(index).replace(/current/, '').trim() || 'unanswered',
+                title: status.replace(/\bcurrent\b/, '').trim() || 'unanswered',
             },
         });
 
@@ -47,6 +62,8 @@ export const renderPalette = () => {
 
         palette.appendChild(button);
     });
+
+    updatePaletteSummary();
 };
 
 export const updatePalette = () => {
@@ -55,4 +72,5 @@ export const updatePalette = () => {
         const index = Number(button.getAttribute('data-question-index'));
         button.className = `palette-button ${paletteStatus(index)}`;
     });
+    updatePaletteSummary();
 };
