@@ -43,8 +43,7 @@ export const updatePalette = () => {
     buttons.forEach((button) => {
         const index = Number(button.getAttribute('data-question-index'));
         button.className = `palette-button ${paletteStatus(index)}`;
-        if (index === appState.currentQuestionIndex) {
-            button.focus({ preventScroll: true });
-        }
+        // Do not focus palette buttons here — focusing them while answering
+        // steals focus from options and can hide/scroll the palette panel.
     });
 };
