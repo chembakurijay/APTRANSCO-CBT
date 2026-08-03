@@ -14,8 +14,24 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Prefer **application, design judgement, numerical multi-step, diagram-dependent, and site/practical** questions over definition recall
 - Include **practically able** questions — stems a field / design / substation / site engineer could face in real work, not classroom trivia
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
+- **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
 
+### Difficulty Calibration Bias Correction (STRICT — plan from next paper onward)
+
+Observed failure mode: the agent/setter **states** Easy / Medium / Hard correctly in rules, but **writes** stems that feel **one to two levels below** the claimed label (claimed Medium ≈ real Easy; claimed Hard ≈ real Medium).
+
+**Mandatory correction for every future FLT (and any regenerate):**
+1. When drafting, target difficulty **one notch harder** than the “comfortable” first draft, then label honestly against the Difficulty Engine.
+2. **Label ↔ feel map (after correction):**
+   - **Easy** = what previously felt like “very easy / direct recall” — still capped at 25%; must still be exam-plausible, not LKG
+   - **Medium** = what previously felt like “comfortable Hard” — multi-step or judgement; default technical feel
+   - **Hard** = genuine two-concept / diagram-read + calc / design decision — not merely a longer Easy stem
+3. Before tagging Medium/Hard, ask: *“Would a well-prepared AEE say this is at least as hard as a typical APTRANSCO item with the same label?”* If No → harden stem/options or **downgrade the label** (do not keep a soft stem with an inflated label).
+4. Examiner / Compliance must flag **soft-labelled** items (label Hard but solvable by recall; label Medium but one-step formula plug) as MODIFY.
+5. Paper planning: build the **Medium and Hard slots first** at true exam depth; fill Easy last — never start from Easy and “upgrade labels.”
+
+**Fail condition:** a paper whose overall feel is “coaching worksheet one level below APTRANSCO” cannot be APPROVED even if Easy/Medium/Hard **counts** match 25/50/25.
 ### High-efficiency generation rules
 1. One concept → one question (no duplicate concepts in the same paper)
 2. Every numerical must be dual-method verified before inclusion
@@ -406,6 +422,11 @@ Before accepting any question, ask:
 If No → reject or rewrite.  
 Definition-only, nursery-level arithmetic, or decorative diagrams fail this gate automatically.
 
+Also apply **Difficulty Calibration Bias Correction**: if the item is labelled Medium/Hard but feels one–two levels easier than a real paper’s same label → harden or relabel before keep.
+
+### Golden Rule 6 – Diagram Shortage Is a Scan Duty
+If diagram quotas, PYQ/core share, or figure quality look short: **full re-scan all sources** (see Diagram Matching Procedure step 9). Do not lower difficulty or skip diagram slots because “not enough figures were found” on the first pass.
+
 ---
 
 ## Detailed Explanation Standard (Mandatory — every question)
@@ -580,6 +601,12 @@ Before attaching any diagram:
 6. Prefer textbook / PYQ–quality engineering diagrams with **reality feel**.
 7. Write the stem so difficulty is **Medium or Hard** whenever the figure supports it (Easy diagram only as rare exception).
 8. If no suitable diagram exists after a full priority search, generate the question as **text-only** (or Practical/Application without fake figure) — do **not** invent a weak AI diagram just to hit the Diagram count.
+9. **Diagram gap → mandatory full re-scan (STRICT):** If subject quota is short, crops feel weak, PYQ share &lt; 50% (EE), core was skipped (CE), or the setter “feels” diagram content is thin — **do not proceed with AI/schematic fillers**. Immediately re-scan **all** of:
+   - `sourcefiles-ce/Aptransco_sourcefiles/` (every PDF for that stream)
+   - `images/diagram-questions-EE/` or `images/diagram-questions/`
+   - `images/electrical-core-diagrams/` or `images/civil-core-diagrams/`
+   - Paper Analysis / PYQ theme folders  
+   Extract or re-extract diagram pages if needed, then **re-plan** which stems become Diagram / Graph Qs from the newly found figures. Gaps are a **search failure**, not a content shortage, until this full scan is documented.
 
 ### Diagram Source Priority by Stream (Mandatory)
 
@@ -685,12 +712,15 @@ Stage 1 — Subject Validation
   Is the concept within the official APTRANSCO syllabus for this subject?
   Does it belong to the correct sequence slot?
 
-Stage 2 — Difficulty Validation (Difficulty Engine)
+Stage 2 — Difficulty Validation (Difficulty Engine + Bias Correction)
   Hard   → must satisfy ≥ 2 of: diagram, multi-step numerical, IS code application,
              engineering judgement, two-concept intersection, application design
-  Medium → satisfies 1 of the above
-  Easy   → direct single-step application or well-known formula
+  Medium → satisfies 1 of the above **at true AEE depth** (not one-step plug-in)
+  Easy   → direct single-step application or well-known formula (still exam-plausible)
   Self-declaration ("Hard") without satisfying criteria → downgrade automatically.
+  Soft-labelling check: if claimed Medium/Hard but solvable by recall / single formula
+  without judgement → MODIFY (harden stem) or downgrade label (Bias Correction).
+  Plan Medium/Hard first at corrected depth; never fill Easy then inflate labels.
 
 Stage 3 — Pattern Validation
   Confirm the stated pattern (Numerical/Diagram/Conceptual/etc.) is genuine.
@@ -1476,6 +1506,8 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | APTRANSCO similarity (overall) | **≥ 90%** |
 | Diagram-dependent questions | **12–15** meeting Subject-wise Diagram Quota; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2 |
 | Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
+| Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
+| Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
