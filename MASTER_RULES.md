@@ -601,7 +601,7 @@ Before attaching any diagram:
 6. Prefer textbook / PYQ–quality engineering diagrams with **reality feel**.
 7. Write the stem so difficulty is **Medium or Hard** whenever the figure supports it (Easy diagram only as rare exception).
 8. If no suitable diagram exists after a full priority search, generate the question as **text-only** (or Practical/Application without fake figure) — do **not** invent a weak AI diagram just to hit the Diagram count.
-9. **Diagram gap → mandatory full re-scan (STRICT):** If subject quota is short, crops feel weak, PYQ share &lt; 50% (EE), core was skipped (CE), or the setter “feels” diagram content is thin — **do not proceed with AI/schematic fillers**. Immediately re-scan **all** of:
+9. **Diagram gap → mandatory full re-scan (STRICT):** If subject quota is short, crops feel weak, PYQ share < 50% (EE), core was skipped (CE), or the setter “feels” diagram content is thin — **do not proceed with AI/schematic fillers**. Immediately re-scan **all** of:
    - `sourcefiles-ce/Aptransco_sourcefiles/` (every PDF for that stream)
    - `images/diagram-questions-EE/` or `images/diagram-questions/`
    - `images/electrical-core-diagrams/` or `images/civil-core-diagrams/`
