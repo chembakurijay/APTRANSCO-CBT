@@ -86,14 +86,6 @@ const bindPanelActions = () => {
     const calculatorToggle = qs('#toggleCalculator');
     const fullscreenButton = qs('#fullscreenButton');
 
-    const syncExamLayout = () => {
-        if (!examBody) return;
-        const paletteHidden = !palettePanel || palettePanel.classList.contains('collapsed');
-        const calcHidden = !calculatorPanel || calculatorPanel.classList.contains('collapsed');
-        examBody.classList.toggle('no-palette', paletteHidden);
-        examBody.classList.toggle('no-calculator', calcHidden);
-    };
-
     const setPanelVisible = (panel, button, visible, showLabel, hideLabel) => {
         if (!panel || !button) return;
         panel.classList.toggle('collapsed', !visible);
@@ -101,16 +93,20 @@ const bindPanelActions = () => {
         panel.style.display = visible ? '' : 'none';
         button.setAttribute('aria-expanded', String(visible));
         button.textContent = visible ? hideLabel : showLabel;
-        syncExamLayout();
+        // Flex layout auto-expands question; force reflow for stubborn browsers
+        if (examBody) {
+            examBody.style.display = 'flex';
+            void examBody.offsetWidth;
+        }
     };
 
     const togglePanel = (panel, button, showLabel, hideLabel) => {
         if (!panel || !button) return;
-        const willShow = panel.classList.contains('collapsed');
+        const willShow = panel.classList.contains('collapsed') || panel.hidden;
         setPanelVisible(panel, button, willShow, showLabel, hideLabel);
     };
 
-    // Default: palette visible, calculator hidden — question area gets most width
+    // Default: palette on, calculator off
     setPanelVisible(palettePanel, paletteToggle, true, 'Show Palette', 'Hide Palette');
     setPanelVisible(calculatorPanel, calculatorToggle, false, 'Show Calculator', 'Hide Calculator');
 
@@ -122,7 +118,7 @@ const bindPanelActions = () => {
     });
 
     fullscreenButton?.addEventListener('click', async () => {
-        const examPage = qs('.exam-page');
+        const examPage = qs('#examPage') || qs('.exam-page');
         if (!examPage) return;
 
         if (!document.fullscreenElement) {
@@ -146,6 +142,10 @@ const bindPanelActions = () => {
     document.addEventListener('fullscreenchange', () => {
         if (!fullscreenButton) return;
         fullscreenButton.textContent = document.fullscreenElement ? 'Exit Fullscreen' : 'Fullscreen';
+        if (examBody) {
+            examBody.style.display = 'flex';
+            void examBody.offsetWidth;
+        }
     });
 };
 

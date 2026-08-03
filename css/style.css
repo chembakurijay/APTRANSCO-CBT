@@ -32,7 +32,10 @@ button, a {
 }
 
 .page-shell.exam-shell {
-    max-width: min(1600px, 100%);
+    max-width: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .page-header {
