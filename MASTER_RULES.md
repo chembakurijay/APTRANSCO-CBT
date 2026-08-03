@@ -30,6 +30,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
+- **Full Final Approval Workflow** complete (Compliance → Setter Rubric → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–M) and **Acceptance Threshold** met before APPROVED
 
 ---
 
@@ -221,10 +222,15 @@ Before finalizing any paper, verify:
 - Chapter distribution
 - Micro-topic coverage
 - Difficulty balance
-- Duplicate validation
+- Duplicate validation (**Audit I**)
 - Diagram validation
 - Source validation
 - Detailed solutions generated
+- Question Origin Audit (**G**)
+- APTRANSCO Similarity Audit (**H**) ≥ 90%
+- PYQ Traceability Audit (**J**)
+- Acceptance Threshold gates all Pass before **APPROVED**
+- Concept Coverage, Bloom’s Taxonomy, and Formula Reuse audits (**K–M**) Pass
 
 Final papers must be certified as fully compliant.
 
@@ -643,6 +649,8 @@ Examiner note: <one-line reason>
 Paper may be shown to the user for approval only after the Human Examiner pass is complete.  
 User approval is still required before converting to code.
 
+**Mandatory before any paper is marked APPROVED:** complete the **Final Approval Workflow** end-to-end (Compliance Dashboard through Audits G–M). A paper that passes Human Examiner but fails any later audit must not be APPROVED.
+
 ---
 
 ## Subject Coverage Heatmap (Must Be Checked Before Generation)
@@ -697,4 +705,279 @@ Every question must carry one of these five labels:
 | **AI Generated** | Novel question — concept not seen in collected PYQ database |
 | **New Concept** | Topic never tested in any available source paper |
 
-No paper may contain more than 2 Direct PYQs. Modified + Inspired combined must not exceed 40% of technical questions.
+No paper may contain more than **2 Direct PYQs**.  
+Origin mix must also satisfy the **Final Approval Workflow** (Audits G–M) and the **Acceptance Threshold** below (brand-new ≥ 60%, Modified PYQ band per threshold, exact mock duplicates = 0).
+
+---
+
+## Final Approval Workflow (Mandatory — locked)
+
+Only after **all** of the following pass may a paper be marked **APPROVED** (and only then may code / CBT packaging begin).
+
+| # | Gate | What it proves |
+|---|---|---|
+| 1 | **Compliance Dashboard** | Weightage, sequence, difficulty, pattern minima, Direct-PYQ cap |
+| 2 | **Setter Rubric** | Every Q scored (Concept/Calc/Distractors/Language/Exam sim); no self-ACCEPT |
+| 3 | **Human Examiner Pass** | Independent Accept / Modify / Reject |
+| 4 | **Diagram Dependency Audit** | Diagram Qs unsolvable without figure (dependency PASS) |
+| 5 | **Hard / Application Justification Audit** | Every Hard/Application claim has a valid justification line |
+| 6 | **G. Question Origin Audit** | Where each Q came from; Direct ≤2; brand-new ≥60% |
+| 7 | **H. APTRANSCO Similarity Audit** | Subject-wise match; overall ≥90%; honesty on differences |
+| 8 | **I. Duplicate Audit** | Vs prior FLTs / ST / mini / PYQ use in mocks; exact dups = 0 |
+| 9 | **J. PYQ Traceability Audit** | Every PYQ-derived Q lists source + modification level |
+| 10 | **K. Concept Coverage Audit** | Syllabus micro-topics covered; no accidental holes or triple-stacking |
+| 11 | **L. Bloom’s Taxonomy Audit** | Cognitive mix fits AEE CBT (Apply/Analyze dominant; Remember capped) |
+| 12 | **M. Formula Reuse Audit** | Same formula / numerical pattern not overused inside the paper |
+
+**Fail any gate → not APPROVED.** Fix → re-run failed gates (and Human Examiner if stems changed materially).
+
+---
+
+## Mandatory Pre-Approval Audits (G–M)
+
+Audits **G–J** cover originality, APTRANSCO realism, and reuse across the mock series.  
+Audits **K–M** cover syllabus coverage, cognitive level, and intra-paper formula/pattern reuse.
+
+Together with Compliance, Setter Rubric, Human Examiner, Diagram Dependency, and Hard/Application Justification audits, they form the complete QA gate.
+
+### G. Question Origin Audit (Mandatory)
+
+Shows exactly where every question came from.
+
+| Category | Count | % | Status |
+|---|---:|---:|---|
+| Completely New (AI-created) | XX | XX% | Pass |
+| Inspired from textbook concept | XX | XX% | Pass |
+| Modified PYQ | XX | XX% | Pass |
+| Direct PYQ | XX | XX% | Pass/Reject |
+| Modified previous mock | XX | XX% | Review |
+| Diagram-derived from core PDF / PYQ figure | XX | XX% | Pass |
+
+#### Origin rules
+- Direct PYQs ≤ **2**
+- Modified PYQs preferred ≤ **20%** (approval band: see Acceptance Threshold)
+- Brand-new questions (Completely New + New Concept + fresh AI-original) ≥ **60%**
+- Diagram-derived questions counted and listed (may overlap other origin labels; declare crop source)
+- Every Modified PYQ must list its source paper/year/topic
+
+#### Per-question origin example
+
+| Q | Origin |
+|---|---|
+| Q4 | Modified textbook figure |
+| Q12 | AI-generated numerical |
+| Q22 | Modified APTRANSCO-family PYQ |
+| Q44 | Modified GATE 2022 Bode figure |
+| Q61 | Modified GATE Analog Electronics |
+| Q69 | Completely new application question |
+
+---
+
+### H. APTRANSCO Similarity Audit (Mandatory)
+
+More useful than only stating “looks like APTRANSCO.” Score each technical subject (and Non-core) with a short reason.
+
+#### Subject-wise similarity (template)
+
+| Subject | Match | Reason |
+|---|---:|---|
+| Power Systems / SOM (stream) | XX% | … |
+| Machines / RCC | XX% | … |
+| Circuits / Fluid | XX% | … |
+| Control / Steel | XX% | … |
+| Power Electronics / Foundation | XX% | … |
+| Measurements / Soil | XX% | … |
+| Analog / … | XX% | … |
+| Digital / … | XX% | … |
+| Utilization / … | XX% | … |
+| Non-core | XX% | … |
+
+**Overall Similarity:** ≈ **XX% APTRANSCO** (target ≥ **90%**)
+
+#### Why it matches APTRANSCO (examples — adapt per paper)
+- Short one-step and moderate multi-step calculations
+- Practical / site / substation or field engineering flavour
+- Correct subject-weight emphasis (e.g. Power Systems–heavy for EE)
+- More application than long derivation
+- Limited calculus / research-style proofs
+- Moderate formula depth
+- Mostly textbook-standard numericals at AEE level
+- CBT-style options and distractors
+- No unnecessary theory paragraphs
+
+#### Differences from APTRANSCO (must list honestly)
+- e.g. Slightly more Control / PE / Digital than older papers — flag and justify or rebalance
+
+---
+
+### I. Duplicate Audit (Mandatory)
+
+Essential for a mock series. Compare the draft against:
+
+- FLT-01, FLT-02, FLT-03, … (all prior FLTs in stream)
+- Subject Tests and Mini Tests already published
+- Collected PYQ bank / diagram banks used in prior mocks
+
+#### Duplicate summary
+
+| Duplicate Type | Count | Status |
+|---|---:|---|
+| Exact duplicate | X | Pass if 0 |
+| Same numerical, different values | X | Pass / Review |
+| Same concept, rewritten | X | Pass if ≤10% of paper |
+| Same diagram reused | X | Review |
+| Same options reused | X | Review |
+
+#### Duplicate detail (template)
+
+| Current Q | Previous Paper | Duplicate Level | Action |
+|---|---|---|---|
+| Q22 | Mock-02 Q17 | Same concept | Accept / Rewrite |
+| Q44 | GATE PYQ | Modified | Accept |
+| Q61 | Analog ST-03 | Similar diagram | Review |
+| Q69 | None | Original | Pass |
+
+#### Originality score
+
+| Metric | Score |
+|---|---:|
+| Completely Original | XX% |
+| Modified Existing | XX% |
+| Inspired | XX% |
+| Direct Copy | XX% |
+
+**Final originality bands**
+- **95–100%** → Excellent
+- **90–94%** → Very Good
+- **80–89%** → Needs Review
+- **<80%** → Rework Required
+
+Target for APPROVED: overall originality ≥ **90%**.
+
+---
+
+### J. PYQ Traceability Audit (Mandatory)
+
+Every PYQ-derived question must be traceable.
+
+| Q | Source | Modification Level |
+|---|---|---|
+| Q22 | APTRANSCO-family | Diagram / values / stem changed |
+| Q44 | GATE 2022 | Modified options and context |
+| Q61 | GATE Analog | New numerical values |
+| Q65 | Textbook gate symbols | Newly written matching |
+
+#### Traceability summary
+- Direct PYQs: X
+- Modified PYQs: X
+- Inspired questions: X
+- AI-original / completely new questions: X
+
+---
+
+### K. Concept Coverage Audit (Mandatory)
+
+Ensures the paper covers the official APTRANSCO syllabus micro-topics for the stream **without holes** and **without stacking the same concept** three times.
+
+#### Per-subject coverage table (template)
+
+| Subject | Must-cover micro-topics (from syllabus / heatmap) | Covered in this FLT | Missing | Over-stacked (≥3 Qs same concept) |
+|---|---|---|---|---|
+| … | … | Q… | … | … |
+
+#### Coverage rules
+- Every **must-cover** micro-topic for subjects present in the FLT appears at least once (or is explicitly deferred with user approval for a later FLT)
+- No single engineering concept appears in **> 2** technical questions in the same paper (prefer 1)
+- Diagram questions must map to a named concept (not decorative)
+- Non-core: Quant / GA / Reasoning / English / Computer each hit distinct topic types (no five identical synonym items)
+
+**Pass** only if missing must-cover = 0 (or waived in writing) and over-stack count = 0.
+
+---
+
+### L. Bloom’s Taxonomy Audit (Mandatory)
+
+Checks cognitive level mix for AEE CBT realism (not school recall dominance).
+
+| Bloom level | Typical use in AEE CBT | Target share of technical (guide) |
+|---|---|---|
+| Remember | Definitions, pure recall | **≤ 15%** |
+| Understand | Explain / identify / interpret | 15–25% |
+| Apply | Formula use, procedure, code application | **35–45%** |
+| Analyze | Multi-step, diagram read, compare modes | **25–35%** |
+| Evaluate | Choose best method / site decision | 5–10% |
+| Create | Design-from-scratch (rare in CBT) | ≤ 5% |
+
+#### Bloom rules
+- **Remember ≤ 15%** of technical questions (aligns with “no direct recall dominance”)
+- **Apply + Analyze ≥ 60%** of technical questions
+- Every **Hard** question must be Analyze and/or Evaluate (not Remember)
+- Every **Application** / **Practical** tagged question must be Apply or Evaluate (Stage 8–9 gates)
+
+Report a count table + list any Hard/Application Qs that fail Bloom alignment.
+
+---
+
+### M. Formula Reuse Audit (Mandatory)
+
+Prevents the same formula or numerical template from dominating the paper.
+
+#### Formula / pattern register (template)
+
+| Formula or pattern | Questions using it | Count | Status |
+|---|---|---:|---|
+| e.g. Zb = kV²/MVA | Q2 | 1 | Pass |
+| e.g. Vo = δ Vs (buck) | Q50 | 1 | Pass |
+| e.g. P∝V² | Q68 | 1 | Pass |
+
+#### Formula reuse rules
+- Same **core formula** (identical engineering relation) in **> 2** technical questions → **Fail** (rewrite one)
+- Same **numerical template** (same steps, only numbers changed) in **> 1** pair → **Fail**
+- Acceptable: related but distinct uses (e.g. X1 vs fault current both use reactance, different procedure)
+- Distractors may reuse wrong-formula traps; that does **not** count as stem formula reuse
+
+**Pass** only if no formula exceeds 2 uses and no clone numerical templates remain.
+
+---
+
+### Recommended Acceptance Threshold (Mandatory for APPROVED)
+
+Before any paper is **APPROVED** (and before code / CBT packaging), **all Final Approval Workflow gates** must Pass, including:
+
+| Gate | Requirement |
+|---|---|
+| Original / brand-new questions | **≥ 60%** |
+| Modified PYQs | **20–35%** (prefer closer to 20% when possible) |
+| Direct PYQs | **≤ 2 questions** |
+| Exact duplicates vs earlier mocks | **0** |
+| Repeated concepts vs earlier mocks | **≤ 10%** |
+| APTRANSCO similarity (overall) | **≥ 90%** |
+| Diagram-dependent questions | **12–15** (technical paper; per Diagram rules) |
+| Overall originality (Audit I) | **≥ 90%** |
+| Concept coverage (Audit K) | Missing must-cover = 0; over-stack = 0 |
+| Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech |
+| Formula reuse (Audit M) | No formula in >2 tech Qs; no clone templates |
+
+**Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
+
+---
+
+### Approval sequence (locked)
+
+```
+1  Compliance Dashboard
+2  Setter Rubric (no self-ACCEPT)
+3  Human Examiner Pass
+4  Diagram Dependency Audit
+5  Hard / Application Justification Audit
+6  G Question Origin
+7  H APTRANSCO Similarity
+8  I Duplicate Analysis
+9  J PYQ Traceability
+10 K Concept Coverage
+11 L Bloom’s Taxonomy
+12 M Formula Reuse
+   → Acceptance Threshold all Pass
+   → User APPROVED / MODIFY / REJECT
+   → Code + crops only after APPROVED
+```

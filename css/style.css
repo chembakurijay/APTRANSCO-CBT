@@ -317,6 +317,10 @@ button, a {
     margin-top: 24px;
 }
 
+.question-card-footer .actions-row {
+    margin-top: 0;
+}
+
 .mock-grid {
     display: grid;
     gap: 20px;
