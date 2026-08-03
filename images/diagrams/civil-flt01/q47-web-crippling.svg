@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360">
+  <rect width="800" height="360" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Web under concentrated reaction</text>
+  <rect x="200" y="80" width="400" height="24" fill="#64748b"/>
+  <rect x="380" y="104" width="40" height="160" fill="#94a3b8"/>
+  <rect x="200" y="264" width="400" height="24" fill="#64748b"/>
+  <path d="M360,220 L400,180 L440,220" fill="none" stroke="#b91c1c" stroke-width="3"/>
+  <line x1="400" y1="300" x2="400" y2="340" stroke="#0f172a" stroke-width="4"/>
+  <text x="410" y="330" font-family="Segoe UI, Arial" font-size="16">Reaction</text>
+  <text x="450" y="200" font-family="Segoe UI, Arial" font-size="16" fill="#b91c1c">Web crippling</text>
+</svg>

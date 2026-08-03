@@ -1,0 +1,2288 @@
+{
+  "total": 227,
+  "by_subject": {
+    "DDRC": 33,
+    "FM_HHM": 35,
+    "Foundation_Engineering": 12,
+    "SOM": 73,
+    "Soil_Mechanics": 26,
+    "Steel_Structures": 48
+  },
+  "by_priority": {
+    "P1-state-exams": 7,
+    "P3-question-banks": 176,
+    "P4-notes-material": 44
+  },
+  "records": [
+    {
+      "subject": "Steel_Structures",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "24dec_AEcivil_qa_revised_7_jan_2017.pdf",
+      "page": 3,
+      "file": "steel-structures/P1-state-exams/24dec_AEcivil_qa_revised_7_jan_2017_p0003.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "24dec_AEcivil_qa_revised_7_jan_2017.pdf",
+      "page": 6,
+      "file": "steel-structures/P1-state-exams/24dec_AEcivil_qa_revised_7_jan_2017_p0006.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "24dec_AEcivil_qa_revised_7_jan_2017.pdf",
+      "page": 7,
+      "file": "soil-mechanics/P1-state-exams/24dec_AEcivil_qa_revised_7_jan_2017_p0007.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "24dec_AEcivil_qa_revised_7_jan_2017.pdf",
+      "page": 11,
+      "file": "som/P1-state-exams/24dec_AEcivil_qa_revised_7_jan_2017_p0011.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "APPSC AEE Civil & Mechanical 2018.pdf",
+      "page": 7,
+      "file": "steel-structures/P1-state-exams/APPSC AEE Civil & Mechanical 2018_p0007.jpg",
+      "has_figure_ref": false,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "APPSC AEE Civil & Mechanical 2018.pdf",
+      "page": 16,
+      "file": "som/P1-state-exams/APPSC AEE Civil & Mechanical 2018_p0016.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 1,
+      "label": "P1-state-exams",
+      "source": "APPSC AEE Mains 2019 Civil and Mechanical Engineering(common) - PAPER-II_English.pdf",
+      "page": 3,
+      "file": "som/P1-state-exams/APPSC AEE Mains 2019 Civil and Mechanica_p0003.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 17,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0017.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 18,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0018.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 19,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0019.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 29,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0029.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 30,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0030.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 31,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0031.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 32,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0032.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 41,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0041.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 44,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0044.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 71,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0071.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 75,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0075.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 76,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0076.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 79,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0079.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 80,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0080.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 81,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0081.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 82,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0082.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 101,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0101.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 134,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0134.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 135,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0135.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 157,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0157.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 162,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0162.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 167,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0167.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 169,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0169.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 179,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0179.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 181,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0181.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 185,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0185.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 186,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0186.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 191,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0191.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 332,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0332.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 351,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0351.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 352,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0352.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 353,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0353.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 357,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0357.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 359,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0359.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 360,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0360.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 365,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0365.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 369,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0369.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 395,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0395.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 400,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0400.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 406,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0406.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 414,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0414.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 416,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0416.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 418,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0418.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 419,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0419.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 425,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0425.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 430,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0430.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 431,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0431.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 436,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0436.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 441,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0441.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 442,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0442.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 444,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0444.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 445,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0445.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 449,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0449.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 454,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0454.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 458,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0458.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 462,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0462.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 466,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0466.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 474,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0474.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 477,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0477.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 478,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0478.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 488,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0488.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 496,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0496.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 497,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0497.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 506,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0506.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 510,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0510.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 542,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0542.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 544,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0544.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 545,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0545.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 558,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0558.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 564,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0564.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 568,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0568.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 585,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0585.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 610,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0610.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 611,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0611.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 613,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0613.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 616,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0616.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 628,
+      "file": "foundation-engineering/P3-question-banks/civil-Engineering-MCQs_p0628.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 629,
+      "file": "foundation-engineering/P3-question-banks/civil-Engineering-MCQs_p0629.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 666,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0666.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 667,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0667.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 695,
+      "file": "soil-mechanics/P3-question-banks/civil-Engineering-MCQs_p0695.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 696,
+      "file": "fm-hhm/P3-question-banks/civil-Engineering-MCQs_p0696.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 700,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0700.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 703,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0703.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 707,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0707.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 711,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0711.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 713,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0713.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 715,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0715.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 717,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0717.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 718,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0718.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 719,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0719.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 720,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0720.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 721,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0721.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 722,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0722.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 724,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0724.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 725,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0725.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 736,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0736.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 737,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0737.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 738,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0738.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 740,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0740.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 741,
+      "file": "ddrc/P3-question-banks/civil-Engineering-MCQs_p0741.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 742,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0742.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 744,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0744.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 745,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0745.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 746,
+      "file": "steel-structures/P3-question-banks/civil-Engineering-MCQs_p0746.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 747,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0747.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "civil-Engineering-MCQs.pdf",
+      "page": 763,
+      "file": "som/P3-question-banks/civil-Engineering-MCQs_p0763.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Final EXam Kit-CE.pdf",
+      "page": 3,
+      "file": "ddrc/P4-notes-material/Final EXam Kit-CE_p0003.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Final EXam Kit-CE.pdf",
+      "page": 11,
+      "file": "steel-structures/P4-notes-material/Final EXam Kit-CE_p0011.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Final EXam Kit-CE.pdf",
+      "page": 46,
+      "file": "fm-hhm/P4-notes-material/Final EXam Kit-CE_p0046.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "FM &HHM Notes f.pdf",
+      "page": 14,
+      "file": "fm-hhm/P4-notes-material/FM &HHM Notes f_p0014.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "FM &HHM Notes f.pdf",
+      "page": 54,
+      "file": "fm-hhm/P4-notes-material/FM &HHM Notes f_p0054.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "FM &HHM Notes f.pdf",
+      "page": 62,
+      "file": "som/P4-notes-material/FM &HHM Notes f_p0062.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "FM &HHM Notes f.pdf",
+      "page": 103,
+      "file": "fm-hhm/P4-notes-material/FM &HHM Notes f_p0103.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "FM &HHM Question Bank.pdf",
+      "page": 180,
+      "file": "fm-hhm/P3-question-banks/FM &HHM Question Bank_p0180.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "FM_HHM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "FM &HHM Question Bank.pdf",
+      "page": 182,
+      "file": "fm-hhm/P3-question-banks/FM &HHM Question Bank_p0182.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 13,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0013.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 43,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0043.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 51,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0051.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 57,
+      "file": "som/P3-question-banks/Foundation Engineering Question Bank_p0057.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 78,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0078.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 173,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0173.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 201,
+      "file": "som/P3-question-banks/Foundation Engineering Question Bank_p0201.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 202,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0202.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 230,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0230.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 236,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0236.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 260,
+      "file": "ddrc/P3-question-banks/Foundation Engineering Question Bank_p0260.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 262,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0262.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 264,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0264.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 266,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0266.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 268,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0268.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 270,
+      "file": "ddrc/P3-question-banks/Foundation Engineering Question Bank_p0270.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 272,
+      "file": "foundation-engineering/P3-question-banks/Foundation Engineering Question Bank_p0272.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 274,
+      "file": "som/P3-question-banks/Foundation Engineering Question Bank_p0274.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 276,
+      "file": "ddrc/P3-question-banks/Foundation Engineering Question Bank_p0276.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 278,
+      "file": "som/P3-question-banks/Foundation Engineering Question Bank_p0278.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 280,
+      "file": "som/P3-question-banks/Foundation Engineering Question Bank_p0280.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Foundation Engineering Question Bank.pdf",
+      "page": 321,
+      "file": "soil-mechanics/P3-question-banks/Foundation Engineering Question Bank_p0321.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 2,
+      "file": "som/P4-notes-material/Foundation Notes_p0002.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 12,
+      "file": "foundation-engineering/P4-notes-material/Foundation Notes_p0012.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 14,
+      "file": "som/P4-notes-material/Foundation Notes_p0014.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Foundation_Engineering",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 32,
+      "file": "foundation-engineering/P4-notes-material/Foundation Notes_p0032.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 60,
+      "file": "som/P4-notes-material/Foundation Notes_p0060.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 95,
+      "file": "soil-mechanics/P4-notes-material/Foundation Notes_p0095.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 117,
+      "file": "soil-mechanics/P4-notes-material/Foundation Notes_p0117.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 129,
+      "file": "soil-mechanics/P4-notes-material/Foundation Notes_p0129.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 162,
+      "file": "som/P4-notes-material/Foundation Notes_p0162.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 186,
+      "file": "som/P4-notes-material/Foundation Notes_p0186.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Foundation Notes.pdf",
+      "page": 188,
+      "file": "som/P4-notes-material/Foundation Notes_p0188.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Soil Mechanics notes.pdf",
+      "page": 91,
+      "file": "soil-mechanics/P4-notes-material/Soil Mechanics notes_p0091.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Soil Mechanics notes.pdf",
+      "page": 200,
+      "file": "som/P4-notes-material/Soil Mechanics notes_p0200.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Soil Mechanics notes.pdf",
+      "page": 247,
+      "file": "som/P4-notes-material/Soil Mechanics notes_p0247.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 32,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0032.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 39,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0039.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 52,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0052.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 53,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0053.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 57,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0057.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 69,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0069.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 70,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0070.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Soil_Mechanics",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 99,
+      "file": "soil-mechanics/P3-question-banks/Soil Mechanics Question Bank_p0099.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Soil Mechanics Question Bank.pdf",
+      "page": 141,
+      "file": "som/P3-question-banks/Soil Mechanics Question Bank_p0141.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 17,
+      "file": "som/P4-notes-material/SOM Notes_p0017.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 56,
+      "file": "som/P4-notes-material/SOM Notes_p0056.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 59,
+      "file": "som/P4-notes-material/SOM Notes_p0059.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 65,
+      "file": "som/P4-notes-material/SOM Notes_p0065.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 70,
+      "file": "som/P4-notes-material/SOM Notes_p0070.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 71,
+      "file": "som/P4-notes-material/SOM Notes_p0071.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 74,
+      "file": "som/P4-notes-material/SOM Notes_p0074.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 88,
+      "file": "ddrc/P4-notes-material/SOM Notes_p0088.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "DDRC",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 89,
+      "file": "ddrc/P4-notes-material/SOM Notes_p0089.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "SOM Notes.pdf",
+      "page": 122,
+      "file": "som/P4-notes-material/SOM Notes_p0122.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "SOM Question Bank.pdf",
+      "page": 101,
+      "file": "som/P3-question-banks/SOM Question Bank_p0101.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "SOM Question Bank.pdf",
+      "page": 121,
+      "file": "ddrc/P3-question-banks/SOM Question Bank_p0121.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 20,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0020.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 31,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0031.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 119,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0119.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 122,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0122.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 128,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0128.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 130,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0130.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 134,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0134.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 146,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0146.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 151,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0151.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 169,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0169.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 170,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0170.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 171,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0171.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 172,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0172.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 174,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0174.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 175,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0175.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 176,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0176.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 177,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0177.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 178,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0178.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 190,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0190.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 192,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0192.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 193,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0193.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 194,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0194.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 196,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0196.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 199,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0199.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 209,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0209.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 212,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0212.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 216,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0216.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 221,
+      "file": "ddrc/P3-question-banks/Steel Structures Question Bank_p0221.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 223,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0223.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 227,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0227.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 234,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0234.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 241,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0241.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 244,
+      "file": "steel-structures/P3-question-banks/Steel Structures Question Bank_p0244.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 3,
+      "label": "P3-question-banks",
+      "source": "Steel Structures Question Bank.pdf",
+      "page": 245,
+      "file": "som/P3-question-banks/Steel Structures Question Bank_p0245.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 4,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0004.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 20,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0020.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 26,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0026.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 48,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0048.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 52,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0052.jpg",
+      "has_figure_ref": true,
+      "has_image_block": true
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 73,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0073.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 75,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0075.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "DDRC",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 95,
+      "file": "ddrc/P4-notes-material/Steel Structures_Notes_p0095.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 106,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0106.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 114,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0114.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 119,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0119.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "SOM",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 136,
+      "file": "som/P4-notes-material/Steel Structures_Notes_p0136.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    },
+    {
+      "subject": "Steel_Structures",
+      "priority": 4,
+      "label": "P4-notes-material",
+      "source": "Steel Structures_Notes.pdf",
+      "page": 145,
+      "file": "steel-structures/P4-notes-material/Steel Structures_Notes_p0145.jpg",
+      "has_figure_ref": true,
+      "has_image_block": false
+    }
+  ]
+}

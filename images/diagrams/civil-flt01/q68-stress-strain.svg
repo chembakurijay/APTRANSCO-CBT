@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Dense sand / OC clay vs loose sand</text>
+  <line x1="80" y1="340" x2="720" y2="340" stroke="#334155"/>
+  <line x1="80" y1="340" x2="80" y2="60" stroke="#334155"/>
+  <text x="700" y="365" font-family="Segoe UI, Arial" font-size="16">ε</text>
+  <text x="30" y="80" font-family="Segoe UI, Arial" font-size="16">σ</text>
+  <path d="M80,340 Q200,100 280,90 T500,160 T700,200" fill="none" stroke="#b91c1c" stroke-width="3"/>
+  <path d="M80,340 Q300,220 700,180" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <text x="300" y="80" font-family="Segoe UI, Arial" font-size="15" fill="#b91c1c">Dense/OC — peak then softening</text>
+  <text x="480" y="250" font-family="Segoe UI, Arial" font-size="15" fill="#0369a1">Loose — no sharp peak</text>
+</svg>

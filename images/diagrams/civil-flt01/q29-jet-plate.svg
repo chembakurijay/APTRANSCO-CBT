@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Jet on inclined plate — discharge split</text>
+  <line x1="80" y1="180" x2="320" y2="180" stroke="#0369a1" stroke-width="8"/>
+  <text x="150" y="160" font-family="Segoe UI, Arial" font-size="16">Q0</text>
+  <line x1="360" y1="80" x2="520" y2="280" stroke="#0f172a" stroke-width="8"/>
+  <text x="500" y="120" font-family="Segoe UI, Arial" font-size="16">θ</text>
+  <path d="M480,140 L560,100" stroke="#b91c1c" stroke-width="5"/>
+  <text x="570" y="100" font-family="Segoe UI, Arial" font-size="16" fill="#b91c1c">Q1 = 0.25 Q0</text>
+  <path d="M480,220 L560,280" stroke="#15803d" stroke-width="5"/>
+  <text x="570" y="290" font-family="Segoe UI, Arial" font-size="16" fill="#15803d">Q2 = 0.75 Q0</text>
+</svg>

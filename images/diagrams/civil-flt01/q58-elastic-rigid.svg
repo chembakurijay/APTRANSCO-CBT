@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">X elastic footing vs Y rigid footing</text>
+  <text x="120" y="80" font-family="Segoe UI, Arial" font-size="18">X — elastic</text>
+  <rect x="80" y="100" width="280" height="20" fill="#93c5fd"/>
+  <path d="M80,160 H360" stroke="#0f172a"/>
+  <path d="M80,160 H360 V200 H80 Z" fill="#fde68a"/>
+  <text x="140" y="190" font-family="Segoe UI, Arial" font-size="14">≈ uniform reaction</text>
+  <text x="560" y="80" font-family="Segoe UI, Arial" font-size="18">Y — rigid</text>
+  <rect x="520" y="100" width="280" height="20" fill="#64748b"/>
+  <path d="M520,160 H800" stroke="#0f172a"/>
+  <path d="M520,200 L560,160 L760,160 L800,200 Z" fill="#fecaca"/>
+  <text x="580" y="220" font-family="Segoe UI, Arial" font-size="14">non-uniform reaction</text>
+</svg>

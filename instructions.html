@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions - APTRANSCO CBT</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="page-shell instructions-page">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">APTRANSCO AEE</p>
+                <h1>Instructions</h1>
+            </div>
+        </header>
+
+        <section class="content-card">
+            <h2>Exam Summary</h2>
+            <ul class="instruction-list">
+                <li>Duration: 180 minutes</li>
+                <li>Questions: 100</li>
+                <li>Total Marks: 100</li>
+                <li>Negative Marking: None</li>
+            </ul>
+
+            <h2>Navigation</h2>
+            <ul class="instruction-list">
+                <li>Use <strong>Previous</strong> and <strong>Next</strong> to move between questions.</li>
+                <li><strong>Save & Next</strong> records your answer and advances.</li>
+                <li><strong>Mark for Review</strong> highlights the question for revision.</li>
+                <li><strong>Clear Response</strong> removes selected option.</li>
+                <li>Click any question number in the palette to jump instantly.</li>
+            </ul>
+
+            <h2>Legend</h2>
+            <div class="legend-grid">
+                <div class="legend-item legend-answered"><span></span>Answered</div>
+                <div class="legend-item legend-current"><span></span>Current Question</div>
+                <div class="legend-item legend-review"><span></span>Marked for Review</div>
+                <div class="legend-item legend-unanswered"><span></span>Not Answered</div>
+            </div>
+
+            <form class="declaration-form">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="declaration" />
+                    I have read and understood the instructions.
+                </label>
+                <div class="actions-row">
+                    <a class="button button-secondary" href="index.html">Back to Home</a>
+                    <button class="button button-primary" id="startExamButton" type="button" disabled>Start Exam</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

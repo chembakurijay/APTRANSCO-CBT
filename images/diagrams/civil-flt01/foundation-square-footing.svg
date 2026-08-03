@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">Square Footing Under Axial Column Load</text>
+  <rect x="300" y="120" width="300" height="90" fill="#f1f5f9" stroke="#334155" stroke-width="3" />
+  <rect x="420" y="70" width="60" height="50" fill="#94a3b8" stroke="#334155" stroke-width="3" />
+  <line x1="450" y1="40" x2="450" y2="70" stroke="#dc2626" stroke-width="4" />
+  <polygon points="450,70 444,58 456,58" fill="#dc2626" />
+  <text x="460" y="55" font-family="Arial" font-size="15" fill="#b91c1c">P</text>
+  <line x1="300" y1="225" x2="600" y2="225" stroke="#475569" stroke-width="2" />
+  <text x="445" y="245" font-family="Arial" font-size="16" fill="#0f172a">B</text>
+  <text x="620" y="165" font-family="Arial" font-size="16" fill="#0f172a">q_allow</text>
+</svg>
