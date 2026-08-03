@@ -1,5 +1,6 @@
 // Civil Engineering FLT-01 — APTRANSCO AEE CBT
 // Generated from exports/CIVIL_FLT01_REGENERATED_v2.md
+// Includes structured dataTable / matchingMatrix for CBT HTML tables
 // answer is 0-based index into options
 
 export const questions = [
@@ -178,7 +179,7 @@ export const questions = [
     "id": 10,
     "subject": "Strength of Materials",
     "topic": "Matching — BM",
-    "question": "Match List-I beams (a)–(d) as sketched with List-II maximum BM:\n1. wl²/2   2. wl²/6   3. wl²/8   4. 3wl²/8\n(a) cantilever with UDL on outer half  (b) cantilever triangular load to fixed end  (c) SS full UDL span l  (d) SS UDL on span 2l\nCorrect code:",
+    "question": "Match List-I beams (a)–(d) as sketched with List-II maximum BM. Select the correct code.",
     "image": "images/diagrams/civil-flt01/q10-beam-match.svg",
     "options": [
       "a-4, b-2, c-3, d-1",
@@ -191,7 +192,49 @@ export const questions = [
     "questionType": "Matching+Diagram",
     "formula": "",
     "explanation": "Half-UDL cantilever → 3wl²/8; triangular cantilever → wl²/6; SS UDL → wl²/8; SS span 2l → w(2l)²/8 = wl²/2.",
-    "source": "CIVIL_FLT01_REGENERATED_v2"
+    "source": "CIVIL_FLT01_REGENERATED_v2",
+    "matchingMatrix": {
+      "caption": "Match List-I with List-II",
+      "listITitle": "List-I (Beam)",
+      "listIITitle": "List-II (Max BM)",
+      "listI": [
+        {
+          "code": "a",
+          "text": "Cantilever — UDL on outer half"
+        },
+        {
+          "code": "b",
+          "text": "Cantilever — triangular load to fixed end"
+        },
+        {
+          "code": "c",
+          "text": "SS — full UDL span l"
+        },
+        {
+          "code": "d",
+          "text": "SS — UDL on span 2l"
+        }
+      ],
+      "listII": [
+        {
+          "code": "1",
+          "text": "wl²/2"
+        },
+        {
+          "code": "2",
+          "text": "wl²/6"
+        },
+        {
+          "code": "3",
+          "text": "wl²/8"
+        },
+        {
+          "code": "4",
+          "text": "3wl²/8"
+        }
+      ],
+      "instruction": "Use the sketches with this matrix; choose the correct matching code."
+    }
   },
   {
     "id": 11,
@@ -672,7 +715,7 @@ export const questions = [
     "id": 36,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "Matching matrix",
-    "question": "Match:\n1 Pelton  2 Francis  3 Kaplan  4 Centrifugal pump\nP: low H, high Q   Q: high H, low Q   R: medium H   S: adds energy to liquid\nCorrect matching:",
+    "question": "Match List-I machines with List-II characteristics. Select the correct matching.",
     "image": "",
     "options": [
       "1-Q, 2-R, 3-P, 4-S",
@@ -685,7 +728,49 @@ export const questions = [
     "questionType": "Matching Matrix",
     "formula": "",
     "explanation": "Pelton → high H low Q; Francis → medium H; Kaplan → low H high Q; pump adds energy.",
-    "source": "CIVIL_FLT01_REGENERATED_v2"
+    "source": "CIVIL_FLT01_REGENERATED_v2",
+    "matchingMatrix": {
+      "caption": "Match List-I with List-II",
+      "listITitle": "List-I",
+      "listIITitle": "List-II",
+      "listI": [
+        {
+          "code": "1",
+          "text": "Pelton"
+        },
+        {
+          "code": "2",
+          "text": "Francis"
+        },
+        {
+          "code": "3",
+          "text": "Kaplan"
+        },
+        {
+          "code": "4",
+          "text": "Centrifugal pump"
+        }
+      ],
+      "listII": [
+        {
+          "code": "P",
+          "text": "low H, high Q"
+        },
+        {
+          "code": "Q",
+          "text": "high H, low Q"
+        },
+        {
+          "code": "R",
+          "text": "medium H"
+        },
+        {
+          "code": "S",
+          "text": "adds energy to liquid"
+        }
+      ],
+      "instruction": "Select the correct matching code from the options."
+    }
   },
   {
     "id": 37,
@@ -1090,7 +1175,7 @@ export const questions = [
     "id": 58,
     "subject": "Foundation Engineering",
     "topic": "Contact pressure",
-    "question": "From the figure: X is elastic footing, Y is rigid footing, same uniform top pressure on isotropic elastic soil. Soil reaction distribution is:",
+    "question": "Using the table of footing contact-pressure patterns, which statement is correct?",
     "image": "images/diagrams/civil-flt01/q58-elastic-rigid.svg",
     "options": [
       "Uniform for X, not for Y",
@@ -1103,7 +1188,24 @@ export const questions = [
     "questionType": "Table/Figure",
     "formula": "",
     "explanation": "Flexible (elastic) footing → roughly uniform contact pressure; rigid footing → non-uniform (higher at edges on elastic soil).",
-    "source": "CIVIL_FLT01_REGENERATED_v2"
+    "source": "CIVIL_FLT01_REGENERATED_v2",
+    "dataTable": {
+      "caption": "Contact pressure pattern (elastic soil)",
+      "headers": [
+        "Footing type",
+        "Contact pressure pattern"
+      ],
+      "rows": [
+        [
+          "X — Flexible (elastic)",
+          "Approximately uniform"
+        ],
+        [
+          "Y — Rigid",
+          "Non-uniform (higher at edges)"
+        ]
+      ]
+    }
   },
   {
     "id": 59,

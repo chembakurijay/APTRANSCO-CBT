@@ -1,6 +1,6 @@
 import { appState } from './storage.js';
 import { qs, clearElement, createElement } from './utils.js';
-import { renderDiagram } from './diagram.js';
+import { renderQuestionMedia, structuredMediaHtml } from './questionMedia.js';
 import { renderPalette, updatePalette } from './palette.js';
 import { getCurrentQuestion, saveCurrentAnswer, buildResultSummary } from './result.js';
 import {
@@ -236,10 +236,6 @@ const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteE
         `;
     }).join('');
 
-    const imageHtml = question.image
-        ? `<div class="question-media"><img src="${question.image}" alt="Question diagram" loading="lazy" /></div>`
-        : '';
-
     detailEl.innerHTML = `
         <div class="review-detail-meta">
             <span class="review-badge ${status}">Q${index + 1} · ${statusLabel}</span>
@@ -248,7 +244,7 @@ const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteE
             <span class="review-badge">${question.questionType || ''}</span>
         </div>
         <h4>${question.question || ''}</h4>
-        ${imageHtml}
+        ${structuredMediaHtml(question)}
         ${optionsHtml}
         <div class="review-solution">
             <h4>Detailed Solution</h4>
@@ -459,7 +455,7 @@ export const renderQuestionPage = () => {
     qs('#questionStatus').textContent = `Question ${appState.currentQuestionIndex + 1} of ${appState.questions.length}`;
     qs('#questionSubject').textContent = `${question.subject}${question.topic ? ` • ${question.topic}` : ''}`;
     qs('#questionText').textContent = question.question;
-    renderDiagram(qs('#questionMedia'), question.image);
+    renderQuestionMedia(qs('#questionMedia'), question);
 
     const optionsList = qs('#optionsList');
     clearElement(optionsList);
@@ -633,7 +629,7 @@ const renderReviewDetail = (index) => {
             <span class="review-badge">${question.questionType || ''}</span>
         </div>
         <h4>${question.question}</h4>
-        ${imageHtml}
+        ${structuredMediaHtml(question)}
         ${optionsHtml}
         <div class="review-solution">
             <h4>Detailed Solution</h4>
