@@ -1,9 +1,10 @@
 import { appState, resetState } from './storage.js';
 import { loadQuestionBank } from './questionLoader.js';
 import { bindNavigation } from './navigation.js';
-import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions } from './ui.js';
+import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions, renderAttemptHistory, bindAttemptHistoryActions } from './ui.js';
 import { startTimer, stopTimer } from './timer.js';
 import { initCalculator, showFloatingCalculator, hideFloatingCalculator } from './calculator.js';
+import { saveCurrentAttempt } from './attemptHistory.js';
 import { qs } from './utils.js';
 
 const mockList = [
@@ -49,21 +50,28 @@ const bindApplicationEvents = () => {
         if (document.fullscreenElement && document.exitFullscreen) {
             document.exitFullscreen().catch(() => {});
         }
+        saveCurrentAttempt();
         populateResultPage();
         switchPage('resultPage');
+        renderAttemptHistory();
     });
 
     window.addEventListener('examTimeout', () => {
         if (appState.submitted) return;
         appState.submitted = true;
+        saveCurrentAttempt();
         populateResultPage();
         switchPage('resultPage');
+        renderAttemptHistory();
     });
 };
 
 const beginExam = async () => {
     try {
         await loadQuestionBank(appState.selectedFlt);
+        appState.examStarted = true;
+        appState.examStartedAt = Date.now();
+        appState.submitted = false;
         renderQuestionPage();
         startTimer();
         switchPage('examPage');
@@ -176,10 +184,12 @@ const initializeApp = () => {
     bindInstructionActions();
     bindNavigation();
     bindResultActions();
+    bindAttemptHistoryActions();
     bindApplicationEvents();
     bindBackButtons();
     bindPanelActions();
     initCalculator();
+    renderAttemptHistory();
     switchPage('homePage');
 };
 

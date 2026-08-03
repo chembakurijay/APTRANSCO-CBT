@@ -23,6 +23,24 @@
                 <h2>Choose your full length assessment</h2>
             </div>
             <div id="mockGrid" class="mock-grid" aria-label="Mock tests"></div>
+
+            <section class="attempt-history content-card" id="attemptHistorySection" aria-label="Attempt history">
+                <div class="attempt-history-header">
+                    <div>
+                        <h2>Attempt History</h2>
+                        <p class="attempt-history-hint">Every completed test is saved on this browser with date, time, score, and answer key.</p>
+                    </div>
+                    <button type="button" class="button button-secondary" id="clearAttemptHistory">Clear History</button>
+                </div>
+                <p id="attemptHistoryEmpty" class="attempt-history-empty">No attempts yet. Complete a mock test to see history here.</p>
+                <div id="attemptHistoryList" class="attempt-history-list"></div>
+                <div id="attemptKeyPanel" class="attempt-key-panel" hidden>
+                    <div class="attempt-key-toolbar">
+                        <button type="button" class="button button-secondary" id="closeAttemptKey">Close Answer Key</button>
+                    </div>
+                    <div id="attemptKeyBody"></div>
+                </div>
+            </section>
         </section>
 
         <section id="instructionPage" class="page-section" hidden>
@@ -149,7 +167,7 @@
                 <div class="calculator-titlebar" id="calculatorDragHandle" title="Drag to move">
                     <div class="calculator-titlebar-text">
                         <h3>Engineering Calculator</h3>
-                        <span class="calculator-hint">Drag · Resize corner</span>
+                        <span class="calculator-hint">Drag · 8-column keys · Resize corner</span>
                     </div>
                     <button type="button" class="calculator-close" id="calculatorCloseBtn" aria-label="Hide calculator">×</button>
                 </div>
@@ -191,6 +209,7 @@
                     <h2 id="finalScore">0</h2>
                     <p id="percentageScore">0%</p>
                     <p id="timeTaken">Time Taken: 0m 0s</p>
+                    <p id="attemptResultMeta" class="attempt-result-meta" hidden></p>
                 </div>
 
                 <section class="review-section" id="reviewSection" aria-label="Detailed answer review">
@@ -215,6 +234,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/app.js?v=20260804f"></script>
+    <script type="module" src="js/app.js?v=20260804g"></script>
 </body>
 </html>

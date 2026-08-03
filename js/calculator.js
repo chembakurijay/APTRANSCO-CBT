@@ -1,16 +1,11 @@
 import { qs, createElement } from './utils.js';
 
 const buttons = [
-    'deg', 'rad', 'C', '⌫',
-    'sin', 'cos', 'tan', '√',
-    'asin', 'acos', 'atan', 'log',
-    'sinh', 'cosh', 'tanh', 'ln',
-    'π', 'e', '(', ')',
-    '7', '8', '9', '/',
-    '4', '5', '6', '*',
-    '1', '2', '3', '-',
-    '0', '.', '^', '+',
-    '%', 'Exp', '=',
+    'deg', 'rad', 'C', '⌫', 'sin', 'cos', 'tan', '√',
+    'asin', 'acos', 'atan', 'log', 'sinh', 'cosh', 'tanh', 'ln',
+    'π', 'e', '(', ')', '7', '8', '9', '/',
+    '4', '5', '6', '*', '1', '2', '3', '-',
+    '0', '.', '^', '+', '%', 'Exp', '=',
 ];
 
 let mode = 'deg';
@@ -247,11 +242,13 @@ const getParentMetrics = () => {
 };
 
 const placeCalculatorDefault = (panel) => {
-    const width = panel.offsetWidth || 320;
-    const height = panel.offsetHeight || 480;
+    const width = panel.offsetWidth || 640;
+    const height = panel.offsetHeight || 360;
     const { width: parentW, height: parentH } = getParentMetrics();
     const left = Math.max(12, parentW - width - 24);
-    const top = Math.max(12, parentH - height - 24);
+    const top = Math.max(12, Math.min(parentH - height - 24, 96));
+    panel.style.width = `${Math.min(640, parentW - 24)}px`;
+    panel.style.height = 'auto';
     panel.style.left = `${left}px`;
     panel.style.top = `${top}px`;
     panel.style.right = 'auto';
@@ -327,10 +324,10 @@ const initFloatingCalculator = () => {
         if (resizing) {
             const dx = event.clientX - startX;
             const dy = event.clientY - startY;
-            const minW = 260;
-            const minH = 300;
-            const maxW = Math.min(560, parentW - startLeft);
-            const maxH = Math.min(720, parentH - startTop);
+            const minW = 420;
+            const minH = 280;
+            const maxW = Math.min(720, parentW - startLeft);
+            const maxH = Math.min(520, parentH - startTop);
             panel.style.width = `${clamp(startW + dx, minW, maxW)}px`;
             panel.style.height = `${clamp(startH + dy, minH, maxH)}px`;
         }
