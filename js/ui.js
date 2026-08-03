@@ -94,11 +94,18 @@ export const renderQuestionPage = () => {
         const input = optionItem.querySelector('input');
         if (input) {
             input.checked = appState.answers[appState.currentQuestionIndex] === optionIndex;
-            input.addEventListener('change', () => {
+            input.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+            input.addEventListener('change', (event) => {
+                event.stopPropagation();
                 saveCurrentAnswer();
                 updatePalette();
             });
         }
+        optionItem.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
         optionsList.appendChild(optionItem);
     });
 
