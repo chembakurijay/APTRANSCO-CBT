@@ -8,7 +8,8 @@ export const appState = {
     reviewFlags: [],
     remainingTime: EXAM_DURATION,
     timerId: null,
-    selectedFlt: '01',
+    selectedFlt: 'civil01',
+    selectedTest: null,
     examStarted: false,
     submitted: false,
 };
@@ -22,4 +23,5 @@ export const resetState = () => {
     appState.timerId = null;
     appState.examStarted = false;
     appState.submitted = false;
+    appState.selectedTest = null;
 };

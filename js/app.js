@@ -6,13 +6,24 @@ import { startTimer, stopTimer } from './timer.js';
 import { initCalculator } from './calculator.js';
 import { qs } from './utils.js';
 
-const mockList = Array.from({ length: 10 }, (_, index) => ({
-    id: index + 1,
-    title: `FLT-${String(index + 1).padStart(2, '0')}`,
-    questions: 100,
-    marks: 100,
-    duration: 120,
-}));
+const mockList = [
+    ...Array.from({ length: 20 }, (_, index) => ({
+        id: `civil${String(index + 1).padStart(2, '0')}`,
+        title: `FLT-Civil-${String(index + 1).padStart(2, '0')}`,
+        category: 'Civil Engineering',
+        questions: 100,
+        marks: 100,
+        duration: 180,
+    })),
+    ...Array.from({ length: 20 }, (_, index) => ({
+        id: `electrical${String(index + 1).padStart(2, '0')}`,
+        title: `FLT-Electrical-${String(index + 1).padStart(2, '0')}`,
+        category: 'Electrical Engineering',
+        questions: 100,
+        marks: 100,
+        duration: 180,
+    })),
+];
 
 const bindApplicationEvents = () => {
     window.addEventListener('startInstructions', () => {

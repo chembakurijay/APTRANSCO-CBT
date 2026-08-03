@@ -1,14 +1,15 @@
 import { appState } from './storage.js';
 
-export const loadQuestionBank = async (fltNumber) => {
-    const module = await import(`../data/flt${String(fltNumber).padStart(2, '0')}.js`);
-    if (!Array.isArray(module.questions)) {
+export const loadQuestionBank = async (fltKey) => {
+    const module = await import('../data/questionBanks.js');
+    const questions = module.questionBanks[fltKey];
+    if (!Array.isArray(questions)) {
         throw new Error('Invalid question data.');
     }
-    appState.questions = module.questions;
-    appState.answers = new Array(module.questions.length).fill(undefined);
-    appState.reviewFlags = new Array(module.questions.length).fill(false);
-    return module.questions;
+    appState.questions = questions;
+    appState.answers = new Array(questions.length).fill(undefined);
+    appState.reviewFlags = new Array(questions.length).fill(false);
+    return questions;
 };
 
 export const getQuestionByIndex = (index) => appState.questions[index];

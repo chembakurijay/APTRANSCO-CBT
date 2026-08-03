@@ -29,13 +29,15 @@ export const populateHomePage = (mockList) => {
                 <span class="mock-meta">${mock.questions} Questions</span>
             </div>
             <div class="mock-card-body">
+                <p class="mock-category">${mock.category}</p>
                 <p>Marks: ${mock.marks}</p>
                 <p>Duration: ${mock.duration} minutes</p>
             </div>
             <button class="button button-primary start-test-button" type="button" data-flt="${mock.id}">Start Test</button>
         `;
         card.querySelector('.start-test-button')?.addEventListener('click', () => {
-            appState.selectedFlt = String(mock.id).padStart(2, '0');
+            appState.selectedFlt = mock.id;
+            appState.selectedTest = mock;
             window.dispatchEvent(new CustomEvent('startInstructions'));
         });
         container.appendChild(card);
@@ -47,9 +49,10 @@ export const populateInstructionsPage = () => {
     const questions = qs('#instructionQuestions');
     const marks = qs('#instructionMarks');
     const negative = qs('#instructionNegative');
-    if (duration) duration.textContent = '180 minutes';
-    if (questions) questions.textContent = '100 questions';
-    if (marks) marks.textContent = '100 marks';
+    const selected = appState.selectedTest || { duration: 180, questions: 100, marks: 100 };
+    if (duration) duration.textContent = `${selected.duration} minutes`;
+    if (questions) questions.textContent = `${selected.questions} questions`;
+    if (marks) marks.textContent = `${selected.marks} marks`;
     if (negative) negative.textContent = 'No negative marking';
 };
 
