@@ -1,7 +1,7 @@
 import { appState, resetState } from './storage.js';
 import { loadQuestionBank } from './questionLoader.js';
 import { bindNavigation } from './navigation.js';
-import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions, renderAttemptHistory, bindAttemptHistoryActions } from './ui.js';
+import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions, bindAttemptHistoryActions } from './ui.js';
 import { startTimer, stopTimer } from './timer.js';
 import { initCalculator, showFloatingCalculator, hideFloatingCalculator } from './calculator.js';
 import { saveCurrentAttempt } from './attemptHistory.js';
@@ -53,7 +53,6 @@ const bindApplicationEvents = () => {
         saveCurrentAttempt();
         populateResultPage();
         switchPage('resultPage');
-        renderAttemptHistory();
     });
 
     window.addEventListener('examTimeout', () => {
@@ -62,7 +61,6 @@ const bindApplicationEvents = () => {
         saveCurrentAttempt();
         populateResultPage();
         switchPage('resultPage');
-        renderAttemptHistory();
     });
 };
 
@@ -189,8 +187,19 @@ const initializeApp = () => {
     bindBackButtons();
     bindPanelActions();
     initCalculator();
-    renderAttemptHistory();
     switchPage('homePage');
+
+    const reattemptFlt = sessionStorage.getItem('aptransco_reattempt_flt');
+    if (reattemptFlt) {
+        sessionStorage.removeItem('aptransco_reattempt_flt');
+        const mock = mockList.find((item) => item.id === reattemptFlt);
+        if (mock) {
+            appState.selectedFlt = mock.id;
+            appState.selectedTest = mock;
+            populateInstructionsPage();
+            switchPage('instructionPage');
+        }
+    }
 };
 
 window.addEventListener('DOMContentLoaded', initializeApp);
