@@ -1,5 +1,6 @@
 // Electrical Engineering FLT-01 — APTRANSCO AEE CBT
-// Detailed Explanation Standard + Q21 |Ef|≈1.79 keyed as 1.8 pu
+// Diagrams rewired to PYQ (≥50%) + electrical-core crops (MASTER_RULES subject quotas)
+// diagramSource: pyq | core — AI SVG placeholders removed where source exists
 // answer is 0-based index into options
 
 export const questions = [
@@ -65,7 +66,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Matching+Diagram",
     "question": "Match List-I (transformer connection sketch) with List-II (name). Select the correct code.",
-    "image": "images/diagrams/electrical-flt01/q04-xfmr-connections.svg",
+    "image": "images/diagrams/electrical-flt01/src-q04-pyq.jpg",
     "options": [
       "P-1,Q-2,R-3,S-4",
       "P-2,Q-1,R-4,S-3",
@@ -119,7 +120,9 @@ export const questions = [
         }
       ],
       "instruction": "Use the diagram sketches with the matrix; choose the correct matching code."
-    }
+    },
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/PowerSystems/P2_2023EE_pg016.jpg"
   },
   {
     "id": 5,
@@ -202,7 +205,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Diagram+Numerical",
     "question": "[]` With Ic=0 and phase currents Ia, Ib as labelled on the figure only, Ia⁰ is:",
-    "image": "images/diagrams/electrical-flt01/q09-open-conductor.svg",
+    "image": "images/diagrams/electrical-flt01/src-q09-core.jpg",
     "options": [
       "10 A",
       "0 A",
@@ -214,7 +217,9 @@ export const questions = [
     "questionType": "Diagram+Numerical",
     "formula": "",
     "explanation": "CORRECT: 0 A\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Power Systems (Diagram+Numerical). The keyed choice “0 A” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Power Systems principle for “Diagram+Numerical”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: (Ia+Ib+Ic)/3=0.\nVerify units/pu bases and that the arithmetic lands on the keyed option “0 A” (Gate C).\nFinal keyed result: 0 A\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “10 A” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “5.78 A” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “3.33 A” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Link the stem to the governing law (KCL/KVL, Faraday, power balance, stability criterion).\n• Check units / pu base consistency before comparing options.\n• Eliminate options that violate conservation, passivity, or bus-type definitions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/PowerSystems/PowerSystems_pg0067.jpg"
   },
   {
     "id": 10,
@@ -287,8 +292,8 @@ export const questions = [
     "id": 12,
     "subject": "Power Systems",
     "topic": "Numerical+Application",
-    "question": "Generator Xs=0.2 pu, transformer Xt=0.1 pu on same base, infinite bus behind Xt. Bolted 3φ fault on LV side of transformer (gen+Xt series): fault current (pu) ≈",
-    "image": "",
+    "question": "Using the network/fault figure shown (values as labelled on the crop), the bolted 3-φ fault current (pu) on the LV side for Xs=0.2 pu, Xt=0.1 pu on same base is approximately:",
+    "image": "images/diagrams/electrical-flt01/src-q12-pyq.jpg",
     "options": [
       "3.33",
       "5",
@@ -297,10 +302,12 @@ export const questions = [
     ],
     "answer": 0,
     "difficulty": "Hard",
-    "questionType": "Numerical+Application",
+    "questionType": "Diagram+Application",
     "formula": "",
     "explanation": "CORRECT: 3.33\n\nWHY CORRECT:\nThis is a Numerical+Application item in Power Systems (Numerical+Application). The keyed choice “3.33” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Ifebus≈1/(0.2+0.1)=3.33 pu.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Ifebus≈1/(0.2+0.1)=3.33 pu.\nVerify units/pu bases and that the arithmetic lands on the keyed option “3.33” (Gate C).\nFinal keyed result: 3.33\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “5” — exam-level wrong path for “Numerical+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “10” — exam-level wrong path for “Numerical+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “1” — exam-level wrong path for “Numerical+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Link the stem to the governing law (KCL/KVL, Faraday, power balance, stability criterion).\n• Check units / pu base consistency before comparing options.\n• Eliminate options that violate conservation, passivity, or bus-type definitions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/PowerSystems/P2_2021EE_pg004.jpg"
   },
   {
     "id": 13,
@@ -402,7 +409,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Diagram+Conceptual",
     "question": "[]` The phasor set shown (Ia leading Vt) corresponds to:",
-    "image": "images/diagrams/electrical-flt01/q18-alt-phasor-lead.svg",
+    "image": "images/diagrams/electrical-flt01/src-q18-core.jpg",
     "options": [
       "Lagging pf load",
       "Unity only",
@@ -414,7 +421,9 @@ export const questions = [
     "questionType": "Diagram+Conceptual",
     "formula": "",
     "explanation": "CORRECT: Leading pf load\n\nWHY CORRECT:\nThis is a Diagram+Conceptual item in Electrical Machines (Diagram+Conceptual). The keyed choice “Leading pf load” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electrical Machines principle for “Diagram+Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Lagging pf load” — exam-level wrong path for “Diagram+Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Unity only” — exam-level wrong path for “Diagram+Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “Short-circuit only” — exam-level wrong path for “Diagram+Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Alternator regulation: Ef phasor = V + Ia(Ra + jXs); lagging → Ef > V usually.\n• Leading pf can give negative regulation (Ef < V possible).\n• Sync motor V-curves: Ia vs If at constant power — under/over excitation.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/Machines/Machines_pg0102.jpg"
   },
   {
     "id": 19,
@@ -478,7 +487,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Diagram+Application",
     "question": "[]` From the figure (long line, receiving end condition shown only on the crop — do not assume from memory), generator field voltage held constant. When the generator is disconnected from the line, steady |Vt|:",
-    "image": "images/diagrams/electrical-flt01/q22-ferranti-line.svg",
+    "image": "images/diagrams/electrical-flt01/src-q22-pyq.jpg",
     "options": [
       "Increases always",
       "Unchanged always",
@@ -490,14 +499,16 @@ export const questions = [
     "questionType": "Diagram+Application",
     "formula": "",
     "explanation": "CORRECT: Decreases (Ferranti charging removed)\n\nWHY CORRECT:\nThis is a Diagram+Application item in Electrical Machines (Diagram+Application). The keyed choice “Decreases (Ferranti charging removed)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS (open Rx end & long line on fig)\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Increases always” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Unchanged always” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “Becomes zero always” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Alternator regulation: Ef phasor = V + Ia(Ra + jXs); lagging → Ef > V usually.\n• Leading pf can give negative regulation (Ef < V possible).\n• Sync motor V-curves: Ia vs If at constant power — under/over excitation.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Machines/P4_Electrical_Machines_pg114.jpg"
   },
   {
     "id": 23,
     "subject": "Electrical Machines",
     "topic": "Conceptual",
-    "question": "V-curves of sync motor plot:",
-    "image": "",
+    "question": "From the machine characteristic / phasor figure shown, the plot of armature current vs field current at constant power is known as the V-curve. Which statement matches the figure theme?",
+    "image": "images/diagrams/electrical-flt01/src-q23-pyq.jpg",
     "options": [
       "T vs speed",
       "V vs I armature short only",
@@ -506,10 +517,12 @@ export const questions = [
     ],
     "answer": 3,
     "difficulty": "Medium",
-    "questionType": "Conceptual",
+    "questionType": "Graph+Diagram",
     "formula": "",
     "explanation": "CORRECT: Ia vs If for constant power\n\nWHY CORRECT:\nThis is a Conceptual item in Electrical Machines (Conceptual). The keyed choice “Ia vs If for constant power” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electrical Machines principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “T vs speed” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “V vs I armature short only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Efficiency vs load always flat” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Alternator regulation: Ef phasor = V + Ia(Ra + jXs); lagging → Ef > V usually.\n• Leading pf can give negative regulation (Ef < V possible).\n• Sync motor V-curves: Ia vs If at constant power — under/over excitation.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Machines/P2_2021EE_pg011.jpg"
   },
   {
     "id": 24,
@@ -630,7 +643,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Diagram+Numerical",
     "question": "[]` C0 = air capacitance (Fig a). Half gap filled as in Fig(b) with εr. Modified C =",
-    "image": "images/diagrams/electrical-flt01/q30-cap-dielectric.svg",
+    "image": "images/diagrams/electrical-flt01/src-q30-core.jpg",
     "options": [
       "C0+εr",
       "(C0/2)εr",
@@ -642,7 +655,9 @@ export const questions = [
     "questionType": "Diagram+Numerical",
     "formula": "",
     "explanation": "CORRECT: (C0/2)(1+εr)\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Electric Circuits (Diagram+Numerical). The keyed choice “(C0/2)(1+εr)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Parallel of C0/2 and εr C0/2.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Parallel of C0/2 and εr C0/2.\nVerify units/pu bases and that the arithmetic lands on the keyed option “(C0/2)(1+εr)” (Gate C).\nFinal keyed result: (C0/2)(1+εr)\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “C0+εr” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “(C0/2)εr” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “C0(1+εr)” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Series resonance: Z min ≈ R, I max; VC and VL can exceed Vin (Q magnification).\n• Two-wattmeter pf: tan φ = √3 (W1−W2)/(W1+W2).\n• Max power transfer: RL = Rs (DC) or RL = Rs* (AC conjugate).",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/Circuits/Circuits_pg0148.jpg"
   },
   {
     "id": 31,
@@ -687,7 +702,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Graph+Diagram",
     "question": "[]` The plot with a central pass band and stop bands on both sides is:",
-    "image": "images/diagrams/electrical-flt01/q33-filter-types.svg",
+    "image": "images/diagrams/electrical-flt01/src-q33-pyq.jpg",
     "options": [
       "Low-pass",
       "Band-pass",
@@ -699,7 +714,9 @@ export const questions = [
     "questionType": "Graph+Diagram",
     "formula": "",
     "explanation": "CORRECT: Band-pass\n\nWHY CORRECT:\nThis is a Graph+Diagram item in Electric Circuits (Graph+Diagram). The keyed choice “Band-pass” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electric Circuits principle for “Graph+Diagram”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Low-pass” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “High-pass” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Band-elimination” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Series resonance: Z min ≈ R, I max; VC and VL can exceed Vin (Q magnification).\n• Two-wattmeter pf: tan φ = √3 (W1−W2)/(W1+W2).\n• Max power transfer: RL = Rs (DC) or RL = Rs* (AC conjugate).",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Circuits/P2_2021EE_pg009.jpg"
   },
   {
     "id": 34,
@@ -839,7 +856,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Diagram+Numerical",
     "question": "[]` For the block diagram shown, C(s)/R(s) =",
-    "image": "images/diagrams/electrical-flt01/q41-block-diagram.svg",
+    "image": "images/diagrams/electrical-flt01/src-q41-pyq.jpg",
     "options": [
       "s/(2s+1)",
       "(2s+1)/s",
@@ -851,7 +868,9 @@ export const questions = [
     "questionType": "Diagram+Numerical",
     "formula": "",
     "explanation": "CORRECT: (2s+1)/s\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Control Systems (Diagram+Numerical). The keyed choice “(2s+1)/s” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Forward paths sum to (2s+1)/s.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Forward paths sum to (2s+1)/s.\nVerify units/pu bases and that the arithmetic lands on the keyed option “(2s+1)/s” (Gate C).\nFinal keyed result: (2s+1)/s\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “s/(2s+1)” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “s+1/s” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “s/(s²+1)” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Type-1 system: ess to step = 0; ramp error = 1/Kv.\n• RHP zero → inverse response / initial undershoot.\n• Settling: ts(2%) ≈ 4/σω, ts(5%) ≈ 3/σω.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Control/P2_2021EE_pg012.jpg"
   },
   {
     "id": 42,
@@ -896,7 +915,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Graph+Diagram",
     "question": "[]` First-order stable system, |G| constant vs f, high-freq phase → −180°. System has:",
-    "image": "images/diagrams/electrical-flt01/q44-bode-allpass.svg",
+    "image": "images/diagrams/electrical-flt01/src-q44-pyq.jpg",
     "options": [
       "One LHP pole and one RHP zero at same frequency",
       "LHP pole+LHP zero same f",
@@ -908,7 +927,9 @@ export const questions = [
     "questionType": "Graph+Diagram",
     "formula": "",
     "explanation": "CORRECT: One LHP pole and one RHP zero at same frequency\n\nWHY CORRECT:\nThis is a Graph+Diagram item in Control Systems (Graph+Diagram). The keyed choice “One LHP pole and one RHP zero at same frequency” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS (PYQ figure)\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Dep PASS (PYQ figure)\nVerify units/pu bases and that the arithmetic lands on the keyed option “One LHP pole and one RHP zero at same frequency” (Gate C).\nFinal keyed result: One LHP pole and one RHP zero at same frequency\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “LHP pole+LHP zero same f” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Two LHP poles + RHP zero” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Two RHP poles + LHP zero” — exam-level wrong path for “Graph+Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Type-1 system: ess to step = 0; ramp error = 1/Kv.\n• RHP zero → inverse response / initial undershoot.\n• Settling: ts(2%) ≈ 4/σω, ts(5%) ≈ 3/σω.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Control/P2_2022EE_pg014.jpg"
   },
   {
     "id": 45,
@@ -972,7 +993,7 @@ export const questions = [
     "subject": "Power Electronics & Drives",
     "topic": "Diagram",
     "question": "[]` Single-phase semi-converter, α=30°, RL load — correct Vo waveform is the one that:",
-    "image": "images/diagrams/electrical-flt01/q48-semi-waveforms.svg",
+    "image": "images/diagrams/electrical-flt01/src-q48-pyq.jpg",
     "options": [
       "Stays non-negative with delayed conduction each half-cycle (option C on source page)",
       "Full negative sine",
@@ -984,7 +1005,9 @@ export const questions = [
     "questionType": "Diagram",
     "formula": "",
     "explanation": "CORRECT: Stays non-negative with delayed conduction each half-cycle (option C on source page)\n\nWHY CORRECT:\nThis is a Diagram item in Power Electronics & Drives (Diagram). The keyed choice “Stays non-negative with delayed conduction each half-cycle (option C on source page)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS — pick from waveform options on page crop.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Dep PASS — pick from waveform options on page crop.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Stays non-negative with delayed conduction each half-cycle (option C on source page)” (Gate C).\nFinal keyed result: Stays non-negative with delayed conduction each half-cycle (option C on source page)\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Full negative sine” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Always flat DC at Vm” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Triangular only” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/PowerElectronics/P2_2023EE_pg018.jpg"
   },
   {
     "id": 49,
@@ -1029,7 +1052,7 @@ export const questions = [
     "subject": "Power Electronics & Drives",
     "topic": "Diagram+Application",
     "question": "[]` Firing α must lie between:",
-    "image": "images/diagrams/electrical-flt01/q51-rle-angles.svg",
+    "image": "images/diagrams/electrical-flt01/src-q51-core.jpg",
     "options": [
       "0 and θ1 only",
       "θ2 and 360 only",
@@ -1041,7 +1064,9 @@ export const questions = [
     "questionType": "Diagram+Application",
     "formula": "",
     "explanation": "CORRECT: θ1 and θ2\n\nWHY CORRECT:\nThis is a Diagram+Application item in Power Electronics & Drives (Diagram+Application). The keyed choice “θ1 and θ2” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Power Electronics & Drives principle for “Diagram+Application”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “0 and θ1 only” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “θ2 and 360 only” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Anywhere” — exam-level wrong path for “Diagram+Application”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/PowerElectronics/PowerElectronics_pg0028.jpg"
   },
   {
     "id": 52,
@@ -1124,7 +1149,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "Diagram",
     "question": "[]` Vertical input reaches CRT vertical plates mainly via:",
-    "image": "images/diagrams/electrical-flt01/q56-cro-blocks.svg",
+    "image": "images/diagrams/electrical-flt01/src-q56-core.jpg",
     "options": [
       "Attenuator → vertical amp → (delay) → vertical plates",
       "Time-base only",
@@ -1136,7 +1161,9 @@ export const questions = [
     "questionType": "Diagram",
     "formula": "",
     "explanation": "CORRECT: Attenuator → vertical amp → (delay) → vertical plates\n\nWHY CORRECT:\nThis is a Diagram item in Electrical Measurements (Diagram). The keyed choice “Attenuator → vertical amp → (delay) → vertical plates” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electrical Measurements principle for “Diagram”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Time-base only” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Blanking only” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Horizontal amp only” — exam-level wrong path for “Diagram”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/Measurements/Measurements_pg0054.jpg"
   },
   {
     "id": 57,
@@ -1219,7 +1246,7 @@ export const questions = [
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
     "question": "[]` With Vs, Rz, Vz as labelled on the figure, diode current Iz is closest to:",
-    "image": "images/diagrams/electrical-flt01/q61-zener-iz.svg",
+    "image": "images/diagrams/electrical-flt01/src-q61-pyq.jpg",
     "options": [
       "5 mA",
       "2 mA",
@@ -1231,14 +1258,16 @@ export const questions = [
     "questionType": "Diagram+Numerical",
     "formula": "",
     "explanation": "CORRECT: 2 mA\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Analog Electronics (Diagram+Numerical). The keyed choice “2 mA” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Iz from crop labels (GATE-style worked key ≈ 2 mA). Dep PASS/STRONG.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Iz from crop labels (GATE-style worked key ≈ 2 mA). Dep PASS/STRONG.\nVerify units/pu bases and that the arithmetic lands on the keyed option “2 mA” (Gate C).\nFinal keyed result: 2 mA\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “5 mA” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “10 mA” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0 mA” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "diagramSource": "pyq",
+    "diagramSourcePath": "diagram-questions-EE/Analog/P2_2021EE_pg018.jpg"
   },
   {
     "id": 62,
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
     "question": "[]` 230 V / 50-0-50 secondary; PRV on D1/D2 ≈",
-    "image": "images/diagrams/electrical-flt01/q62-fwr-prv.svg",
+    "image": "",
     "options": [
       "50 V",
       "50√2",
@@ -1247,7 +1276,7 @@ export const questions = [
     ],
     "answer": 2,
     "difficulty": "Hard",
-    "questionType": "Diagram+Numerical",
+    "questionType": "Numerical",
     "formula": "",
     "explanation": "CORRECT: 100√2 V\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Analog Electronics (Diagram+Numerical). The keyed choice “100√2 V” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Peak of other half ≈100√2.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Peak of other half ≈100√2.\nVerify units/pu bases and that the arithmetic lands on the keyed option “100√2 V” (Gate C).\nFinal keyed result: 100√2 V\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “50 V” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “50√2” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “100 V” — exam-level wrong path for “Diagram+Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2"
@@ -1295,7 +1324,7 @@ export const questions = [
     "subject": "Digital Electronics",
     "topic": "Matching+Diagram",
     "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.",
-    "image": "images/diagrams/electrical-flt01/q65-logic-match.svg",
+    "image": "images/diagrams/electrical-flt01/src-q65-core.jpg",
     "options": [
       "P-NOR, Q-NAND, R-AND, S-XOR",
       "P-NAND, Q-NOR, R-XOR, S-AND",
@@ -1349,7 +1378,9 @@ export const questions = [
         }
       ],
       "instruction": "Use the diagram labels with this matrix; choose the correct matching code."
-    }
+    },
+    "diagramSource": "core",
+    "diagramSourcePath": "electrical-core-diagrams/AnalogDigital/AnalogDigital_pg0088.jpg"
   },
   {
     "id": 66,

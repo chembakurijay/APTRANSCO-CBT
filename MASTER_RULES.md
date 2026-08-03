@@ -170,24 +170,25 @@ No diagram question may be submitted for approval without this declaration.
 **Every FLT paper must include at minimum:**
 - **1 Matching Matrix question** (match engineering terms, types, or properties in column A to column B)
 - **1 Table-based question** (candidate reads a given data table to answer the question)
-- **1 Graph/Curve interpretation question** (candidate reads a plotted curve)
+- **≥1 Graph/Curve interpretation question with a real plotted curve figure** (see Graph Mandate — not stem-only “graph” tags without an image)
 - **4 Assertion–Reason questions** (distributed across subjects)
 - **4 IS Code / Standard value questions** (see policy below)
 - **5 Practical / site / field-decision questions** that are **practically able** (see Practical Questions bar)
-- **12–15 Diagram / Figure questions** meeting the **Diagram Professional Quality Bar** (mostly Medium–Hard; priority-sourced figures)
+- **12–15 Diagram / Figure questions** meeting the **Diagram Professional Quality Bar**, filled to the **Subject-wise Diagram Quota** below, using **priority-sourced cropped figures** (not invented SVGs when core/PYQ exists)
+
+### Diagram Rules (STRICT — Fail packaging if violated)
+- Search **all** uploaded source files under `sourcefiles-ce/Aptransco_sourcefiles/` **and** extracted folders `images/electrical-core-diagrams/`, `images/civil-core-diagrams/`, `images/diagram-questions-EE/`, `images/diagram-questions/` **before** inventing any figure.
+- **Forbidden default:** shipping hand-drawn / AI SVG placeholders when a usable core or PYQ figure exists for the same concept — that is an automatic Fail of Diagram Source Priority.
+- **Electrical:** ≥ **50%** of Diagram questions must use **PYQ / prior-year board-family** cropped figures (APTRANSCO / APGENCO / DISCOM / APPSC / GATE Easy–Moderate paper pages with a real engineering figure). Remaining Diagram Qs use **electrical-core** textbook crops. Rank-4 AI schematics only if ranks 1–3 truly have no usable figure after full search.
+- **Civil:** **Default to civil-core crops** (SOM / DDRC / Steel / Fluid / Soil). Second priority = neat PYQ / bank crops from `images/diagram-questions/`. Do not skip a neat core page for a weaker SVG.
+- Every diagram image path must be a **tight crop of the figure region** (never full PDF page with headers/unrelated MCQs).
+- Declare per Diagram Q: `diagramSource` = `pyq` | `core` | `bank` | `schematic-last-resort` and the source file path.
+- Follow **Diagram Source Priority by Stream** and **Subject-wise Diagram Quota** — both are mandatory gates.
 
 ### Duplicate Control
 - Maintain a global registry of every generated question.
 - Reject identical or near-identical questions.
 - Avoid duplicate concepts, formulas, numerical patterns, diagrams, and answer patterns.
-
-### Diagram Rules
-- Search **all** uploaded source files under `sourcefiles-ce/Aptransco_sourcefiles/` (and extracted image folders) before inventing a figure.
-- Prefer original PYQ / core / bank diagrams when available and neat enough for CBT use — **priority ranks are mandatory**.
-- Only generate a clean **engineering line schematic** when no suitable source figure exists; never ship a decorative / toy AI sketch.
-- Use standard engineering symbols and labels that are **syllabus-correct**.
-- Diagram stems should feel **Medium–Hard** and **exam-real**; Easy diagram Qs are capped (see Professional Quality Bar).
-- Follow **Diagram Source Priority by Stream** (Electrical vs Civil) — do not use a single flat priority for both.
 
 ### Solution & Review Rules
 - Provide **detailed, exam-level solutions** for every question (see **Detailed Explanation Standard** below).
@@ -302,10 +303,9 @@ Distribute across subjects. Never cluster all in one subject.
   - International standards where IS equivalent is not available
 - Always frame the question as application: "Which section classifies as under-reinforced per IS 456?", "Using standard Ka for φ = 30°...", "Given that E for steel = 200 GPa..."
 
-### Graph / Curve Questions (3–4)
-Include: Stress-strain curve, Compaction curve, Consolidation curve, Flow curve.
-At least **1 graph/curve question is mandatory per paper** (see Mandatory Per-Paper Requirements above).
-
+### Graph / Curve Questions (3–4 preferred; **≥1 mandatory with real curve image**)
+Include: Stress-strain curve, Compaction curve, Consolidation curve, Flow curve, Bode / torque-slip / Q–H / hydrograph as stream-appropriate.
+At least **1 graph/curve question is mandatory per paper** and **must attach a cropped curve figure** from core/PYQ (see Graph / Curve Mandate). Text-only “graph” tags without `image` Fail.
 ### Matching Matrix Questions (≥1 per paper)
 Each paper must have at least one question where the candidate matches a **Column A / List-I** list to a **Column B / List-II** list.
 Format: Four items in List-I, four in List-II (or similar); options give the correct combination codes.
@@ -595,19 +595,60 @@ Same utility family papers drive the real exam style (APTRANSCO / APGENCO / APEP
 | **3** | Other EE question banks / SSC JE / RRB JE / GATE (Easy–Moderate) diagram pages | banks under `Electrical/` and shared PYQ sets |
 | **4 (lowest)** | Clean standard line schematic only if ranks 1–3 have no usable figure | hand-drawn / AI schematic last resort |
 
-**Electrical rule of thumb:** Prefer a **real PYQ figure** (same board family) over a textbook core figure when both fit the concept and crop cleanly.
+**Electrical rule of thumb:** Prefer a **real PYQ figure** (same board family) over a textbook core figure when both fit the concept and crop cleanly. **≥50% of Diagram Qs in every EE paper must be PYQ-sourced** (count `diagramSource=pyq`). Skipping available PYQ/core for AI SVG is Fail.
 
-#### Civil — Priority & Fitness Rule
-Civil does **not** force PYQ-first. Main requirement: the figure must be **neat and fit for question usage** (tight crop, readable labels, options depend on it).
+#### Civil — Priority & Fitness Rule (core-first — STRICT)
+Civil **defaults to core textbook crops**. PYQ is second when neater/better matched. Main requirement: the figure must be **neat and fit for question usage** (tight crop, readable labels, options depend on it).
 
 | Rank | Source | Local / folder cues |
 |------|--------|---------------------|
-| **1 (equal preference)** | **Civil core diagrams** + **PYQ diagrams** — use whichever is neater and better matched to the stem | `images/civil-core-diagrams/` (SOM, DDRC, Steel, Fluid, Soil) **and** PYQ / bank extracts (`images/diagram-questions/`, APTRANSCO/APPSC/related civil papers) |
-| **2** | Any other relevant figure found by searching **all** Civil + shared source files | `sourcefiles-ce/Aptransco_sourcefiles/Civil/`, steel/RCC/SOM question banks, SSC JE / RRB JE / GATE Easy–Moderate |
-| **3 (lowest)** | Clean standard line schematic only if no usable source figure | last resort |
+| **1 (highest default)** | **Civil core diagrams** — MUST search here first for SOM / DDRC / Steel / Fluid / Soil concepts | `images/civil-core-diagrams/` |
+| **2** | **PYQ / bank diagram pages** when core has no usable match or PYQ crop is clearly better | `images/diagram-questions/`, APTRANSCO/APPSC civil papers |
+| **3** | Any other relevant figure under Civil + shared sources | `sourcefiles-ce/Aptransco_sourcefiles/Civil/` |
+| **4 (lowest)** | Clean standard line schematic only if ranks 1–3 fail | last resort |
 
-**Civil rule of thumb:** Mix PYQ + core freely. Reject a PYQ or core page if the crop is messy, over-cropped, or not needed to answer — quality of fit beats source rank.
+**Civil rule of thumb:** If a neat `civil-core-diagrams` page exists for the concept, **you must crop and use it** (or a tighter crop of it). Invented SVGs while core sits unused = Fail.
 
+---
+
+## Subject-wise Diagram Quota (STRICT — every FLT)
+
+Diagram counts below are **mandatory ranges** inside the technical 12–15 Diagram total. Typical APTRANSCO diagram types listed are preferred figure families.
+
+### Civil Engineering — Diagram quota by subject
+
+| Subject | Diagram Questions | Typical APTRANSCO Diagram Types |
+|---|:---:|---|
+| **Strength of Materials (SOM)** | **2** | BMD, SFD, stress–strain, Mohr's circle, torsion |
+| **Steel Structures** | **1–2** | Trusses, bolted/welded joints, tension members |
+| **RCC / DDRC** | **3** | Beam/slab/column detailing, footing reinforcement, development length |
+| **Soil Mechanics** | **2** | Soil phase diagram, compaction, permeability, Mohr circle |
+| **Foundation Engineering** | **2** | Footings, piles, retaining walls, bearing-capacity sketches |
+| **Fluid Mechanics (FM)** | **2** | HGL/EGL, venturimeter, pipe systems, flow nets, manometers |
+| **Hydrology & Hydraulic Machines (HHM)** | **2** | Hydrographs, pumps, turbines, canals, spillways |
+
+> Official CBT sequence keeps FM+HHM under **Fluid Mechanics & Hydraulic Machinery** — still deliver **2 FM + 2 HHM** diagram flavours inside that block. Total Civil Diagram Qs ≈ **14–15**.
+
+### Electrical Engineering — Diagram quota by subject
+
+| Subject | Diagram Questions | Typical APTRANSCO Diagram Types |
+|---|:---:|---|
+| **Power Systems** | **3** | SLD, relay/protection, sequence networks, transformer connections |
+| **Electrical Machines** | **2–3** | Phasor diagrams, equivalent circuits, OCC/SCC, torque-slip |
+| **Electrical Circuits** | **2** | RLC networks, bridge circuits, transient circuits |
+| **Control Systems** | **2** | Block diagrams, root locus, Bode, signal-flow graphs |
+| **Power Electronics & Drives** | **2** | Converter circuits, chopper/inverter waveforms, firing circuits |
+| **Measurements** | **1** | CT/PT, bridge circuits, CRO blocks |
+| **Analog & Digital Electronics** | **1–2** | Op-amp circuits, logic circuits, timing diagrams |
+
+> **EE PYQ share:** at least **half** of these Diagram questions must be `diagramSource=pyq`. Utilization may contribute 0 Diagram Qs unless a strong PYQ/core figure exists.
+
+### Graph / Curve Mandate (STRICT — every FLT)
+- At least **one** question must be tagged Graph/Curve **and** display a **real plotted curve image** (`image` path to a cropped graph from core/PYQ — stress–strain, compaction, Bode, torque-slip, Q–H, hydrograph, etc.).
+- A text-only stem that says “from the graph” **without** an attached curve image is **Fail**.
+- Prefer graphs already available in `civil-core-diagrams` / `electrical-core-diagrams` / PYQ extracts — do not invent decorative charts when source graphs exist.
+
+**Quota Fail → paper cannot be APPROVED** until Diagram Qs are redistributed and re-sourced.
 #### Shared crop / usage rules (both streams)
 - Never paste a full PDF page into the CBT.
 - Crop only the **figure region** needed for the question; keep all essential labels/dimensions; strip headers, footers, page chrome, adjacent unrelated text.
@@ -1433,7 +1474,9 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Exact duplicates vs earlier mocks | **0** |
 | Repeated concepts vs earlier mocks | **≤ 10%** |
 | APTRANSCO similarity (overall) | **≥ 90%** |
-| Diagram-dependent questions | **12–15** (technical; each PASS or STRONG; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2) |
+| Diagram-dependent questions | **12–15** meeting Subject-wise Diagram Quota; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2 |
+| Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
+| Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
 | Concept coverage (Audit K) | Missing must-cover = 0; over-stack = 0 |
