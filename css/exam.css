@@ -87,10 +87,10 @@
     max-width: none;
 }
 
-/* Do NOT use height:100% here — that + header overflows and clips the footer */
+/* Fill remaining viewport under header (flex:1 1 0 — not height:100%, which double-counts header) */
 .exam-page:fullscreen .exam-body,
 .exam-page:-webkit-full-screen .exam-body {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     min-height: 0;
     height: auto;
     align-items: stretch;
@@ -224,10 +224,12 @@
     overflow: visible;
 }
 
-/* Fullscreen: question column fills remaining height; footer always visible */
+/* Fullscreen: stretch card to exam-body height so scroll area gets real space (not 0) */
 .exam-page:fullscreen .question-card,
 .exam-page:-webkit-full-screen .question-card {
-    height: 100%;
+    flex: 1 1 auto;
+    align-self: stretch;
+    height: auto;
     max-height: none;
     min-height: 0;
     display: flex;
@@ -238,8 +240,8 @@
 
 .exam-page:fullscreen .question-card-scroll,
 .exam-page:-webkit-full-screen .question-card-scroll {
-    flex: 1 1 0;
-    min-height: 0;
+    flex: 1 1 auto;
+    min-height: 120px;
     overflow-x: hidden;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
@@ -253,7 +255,7 @@
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
-    margin-top: auto;
+    margin-top: 0;
     box-shadow: 0 -6px 16px rgba(15, 23, 42, 0.08);
     padding: 10px 0 4px;
 }
@@ -302,7 +304,7 @@
     display: flex;
     width: 100%;
     gap: 16px;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     min-height: 0;
     height: auto;
 }
