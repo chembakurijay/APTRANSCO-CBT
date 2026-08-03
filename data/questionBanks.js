@@ -312,15 +312,39 @@ const electricalBlueprint = [
         subject: 'Power Systems',
         count: 14,
         topics: [
+            'Power Generation',
             'Transmission Lines',
-            'Fault Analysis',
-            'Power Factor Correction',
+            'Line Models',
+            'Underground Cables',
+            'String Insulators',
+            'Corona',
+            'Distribution Systems',
+            'Per Unit System',
+            'Bus Admittance Matrix',
+            'Bus Impedance Matrix',
             'Load Flow',
+            'Voltage Control',
+            'Power Factor Correction',
+            'Economic Operation',
+            'Symmetrical Components',
+            'Fault Analysis',
+            'Over Current Protection',
+            'Differential Protection',
+            'Distance Protection',
+            'Alternator Protection',
+            'Transformer Protection',
+            'Transmission Line Protection',
+            'Neutral Earthing',
+            'Solid State Relays',
+            'Digital Protection',
+            'Circuit Breakers',
             'System Stability',
+            'Swing Curves',
+            'Equal Area Criterion',
         ],
         templates: [
             (data) => ({
-                question: `A transmission line delivers ${data.power} MW at ${data.voltage} kV with power factor ${data.pf}. What is the approximate current in the line?`,
+                question: `A transmission line delivers ${data.powerMW} MW at ${data.voltage} kV with power factor ${data.pf}. What is the approximate current in the line?`,
                 options: [
                     `${data.current.toFixed(1)} A`,
                     `${(data.current * 0.9).toFixed(1)} A`,
@@ -329,7 +353,7 @@ const electricalBlueprint = [
                 ],
                 answer: 0,
                 formula: 'I = P / (√3 V pf)',
-                explanation: `Line current for a three-phase system is I = P / (√3 V pf). Using P = ${data.power} MW, V = ${data.voltage} kV and pf = ${data.pf} gives the correct current.`,
+                explanation: `Line current for a three-phase system is I = P / (√3 V pf). Using P = ${data.powerMW} MW, V = ${data.voltage} kV and pf = ${data.pf} gives the correct current.`,
                 type: 'Numerical',
                 difficulty: 'Medium',
             }),
@@ -357,19 +381,43 @@ const electricalBlueprint = [
         subject: 'Electrical Machines',
         count: 13,
         topics: [
-            'Transformers',
-            'Induction Motors',
-            'Synchronous Machines',
+            'Single Phase Transformer',
+            'Equivalent Circuit',
+            'Phasor Diagram',
+            'Transformer Tests',
+            'Regulation',
+            'Efficiency',
+            'Three Phase Transformers',
+            'Connections',
+            'Parallel Operation',
+            'Auto Transformer',
             'DC Machines',
+            'Windings',
+            'Generator Characteristics',
+            'Motor Characteristics',
+            'Armature Reaction',
+            'Commutation',
+            'Starting',
+            'Speed Control',
+            'Three Phase Induction Motors',
+            'Performance Characteristics',
+            'Starting Methods',
+            'Speed Control',
+            'Single Phase Induction Motors',
+            'Synchronous Machines',
+            'Regulation',
+            'Parallel Operation',
+            'Motor Starting',
+            'Applications',
         ],
         templates: [
             (data) => ({
                 question: `A transformer has rating ${data.rating} kVA and voltage ratio ${data.primary}:${data.secondary}. What is the approximate secondary current at full load?`,
                 options: [
-                    `${data.current.toFixed(1)} A`,
-                    `${(data.current * 0.8).toFixed(1)} A`,
-                    `${(data.current * 1.2).toFixed(1)} A`,
-                    `${(data.current * 0.5).toFixed(1)} A`,
+                    `${data.transformerCurrent.toFixed(1)} A`,
+                    `${(data.transformerCurrent * 0.8).toFixed(1)} A`,
+                    `${(data.transformerCurrent * 1.2).toFixed(1)} A`,
+                    `${(data.transformerCurrent * 0.5).toFixed(1)} A`,
                 ],
                 answer: 0,
                 formula: 'I2 = S / (√3 V2)',
@@ -401,10 +449,28 @@ const electricalBlueprint = [
         subject: 'Electric Circuits',
         count: 11,
         topics: [
-            'KCL and KVL',
-            'Network Theorems',
+            'Network Graph',
+            'KCL',
+            'KVL',
+            'Node Analysis',
+            'Mesh Analysis',
+            'Star-Delta Transformation',
+            'Electromagnetic Induction',
+            'Mutual Induction',
             'AC Fundamentals',
+            'Harmonics',
+            'DC Transients',
+            'AC Transients',
+            'Sinusoidal Steady State',
             'Resonance',
+            'Ideal Sources',
+            'Thevenin Theorem',
+            'Norton Theorem',
+            'Superposition',
+            'Maximum Power Transfer',
+            'Two-Port Networks',
+            'Three Phase Circuits',
+            'Power Measurement',
         ],
         templates: [
             (data) => ({
@@ -435,10 +501,17 @@ const electricalBlueprint = [
         subject: 'Control Systems',
         count: 8,
         topics: [
+            'Principles of Feedback',
             'Transfer Function',
-            'Stability',
+            'Block Diagrams',
+            'Steady State Error',
+            'Routh Criterion',
+            'Nyquist Criterion',
             'Bode Plot',
             'Root Locus',
+            'Lag Compensation',
+            'Lead Compensation',
+            'Lead-Lag Compensation',
         ],
         templates: [
             (data) => ({
@@ -471,10 +544,22 @@ const electricalBlueprint = [
         subject: 'Power Electronics & Drives',
         count: 7,
         topics: [
-            'Rectifiers',
+            'Power Diodes',
+            'Power Transistors',
+            'SCR',
+            'TRIAC',
+            'GTO',
+            'MOSFET',
+            'IGBT',
+            'Static Characteristics',
+            'Triggering Circuits',
+            'Phase Controlled Rectifiers',
+            'Fully Controlled Bridge Converter',
+            'Half Controlled Converter',
+            'Choppers',
             'Inverters',
-            'Thyristors',
-            'DC Drives',
+            'Adjustable Speed DC Drives',
+            'Adjustable Speed AC Drives',
         ],
         templates: [
             (data) => ({
@@ -513,10 +598,24 @@ const electricalBlueprint = [
         subject: 'Measurements',
         count: 6,
         topics: [
+            'Bridges',
+            'Potentiometers',
             'PMMC Instruments',
             'Moving Iron Instruments',
-            'Wattmeters',
+            'Dynamometer Instruments',
+            'Induction Type Instruments',
+            'Voltage Measurement',
+            'Current Measurement',
+            'Power Measurement',
+            'Energy Measurement',
+            'Power Factor Measurement',
+            'Digital Voltmeters',
+            'Digital Multimeters',
             'Phase Measurement',
+            'Time Measurement',
+            'Frequency Measurement',
+            'Q Meter',
+            'Oscilloscope',
         ],
         templates: [
             (data) => ({
@@ -553,6 +652,11 @@ const electricalBlueprint = [
             'BJT',
             'FET',
             'Amplifiers',
+            'Biasing',
+            'Equivalent Circuits',
+            'Frequency Response',
+            'Oscillators',
+            'Feedback Amplifiers',
         ],
         templates: [
             (data) => ({
@@ -587,7 +691,14 @@ const electricalBlueprint = [
         topics: [
             'Combinational Logic',
             'Sequential Logic',
-            'ADC and DAC',
+            'Multiplexers',
+            'Schmitt Trigger',
+            'ADC',
+            'DAC',
+            '8-bit Microprocessor',
+            'Architecture',
+            'Programming',
+            'Interfacing',
         ],
         templates: [
             (data) => ({
@@ -620,9 +731,15 @@ const electricalBlueprint = [
         subject: 'Utilization of Electrical Energy',
         count: 4,
         topics: [
+            'Resistance Heating',
+            'Induction Heating',
+            'Dielectric Heating',
+            'Spot Welding',
+            'Seam Welding',
+            'Butt Welding',
             'Electric Traction',
-            'Welding',
-            'Heating',
+            'Speed-Time Curves',
+            'Tractive Effort',
         ],
         templates: [
             (data) => ({
@@ -830,47 +947,104 @@ const createDeterministicValue = (base, offset, multiplier = 1) => base + ((offs
 
 const generateValues = (testIndex, questionIndex) => {
     const offset = testIndex * 13 + questionIndex * 7;
+    const diameter = 20 + (offset % 15) * 2;
+    const load = 50 + (offset % 9) * 6;
+    const span = 3 + (offset % 4) * 1;
+    const torque = 40 + (offset % 6) * 5;
+    const width = 300 + (offset % 4) * 50;
+    const depth = 450 + (offset % 4) * 25;
+    const fy = 415;
+    const vc = 0.25 + (offset % 3) * 0.05;
+    const vu = 100 + (offset % 9) * 7;
+    const side = 1 + (offset % 3) * 0.5;
+    const capacity = 150 + (offset % 5) * 10;
+    const e = 0.45 + (offset % 4) * 0.05;
+    const gs = 2.65;
+    const w = 12 + (offset % 7) * 2;
+    const flow = 20 + (offset % 8) * 3;
+    const head = 10 + (offset % 5) * 2;
+    const efficiency = 70 + (offset % 3) * 5;
+    const rating = 500;
+    const secondary = 0.415;
+    const powerMW = 60;
+    const voltage = 132;
+    const pf = 0.95;
+    const r = 10;
+    const l = 20;
+    const c = 2;
+
+    const area = (Math.PI * diameter * diameter) / 4;
+    const stress = (load * 1000) / area;
+    const moment = (load * span * span) / 8;
+    const shearStress = (16 * torque * 1e6) / (Math.PI * Math.pow(diameter, 3));
+    const ast = (moment * 1e6) / (0.87 * fy * (0.9 * depth));
+    const spacing = Math.max(80, ((0.87 * fy * depth * 100) / Math.max(10, vu * 1000 - vc * width * depth)));
+    const fos = (capacity * side * side) / load;
+    const saturation = Math.min(100, ((w / 100) * gs * 100) / e);
+    const pumpPower = (9.81 * (flow / 1000) * head) / (efficiency / 100);
+    const current = (powerMW * 1e6) / (Math.sqrt(3) * voltage * 1e3 * pf);
+    const transformerCurrent = (rating * 1000) / (Math.sqrt(3) * secondary * 1000);
+    const freq = 1 / (2 * Math.PI * Math.sqrt((l / 1000) * (c / 1e6)));
+    const output = (2 * (230 * Math.sqrt(2))) / Math.PI;
+
     return {
-        diameter: 20 + (offset % 15) * 2,
-        load: 50 + (offset % 9) * 6,
-        span: 3 + (offset % 4) * 1,
-        moment: 15 + (offset % 8) * 2,
-        torque: 40 + (offset % 6) * 5,
+        diameter,
+        load,
+        span,
+        moment,
+        torque,
+        stress,
+        shearStress,
         velocity: 2 + (offset % 5) * 1,
         pressure: 100 + (offset % 6) * 10,
-        flow: 20 + (offset % 8) * 3,
-        head: 10 + (offset % 5) * 2,
-        efficiency: 70 + (offset % 3) * 5,
+        flow,
+        head,
+        efficiency,
         reynolds: 4500 + (offset % 5) * 200,
-        width: 300 + (offset % 4) * 50,
-        depth: 450 + (offset % 4) * 25,
-        fy: 415,
-        vc: 0.25 + (offset % 3) * 0.05,
-        vu: 100 + (offset % 9) * 7,
-        side: 1 + (offset % 3) * 0.5,
-        capacity: 150 + (offset % 5) * 10,
+        width,
+        depth,
+        fy,
+        vc,
+        vu,
+        area: ast,
+        spacing,
+        side,
+        capacity,
+        fos,
         n: 5 + (offset % 10),
-        e: 0.45 + (offset % 4) * 0.05,
-        gs: 2.65,
-        w: 12 + (offset % 7) * 2,
+        e,
+        gs,
+        w,
+        saturation,
         a: 3 + (offset % 2),
         b: 2 + ((offset + 1) % 2),
+        larger: 72,
+        smaller: 48,
         sum: 120,
         series: [2, 5, 10, 17],
         difference: 7,
         next: 26,
         cp: 250,
         sp: 300,
+        profitPercent: 20,
         input: 230,
         primary: 11,
-        secondary: 0.415,
-        rating: 500,
-        pf: 0.95,
-        power: 60,
-        voltage: 132,
-        r: 10,
-        l: 20,
-        c: 2,
+        secondary,
+        rating,
+        pf,
+        power: pumpPower,
+        powerMW,
+        voltage,
+        current,
+        freq,
+        output,
+        gain: 10 + (offset % 5) * 5,
+        r,
+        l,
+        c,
+        slenderness: 60 + (offset % 6) * 10,
+        length: 3 + (offset % 4),
+        transformerCurrent,
     };
 };
 

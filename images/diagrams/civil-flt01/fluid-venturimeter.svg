@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">Venturimeter in Horizontal Pipe</text>
+  <path d="M120 90 L300 90 L380 115 L520 115 L600 90 L780 90 L780 170 L600 170 L520 145 L380 145 L300 170 L120 170 Z" fill="#dbeafe" stroke="#334155" stroke-width="3" />
+  <line x1="210" y1="70" x2="210" y2="190" stroke="#475569" stroke-width="2" />
+  <line x1="450" y1="70" x2="450" y2="190" stroke="#475569" stroke-width="2" />
+  <line x1="690" y1="70" x2="690" y2="190" stroke="#475569" stroke-width="2" />
+  <text x="202" y="60" font-family="Arial" font-size="16" fill="#0f172a">1</text>
+  <text x="443" y="60" font-family="Arial" font-size="16" fill="#0f172a">2</text>
+  <text x="682" y="60" font-family="Arial" font-size="16" fill="#0f172a">3</text>
+  <text x="430" y="210" font-family="Arial" font-size="16" fill="#0f172a">Throat</text>
+  <polygon points="100,130 120,120 120,140" fill="#0ea5e9" />
+  <polygon points="780,120 800,130 780,140" fill="#0ea5e9" />
+</svg>

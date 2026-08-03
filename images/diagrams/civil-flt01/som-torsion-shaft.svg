@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">Solid Circular Shaft in Torsion</text>
+  <rect x="180" y="95" width="500" height="50" rx="20" fill="#cbd5e1" stroke="#334155" stroke-width="3" />
+  <circle cx="180" cy="120" r="25" fill="#94a3b8" stroke="#334155" stroke-width="3" />
+  <circle cx="680" cy="120" r="25" fill="#94a3b8" stroke="#334155" stroke-width="3" />
+  <path d="M110 120 A45 45 0 1 1 180 55" fill="none" stroke="#dc2626" stroke-width="4" />
+  <polygon points="175,55 188,58 179,69" fill="#dc2626" />
+  <text x="90" y="175" font-family="Arial" font-size="18" fill="#b91c1c">T</text>
+  <path d="M750 120 A45 45 0 1 0 680 55" fill="none" stroke="#dc2626" stroke-width="4" />
+  <polygon points="676,55 690,58 681,69" fill="#dc2626" />
+  <text x="760" y="175" font-family="Arial" font-size="18" fill="#b91c1c">T</text>
+  <line x1="180" y1="195" x2="680" y2="195" stroke="#475569" stroke-width="2" />
+  <text x="425" y="215" font-family="Arial" font-size="16" fill="#0f172a">L</text>
+  <text x="420" y="85" font-family="Arial" font-size="16" fill="#0f172a">d</text>
+</svg>

@@ -1,0 +1,1177 @@
+{
+  "total": 141,
+  "summary": {
+    "SOM": {
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "total_pages": 75,
+      "diagram_saved": 31,
+      "rejected": {
+        "few_large": 41,
+        "too_many_large": 3
+      }
+    },
+    "DDRC": {
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/DDRC.pdf",
+      "total_pages": 70,
+      "diagram_saved": 1,
+      "rejected": {
+        "few_large": 69
+      }
+    },
+    "Steel": {
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "total_pages": 81,
+      "diagram_saved": 22,
+      "rejected": {
+        "few_large": 59
+      }
+    },
+    "Fluid": {
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "total_pages": 207,
+      "diagram_saved": 54,
+      "rejected": {
+        "few_large": 149,
+        "too_many_large": 4
+      }
+    },
+    "Soil": {
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "total_pages": 136,
+      "diagram_saved": 33,
+      "rejected": {
+        "few_large": 103
+      }
+    }
+  },
+  "items": [
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 5,
+      "large_paths": 158,
+      "small_paths": 1048,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0005.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 8,
+      "large_paths": 196,
+      "small_paths": 1966,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0008.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 10,
+      "large_paths": 168,
+      "small_paths": 2253,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0010.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 11,
+      "large_paths": 185,
+      "small_paths": 2426,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0011.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 15,
+      "large_paths": 41,
+      "small_paths": 1772,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0015.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 20,
+      "large_paths": 181,
+      "small_paths": 1137,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0020.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 22,
+      "large_paths": 149,
+      "small_paths": 1421,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0022.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 23,
+      "large_paths": 68,
+      "small_paths": 1789,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0023.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 24,
+      "large_paths": 58,
+      "small_paths": 1806,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0024.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 26,
+      "large_paths": 180,
+      "small_paths": 1286,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0026.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 29,
+      "large_paths": 110,
+      "small_paths": 1540,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0029.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 30,
+      "large_paths": 47,
+      "small_paths": 2081,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0030.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 36,
+      "large_paths": 127,
+      "small_paths": 1349,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0036.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 38,
+      "large_paths": 173,
+      "small_paths": 1438,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0038.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 40,
+      "large_paths": 71,
+      "small_paths": 1588,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0040.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 41,
+      "large_paths": 214,
+      "small_paths": 1924,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0041.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 48,
+      "large_paths": 124,
+      "small_paths": 1455,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0048.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 49,
+      "large_paths": 70,
+      "small_paths": 1919,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0049.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 50,
+      "large_paths": 43,
+      "small_paths": 2581,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0050.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 52,
+      "large_paths": 44,
+      "small_paths": 962,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0052.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 53,
+      "large_paths": 86,
+      "small_paths": 2126,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0053.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 55,
+      "large_paths": 48,
+      "small_paths": 1784,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0055.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 56,
+      "large_paths": 59,
+      "small_paths": 1195,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0056.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 57,
+      "large_paths": 78,
+      "small_paths": 1426,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0057.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 58,
+      "large_paths": 80,
+      "small_paths": 1607,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0058.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 60,
+      "large_paths": 52,
+      "small_paths": 1719,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0060.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 61,
+      "large_paths": 110,
+      "small_paths": 1205,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0061.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 62,
+      "large_paths": 163,
+      "small_paths": 1552,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0062.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 63,
+      "large_paths": 61,
+      "small_paths": 1929,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0063.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 71,
+      "large_paths": 51,
+      "small_paths": 2114,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0071.jpg"
+    },
+    {
+      "subject": "SOM",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/SOM.pdf",
+      "page": 74,
+      "large_paths": 42,
+      "small_paths": 1075,
+      "file": "images/civil-core-diagrams/SOM/SOM_pg0074.jpg"
+    },
+    {
+      "subject": "DDRC",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/DDRC.pdf",
+      "page": 37,
+      "large_paths": 70,
+      "small_paths": 2320,
+      "file": "images/civil-core-diagrams/DDRC/DDRC_pg0037.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 2,
+      "large_paths": 59,
+      "small_paths": 2188,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0002.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 4,
+      "large_paths": 125,
+      "small_paths": 2227,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0004.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 11,
+      "large_paths": 180,
+      "small_paths": 1671,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0011.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 12,
+      "large_paths": 92,
+      "small_paths": 2196,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0012.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 16,
+      "large_paths": 46,
+      "small_paths": 2085,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0016.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 17,
+      "large_paths": 45,
+      "small_paths": 1519,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0017.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 19,
+      "large_paths": 42,
+      "small_paths": 2315,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0019.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 22,
+      "large_paths": 93,
+      "small_paths": 1523,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0022.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 26,
+      "large_paths": 96,
+      "small_paths": 1250,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0026.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 27,
+      "large_paths": 40,
+      "small_paths": 1827,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0027.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 29,
+      "large_paths": 42,
+      "small_paths": 2466,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0029.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 30,
+      "large_paths": 73,
+      "small_paths": 1645,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0030.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 31,
+      "large_paths": 79,
+      "small_paths": 487,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0031.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 34,
+      "large_paths": 167,
+      "small_paths": 2216,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0034.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 44,
+      "large_paths": 126,
+      "small_paths": 1657,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0044.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 45,
+      "large_paths": 99,
+      "small_paths": 1612,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0045.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 50,
+      "large_paths": 53,
+      "small_paths": 2158,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0050.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 62,
+      "large_paths": 51,
+      "small_paths": 1944,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0062.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 68,
+      "large_paths": 74,
+      "small_paths": 2125,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0068.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 69,
+      "large_paths": 54,
+      "small_paths": 1889,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0069.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 71,
+      "large_paths": 53,
+      "small_paths": 1849,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0071.jpg"
+    },
+    {
+      "subject": "Steel",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Steel Structures.pdf",
+      "page": 72,
+      "large_paths": 40,
+      "small_paths": 1945,
+      "file": "images/civil-core-diagrams/Steel/Steel_pg0072.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 12,
+      "large_paths": 67,
+      "small_paths": 2767,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0012.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 14,
+      "large_paths": 132,
+      "small_paths": 2510,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0014.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 17,
+      "large_paths": 199,
+      "small_paths": 1546,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0017.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 18,
+      "large_paths": 113,
+      "small_paths": 1918,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0018.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 19,
+      "large_paths": 57,
+      "small_paths": 2340,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0019.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 20,
+      "large_paths": 151,
+      "small_paths": 2344,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0020.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 22,
+      "large_paths": 107,
+      "small_paths": 2206,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0022.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 24,
+      "large_paths": 86,
+      "small_paths": 1625,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0024.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 29,
+      "large_paths": 45,
+      "small_paths": 1000,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0029.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 30,
+      "large_paths": 63,
+      "small_paths": 813,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0030.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 31,
+      "large_paths": 94,
+      "small_paths": 1891,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0031.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 32,
+      "large_paths": 107,
+      "small_paths": 1766,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0032.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 33,
+      "large_paths": 71,
+      "small_paths": 1972,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0033.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 36,
+      "large_paths": 79,
+      "small_paths": 1255,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0036.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 37,
+      "large_paths": 127,
+      "small_paths": 1974,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0037.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 38,
+      "large_paths": 282,
+      "small_paths": 1392,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0038.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 41,
+      "large_paths": 205,
+      "small_paths": 2125,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0041.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 42,
+      "large_paths": 139,
+      "small_paths": 2441,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0042.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 44,
+      "large_paths": 116,
+      "small_paths": 2407,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0044.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 45,
+      "large_paths": 65,
+      "small_paths": 2040,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0045.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 50,
+      "large_paths": 42,
+      "small_paths": 2933,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0050.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 62,
+      "large_paths": 139,
+      "small_paths": 2662,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0062.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 64,
+      "large_paths": 202,
+      "small_paths": 2424,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0064.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 68,
+      "large_paths": 171,
+      "small_paths": 1994,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0068.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 75,
+      "large_paths": 95,
+      "small_paths": 2624,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0075.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 76,
+      "large_paths": 91,
+      "small_paths": 2544,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0076.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 77,
+      "large_paths": 43,
+      "small_paths": 1851,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0077.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 78,
+      "large_paths": 139,
+      "small_paths": 2134,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0078.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 85,
+      "large_paths": 161,
+      "small_paths": 1892,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0085.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 90,
+      "large_paths": 82,
+      "small_paths": 2632,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0090.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 93,
+      "large_paths": 43,
+      "small_paths": 2204,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0093.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 107,
+      "large_paths": 71,
+      "small_paths": 2895,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0107.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 111,
+      "large_paths": 123,
+      "small_paths": 2110,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0111.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 112,
+      "large_paths": 134,
+      "small_paths": 2293,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0112.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 124,
+      "large_paths": 46,
+      "small_paths": 1787,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0124.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 127,
+      "large_paths": 226,
+      "small_paths": 1836,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0127.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 128,
+      "large_paths": 233,
+      "small_paths": 2324,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0128.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 130,
+      "large_paths": 98,
+      "small_paths": 1527,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0130.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 131,
+      "large_paths": 105,
+      "small_paths": 1328,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0131.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 132,
+      "large_paths": 112,
+      "small_paths": 1997,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0132.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 138,
+      "large_paths": 204,
+      "small_paths": 1750,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0138.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 139,
+      "large_paths": 209,
+      "small_paths": 1184,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0139.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 141,
+      "large_paths": 86,
+      "small_paths": 1844,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0141.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 142,
+      "large_paths": 112,
+      "small_paths": 1586,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0142.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 143,
+      "large_paths": 61,
+      "small_paths": 1832,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0143.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 144,
+      "large_paths": 174,
+      "small_paths": 1107,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0144.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 148,
+      "large_paths": 207,
+      "small_paths": 2767,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0148.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 149,
+      "large_paths": 96,
+      "small_paths": 2927,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0149.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 151,
+      "large_paths": 115,
+      "small_paths": 2882,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0151.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 168,
+      "large_paths": 100,
+      "small_paths": 1010,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0168.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 169,
+      "large_paths": 95,
+      "small_paths": 1843,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0169.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 170,
+      "large_paths": 64,
+      "small_paths": 2727,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0170.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 175,
+      "large_paths": 62,
+      "small_paths": 1550,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0175.jpg"
+    },
+    {
+      "subject": "Fluid",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/FM&HHM.pdf",
+      "page": 182,
+      "large_paths": 107,
+      "small_paths": 1767,
+      "file": "images/civil-core-diagrams/Fluid/Fluid_pg0182.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 3,
+      "large_paths": 41,
+      "small_paths": 8276,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0003.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 6,
+      "large_paths": 177,
+      "small_paths": 1557,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0006.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 8,
+      "large_paths": 82,
+      "small_paths": 1561,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0008.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 10,
+      "large_paths": 76,
+      "small_paths": 2554,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0010.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 15,
+      "large_paths": 61,
+      "small_paths": 1883,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0015.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 18,
+      "large_paths": 43,
+      "small_paths": 2548,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0018.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 27,
+      "large_paths": 91,
+      "small_paths": 2564,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0027.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 35,
+      "large_paths": 51,
+      "small_paths": 553,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0035.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 45,
+      "large_paths": 57,
+      "small_paths": 2353,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0045.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 48,
+      "large_paths": 90,
+      "small_paths": 1739,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0048.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 50,
+      "large_paths": 61,
+      "small_paths": 2663,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0050.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 51,
+      "large_paths": 107,
+      "small_paths": 1833,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0051.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 56,
+      "large_paths": 71,
+      "small_paths": 1927,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0056.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 62,
+      "large_paths": 51,
+      "small_paths": 1286,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0062.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 64,
+      "large_paths": 169,
+      "small_paths": 2860,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0064.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 65,
+      "large_paths": 134,
+      "small_paths": 3467,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0065.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 72,
+      "large_paths": 81,
+      "small_paths": 1367,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0072.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 74,
+      "large_paths": 41,
+      "small_paths": 1246,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0074.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 76,
+      "large_paths": 67,
+      "small_paths": 2417,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0076.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 77,
+      "large_paths": 84,
+      "small_paths": 2635,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0077.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 79,
+      "large_paths": 156,
+      "small_paths": 2050,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0079.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 81,
+      "large_paths": 89,
+      "small_paths": 1427,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0081.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 88,
+      "large_paths": 231,
+      "small_paths": 1798,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0088.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 91,
+      "large_paths": 101,
+      "small_paths": 1922,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0091.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 92,
+      "large_paths": 118,
+      "small_paths": 1238,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0092.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 93,
+      "large_paths": 102,
+      "small_paths": 1945,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0093.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 94,
+      "large_paths": 53,
+      "small_paths": 1848,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0094.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 96,
+      "large_paths": 49,
+      "small_paths": 2228,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0096.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 97,
+      "large_paths": 114,
+      "small_paths": 2934,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0097.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 105,
+      "large_paths": 271,
+      "small_paths": 2071,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0105.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 106,
+      "large_paths": 160,
+      "small_paths": 2026,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0106.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 114,
+      "large_paths": 60,
+      "small_paths": 2289,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0114.jpg"
+    },
+    {
+      "subject": "Soil",
+      "source": "sourcefiles-ce/Aptransco_sourcefiles/Civil/Geotech.pdf",
+      "page": 118,
+      "large_paths": 43,
+      "small_paths": 2285,
+      "file": "images/civil-core-diagrams/Soil/Soil_pg0118.jpg"
+    }
+  ]
+}
