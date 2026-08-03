@@ -10,6 +10,12 @@ import {
     getAttemptsForFlt,
 } from './attemptHistory.js';
 
+const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+
 /** Last mock list used on the Start (home) page — history UI lives only here. */
 let homeMockList = [];
 
@@ -250,8 +256,8 @@ const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteE
             <h4>Detailed Solution</h4>
             <p><strong>Your answer:</strong> ${yourAnswer}</p>
             <p><strong>Correct answer:</strong> ${correctAnswer}</p>
-            ${question.formula ? `<p><strong>Formula:</strong> ${question.formula}</p>` : ''}
-            <p><strong>Explanation:</strong> ${question.explanation || 'No explanation recorded for this question.'}</p>
+            ${question.formula ? `<p><strong>Formula:</strong> ${escapeHtml(question.formula)}</p>` : ''}
+            <div class="review-explanation"><strong>Explanation</strong><pre class="explanation-body">${escapeHtml(question.explanation || 'No explanation recorded for this question.')}</pre></div>
         </div>
     `;
 
@@ -635,8 +641,8 @@ const renderReviewDetail = (index) => {
             <h4>Detailed Solution</h4>
             <p><strong>Your answer:</strong> ${yourAnswer}</p>
             <p><strong>Correct answer:</strong> ${correctAnswer}</p>
-            ${question.formula ? `<p><strong>Formula:</strong> ${question.formula}</p>` : ''}
-            <p><strong>Explanation:</strong> ${question.explanation || 'No explanation recorded for this question.'}</p>
+            ${question.formula ? `<p><strong>Formula:</strong> ${escapeHtml(question.formula)}</p>` : ''}
+            <div class="review-explanation"><strong>Explanation</strong><pre class="explanation-body">${escapeHtml(question.explanation || 'No explanation recorded for this question.')}</pre></div>
         </div>
     `;
 

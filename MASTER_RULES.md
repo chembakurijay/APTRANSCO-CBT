@@ -190,8 +190,9 @@ No diagram question may be submitted for approval without this declaration.
 - Follow **Diagram Source Priority by Stream** (Electrical vs Civil) — do not use a single flat priority for both.
 
 ### Solution & Review Rules
-- Provide detailed solutions for every question.
-- Include correct option, reason, formula, calculation steps, and common mistake discussion.
+- Provide **detailed, exam-level solutions** for every question (see **Detailed Explanation Standard** below).
+- Include correct option, reason, formula, calculation steps, exam-level trap analysis, and topic high-yield points.
+- Never ship one-line explanations or LKG-style distractor notes.
 - Provide candidate performance summaries and learning recommendations.
 
 ### Non-Core Topics
@@ -385,6 +386,16 @@ At least **70% of distractors** must reflect real engineering mistakes:
 - Incorrect code assumptions
 - Common design misconceptions
 
+**Forbidden distractors / trap notes (LKG ban):**
+- Silly / nursery options (“conductor colour”, “only tower height always”, joke options) used as if they were serious traps — either rewrite the option to a real engineering mistake, or if kept for Easy only, the explanation must **not** treat them as high-value traps
+- Trap explanations that say only “wrong” / “incorrect” with no mechanism
+- Trap explanations that invent mistakes a prepared AEE would never make
+
+**Required trap quality:** each wrong option’s explanation must name the **specific exam-level misconception** (wrong formula, forgotten √3, Ra neglected wrongly, PV vs PQ variable mix-up, cover vs effective depth, etc.).
+
+### Golden Rule 3A – Detailed Explanation Depth (Mandatory)
+Every `explanation` field must meet the **Detailed Explanation Standard** (next section). One-line keys like `SIL = V²/Zc` alone are **Fail** for APPROVED packaging.
+
 ### Golden Rule 4 – Hard Question Depth
 Every hard question must require **at least two engineering concepts** or **multiple solution steps**.
 
@@ -395,6 +406,67 @@ Before accepting any question, ask:
 If No → reject or rewrite.  
 Definition-only, nursery-level arithmetic, or decorative diagrams fail this gate automatically.
 
+---
+
+## Detailed Explanation Standard (Mandatory — every question)
+
+Explanations are part of the **exam product**, not a key footnote. Weak one-liners Fail approval packaging even if the keyed answer is correct.
+
+### Minimum structure (store in `explanation`; use clear line breaks)
+
+```
+CORRECT: <option letter/text>
+
+WHY CORRECT:
+<2–5 sentences of engineering reasoning; cite concept / law / code behaviour>
+
+CALCULATION:   (mandatory for Numerical / Diagram+Numerical / any Q with numbers)
+<formula>
+<substituted values>
+<arithmetic steps>
+<final result matching the keyed option>
+(If non-numerical: write "CALCULATION: N/A — conceptual / matching / AR")
+
+TRAP ANALYSIS (exam-level only — no LKG jokes):
+A) <why wrong — name the specific misconception / wrong formula / slip>
+B) <…>
+C) <…>
+D) <…>   (skip the correct letter; cover all three wrong options)
+
+TOPIC HIGH-YIELD (same micro-topic — high exam probability):
+• <must-know point 1 closely related to this Q>
+• <must-know point 2 (formula / thumb rule / standard value / typical trap)>
+• <must-know point 3 (linked PYQ-style theme candidates often see)>
+```
+
+Optional but preferred: fill `formula` with the governing equation(s) used in CALCULATION.
+
+### Length / depth bar
+| Pattern | Min explanation depth |
+|---|---|
+| Numerical / Diagram+Numerical | Full CALCULATION + all traps + ≥3 topic points |
+| Conceptual / Application / Practical / AR / Matching / Table | WHY CORRECT with real depth + all traps + ≥3 topic points |
+| Non-core Quant | Full arithmetic + exam traps (wrong %, base slip) — still no silly jokes |
+| Other Non-core | WHY + trap mechanism + ≥2 high-yield points for that skill |
+
+Rough length guide: technical explanations typically **≥ 450 characters**; one-liners under ~120 characters are automatic Fail for APPROVED banks.
+
+### Trap analysis rules (match exam level)
+- Each wrong option must map to a **plausible AEE / GATE-moderate mistake** (forgot √3, used Z instead of Zc, mixed PV/PQ unknowns, gross vs net area, wrong BMD sign, etc.).
+- **Do not** teach LKG options as serious traps — rewrite such options in a MODIFY pass; until rewritten, note briefly that the option is non-engineering and state the **real** trap type used in actual exams.
+- Never invent traps that contradict the stem.
+
+### Topic high-yield rules
+- Points must be from the **same subject micro-topic** as the question.
+- Prefer **high PYQ / AEE probability** items: standard formulas, standard values, classic comparison traps, “what is often asked next” on the same theme.
+- Do **not** paste entire chapter notes — 3 focused bullets tied to this question’s theme.
+
+### Packaging Fail conditions (explanations)
+- Missing WHY CORRECT, TRAP ANALYSIS (all wrong options), or TOPIC HIGH-YIELD
+- Numerical without CALCULATION steps that reach the keyed option
+- LKG-style trap commentary presented as serious engineering teaching
+- Explanation contradicts the keyed answer
+
 ### Paper Quality Scoring Weights
 | Dimension                       | Weight |
 |----------------------------------|--------|
@@ -404,6 +476,8 @@ Definition-only, nursery-level arithmetic, or decorative diagrams fail this gate
 | Application & Practical         | 15%    |
 | Difficulty calibration          | 10%    |
 | IS Code and standards           | 5%     |
+
+*(Explanation depth is gated by Stage 7 + this Standard — Fail explanations block APPROVED packaging.)*
 
 ---
 
@@ -612,13 +686,14 @@ Stage 6 — Distractor Verification
   - Common design misconception
   Random numbers without engineering basis → REJECT all options, rewrite.
 
-Stage 7 — Explanation Verification
-  The explanation must include ALL four:
-  (a) Why the correct answer is right (engineering reason)
-  (b) Why each wrong option is wrong (specific error it represents)
-  (c) Formula / engineering concept used
-  (d) Calculation steps (for numerical questions)
-  Missing any element → reject.
+Stage 7 — Explanation Verification (Detailed Explanation Standard)
+  The explanation must include ALL of:
+  (a) WHY CORRECT — engineering reason (not a one-liner key)
+  (b) TRAP ANALYSIS — each wrong option tied to a specific exam-level misconception (no LKG joke teaching)
+  (c) Formula / concept used (also prefer `formula` field filled)
+  (d) CALCULATION steps for any numerical / numbered stem — result must match keyed option
+  (e) TOPIC HIGH-YIELD — ≥3 micro-topic points with high exam probability linked to this Q
+  Missing any element → reject / rewrite before APPROVED packaging.
 
 Stage 8 — Practical Question Gate
   A question claiming "Practical/Site Engineering" MUST involve one of:
@@ -1369,8 +1444,11 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Non-core (Audit P) | All five subject gates Pass; zero Civil↔EE Non-core clones |
 | Matching Matrix CBT | Every Matching / Matching+Diagram Q has `matchingMatrix` and site renders List-I / List-II as HTML tables |
 | Table CBT | Every Table / Table-Based Q has `dataTable` and site renders a real HTML `<table>` (not markdown-only stem) |
+| Explanation depth | Every Q meets Detailed Explanation Standard (WHY + CALC if needed + exam-level traps + topic high-yield); no one-liner keys |
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
+
+> Packaging note: Civil/Electrical FLT-01 banks were upgraded to this Explanation Standard in-place (average explanation length ≫ 1000 characters). EE FLT-01 Q21 key corrected to **2.0 pu** so CALCULATION matches |Ef|≈1.79 (1.6 was Re(Ef) trap).
 
 ---
 

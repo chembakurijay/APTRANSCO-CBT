@@ -637,6 +637,25 @@ button, a {
     padding: 22px;
 }
 
+.review-explanation {
+    margin-top: 12px;
+}
+
+.review-explanation .explanation-body {
+    margin: 8px 0 0;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #0f172a;
+    overflow-x: auto;
+}
+
 .review-detail-meta {
     display: flex;
     flex-wrap: wrap;
