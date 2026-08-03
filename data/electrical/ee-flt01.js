@@ -1,6 +1,5 @@
 // Electrical Engineering FLT-01 — APTRANSCO AEE CBT
-// Detailed Explanation Standard: CORRECT / WHY / CALC / TRAPS / TOPIC HIGH-YIELD
-// Q21 key set to 2.0 for |Ef| honesty
+// Detailed Explanation Standard + Q21 |Ef|≈1.79 keyed as 1.8 pu
 // answer is 0-based index into options
 
 export const questions = [
@@ -463,15 +462,15 @@ export const questions = [
     "image": "",
     "options": [
       "1.0",
-      "1.6 pu",
+      "1.8 pu",
       "0.8",
-      "2.0"
+      "1.6"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "|Ef|=|V + Ia(Ra+jXs)|",
-    "explanation": "CORRECT: 2.0\n\nWHY CORRECT:\nSynchronous generator internal voltage on lagging pf exceeds terminal voltage. Assemble the phasor Ef = V + Ia(Ra + jXs). With Ra≈0 the imaginary/real parts yield |Ef|≈1.79 pu, so the exam-honest choice among the list is 2.0 pu. Selecting 1.6 pu is the classic trap of reading only the real part of Ef.\n\nCALCULATION:\nVt=1, Ia=1, Xs=1, Ra≈0, pf=0.8 lag (cosφ=0.8, sinφ=0.6).\nTake V on real axis: Ia = 0.8 − j0.6.\nj Xs Ia = j(0.8 − j0.6) = 0.6 + j0.8.\nEf = V + Ia Ra + j Xs Ia = 1 + 0.6 + j0.8 = 1.6 + j0.8.\n|Ef| = sqrt(1.6^2 + 0.8^2) = sqrt(2.56+0.64)=sqrt(3.2)≈1.79 pu.\nAmong options, 2.0 is the honest nearest rigorous magnitude; 1.6 is the real-part trap (Re(Ef) only). KEY CORRECTED TO 2.0 for Gate C honesty.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “1.0” — confusing |Ef| with |Vt| (forgets Ia jXs drop on lagging load).\nB) “1.6 pu” — takes only Re(Ef)=1.6 and drops the quadrature 0.8 component.\nC) “0.8” — confuses |Ef| with cosφ or with Ra-path thinking.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Alternator regulation: Ef phasor = V + Ia(Ra + jXs); lagging → Ef > V usually.\n• Leading pf can give negative regulation (Ef < V possible).\n• Sync motor V-curves: Ia vs If at constant power — under/over excitation.",
+    "formula": "|Ef|=|V+Ia(Ra+jXs)|",
+    "explanation": "CORRECT: 1.8 pu\n\nWHY CORRECT:\nSynchronous generator internal voltage on lagging pf exceeds terminal voltage. Assemble Ef = V + Ia(Ra + jXs). With Ra≈0, pf=0.8 lag: Ia=0.8−j0.6, jXs Ia=0.6+j0.8, Ef=1.6+j0.8, |Ef|=sqrt(1.6^2+0.8^2)=sqrt(3.2)≈1.79 ≈ 1.8 pu.\n\nCALCULATION:\nVt=1 pu, Ia=1 pu, Xs=1.0 pu, Ra≈0, cosφ=0.8, sinφ=0.6.\nTake V on real axis; Ia=0.8−j0.6.\nj Xs Ia = j(0.8−j0.6)=0.6+j0.8.\nEf = 1 + 0.6 + j0.8 = 1.6 + j0.8.\n|Ef| = sqrt(2.56+0.64)=sqrt(3.2)≈1.789 ≈ 1.8 pu.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “1.0” — confuses |Ef| with |Vt| (forgets j Xs Ia drop on lagging load).\nB) (correct)\nC) “0.8” — confuses |Ef| with cosφ.\nD) “1.6” — takes only Re(Ef)=1.6 and drops the quadrature 0.8 component (classic trap).\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Alternator regulation: Ef phasor = V + Ia(Ra + jXs); lagging → |Ef| > |V| usually.\n• Leading pf can give negative regulation (|Ef| < |V| possible).\n• Sync motor V-curves: Ia vs If at constant power — under/over excitation.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2"
   },
   {
