@@ -11,6 +11,12 @@ const getPerTestPaths = (fltKey) => {
             `../data/civil/flt${testNumber}.js`,
         ];
     }
+    if (folder === 'electrical') {
+        return [
+            `../data/electrical/ee-flt${testNumber}.js`,
+            `../data/electrical/flt${testNumber}.js`,
+        ];
+    }
     return [`../data/${folder}/flt${testNumber}.js`];
 };
 

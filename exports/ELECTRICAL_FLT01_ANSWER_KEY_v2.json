@@ -1,0 +1,12 @@
+{
+  "count": 100,
+  "missing": [],
+  "key_counts": {
+    "A": 25,
+    "B": 25,
+    "C": 25,
+    "D": 25
+  },
+  "sequence": "BCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDABCDA",
+  "max_run": 1
+}
