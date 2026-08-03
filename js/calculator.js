@@ -98,7 +98,7 @@ const renderCalculator = () => {
     const calculator = createElement('div', { className: 'calculator' });
     calculator.innerHTML = `
         <div class="calculator-screen">
-            <div id="calcMode" class="calculator-mode">${mode.toUpperCase()}</div>
+            <div id="calcMode" class="calculator-mode" hidden aria-hidden="true">${mode.toUpperCase()}</div>
             <div id="calcDisplay" class="calculator-display">0</div>
         </div>
         <div class="calculator-buttons"></div>
@@ -113,6 +113,7 @@ const renderCalculator = () => {
     });
 
     calculatorRoot.appendChild(calculator);
+    updateModeDisplay();
 };
 
 const updateDisplay = (value) => {
@@ -122,7 +123,17 @@ const updateDisplay = (value) => {
 
 const updateModeDisplay = () => {
     const modeDisplay = qs('#calcMode');
-    if (modeDisplay) modeDisplay.textContent = mode.toUpperCase();
+    if (modeDisplay) {
+        modeDisplay.textContent = mode.toUpperCase();
+        modeDisplay.hidden = true;
+        modeDisplay.setAttribute('aria-hidden', 'true');
+    }
+    // Highlight active angle-mode button instead of showing DEG on the result
+    qs('#calculator')?.querySelectorAll('.calculator-button').forEach((button) => {
+        if (button.textContent === 'deg' || button.textContent === 'rad') {
+            button.classList.toggle('is-active-mode', button.textContent === mode);
+        }
+    });
 };
 
 const clearExpression = () => {
