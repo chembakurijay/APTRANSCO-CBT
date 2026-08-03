@@ -114,20 +114,40 @@ export const renderQuestionPage = () => {
 
 export const showSubmitModal = () => {
     const summary = buildResultSummary();
+    const answeredAndReview = appState.questions.reduce((count, _, index) => {
+        const answered = appState.answers[index] !== undefined;
+        const review = Boolean(appState.reviewFlags[index]);
+        return count + (answered && review ? 1 : 0);
+    }, 0);
+    const reviewOnly = Math.max(0, summary.reviewCount - answeredAndReview);
+
     const modal = createElement('div', { className: 'submit-overlay' });
     modal.innerHTML = `
         <div class="submit-card">
             <h2>Submit Exam</h2>
-            <p class="submit-text">You have:</p>
+            <p class="submit-text">Review your attempt summary (TCS iON style):</p>
             <div class="submit-grid">
-                <div><strong>Answered</strong><span>${summary.answeredCount}</span></div>
-                <div><strong>Not Answered</strong><span>${summary.notAnsweredCount}</span></div>
-                <div><strong>Marked Review</strong><span>${summary.reviewCount}</span></div>
+                <div class="submit-stat">
+                    <div class="stat-left"><i class="stat-dot answered"></i> Answered</div>
+                    <span>${summary.answeredCount}</span>
+                </div>
+                <div class="submit-stat">
+                    <div class="stat-left"><i class="stat-dot unanswered"></i> Not Answered</div>
+                    <span>${summary.notAnsweredCount}</span>
+                </div>
+                <div class="submit-stat">
+                    <div class="stat-left"><i class="stat-dot review"></i> Marked for Review</div>
+                    <span>${summary.reviewCount}</span>
+                </div>
+                <div class="submit-stat">
+                    <div class="stat-left"><i class="stat-dot answered-review"></i> Answered + Review</div>
+                    <span>${answeredAndReview}</span>
+                </div>
             </div>
-            <p class="submit-warning">Are you sure you want to submit?</p>
+            <p class="submit-warning">Not answered: ${summary.notAnsweredCount} · Review only (no answer): ${reviewOnly}. Submit now?</p>
             <div class="submit-actions">
-                <button class="button button-secondary" id="cancelSubmit">Cancel</button>
-                <button class="button button-primary" id="confirmSubmit">Submit</button>
+                <button class="button button-secondary" id="cancelSubmit" type="button">Cancel</button>
+                <button class="button button-primary" id="confirmSubmit" type="button">Submit</button>
             </div>
         </div>
     `;

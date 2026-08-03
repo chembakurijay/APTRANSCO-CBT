@@ -56,12 +56,12 @@
                         <li>Any unanswered questions will be visible in the palette.</li>
                     </ul>
                 </div>
-                <div class="legend-grid">
-                    <div class="legend-item legend-answered"><span></span>Answered</div>
-                    <div class="legend-item legend-current"><span></span>Current</div>
-                    <div class="legend-item legend-review"><span></span>Marked for Review</div>
-                    <div class="legend-item legend-unanswered"><span></span>Not Answered</div>
-                </div>
+                    <div class="legend-grid">
+                        <div class="legend-item legend-answered"><span></span>Answered</div>
+                        <div class="legend-item legend-unanswered"><span></span>Not Answered</div>
+                        <div class="legend-item legend-review"><span></span>Marked for Review</div>
+                        <div class="legend-item legend-current"><span></span>Current Question</div>
+                    </div>
                 <label class="checkbox-label">
                     <input type="checkbox" id="declaration" />
                     I have read and understood the instructions.
@@ -97,6 +97,12 @@
                         <p>Click a number to jump to a question.</p>
                     </div>
                     <div id="questionPalette" class="question-palette"></div>
+                    <div class="palette-legend" aria-label="Palette colour legend">
+                        <div class="legend-item legend-answered"><span></span>Answered</div>
+                        <div class="legend-item legend-unanswered"><span></span>Not Answered</div>
+                        <div class="legend-item legend-review"><span></span>Marked for Review</div>
+                        <div class="legend-item legend-current"><span></span>Current</div>
+                    </div>
                 </aside>
                 <article class="question-card">
                     <div class="question-card-header">
@@ -178,6 +184,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/app.js?v=20260804b"></script>
+    <script type="module" src="js/app.js?v=20260804d"></script>
 </body>
 </html>
