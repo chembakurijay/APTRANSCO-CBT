@@ -30,7 +30,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
-- **Full Final Approval Workflow** complete (Compliance → Setter Rubric → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–M) and **Acceptance Threshold** met before APPROVED
+- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates) and **Acceptance Threshold** met before APPROVED
 
 ---
 
@@ -229,8 +229,11 @@ Before finalizing any paper, verify:
 - Question Origin Audit (**G**)
 - APTRANSCO Similarity Audit (**H**) ≥ 90%
 - PYQ Traceability Audit (**J**)
+- Subject Weightage Coverage, PYQ Themes Coverage, and Answer Key & Calculation Verification gates Pass
 - Acceptance Threshold gates all Pass before **APPROVED**
-- Concept Coverage, Bloom’s Taxonomy, and Formula Reuse audits (**K–M**) Pass
+- Concept Coverage, Bloom’s Taxonomy, Formula Reuse, Distractor Quality, and Key Distribution audits (**K–O**) Pass
+- Non-core Subject Gates (Quant / GA / Reasoning / English / Computer) Pass
+- User has explicitly said **APPROVED**
 
 Final papers must be certified as fully compliant.
 
@@ -602,17 +605,24 @@ Fail Stage-9 Application Gate → reclassify; do not keep the Application label.
 
 ## Diagram Dependency Verification (Mandatory for every Diagram question)
 
-For every question tagged Diagram / Figure / Graph-with-figure:
+For every question tagged Diagram / Figure / Graph-with-figure, assign **one** dependency level:
+
+| Status | Meaning | Approval action |
+|---|---|---|
+| **PASS** | Impossible to select the correct option without the diagram | Keep |
+| **STRONG** | Diagram clearly improves / almost necessary for solving | Keep (preferred for most diagram Qs) |
+| **WEAK** | Diagram helpful but not essential; stem alone often enough | **MODIFY** — tighten stem/options or demote tag |
+| **FAIL** | Diagram unnecessary / decorative | **Fail gate** — remove figure or rewrite |
 
 ```
-Diagram dependency check:
+Diagram dependency check (per Q):
 - Image path + crop region:
+- Dependency level: PASS / STRONG / WEAK / FAIL
 - Without diagram, can a well-prepared candidate still pick the correct option? YES/NO
-- If YES → FAIL. Remove diagram tag or rewrite so options require the figure.
-- If NO → PASS (options depend on reading labels/geometry/curves in the crop)
+- Notes:
 ```
 
-A Diagram question is **invalid** unless the dependency check result is **NO** (cannot answer correctly without the diagram).
+**Gate Pass rule:** every Diagram Q must be **PASS** or **STRONG**. Any **WEAK** → Modify before APPROVED. Any **FAIL** → Fail Diagram Dependency Audit.
 
 This is in addition to Stage 4 Diagram Validation (10-point check).
 
@@ -631,10 +641,9 @@ After the setter finishes the paper + rubrics, a **separate Human Examiner pass*
 4. Any Reject must be rewritten and re-examined before user approval for code.
 
 ### Examiner checklist per question
-- Is the engineering concept correct?
-- Is the answer unquestionably correct?
+- Is the answer unquestionably correct (Gate C verified — calculation / derivation matches the keyed option)?
 - Is Easy/Medium/Hard label justified (and Hard/Application justifications present if claimed)?
-- For diagram Qs: does Diagram dependency check truly pass (cannot solve without figure)?
+- For diagram Qs: is dependency **PASS** or **STRONG** (not WEAK/FAIL)?
 - Are distractors realistic engineering errors?
 - Does this resemble a real APTRANSCO/APPSC AEE item (not LKG)?
 - Independent final verdict: **Accept** / **Modify** / **Reject**
@@ -649,7 +658,7 @@ Examiner note: <one-line reason>
 Paper may be shown to the user for approval only after the Human Examiner pass is complete.  
 User approval is still required before converting to code.
 
-**Mandatory before any paper is marked APPROVED:** complete the **Final Approval Workflow** end-to-end (Compliance Dashboard through Audits G–M). A paper that passes Human Examiner but fails any later audit must not be APPROVED.
+**Mandatory before any paper is marked APPROVED:** complete the **Final Approval Workflow** end-to-end (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner through Audits G–O and Non-core Subject Gates). A paper that passes Human Examiner but fails any later audit must not be APPROVED.
 
 ---
 
@@ -706,7 +715,7 @@ Every question must carry one of these five labels:
 | **New Concept** | Topic never tested in any available source paper |
 
 No paper may contain more than **2 Direct PYQs**.  
-Origin mix must also satisfy the **Final Approval Workflow** (Audits G–M) and the **Acceptance Threshold** below (brand-new ≥ 60%, Modified PYQ band per threshold, exact mock duplicates = 0).
+Origin mix must also satisfy the **Final Approval Workflow** (Weightage + PYQ Themes + Answer Verification + Audits G–O + Non-core gates) and the **Acceptance Threshold** below (brand-new ≥ 60%, Modified PYQ band per threshold, exact mock duplicates = 0).
 
 ---
 
@@ -716,29 +725,163 @@ Only after **all** of the following pass may a paper be marked **APPROVED** (and
 
 | # | Gate | What it proves |
 |---|---|---|
-| 1 | **Compliance Dashboard** | Weightage, sequence, difficulty, pattern minima, Direct-PYQ cap |
-| 2 | **Setter Rubric** | Every Q scored (Concept/Calc/Distractors/Language/Exam sim); no self-ACCEPT |
-| 3 | **Human Examiner Pass** | Independent Accept / Modify / Reject |
-| 4 | **Diagram Dependency Audit** | Diagram Qs unsolvable without figure (dependency PASS) |
-| 5 | **Hard / Application Justification Audit** | Every Hard/Application claim has a valid justification line |
-| 6 | **G. Question Origin Audit** | Where each Q came from; Direct ≤2; brand-new ≥60% |
-| 7 | **H. APTRANSCO Similarity Audit** | Subject-wise match; overall ≥90%; honesty on differences |
-| 8 | **I. Duplicate Audit** | Vs prior FLTs / ST / mini / PYQ use in mocks; exact dups = 0 |
-| 9 | **J. PYQ Traceability Audit** | Every PYQ-derived Q lists source + modification level |
-| 10 | **K. Concept Coverage Audit** | Syllabus micro-topics covered; no accidental holes or triple-stacking |
-| 11 | **L. Bloom’s Taxonomy Audit** | Cognitive mix fits AEE CBT (Apply/Analyze dominant; Remember capped) |
-| 12 | **M. Formula Reuse Audit** | Same formula / numerical pattern not overused inside the paper |
+| 1 | **A. Subject Weightage Coverage Check** | Exact subject counts + official sequence (tech + Non-core) |
+| 2 | **B. PYQ Themes Coverage Check** | High-frequency APTRANSCO-family themes hit (or deferred in writing) |
+| 3 | **Compliance Dashboard** | Difficulty, pattern minima, Direct-PYQ cap (weightage → Gate 1) |
+| 4 | **Setter Rubric** | Every Q scored (Concept/Calc/Distractors/Language/Exam sim); no self-ACCEPT |
+| 5 | **C. Answer Key & Calculation Verification** | Every keyed option reworked from stem; matches one given option exactly |
+| 6 | **Human Examiner Pass** | Independent Accept / Modify / Reject |
+| 7 | **Diagram Dependency Audit** | Every Diagram Q is **PASS** or **STRONG** (not WEAK/FAIL) |
+| 8 | **Hard / Application Justification Audit** | Every Hard/Application claim has a valid justification line |
+| 9 | **G. Question Origin Audit** | Where each Q came from; Direct ≤2; brand-new ≥60% |
+| 10 | **H. APTRANSCO Similarity Audit** | Subject-wise match; overall ≥90%; honesty on differences |
+| 11 | **I. Duplicate Audit** | Vs prior FLTs / ST / mini / PYQ use in mocks; exact dups = 0 |
+| 12 | **J. PYQ Traceability Audit** | Every PYQ-derived Q lists source + modification level |
+| 13 | **K. Concept Coverage Audit** | Syllabus micro-topics covered; no accidental holes or triple-stacking |
+| 14 | **L. Bloom’s Taxonomy Audit** | Overall + **by-subject** Apply/Analyze mix; Remember capped |
+| 15 | **M. Formula Reuse Audit** | Same formula / numerical pattern not overused inside the paper |
+| 16 | **N. Distractor Quality Audit** | Every wrong option is a plausible mistake; no joke/impossible options |
+| 17 | **O. Answer Key Distribution Audit** | A/B/C/D balanced; no long same-letter runs |
+| 18 | **P. Non-core Subject Gates** | Quant / GA / Reasoning / English / Computer each pass detailed checks |
 
 **Fail any gate → not APPROVED.** Fix → re-run failed gates (and Human Examiner if stems changed materially).
 
 ---
 
-## Mandatory Pre-Approval Audits (G–M)
+## Top gates (run first — before setter polish)
+
+### A. Subject Weightage Coverage Check (Mandatory — Gate 1)
+
+Proves the paper matches **official subject weightage and sequence** exactly (not “about right”).
+
+#### Technical weightage table (stream-specific)
+
+Use the counts from **Official Exam Structure** above.
+
+**Electrical example template:**
+
+| Subject | Required Qs | Actual Qs | Q-range | Sequence OK? | Status |
+|---|---:|---:|---|---|---|
+| Power Systems | 14 | … | Q1–Q14 | Y/N | Pass/Fail |
+| Electrical Machines | 13 | … | Q15–Q27 | Y/N | Pass/Fail |
+| Electric Circuits | 11 | … | Q28–Q38 | Y/N | Pass/Fail |
+| Control Systems | 8 | … | Q39–Q46 | Y/N | Pass/Fail |
+| Power Electronics & Drives | 7 | … | Q47–Q53 | Y/N | Pass/Fail |
+| Measurements | 6 | … | Q54–Q59 | Y/N | Pass/Fail |
+| Analog Electronics | 4 | … | Q60–Q63 | Y/N | Pass/Fail |
+| Digital Electronics | 3 | … | Q64–Q66 | Y/N | Pass/Fail |
+| Utilization | 4 | … | Q67–Q70 | Y/N | Pass/Fail |
+| **Tech total** | **70** | … | | | |
+
+**Civil:** use SOM 15 / RCC 13 / Fluid 11 / Steel 12 / Foundation 10 / Soil 9 with official Q-ranges.
+
+#### Non-core weightage table
+
+| Subject | Required | Actual | Q-range | Status |
+|---|---:|---:|---|---|
+| Quantitative Aptitude | 8 | … | Q71–Q78 | Pass/Fail |
+| General Awareness | 7 | … | Q79–Q85 | Pass/Fail |
+| Reasoning | 5 | … | Q86–Q90 | Pass/Fail |
+| English | 5 | … | Q91–Q95 | Pass/Fail |
+| Computer | 5 | … | Q96–Q100 | Pass/Fail |
+| **Non-core total** | **30** | … | | |
+
+#### Weightage rules
+- **Exact** required counts — no ±1 drift without written user waiver
+- Subject order must match **Official Question Sequence** (no subject block swapped)
+- No technical Q placed inside Non-core ranges (and vice versa)
+- Intra-subject: questions must belong to that subject’s syllabus (misfiled Q = Fail)
+- Sum tech = 70, Non-core = 30, paper = 100
+
+**Gate 1 Pass** only if every row Pass and totals exact.
+
+---
+
+### B. PYQ Themes Coverage Check (Mandatory — Gate 2)
+
+Proves the paper reflects **what APTRANSCO-family exams actually ask**, not only syllabus labels.
+
+Distinct from:
+- **Gate 1** (counts/sequence)
+- **Audit J** (source of a specific PYQ-derived stem)
+- **Audit K** (syllabus micro-topics / over-stack)
+
+#### Theme register (build from uploaded PYQ / heatmap)
+
+For each technical subject, list **high-frequency PYQ themes** (recurring topics across APTRANSCO / GENCO / DISCOM / APPSC AEE family papers). Mark each as **Covered / Deferred / Missing**.
+
+**Electrical example themes (illustrative — expand from your PYQ bank):**
+
+| Subject | High-frequency PYQ themes (examples) | Covered in this FLT | Deferred to later FLT | Missing (no plan) |
+|---|---|---|---|---|
+| Power Systems | SIL, pu Zbase, Ferranti, string efficiency, faults/symmetrical components, corona/bundling, load flow type, xfmr connections, stability/swing, protection intro | … | … | … |
+| Machines | Transformer (equiv/auto/oil), sync machine pf/V-curves, IM slip/torque, parallel alts, starter | … | … | … |
+| Circuits | RLC resonance, Thevenin/Norton, 2-wattmeter, mutual M, filters, transients | … | … | … |
+| Control | Type/ess, 2nd-order ζ/ωn, Bode/Nyquist/root-locus (rotate across FLTs), block reduction, stability | … | … | … |
+| PE | SCR, controlled rectifier, chopper, inverter, drives/thermal | … | … | … |
+| Measurements | Bridges, CRO, CT/PT burden, extension, energy/PF meter (rotate) | … | … | … |
+| Analog / Digital / Util | Op-amp, diode/Zener, gates/FF, traction/lighting/SEC | … | … | … |
+
+**Civil:** build analogous theme rows (SOM beams/torsion, RCC design clauses, fluid turbines, steel connections, foundation bearing, soil compaction, etc.).
+
+#### PYQ theme rules
+- For subjects in this FLT, cover **≥ 60%** of that subject’s **high-frequency** theme list (or justify shortfall)
+- Every **Missing** theme must either be **Deferred** (named later FLT) or rewritten into this paper — bare Missing = Fail
+- Prefer themes that appear in APTRANSCO-family papers over rare GATE-only research themes
+- Covering a theme does **not** require a Direct PYQ — Inspired / AI on that theme counts
+- Non-core: at least one classic theme each for Quant, Reasoning, English, Computer; GA must mix ≥3 buckets (see Gate P)
+- Across the FLT **series**, the union of Covered themes should approach full high-frequency set (track in a running heatmap)
+
+**Gate 2 Pass** only if no unplanned Missing themes and per-subject coverage ≥ 60% (or waived in writing).
+
+---
+
+### C. Answer Key & Calculation Verification (Mandatory — Gate 5)
+
+Proves the **keyed answer is actually correct** for the stem and that the computed/derived result **matches one of the given options** (not a value that isn’t listed).
+
+This is independent of Distractor Quality (N) and Key Distribution (O): N checks wrong options; O checks letter balance; **C checks that the right option is right**.
+
+#### Per-question verification template
+
+| Q | Type | Work shown? | Computed / derived result | Matches option? | Keyed | Verified key | Status |
+|---|---|---|---|---|---|---|---|
+| Q2 | Numerical | Y | Zb=484 Ω | Yes → (A) | A | A | Pass |
+| Q8 | Numerical | Y | η=… | Yes → (C) | C | C | Pass |
+| Q16 | Numerical | Soft | … | Options unresolved | ? | ? | Fail |
+| Q70 | Conceptual | Y | Definition SEC | Yes → (A) | A | A | Pass |
+
+#### Verification rules (all must hold)
+- **Every Numerical** question: full recalculation from stem data (and diagram-read values if Diagram Q); show formula + arithmetic
+- **Computed value must equal** the keyed option (within stated rounding); if result is not among A/B/C/D → **Fail** (fix options or stem)
+- **Exactly one** option matches the verified result; if two options both fit → **Fail** (ambiguous key)
+- **Conceptual / Standard / AR / Match:** re-derive from syllabus / code / definition; confirm keyed statement is uniquely correct among the four
+- **Diagram Qs:** use only data visible after crop + stem; key must match what the figure forces
+- **Non-core Quant:** same numerical recalculation rule; GA/English/Computer/Reasoning: fact / logic re-check against a standard source
+- **No “Ans A by habit”:** after any option reshuffle (Gate O), **re-run Gate C** on every moved key
+- Soft / “lock after crop” / placeholder keys = **Fail** until locked
+
+#### Summary counts (mandatory in approval pack)
+
+| Bucket | Count | Verified Pass | Fail / Soft |
+|---|---:|---:|---:|
+| Technical numerical | … | … | … |
+| Technical non-numerical | … | … | … |
+| Non-core | … | … | … |
+| **Paper total** | **100** | … | … |
+
+**Gate 5 Pass** only if **100/100** keys verified (0 soft, 0 mismatch, 0 “result not in options”).
+
+---
+
+## Mandatory Pre-Approval Audits (G–O + Non-core)
 
 Audits **G–J** cover originality, APTRANSCO realism, and reuse across the mock series.  
-Audits **K–M** cover syllabus coverage, cognitive level, and intra-paper formula/pattern reuse.
+Audits **K–M** cover syllabus coverage, cognitive level, and intra-paper formula/pattern reuse.  
+Audits **N–O** cover option quality and answer-key fairness.  
+Audit **P** covers Non-core (Quant / GA / Reasoning / English / Computer) in detail.
 
-Together with Compliance, Setter Rubric, Human Examiner, Diagram Dependency, and Hard/Application Justification audits, they form the complete QA gate.
+Together with **Subject Weightage (A)**, **PYQ Themes (B)**, **Answer Verification (C)**, Compliance, Setter Rubric, Human Examiner, Diagram Dependency, and Hard/Application Justification audits, they form the complete QA gate.
 
 ### G. Question Origin Audit (Mandatory)
 
@@ -914,7 +1057,18 @@ Checks cognitive level mix for AEE CBT realism (not school recall dominance).
 - Every **Hard** question must be Analyze and/or Evaluate (not Remember)
 - Every **Application** / **Practical** tagged question must be Apply or Evaluate (Stage 8–9 gates)
 
-Report a count table + list any Hard/Application Qs that fail Bloom alignment.
+#### Mandatory: Bloom by subject (not only paper totals)
+
+Report Apply / Analyze (and Remember if high) **per technical subject** so one subject cannot hide recall-heavy items behind a healthy overall mix:
+
+| Subject | Remember | Understand | Apply | Analyze | Evaluate | Status |
+|---|---:|---:|---:|---:|---:|---|
+| e.g. Power Systems | … | … | … | … | … | Pass/Fail |
+| e.g. Machines | … | … | … | … | … | Pass/Fail |
+
+**By-subject Fail** if any technical subject with ≥ 4 Qs has Remember > 30% of that subject’s Qs, or Apply+Analyze < 50% of that subject’s Qs.
+
+Report: overall counts + by-subject table + list any Hard/Application Qs that fail Bloom alignment.
 
 ---
 
@@ -940,23 +1094,186 @@ Prevents the same formula or numerical template from dominating the paper.
 
 ---
 
+### N. Distractor Quality Audit (Mandatory)
+
+Reviews **every incorrect option**, not only the keyed answer. Often improves paper quality more than adding new stems.
+
+#### Per-question template
+
+| Q | Good distractors? | Notes |
+|---|---|---|
+| Q2 | ✓ | Common calculation mistakes |
+| Q8 | ✓ | Typical misconceptions |
+| Q16 | ✗ | One option physically impossible |
+| Q49 | ✗ | Two options obviously unrealistic |
+
+#### Distractor rules (all must hold)
+- **No joke / absurd options** (nonsense units, cartoon values)
+- **No obviously impossible** values when the stem implies a physical range
+- Every distractor reflects a **plausible student mistake** (wrong formula, sign error, omitted √3, wrong code clause, etc.)
+- **No duplicate distractors** (two options that are the same after rounding / synonym)
+- **Exactly one** unambiguously correct answer
+- Numerical options: wrong answers should land near common error paths, not random far-off numbers
+- Verbal options: each wrong choice maps to a known misconception; not three synonyms of “none”
+
+**Pass** only if ≥ **95%** of questions have all three distractors rated Good; any Fail items listed for rewrite before APPROVED.
+
+---
+
+### O. Answer Key Distribution Audit (Mandatory)
+
+Ensures the answer key is fair and not pattern-guessable.
+
+#### Distribution table (template)
+
+| Option | Count | % of paper |
+|---|---:|---:|
+| A | XX | XX% |
+| B | XX | XX% |
+| C | XX | XX% |
+| D | XX | XX% |
+
+#### Key distribution rules
+- Each of A/B/C/D ideally **22–28%** of the paper (100-Q paper: about **22–28** each)
+- **Hard Fail** if any option is **> 35%** or **< 15%** of the paper
+- **No run** of the **same letter ≥ 5** consecutive answers (e.g. A,A,A,A,A)
+- Prefer no run ≥ 4; flag runs of 4 for optional reshuffle
+- Within each Non-core block, avoid all answers clustering on one letter
+
+**Pass** if distribution within bands and no run ≥ 5.
+
+---
+
+### P. Non-core Subject Gates (Mandatory — detailed)
+
+Non-core is **10 marks** but often the approval blocker (exact clones across streams, weak English, trivial Computer). Every FLT must pass **all five** subject gates below **in addition to** Duplicate Audit I.
+
+#### P0 — Non-core common rules (all five subjects)
+
+| Check | Rule | Fail if |
+|---|---|---|
+| Count & order | Exact syllabus counts; order Quant → GA → Reasoning → English → Computer | Wrong count/order |
+| Difficulty | Mix Easy/Medium; at most **1 Hard** in Non-core total | ≥2 Hard or all Easy |
+| Originality | No exact clone of Civil↔Electrical Non-core or prior FLT Non-core | Exact/near-exact stem+options |
+| Distractors | Same Distractor Audit N rules | Joke / impossible / duplicate options |
+| One key | Unambiguous single correct answer | Two defendable keys |
+| APTRANSCO tone | Short, exam-like; no essay stems | Paragraph-length stems |
+| No tech bleed | Non-core must not require EE/CE core knowledge | Needs engineering syllabus |
+| Freshness | Prefer ≥ **70%** Non-core brand-new vs other published mocks | Heavy reuse |
+
+---
+
+#### P1 — Quantitative Aptitude Gate
+
+| Check | Detail |
+|---|---|
+| Topic spread | Distinct topics across Qs (e.g. %, ratio, time-work, SI/CI, averages, speed-distance, profit-loss, number system) — **no two Qs same micro-topic** in one FLT |
+| Calculation load | Solvable in ≤ 90 s; one or two steps preferred |
+| Numbers | Clean integers / standard fractions; avoid calculator-only decimals unless intentional |
+| Options | Equally spaced or error-path based; no “all of these” unless carefully keyed |
+| Traps | Include classic traps (forgot % of %, wrong base, LCM slip) as distractors |
+| Level | SSC/banking AEE Non-core level — not CAT extreme |
+
+**Pass:** topic uniqueness + timeable + Distractor N Pass for all Quant Qs.
+
+---
+
+#### P2 — General Awareness / Current Affairs Gate
+
+| Check | Detail |
+|---|---|
+| Recency | Prefer facts stable for exam window; if CA, state year/context in audit notes |
+| Verifiability | Every keyed fact must be checkable from a standard source |
+| No controversy | Avoid unsettled politics / disputed claims |
+| Utility mix | AP/India polity, geography, economy, science, awards, sports — **not five polity Qs** |
+| Ambiguity | No “best known for” without a clear unique answer |
+| Currency | Units and official names current (ministry renames, state capitals) |
+
+**Pass:** all keys verified; topic diversity ≥ 3 buckets; zero ambiguous keys.
+
+---
+
+#### P3 — Reasoning Gate
+
+| Check | Detail |
+|---|---|
+| Type mix | Across FLTs rotate: series, coding-decoding, blood relation, direction, syllogism, seating, analogy, odd-one — **this FLT: no two identical reasoning templates** |
+| Diagram independence | Prefer text-only for Non-core; if figure used, apply Diagram Dependency PASS/STRONG |
+| Ambiguity | Syllogism / seating must have unique conclusion under standard exam conventions |
+| Language | Clear premises; no cultural knowledge required |
+| Difficulty | Medium preferred; Hard only if multi-step but still ≤ 90 s |
+
+**Pass:** unique templates in-paper; unique key; no cultural bias.
+
+---
+
+#### P4 — English Gate
+
+| Check | Detail |
+|---|---|
+| Skill mix | Across English Qs in this FLT: different skills (synonym, antonym, one-word, error spotting, idiom, fill-blank, etc.) — **not multiple synonym-only items** |
+| Dictionary sense | Keyed meaning must match standard usage for the stem context |
+| Distractors | Near-synonyms that fail in context; not random unrelated words |
+| No obsolete slang | Prefer formal/exam English |
+| Cross-stream | **Must not** reuse Civil FLT English stems/options on Electrical (and vice versa) |
+| Spelling | Stem and options free of typos that create a second “correct” reading |
+
+**Pass:** distinct skills; verified key; zero cross-stream clones.
+
+---
+
+#### P5 — Computer Awareness Gate
+
+| Check | Detail |
+|---|---|
+| Topic mix | Across Computer Qs in this FLT: distinct areas (e.g. hardware, OS, MS Office, networking, internet, cybersecurity, shortcuts, file types) — **no duplicate micro-topic** |
+| Currency | Prefer still-true facts (USB, HTTP/HTTPS, RAM/ROM, phishing) over obsolete pack names unless classic |
+| Depth | Awareness level — not programming / GATE CSE |
+| Distractors | Plausible tech confusions (RAM vs ROM, HTTP vs HTTPS, phishing vs spam) |
+| Cross-stream | **Must not** clone Civil↔Electrical Computer Qs |
+| No vendor trivia | Avoid obscure product version numbers unless widely taught |
+
+**Pass:** distinct topics; awareness-level; zero cross-stream clones.
+
+---
+
+#### Non-core gate summary table (mandatory in every approval pack)
+
+| Subject | Qs | Topic uniqueness | Cross-stream clone? | Distractors | Key unique? | Gate |
+|---|---|---|---|---|---|---|
+| Quant | … | Pass/Fail | Y/N | Pass/Fail | Y/N | Pass/Fail |
+| GA | … | Pass/Fail | Y/N | Pass/Fail | Y/N | Pass/Fail |
+| Reasoning | … | Pass/Fail | Y/N | Pass/Fail | Y/N | Pass/Fail |
+| English | … | Pass/Fail | Y/N | Pass/Fail | Y/N | Pass/Fail |
+| Computer | … | Pass/Fail | Y/N | Pass/Fail | Y/N | Pass/Fail |
+
+**Overall Non-core Gate P:** Pass only if **all five** subject rows Pass.
+
+---
+
 ### Recommended Acceptance Threshold (Mandatory for APPROVED)
 
 Before any paper is **APPROVED** (and before code / CBT packaging), **all Final Approval Workflow gates** must Pass, including:
 
 | Gate | Requirement |
 |---|---|
+| Subject weightage (Gate A) | Exact subject counts + official sequence |
+| PYQ themes (Gate B) | ≥60% high-frequency themes/subject; no unplanned Missing |
+| Answer verification (Gate C) | **100/100** keys reworked; result matches exactly one given option |
 | Original / brand-new questions | **≥ 60%** |
 | Modified PYQs | **20–35%** (prefer closer to 20% when possible) |
 | Direct PYQs | **≤ 2 questions** |
 | Exact duplicates vs earlier mocks | **0** |
 | Repeated concepts vs earlier mocks | **≤ 10%** |
 | APTRANSCO similarity (overall) | **≥ 90%** |
-| Diagram-dependent questions | **12–15** (technical paper; per Diagram rules) |
+| Diagram-dependent questions | **12–15** (technical; each PASS or STRONG) |
 | Overall originality (Audit I) | **≥ 90%** |
 | Concept coverage (Audit K) | Missing must-cover = 0; over-stack = 0 |
-| Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech |
+| Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech; by-subject rules |
 | Formula reuse (Audit M) | No formula in >2 tech Qs; no clone templates |
+| Distractor quality (Audit N) | ≥95% Qs with all distractors Good |
+| Key distribution (Audit O) | Each letter ~22–28%; no same-letter run ≥5 |
+| Non-core (Audit P) | All five subject gates Pass; zero Civil↔EE Non-core clones |
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
 
@@ -965,18 +1282,24 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 ### Approval sequence (locked)
 
 ```
-1  Compliance Dashboard
-2  Setter Rubric (no self-ACCEPT)
-3  Human Examiner Pass
-4  Diagram Dependency Audit
-5  Hard / Application Justification Audit
-6  G Question Origin
-7  H APTRANSCO Similarity
-8  I Duplicate Analysis
-9  J PYQ Traceability
-10 K Concept Coverage
-11 L Bloom’s Taxonomy
-12 M Formula Reuse
+1  A Subject Weightage Coverage Check
+2  B PYQ Themes Coverage Check
+3  Compliance Dashboard (difficulty / patterns / Direct-PYQ)
+4  Setter Rubric (no self-ACCEPT)
+5  C Answer Key & Calculation Verification (100/100; result ∈ options)
+6  Human Examiner Pass
+7  Diagram Dependency Audit (PASS / STRONG / WEAK / FAIL)
+8  Hard / Application Justification Audit
+9  G Question Origin
+10 H APTRANSCO Similarity
+11 I Duplicate Analysis
+12 J PYQ Traceability
+13 K Concept Coverage
+14 L Bloom’s Taxonomy (overall + by subject)
+15 M Formula Reuse
+16 N Distractor Quality Audit
+17 O Answer Key Distribution Audit
+18 P Non-core Subject Gates (Quant / GA / Reasoning / English / Computer)
    → Acceptance Threshold all Pass
    → User APPROVED / MODIFY / REJECT
    → Code + crops only after APPROVED
