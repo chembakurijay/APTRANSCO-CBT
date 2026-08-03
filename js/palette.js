@@ -1,17 +1,27 @@
 import { appState } from './storage.js';
 import { qs, clearElement, createElement } from './utils.js';
 
-const paletteStatus = (index) => {
+/** TCS iON-style status classes for palette buttons. */
+export const paletteStatus = (index) => {
+    const classes = [];
+    const answered = appState.answers[index] !== undefined;
+    const review = Boolean(appState.reviewFlags[index]);
+
+    if (answered && review) {
+        classes.push('answered', 'review');
+    } else if (review) {
+        classes.push('review');
+    } else if (answered) {
+        classes.push('answered');
+    } else {
+        classes.push('unanswered');
+    }
+
     if (index === appState.currentQuestionIndex) {
-        return 'current';
+        classes.push('current');
     }
-    if (appState.reviewFlags[index]) {
-        return 'review';
-    }
-    if (appState.answers[index] !== undefined) {
-        return 'answered';
-    }
-    return 'unanswered';
+
+    return classes.join(' ');
 };
 
 export const renderPalette = () => {
@@ -26,6 +36,7 @@ export const renderPalette = () => {
             attributes: {
                 type: 'button',
                 'data-question-index': index,
+                title: paletteStatus(index).replace(/current/, '').trim() || 'unanswered',
             },
         });
 
@@ -43,7 +54,5 @@ export const updatePalette = () => {
     buttons.forEach((button) => {
         const index = Number(button.getAttribute('data-question-index'));
         button.className = `palette-button ${paletteStatus(index)}`;
-        // Do not focus palette buttons here — focusing them while answering
-        // steals focus from options and can hide/scroll the palette panel.
     });
 };
