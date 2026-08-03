@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Plane stress element (for Mohr centre)</text>
+  <rect x="120" y="100" width="160" height="160" fill="#e2e8f0" stroke="#0f172a" stroke-width="3"/>
+  <text x="170" y="90" font-family="Segoe UI, Arial" font-size="16">py</text>
+  <text x="300" y="185" font-family="Segoe UI, Arial" font-size="16">px</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f172a"/></marker></defs>
+  <line x1="200" y1="100" x2="200" y2="70" stroke="#0f172a" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="280" y1="180" x2="330" y2="180" stroke="#0f172a" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="450" y1="260" x2="820" y2="260" stroke="#334155" stroke-width="2"/>
+  <line x1="620" y1="80" x2="620" y2="320" stroke="#334155" stroke-width="2"/>
+  <text x="800" y="285" font-family="Segoe UI, Arial" font-size="16">p (σ)</text>
+  <text x="630" y="95" font-family="Segoe UI, Arial" font-size="16">q (τ)</text>
+  <circle cx="680" cy="260" r="5" fill="#b91c1c"/>
+  <text x="690" y="250" font-family="Segoe UI, Arial" font-size="16" fill="#b91c1c">Centre on p-axis</text>
+  <text x="450" y="340" font-family="Segoe UI, Arial" font-size="15">Centre at ((px+py)/2 , 0) — not on q-axis</text>
+</svg>

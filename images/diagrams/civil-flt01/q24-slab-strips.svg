@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Two-way slab — middle &amp; edge strips</text>
+  <rect x="80" y="70" width="560" height="280" fill="#e2e8f0" stroke="#0f172a" stroke-width="2"/>
+  <rect x="150" y="70" width="420" height="280" fill="#bfdbfe" stroke="#0369a1" stroke-width="2"/>
+  <text x="300" y="220" font-family="Segoe UI, Arial" font-size="18">Middle strip = 3/4 panel</text>
+  <text x="90" y="220" font-family="Segoe UI, Arial" font-size="14" transform="rotate(-90 100 220)">Edge</text>
+  <text x="600" y="220" font-family="Segoe UI, Arial" font-size="14">Edge</text>
+</svg>

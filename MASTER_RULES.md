@@ -3,6 +3,36 @@
 This document is the highest authority for the APTRANSCO CBT project.
 All implementation and question generation must strictly follow these rules.
 
+## Primary Aim — APTRANSCO Level Match (Non-Negotiable)
+
+The main aim of every FLT is to **match the real APTRANSCO AEE CBT level** with **high efficiency and high quality**.
+
+This overrides “filler”, textbook-LKG, or template-style questions.
+
+### What “APTRANSCO level” means
+- Style and depth similar to **APTRANSCO / APPSC AEE / APGENCO / TSTRANSCO** technical papers
+- Prefer **application, design judgement, numerical multi-step, diagram-dependent, and site/practical** questions over definition recall
+- Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
+- A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
+
+### High-efficiency generation rules
+1. One concept → one question (no duplicate concepts in the same paper)
+2. Every numerical must be dual-method verified before inclusion
+3. Every diagram question must use a **cropped relevant figure** from approved sources (civil-core / PYQ / question banks) — never paste a full page in the CBT
+4. Reject any question that fails the scored Quality Rubric (total < 9/10) or a separate Human Examiner REJECT
+5. Do not inflate Easy count to “fill” the paper
+6. The question setter must NEVER self-assign ACCEPT. ACCEPT / MODIFY / REJECT is allowed only in a separate Human Examiner pass
+
+### High-quality bar (paper is publishable only if)
+- Weightage + sequence exact
+- Pattern mix meets mandatory types
+- Diagrams are essential and cropped correctly
+- Distractors are real engineering mistakes
+- Explanations are complete (why correct + why each wrong + formula/steps)
+- Overall paper would pass a senior APTRANSCO examiner review
+
+---
+
 ## Official Exam Structure
 
 ### Civil Engineering Technical Weightage (70 Questions)
@@ -107,9 +137,9 @@ Higher-priority sources must override lower-priority sources.
 ## Quality & Validation Rules
 
 ### Difficulty Distribution
-- Easy: 30–35%
-- Medium: 45–50%
-- Hard: 20–25%
+- Easy: **25% only** (fixed — do not exceed)
+- Medium: 50%
+- Hard: 25%
 
 ### Question Type Distribution
 - Conceptual Questions
@@ -215,7 +245,7 @@ Final papers must be certified as fully compliant.
 > These categories overlap. A single question can combine Numerical + Diagram + Application.
 
 ### Numerical Questions (21)
-Must not be simple formula substitution. Suggested difficulty split: 8 Easy, 9 Medium, 4 Hard.
+Must not be simple formula substitution. Suggested difficulty split: 5 Easy, 11 Medium, 5 Hard (aligned to overall Easy 25% / Medium 50% / Hard 25%).
 Topics: Stress, Strain, Beam reactions, SFD/BMD, Deflection, Torsion, RCC design, Slab, Footing, Flow, Turbines, Bearing capacity, Settlement.
 
 ### Conceptual Questions (14)
@@ -255,12 +285,21 @@ Use for: Turbine types vs head/flow, Footing types vs condition, Soil tests vs p
 At least one question must provide a **data table** (not just a text list) that the candidate must read to answer.
 Use for: Comparative properties, Code design values, SPT vs density correlation, Efficiency vs load data, Test results table.
 
-### Difficulty Distribution
-| Difficulty | Questions |
-|------------|-----------|
-| Easy       | 16        |
-| Medium     | 38        |
-| Hard       | 16        |
+### Difficulty Distribution (Technical Section – 70 Questions)
+| Difficulty | Questions | % of Technical |
+|------------|-----------|----------------|
+| Easy       | 18        | 25% (fixed max) |
+| Medium     | 35        | 50% |
+| Hard       | 17        | 25% |
+
+### Difficulty Distribution (Full Paper – 100 Questions)
+| Difficulty | Questions | % of Paper |
+|------------|-----------|------------|
+| Easy       | 25        | **25% only** |
+| Medium     | 50        | 50% |
+| Hard       | 25        | 25% |
+
+> Easy must not exceed 25% of the paper. Do not use the older 30–35% Easy band.
 
 ---
 
@@ -284,6 +323,13 @@ At least **70% of distractors** must reflect real engineering mistakes:
 
 ### Golden Rule 4 – Hard Question Depth
 Every hard question must require **at least two engineering concepts** or **multiple solution steps**.
+
+### Golden Rule 5 – APTRANSCO Level Gate
+Before accepting any question, ask:
+> “Would this appear in a real APTRANSCO AEE CBT, and would a prepared AEE candidate need real engineering skill to solve it?”
+
+If No → reject or rewrite.  
+Definition-only, nursery-level arithmetic, or decorative diagrams fail this gate automatically.
 
 ### Paper Quality Scoring Weights
 | Dimension                       | Weight |
@@ -471,43 +517,104 @@ Stage 10 — Duplicate Check (Concept-Based)
 
 ---
 
-## Question Quality Score (Minimum 9/10 Required)
+## Question Quality Rubric (Mandatory — replaces flat “9/10” stamps)
 
-Every question receives a quality score before inclusion. Score below 9 → rewrite or reject.
+Every question must be scored with an **explicit rubric**.  
+**Forbidden:** writing only `Quality Score: 9/10` or `QS 9` without dimension scores.  
+**Forbidden:** the question setter writing `Examiner: ACCEPT` / `ACCEPT` on their own generation.
 
-| Dimension | Max Score |
-|---|---|
-| Subject Accuracy — correct syllabus topic | 1 |
-| Difficulty Accuracy — label matches engine output | 1 |
-| Calculation Accuracy — dual-method verified | 1 |
-| Diagram Relevance — image essential and validated | 1 |
-| Engineering Value — tests real engineering skill | 2 |
-| Distractor Quality — all options trace to real errors | 1 |
-| Language Quality — unambiguous, grammatically correct | 1 |
-| Exam Similarity — resembles APTRANSCO/APPSC AEE style | 1 |
-| **Total** | **9** |
+### Rubric dimensions (Total = 10)
 
-An auto-score of 9/9 (all checks passed) is required. Any failed check = 0 for that dimension = reject.
+| Dimension | Max | What to score |
+|---|---|---|
+| **Concept** | 2 | Syllabus-correct, single clear concept, no ambiguity |
+| **Calculation** | 2 | Dual-method verified if numerical; N/A items score on logic consistency (0–2) |
+| **Distractors** | 2 | Each wrong option maps to a real engineering mistake |
+| **Language** | 2 | Clear, unambiguous CBT wording (score 0, 1, or 2) |
+| **Exam similarity** | 2 | Feels like APTRANSCO / APPSC AEE (not LKG / school recall) |
+
+**Minimum to keep a question in the draft paper:** **total ≥ 9/10**, and **Exam similarity must be ≥ 1**.  
+If Exam similarity = 0 → automatic reject/rewrite even if other scores are high.
+
+### Required output format per question (setter pass)
+
+```
+Rubric: Concept _/2 | Calculation _/2 | Distractors _/2 | Language _/2 | Exam similarity _/2 | Total _/10
+```
+
+No ACCEPT/MODIFY/REJECT label is allowed in the setter pass.
 
 ---
 
-## Human Examiner Mode (Final Gate Before Approval)
+## Pattern Classification Justifications (Mandatory)
 
-After generating a complete paper, the AI must switch roles:
+### Hard justification (required on every Hard question)
+After the stem, the setter must add one short line:
+
+```
+Hard justification: <why Hard — must cite ≥2 of: multi-step numerical, diagram interpretation,
+IS/standard application, engineering judgement, two-concept intersection, design decision>
+```
+
+If this line cannot be written honestly → downgrade difficulty.
+
+### Application justification (required on every Application question)
+```
+Application justification: <what knowledge is APPLIED; why this is not mere recall>
+```
+
+Fail Stage-9 Application Gate → reclassify; do not keep the Application label.
+
+---
+
+## Diagram Dependency Verification (Mandatory for every Diagram question)
+
+For every question tagged Diagram / Figure / Graph-with-figure:
+
+```
+Diagram dependency check:
+- Image path + crop region:
+- Without diagram, can a well-prepared candidate still pick the correct option? YES/NO
+- If YES → FAIL. Remove diagram tag or rewrite so options require the figure.
+- If NO → PASS (options depend on reading labels/geometry/curves in the crop)
+```
+
+A Diagram question is **invalid** unless the dependency check result is **NO** (cannot answer correctly without the diagram).
+
+This is in addition to Stage 4 Diagram Validation (10-point check).
+
+---
+
+## Human Examiner Mode (Separate Pass — Final Gate Before Approval)
+
+After the setter finishes the paper + rubrics, a **separate Human Examiner pass** is mandatory.
 
 > **"You are no longer the question setter. You are a senior APTRANSCO AEE examiner reviewing this paper for publication."**
 
-For each question, independently verify — without trusting earlier decisions:
-- Is the engineering concept correct?
-- Is the answer unquestionably correct (no ambiguity)?
-- Is the difficulty label genuinely justified?
-- Is the diagram essential and cannot be removed?
-- Are the distractors realistic engineering errors?
-- Does this question resemble a real APTRANSCO/APPSC AEE question?
-- Final verdict: **ACCEPT** / **MODIFY** / **REJECT**
+### Separation rules (non-negotiable)
+1. The examiner must **not** copy setter rubrics blindly.
+2. The examiner must **independently** assign Accept / Modify / Reject.
+3. The setter must **not** pre-label Accept.
+4. Any Reject must be rewritten and re-examined before user approval for code.
 
-Any question receiving REJECT must be rewritten before the paper is submitted for approval.
-This separation between generator and reviewer eliminates self-confirmation bias.
+### Examiner checklist per question
+- Is the engineering concept correct?
+- Is the answer unquestionably correct?
+- Is Easy/Medium/Hard label justified (and Hard/Application justifications present if claimed)?
+- For diagram Qs: does Diagram dependency check truly pass (cannot solve without figure)?
+- Are distractors realistic engineering errors?
+- Does this resemble a real APTRANSCO/APPSC AEE item (not LKG)?
+- Independent final verdict: **Accept** / **Modify** / **Reject**
+
+### Examiner output format per question
+
+```
+Human Examiner: Accept | Modify | Reject
+Examiner note: <one-line reason>
+```
+
+Paper may be shown to the user for approval only after the Human Examiner pass is complete.  
+User approval is still required before converting to code.
 
 ---
 

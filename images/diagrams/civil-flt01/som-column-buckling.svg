@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial" font-size="20" fill="#0f172a">Column Effective Length Cases</text>
+  <!-- Both ends hinged -->
+  <line x1="120" y1="80" x2="120" y2="300" stroke="#0ea5e9" stroke-width="6"/>
+  <circle cx="120" cy="80" r="8" fill="#334155"/>
+  <circle cx="120" cy="300" r="8" fill="#334155"/>
+  <text x="90" y="330" font-family="Arial" font-size="14" fill="#0f172a">Both hinged</text>
+  <text x="95" y="350" font-family="Arial" font-size="13" fill="#475569">Le = L</text>
+  <!-- One fixed one free -->
+  <line x1="320" y1="80" x2="360" y2="300" stroke="#0ea5e9" stroke-width="6"/>
+  <rect x="300" y="295" width="80" height="12" fill="#334155"/>
+  <text x="285" y="330" font-family="Arial" font-size="14" fill="#0f172a">FixedFree</text>
+  <text x="295" y="350" font-family="Arial" font-size="13" fill="#475569">Le = 2L</text>
+  <!-- Both fixed -->
+  <line x1="540" y1="80" x2="540" y2="300" stroke="#0ea5e9" stroke-width="6"/>
+  <rect x="510" y="74" width="60" height="12" fill="#334155"/>
+  <rect x="510" y="295" width="60" height="12" fill="#334155"/>
+  <text x="505" y="330" font-family="Arial" font-size="14" fill="#0f172a">Both fixed</text>
+  <text x="510" y="350" font-family="Arial" font-size="13" fill="#475569">Le = 0.5L</text>
+  <!-- One fixed one hinged -->
+  <line x1="740" y1="80" x2="760" y2="300" stroke="#0ea5e9" stroke-width="6"/>
+  <rect x="710" y="74" width="60" height="12" fill="#334155"/>
+  <circle cx="760" cy="300" r="8" fill="#334155"/>
+  <text x="690" y="330" font-family="Arial" font-size="14" fill="#0f172a">FixedHinged</text>
+  <text x="710" y="350" font-family="Arial" font-size="13" fill="#475569">Le = 0.7L</text>
+</svg>

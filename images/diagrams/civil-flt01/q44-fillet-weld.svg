@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <rect width="720" height="360" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Fillet weld detail</text>
+  <rect x="120" y="200" width="400" height="40" fill="#94a3b8"/>
+  <rect x="120" y="80" width="40" height="160" fill="#94a3b8"/>
+  <path d="M160,200 L280,200 L160,80 Z" fill="#fde68a" stroke="#0f172a" stroke-width="2"/>
+  <line x1="160" y1="200" x2="210" y2="150" stroke="#b91c1c" stroke-width="3"/>
+  <text x="220" y="150" font-family="Segoe UI, Arial" font-size="16" fill="#b91c1c">Throat</text>
+  <text x="200" y="230" font-family="Segoe UI, Arial" font-size="16">Leg</text>
+</svg>

@@ -1,23 +1,34 @@
 import { appState } from './storage.js';
 
-const getPerTestPath = (fltKey) => {
+const getPerTestPaths = (fltKey) => {
     const match = fltKey.match(/^(civil|electrical)(\d{2})$/);
     if (!match) return null;
     const folder = match[1];
     const testNumber = match[2];
-    return `../data/${folder}/flt${testNumber}.js`;
+    if (folder === 'civil') {
+        return [
+            `../data/civil/ce-flt${testNumber}.js`,
+            `../data/civil/flt${testNumber}.js`,
+        ];
+    }
+    return [`../data/${folder}/flt${testNumber}.js`];
 };
 
 export const loadQuestionBank = async (fltKey) => {
     let questions;
-    const perTestPath = getPerTestPath(fltKey);
+    const perTestPaths = getPerTestPaths(fltKey);
 
-    if (perTestPath) {
-        try {
-            const module = await import(perTestPath);
-            questions = module.questions;
-        } catch {
-            // Fallback to single file if per-test file is missing
+    if (perTestPaths) {
+        for (const perTestPath of perTestPaths) {
+            try {
+                const module = await import(perTestPath);
+                if (Array.isArray(module.questions)) {
+                    questions = module.questions;
+                    break;
+                }
+            } catch {
+                // Try next path / fall back to questionBanks.js
+            }
         }
     }
 

@@ -23,3 +23,13 @@ node_modules/
 
 # Environment files
 .env
+
+# Large local source material (not required for GitHub Pages exam runtime)
+sourcefiles-ce/
+images/civil-core-diagrams/
+images/diagram-questions/
+images/diagram-questions-EE/
+
+# Heavy chat dumps (keep smaller approval markdowns)
+exports/chat.json
+exports/chat-export.json

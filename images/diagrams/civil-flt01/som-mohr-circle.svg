@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial" font-size="20" fill="#0f172a">Mohr's Circle  Plane Stress</text>
+  <line x1="80" y1="220" x2="820" y2="220" stroke="#334155" stroke-width="2"/>
+  <line x1="450" y1="40" x2="450" y2="400" stroke="#334155" stroke-width="2"/>
+  <text x="800" y="245" font-family="Arial" font-size="16" fill="#0f172a">√</text>
+  <text x="460" y="55" font-family="Arial" font-size="16" fill="#0f172a">ƒ</text>
+  <circle cx="450" cy="220" r="140" fill="none" stroke="#0ea5e9" stroke-width="3"/>
+  <circle cx="450" cy="220" r="4" fill="#dc2626"/>
+  <circle cx="310" cy="220" r="5" fill="#16a34a"/>
+  <circle cx="590" cy="220" r="5" fill="#16a34a"/>
+  <text x="280" y="250" font-family="Arial" font-size="15" fill="#166534">√É (min)</text>
+  <text x="560" y="250" font-family="Arial" font-size="15" fill="#166534">√Å (max)</text>
+  <text x="430" y="205" font-family="Arial" font-size="14" fill="#b91c1c">C</text>
+  <line x1="310" y1="220" x2="590" y2="220" stroke="#16a34a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="420" y="390" font-family="Arial" font-size="14" fill="#475569">Centre C on √-axis; radius = (√Å√É)/2</text>
+</svg>

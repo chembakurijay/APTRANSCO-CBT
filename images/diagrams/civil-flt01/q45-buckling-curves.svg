@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#f8fafc"/>
+  <text x="24" y="36" font-family="Segoe UI, Arial" font-size="20">Buckling curves a–d</text>
+  <line x1="80" y1="360" x2="720" y2="360" stroke="#334155"/>
+  <line x1="80" y1="360" x2="80" y2="60" stroke="#334155"/>
+  <text x="700" y="385" font-family="Segoe UI, Arial" font-size="16">λ</text>
+  <text x="30" y="80" font-family="Segoe UI, Arial" font-size="16">fcd/fy</text>
+  <path d="M80,100 Q300,120 500,220 T720,340" fill="none" stroke="#15803d" stroke-width="3"/>
+  <path d="M80,110 Q300,140 500,250 T720,350" fill="none" stroke="#0369a1" stroke-width="3"/>
+  <path d="M80,125 Q300,165 500,280 T720,360" fill="none" stroke="#b45309" stroke-width="3"/>
+  <path d="M80,145 Q300,195 500,310 T720,370" fill="none" stroke="#b91c1c" stroke-width="3"/>
+  <line x1="400" y1="60" x2="400" y2="360" stroke="#94a3b8" stroke-dasharray="6 4"/>
+  <text x="410" y="80" font-family="Segoe UI, Arial" font-size="14">λ≈1.0</text>
+  <text x="600" y="150" font-family="Segoe UI, Arial" font-size="16" fill="#15803d">a (highest)</text>
+  <text x="600" y="180" font-family="Segoe UI, Arial" font-size="16" fill="#0369a1">b</text>
+  <text x="600" y="210" font-family="Segoe UI, Arial" font-size="16" fill="#b45309">c</text>
+  <text x="600" y="240" font-family="Segoe UI, Arial" font-size="16" fill="#b91c1c">d</text>
+</svg>
