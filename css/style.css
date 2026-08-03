@@ -177,8 +177,9 @@ button, a {
 }
 
 .legend-unanswered span {
-    background: #ef4444;
-    border: none;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    box-sizing: border-box;
 }
 
 .palette-legend {
@@ -207,8 +208,17 @@ button, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 10000;
     padding: 20px;
+}
+
+/* When appended inside the fullscreen exam root, cover that root */
+.exam-page .submit-overlay,
+.exam-page:fullscreen > .submit-overlay,
+.exam-page:-webkit-full-screen > .submit-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 10000;
 }
 
 .submit-card {

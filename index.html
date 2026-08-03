@@ -96,6 +96,23 @@
                         <h3>Question Palette</h3>
                         <p>Click a number to jump to a question.</p>
                     </div>
+                    <div class="palette-summary" id="paletteSummary" aria-live="polite">
+                        <div class="palette-summary-item is-answered">
+                            <span class="palette-summary-dot"></span>
+                            <span>Answered</span>
+                            <strong id="paletteAnsweredCount">0</strong>
+                        </div>
+                        <div class="palette-summary-item is-unanswered">
+                            <span class="palette-summary-dot"></span>
+                            <span>Unanswered</span>
+                            <strong id="paletteUnansweredCount">0</strong>
+                        </div>
+                        <div class="palette-summary-item is-review">
+                            <span class="palette-summary-dot"></span>
+                            <span>Marked for Review</span>
+                            <strong id="paletteReviewCount">0</strong>
+                        </div>
+                    </div>
                     <div id="questionPalette" class="question-palette"></div>
                     <div class="palette-legend" aria-label="Palette colour legend">
                         <div class="legend-item legend-answered"><span></span>Answered</div>
@@ -104,29 +121,43 @@
                         <div class="legend-item legend-current"><span></span>Current</div>
                     </div>
                 </aside>
-                <article class="question-card">
-                    <div class="question-card-header">
-                        <span id="questionStatus" class="question-status">Question 1 of 100</span>
-                        <span id="questionSubject" class="question-subject"></span>
+                <article class="question-card" id="questionCard">
+                    <div class="question-card-scroll">
+                        <div class="question-card-header">
+                            <span id="questionStatus" class="question-status">Question 1 of 100</span>
+                            <span id="questionSubject" class="question-subject"></span>
+                        </div>
+                        <h3 id="questionText" class="question-text">Loading question...</h3>
+                        <div id="questionMedia" class="question-media"></div>
+                        <div id="optionsList" class="options-list"></div>
                     </div>
-                    <h3 id="questionText" class="question-text">Loading question...</h3>
-                    <div id="questionMedia" class="question-media"></div>
-                    <div id="optionsList" class="options-list"></div>
                     <div class="actions-row exam-navigation-row">
                         <button class="button button-secondary" id="previousButton" type="button">Previous</button>
                         <button class="button button-primary" id="saveNextButton" type="button">Save & Next</button>
                         <button class="button button-secondary" id="reviewButton" type="button">Mark for Review & Next</button>
                         <button class="button button-secondary" id="clearButton" type="button">Clear Response</button>
                         <button class="button button-secondary" id="nextButton" type="button">Next</button>
+                    </div>
+                    <div class="exam-submit-row">
                         <button class="button button-danger" id="submitButton" type="button">Submit Exam</button>
                     </div>
                 </article>
 
-                <aside class="side-panel calculator-panel collapsed" id="calculatorPanel" hidden>
-                    <h3>Engineering Calculator</h3>
-                    <div id="calculator"></div>
-                </aside>
             </div>
+
+            <aside class="calculator-panel calculator-float collapsed" id="calculatorPanel" hidden>
+                <div class="calculator-titlebar" id="calculatorDragHandle" title="Drag to move">
+                    <div class="calculator-titlebar-text">
+                        <h3>Engineering Calculator</h3>
+                        <span class="calculator-hint">Drag · Resize corner</span>
+                    </div>
+                    <button type="button" class="calculator-close" id="calculatorCloseBtn" aria-label="Hide calculator">×</button>
+                </div>
+                <div class="calculator-float-body">
+                    <div id="calculator"></div>
+                </div>
+                <div class="calculator-resize-handle" id="calculatorResizeHandle" title="Drag to resize" aria-hidden="true"></div>
+            </aside>
         </section>
 
         <section id="resultPage" class="page-section" hidden>
@@ -184,6 +215,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/app.js?v=20260804d"></script>
+    <script type="module" src="js/app.js?v=20260804f"></script>
 </body>
 </html>

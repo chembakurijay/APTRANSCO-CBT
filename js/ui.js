@@ -152,12 +152,21 @@ export const showSubmitModal = () => {
         </div>
     `;
 
-    modal.querySelector('#cancelSubmit')?.addEventListener('click', () => document.body.removeChild(modal));
+    const removeModal = () => {
+        if (modal.parentNode) {
+            modal.parentNode.removeChild(modal);
+        }
+    };
+
+    modal.querySelector('#cancelSubmit')?.addEventListener('click', removeModal);
     modal.querySelector('#confirmSubmit')?.addEventListener('click', () => {
-        document.body.removeChild(modal);
+        removeModal();
         window.dispatchEvent(new Event('confirmSubmit'));
     });
-    document.body.appendChild(modal);
+
+    // Fullscreen only shows the fullscreen element's subtree — append there so the prompt appears.
+    const host = document.fullscreenElement || document.body;
+    host.appendChild(modal);
 };
 
 export const populateResultPage = () => {

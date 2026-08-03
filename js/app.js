@@ -3,7 +3,7 @@ import { loadQuestionBank } from './questionLoader.js';
 import { bindNavigation } from './navigation.js';
 import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions } from './ui.js';
 import { startTimer, stopTimer } from './timer.js';
-import { initCalculator } from './calculator.js';
+import { initCalculator, showFloatingCalculator, hideFloatingCalculator } from './calculator.js';
 import { qs } from './utils.js';
 
 const mockList = [
@@ -46,6 +46,9 @@ const bindApplicationEvents = () => {
     window.addEventListener('confirmSubmit', () => {
         stopTimer();
         appState.submitted = true;
+        if (document.fullscreenElement && document.exitFullscreen) {
+            document.exitFullscreen().catch(() => {});
+        }
         populateResultPage();
         switchPage('resultPage');
     });
@@ -106,15 +109,32 @@ const bindPanelActions = () => {
         setPanelVisible(panel, button, willShow, showLabel, hideLabel);
     };
 
-    // Default: palette on, calculator off
+    // Default: palette on, calculator off (floating — does not take exam layout space)
     setPanelVisible(palettePanel, paletteToggle, true, 'Show Palette', 'Hide Palette');
-    setPanelVisible(calculatorPanel, calculatorToggle, false, 'Show Calculator', 'Hide Calculator');
+    hideFloatingCalculator();
+    if (calculatorToggle) {
+        calculatorToggle.setAttribute('aria-expanded', 'false');
+        calculatorToggle.textContent = 'Show Calculator';
+    }
 
     paletteToggle?.addEventListener('click', () => {
         togglePanel(palettePanel, paletteToggle, 'Show Palette', 'Hide Palette');
     });
     calculatorToggle?.addEventListener('click', () => {
-        togglePanel(calculatorPanel, calculatorToggle, 'Show Calculator', 'Hide Calculator');
+        const willShow = calculatorPanel.classList.contains('collapsed') || calculatorPanel.hidden;
+        if (willShow) {
+            showFloatingCalculator();
+            calculatorToggle.setAttribute('aria-expanded', 'true');
+            calculatorToggle.textContent = 'Hide Calculator';
+        } else {
+            hideFloatingCalculator();
+            calculatorToggle.setAttribute('aria-expanded', 'false');
+            calculatorToggle.textContent = 'Show Calculator';
+        }
+        if (examBody) {
+            examBody.style.display = 'flex';
+            void examBody.offsetWidth;
+        }
     });
 
     fullscreenButton?.addEventListener('click', async () => {

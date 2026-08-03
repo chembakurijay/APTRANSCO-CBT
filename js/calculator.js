@@ -212,4 +212,189 @@ const handleCalculatorInput = (input) => {
 
 export const initCalculator = () => {
     renderCalculator();
+    initFloatingCalculator();
 };
+
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+
+const getCalcBoundsParent = () => {
+    const examPage = qs('#examPage');
+    if (document.fullscreenElement === examPage) {
+        return examPage;
+    }
+    return null;
+};
+
+const getParentMetrics = () => {
+    const parent = getCalcBoundsParent();
+    if (parent) {
+        const rect = parent.getBoundingClientRect();
+        return {
+            parent,
+            originX: rect.left,
+            originY: rect.top,
+            width: parent.clientWidth,
+            height: parent.clientHeight,
+        };
+    }
+    return {
+        parent: null,
+        originX: 0,
+        originY: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+    };
+};
+
+const placeCalculatorDefault = (panel) => {
+    const width = panel.offsetWidth || 320;
+    const height = panel.offsetHeight || 480;
+    const { width: parentW, height: parentH } = getParentMetrics();
+    const left = Math.max(12, parentW - width - 24);
+    const top = Math.max(12, parentH - height - 24);
+    panel.style.left = `${left}px`;
+    panel.style.top = `${top}px`;
+    panel.style.right = 'auto';
+    panel.style.bottom = 'auto';
+};
+
+export const showFloatingCalculator = () => {
+    const panel = qs('#calculatorPanel');
+    if (!panel) return;
+    panel.classList.remove('collapsed');
+    panel.hidden = false;
+    panel.style.display = 'flex';
+    if (!panel.dataset.placed) {
+        requestAnimationFrame(() => {
+            placeCalculatorDefault(panel);
+            panel.dataset.placed = '1';
+        });
+    }
+};
+
+export const hideFloatingCalculator = () => {
+    const panel = qs('#calculatorPanel');
+    if (!panel) return;
+    panel.classList.add('collapsed');
+    panel.hidden = true;
+    panel.style.display = 'none';
+};
+
+const initFloatingCalculator = () => {
+    const panel = qs('#calculatorPanel');
+    const handle = qs('#calculatorDragHandle');
+    const resizeHandle = qs('#calculatorResizeHandle');
+    const closeBtn = qs('#calculatorCloseBtn');
+    if (!panel || !handle) return;
+
+    let dragging = false;
+    let resizing = false;
+    let startX = 0;
+    let startY = 0;
+    let startLeft = 0;
+    let startTop = 0;
+    let startW = 0;
+    let startH = 0;
+
+    const readPanelLocalPos = () => {
+        const { originX, originY } = getParentMetrics();
+        const rect = panel.getBoundingClientRect();
+        return {
+            left: rect.left - originX,
+            top: rect.top - originY,
+            width: rect.width,
+            height: rect.height,
+        };
+    };
+
+    const onPointerMove = (event) => {
+        if (!dragging && !resizing) return;
+        const { width: parentW, height: parentH } = getParentMetrics();
+
+        if (dragging) {
+            const dx = event.clientX - startX;
+            const dy = event.clientY - startY;
+            const w = panel.offsetWidth;
+            const h = panel.offsetHeight;
+            const left = clamp(startLeft + dx, 0, Math.max(0, parentW - w));
+            const top = clamp(startTop + dy, 0, Math.max(0, parentH - h));
+            panel.style.left = `${left}px`;
+            panel.style.top = `${top}px`;
+            panel.style.right = 'auto';
+            panel.style.bottom = 'auto';
+        }
+
+        if (resizing) {
+            const dx = event.clientX - startX;
+            const dy = event.clientY - startY;
+            const minW = 260;
+            const minH = 300;
+            const maxW = Math.min(560, parentW - startLeft);
+            const maxH = Math.min(720, parentH - startTop);
+            panel.style.width = `${clamp(startW + dx, minW, maxW)}px`;
+            panel.style.height = `${clamp(startH + dy, minH, maxH)}px`;
+        }
+    };
+
+    const stopInteract = () => {
+        dragging = false;
+        resizing = false;
+        document.body.classList.remove('calculator-dragging');
+        window.removeEventListener('pointermove', onPointerMove);
+        window.removeEventListener('pointerup', stopInteract);
+    };
+
+    handle.addEventListener('pointerdown', (event) => {
+        if (event.target.closest('.calculator-close')) return;
+        event.preventDefault();
+        dragging = true;
+        panel.dataset.placed = '1';
+        const pos = readPanelLocalPos();
+        startX = event.clientX;
+        startY = event.clientY;
+        startLeft = pos.left;
+        startTop = pos.top;
+        document.body.classList.add('calculator-dragging');
+        window.addEventListener('pointermove', onPointerMove);
+        window.addEventListener('pointerup', stopInteract);
+    });
+
+    resizeHandle?.addEventListener('pointerdown', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        resizing = true;
+        panel.dataset.placed = '1';
+        const pos = readPanelLocalPos();
+        startX = event.clientX;
+        startY = event.clientY;
+        startLeft = pos.left;
+        startTop = pos.top;
+        startW = pos.width;
+        startH = pos.height;
+        document.body.classList.add('calculator-dragging');
+        window.addEventListener('pointermove', onPointerMove);
+        window.addEventListener('pointerup', stopInteract);
+    });
+
+    closeBtn?.addEventListener('click', () => {
+        hideFloatingCalculator();
+        const toggle = qs('#toggleCalculator');
+        if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = 'Show Calculator';
+        }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+        if (panel.hidden || panel.classList.contains('collapsed')) return;
+        const { width: parentW, height: parentH } = getParentMetrics();
+        const pos = readPanelLocalPos();
+        const left = clamp(pos.left, 0, Math.max(0, parentW - pos.width));
+        const top = clamp(pos.top, 0, Math.max(0, parentH - pos.height));
+        panel.style.left = `${left}px`;
+        panel.style.top = `${top}px`;
+        panel.style.right = 'auto';
+        panel.style.bottom = 'auto';
+    });
+};
+
