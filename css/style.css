@@ -743,11 +743,46 @@ button, a {
 
 .attempt-key-panel .review-detail {
     max-height: none;
+    margin-top: 8px;
 }
 
 .attempt-key-panel .review-palette {
     max-height: 220px;
     overflow-y: auto;
+}
+
+.attempt-analysis-heading {
+    margin: 16px 0 8px;
+    font-size: 1rem;
+}
+
+.attempt-click-hint {
+    color: #1d4ed8;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.history-q-link {
+    border: none;
+    background: transparent;
+    color: #1d4ed8;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.history-q-link:hover,
+.history-q-link.is-active {
+    color: #1e3a8a;
+}
+
+.attempt-key-table tbody tr {
+    cursor: default;
+}
+
+.attempt-key-table td:first-child {
+    white-space: nowrap;
 }
 
 .attempt-analysis-actions {

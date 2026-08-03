@@ -183,6 +183,12 @@ const loadQuestionsForFltReview = async (fltId) => {
 
 const historyOptionLetter = (index) => String.fromCharCode(65 + Number(index));
 
+const selectedLetterFallback = (attempt, index) => {
+    const selected = attempt.answers?.[index];
+    if (selected === undefined || selected === null) return '—';
+    return historyOptionLetter(selected);
+};
+
 const getHistoryStatus = (attempt, index, question) => {
     const selected = attempt.answers?.[index];
     const keyItem = attempt.answerKey?.[index];
@@ -192,10 +198,12 @@ const getHistoryStatus = (attempt, index, question) => {
     return selected === correct ? 'correct' : 'wrong';
 };
 
-const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteEl) => {
+const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteEl, keyTableEl) => {
     const question = questions[index];
     if (!detailEl || !question) {
-        if (detailEl) detailEl.innerHTML = '<p>Select a question number above to view the detailed solution.</p>';
+        if (detailEl) {
+            detailEl.innerHTML = '<p>Select a question number above to view the detailed solution.</p>';
+        }
         return;
     }
 
@@ -254,15 +262,23 @@ const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteE
     paletteEl?.querySelectorAll('.review-palette-btn').forEach((btn) => {
         btn.classList.toggle('active', Number(btn.dataset.index) === index);
     });
+    keyTableEl?.querySelectorAll('.history-q-link').forEach((btn) => {
+        btn.classList.toggle('is-active', Number(btn.dataset.index) === index);
+    });
+
+    detailEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
 
-const renderHistoryAnswerReview = (attempt, questions, filter, paletteEl, detailEl) => {
+const renderHistoryAnswerReview = (attempt, questions, filter, paletteEl, detailEl, keyTableEl) => {
     if (!paletteEl) return;
     clearElement(paletteEl);
+    if (keyTableEl) clearElement(keyTableEl);
 
+    const visibleIndexes = [];
     questions.forEach((question, index) => {
         const status = getHistoryStatus(attempt, index, question);
         if (filter !== 'all' && status !== filter) return;
+        visibleIndexes.push(index);
 
         const button = createElement('button', {
             className: `review-palette-btn ${status}`,
@@ -274,14 +290,36 @@ const renderHistoryAnswerReview = (attempt, questions, filter, paletteEl, detail
             },
         });
         button.addEventListener('click', () => {
-            renderHistoryReviewDetail(attempt, questions, index, detailEl, paletteEl);
+            renderHistoryReviewDetail(attempt, questions, index, detailEl, paletteEl, keyTableEl);
         });
         paletteEl.appendChild(button);
+
+        if (keyTableEl) {
+            const keyItem = attempt.answerKey?.[index] || {};
+            const row = createElement('tr', { className: `attempt-key-${status}` });
+            row.innerHTML = `
+                <td>
+                    <button type="button" class="history-q-link" data-index="${index}">Q${index + 1}</button>
+                </td>
+                <td>${question.subject || keyItem.subject || '—'}</td>
+                <td>${question.topic || keyItem.topic || '—'}</td>
+                <td>${keyItem.selectedLetter ?? (selectedLetterFallback(attempt, index))}</td>
+                <td>${keyItem.correctLetter ?? historyOptionLetter(question.answer)}</td>
+                <td>${status}</td>
+            `;
+            row.querySelector('.history-q-link')?.addEventListener('click', () => {
+                renderHistoryReviewDetail(attempt, questions, index, detailEl, paletteEl, keyTableEl);
+            });
+            keyTableEl.appendChild(row);
+        }
     });
 
-    const firstVisible = paletteEl.querySelector('.review-palette-btn');
-    if (firstVisible) {
-        renderHistoryReviewDetail(attempt, questions, Number(firstVisible.dataset.index), detailEl, paletteEl);
+    if (visibleIndexes.length) {
+        // Prefer first wrong, else first answered, else first visible
+        const preferred = visibleIndexes.find((i) => getHistoryStatus(attempt, i, questions[i]) === 'wrong')
+            ?? visibleIndexes.find((i) => getHistoryStatus(attempt, i, questions[i]) !== 'unattempted')
+            ?? visibleIndexes[0];
+        renderHistoryReviewDetail(attempt, questions, preferred, detailEl, paletteEl, keyTableEl);
     } else if (detailEl) {
         detailEl.innerHTML = '<p>No questions in this filter.</p>';
     }
@@ -295,6 +333,7 @@ export const showAttemptAnalysis = async (attemptId) => {
 
     body.innerHTML = '<p class="attempt-history-hint">Loading answers panel…</p>';
     panel.hidden = false;
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     let questions = Array.isArray(attempt.questionsSnapshot) && attempt.questionsSnapshot.length
         ? attempt.questionsSnapshot
@@ -313,7 +352,7 @@ export const showAttemptAnalysis = async (attemptId) => {
         </div>
         <section class="review-section attempt-history-review" aria-label="Attempt answers review">
             <h3>Detailed Answer Analysis</h3>
-            <p class="review-hint">Green = correct, Red = wrong, Grey = not attempted. Click a number for full solution (same as after Submit).</p>
+            <p class="review-hint">Click any question number (palette or Q link) to open the full question, options, and detailed solution — same as after Submit.</p>
             <div class="review-filters" id="historyReviewFilters">
                 <button type="button" class="review-filter active" data-filter="all">All</button>
                 <button type="button" class="review-filter" data-filter="correct">Correct</button>
@@ -321,6 +360,16 @@ export const showAttemptAnalysis = async (attemptId) => {
                 <button type="button" class="review-filter" data-filter="unattempted">Not Attempted</button>
             </div>
             <div class="review-palette" id="historyReviewPalette"></div>
+            <h4 class="attempt-analysis-heading">Question-wise answer key <span class="attempt-click-hint">(click Q#)</span></h4>
+            <div class="attempt-key-table-wrap">
+                <table class="attempt-key-table">
+                    <thead>
+                        <tr><th>Q</th><th>Subject</th><th>Topic</th><th>Your Ans</th><th>Key</th><th>Status</th></tr>
+                    </thead>
+                    <tbody id="historyKeyTableBody"></tbody>
+                </table>
+            </div>
+            <h4 class="attempt-analysis-heading">Question &amp; detailed solution</h4>
             <div class="review-detail" id="historyReviewDetail">
                 <p>Select a question number above to view the detailed solution.</p>
             </div>
@@ -332,9 +381,10 @@ export const showAttemptAnalysis = async (attemptId) => {
 
     const paletteEl = body.querySelector('#historyReviewPalette');
     const detailEl = body.querySelector('#historyReviewDetail');
+    const keyTableEl = body.querySelector('#historyKeyTableBody');
     const filtersEl = body.querySelector('#historyReviewFilters');
 
-    renderHistoryAnswerReview(attempt, questions, 'all', paletteEl, detailEl);
+    renderHistoryAnswerReview(attempt, questions, 'all', paletteEl, detailEl, keyTableEl);
 
     filtersEl?.addEventListener('click', (event) => {
         const button = event.target.closest('.review-filter');
@@ -342,15 +392,13 @@ export const showAttemptAnalysis = async (attemptId) => {
         filtersEl.querySelectorAll('.review-filter').forEach((el) => {
             el.classList.toggle('active', el === button);
         });
-        renderHistoryAnswerReview(attempt, questions, button.dataset.filter || 'all', paletteEl, detailEl);
+        renderHistoryAnswerReview(attempt, questions, button.dataset.filter || 'all', paletteEl, detailEl, keyTableEl);
     });
 
     body.querySelector('#analysisReattemptBtn')?.addEventListener('click', () => {
         const mock = homeMockList.find((item) => item.id === attempt.fltId);
         if (mock) beginTestFromHome(mock);
     });
-
-    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
 /** @deprecated use showAttemptAnalysis */
