@@ -79,6 +79,21 @@ export const saveCurrentAttempt = () => {
         };
     });
 
+    // Full question snapshot so home "View Answers" matches the post-submit review panel.
+    const questionsSnapshot = appState.questions.map((question) => ({
+        id: question.id,
+        subject: question.subject || '',
+        topic: question.topic || '',
+        question: question.question || '',
+        image: question.image || '',
+        options: Array.isArray(question.options) ? [...question.options] : [],
+        answer: question.answer,
+        difficulty: question.difficulty || '',
+        questionType: question.questionType || '',
+        formula: question.formula || '',
+        explanation: question.explanation || '',
+    }));
+
     const record = {
         id: `att_${completedAt.getTime()}_${Math.random().toString(36).slice(2, 8)}`,
         fltId: appState.selectedFlt || '',
@@ -100,6 +115,7 @@ export const saveCurrentAttempt = () => {
         answers: [...appState.answers],
         reviewFlags: [...appState.reviewFlags],
         answerKey,
+        questionsSnapshot,
     };
 
     const history = getAttemptHistory();

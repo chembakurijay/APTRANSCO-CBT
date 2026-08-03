@@ -737,9 +737,17 @@ button, a {
     gap: 8px;
 }
 
-.attempt-analysis-heading {
-    margin: 16px 0 8px;
-    font-size: 1rem;
+.attempt-history-review {
+    margin-top: 12px;
+}
+
+.attempt-key-panel .review-detail {
+    max-height: none;
+}
+
+.attempt-key-panel .review-palette {
+    max-height: 220px;
+    overflow-y: auto;
 }
 
 .attempt-analysis-actions {
