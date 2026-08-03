@@ -12,21 +12,24 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 ### What “APTRANSCO level” means
 - Style and depth similar to **APTRANSCO / APPSC AEE / APGENCO / TSTRANSCO** technical papers
 - Prefer **application, design judgement, numerical multi-step, diagram-dependent, and site/practical** questions over definition recall
+- Include **practically able** questions — stems a field / design / substation / site engineer could face in real work, not classroom trivia
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
 
 ### High-efficiency generation rules
 1. One concept → one question (no duplicate concepts in the same paper)
 2. Every numerical must be dual-method verified before inclusion
-3. Every diagram question must use a **neat cropped relevant figure** from approved sources (see **Diagram Source Priority by Stream** below) — never paste a full PDF page in the CBT; crop must be tight, readable, and fit the question
+3. Every diagram question must use a **neat cropped, syllabus-correct, professional engineering figure** selected by **Diagram Source Priority by Stream** — never paste a full PDF page; never use a decorative / cartoon / “simple AI sketch” as the main figure
 4. Reject any question that fails the scored Quality Rubric (total < 9/10) or a separate Human Examiner REJECT
 5. Do not inflate Easy count to “fill” the paper
 6. The question setter must NEVER self-assign ACCEPT. ACCEPT / MODIFY / REJECT is allowed only in a separate Human Examiner pass
+7. When filling remaining slots, prefer **Practical → Diagram (Medium–Hard) → Application** over Easy recall (see pattern Priority stars)
 
 ### High-quality bar (paper is publishable only if)
 - Weightage + sequence exact
-- Pattern mix meets mandatory types
-- Diagrams are essential and cropped correctly
+- Pattern mix meets mandatory types (including **≥5 Practical** and **12–15 Diagram**)
+- Diagrams are **essential**, cropped correctly, **technically correct for the syllabus topic**, and feel like real exam / textbook engineering figures (not toy AI art)
+- Diagram-tagged questions are mostly **Medium–Hard** (see Diagram Professional Quality Bar)
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
@@ -170,6 +173,8 @@ No diagram question may be submitted for approval without this declaration.
 - **1 Graph/Curve interpretation question** (candidate reads a plotted curve)
 - **4 Assertion–Reason questions** (distributed across subjects)
 - **4 IS Code / Standard value questions** (see policy below)
+- **5 Practical / site / field-decision questions** that are **practically able** (see Practical Questions bar)
+- **12–15 Diagram / Figure questions** meeting the **Diagram Professional Quality Bar** (mostly Medium–Hard; priority-sourced figures)
 
 ### Duplicate Control
 - Maintain a global registry of every generated question.
@@ -178,9 +183,10 @@ No diagram question may be submitted for approval without this declaration.
 
 ### Diagram Rules
 - Search **all** uploaded source files under `sourcefiles-ce/Aptransco_sourcefiles/` (and extracted image folders) before inventing a figure.
-- Prefer original PYQ / core / bank diagrams when available and neat enough for CBT use.
-- Only generate simple engineering schematics when no suitable source figure exists.
-- Use standard engineering symbols and labels.
+- Prefer original PYQ / core / bank diagrams when available and neat enough for CBT use — **priority ranks are mandatory**.
+- Only generate a clean **engineering line schematic** when no suitable source figure exists; never ship a decorative / toy AI sketch.
+- Use standard engineering symbols and labels that are **syllabus-correct**.
+- Diagram stems should feel **Medium–Hard** and **exam-real**; Easy diagram Qs are capped (see Professional Quality Bar).
 - Follow **Diagram Source Priority by Stream** (Electrical vs Civil) — do not use a single flat priority for both.
 
 ### Solution & Review Rules
@@ -264,8 +270,21 @@ Avoid definition-type questions. Ask: Why? When? Which is most suitable? What ha
 ### Application Questions (10)
 Examples: Which footing is correct? Which turbine is suitable? Which reinforcement detailing is correct? Which section will fail first?
 
-### Practical Questions (5)
-Site-oriented: Concrete placement, Compaction, Inspection, Construction sequencing, Maintenance, Failures.
+### Practical Questions (5) — “Practically able” (mandatory quality)
+Must feel like decisions an AEE / site / substation / construction engineer would actually make — not memorised handbook trivia.
+
+**Required flavour (pick from real work contexts):**
+- **Civil:** placement / curing / formwork / compaction / inspection / sequencing / maintenance / failure investigation / detailing mistakes on site
+- **Electrical:** substation / bay / protection / CT-PT polarity / transformer parallel / cable / earthing / commissioning / outage decision / metering connection / switchgear interlocking
+
+**Quality bar:**
+- Stem describes a **field-plausible situation** (what is observed / what must be decided)
+- Correct option is the **engineering action or diagnosis** a competent AEE would choose
+- Distractors are **plausible wrong field decisions**, not random labels
+- Prefer **Medium** difficulty; at most **1 Easy** among the 5 Practical questions
+- May combine with Diagram / IS / Application tags when the figure or code is what the site decision depends on
+
+**Reject as Practical (reclassify):** pure definition, bare code-clause recall, or “name this equipment” with no decision context.
 
 ### Assertion–Reason Questions (4)
 Distribute across subjects. Never cluster all in one subject.
@@ -393,26 +412,57 @@ Definition-only, nursery-level arithmetic, or decorative diagrams fail this gate
 Diagram-based questions are a core part of the CBT.
 Use diagrams **only when they directly help solve the question**.
 
+### Diagram Professional Quality Bar (Mandatory — Medium–Hard feel)
+
+Diagram questions must read as **high-professional, exam-grade engineering items**, not decorative illustrations glued to Easy recall.
+
+**Difficulty mix for the 12–15 Diagram / Figure questions (technical):**
+| Difficulty | Target share of Diagram Qs | Rule |
+|---|---|---|
+| **Medium** | **≥ 60%** | Preferred default for diagram stems |
+| **Hard** | **25–35%** | Multi-step read of figure, or figure + calculation / judgement |
+| **Easy** | **≤ 15%** (max 2) | Only if figure is still **PASS/STRONG** dependent and not toy-level |
+
+**What “professional / reality feel” means:**
+- Figure uses **correct syllabus engineering conventions** (IS/IEC symbols, support conventions, SLD notation, reinforcement marks, phasor sense, polarity dots, etc. as applicable)
+- Candidate must **read the figure** (labels, topology, values, detailing) to answer — not merely recognise a clip-art icon
+- Stem + figure together feel like a **real AEE/APTRANSCO item** (beam/SFD, RCC detailing, SLD bay, transformer connections, relay CT circuit, earth-pressure diagram, etc.)
+- Prefer figures that look like **PYQ / core textbook engineering drawings**, not simplified cartoon schematics
+
+**Forbidden as primary diagram (Fail quality — even if “pretty”):**
+- Obvious **simple AI-generated** sketches with wrong topology, missing standards, toy proportions, or decorative style
+- Clip-art / icon / emoji-like equipment drawings
+- Invented symbols that are **not** in syllabus / standard practice
+- Figures that a junior school student could answer without engineering reading
+
+**If regenerating a figure (last resort after priority search):**
+- Must be a **clean engineering line drawing** matching approved diagram types and syllabus conventions
+- Must pass the same technical-correctness checks as a source crop
+- Must **not** be preferred over a usable PYQ/core figure (see priority ranks below)
+
 ### Mandatory Selection Criteria
 A diagram may be used ONLY if ALL of the following are true:
 - It represents the exact engineering concept being tested.
-- It belongs to the correct engineering subject.
+- It belongs to the correct engineering subject **and micro-topic in syllabus**.
 - It is clear, complete, and readable.
-- All symbols, dimensions, labels, arrows, values, supports, terminals, or components are visible.
-- It improves the quality of the question.
+- All symbols, dimensions, labels, arrows, values, supports, terminals, or components are visible **and technically correct**.
+- It improves the quality of the question to **Medium–Hard exam depth** (see bar above).
 - The question and options correspond directly to the diagram.
+- Source was chosen by **stream priority** (do not skip a higher-rank usable figure for a lower-rank or AI sketch).
 
 ### Reject These Images — Never Use:
 - Book covers, chapter titles, headers, footers
 - Logos, watermarks, QR codes, page numbers
 - Decorative icons, screenshots
 - Paragraphs converted to images
-- Tables (unless the question requires table interpretation)
+- Tables (unless the question requires table interpretation — then use `dataTable` HTML, not a photo of a table unless needed)
 - Over-cropped or incomplete engineering figures (essential labels/parts missing)
 - Duplicate diagrams
 - Blurry images
 - Images unrelated to the question
 - Images from another engineering subject
+- Simple / decorative AI generations that fail the Professional Quality Bar
+- Technically wrong figures (incorrect polarity, impossible SLD, wrong reinforcement detailing, wrong support symbols)
 
 ### Civil Engineering — Approved Diagram Types
 
@@ -446,15 +496,16 @@ A diagram may be used ONLY if ALL of the following are true:
 
 **Electrical Graphs:** Phasor diagrams, Torque-speed characteristics, Magnetization curve, Load characteristics, V-I characteristics, Efficiency curves, Power factor triangle
 
-### Diagram Matching Procedure
+### Diagram Matching Procedure (priority-first)
 Before attaching any diagram:
-1. Identify the engineering concept being tested.
-2. Search only diagrams related to that concept.
-3. Match the question and diagram exactly.
-4. Verify all labels and symbols.
-5. Reject partial or ambiguous figures.
-6. Prefer textbook-quality engineering diagrams.
-7. If no suitable diagram exists, generate the question as text-only.
+1. Identify the **syllabus subject + micro-topic** and the engineering concept being tested.
+2. Search diagrams **only for that concept**, walking **priority ranks in order** (EE: PYQ → electrical-core → banks → last-resort schematic; CE: neat core/PYQ → other sources → last-resort).
+3. Stop at the **highest-rank usable** figure that crops cleanly and is technically correct — do not “upgrade” to AI art.
+4. Match the question and diagram exactly; verify all labels and symbols against syllabus conventions.
+5. Reject partial, ambiguous, or technically wrong figures.
+6. Prefer textbook / PYQ–quality engineering diagrams with **reality feel**.
+7. Write the stem so difficulty is **Medium or Hard** whenever the figure supports it (Easy diagram only as rare exception).
+8. If no suitable diagram exists after a full priority search, generate the question as **text-only** (or Practical/Application without fake figure) — do **not** invent a weak AI diagram just to hit the Diagram count.
 
 ### Diagram Source Priority by Stream (Mandatory)
 
@@ -490,19 +541,21 @@ Civil does **not** force PYQ-first. Main requirement: the figure must be **neat 
 - Always scan **all** source files for a relevant diagram before concluding “no diagram available.”
 
 Never prefer AI-generated or decorative illustrations over ranked sources above.
+**Selection principle:** priority rank + technical correctness + crop quality + exam depth **together** decide the figure — never “any image that looks related.”
 
 ### Diagram Final Validation Checklist
 Approve a diagram only if ALL of the following pass:
-- ✓ Correct subject
-- ✓ Correct topic
+- ✓ Correct subject **and syllabus micro-topic**
+- ✓ Correct topic; symbols / topology **technically correct**
 - ✓ Clear and readable (neat CBT crop)
 - ✓ Engineering figure intact (no essential labels/parts cut off)
 - ✓ Relevant to the question and **fit for usage**
-- ✓ Options depend on the diagram
+- ✓ Options depend on the diagram (**PASS** or **STRONG** dependency)
 - ✓ No unnecessary graphics / full-page paste
-- ✓ No screenshots or decorative images
+- ✓ No screenshots, decorative images, or **simple AI toy sketches**
 - ✓ Source follows stream priority (EE: PYQ → core → others; CE: neat fit from core/PYQ/all sources)
-- ✓ Engineering value is high
+- ✓ Engineering value is high — question feels **Medium–Hard**, professional, exam-real
+- ✓ Priority search documented (which rank supplied the figure)
 
 If any check fails → reject the image and generate a text-only question.
 
@@ -529,17 +582,17 @@ Stage 3 — Pattern Validation
   A question claiming "Diagram" without a valid image path is REJECTED.
   A question claiming "Application" that only asks for recall is REJECTED.
 
-Stage 4 — Diagram Validation (10-Point Check)
+Stage 4 — Diagram Validation (Professional + Priority Check)
   ✓ Diagram exists at the declared file path
-  ✓ Diagram is correct engineering type (not screenshot/logo/header)
+  ✓ Diagram is correct engineering type (not screenshot/logo/header / toy AI art)
   ✓ Diagram is neat, readable, and CBT-cropped (figure intact — no essential parts cut off)
-  ✓ All labels, dimensions, arrows, values visible
-  ✓ Question CANNOT be solved without the diagram
+  ✓ All labels, dimensions, arrows, values visible and syllabus-technically correct
+  ✓ Question CANNOT be solved without the diagram (PASS/STRONG)
   ✓ All options depend on reading the diagram
-  ✓ Correct subject match
-  ✓ No watermarks, page numbers, or decorative elements
-  ✓ Source follows stream priority (EE: PYQ → electrical-core → others; CE: neat core/PYQ/any relevant source)
-  ✓ Engineering value is high
+  ✓ Correct subject + micro-topic match
+  ✓ No watermarks, page numbers, decorative elements, or simple AI toy sketches
+  ✓ Source follows stream priority (higher usable rank not skipped for AI sketch)
+  ✓ Engineering value high; reality / exam feel; difficulty Medium or Hard (Easy only within ≤15% / max 2 Diagram Easy cap)
   Fail any check → remove image, reclassify or rewrite question.
 
 Stage 5 — Numerical Verification (Dual-Method Rule)
@@ -570,7 +623,10 @@ Stage 7 — Explanation Verification
 Stage 8 — Practical Question Gate
   A question claiming "Practical/Site Engineering" MUST involve one of:
   site inspection | construction execution | maintenance | troubleshooting |
-  failure investigation | field decision making
+  failure investigation | field decision making | substation / bay / protection /
+  commissioning / outage / polarity / earthing / metering connection decision
+  Stem must be **practically able** (real AEE-style decision context).
+  Prefer Medium; max 1 Easy among Practical-tagged Qs in the paper.
   "What is the minimum curing period?" is NOT Practical — it is Recall.
   Reclassify such questions as IS Code or Conceptual.
 
@@ -678,7 +734,8 @@ After the setter finishes the paper + rubrics, a **separate Human Examiner pass*
 ### Examiner checklist per question
 - Is the answer unquestionably correct (Gate C verified — calculation / derivation matches the keyed option)?
 - Is Easy/Medium/Hard label justified (and Hard/Application justifications present if claimed)?
-- For diagram Qs: is dependency **PASS** or **STRONG** (not WEAK/FAIL)?
+- For diagram Qs: is dependency **PASS** or **STRONG** (not WEAK/FAIL)? Is the figure **professionally / technically correct** (not a toy AI sketch)? Is difficulty Medium–Hard unless within Easy diagram cap?
+- For Practical Qs: is the stem **practically able** (real field / substation decision), not bare recall?
 - Are distractors realistic engineering errors?
 - Does this resemble a real APTRANSCO/APPSC AEE item (not LKG)?
 - Independent final verdict: **Accept** / **Modify** / **Reject**
@@ -1301,7 +1358,8 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Exact duplicates vs earlier mocks | **0** |
 | Repeated concepts vs earlier mocks | **≤ 10%** |
 | APTRANSCO similarity (overall) | **≥ 90%** |
-| Diagram-dependent questions | **12–15** (technical; each PASS or STRONG) |
+| Diagram-dependent questions | **12–15** (technical; each PASS or STRONG; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2) |
+| Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
 | Concept coverage (Audit K) | Missing must-cover = 0; over-stack = 0 |
 | Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech; by-subject rules |
