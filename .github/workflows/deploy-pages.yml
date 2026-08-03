@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,11 +18,12 @@ jobs:
           fetch-depth: 0
 
       - name: Deploy site to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./
           user_name: GitHub Actions
           user_email: actions@github.com
-          keep_files: true
+          # Exclude heavy/local-only paths from the published site
+          exclude_assets: '.github,sourcefiles-ce,exports/chat.json,exports/chat-export.json'
