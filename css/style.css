@@ -253,12 +253,12 @@ button, a {
 }
 
 .calculator-mode {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    opacity: 0.7;
-    line-height: 1;
-    align-self: flex-start;
+    display: none !important;
+}
+
+.calculator-button.is-active-mode {
+    background: #1d4ed8;
+    color: #ffffff;
 }
 
 .calculator-display {
