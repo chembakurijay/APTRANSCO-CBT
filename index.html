@@ -31,7 +31,7 @@
                 <div class="instructions-summary">
                     <div>
                         <strong>Duration</strong>
-                        <span id="instructionDuration">120 minutes</span>
+                        <span id="instructionDuration">180 minutes</span>
                     </div>
                     <div>
                         <strong>Questions</strong>
@@ -43,7 +43,7 @@
                     </div>
                     <div>
                         <strong>Negative marking</strong>
-                        <span id="instructionNegative">0.25 for wrong answer</span>
+                        <span id="instructionNegative">No negative marking</span>
                     </div>
                 </div>
                 <div class="instruction-block">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="timer-panel" aria-live="polite">
                     <span class="label">Time Left</span>
-                    <div id="countdown" class="timer-display">02:00:00</div>
+                    <div id="countdown" class="timer-display">03:00:00</div>
                 </div>
             </header>
 
@@ -102,23 +102,10 @@
                         <p>Click a number to jump to a question.</p>
                     </div>
                     <div id="questionPalette" class="question-palette"></div>
-                </aside>
-            </div>
-
-            <footer class="exam-footer">
-                <div class="footer-actions">
-                    <button class="button button-secondary" id="previousButton" type="button">Previous</button>
-                    <button class="button button-secondary" id="clearButton" type="button">Clear Response</button>
-                    <button class="button button-secondary" id="reviewButton" type="button">Mark for Review & Next</button>
-                    <button class="button button-primary" id="saveNextButton" type="button">Save & Next</button>
-                    <button class="button button-primary" id="nextButton" type="button">Next</button>
-                </div>
-                <button class="button button-danger" id="submitButton" type="button">Submit Exam</button>
-            </footer>
-        </section>
-
-        <section id="resultPage" class="page-section" hidden>
-            <article class="content-card result-card">
+                        <div class="calculator-panel">
+                            <h3>Engineering Calculator</h3>
+                            <div id="calculator"></div>
+                        </div>
                 <h2>Exam Result</h2>
                 <div class="result-summary">
                     <div class="summary-item">

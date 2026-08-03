@@ -1,4 +1,4 @@
-import { appState } from './storage.js';
+import { appState, EXAM_DURATION } from './storage.js';
 import { qs } from './utils.js';
 
 export const getCurrentQuestion = () => appState.questions[appState.currentQuestionIndex];
@@ -21,7 +21,7 @@ export const buildResultSummary = () => {
         return sum + (appState.answers[index] === question.answer ? 1 : 0);
     }, 0);
     const wrongCount = answeredCount - correctCount;
-    const score = correctCount - wrongCount * 0.25;
+    const score = correctCount;
     const percentage = totalQuestions ? Math.max(0, (score / totalQuestions) * 100) : 0;
 
     return {
@@ -33,7 +33,7 @@ export const buildResultSummary = () => {
         wrongCount,
         score: score.toFixed(2),
         percentage: `${percentage.toFixed(2)}%`,
-        timeTaken: formatTime(120 * 60 - appState.remainingTime),
+        timeTaken: formatTime(EXAM_DURATION - appState.remainingTime),
     };
 };
 

@@ -3,6 +3,7 @@ import { loadQuestionBank } from './questionLoader.js';
 import { bindNavigation } from './navigation.js';
 import { switchPage, populateHomePage, populateInstructionsPage, bindInstructionActions, renderQuestionPage, showSubmitModal, populateResultPage, bindResultActions } from './ui.js';
 import { startTimer, stopTimer } from './timer.js';
+import { initCalculator } from './calculator.js';
 import { qs } from './utils.js';
 
 const mockList = Array.from({ length: 10 }, (_, index) => ({
@@ -75,6 +76,7 @@ const initializeApp = () => {
     bindResultActions();
     bindApplicationEvents();
     bindBackButtons();
+    initCalculator();
     switchPage('homePage');
 };
 

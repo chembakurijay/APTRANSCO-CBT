@@ -47,10 +47,10 @@ export const populateInstructionsPage = () => {
     const questions = qs('#instructionQuestions');
     const marks = qs('#instructionMarks');
     const negative = qs('#instructionNegative');
-    if (duration) duration.textContent = '120 minutes';
+    if (duration) duration.textContent = '180 minutes';
     if (questions) questions.textContent = '100 questions';
     if (marks) marks.textContent = '100 marks';
-    if (negative) negative.textContent = '0.25 for wrong answer';
+    if (negative) negative.textContent = 'No negative marking';
 };
 
 export const bindInstructionActions = () => {

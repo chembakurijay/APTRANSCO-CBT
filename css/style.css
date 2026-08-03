@@ -221,6 +221,71 @@ button, a {
     margin-bottom: 18px;
 }
 
+.calculator-panel {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.calculator-panel h3 {
+    margin: 0 0 16px;
+    font-size: 1.05rem;
+}
+
+.calculator {
+    display: grid;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    padding: 18px;
+}
+
+.calculator-screen {
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    text-align: right;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.calculator-display {
+    font-size: 1.8rem;
+    word-break: break-word;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.calculator-button {
+    border: none;
+    border-radius: 16px;
+    padding: 16px 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #ffffff;
+    color: #0f172a;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.calculator-button:hover {
+    transform: translateY(-1px);
+    background: #e2e8f0;
+}
+
+.calculator-button:active {
+    transform: translateY(0);
+}
+
 .mock-title {
     font-size: 1.35rem;
     font-weight: 700;
