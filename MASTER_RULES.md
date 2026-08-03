@@ -1448,7 +1448,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
 
-> Packaging note: Civil/Electrical FLT-01 banks were upgraded to this Explanation Standard in-place (average explanation length ≫ 1000 characters). EE FLT-01 Q21 key corrected to **2.0 pu** so CALCULATION matches |Ef|≈1.79 (1.6 was Re(Ef) trap).
+> Packaging note: Civil/Electrical FLT-01 banks were upgraded to this Explanation Standard in-place (average explanation length ≫ 1000 characters). EE FLT-01 Q21 options/key corrected so CALCULATION matches |Ef|≈1.79 → **1.8 pu** (with **1.6 = Re(Ef)** as the classic trap).
 
 ---
 
