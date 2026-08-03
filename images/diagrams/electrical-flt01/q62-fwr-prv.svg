@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="280" viewBox="0 0 480 280">
+  <rect width="480" height="280" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q62 — Full-wave rectifier CT</text>
+  
+  <text x="40" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="14">CT / centre-tap FWR — 50-0-50 secondary</text>
+  <rect x="40" y="90" width="50" height="80" fill="#e2e8f0" stroke="#0f172a"/>
+  <text x="50" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="12">230 V</text>
+  <line x1="90" y1="110" x2="160" y2="110" stroke="#0f172a" stroke-width="2"/>
+  <line x1="90" y1="150" x2="160" y2="150" stroke="#0f172a" stroke-width="2"/>
+  <circle cx="180" cy="130" r="35" fill="none" stroke="#0f172a" stroke-width="2"/>
+  <text x="155" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="12">50 V</text>
+  <text x="155" y="175" font-family="Segoe UI, Arial, sans-serif" font-size="12">50 V</text>
+  <text x="200" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="12">0</text>
+  <line x1="215" y1="110" x2="300" y2="80" stroke="#0f172a" stroke-width="2"/>
+  <line x1="215" y1="150" x2="300" y2="180" stroke="#0f172a" stroke-width="2"/>
+  <polygon points="300,80 320,90 300,100" fill="#1d4ed8"/>
+  <text x="330" y="95" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1d4ed8">D1</text>
+  <polygon points="300,180 320,170 300,160" fill="#b91c1c"/>
+  <text x="330" y="175" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#b91c1c">D2</text>
+  <text x="40" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">PRV on diode ≈ peak of other half ≈ 100√2 V</text>
+
+</svg>

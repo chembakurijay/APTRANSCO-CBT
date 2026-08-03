@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="280" viewBox="0 0 520 280">
+  <rect width="520" height="280" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q61 — Zener branch current</text>
+  
+  <text x="40" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="14">Zener regulator — read Vs, Rz, Vz from labels</text>
+  <circle cx="80" cy="140" r="18" fill="none" stroke="#0f172a" stroke-width="2"/>
+  <text x="68" y="145" font-family="Segoe UI, Arial, sans-serif" font-size="12">Vs</text>
+  <line x1="98" y1="140" x2="200" y2="140" stroke="#0f172a" stroke-width="2"/>
+  <rect x="200" y="120" width="70" height="40" fill="#fff" stroke="#0f172a"/>
+  <text x="215" y="145" font-family="Segoe UI, Arial, sans-serif" font-size="14">Rz</text>
+  <line x1="270" y1="140" x2="360" y2="140" stroke="#0f172a" stroke-width="2"/>
+  <!-- zener -->
+  <line x1="360" y1="100" x2="360" y2="180" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="345" y1="140" x2="375" y2="140" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="380" y="130" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#1d4ed8" font-weight="700">Vz</text>
+  <text x="380" y="155" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#1d4ed8">Iz →</text>
+  <line x1="80" y1="200" x2="360" y2="200" stroke="#0f172a" stroke-width="2"/>
+  <line x1="80" y1="158" x2="80" y2="200" stroke="#0f172a" stroke-width="2"/>
+  <text x="40" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Iz = (Vs − Vz)/Rz (use figure values)</text>
+
+</svg>

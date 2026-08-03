@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="290" viewBox="0 0 660 290">
+  <rect width="660" height="290" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q56 — CRO block diagram</text>
+  
+  <rect x="40" y="70" width="120" height="50" rx="8" fill="#fff" stroke="#0f172a"/>
+  <text x="55" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13">Vertical input</text>
+  <rect x="200" y="70" width="120" height="50" rx="8" fill="#dbeafe" stroke="#1d4ed8"/>
+  <text x="215" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13">Vert. amp</text>
+  <rect x="360" y="70" width="120" height="50" rx="8" fill="#fff" stroke="#0f172a"/>
+  <text x="385" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13">Delay line</text>
+  <rect x="520" y="70" width="100" height="50" rx="8" fill="#fff" stroke="#0f172a"/>
+  <text x="550" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13">CRT</text>
+  <line x1="160" y1="95" x2="200" y2="95" stroke="#0f172a" stroke-width="2"/>
+  <line x1="320" y1="95" x2="360" y2="95" stroke="#0f172a" stroke-width="2"/>
+  <line x1="480" y1="95" x2="520" y2="95" stroke="#0f172a" stroke-width="2"/>
+  <rect x="200" y="160" width="120" height="50" rx="8" fill="#fff" stroke="#0f172a"/>
+  <text x="220" y="190" font-family="Segoe UI, Arial, sans-serif" font-size="13">Trigger</text>
+  <rect x="360" y="160" width="120" height="50" rx="8" fill="#fff" stroke="#0f172a"/>
+  <text x="375" y="190" font-family="Segoe UI, Arial, sans-serif" font-size="13">Time base</text>
+  <text x="40" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Which block feeds delay / vertical path to CRT?</text>
+
+</svg>

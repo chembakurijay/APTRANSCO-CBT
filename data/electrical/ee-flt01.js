@@ -1,6 +1,6 @@
 // Electrical Engineering FLT-01 — APTRANSCO AEE CBT
 // Generated from exports/ELECTRICAL_FLT01_REGENERATED_v2.md
-// Diagrams: empty until crops under images/diagrams/electrical-flt01/
+// Diagrams: images/diagrams/electrical-flt01/*.svg
 // answer is 0-based index into options
 
 export const questions = [
@@ -66,7 +66,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Matching+Diagram",
     "question": "[]` Match transformer connection sketch (List-I) to name (List-II): List-I: (P) Δ–Δ (Q) Δ–Y (R) Y–Δ (S) Y–Y List-II: (1) both sides Δ (2) HV Δ LV Y (3) HV Y LV Δ (4) both Y",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q04-xfmr-connections.svg",
     "options": [
       "P-1,Q-2,R-3,S-4",
       "P-2,Q-1,R-4,S-3",
@@ -161,7 +161,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Diagram+Numerical",
     "question": "[]` With Ic=0 and phase currents Ia, Ib as labelled on the figure only, Ia⁰ is:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q09-open-conductor.svg",
     "options": [
       "10 A",
       "0 A",
@@ -332,7 +332,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Diagram+Conceptual",
     "question": "[]` The phasor set shown (Ia leading Vt) corresponds to:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q18-alt-phasor-lead.svg",
     "options": [
       "Lagging pf load",
       "Unity only",
@@ -408,7 +408,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Diagram+Application",
     "question": "[]` From the figure (long line, receiving end condition shown only on the crop — do not assume from memory), generator field voltage held constant. When the generator is disconnected from the line, steady |Vt|:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q22-ferranti-line.svg",
     "options": [
       "Increases always",
       "Unchanged always",
@@ -560,7 +560,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Diagram+Numerical",
     "question": "[]` C0 = air capacitance (Fig a). Half gap filled as in Fig(b) with εr. Modified C =",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q30-cap-dielectric.svg",
     "options": [
       "C0+εr",
       "(C0/2)εr",
@@ -617,7 +617,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Graph+Diagram",
     "question": "[]` The plot with a central pass band and stop bands on both sides is:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q33-filter-types.svg",
     "options": [
       "Low-pass",
       "Band-pass",
@@ -769,7 +769,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Diagram+Numerical",
     "question": "[]` For the block diagram shown, C(s)/R(s) =",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q41-block-diagram.svg",
     "options": [
       "s/(2s+1)",
       "(2s+1)/s",
@@ -826,7 +826,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Graph+Diagram",
     "question": "[]` First-order stable system, |G| constant vs f, high-freq phase → −180°. System has:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q44-bode-allpass.svg",
     "options": [
       "One LHP pole and one RHP zero at same frequency",
       "LHP pole+LHP zero same f",
@@ -902,7 +902,7 @@ export const questions = [
     "subject": "Power Electronics & Drives",
     "topic": "Diagram",
     "question": "[]` Single-phase semi-converter, α=30°, RL load — correct Vo waveform is the one that:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q48-semi-waveforms.svg",
     "options": [
       "Stays non-negative with delayed conduction each half-cycle (option C on source page)",
       "Full negative sine",
@@ -959,7 +959,7 @@ export const questions = [
     "subject": "Power Electronics & Drives",
     "topic": "Diagram+Application",
     "question": "[]` Firing α must lie between:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q51-rle-angles.svg",
     "options": [
       "0 and θ1 only",
       "θ2 and 360 only",
@@ -1054,7 +1054,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "Diagram",
     "question": "[]` Vertical input reaches CRT vertical plates mainly via:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q56-cro-blocks.svg",
     "options": [
       "Attenuator → vertical amp → (delay) → vertical plates",
       "Time-base only",
@@ -1149,7 +1149,7 @@ export const questions = [
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
     "question": "[]` With Vs, Rz, Vz as labelled on the figure, diode current Iz is closest to:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q61-zener-iz.svg",
     "options": [
       "5 mA",
       "2 mA",
@@ -1168,7 +1168,7 @@ export const questions = [
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
     "question": "[]` 230 V / 50-0-50 secondary; PRV on D1/D2 ≈",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q62-fwr-prv.svg",
     "options": [
       "50 V",
       "50√2",
@@ -1225,7 +1225,7 @@ export const questions = [
     "subject": "Digital Electronics",
     "topic": "Matching+Diagram",
     "question": "[]` Match gate symbols (List-I) to expressions (List-II) as labelled on the crop:",
-    "image": "",
+    "image": "images/diagrams/electrical-flt01/q65-logic-match.svg",
     "options": [
       "P-NOR, Q-NAND, R-AND, S-XOR",
       "P-NAND, Q-NOR, R-XOR, S-AND",

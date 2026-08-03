@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="290" viewBox="0 0 540 290">
+  <rect width="540" height="290" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q51 — RLE converter angles</text>
+  
+  <text x="40" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="14">Half-wave RLE — angles on figure</text>
+  <line x1="60" y1="160" x2="500" y2="160" stroke="#94a3b8"/>
+  <path d="M80,160 Q140,40 200,160 Q260,40 320,160" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="150" y1="40" x2="150" y2="200" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="140" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#1d4ed8" font-weight="700">α</text>
+  <line x1="250" y1="40" x2="250" y2="200" stroke="#b91c1c" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="240" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#b91c1c" font-weight="700">β</text>
+  <text x="300" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">θ1</text>
+  <text x="40" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Firing α must lie in the allowed window vs β, θ1</text>
+
+</svg>
