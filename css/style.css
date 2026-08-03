@@ -332,6 +332,56 @@ button, a {
     flex-direction: column;
     justify-content: space-between;
     min-height: 240px;
+    gap: 12px;
+}
+
+.mock-card-attempted {
+    border: 1px solid #bfdbfe;
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.08);
+}
+
+.mock-attempt-status {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+}
+
+.mock-attempt-status-new {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+}
+
+.mock-attempt-badge {
+    display: inline-flex;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #1d4ed8;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.mock-attempt-badge.is-new {
+    background: #64748b;
+}
+
+.mock-last-score,
+.mock-last-when {
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+    color: #334155;
+}
+
+.mock-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mock-card-actions .button {
+    flex: 1 1 auto;
 }
 
 .mock-card-header {
@@ -668,6 +718,38 @@ button, a {
     gap: 16px;
     margin-bottom: 16px;
 }
+
+.attempt-history-header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.attempt-history-filter {
+    margin: 8px 0 0;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.attempt-row-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.attempt-analysis-heading {
+    margin: 16px 0 8px;
+    font-size: 1rem;
+}
+
+.attempt-analysis-actions {
+    margin-top: 14px;
+}
+
+.attempt-key-correct { color: #15803d; font-weight: 700; }
+.attempt-key-wrong { color: #b91c1c; font-weight: 700; }
+.attempt-key-unattempted { color: #64748b; }
+
 
 .attempt-history-header h2 {
     margin: 0 0 6px;

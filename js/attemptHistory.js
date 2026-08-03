@@ -24,6 +24,32 @@ const writeHistory = (list) => {
 
 export const getAttemptById = (id) => getAttemptHistory().find((item) => item.id === id) || null;
 
+export const getAttemptsForFlt = (fltId) => {
+    if (!fltId) return [];
+    return getAttemptHistory().filter((item) => item.fltId === fltId);
+};
+
+export const getLatestAttemptForFlt = (fltId) => getAttemptsForFlt(fltId)[0] || null;
+
+export const hasAttemptedFlt = (fltId) => getAttemptsForFlt(fltId).length > 0;
+
+/** Subject-wise breakdown for detailed analysis on the home history panel. */
+export const buildSubjectAnalysis = (attempt) => {
+    const map = new Map();
+    (attempt?.answerKey || []).forEach((item) => {
+        const subject = item.subject || 'General';
+        if (!map.has(subject)) {
+            map.set(subject, { subject, total: 0, correct: 0, wrong: 0, unattempted: 0 });
+        }
+        const row = map.get(subject);
+        row.total += 1;
+        if (item.status === 'correct') row.correct += 1;
+        else if (item.status === 'wrong') row.wrong += 1;
+        else row.unattempted += 1;
+    });
+    return [...map.values()];
+};
+
 /** Persist one completed attempt with score, timestamps, and per-question answer key. */
 export const saveCurrentAttempt = () => {
     const summary = buildResultSummary();

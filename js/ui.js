@@ -3,7 +3,22 @@ import { qs, clearElement, createElement } from './utils.js';
 import { renderDiagram } from './diagram.js';
 import { renderPalette, updatePalette } from './palette.js';
 import { getCurrentQuestion, saveCurrentAnswer, buildResultSummary } from './result.js';
-import { getAttemptHistory, getAttemptById, clearAttemptHistory } from './attemptHistory.js';
+import {
+    getAttemptHistory,
+    getAttemptById,
+    clearAttemptHistory,
+    getAttemptsForFlt,
+    buildSubjectAnalysis,
+} from './attemptHistory.js';
+
+/** Last mock list used on the Start (home) page — history UI lives only here. */
+let homeMockList = [];
+
+const beginTestFromHome = (mock) => {
+    appState.selectedFlt = mock.id;
+    appState.selectedTest = mock;
+    window.dispatchEvent(new CustomEvent('startInstructions'));
+};
 
 export const switchPage = (pageId) => {
     const pageIds = ['homePage', 'instructionPage', 'examPage', 'resultPage'];
@@ -19,15 +34,37 @@ export const switchPage = (pageId) => {
     if (shell) {
         shell.classList.toggle('exam-shell', pageId === 'examPage');
     }
+    // Attempt history is Start-page only — refresh cards when returning home.
+    if (pageId === 'homePage' && homeMockList.length) {
+        populateHomePage(homeMockList);
+    }
 };
 
 export const populateHomePage = (mockList) => {
     const container = qs('#mockGrid');
     if (!container) return;
+    homeMockList = Array.isArray(mockList) ? mockList : homeMockList;
     clearElement(container);
 
-    mockList.forEach((mock) => {
-        const card = createElement('article', { className: 'mock-card' });
+    homeMockList.forEach((mock) => {
+        const attempts = getAttemptsForFlt(mock.id);
+        const latest = attempts[0] || null;
+        const attempted = attempts.length > 0;
+        const card = createElement('article', {
+            className: `mock-card${attempted ? ' mock-card-attempted' : ''}`,
+        });
+
+        const statusHtml = attempted && latest
+            ? `<div class="mock-attempt-status">
+                    <span class="mock-attempt-badge">Attempted ${attempts.length}×</span>
+                    <p class="mock-last-score">Last score: <strong>${latest.score}</strong> (${latest.percentage})</p>
+                    <p class="mock-last-when">Last attempt: ${latest.completedAtLocal || latest.completedAt}</p>
+               </div>`
+            : `<div class="mock-attempt-status mock-attempt-status-new">
+                    <span class="mock-attempt-badge is-new">Not attempted yet</span>
+               </div>`;
+
+        const actionLabel = attempted ? 'Reattempt' : 'Attempt';
         card.innerHTML = `
             <div class="mock-card-header">
                 <span class="mock-title">${mock.title}</span>
@@ -37,29 +74,51 @@ export const populateHomePage = (mockList) => {
                 <p class="mock-category">${mock.category}</p>
                 <p>Marks: ${mock.marks}</p>
                 <p>Duration: ${mock.duration} minutes</p>
+                ${statusHtml}
             </div>
-            <button class="button button-primary start-test-button" type="button" data-flt="${mock.id}">Start Test</button>
+            <div class="mock-card-actions">
+                <button class="button button-primary start-test-button" type="button" data-flt="${mock.id}">${actionLabel}</button>
+                ${attempted ? `<button class="button button-secondary view-flt-history" type="button" data-flt="${mock.id}">View History</button>` : ''}
+            </div>
         `;
-        card.querySelector('.start-test-button')?.addEventListener('click', () => {
-            appState.selectedFlt = mock.id;
-            appState.selectedTest = mock;
-            window.dispatchEvent(new CustomEvent('startInstructions'));
+        card.querySelector('.start-test-button')?.addEventListener('click', () => beginTestFromHome(mock));
+        card.querySelector('.view-flt-history')?.addEventListener('click', () => {
+            const section = qs('#attemptHistorySection');
+            renderAttemptHistory(mock.id);
+            section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
         container.appendChild(card);
     });
     renderAttemptHistory();
 };
 
-export const renderAttemptHistory = () => {
+export const renderAttemptHistory = (filterFltId = null) => {
     const listEl = qs('#attemptHistoryList');
     const emptyEl = qs('#attemptHistoryEmpty');
+    const filterLabel = qs('#attemptHistoryFilterLabel');
     if (!listEl) return;
 
-    const history = getAttemptHistory();
+    const history = filterFltId
+        ? getAttemptHistory().filter((item) => item.fltId === filterFltId)
+        : getAttemptHistory();
     clearElement(listEl);
+
+    if (filterLabel) {
+        if (filterFltId) {
+            const title = history[0]?.title || filterFltId;
+            filterLabel.hidden = false;
+            filterLabel.textContent = `Showing history for ${title}`;
+        } else {
+            filterLabel.hidden = true;
+            filterLabel.textContent = '';
+        }
+    }
 
     if (emptyEl) {
         emptyEl.hidden = history.length > 0;
+        emptyEl.textContent = filterFltId
+            ? 'No attempts for this test yet.'
+            : 'No attempts yet. Complete a mock test to see history here.';
     }
 
     history.forEach((attempt) => {
@@ -70,33 +129,51 @@ export const renderAttemptHistory = () => {
                 <span class="attempt-meta">${attempt.category || ''}</span>
             </div>
             <div class="attempt-row-stats">
-                <span>Score <strong>${attempt.score}</strong> (${attempt.percentage})</span>
-                <span>Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · NA ${attempt.notAnsweredCount}</span>
-                <span>Completed ${attempt.completedAtLocal || attempt.completedAt}</span>
-                <span>Started ${attempt.startedAtLocal || attempt.startedAt}</span>
-                <span>Time ${attempt.timeTaken}</span>
+                <span>Date &amp; time: <strong>${attempt.completedAtLocal || attempt.completedAt}</strong></span>
+                <span>Started: ${attempt.startedAtLocal || attempt.startedAt}</span>
+                <span>Score: <strong>${attempt.score}</strong> / ${attempt.totalQuestions} (${attempt.percentage})</span>
+                <span>Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · Not answered ${attempt.notAnsweredCount}</span>
+                <span>Time taken: ${attempt.timeTaken}</span>
             </div>
             <div class="attempt-row-actions">
-                <button type="button" class="button button-secondary attempt-view-key" data-attempt-id="${attempt.id}">View Answer Key</button>
+                <button type="button" class="button button-secondary attempt-view-analysis" data-attempt-id="${attempt.id}">Detailed Analysis</button>
+                <button type="button" class="button button-primary attempt-reattempt" data-flt="${attempt.fltId}">Reattempt</button>
             </div>
         `;
-        row.querySelector('.attempt-view-key')?.addEventListener('click', () => {
-            showAttemptAnswerKey(attempt.id);
+        row.querySelector('.attempt-view-analysis')?.addEventListener('click', () => {
+            showAttemptAnalysis(attempt.id);
+        });
+        row.querySelector('.attempt-reattempt')?.addEventListener('click', () => {
+            const mock = homeMockList.find((item) => item.id === attempt.fltId);
+            if (mock) beginTestFromHome(mock);
         });
         listEl.appendChild(row);
     });
 };
 
-export const showAttemptAnswerKey = (attemptId) => {
+export const showAttemptAnalysis = (attemptId) => {
     const attempt = getAttemptById(attemptId);
     const panel = qs('#attemptKeyPanel');
     const body = qs('#attemptKeyBody');
     if (!panel || !body || !attempt) return;
 
-    const rows = (attempt.answerKey || []).map((item) => `
+    const subjects = buildSubjectAnalysis(attempt);
+    const subjectRows = subjects.map((row) => `
+        <tr>
+            <td>${row.subject}</td>
+            <td>${row.total}</td>
+            <td class="attempt-key-correct">${row.correct}</td>
+            <td class="attempt-key-wrong">${row.wrong}</td>
+            <td class="attempt-key-unattempted">${row.unattempted}</td>
+            <td>${row.total ? Math.round((row.correct / row.total) * 100) : 0}%</td>
+        </tr>
+    `).join('');
+
+    const keyRows = (attempt.answerKey || []).map((item) => `
         <tr class="attempt-key-${item.status}">
             <td>Q${item.q}</td>
             <td>${item.subject || '—'}</td>
+            <td>${item.topic || '—'}</td>
             <td>${item.selectedLetter}</td>
             <td>${item.correctLetter}</td>
             <td>${item.status}</td>
@@ -105,33 +182,61 @@ export const showAttemptAnswerKey = (attemptId) => {
 
     body.innerHTML = `
         <div class="attempt-key-header">
-            <h3>${attempt.title} — Answer Key</h3>
-            <p>Completed: ${attempt.completedAtLocal || attempt.completedAt} · Score: ${attempt.score} (${attempt.percentage})</p>
+            <h3>${attempt.title} — Detailed Analysis</h3>
+            <p>Completed: <strong>${attempt.completedAtLocal || attempt.completedAt}</strong></p>
+            <p>Started: ${attempt.startedAtLocal || attempt.startedAt} · Duration: ${attempt.timeTaken}</p>
+            <p>Score: <strong>${attempt.score}</strong> / ${attempt.totalQuestions} (${attempt.percentage}) · Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · NA ${attempt.notAnsweredCount}</p>
         </div>
+        <h4 class="attempt-analysis-heading">Subject-wise analysis</h4>
         <div class="attempt-key-table-wrap">
             <table class="attempt-key-table">
                 <thead>
-                    <tr><th>Q</th><th>Subject</th><th>Your Ans</th><th>Key</th><th>Status</th></tr>
+                    <tr><th>Subject</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>NA</th><th>Accuracy</th></tr>
                 </thead>
-                <tbody>${rows}</tbody>
+                <tbody>${subjectRows || '<tr><td colspan="6">No subject data</td></tr>'}</tbody>
             </table>
+        </div>
+        <h4 class="attempt-analysis-heading">Question-wise answer key</h4>
+        <div class="attempt-key-table-wrap">
+            <table class="attempt-key-table">
+                <thead>
+                    <tr><th>Q</th><th>Subject</th><th>Topic</th><th>Your Ans</th><th>Key</th><th>Status</th></tr>
+                </thead>
+                <tbody>${keyRows}</tbody>
+            </table>
+        </div>
+        <div class="attempt-row-actions attempt-analysis-actions">
+            <button type="button" class="button button-primary" id="analysisReattemptBtn" data-flt="${attempt.fltId}">Reattempt this test</button>
         </div>
     `;
     panel.hidden = false;
+    body.querySelector('#analysisReattemptBtn')?.addEventListener('click', () => {
+        const mock = homeMockList.find((item) => item.id === attempt.fltId);
+        if (mock) beginTestFromHome(mock);
+    });
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
+
+/** @deprecated use showAttemptAnalysis */
+export const showAttemptAnswerKey = showAttemptAnalysis;
 
 export const bindAttemptHistoryActions = () => {
     qs('#clearAttemptHistory')?.addEventListener('click', () => {
         if (!window.confirm('Clear all saved attempt history on this browser?')) return;
         clearAttemptHistory();
-        renderAttemptHistory();
+        if (homeMockList.length) populateHomePage(homeMockList);
+        else renderAttemptHistory();
         const panel = qs('#attemptKeyPanel');
         if (panel) {
             panel.hidden = true;
             const body = qs('#attemptKeyBody');
             if (body) body.innerHTML = '';
         }
+    });
+
+    qs('#showAllAttemptHistory')?.addEventListener('click', () => {
+        renderAttemptHistory();
+        qs('#attemptHistorySection')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
     qs('#closeAttemptKey')?.addEventListener('click', () => {
@@ -276,7 +381,7 @@ export const populateResultPage = () => {
     if (meta) {
         const attempt = appState.lastAttemptId ? getAttemptById(appState.lastAttemptId) : getAttemptHistory()[0];
         if (attempt) {
-            meta.textContent = `Attempt saved · Started ${attempt.startedAtLocal} · Completed ${attempt.completedAtLocal}`;
+            meta.innerHTML = `Saved to <strong>Attempt History</strong> on the Start page · ${attempt.completedAtLocal} · Score ${attempt.score} (${attempt.percentage}). Use <em>Return Home</em> for history, detailed analysis, or Reattempt.`;
             meta.hidden = false;
         } else {
             meta.hidden = true;
@@ -284,7 +389,6 @@ export const populateResultPage = () => {
     }
 
     renderAnswerReview('all');
-    renderAttemptHistory();
 };
 
 const optionLetter = (index) => String.fromCharCode(65 + index);
@@ -394,6 +498,12 @@ export const renderAnswerReview = (filter = 'all') => {
 
 export const bindResultActions = () => {
     qs('#returnHomeButton')?.addEventListener('click', () => {
+        window.location.reload();
+    });
+
+    qs('#resultReattemptButton')?.addEventListener('click', () => {
+        const fltId = appState.selectedFlt || appState.selectedTest?.id || '';
+        if (fltId) sessionStorage.setItem('aptransco_reattempt_flt', fltId);
         window.location.reload();
     });
 

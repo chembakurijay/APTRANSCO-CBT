@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APTRANSCO CBT Portal</title>
-    <link rel="stylesheet" href="css/style.css?v=20260804i" />
-    <link rel="stylesheet" href="css/exam.css?v=20260804i" />
+    <link rel="stylesheet" href="css/style.css?v=20260804j" />
+    <link rel="stylesheet" href="css/exam.css?v=20260804j" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
@@ -28,15 +28,19 @@
                 <div class="attempt-history-header">
                     <div>
                         <h2>Attempt History</h2>
-                        <p class="attempt-history-hint">Every completed test is saved on this browser with date, time, score, and answer key.</p>
+                        <p class="attempt-history-hint">Saved on this Start page only (this browser). Each entry shows date &amp; time, score, and detailed answer analysis. Use Reattempt on a card or history row to try again.</p>
+                        <p id="attemptHistoryFilterLabel" class="attempt-history-filter" hidden></p>
                     </div>
-                    <button type="button" class="button button-secondary" id="clearAttemptHistory">Clear History</button>
+                    <div class="attempt-history-header-actions">
+                        <button type="button" class="button button-secondary" id="showAllAttemptHistory">Show All</button>
+                        <button type="button" class="button button-secondary" id="clearAttemptHistory">Clear History</button>
+                    </div>
                 </div>
                 <p id="attemptHistoryEmpty" class="attempt-history-empty">No attempts yet. Complete a mock test to see history here.</p>
                 <div id="attemptHistoryList" class="attempt-history-list"></div>
                 <div id="attemptKeyPanel" class="attempt-key-panel" hidden>
                     <div class="attempt-key-toolbar">
-                        <button type="button" class="button button-secondary" id="closeAttemptKey">Close Answer Key</button>
+                        <button type="button" class="button button-secondary" id="closeAttemptKey">Close Analysis</button>
                     </div>
                     <div id="attemptKeyBody"></div>
                 </div>
@@ -230,12 +234,13 @@
                 </section>
 
                 <div class="actions-row">
-                    <button class="button button-secondary" id="returnHomeButton" type="button">Return Home</button>
+                    <button class="button button-secondary" id="returnHomeButton" type="button">Return Home (History)</button>
+                    <button class="button button-primary" id="resultReattemptButton" type="button">Reattempt</button>
                 </div>
             </article>
         </section>
     </main>
 
-    <script type="module" src="js/app.js?v=20260804i"></script>
+    <script type="module" src="js/app.js?v=20260804j"></script>
 </body>
 </html>
