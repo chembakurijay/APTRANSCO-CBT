@@ -78,6 +78,54 @@ const bindBackButtons = () => {
     });
 };
 
+const bindPanelActions = () => {
+    const palettePanel = qs('#palettePanel');
+    const calculatorPanel = qs('#calculatorPanel');
+    const questionCard = qs('.question-card');
+
+    qs('#togglePalette')?.addEventListener('click', () => {
+        if (!palettePanel) return;
+        const expanded = palettePanel.classList.toggle('collapsed');
+        qs('#togglePalette')?.setAttribute('aria-expanded', String(!expanded));
+    });
+
+    qs('#toggleCalculator')?.addEventListener('click', () => {
+        if (!calculatorPanel) return;
+        const expanded = calculatorPanel.classList.toggle('collapsed');
+        qs('#toggleCalculator')?.setAttribute('aria-expanded', String(!expanded));
+    });
+
+    const fullscreenButton = qs('#fullscreenButton');
+
+    qs('#fullscreenButton')?.addEventListener('click', async () => {
+        const examPage = qs('.exam-page');
+        if (!examPage) return;
+
+        if (!document.fullscreenElement) {
+            try {
+                await examPage.requestFullscreen();
+            } catch (err) {
+                console.error('Fullscreen request failed', err);
+            }
+            return;
+        }
+
+        if (document.exitFullscreen) {
+            await document.exitFullscreen();
+        }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+        if (!fullscreenButton) return;
+        if (document.fullscreenElement) {
+            fullscreenButton.textContent = 'Exit Fullscreen';
+        } else {
+            fullscreenButton.textContent = 'Fullscreen';
+        }
+    });
+
+};
+
 const initializeApp = () => {
     resetState();
     populateHomePage(mockList);
@@ -87,6 +135,7 @@ const initializeApp = () => {
     bindResultActions();
     bindApplicationEvents();
     bindBackButtons();
+    bindPanelActions();
     initCalculator();
     switchPage('homePage');
 };

@@ -18,9 +18,21 @@
                 <span class="label">Time Remaining</span>
                 <div id="countdown" class="timer-display">03:00:00</div>
             </div>
+            <div class="exam-controls">
+                <button class="button button-secondary" id="togglePalette" type="button" aria-expanded="true">Toggle Palette</button>
+                <button class="button button-secondary" id="toggleCalculator" type="button" aria-expanded="true">Toggle Calculator</button>
+                <button class="button button-secondary" id="fullscreenButton" type="button">Fullscreen</button>
+            </div>
         </header>
 
         <section class="exam-body">
+            <aside class="side-panel palette-panel" id="palettePanel">
+                <div class="palette-header">
+                    <h3>Question Palette</h3>
+                    <p>Jump to any question</p>
+                </div>
+                <div id="questionPalette" class="question-palette"></div>
+            </aside>
             <article class="question-card">
                 <div class="question-top">
                     <span id="questionStatus" class="question-status">Question 1 of 100</span>
@@ -29,17 +41,9 @@
                 <div id="questionMedia" class="question-media"></div>
                 <div id="optionsList" class="options-list"></div>
             </article>
-
-            <aside class="palette-panel">
-                <div class="palette-header">
-                    <h3>Question Palette</h3>
-                    <p>Jump to any question</p>
-                </div>
-                <div id="questionPalette" class="question-palette"></div>
-                <div class="calculator-panel">
-                    <h3>Engineering Calculator</h3>
-                    <div id="calculator"></div>
-                </div>
+            <aside class="side-panel calculator-panel" id="calculatorPanel">
+                <h3>Engineering Calculator</h3>
+                <div id="calculator"></div>
             </aside>
         </section>
 

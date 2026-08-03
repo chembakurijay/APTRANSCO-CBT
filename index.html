@@ -73,7 +73,7 @@
             </article>
         </section>
 
-        <section id="examPage" class="page-section" hidden>
+        <section id="examPage" class="page-section exam-page" hidden>
             <header class="exam-header">
                 <div class="candidate-info">
                     <p class="label">Candidate</p>
@@ -83,9 +83,21 @@
                     <span class="label">Time Left</span>
                     <div id="countdown" class="timer-display">03:00:00</div>
                 </div>
+                <div class="exam-controls">
+                    <button class="button button-secondary" id="togglePalette" type="button" aria-expanded="true">Toggle Palette</button>
+                    <button class="button button-secondary" id="toggleCalculator" type="button" aria-expanded="true">Toggle Calculator</button>
+                    <button class="button button-secondary" id="fullscreenButton" type="button">Fullscreen</button>
+                </div>
             </header>
 
             <div class="exam-body">
+                <aside class="side-panel palette-panel" id="palettePanel">
+                    <div class="palette-header">
+                        <h3>Question Palette</h3>
+                        <p>Click a number to jump to a question.</p>
+                    </div>
+                    <div id="questionPalette" class="question-palette"></div>
+                </aside>
                 <article class="question-card">
                     <div class="question-card-header">
                         <span id="questionStatus" class="question-status">Question 1 of 100</span>
@@ -94,18 +106,25 @@
                     <h3 id="questionText" class="question-text">Loading question...</h3>
                     <div id="questionMedia" class="question-media"></div>
                     <div id="optionsList" class="options-list"></div>
+                    <div class="actions-row exam-navigation-row">
+                        <button class="button button-secondary" id="previousButton" type="button">Previous</button>
+                        <button class="button button-primary" id="saveNextButton" type="button">Save & Next</button>
+                        <button class="button button-secondary" id="reviewButton" type="button">Mark for Review & Next</button>
+                        <button class="button button-secondary" id="clearButton" type="button">Clear Response</button>
+                        <button class="button button-secondary" id="nextButton" type="button">Next</button>
+                        <button class="button button-danger" id="submitButton" type="button">Submit Exam</button>
+                    </div>
                 </article>
 
-                <aside class="palette-panel">
-                    <div class="palette-header">
-                        <h3>Question Palette</h3>
-                        <p>Click a number to jump to a question.</p>
-                    </div>
-                    <div id="questionPalette" class="question-palette"></div>
-                        <div class="calculator-panel">
-                            <h3>Engineering Calculator</h3>
-                            <div id="calculator"></div>
-                        </div>
+                <aside class="side-panel calculator-panel" id="calculatorPanel">
+                    <h3>Engineering Calculator</h3>
+                    <div id="calculator"></div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="resultPage" class="page-section" hidden>
+            <article class="content-card result-card">
                 <h2>Exam Result</h2>
                 <div class="result-summary">
                     <div class="summary-item">
