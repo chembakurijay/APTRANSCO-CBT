@@ -8,7 +8,6 @@ import {
     getAttemptById,
     clearAttemptHistory,
     getAttemptsForFlt,
-    buildSubjectAnalysis,
 } from './attemptHistory.js';
 
 /** Last mock list used on the Start (home) page — history UI lives only here. */
@@ -136,7 +135,7 @@ export const renderAttemptHistory = (filterFltId = null) => {
                 <span>Time taken: ${attempt.timeTaken}</span>
             </div>
             <div class="attempt-row-actions">
-                <button type="button" class="button button-secondary attempt-view-analysis" data-attempt-id="${attempt.id}">Detailed Analysis</button>
+                <button type="button" class="button button-secondary attempt-view-analysis" data-attempt-id="${attempt.id}">View Answers</button>
                 <button type="button" class="button button-primary attempt-reattempt" data-flt="${attempt.fltId}">Reattempt</button>
             </div>
         `;
@@ -151,69 +150,206 @@ export const renderAttemptHistory = (filterFltId = null) => {
     });
 };
 
-export const showAttemptAnalysis = (attemptId) => {
+const loadQuestionsForFltReview = async (fltId) => {
+    if (!fltId) return [];
+    const match = String(fltId).match(/^(civil|electrical)(\d{2})$/);
+    const paths = [];
+    if (match) {
+        const folder = match[1];
+        const num = match[2];
+        if (folder === 'civil') {
+            paths.push(`../data/civil/ce-flt${num}.js`, `../data/civil/flt${num}.js`);
+        } else {
+            paths.push(`../data/electrical/ee-flt${num}.js`, `../data/electrical/flt${num}.js`);
+        }
+    }
+    for (const path of paths) {
+        try {
+            const module = await import(path);
+            if (Array.isArray(module.questions)) return module.questions;
+        } catch {
+            // try next
+        }
+    }
+    try {
+        const module = await import('../data/questionBanks.js');
+        const bank = module.questionBanks?.[fltId];
+        if (Array.isArray(bank)) return bank;
+    } catch {
+        // ignore
+    }
+    return [];
+};
+
+const historyOptionLetter = (index) => String.fromCharCode(65 + Number(index));
+
+const getHistoryStatus = (attempt, index, question) => {
+    const selected = attempt.answers?.[index];
+    const keyItem = attempt.answerKey?.[index];
+    if (keyItem?.status) return keyItem.status;
+    if (selected === undefined || selected === null) return 'unattempted';
+    const correct = question?.answer ?? keyItem?.correct;
+    return selected === correct ? 'correct' : 'wrong';
+};
+
+const renderHistoryReviewDetail = (attempt, questions, index, detailEl, paletteEl) => {
+    const question = questions[index];
+    if (!detailEl || !question) {
+        if (detailEl) detailEl.innerHTML = '<p>Select a question number above to view the detailed solution.</p>';
+        return;
+    }
+
+    const selected = attempt.answers?.[index];
+    const status = getHistoryStatus(attempt, index, question);
+    const statusLabel = status === 'correct' ? 'Correct' : status === 'wrong' ? 'Wrong' : 'Not Attempted';
+    const yourAnswer = selected === undefined || selected === null
+        ? 'Not attempted'
+        : `${historyOptionLetter(selected)}. ${question.options?.[selected] ?? ''}`;
+    const correctIdx = question.answer;
+    const correctAnswer = `${historyOptionLetter(correctIdx)}. ${question.options?.[correctIdx] ?? ''}`;
+
+    const optionsHtml = (question.options || []).map((option, optionIndex) => {
+        const classes = ['review-option'];
+        if (optionIndex === correctIdx) classes.push('correct-option');
+        if (selected !== undefined && selected !== null && optionIndex === selected && selected !== correctIdx) {
+            classes.push('wrong-option');
+        }
+        const tags = [];
+        if (optionIndex === correctIdx) tags.push('<strong>Correct</strong>');
+        if (selected !== undefined && selected !== null && optionIndex === selected) tags.push('<em>Your answer</em>');
+        return `
+            <div class="${classes.join(' ')}">
+                <span>${historyOptionLetter(optionIndex)}.</span>
+                <div>
+                    <div>${option}</div>
+                    ${tags.length ? `<div>${tags.join(' · ')}</div>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    const imageHtml = question.image
+        ? `<div class="question-media"><img src="${question.image}" alt="Question diagram" loading="lazy" /></div>`
+        : '';
+
+    detailEl.innerHTML = `
+        <div class="review-detail-meta">
+            <span class="review-badge ${status}">Q${index + 1} · ${statusLabel}</span>
+            <span class="review-badge">${question.subject || 'General'}${question.topic ? ` · ${question.topic}` : ''}</span>
+            <span class="review-badge">${question.difficulty || ''}</span>
+            <span class="review-badge">${question.questionType || ''}</span>
+        </div>
+        <h4>${question.question || ''}</h4>
+        ${imageHtml}
+        ${optionsHtml}
+        <div class="review-solution">
+            <h4>Detailed Solution</h4>
+            <p><strong>Your answer:</strong> ${yourAnswer}</p>
+            <p><strong>Correct answer:</strong> ${correctAnswer}</p>
+            ${question.formula ? `<p><strong>Formula:</strong> ${question.formula}</p>` : ''}
+            <p><strong>Explanation:</strong> ${question.explanation || 'No explanation recorded for this question.'}</p>
+        </div>
+    `;
+
+    paletteEl?.querySelectorAll('.review-palette-btn').forEach((btn) => {
+        btn.classList.toggle('active', Number(btn.dataset.index) === index);
+    });
+};
+
+const renderHistoryAnswerReview = (attempt, questions, filter, paletteEl, detailEl) => {
+    if (!paletteEl) return;
+    clearElement(paletteEl);
+
+    questions.forEach((question, index) => {
+        const status = getHistoryStatus(attempt, index, question);
+        if (filter !== 'all' && status !== filter) return;
+
+        const button = createElement('button', {
+            className: `review-palette-btn ${status}`,
+            textContent: String(index + 1).padStart(2, '0'),
+            attributes: {
+                type: 'button',
+                'data-index': String(index),
+                'aria-label': `Question ${index + 1}, ${status}`,
+            },
+        });
+        button.addEventListener('click', () => {
+            renderHistoryReviewDetail(attempt, questions, index, detailEl, paletteEl);
+        });
+        paletteEl.appendChild(button);
+    });
+
+    const firstVisible = paletteEl.querySelector('.review-palette-btn');
+    if (firstVisible) {
+        renderHistoryReviewDetail(attempt, questions, Number(firstVisible.dataset.index), detailEl, paletteEl);
+    } else if (detailEl) {
+        detailEl.innerHTML = '<p>No questions in this filter.</p>';
+    }
+};
+
+export const showAttemptAnalysis = async (attemptId) => {
     const attempt = getAttemptById(attemptId);
     const panel = qs('#attemptKeyPanel');
     const body = qs('#attemptKeyBody');
     if (!panel || !body || !attempt) return;
 
-    const subjects = buildSubjectAnalysis(attempt);
-    const subjectRows = subjects.map((row) => `
-        <tr>
-            <td>${row.subject}</td>
-            <td>${row.total}</td>
-            <td class="attempt-key-correct">${row.correct}</td>
-            <td class="attempt-key-wrong">${row.wrong}</td>
-            <td class="attempt-key-unattempted">${row.unattempted}</td>
-            <td>${row.total ? Math.round((row.correct / row.total) * 100) : 0}%</td>
-        </tr>
-    `).join('');
+    body.innerHTML = '<p class="attempt-history-hint">Loading answers panel…</p>';
+    panel.hidden = false;
 
-    const keyRows = (attempt.answerKey || []).map((item) => `
-        <tr class="attempt-key-${item.status}">
-            <td>Q${item.q}</td>
-            <td>${item.subject || '—'}</td>
-            <td>${item.topic || '—'}</td>
-            <td>${item.selectedLetter}</td>
-            <td>${item.correctLetter}</td>
-            <td>${item.status}</td>
-        </tr>
-    `).join('');
+    let questions = Array.isArray(attempt.questionsSnapshot) && attempt.questionsSnapshot.length
+        ? attempt.questionsSnapshot
+        : await loadQuestionsForFltReview(attempt.fltId);
+
+    if (!questions.length) {
+        body.innerHTML = '<p>Could not load question paper for this attempt. Reattempt the test to save a full answers panel.</p>';
+        return;
+    }
 
     body.innerHTML = `
         <div class="attempt-key-header">
-            <h3>${attempt.title} — Detailed Analysis</h3>
-            <p>Completed: <strong>${attempt.completedAtLocal || attempt.completedAt}</strong></p>
-            <p>Started: ${attempt.startedAtLocal || attempt.startedAt} · Duration: ${attempt.timeTaken}</p>
-            <p>Score: <strong>${attempt.score}</strong> / ${attempt.totalQuestions} (${attempt.percentage}) · Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · NA ${attempt.notAnsweredCount}</p>
+            <h3>${attempt.title} — Answers</h3>
+            <p>Completed: <strong>${attempt.completedAtLocal || attempt.completedAt}</strong> · Score: <strong>${attempt.score}</strong> (${attempt.percentage})</p>
+            <p>Correct ${attempt.correctCount} · Wrong ${attempt.wrongCount} · Not answered ${attempt.notAnsweredCount} · Time ${attempt.timeTaken}</p>
         </div>
-        <h4 class="attempt-analysis-heading">Subject-wise analysis</h4>
-        <div class="attempt-key-table-wrap">
-            <table class="attempt-key-table">
-                <thead>
-                    <tr><th>Subject</th><th>Qs</th><th>Correct</th><th>Wrong</th><th>NA</th><th>Accuracy</th></tr>
-                </thead>
-                <tbody>${subjectRows || '<tr><td colspan="6">No subject data</td></tr>'}</tbody>
-            </table>
-        </div>
-        <h4 class="attempt-analysis-heading">Question-wise answer key</h4>
-        <div class="attempt-key-table-wrap">
-            <table class="attempt-key-table">
-                <thead>
-                    <tr><th>Q</th><th>Subject</th><th>Topic</th><th>Your Ans</th><th>Key</th><th>Status</th></tr>
-                </thead>
-                <tbody>${keyRows}</tbody>
-            </table>
-        </div>
+        <section class="review-section attempt-history-review" aria-label="Attempt answers review">
+            <h3>Detailed Answer Analysis</h3>
+            <p class="review-hint">Green = correct, Red = wrong, Grey = not attempted. Click a number for full solution (same as after Submit).</p>
+            <div class="review-filters" id="historyReviewFilters">
+                <button type="button" class="review-filter active" data-filter="all">All</button>
+                <button type="button" class="review-filter" data-filter="correct">Correct</button>
+                <button type="button" class="review-filter" data-filter="wrong">Wrong</button>
+                <button type="button" class="review-filter" data-filter="unattempted">Not Attempted</button>
+            </div>
+            <div class="review-palette" id="historyReviewPalette"></div>
+            <div class="review-detail" id="historyReviewDetail">
+                <p>Select a question number above to view the detailed solution.</p>
+            </div>
+        </section>
         <div class="attempt-row-actions attempt-analysis-actions">
             <button type="button" class="button button-primary" id="analysisReattemptBtn" data-flt="${attempt.fltId}">Reattempt this test</button>
         </div>
     `;
-    panel.hidden = false;
+
+    const paletteEl = body.querySelector('#historyReviewPalette');
+    const detailEl = body.querySelector('#historyReviewDetail');
+    const filtersEl = body.querySelector('#historyReviewFilters');
+
+    renderHistoryAnswerReview(attempt, questions, 'all', paletteEl, detailEl);
+
+    filtersEl?.addEventListener('click', (event) => {
+        const button = event.target.closest('.review-filter');
+        if (!button) return;
+        filtersEl.querySelectorAll('.review-filter').forEach((el) => {
+            el.classList.toggle('active', el === button);
+        });
+        renderHistoryAnswerReview(attempt, questions, button.dataset.filter || 'all', paletteEl, detailEl);
+    });
+
     body.querySelector('#analysisReattemptBtn')?.addEventListener('click', () => {
         const mock = homeMockList.find((item) => item.id === attempt.fltId);
         if (mock) beginTestFromHome(mock);
     });
+
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
