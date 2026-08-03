@@ -243,8 +243,30 @@
 }
 
 .calculator-screen {
-    min-height: 80px;
-    padding: 20px;
+    min-height: 72px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+}
+
+.calculator-mode {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+    line-height: 1;
+    align-self: flex-start;
+}
+
+.calculator-display {
+    font-size: 1.35rem;
+    word-break: break-word;
+    line-height: 1.2;
+    text-align: right;
+    width: 100%;
 }
 
 .calculator-panel .calculator-buttons,
