@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <rect width="420" height="420" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q30 — Parallel-plate dielectric fill</text>
+  
+  <text x="40" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="15">(a) Air capacitor C0</text>
+  <rect x="60" y="100" width="20" height="100" fill="#94a3b8"/>
+  <rect x="140" y="100" width="20" height="100" fill="#94a3b8"/>
+  <text x="85" y="155" font-family="Segoe UI, Arial, sans-serif" font-size="14">air</text>
+  <text x="40" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="15">(b) Half gap filled εr</text>
+  <rect x="60" y="270" width="20" height="100" fill="#94a3b8"/>
+  <rect x="140" y="270" width="20" height="100" fill="#94a3b8"/>
+  <rect x="80" y="320" width="60" height="50" fill="#bfdbfe" stroke="#1d4ed8"/>
+  <text x="90" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1d4ed8">εr</text>
+  <text x="200" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#64748b">Find modified C vs C0</text>
+
+</svg>

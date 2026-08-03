@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 560 280">
+  <rect width="560" height="280" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q33 — Filter attenuation plot</text>
+  
+  <text x="40" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="14">α (dB) vs f — identify filter type</text>
+  <!-- axes -->
+  <line x1="80" y1="220" x2="520" y2="220" stroke="#0f172a" stroke-width="2"/>
+  <line x1="80" y1="80" x2="80" y2="220" stroke="#0f172a" stroke-width="2"/>
+  <text x="500" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="14">f</text>
+  <text x="40" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="14">α</text>
+  <!-- band pass: high stop, low pass mid, high stop -->
+  <path d="M90,100 L160,100 L200,200 L320,200 L360,100 L500,100" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="230" y="190" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1d4ed8">pass band</text>
+  <text x="100" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#64748b">stop</text>
+  <text x="400" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#64748b">stop</text>
+
+</svg>
