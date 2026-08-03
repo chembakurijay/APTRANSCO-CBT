@@ -196,6 +196,7 @@ No diagram question may be submitted for approval without this declaration.
 - Search **all** uploaded source files under `sourcefiles-ce/Aptransco_sourcefiles/` **and** extracted folders `images/electrical-core-diagrams/`, `images/civil-core-diagrams/`, `images/diagram-questions-EE/`, `images/diagram-questions/` **before** inventing any figure.
 - **Forbidden default:** shipping hand-drawn / AI SVG placeholders when a usable core or PYQ figure exists for the same concept — that is an automatic Fail of Diagram Source Priority.
 - **Electrical:** ≥ **50%** of Diagram questions must use **PYQ / prior-year board-family** cropped figures (APTRANSCO / APGENCO / DISCOM / APPSC / GATE Easy–Moderate paper pages with a real engineering figure). Remaining Diagram Qs use **electrical-core** textbook crops. Rank-4 AI schematics only if ranks 1–3 truly have no usable figure after full search.
+- **Electrical Circuits circuit schematics:** at least **2** Diagram Qs in the Circuits subject must show **actual circuit diagrams** (see **Circuit Diagram Mandate**). Also prefer circuit/schematic figures in Machines, PE, Measurements, and Analog when those subjects’ diagram slots are filled.
 - **Civil:** **Default to civil-core crops** (SOM / DDRC / Steel / Fluid / Soil). Second priority = neat PYQ / bank crops from `images/diagram-questions/`. Do not skip a neat core page for a weaker SVG.
 - Every diagram image path must be a **tight crop of the figure region** (never full PDF page with headers/unrelated MCQs).
 - Declare per Diagram Q: `diagramSource` = `pyq` | `core` | `bank` | `schematic-last-resort` and the source file path.
@@ -661,14 +662,36 @@ Diagram counts below are **mandatory ranges** inside the technical 12–15 Diagr
 | Subject | Diagram Questions | Typical APTRANSCO Diagram Types |
 |---|:---:|---|
 | **Power Systems** | **3** | SLD, relay/protection, sequence networks, transformer connections |
-| **Electrical Machines** | **2–3** | Phasor diagrams, equivalent circuits, OCC/SCC, torque-slip |
-| **Electrical Circuits** | **2** | RLC networks, bridge circuits, transient circuits |
+| **Electrical Machines** | **2–3** | Phasor diagrams, **equivalent circuits**, OCC/SCC, torque-slip |
+| **Electrical Circuits** | **≥2 (mandatory circuit schematics)** | **Visible RLC / network / bridge / transient circuit diagrams** (see Circuit Diagram Mandate) |
 | **Control Systems** | **2** | Block diagrams, root locus, Bode, signal-flow graphs |
-| **Power Electronics & Drives** | **2** | Converter circuits, chopper/inverter waveforms, firing circuits |
-| **Measurements** | **1** | CT/PT, bridge circuits, CRO blocks |
-| **Analog & Digital Electronics** | **1–2** | Op-amp circuits, logic circuits, timing diagrams |
+| **Power Electronics & Drives** | **2** | **Converter / chopper / inverter circuit diagrams**, firing circuits, waveforms |
+| **Measurements** | **1** | CT/PT connections, **bridge circuits**, CRO blocks |
+| **Analog & Digital Electronics** | **1–2** | **Op-amp circuits**, logic circuits, timing diagrams |
 
 > **EE PYQ share:** at least **half** of these Diagram questions must be `diagramSource=pyq`. Utilization may contribute 0 Diagram Qs unless a strong PYQ/core figure exists.
+
+### Circuit Diagram Mandate — Electrical (STRICT — every EE FLT)
+
+A paper that barely shows **network / schematic circuit drawings** fails exam realism even if other diagram quotas are met.
+
+**Hard minimum — Electrical Circuits subject (Q28–Q38 block):**
+- At least **2** questions tagged Diagram (or Diagram+Numerical / Diagram+Application) whose attached figure is a **readable circuit schematic** (branches, elements R/L/C/sources, nodes/meshes, bridges, switched networks, or labelled transient circuits).
+- Bode-only / filter-response **plots without a circuit** do **not** count toward this Circuits-subject circuit-schematic minimum (a Graph Q may still use plots separately).
+- Prefer crops from `images/electrical-core-diagrams/Circuits/` and `images/diagram-questions-EE/Circuits/` (PYQ first when usable).
+
+**Across other EE subjects — also use circuit diagrams where natural:**
+| Subject | Circuit-diagram flavours to prefer when picking that subject’s Diagram Qs |
+|---|---|
+| Power Systems | SLD / relay CT-PT wiring / transformer connection sketches |
+| Machines | Equivalent-circuit diagrams (transformer, IM, sync machine) |
+| Power Electronics | Converter / chopper / inverter **topologies** (not waveform-only for both PE slots) |
+| Measurements | Bridge / instrument connection circuits |
+| Analog & Digital | Op-amp circuits; logic may be symbols but ≥1 op-amp/schematic preferred when available |
+
+**Paper-level expectation:** candidates must see **multiple real circuit schematics** in the EE paper (Circuits ≥2 + additional circuit-type figures from Machines / PE / Measurements / Analog as above) — not only phasors, Bode plots, and block diagrams.
+
+**Fail → not APPROVED** if Electrical Circuits has fewer than **2** true circuit-schematic Diagram Qs, or if a full-source re-scan was skipped when circuit figures were claimed “unavailable.”
 
 ### Graph / Curve Mandate (STRICT — every FLT)
 - At least **one** question must be tagged Graph/Curve **and** display a **real plotted curve image** (`image` path to a cropped graph from core/PYQ — stress–strain, compaction, Bode, torque-slip, Q–H, hydrograph, etc.).
@@ -676,6 +699,7 @@ Diagram counts below are **mandatory ranges** inside the technical 12–15 Diagr
 - Prefer graphs already available in `civil-core-diagrams` / `electrical-core-diagrams` / PYQ extracts — do not invent decorative charts when source graphs exist.
 
 **Quota Fail → paper cannot be APPROVED** until Diagram Qs are redistributed and re-sourced.
+
 #### Shared crop / usage rules (both streams)
 - Never paste a full PDF page into the CBT.
 - Crop only the **figure region** needed for the question; keep all essential labels/dimensions; strip headers, footers, page chrome, adjacent unrelated text.
@@ -1505,6 +1529,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Repeated concepts vs earlier mocks | **≤ 10%** |
 | APTRANSCO similarity (overall) | **≥ 90%** |
 | Diagram-dependent questions | **12–15** meeting Subject-wise Diagram Quota; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2 |
+| EE circuit schematics | Electrical Circuits: **≥2** true circuit-diagram Qs; plus circuit-type figures from Machines / PE / Measurements / Analog as applicable |
 | Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
 | Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
