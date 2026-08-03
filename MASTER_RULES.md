@@ -150,8 +150,8 @@ Higher-priority sources must override lower-priority sources.
 - Statement-Based Questions
 - Diagram-Based Questions
 - Assertion & Reason Questions
-- Match-the-Following / Matching Matrix Questions
-- Table-Based Questions
+- Match-the-Following / Matching Matrix Questions (**rendered as HTML List-I / List-II tables in CBT**)
+- Table-Based Questions (**rendered as HTML `<table>` in CBT — not markdown-only**)
 - Graph / Curve Interpretation Questions
 
 ### Image Source Declaration Rule
@@ -287,13 +287,48 @@ Include: Stress-strain curve, Compaction curve, Consolidation curve, Flow curve.
 At least **1 graph/curve question is mandatory per paper** (see Mandatory Per-Paper Requirements above).
 
 ### Matching Matrix Questions (≥1 per paper)
-Each paper must have at least one question where the candidate matches a **Column A** list to a **Column B** list.
-Format: Four items in Column A, four in Column B (or similar), question asks for the correct combination.
-Use for: Turbine types vs head/flow, Footing types vs condition, Soil tests vs parameters, Logic gates vs truth tables.
+Each paper must have at least one question where the candidate matches a **Column A / List-I** list to a **Column B / List-II** list.
+Format: Four items in List-I, four in List-II (or similar); options give the correct combination codes.
+
+**CBT / code requirement (mandatory — not text-only):**
+- Do **not** leave List-I / List-II only as plain paragraph text in the stem.
+- Every Matching Matrix (and Matching+Diagram) question **must** include a structured `matchingMatrix` object in the question bank JSON/JS:
+  ```js
+  matchingMatrix: {
+    caption: "Match List-I with List-II",
+    listITitle: "List-I",
+    listIITitle: "List-II",
+    listI: [ { code: "P", text: "…" }, … ],
+    listII: [ { code: "1", text: "…" }, … ],
+    instruction: "Select the correct matching code"
+  }
+  ```
+- The exam UI **must render** List-I and List-II as **HTML tables / matrix panels** on the site (via code). Markdown pipes or “P) … Q) …” prose alone is **Fail** for this pattern.
+- If a diagram also applies, keep `image` for the figure **and** still render `matchingMatrix` tables.
+
+Use for: Turbine types vs head/flow, Footing types vs condition, Soil tests vs parameters, Logic gates vs expressions, Transformer connections vs names.
 
 ### Table-Based Questions (≥1 per paper)
-At least one question must provide a **data table** (not just a text list) that the candidate must read to answer.
-Use for: Comparative properties, Code design values, SPT vs density correlation, Efficiency vs load data, Test results table.
+At least one question must provide a **data table** that the candidate must read to answer.
+
+**CBT / code requirement (mandatory — not text-only):**
+- Do **not** embed the table only as markdown `| … |` or a long single-line string in `question`.
+- Every Table question **must** include a structured `dataTable` object:
+  ```js
+  dataTable: {
+    caption: "Bus data for NR load flow",
+    headers: ["Bus", "Type", "|V| pu", "P MW"],
+    rows: [
+      ["1", "Slack", "1.05", "—"],
+      ["2", "PV", "1.02", "50"],
+      ["3", "PQ", "—", "30"]
+    ]
+  }
+  ```
+- The exam UI **must render** an HTML `<table>` on the site (via code) so candidates see a real table, not raw markdown.
+- Stem text should ask the question; table content lives in `dataTable`.
+
+Use for: Comparative properties, Code design values, SPT vs density correlation, Efficiency vs load data, Bus / load-flow data, Test results table.
 
 ### Difficulty Distribution (Technical Section – 70 Questions)
 | Difficulty | Questions | % of Technical |
@@ -1274,6 +1309,8 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Distractor quality (Audit N) | ≥95% Qs with all distractors Good |
 | Key distribution (Audit O) | Each letter ~22–28%; no same-letter run ≥5 |
 | Non-core (Audit P) | All five subject gates Pass; zero Civil↔EE Non-core clones |
+| Matching Matrix CBT | Every Matching / Matching+Diagram Q has `matchingMatrix` and site renders List-I / List-II as HTML tables |
+| Table CBT | Every Table / Table-Based Q has `dataTable` and site renders a real HTML `<table>` (not markdown-only stem) |
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
 

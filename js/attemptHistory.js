@@ -92,6 +92,8 @@ export const saveCurrentAttempt = () => {
         questionType: question.questionType || '',
         formula: question.formula || '',
         explanation: question.explanation || '',
+        dataTable: question.dataTable || null,
+        matchingMatrix: question.matchingMatrix || null,
     }));
 
     const record = {

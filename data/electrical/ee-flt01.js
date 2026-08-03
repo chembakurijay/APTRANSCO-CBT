@@ -1,6 +1,6 @@
 // Electrical Engineering FLT-01 — APTRANSCO AEE CBT
 // Generated from exports/ELECTRICAL_FLT01_REGENERATED_v2.md
-// Diagrams: images/diagrams/electrical-flt01/*.svg
+// Diagrams + structured dataTable / matchingMatrix for CBT HTML tables
 // answer is 0-based index into options
 
 export const questions = [
@@ -65,7 +65,7 @@ export const questions = [
     "id": 4,
     "subject": "Power Systems",
     "topic": "Matching+Diagram",
-    "question": "[]` Match transformer connection sketch (List-I) to name (List-II): List-I: (P) Δ–Δ (Q) Δ–Y (R) Y–Δ (S) Y–Y List-II: (1) both sides Δ (2) HV Δ LV Y (3) HV Y LV Δ (4) both Y",
+    "question": "Match List-I (transformer connection sketch) with List-II (name). Select the correct code.",
     "image": "images/diagrams/electrical-flt01/q04-xfmr-connections.svg",
     "options": [
       "P-1,Q-2,R-3,S-4",
@@ -78,7 +78,49 @@ export const questions = [
     "questionType": "Matching+Diagram",
     "formula": "",
     "explanation": "Dep PASS — identify from winding sketches.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "matchingMatrix": {
+      "caption": "Match List-I with List-II",
+      "listITitle": "List-I (Sketch / type)",
+      "listIITitle": "List-II (Description)",
+      "listI": [
+        {
+          "code": "P",
+          "text": "Δ–Δ"
+        },
+        {
+          "code": "Q",
+          "text": "Δ–Y"
+        },
+        {
+          "code": "R",
+          "text": "Y–Δ"
+        },
+        {
+          "code": "S",
+          "text": "Y–Y"
+        }
+      ],
+      "listII": [
+        {
+          "code": "1",
+          "text": "both sides Δ"
+        },
+        {
+          "code": "2",
+          "text": "HV Δ, LV Y"
+        },
+        {
+          "code": "3",
+          "text": "HV Y, LV Δ"
+        },
+        {
+          "code": "4",
+          "text": "both Y"
+        }
+      ],
+      "instruction": "Use the diagram sketches with the matrix; choose the correct matching code."
+    }
   },
   {
     "id": 5,
@@ -179,7 +221,7 @@ export const questions = [
     "id": 10,
     "subject": "Power Systems",
     "topic": "Table",
-    "question": "Given bus data table (use values in stem table): | Bus | Type | |V| pu | P MW | |---|---|---|---| | 1 | Slack | 1.05 | — | | 2 | PV | 1.02 | 50 | | 3 | PQ | — | 30 | For Newton–Raphson load flow, unknown voltage magnitude variables among buses 2–3 are:",
+    "question": "For Newton–Raphson load flow using the bus data table below, unknown voltage magnitude variables among buses 2–3 are:",
     "image": "",
     "options": [
       "|V2| and |V3|",
@@ -192,7 +234,36 @@ export const questions = [
     "questionType": "Table",
     "formula": "",
     "explanation": "PV bus |V| specified; PQ unknown.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "dataTable": {
+      "caption": "Bus data for NR load flow",
+      "headers": [
+        "Bus",
+        "Type",
+        "|V| pu",
+        "P MW"
+      ],
+      "rows": [
+        [
+          "1",
+          "Slack",
+          "1.05",
+          "—"
+        ],
+        [
+          "2",
+          "PV",
+          "1.02",
+          "50"
+        ],
+        [
+          "3",
+          "PQ",
+          "—",
+          "30"
+        ]
+      ]
+    }
   },
   {
     "id": 11,
@@ -1224,7 +1295,7 @@ export const questions = [
     "id": 65,
     "subject": "Digital Electronics",
     "topic": "Matching+Diagram",
-    "question": "[]` Match gate symbols (List-I) to expressions (List-II) as labelled on the crop:",
+    "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.",
     "image": "images/diagrams/electrical-flt01/q65-logic-match.svg",
     "options": [
       "P-NOR, Q-NAND, R-AND, S-XOR",
@@ -1237,7 +1308,49 @@ export const questions = [
     "questionType": "Matching+Diagram",
     "formula": "",
     "explanation": "Dep PASS/STRONG — codes follow crop labels (verify page has gate sketches at crop time).",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "source": "ELECTRICAL_FLT01_REGENERATED_v2",
+    "matchingMatrix": {
+      "caption": "Match List-I with List-II",
+      "listITitle": "List-I (Gate)",
+      "listIITitle": "List-II (Expression)",
+      "listI": [
+        {
+          "code": "P",
+          "text": "NAND symbol"
+        },
+        {
+          "code": "Q",
+          "text": "NOR symbol"
+        },
+        {
+          "code": "R",
+          "text": "XOR symbol"
+        },
+        {
+          "code": "S",
+          "text": "AND symbol"
+        }
+      ],
+      "listII": [
+        {
+          "code": "1",
+          "text": "¬(A·B)"
+        },
+        {
+          "code": "2",
+          "text": "¬(A+B)"
+        },
+        {
+          "code": "3",
+          "text": "A⊕B"
+        },
+        {
+          "code": "4",
+          "text": "A·B"
+        }
+      ],
+      "instruction": "Use the diagram labels with this matrix; choose the correct matching code."
+    }
   },
   {
     "id": 66,
