@@ -33,6 +33,7 @@
 
     .exam-page:fullscreen .question-card-scroll,
     .exam-page:-webkit-full-screen .question-card-scroll {
+        flex: 1 1 0% !important;
         min-height: 0 !important;
         overflow-y: auto !important;
     }
