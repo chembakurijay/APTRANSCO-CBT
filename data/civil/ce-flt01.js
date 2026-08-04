@@ -1,6 +1,6 @@
 // Civil Engineering FLT-01 — APTRANSCO AEE CBT
-// Non-core upgrade: CA 2AP+2National (≤1 power); English passage/A-P/D-I;
-// Quant/Reasoning family style; TOPIC REVISION NOTES on all Qs
+// Technical Q1–70: Civil bank
+// Shared Non-core Q71–100: identical to Electrical FLT-01 (MASTER P0)
 // answer is 0-based index into options
 
 export const questions = [
