@@ -164,9 +164,9 @@ const loadQuestionsForFltReview = async (fltId) => {
         const folder = match[1];
         const num = match[2];
         if (folder === 'civil') {
-            paths.push(`../data/civil/ce-flt${num}.js`, `../data/civil/flt${num}.js`);
+            paths.push(`../data/civil/ce-flt${num}.js?v=20260804ai`, `../data/civil/flt${num}.js?v=20260804ai`);
         } else {
-            paths.push(`../data/electrical/ee-flt${num}.js`, `../data/electrical/flt${num}.js`);
+            paths.push(`../data/electrical/ee-flt${num}.js?v=20260804ai`, `../data/electrical/flt${num}.js?v=20260804ai`);
         }
     }
     for (const path of paths) {
@@ -178,7 +178,7 @@ const loadQuestionsForFltReview = async (fltId) => {
         }
     }
     try {
-        const module = await import('../data/questionBanks.js');
+        const module = await import('../data/questionBanks.js?v=20260804ai');
         const bank = module.questionBanks?.[fltId];
         if (Array.isArray(bank)) return bank;
     } catch {
