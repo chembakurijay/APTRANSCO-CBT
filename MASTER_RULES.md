@@ -618,12 +618,15 @@ Optional but preferred: fill `formula` with the governing equation(s) used in CA
 **Fail if** FORMULAS / REMEMBER / ALSO ASKED could be swapped onto another question in the same subject unchanged.  
 **Fail if** ALSO ASKED / REMEMBER lists only **topic names** (e.g. “Mohr’s circle; torsion of shafts; pure bending”) without **inner working content**.
 
-### Inner-level revision rule (STRICT)
-| Bad (outer labels — Fail) | Good (inner content — Pass) |
+**Inner-level revision rule (STRICT)**  
+| Bad (outer labels / headings — Fail) | Good (concrete memorize content — Pass) |
 |---|---|
 | “Also asked: Mohr’s circle; combined stress” | “Centre of Mohr circle = (σx+σy)/2 on the σ-axis (τ=0); radius = √[((σx−σy)/2)²+τxy²]” |
-| “Remember: BM/SF sign conventions” | “Hogging BM often taken negative in beams; concentrated couple → jump in BMD, not in SFD” |
-| “Formulas: σ=P/A; τ=VQ/Ib as applicable” on a manometer Q | “ΔP = h(ρm−ρ)g for differential manometer with equal limb elevations; SHg≈13.6” |
+| “Remember: pure bending stress” | “Pure bending: σ=My/I=M/Z; plane sections remain plane; valid when shear deformation is neglected and material is linearly elastic” |
+| “Remember: BM/SF sign conventions” | “Concentrated couple → jump in BMD; point force → jump in SFD; dM/dx=V” |
+| “Formulas: σ=P/A; τ=VQ/Ib as applicable” on a manometer Q | “ΔP=h(ρm−ρ)g for equal limb elevations; SHg≈13.6” |
+
+Every REMEMBER / ALSO ASKED bullet must be a **self-contained fact** (equation, limit, number, or decision rule). A bullet that is only a **topic heading** with no formula/limit/rule → **Fail**.
 
 ### Length / depth bar
 | Pattern | Min explanation depth |
