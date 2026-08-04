@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#f8fafc"/>
+  <text x="24" y="32" font-family="Arial" font-size="20" fill="#0f172a">Mild Steel StressStrain Curve</text>
+  <line x1="80" y1="360" x2="820" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="80" y1="360" x2="80" y2="40" stroke="#334155" stroke-width="2"/>
+  <text x="800" y="385" font-family="Arial" font-size="16" fill="#0f172a">µ</text>
+  <text x="40" y="55" font-family="Arial" font-size="16" fill="#0f172a">Ã</text>
+  <path d="M80 360 L260 200 L280 210 L300 205 L520 90 L700 160" fill="none" stroke="#0ea5e9" stroke-width="3"/>
+  <circle cx="260" cy="200" r="5" fill="#dc2626"/>
+  <circle cx="300" cy="205" r="5" fill="#16a34a"/>
+  <circle cx="520" cy="90" r="5" fill="#7c3aed"/>
+  <circle cx="700" cy="160" r="5" fill="#ea580c"/>
+  <text x="250" y="185" font-family="Arial" font-size="14" fill="#b91c1c">A (Upper yield)</text>
+  <text x="305" y="225" font-family="Arial" font-size="14" fill="#166534">B (Lower yield)</text>
+  <text x="500" y="75" font-family="Arial" font-size="14" fill="#6d28d9">C (Ultimate)</text>
+  <text x="680" y="185" font-family="Arial" font-size="14" fill="#c2410c">D (Fracture)</text>
+  <text x="120" y="300" font-family="Arial" font-size="13" fill="#475569">Linear elastic</text>
+</svg>

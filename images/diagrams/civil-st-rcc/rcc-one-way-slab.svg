@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">One-Way Slab Panel (Ly > 2Lx)</text>
+  <rect x="180" y="70" width="500" height="140" fill="#e2e8f0" stroke="#334155" stroke-width="3" />
+  <rect x="165" y="70" width="15" height="140" fill="#475569" />
+  <rect x="680" y="70" width="15" height="140" fill="#475569" />
+  <line x1="180" y1="225" x2="680" y2="225" stroke="#475569" stroke-width="2" />
+  <text x="420" y="245" font-family="Arial" font-size="16" fill="#0f172a">Ly</text>
+  <line x1="145" y1="70" x2="145" y2="210" stroke="#475569" stroke-width="2" />
+  <text x="110" y="145" font-family="Arial" font-size="16" fill="#0f172a">Lx</text>
+  <g stroke="#0ea5e9" stroke-width="3">
+    <line x1="240" y1="90" x2="240" y2="190" />
+    <line x1="300" y1="90" x2="300" y2="190" />
+    <line x1="360" y1="90" x2="360" y2="190" />
+    <line x1="420" y1="90" x2="420" y2="190" />
+    <line x1="480" y1="90" x2="480" y2="190" />
+    <line x1="540" y1="90" x2="540" y2="190" />
+    <line x1="600" y1="90" x2="600" y2="190" />
+  </g>
+  <text x="705" y="145" font-family="Arial" font-size="16" fill="#0f172a">Support</text>
+</svg>

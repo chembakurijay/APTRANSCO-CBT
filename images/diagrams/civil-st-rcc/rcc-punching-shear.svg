@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">Punching Shear Around Column in Flat Slab</text>
+  <rect x="170" y="70" width="560" height="130" fill="#dbeafe" stroke="#334155" stroke-width="3" />
+  <rect x="405" y="105" width="90" height="70" fill="#94a3b8" stroke="#334155" stroke-width="3" />
+  <rect x="375" y="90" width="150" height="100" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="10 8" />
+  <text x="546" y="145" font-family="Arial" font-size="16" fill="#b91c1c">Critical perimeter</text>
+  <text x="425" y="150" font-family="Arial" font-size="14" fill="#0f172a">Column</text>
+</svg>
