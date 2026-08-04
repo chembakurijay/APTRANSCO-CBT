@@ -650,11 +650,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: signed hydrostatic traversal of the displayed columns gives 18.9 kPa. Trap: B uses water density for the mercury segment.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: manometer+diagram",
+    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: figure gives mercury difference h=150 mm with x=y=200 mm, water and S_Hg=13.6, g=10 m/s². With equal connecting-limb elevations, p_A−p_B = h(ρ_Hg−ρ_w)g = 0.15×(13600−1000)×10 = 18900 Pa = 18.9 kPa. Trap: B = 12.6 kPa uses (S−1)gh with h=0.10 m or drops g; D doubles the mercury head.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: manometer+diagram",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0018.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/differential-manometer-numeric (Fluid_pg0018 is symbolic-only)"
   },
   {
     "id": 30,
@@ -762,7 +762,7 @@ export const questions = [
     "id": 35,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: laminar profile+diagram",
-    "question": "Interpreting measured profiles in a circular pipe during a laboratory demonstration, the engineer compares the three curves shown in the crop. Which identified pair is consistent with steady Newtonian laminar flow?",
+    "question": "Interpreting measured profiles in a circular pipe during a laboratory demonstration, the engineer compares the labelled velocity curves (1–3) and shear curves (A–C) in the crop. Which identified pair is consistent with steady Newtonian laminar flow?",
     "image": "images/diagrams/civil-flt01/q35-laminar-profiles.jpg",
     "options": [
       "Flat velocity; maximum centreline shear",
@@ -774,11 +774,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Parabolic velocity; shear rising linearly to a wall maximum\n\nWHY CORRECT / CALCULATION:\nWhy: no-slip gives parabolic velocity; shear is zero at axis and maximum at wall. Trap: A describes neither viscous velocity nor shear correctly.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: laminar profile+diagram",
+    "explanation": "CORRECT: Parabolic velocity; shear rising linearly to a wall maximum\n\nWHY CORRECT / CALCULATION:\nWhy: figure curves 2+C — no-slip Hagen–Poiseuille velocity is parabolic; Newtonian laminar pipe shear is zero on the centreline and rises linearly to a wall maximum. Trap: 1+A is not laminar pipe; 2+B wrongly zeros wall shear; linear/uniform is Couette-type, not pressure-driven pipe flow.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: laminar profile+diagram",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0024.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/laminar-u-tau-profiles (Fluid_pg0024 is manometer MCQs, not profiles)"
   },
   {
     "id": 36,
