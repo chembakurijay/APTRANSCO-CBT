@@ -1,7 +1,5 @@
-// Electrical Engineering FLT-01 — APTRANSCO AEE CBT
-// Technical Q1–70: EE bank
-// Shared Non-core Q71–100: identical to Civil FLT-01 (MASTER P0)
-// answer is 0-based index into options
+// Electrical Engineering FLT — examiner-language stem pass
+// answer is a 0-based option index
 
 export const questions = [
   {
@@ -425,7 +423,7 @@ export const questions = [
     "id": 21,
     "subject": "Electrical Machines",
     "topic": "Numerical",
-    "question": "Alternator: Vt=1 pu, Ia=1 pu, Xs=1.0 pu, Ra≈0, pf=0.8 lag. |Ef| ≈",
+    "question": "Alternator: Vt=1 pu, Ia=1 pu, Xs=1.0 pu, Ra≈0, pf=0.8 lag. |Ef| ≈:",
     "image": "",
     "options": [
       "1.8 pu",
@@ -1098,7 +1096,7 @@ export const questions = [
     "id": 55,
     "subject": "Electrical Measurements",
     "topic": "Numerical",
-    "question": "Wheatstone: P=1 kΩ±2.1%, Q=100 Ω±0.5%, S=300 Ω±0.4%, R unknown. R≈",
+    "question": "Wheatstone: P=1 kΩ±2.1%, Q=100 Ω±0.5%, S=300 Ω±0.4%, R unknown. R≈:",
     "image": "",
     "options": [
       "3 Ω",
@@ -1139,7 +1137,7 @@ export const questions = [
     "id": 57,
     "subject": "Electrical Measurements",
     "topic": "Numerical",
-    "question": "CT 100/5, burden 15 VA. Secondary current rated 5 A. Rated burden impedance ≈",
+    "question": "CT 100/5, burden 15 VA. Secondary current rated 5 A. Rated burden impedance ≈:",
     "image": "",
     "options": [
       "0.6 Ω",
@@ -1238,7 +1236,7 @@ export const questions = [
     "id": 62,
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
-    "question": "230 V / 50-0-50 secondary; PRV on D1/D2 ≈",
+    "question": "230 V / 50-0-50 secondary; PRV on D1/D2 ≈:",
     "image": "",
     "options": [
       "50√2",
@@ -1257,7 +1255,7 @@ export const questions = [
     "id": 63,
     "subject": "Analog Electronics",
     "topic": "AR",
-    "question": "**A:** In an inverting op-amp amplifier, closed-loop gain ≈ −Rf/Rin for ideal. **R:** Virtual ground appears at inverting input due to infinite open-loop gain and negative feedback.",
+    "question": "**A:** In an inverting op-amp amplifier, closed-loop gain ≈ −Rf/Rin for ideal. **R:** Virtual ground appears at inverting input due to infinite open-loop gain and negative feedback.:",
     "image": "",
     "options": [
       "A true R false",
@@ -1276,7 +1274,7 @@ export const questions = [
     "id": 64,
     "subject": "Digital Electronics",
     "topic": "Conceptual",
-    "question": "De Morgan: (A·B)′ =",
+    "question": "De Morgan: (A·B)′ =:",
     "image": "",
     "options": [
       "A′·B′",
@@ -1295,7 +1293,7 @@ export const questions = [
     "id": 65,
     "subject": "Digital Electronics",
     "topic": "Matching+Diagram",
-    "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.",
+    "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.:",
     "image": "images/diagrams/electrical-flt01/q65-logic-match.svg",
     "options": [
       "P-NAND, Q-NOR, R-XOR, S-AND",
@@ -1396,7 +1394,7 @@ export const questions = [
     "id": 68,
     "subject": "Utilization of Electrical Energy",
     "topic": "Numerical",
-    "question": "Lamp 200 W, 250 V; used on 200 V (assume R const). Power ≈",
+    "question": "Lamp 200 W, 250 V; used on 200 V (assume R const). Power ≈:",
     "image": "",
     "options": [
       "200",
@@ -1873,7 +1871,7 @@ export const questions = [
     "id": 92,
     "subject": "English Language & Comprehension",
     "topic": "English: active-passive",
-    "question": "Choose the correct passive form of: “The engineer verified the relay settings.”",
+    "question": "Choose the correct passive form of: “The engineer verified the relay settings.”:",
     "image": "",
     "options": [
       "The relay settings were verified by the engineer.",
@@ -1893,7 +1891,7 @@ export const questions = [
     "id": 93,
     "subject": "English Language & Comprehension",
     "topic": "English: direct-indirect",
-    "question": "Choose the correct indirect speech: He said, “I am checking the earthing.”",
+    "question": "Choose the correct indirect speech: He said, “I am checking the earthing.”:",
     "image": "",
     "options": [
       "He said that he was checking the earthing.",
@@ -1913,7 +1911,7 @@ export const questions = [
     "id": 94,
     "subject": "English Language & Comprehension",
     "topic": "English: error spotting",
-    "question": "Identify the part with a grammatical error: “Neither the contractor / nor the supervisors / was willing / to sign the record.”",
+    "question": "Identify the part with a grammatical error: “Neither the contractor / nor the supervisors / was willing / to sign the record.”:",
     "image": "",
     "options": [
       "Neither the contractor",

@@ -1,7 +1,5 @@
-// Electrical Engineering FLT-02 — APTRANSCO AEE CBT
-// Technical Q1–70: EE bank (fresh vs FLT-01)
-// Non-core Q71–100: fresh quant/GA/AR/English/Computer
-// answer is 0-based index into options
+// Electrical Engineering FLT — examiner-language stem pass
+// answer is a 0-based option index
 
 export const questions = [
   {
@@ -90,7 +88,7 @@ export const questions = [
     "id": 5,
     "subject": "Power Systems",
     "topic": "Fault MVA AR",
-    "question": "Assertion (A): Two identical 100 MVA, 11 kV, Xd''=0.12 pu generators in parallel on 200 MVA base give higher 3-ph fault MVA than one machine alone.\nReason (R): Parallel identical sources halve the equivalent reactance seen at the bus.",
+    "question": "Assertion (A): Two identical 100 MVA, 11 kV, Xd''=0.12 pu generators in parallel on 200 MVA base give higher 3-ph fault MVA than one machine alone.\nReason (R): Parallel identical sources halve the equivalent reactance seen at the bus.:",
     "image": "",
     "options": [
       "Both true; R does not explain",
@@ -791,7 +789,7 @@ export const questions = [
     "id": 38,
     "subject": "Electric Circuits",
     "topic": "KCL AR",
-    "question": "Assertion (A): At any node, phasor sum of currents entering equals zero.\nReason (R): KCL follows from conservation of charge with no accumulation at the node.",
+    "question": "Assertion (A): At any node, phasor sum of currents entering equals zero.\nReason (R): KCL follows from conservation of charge with no accumulation at the node.:",
     "image": "",
     "options": [
       "A false R true",
@@ -955,7 +953,7 @@ export const questions = [
     "id": 46,
     "subject": "Control Systems",
     "topic": "CS AR",
-    "question": "Assertion (A): Adding a pure integrator in forward path increases system type by one.\nReason (R): Integrator is pole at s=0 in open-loop transfer function.",
+    "question": "Assertion (A): Adding a pure integrator in forward path increases system type by one.\nReason (R): Integrator is pole at s=0 in open-loop transfer function.:",
     "image": "",
     "options": [
       "A false R true",
@@ -1305,7 +1303,7 @@ export const questions = [
     "id": 63,
     "subject": "Analog Electronics",
     "topic": "Op-amp AR",
-    "question": "Assertion (A): Non-inverting op-amp closed-loop gain is 1+Rf/Rg.\nReason (R): Negative feedback drives differential input voltage to zero (virtual short).",
+    "question": "Assertion (A): Non-inverting op-amp closed-loop gain is 1+Rf/Rg.\nReason (R): Negative feedback drives differential input voltage to zero (virtual short).:",
     "image": "",
     "options": [
       "Both true; R does not explain",
@@ -1929,7 +1927,7 @@ export const questions = [
     "id": 92,
     "subject": "English Language & Comprehension",
     "topic": "Passive voice",
-    "question": "Choose passive: The technician calibrated the protection relay.",
+    "question": "Choose passive: The technician calibrated the protection relay.:",
     "image": "",
     "options": [
       "The protection relay is calibrate by the technician.",
@@ -1949,7 +1947,7 @@ export const questions = [
     "id": 93,
     "subject": "English Language & Comprehension",
     "topic": "Indirect speech",
-    "question": "Indirect: She said, I will submit the clearance report tomorrow.",
+    "question": "Indirect: She said, I will submit the clearance report tomorrow.:",
     "image": "",
     "options": [
       "She said that she would submitted the clearance report tomorrow.",
@@ -1969,7 +1967,7 @@ export const questions = [
     "id": 94,
     "subject": "English Language & Comprehension",
     "topic": "Error spotting",
-    "question": "Find error: The team of engineers were reviewing the drawings.",
+    "question": "Find error: The team of engineers were reviewing the drawings.:",
     "image": "",
     "options": [
       "were reviewing",

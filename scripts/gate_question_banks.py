@@ -18,6 +18,45 @@ BANNED = [
     "recompute with the same governing relation",
     "mixes up a neighbouring syllabus result with the stem",
     "under the given data/conditions the governing check yields",
+    # Template filler that polluted ST-HY generators
+    "aptransco-style check on",
+    "field data give index",
+    "check using the recorded data",
+    "high-yield reinforcement",
+    # Formulaic wrapper openers (also Fail — not examiner voice)
+    "the following engineering condition is recorded",
+    "the recorded condition is:",
+    "which response is technically correct",
+    "during the design review, an aee is reviewing",
+    "the records include",
+    "in a competitive examination,",
+    "select the correct response",
+    "which result or interpretation should be selected",
+    "the design note addresses",
+    "which engineering conclusion is most defensible",
+    "competing limit state is plausible",
+    "retains the physical load path",
+    "use the governing relation selected from the stated condition",
+    "referring to the figure, assess a",
+    "while checking the calculation sheet, the reviewer encounters",
+    "on a pre-pour inspection, the field engineer must clear",
+    "which recommendation is appropriate before approval",
+    "which interpretation is technically correct?",
+    "for the network configuration and operating condition under consideration",
+    "during commissioning of the stated electrical machine or transformer",
+    "for the feedback-control system being analysed by the engineer",
+    "in the specified converter-fed drive or power-electronic circuit",
+    "while selecting or connecting the indicated measuring instrument",
+    "for the electronic circuit or digital logic condition stated below",
+    "for the following quantitative aptitude calculation",
+    "during a field-work calculation",
+    "in the following reasoning problem",
+    "while solving a reasoning test item",
+    "choose the grammatically correct response for this language item",
+    "for the stated computer-knowledge situation",
+    "in the following general-awareness question",
+    "the deciding condition is the one stated in this item",
+    "which conclusion is most defensible",
 ]
 
 ALLOWED_DIAG_SRC = {"pyq", "core", "bank", "schematic-last-resort", "schematic-matched", "schematic-family"}
@@ -50,11 +89,31 @@ def load_bank(path: Path) -> list[dict]:
 
 def check_banned(qs: list[dict], errors: list[str]) -> None:
     for q in qs:
-        expl = (q.get("explanation") or "").lower()
+        blob = " ".join(
+            [
+                q.get("question") or "",
+                q.get("explanation") or "",
+                q.get("predictBasis") or "",
+                " ".join(q.get("options") or []),
+            ]
+        ).lower()
         for ban in BANNED:
-            if ban in expl:
+            if ban in blob:
                 errors.append(f"Q{q.get('id')}: banned phrase: {ban!r}")
-
+                break
+    # Cross-pack identical filler template detection within one bank
+    stems = [(q.get("id"), (q.get("question") or "").strip().lower()) for q in qs]
+    template_hits = sum(1 for _, s in stems if "field data give index" in s or "aptransco-style check on" in s)
+    if template_hits:
+        errors.append(f"template filler stems: {template_hits} (must be 0)")
+    # Reject exact duplicated leading clauses, the failure mode that created
+    # “For the network ... for the network ...” stems in the EE packs.
+    for qid, stem in stems:
+        words = re.findall(r"[a-z0-9]+", stem)
+        for width in range(3, min(15, len(words) // 2) + 1):
+            if words[:width] == words[width:width * 2]:
+                errors.append(f"Q{qid}: duplicated opening wrapper")
+                break
 
 def check_keys(qs: list[dict], errors: list[str], *, st: bool) -> None:
     answers = [int(q.get("answer", -1)) for q in qs]
@@ -165,7 +224,7 @@ def check_st_extras(qs: list[dict], errors: list[str], warnings: list[str], pack
             errors.append(f"Circuits schematic Diagram Qs {schem} < 2")
 
 
-def check_anti_clone(qs: list[dict], flt_qs: list[dict], errors: list[str]) -> None:
+def check_anti_clone(qs: list[dict], flt_qs: list[dict], errors: list[str], *, jaccard_thresh: float = 0.92) -> None:
     flt_stems = {(q.get("question") or "").strip().lower() for q in flt_qs}
 
     def tokens(s: str) -> set[str]:
@@ -182,7 +241,7 @@ def check_anti_clone(qs: list[dict], flt_qs: list[dict], errors: list[str]) -> N
             if not tq or not tf:
                 continue
             j = len(tq & tf) / len(tq | tf)
-            if j >= 0.92 and len(tq) > 12:
+            if j >= jaccard_thresh and len(tq) > 12:
                 errors.append(f"Q{q.get('id')}: near-clone FLT stem (Jaccard {j:.2f})")
                 break
 
@@ -197,8 +256,9 @@ def gate_file(path: Path, *, mode: str, pack_key: str = "", flt_path: Path | Non
     check_diagrams(qs, errors, root=ROOT)
     if mode == "st":
         check_st_extras(qs, errors, warnings, pack_key)
-        if flt_path and flt_path.exists():
-            check_anti_clone(qs, load_bank(flt_path), errors)
+    if flt_path and flt_path.exists():
+        jt = 0.55 if mode == "flt" else 0.92
+        check_anti_clone(qs, load_bank(flt_path), errors, jaccard_thresh=jt)
     print(f"== {path.relative_to(ROOT)} ({len(qs)} Q) ==")
     for w in warnings:
         print(" WARN:", w)

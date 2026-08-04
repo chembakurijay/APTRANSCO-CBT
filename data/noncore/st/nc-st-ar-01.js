@@ -1,6 +1,5 @@
-// Non-core ST · Aptitude & Reasoning
-// ST-HY 50Q — MASTER Subject-wise High-Yield
-// answer is 0-based index
+// APTRANSCO ST quality v4: authored examiner-language pool
+// 50 syllabus-specific MCQs; answer is a 0-based option index.
 
 export const questions = [
   {
@@ -8,7 +7,7 @@ export const questions = [
     "subject": "Aptitude & Reasoning",
     "topic": "Aptitude & Reasoning:AQ-01",
     "themeId": "AQ-01",
-    "question": "20% of 450 is:",
+    "question": "A stores ledger records 450 cable drums. The value of 20% of this quantity is:",
     "image": "",
     "options": [
       "90",
@@ -20,18 +19,18 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 90\n\nWHY CORRECT:\n0.2×450=90.\n\nCALCULATION:\nPercent.\nFinal keyed result: 90.\n\nTRAP ANALYSIS (every wrong option):\nB) 80: 10%.\nC) 100: Wrong.\nD) 45: 10% half.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 1 asks: “A stores ledger records 450 cable drums. The value of 20% of this quantity is:” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option A.\n\nTRAP ANALYSIS:\nB) 80: it represents a different definition, connection, sign convention, or operating condition.\nC) 100: it represents a different definition, connection, sign convention, or operating condition.\nD) 45: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 2,
     "subject": "Aptitude & Reasoning",
     "topic": "Aptitude & Reasoning:AQ-02",
     "themeId": "AQ-02",
-    "question": "Simple interest on 10000 at 10% for 2 years:",
+    "question": "Simple interest on ₹10,000 at 10% per annum for 2 years is:",
     "image": "",
     "options": [
       "1000",
@@ -43,11 +42,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 2000\n\nWHY CORRECT:\nPRtn/100=2000.\n\nCALCULATION:\nSI.\nFinal keyed result: 2000.\n\nTRAP ANALYSIS (every wrong option):\nA) 1000: One year.\nB) 2200: CI confuse.\nD) 2100: CI 2yr.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 2000\n\nWHY CORRECT:\nItem 2 asks: “Simple interest on ₹10,000 at 10% per annum for 2 years is:” For AQ-02, 2000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 2000, which is option C.\n\nTRAP ANALYSIS:\nA) 1000: it represents a different definition, connection, sign convention, or operating condition.\nB) 2200: it represents a different definition, connection, sign convention, or operating condition.\nD) 2100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 3,
@@ -66,18 +65,18 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 9\n\nWHY CORRECT:\n45/5=9.\n\nCALCULATION:\nMean.\nFinal keyed result: 9.\n\nTRAP ANALYSIS (every wrong option):\nA) 8: Median mix.\nB) 11: Mis-sum.\nC) 10: Last.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 9\n\nWHY CORRECT:\nItem 3 asks: “Average of 5,7,9,11,13:” For AQ-03, 9 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 9, which is option D.\n\nTRAP ANALYSIS:\nA) 8: it represents a different definition, connection, sign convention, or operating condition.\nB) 11: it represents a different definition, connection, sign convention, or operating condition.\nC) 10: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 4,
     "subject": "Aptitude & Reasoning",
     "topic": "Aptitude & Reasoning:AQ-01",
     "themeId": "AQ-01",
-    "question": "If A:B=2:3 and B:C=4:5, A:C=",
+    "question": "If A:B=2:3 and B:C=4:5, A:C=:",
     "image": "",
     "options": [
       "4:5",
@@ -89,11 +88,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 8:15\n\nWHY CORRECT:\nA:B:C=8:12:15→A:C=8:15.\n\nCALCULATION:\nRatio.\nFinal keyed result: 8:15.\n\nTRAP ANALYSIS (every wrong option):\nA) 4:5: Ignore link.\nC) 2:5: B:C.\nD) 3:4: B:C.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 8:15\n\nWHY CORRECT:\nItem 4 asks: “If A:B=2:3 and B:C=4:5, A:C=:” For AQ-01, 8:15 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 8:15, which is option B.\n\nTRAP ANALYSIS:\nA) 4:5: it represents a different definition, connection, sign convention, or operating condition.\nC) 2:5: it represents a different definition, connection, sign convention, or operating condition.\nD) 3:4: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 5,
@@ -112,11 +111,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 150 km\n\nWHY CORRECT:\n60×2.5=150.\n\nCALCULATION:\nD=ST.\nFinal keyed result: 150 km.\n\nTRAP ANALYSIS (every wrong option):\nA) 90 km: 2h.\nC) 180 km: 3h.\nD) 120 km: 1.5h.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 150 km\n\nWHY CORRECT:\nItem 5 asks: “Speed 60 km/h for 2.5 h distance:” For AQ-02, 150 km matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 150 km, which is option B.\n\nTRAP ANALYSIS:\nA) 90 km: it represents a different definition, connection, sign convention, or operating condition.\nC) 180 km: it represents a different definition, connection, sign convention, or operating condition.\nD) 120 km: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 6,
@@ -135,11 +134,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 6 days\n\nWHY CORRECT:\n1/10+1/15=1/6.\n\nCALCULATION:\nWork.\nFinal keyed result: 6 days.\n\nTRAP ANALYSIS (every wrong option):\nA) 25: Avg days.\nB) 5: Sum.\nC) 12.5: LCM wrong.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 6 days\n\nWHY CORRECT:\nItem 6 asks: “Work: A 10 days B 15; together:” For AQ-03, 6 days matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 6 days, which is option D.\n\nTRAP ANALYSIS:\nA) 25: it represents a different definition, connection, sign convention, or operating condition.\nB) 5: it represents a different definition, connection, sign convention, or operating condition.\nC) 12.5: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 7,
@@ -158,11 +157,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 25%\n\nWHY CORRECT:\n200/800=25%.\n\nCALCULATION:\nProfit.\nFinal keyed result: 25%.\n\nTRAP ANALYSIS (every wrong option):\nB) 12.5%: On SP.\nC) 80%: Half.\nD) 20%: Raw.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 25%\n\nWHY CORRECT:\nItem 7 asks: “CP 800 SP 1000 profit%:” For AQ-01, 25% matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 25%, which is option A.\n\nTRAP ANALYSIS:\nB) 12.5%: it represents a different definition, connection, sign convention, or operating condition.\nC) 80%: it represents a different definition, connection, sign convention, or operating condition.\nD) 20%: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 8,
@@ -181,11 +180,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 24 h\n\nWHY CORRECT:\n1/8−1/12=1/24.\n\nCALCULATION:\nPipes.\nFinal keyed result: 24 h.\n\nTRAP ANALYSIS (every wrong option):\nA) 20 h: Avg.\nB) 10 h: Diff hours.\nD) 4 h: LCM.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 h\n\nWHY CORRECT:\nItem 8 asks: “Pipe fills 8h empties 12h; net fill:” For AQ-02, 24 h matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 h, which is option C.\n\nTRAP ANALYSIS:\nA) 20 h: it represents a different definition, connection, sign convention, or operating condition.\nB) 10 h: it represents a different definition, connection, sign convention, or operating condition.\nD) 4 h: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 9,
@@ -204,11 +203,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 1050\n\nWHY CORRECT:\n5000(1.1²−1)=1050.\n\nCALCULATION:\nCI.\nFinal keyed result: 1050.\n\nTRAP ANALYSIS (every wrong option):\nB) 1100: SI.\nC) 1000: 3%.\nD) 950: Under.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 1050\n\nWHY CORRECT:\nItem 9 asks: “CI 2 years 10% on 5000≈:” For AQ-03, 1050 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 1050, which is option A.\n\nTRAP ANALYSIS:\nB) 1100: it represents a different definition, connection, sign convention, or operating condition.\nC) 1000: it represents a different definition, connection, sign convention, or operating condition.\nD) 950: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 10,
@@ -227,11 +226,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 7\n\nWHY CORRECT:\nMiddle.\n\nCALCULATION:\nMedian.\nFinal keyed result: 7.\n\nTRAP ANALYSIS (every wrong option):\nA) 8: Q1.\nB) 5: Q3.\nD) 9: Mean.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Check operation.\n• Units.\n• Avoid SP/CP mix.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant numbers.\n• Twin trap.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 7\n\nWHY CORRECT:\nItem 10 asks: “Median of 3,5,7,9,11:” For AQ-01, 7 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 7, which is option C.\n\nTRAP ANALYSIS:\nA) 8: it represents a different definition, connection, sign convention, or operating condition.\nB) 5: it represents a different definition, connection, sign convention, or operating condition.\nD) 9: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Quant"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 11,
@@ -250,11 +249,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 42\n\nWHY CORRECT:\nDifferences 4,6,8,10,12.\n\nCALCULATION:\nSeries.\nFinal keyed result: 42.\n\nTRAP ANALYSIS (every wrong option):\nA) 32: Stops early.\nB) 40: Wrong step.\nC) 36: Halve.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• n(n+1).\n• Check diffs.\n• Don't force squares.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Odd one out.\n• Analogy.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 42\n\nWHY CORRECT:\nItem 11 asks: “Series 2,6,12,20,30, next is:” For AR-01, 42 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 42, which is option D.\n\nTRAP ANALYSIS:\nA) 32: it represents a different definition, connection, sign convention, or operating condition.\nB) 40: it represents a different definition, connection, sign convention, or operating condition.\nC) 36: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Series"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 12,
@@ -273,11 +272,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: DIBJS\n\nWHY CORRECT:\n+1 each letter.\n\nCALCULATION:\nCoding.\nFinal keyed result: DIBJS.\n\nTRAP ANALYSIS (every wrong option):\nA) DIBJT: Identity.\nC) CHAIR: −1.\nD) BGZHS: Last +2.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Reverse.\n• Opposite letters.\n• Number codes.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Symbol coding.\n• Matrix.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: DIBJS\n\nWHY CORRECT:\nItem 12 asks: “If HOUSE is coded IPVTF, CHAIR →:” For AR-02, DIBJS matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies DIBJS without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) DIBJT: it represents a different definition, connection, sign convention, or operating condition.\nC) CHAIR: it represents a different definition, connection, sign convention, or operating condition.\nD) BGZHS: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Coding"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 13,
@@ -296,11 +295,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Need diagram / options classic NW patterns\n\nWHY CORRECT:\nDirection/blood need careful map — choose consistent option set.\n\nCALCULATION:\nBlood/dir.\nFinal keyed result: Need diagram / options classic NW patterns.\n\nTRAP ANALYSIS (every wrong option):\nA) Unrelated always: Force father.\nB) Son always: Force son.\nC) Father always: Unrelated.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Draw tree.\n• Generations.\n• In-laws.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Puzzle seating.\n• Syllogism.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Need diagram / options classic NW patterns\n\nWHY CORRECT:\nItem 13 asks: “A is N of B; B is W of C; C is S of D. A relative D?” For AR-03, Need diagram / options classic NW patterns matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies Need diagram / options classic NW patterns without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Unrelated always: it represents a different definition, connection, sign convention, or operating condition.\nB) Son always: it represents a different definition, connection, sign convention, or operating condition.\nC) Father always: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "Relation"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 14,
@@ -319,11 +318,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 12\n\nWHY CORRECT:\n12 even composite among primes pattern break.\n\nCALCULATION:\nOdd.\nFinal keyed result: 12.\n\nTRAP ANALYSIS (every wrong option):\nA) 7: Prime start.\nC) 3: Prime.\nD) 5: Prime.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Define rule first.\n• Check all.\n• Avoid haste.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Figure odd.\n• Letter odd.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 12\n\nWHY CORRECT:\nItem 14 asks: “Odd one: 3,5,7,12,17:” For AR-01, 12 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 12, which is option B.\n\nTRAP ANALYSIS:\nA) 7: it represents a different definition, connection, sign convention, or operating condition.\nC) 3: it represents a different definition, connection, sign convention, or operating condition.\nD) 5: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Odd one"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 15,
@@ -342,815 +341,815 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: does not follow\n\nWHY CORRECT:\nSome B not necessarily those A.\n\nCALCULATION:\nVenn.\nFinal keyed result: does not follow.\n\nTRAP ANALYSIS (every wrong option):\nB) equivalent all: Illicit.\nC) none exist: Wrong.\nD) follows always: Existential.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Distribution.\n• Particular.\n• Figures.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Possibility.\n• Complement.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: does not follow\n\nWHY CORRECT:\nItem 15 asks: “Syllogism: All A are B; some B are C. Conclusion some A are C:” For AR-02, does not follow matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies does not follow without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) equivalent all: it represents a different definition, connection, sign convention, or operating condition.\nC) none exist: it represents a different definition, connection, sign convention, or operating condition.\nD) follows always: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Syllogism"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 16,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 25 and factor 2. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AR-01 and apply an unrelated code clause",
-      "Replace the measured 25 by a neighbouring round number without basis",
-      "Apply the standard AR-01 check using the recorded data",
-      "Double-count factor 2 inside AR-01"
+      "36",
+      "37",
+      "38",
+      "40"
     ],
     "answer": 2,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 25, 2.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AR-01 and apply an unrelated code clause: Skips AR-01 entirely.\nB) Replace the measured 25 by a neighbouring round number without basis: Double-applies factor 2.\nD) Double-count factor 2 inside AR-01: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 16 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option C.\n\nTRAP ANALYSIS:\nA) 36: it represents a different definition, connection, sign convention, or operating condition.\nB) 37: it represents a different definition, connection, sign convention, or operating condition.\nD) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 17,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 26 and factor 3. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AR-02 check using the recorded data",
-      "Replace the measured 26 by a neighbouring round number without basis",
-      "Ignore AR-02 and apply an unrelated code clause",
-      "Double-count factor 3 inside AR-02"
+      "East",
+      "North",
+      "South",
+      "West"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 26, 3.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 26 by a neighbouring round number without basis: Skips AR-02 entirely.\nC) Ignore AR-02 and apply an unrelated code clause: Double-applies factor 3.\nD) Double-count factor 3 inside AR-02: Rounds 26 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 17 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies East without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) North: it represents a different definition, connection, sign convention, or operating condition.\nC) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 18,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 10 and factor 4. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 4 inside AR-03",
-      "Replace the measured 10 by a neighbouring round number without basis",
-      "Apply the standard AR-03 check using the recorded data",
-      "Ignore AR-03 and apply an unrelated code clause"
+      "All portable items are relays.",
+      "Some relays are certainly portable.",
+      "No definite conclusion follows that any relay is portable.",
+      "No device is portable."
     ],
     "answer": 2,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 10, 4.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 4 inside AR-03: Skips AR-03 entirely.\nB) Replace the measured 10 by a neighbouring round number without basis: Double-applies factor 4.\nD) Ignore AR-03 and apply an unrelated code clause: Rounds 10 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 18 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies No definite conclusion follows that any relay is portable. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nB) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 19,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 11 and factor 5. Which action is most defensible?",
+    "question": "During a relay-setting review, A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 11 by a neighbouring round number without basis",
-      "Apply the standard AQ-01 check using the recorded data",
-      "Double-count factor 5 inside AQ-01",
-      "Ignore AQ-01 and apply an unrelated code clause"
+      "45",
+      "90",
+      "80",
+      "100"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 11, 5.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 11 by a neighbouring round number without basis: Skips AQ-01 entirely.\nC) Double-count factor 5 inside AQ-01: Double-applies factor 5.\nD) Ignore AQ-01 and apply an unrelated code clause: Rounds 11 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 19 asks: “During a relay-setting review, A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option B.\n\nTRAP ANALYSIS:\nA) 45: it represents a different definition, connection, sign convention, or operating condition.\nC) 80: it represents a different definition, connection, sign convention, or operating condition.\nD) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 20,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 12 and factor 6. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Replace the measured 12 by a neighbouring round number without basis",
-      "Double-count factor 6 inside AQ-02",
-      "Apply the standard AQ-02 check using the recorded data"
+      "₹1,000",
+      "₹2,100",
+      "₹2,200",
+      "₹2,000"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 12, 6.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AQ-02 and apply an unrelated code clause: Skips AQ-02 entirely.\nB) Replace the measured 12 by a neighbouring round number without basis: Double-applies factor 6.\nC) Double-count factor 6 inside AQ-02: Rounds 12 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 20 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option D.\n\nTRAP ANALYSIS:\nA) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nB) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nC) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 21,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-03",
     "themeId": "AQ-03",
-    "question": "In an APTRANSCO-style check on AR (AQ-03), field data give index 13 and factor 2. Which action is most defensible?",
+    "question": "Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 13 by a neighbouring round number without basis",
-      "Ignore AQ-03 and apply an unrelated code clause",
-      "Double-count factor 2 inside AQ-03",
-      "Apply the standard AQ-03 check using the recorded data"
+      "20 and 44",
+      "28 and 36",
+      "32 and 32",
+      "24 and 40"
     ],
     "answer": 3,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-03 check with recorded data 13, 2.\n\nCALCULATION:\nApply AQ-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 13 by a neighbouring round number without basis: Skips AQ-03 entirely.\nB) Ignore AQ-03 and apply an unrelated code clause: Double-applies factor 2.\nC) Double-count factor 2 inside AQ-03: Rounds 13 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-03 with one datum changed.\n• Classic wrong formula paired with AQ-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 and 40\n\nWHY CORRECT:\nItem 21 asks: “Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?” For AQ-03, 24 and 40 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 and 40, which is option D.\n\nTRAP ANALYSIS:\nA) 20 and 44: it represents a different definition, connection, sign convention, or operating condition.\nB) 28 and 36: it represents a different definition, connection, sign convention, or operating condition.\nC) 32 and 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-03 reinforcement"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 22,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 14 and factor 3. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AR-01 check using the recorded data",
-      "Replace the measured 14 by a neighbouring round number without basis",
-      "Ignore AR-01 and apply an unrelated code clause",
-      "Double-count factor 3 inside AR-01"
+      "38",
+      "36",
+      "37",
+      "40"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 14, 3.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 14 by a neighbouring round number without basis: Skips AR-01 entirely.\nC) Ignore AR-01 and apply an unrelated code clause: Double-applies factor 3.\nD) Double-count factor 3 inside AR-01: Rounds 14 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 22 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option A.\n\nTRAP ANALYSIS:\nB) 36: it represents a different definition, connection, sign convention, or operating condition.\nC) 37: it represents a different definition, connection, sign convention, or operating condition.\nD) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 23,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 15 and factor 4. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 4 inside AR-02",
-      "Ignore AR-02 and apply an unrelated code clause",
-      "Apply the standard AR-02 check using the recorded data",
-      "Replace the measured 15 by a neighbouring round number without basis"
+      "North",
+      "South",
+      "East",
+      "West"
     ],
     "answer": 2,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 15, 4.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 4 inside AR-02: Skips AR-02 entirely.\nB) Ignore AR-02 and apply an unrelated code clause: Double-applies factor 4.\nD) Replace the measured 15 by a neighbouring round number without basis: Rounds 15 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 23 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies East without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) North: it represents a different definition, connection, sign convention, or operating condition.\nB) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 24,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 16 and factor 5. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside AR-03",
-      "Apply the standard AR-03 check using the recorded data",
-      "Replace the measured 16 by a neighbouring round number without basis",
-      "Ignore AR-03 and apply an unrelated code clause"
+      "All portable items are relays.",
+      "No definite conclusion follows that any relay is portable.",
+      "Some relays are certainly portable.",
+      "No device is portable."
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 16, 5.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside AR-03: Skips AR-03 entirely.\nC) Replace the measured 16 by a neighbouring round number without basis: Double-applies factor 5.\nD) Ignore AR-03 and apply an unrelated code clause: Rounds 16 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 24 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies No definite conclusion follows that any relay is portable. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nC) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 25,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 17 and factor 6. Which action is most defensible?",
+    "question": "A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AQ-01 and apply an unrelated code clause",
-      "Replace the measured 17 by a neighbouring round number without basis",
-      "Apply the standard AQ-01 check using the recorded data",
-      "Double-count factor 6 inside AQ-01"
+      "45",
+      "80",
+      "90",
+      "100"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 17, 6.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AQ-01 and apply an unrelated code clause: Skips AQ-01 entirely.\nB) Replace the measured 17 by a neighbouring round number without basis: Double-applies factor 6.\nD) Double-count factor 6 inside AQ-01: Rounds 17 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 25 asks: “A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option C.\n\nTRAP ANALYSIS:\nA) 45: it represents a different definition, connection, sign convention, or operating condition.\nB) 80: it represents a different definition, connection, sign convention, or operating condition.\nD) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 26,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 18 and factor 2. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Apply the standard AQ-02 check using the recorded data",
-      "Double-count factor 2 inside AQ-02",
-      "Replace the measured 18 by a neighbouring round number without basis"
+      "₹1,000",
+      "₹2,000",
+      "₹2,100",
+      "₹2,200"
     ],
     "answer": 1,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 18, 2.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AQ-02 and apply an unrelated code clause: Skips AQ-02 entirely.\nC) Double-count factor 2 inside AQ-02: Double-applies factor 2.\nD) Replace the measured 18 by a neighbouring round number without basis: Rounds 18 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 26 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option B.\n\nTRAP ANALYSIS:\nA) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nC) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nD) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 27,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-03",
     "themeId": "AQ-03",
-    "question": "In an APTRANSCO-style check on AR (AQ-03), field data give index 19 and factor 3. Which action is most defensible?",
+    "question": "Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AQ-03 check using the recorded data",
-      "Replace the measured 19 by a neighbouring round number without basis",
-      "Ignore AQ-03 and apply an unrelated code clause",
-      "Double-count factor 3 inside AQ-03"
+      "24 and 40",
+      "20 and 44",
+      "28 and 36",
+      "32 and 32"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-03 check with recorded data 19, 3.\n\nCALCULATION:\nApply AQ-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 19 by a neighbouring round number without basis: Skips AQ-03 entirely.\nC) Ignore AQ-03 and apply an unrelated code clause: Double-applies factor 3.\nD) Double-count factor 3 inside AQ-03: Rounds 19 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-03 with one datum changed.\n• Classic wrong formula paired with AQ-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 and 40\n\nWHY CORRECT:\nItem 27 asks: “Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?” For AQ-03, 24 and 40 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 and 40, which is option A.\n\nTRAP ANALYSIS:\nB) 20 and 44: it represents a different definition, connection, sign convention, or operating condition.\nC) 28 and 36: it represents a different definition, connection, sign convention, or operating condition.\nD) 32 and 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-03 reinforcement"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 28,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 20 and factor 4. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 4 inside AR-01",
-      "Ignore AR-01 and apply an unrelated code clause",
-      "Replace the measured 20 by a neighbouring round number without basis",
-      "Apply the standard AR-01 check using the recorded data"
+      "36",
+      "37",
+      "40",
+      "38"
     ],
     "answer": 3,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 20, 4.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 4 inside AR-01: Skips AR-01 entirely.\nB) Ignore AR-01 and apply an unrelated code clause: Double-applies factor 4.\nC) Replace the measured 20 by a neighbouring round number without basis: Rounds 20 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 28 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option D.\n\nTRAP ANALYSIS:\nA) 36: it represents a different definition, connection, sign convention, or operating condition.\nB) 37: it represents a different definition, connection, sign convention, or operating condition.\nC) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 29,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 21 and factor 5. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AR-02 check using the recorded data",
-      "Ignore AR-02 and apply an unrelated code clause",
-      "Replace the measured 21 by a neighbouring round number without basis",
-      "Double-count factor 5 inside AR-02"
+      "East",
+      "North",
+      "South",
+      "West"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 21, 5.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Ignore AR-02 and apply an unrelated code clause: Skips AR-02 entirely.\nC) Replace the measured 21 by a neighbouring round number without basis: Double-applies factor 5.\nD) Double-count factor 5 inside AR-02: Rounds 21 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 29 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies East without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) North: it represents a different definition, connection, sign convention, or operating condition.\nC) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 30,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 22 and factor 6. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 6 inside AR-03",
-      "Apply the standard AR-03 check using the recorded data",
-      "Ignore AR-03 and apply an unrelated code clause",
-      "Replace the measured 22 by a neighbouring round number without basis"
+      "All portable items are relays.",
+      "No definite conclusion follows that any relay is portable.",
+      "Some relays are certainly portable.",
+      "No device is portable."
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 22, 6.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 6 inside AR-03: Skips AR-03 entirely.\nC) Ignore AR-03 and apply an unrelated code clause: Double-applies factor 6.\nD) Replace the measured 22 by a neighbouring round number without basis: Rounds 22 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 30 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is No definite conclusion follows that any relay is portable., which is option B.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nC) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 31,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 23 and factor 2. Which action is most defensible?",
+    "question": "A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 2 inside AQ-01",
-      "Ignore AQ-01 and apply an unrelated code clause",
-      "Replace the measured 23 by a neighbouring round number without basis",
-      "Apply the standard AQ-01 check using the recorded data"
+      "45",
+      "80",
+      "100",
+      "90"
     ],
     "answer": 3,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 23, 2.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 2 inside AQ-01: Skips AQ-01 entirely.\nB) Ignore AQ-01 and apply an unrelated code clause: Double-applies factor 2.\nC) Replace the measured 23 by a neighbouring round number without basis: Rounds 23 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 31 asks: “A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option D.\n\nTRAP ANALYSIS:\nA) 45: it represents a different definition, connection, sign convention, or operating condition.\nB) 80: it represents a different definition, connection, sign convention, or operating condition.\nC) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 32,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 24 and factor 3. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 24 by a neighbouring round number without basis",
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Apply the standard AQ-02 check using the recorded data",
-      "Double-count factor 3 inside AQ-02"
+      "₹1,000",
+      "₹2,100",
+      "₹2,000",
+      "₹2,200"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 24, 3.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 24 by a neighbouring round number without basis: Skips AQ-02 entirely.\nB) Ignore AQ-02 and apply an unrelated code clause: Double-applies factor 3.\nD) Double-count factor 3 inside AQ-02: Rounds 24 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 32 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option C.\n\nTRAP ANALYSIS:\nA) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nB) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nD) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 33,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-03",
     "themeId": "AQ-03",
-    "question": "In an APTRANSCO-style check on AR (AQ-03), field data give index 25 and factor 4. Which action is most defensible?",
+    "question": "Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 25 by a neighbouring round number without basis",
-      "Apply the standard AQ-03 check using the recorded data",
-      "Ignore AQ-03 and apply an unrelated code clause",
-      "Double-count factor 4 inside AQ-03"
+      "20 and 44",
+      "24 and 40",
+      "28 and 36",
+      "32 and 32"
     ],
     "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-03 check with recorded data 25, 4.\n\nCALCULATION:\nApply AQ-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 25 by a neighbouring round number without basis: Skips AQ-03 entirely.\nC) Ignore AQ-03 and apply an unrelated code clause: Double-applies factor 4.\nD) Double-count factor 4 inside AQ-03: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-03 with one datum changed.\n• Classic wrong formula paired with AQ-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 and 40\n\nWHY CORRECT:\nItem 33 asks: “Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?” For AQ-03, 24 and 40 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 and 40, which is option B.\n\nTRAP ANALYSIS:\nA) 20 and 44: it represents a different definition, connection, sign convention, or operating condition.\nC) 28 and 36: it represents a different definition, connection, sign convention, or operating condition.\nD) 32 and 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-03 reinforcement"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 34,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 26 and factor 5. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AR-01 and apply an unrelated code clause",
-      "Replace the measured 26 by a neighbouring round number without basis",
-      "Double-count factor 5 inside AR-01",
-      "Apply the standard AR-01 check using the recorded data"
+      "36",
+      "37",
+      "40",
+      "38"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 26, 5.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AR-01 and apply an unrelated code clause: Skips AR-01 entirely.\nB) Replace the measured 26 by a neighbouring round number without basis: Double-applies factor 5.\nC) Double-count factor 5 inside AR-01: Rounds 26 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 34 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option D.\n\nTRAP ANALYSIS:\nA) 36: it represents a different definition, connection, sign convention, or operating condition.\nB) 37: it represents a different definition, connection, sign convention, or operating condition.\nC) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 35,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 10 and factor 6. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AR-02 check using the recorded data",
-      "Replace the measured 10 by a neighbouring round number without basis",
-      "Double-count factor 6 inside AR-02",
-      "Ignore AR-02 and apply an unrelated code clause"
+      "East",
+      "North",
+      "South",
+      "West"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 10, 6.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 10 by a neighbouring round number without basis: Skips AR-02 entirely.\nC) Double-count factor 6 inside AR-02: Double-applies factor 6.\nD) Ignore AR-02 and apply an unrelated code clause: Rounds 10 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 35 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is East, which is option A.\n\nTRAP ANALYSIS:\nB) North: it represents a different definition, connection, sign convention, or operating condition.\nC) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 36,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 11 and factor 2. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 11 by a neighbouring round number without basis",
-      "Double-count factor 2 inside AR-03",
-      "Apply the standard AR-03 check using the recorded data",
-      "Ignore AR-03 and apply an unrelated code clause"
+      "All portable items are relays.",
+      "Some relays are certainly portable.",
+      "No definite conclusion follows that any relay is portable.",
+      "No device is portable."
     ],
     "answer": 2,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 11, 2.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 11 by a neighbouring round number without basis: Skips AR-03 entirely.\nB) Double-count factor 2 inside AR-03: Double-applies factor 2.\nD) Ignore AR-03 and apply an unrelated code clause: Rounds 11 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 36 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is No definite conclusion follows that any relay is portable., which is option C.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nB) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 37,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 12 and factor 3. Which action is most defensible?",
+    "question": "A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AQ-01 check using the recorded data",
-      "Ignore AQ-01 and apply an unrelated code clause",
-      "Double-count factor 3 inside AQ-01",
-      "Replace the measured 12 by a neighbouring round number without basis"
+      "90",
+      "45",
+      "80",
+      "100"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 12, 3.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Ignore AQ-01 and apply an unrelated code clause: Skips AQ-01 entirely.\nC) Double-count factor 3 inside AQ-01: Double-applies factor 3.\nD) Replace the measured 12 by a neighbouring round number without basis: Rounds 12 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 37 asks: “A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option A.\n\nTRAP ANALYSIS:\nB) 45: it represents a different definition, connection, sign convention, or operating condition.\nC) 80: it represents a different definition, connection, sign convention, or operating condition.\nD) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 38,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 13 and factor 4. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 4 inside AQ-02",
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Replace the measured 13 by a neighbouring round number without basis",
-      "Apply the standard AQ-02 check using the recorded data"
+      "₹1,000",
+      "₹2,100",
+      "₹2,200",
+      "₹2,000"
     ],
     "answer": 3,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 13, 4.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 4 inside AQ-02: Skips AQ-02 entirely.\nB) Ignore AQ-02 and apply an unrelated code clause: Double-applies factor 4.\nC) Replace the measured 13 by a neighbouring round number without basis: Rounds 13 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 38 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option D.\n\nTRAP ANALYSIS:\nA) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nB) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nC) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 39,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-03",
     "themeId": "AQ-03",
-    "question": "In an APTRANSCO-style check on AR (AQ-03), field data give index 14 and factor 5. Which action is most defensible?",
+    "question": "Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside AQ-03",
-      "Ignore AQ-03 and apply an unrelated code clause",
-      "Apply the standard AQ-03 check using the recorded data",
-      "Replace the measured 14 by a neighbouring round number without basis"
+      "20 and 44",
+      "28 and 36",
+      "24 and 40",
+      "32 and 32"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-03 check with recorded data 14, 5.\n\nCALCULATION:\nApply AQ-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside AQ-03: Skips AQ-03 entirely.\nB) Ignore AQ-03 and apply an unrelated code clause: Double-applies factor 5.\nD) Replace the measured 14 by a neighbouring round number without basis: Rounds 14 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-03 with one datum changed.\n• Classic wrong formula paired with AQ-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 and 40\n\nWHY CORRECT:\nItem 39 asks: “Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?” For AQ-03, 24 and 40 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 and 40, which is option C.\n\nTRAP ANALYSIS:\nA) 20 and 44: it represents a different definition, connection, sign convention, or operating condition.\nB) 28 and 36: it represents a different definition, connection, sign convention, or operating condition.\nD) 32 and 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-03 reinforcement"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 40,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 15 and factor 6. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 15 by a neighbouring round number without basis",
-      "Apply the standard AR-01 check using the recorded data",
-      "Double-count factor 6 inside AR-01",
-      "Ignore AR-01 and apply an unrelated code clause"
+      "36",
+      "38",
+      "37",
+      "40"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 15, 6.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 15 by a neighbouring round number without basis: Skips AR-01 entirely.\nC) Double-count factor 6 inside AR-01: Double-applies factor 6.\nD) Ignore AR-01 and apply an unrelated code clause: Rounds 15 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 40 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option B.\n\nTRAP ANALYSIS:\nA) 36: it represents a different definition, connection, sign convention, or operating condition.\nC) 37: it represents a different definition, connection, sign convention, or operating condition.\nD) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 41,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 16 and factor 2. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AR-02 and apply an unrelated code clause",
-      "Double-count factor 2 inside AR-02",
-      "Apply the standard AR-02 check using the recorded data",
-      "Replace the measured 16 by a neighbouring round number without basis"
+      "North",
+      "South",
+      "East",
+      "West"
     ],
     "answer": 2,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 16, 2.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AR-02 and apply an unrelated code clause: Skips AR-02 entirely.\nB) Double-count factor 2 inside AR-02: Double-applies factor 2.\nD) Replace the measured 16 by a neighbouring round number without basis: Rounds 16 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 41 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is East, which is option C.\n\nTRAP ANALYSIS:\nA) North: it represents a different definition, connection, sign convention, or operating condition.\nB) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 42,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 17 and factor 3. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 3 inside AR-03",
-      "Apply the standard AR-03 check using the recorded data",
-      "Ignore AR-03 and apply an unrelated code clause",
-      "Replace the measured 17 by a neighbouring round number without basis"
+      "All portable items are relays.",
+      "No definite conclusion follows that any relay is portable.",
+      "Some relays are certainly portable.",
+      "No device is portable."
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 17, 3.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 3 inside AR-03: Skips AR-03 entirely.\nC) Ignore AR-03 and apply an unrelated code clause: Double-applies factor 3.\nD) Replace the measured 17 by a neighbouring round number without basis: Rounds 17 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 42 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies No definite conclusion follows that any relay is portable. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nC) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 43,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 18 and factor 4. Which action is most defensible?",
+    "question": "A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AQ-01 check using the recorded data",
-      "Double-count factor 4 inside AQ-01",
-      "Ignore AQ-01 and apply an unrelated code clause",
-      "Replace the measured 18 by a neighbouring round number without basis"
+      "90",
+      "45",
+      "80",
+      "100"
     ],
     "answer": 0,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 18, 4.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 4 inside AQ-01: Skips AQ-01 entirely.\nC) Ignore AQ-01 and apply an unrelated code clause: Double-applies factor 4.\nD) Replace the measured 18 by a neighbouring round number without basis: Rounds 18 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 43 asks: “A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option A.\n\nTRAP ANALYSIS:\nB) 45: it represents a different definition, connection, sign convention, or operating condition.\nC) 80: it represents a different definition, connection, sign convention, or operating condition.\nD) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 44,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 19 and factor 5. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside AQ-02",
-      "Replace the measured 19 by a neighbouring round number without basis",
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Apply the standard AQ-02 check using the recorded data"
+      "₹1,000",
+      "₹2,100",
+      "₹2,200",
+      "₹2,000"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 19, 5.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside AQ-02: Skips AQ-02 entirely.\nB) Replace the measured 19 by a neighbouring round number without basis: Double-applies factor 5.\nC) Ignore AQ-02 and apply an unrelated code clause: Rounds 19 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 44 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option D.\n\nTRAP ANALYSIS:\nA) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nB) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nC) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 45,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-03",
     "themeId": "AQ-03",
-    "question": "In an APTRANSCO-style check on AR (AQ-03), field data give index 20 and factor 6. Which action is most defensible?",
+    "question": "Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AQ-03 check using the recorded data",
-      "Double-count factor 6 inside AQ-03",
-      "Replace the measured 20 by a neighbouring round number without basis",
-      "Ignore AQ-03 and apply an unrelated code clause"
+      "24 and 40",
+      "20 and 44",
+      "28 and 36",
+      "32 and 32"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-03 check with recorded data 20, 6.\n\nCALCULATION:\nApply AQ-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 6 inside AQ-03: Skips AQ-03 entirely.\nC) Replace the measured 20 by a neighbouring round number without basis: Double-applies factor 6.\nD) Ignore AQ-03 and apply an unrelated code clause: Rounds 20 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-03 with one datum changed.\n• Classic wrong formula paired with AQ-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 24 and 40\n\nWHY CORRECT:\nItem 45 asks: “Two quantities are compared in the ratio 3:5 and their total is 64. Which statement is correct?” For AQ-03, 24 and 40 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 24 and 40, which is option A.\n\nTRAP ANALYSIS:\nB) 20 and 44: it represents a different definition, connection, sign convention, or operating condition.\nC) 28 and 36: it represents a different definition, connection, sign convention, or operating condition.\nD) 32 and 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-03 reinforcement"
+    "predictBasis": "AQ-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 46,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-01",
     "themeId": "AR-01",
-    "question": "In an APTRANSCO-style check on AR (AR-01), field data give index 21 and factor 2. Which action is most defensible?",
+    "question": "A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 21 by a neighbouring round number without basis",
-      "Double-count factor 2 inside AR-01",
-      "Ignore AR-01 and apply an unrelated code clause",
-      "Apply the standard AR-01 check using the recorded data"
+      "36",
+      "37",
+      "40",
+      "38"
     ],
     "answer": 3,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-01 check with recorded data 21, 2.\n\nCALCULATION:\nApply AR-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 21 by a neighbouring round number without basis: Skips AR-01 entirely.\nB) Double-count factor 2 inside AR-01: Double-applies factor 2.\nC) Ignore AR-01 and apply an unrelated code clause: Rounds 21 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-01 with one datum changed.\n• Classic wrong formula paired with AR-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 38\n\nWHY CORRECT:\nItem 46 asks: “A number series increases by successive odd numbers: 3, 6, 11, 18, 27, __. Which statement is correct?” For AR-01, 38 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 38, which is option D.\n\nTRAP ANALYSIS:\nA) 36: it represents a different definition, connection, sign convention, or operating condition.\nB) 37: it represents a different definition, connection, sign convention, or operating condition.\nC) 40: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-01 reinforcement"
+    "predictBasis": "AR-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 47,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-02",
     "themeId": "AR-02",
-    "question": "In an APTRANSCO-style check on AR (AR-02), field data give index 22 and factor 3. Which action is most defensible?",
+    "question": "A person faces north, turns right, then right again, and finally turns left. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 3 inside AR-02",
-      "Apply the standard AR-02 check using the recorded data",
-      "Ignore AR-02 and apply an unrelated code clause",
-      "Replace the measured 22 by a neighbouring round number without basis"
+      "North",
+      "East",
+      "South",
+      "West"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-02 check with recorded data 22, 3.\n\nCALCULATION:\nApply AR-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 3 inside AR-02: Skips AR-02 entirely.\nC) Ignore AR-02 and apply an unrelated code clause: Double-applies factor 3.\nD) Replace the measured 22 by a neighbouring round number without basis: Rounds 22 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-02 with one datum changed.\n• Classic wrong formula paired with AR-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: East\n\nWHY CORRECT:\nItem 47 asks: “A person faces north, turns right, then right again, and finally turns left. Which statement is correct?” For AR-02, East matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies East without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) North: it represents a different definition, connection, sign convention, or operating condition.\nC) South: it represents a different definition, connection, sign convention, or operating condition.\nD) West: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-02 reinforcement"
+    "predictBasis": "AR-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 48,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AR-03",
     "themeId": "AR-03",
-    "question": "In an APTRANSCO-style check on AR (AR-03), field data give index 23 and factor 4. Which action is most defensible?",
+    "question": "All relays are devices and some devices are portable. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore AR-03 and apply an unrelated code clause",
-      "Double-count factor 4 inside AR-03",
-      "Apply the standard AR-03 check using the recorded data",
-      "Replace the measured 23 by a neighbouring round number without basis"
+      "All portable items are relays.",
+      "Some relays are certainly portable.",
+      "No definite conclusion follows that any relay is portable.",
+      "No device is portable."
     ],
     "answer": 2,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AR-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AR-03 check with recorded data 23, 4.\n\nCALCULATION:\nApply AR-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AR-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore AR-03 and apply an unrelated code clause: Skips AR-03 entirely.\nB) Double-count factor 4 inside AR-03: Double-applies factor 4.\nD) Replace the measured 23 by a neighbouring round number without basis: Rounds 23 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AR-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AR-03 with one datum changed.\n• Classic wrong formula paired with AR-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: No definite conclusion follows that any relay is portable.\n\nWHY CORRECT:\nItem 48 asks: “All relays are devices and some devices are portable. Which statement is correct?” For AR-03, No definite conclusion follows that any relay is portable. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the stated arithmetic or logical sequence to the stated case; it identifies No definite conclusion follows that any relay is portable. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) All portable items are relays.: it represents a different definition, connection, sign convention, or operating condition.\nB) Some relays are certainly portable.: it represents a different definition, connection, sign convention, or operating condition.\nD) No device is portable.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AR-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AR-03 reinforcement"
+    "predictBasis": "AR-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 49,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-01",
     "themeId": "AQ-01",
-    "question": "In an APTRANSCO-style check on AR (AQ-01), field data give index 24 and factor 5. Which action is most defensible?",
+    "question": "A candidate allocates 20% of a quantity of 450 units. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside AQ-01",
-      "Replace the measured 24 by a neighbouring round number without basis",
-      "Apply the standard AQ-01 check using the recorded data",
-      "Ignore AQ-01 and apply an unrelated code clause"
+      "45",
+      "80",
+      "90",
+      "100"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-01 check with recorded data 24, 5.\n\nCALCULATION:\nApply AQ-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside AQ-01: Skips AQ-01 entirely.\nB) Replace the measured 24 by a neighbouring round number without basis: Double-applies factor 5.\nD) Ignore AQ-01 and apply an unrelated code clause: Rounds 24 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-01 with one datum changed.\n• Classic wrong formula paired with AQ-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 90\n\nWHY CORRECT:\nItem 49 asks: “A candidate allocates 20% of a quantity of 450 units. Which statement is correct?” For AQ-01, 90 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 90, which is option C.\n\nTRAP ANALYSIS:\nA) 45: it represents a different definition, connection, sign convention, or operating condition.\nB) 80: it represents a different definition, connection, sign convention, or operating condition.\nD) 100: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-01 reinforcement"
+    "predictBasis": "AQ-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 50,
     "subject": "Aptitude & Reasoning",
     "topic": "AR:AQ-02",
     "themeId": "AQ-02",
-    "question": "In an APTRANSCO-style check on AR (AQ-02), field data give index 25 and factor 6. Which action is most defensible?",
+    "question": "A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard AQ-02 check using the recorded data",
-      "Replace the measured 25 by a neighbouring round number without basis",
-      "Ignore AQ-02 and apply an unrelated code clause",
-      "Double-count factor 6 inside AQ-02"
+      "₹2,000",
+      "₹1,000",
+      "₹2,100",
+      "₹2,200"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard AQ-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard AQ-02 check with recorded data 25, 6.\n\nCALCULATION:\nApply AQ-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard AQ-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 25 by a neighbouring round number without basis: Skips AQ-02 entirely.\nC) Ignore AQ-02 and apply an unrelated code clause: Double-applies factor 6.\nD) Double-count factor 6 inside AQ-02: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key AQ-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same AQ-02 with one datum changed.\n• Classic wrong formula paired with AQ-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ₹2,000\n\nWHY CORRECT:\nItem 50 asks: “A deposit of ₹10,000 earns simple interest at 10% per annum for two years. Which statement is correct?” For AQ-02, ₹2,000 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the stated arithmetic or logical sequence. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ₹2,000, which is option A.\n\nTRAP ANALYSIS:\nB) ₹1,000: it represents a different definition, connection, sign convention, or operating condition.\nC) ₹2,100: it represents a different definition, connection, sign convention, or operating condition.\nD) ₹2,200: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor AQ-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield AQ-02 reinforcement"
+    "predictBasis": "AQ-02 concept assessed through a distinct examiner-language item"
   }
 ];

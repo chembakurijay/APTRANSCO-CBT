@@ -1,6 +1,5 @@
-// Non-core ST · GA · English · Computer
-// ST-HY 50Q — MASTER Subject-wise High-Yield
-// answer is 0-based index
+// APTRANSCO ST quality v4: authored examiner-language pool
+// 50 syllabus-specific MCQs; answer is a 0-based option index.
 
 export const questions = [
   {
@@ -8,7 +7,7 @@ export const questions = [
     "subject": "GA · English · Computer",
     "topic": "GA · English · Computer:GA-01",
     "themeId": "GA-01",
-    "question": "Fundamental Rights are primarily in which Part of Constitution of India?",
+    "question": "Fundamental Rights in the Constitution of India are contained primarily in:",
     "image": "",
     "options": [
       "Part II",
@@ -20,18 +19,18 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Part III\n\nWHY CORRECT:\nPart III FR.\n\nCALCULATION:\nPolity.\nFinal keyed result: Part III.\n\nTRAP ANALYSIS (every wrong option):\nA) Part II: DPSP IV.\nB) Part XI: Citizenship II.\nD) Part IV: Relations XI.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Art 12–35.\n• WRITS.\n• Reasonable restrictions.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• DPSP.\n• Duties.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Part III\n\nWHY CORRECT:\nItem 1 asks: “Fundamental Rights in the Constitution of India are contained primarily in:” For GA-01, Part III matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Part III without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Part II: it represents a different definition, connection, sign convention, or operating condition.\nB) Part XI: it represents a different definition, connection, sign convention, or operating condition.\nD) Part IV: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Polity"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 2,
     "subject": "GA · English · Computer",
     "topic": "GA · English · Computer:GA-02",
     "themeId": "GA-02",
-    "question": "RBI primarily regulates:",
+    "question": "The Reserve Bank of India is principally responsible for regulating:",
     "image": "",
     "options": [
       "monetary policy / banking",
@@ -43,11 +42,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: monetary policy / banking\n\nWHY CORRECT:\nCentral bank.\n\nCALCULATION:\nEconomy.\nFinal keyed result: monetary policy / banking.\n\nTRAP ANALYSIS (every wrong option):\nB) only SEBI equities: Markets SEBI.\nC) only TRAI: Insurance.\nD) only IRDAI: Telecom.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Repo.\n• CRR/SLR.\n• Payment systems.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• NABARD.\n• SIDBI.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: monetary policy / banking\n\nWHY CORRECT:\nItem 2 asks: “The Reserve Bank of India is principally responsible for regulating:” For GA-02, monetary policy / banking matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies monetary policy / banking without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) only SEBI equities: it represents a different definition, connection, sign convention, or operating condition.\nC) only TRAI: it represents a different definition, connection, sign convention, or operating condition.\nD) only IRDAI: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Economy"
+    "predictBasis": "GA-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 3,
@@ -66,18 +65,18 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: power transmission in Andhra Pradesh\n\nWHY CORRECT:\nState transmission utility.\n\nCALCULATION:\nAP power.\nFinal keyed result: power transmission in Andhra Pradesh.\n\nTRAP ANALYSIS (every wrong option):\nA) only ports: Mining.\nB) only telecom: Telecom.\nC) only coal mining: Ports.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• DISCOM vs TRANSCO.\n• SLDC.\n• Grid.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• GENCO.\n• PGCIL.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: power transmission in Andhra Pradesh\n\nWHY CORRECT:\nItem 3 asks: “APTRANSCO is associated with:” For GA-03, power transmission in Andhra Pradesh matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies power transmission in Andhra Pradesh without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) only ports: it represents a different definition, connection, sign convention, or operating condition.\nB) only telecom: it represents a different definition, connection, sign convention, or operating condition.\nC) only coal mining: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 9,
-    "predictBasis": "AP power"
+    "predictBasis": "GA-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 4,
     "subject": "GA · English · Computer",
     "topic": "GA · English · Computer:EN-01",
     "themeId": "EN-01",
-    "question": "Choose correct passive: 'They are repairing the line.'",
+    "question": "Choose correct passive: 'They are repairing the line.':",
     "image": "",
     "options": [
       "The line repaired",
@@ -89,11 +88,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: The line is being repaired\n\nWHY CORRECT:\nPresent continuous passive.\n\nCALCULATION:\nGrammar.\nFinal keyed result: The line is being repaired.\n\nTRAP ANALYSIS (every wrong option):\nA) The line repaired: Missing aux.\nC) The line was repair: Wrong tense.\nD) The line is repair: Wrong form.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Active/Passive.\n• Agent by.\n• Modals.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Direct/Indirect.\n• Error spot.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The line is being repaired\n\nWHY CORRECT:\nItem 4 asks: “Choose correct passive: 'They are repairing the line.':” For EN-01, The line is being repaired matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies The line is being repaired without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) The line repaired: it represents a different definition, connection, sign convention, or operating condition.\nC) The line was repair: it represents a different definition, connection, sign convention, or operating condition.\nD) The line is repair: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "English"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 5,
@@ -112,18 +111,18 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: lessen\n\nWHY CORRECT:\nVocab.\n\nCALCULATION:\nMeaning.\nFinal keyed result: lessen.\n\nTRAP ANALYSIS (every wrong option):\nB) delay only: Antonym.\nC) ignore: Neglect.\nD) worsen: Postpone≠.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Context.\n• Academic words.\n• Collocation.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Antonym aggravate.\n• Idioms.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: lessen\n\nWHY CORRECT:\nItem 5 asks: “Synonym of 'mitigate':” For EN-02, lessen matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies lessen without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) delay only: it represents a different definition, connection, sign convention, or operating condition.\nC) ignore: it represents a different definition, connection, sign convention, or operating condition.\nD) worsen: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "Vocab"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 6,
     "subject": "GA · English · Computer",
     "topic": "GA · English · Computer:EN-03",
     "themeId": "EN-03",
-    "question": "RC skill: main idea questions ask for:",
+    "question": "In a reading-comprehension passage, a main-idea question asks the candidate to identify:",
     "image": "",
     "options": [
       "printer name",
@@ -135,11 +134,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: central theme not a detail\n\nWHY CORRECT:\nReading.\n\nCALCULATION:\nRC.\nFinal keyed result: central theme not a detail.\n\nTRAP ANALYSIS (every wrong option):\nA) printer name: Detail trap.\nB) only last date: Surface.\nC) only first word: Meta.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Tone.\n• Inference.\n• Vocab-in-context.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Para jumbles.\n• Summary.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: central theme not a detail\n\nWHY CORRECT:\nItem 6 asks: “In a reading-comprehension passage, a main-idea question asks the candidate to identify:” For EN-03, central theme not a detail matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies central theme not a detail without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) printer name: it represents a different definition, connection, sign convention, or operating condition.\nB) only last date: it represents a different definition, connection, sign convention, or operating condition.\nC) only first word: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "RC"
+    "predictBasis": "EN-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 7,
@@ -158,11 +157,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 8 bits\n\nWHY CORRECT:\nByte.\n\nCALCULATION:\nComputer.\nFinal keyed result: 8 bits.\n\nTRAP ANALYSIS (every wrong option):\nA) 16 bits: Nibble 4.\nC) 4 bits: Word varies.\nD) 2 bits: Pair.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• KB/MB.\n• Binary.\n• ASCII.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Unicode.\n• Word size.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: 8 bits\n\nWHY CORRECT:\nItem 7 asks: “1 byte equals:” For CM-01, 8 bits matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is 8 bits, which is option B.\n\nTRAP ANALYSIS:\nA) 16 bits: it represents a different definition, connection, sign convention, or operating condition.\nC) 4 bits: it represents a different definition, connection, sign convention, or operating condition.\nD) 2 bits: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 9,
-    "predictBasis": "Computer"
+    "predictBasis": "CM-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 8,
@@ -181,11 +180,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: not found\n\nWHY CORRECT:\nWeb.\n\nCALCULATION:\nHTTP.\nFinal keyed result: not found.\n\nTRAP ANALYSIS (every wrong option):\nA) redirect: 200 OK.\nB) OK: 3xx.\nD) server error 500: 5xx.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• DNS.\n• TCP.\n• SSL.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• REST.\n• API.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: not found\n\nWHY CORRECT:\nItem 8 asks: “HTTP status 404 means:” For CM-02, not found matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies not found without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) redirect: it represents a different definition, connection, sign convention, or operating condition.\nB) OK: it represents a different definition, connection, sign convention, or operating condition.\nD) server error 500: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Networking"
+    "predictBasis": "CM-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 9,
@@ -204,11 +203,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: uniquely identifies row\n\nWHY CORRECT:\nDBMS.\n\nCALCULATION:\nKeys.\nFinal keyed result: uniquely identifies row.\n\nTRAP ANALYSIS (every wrong option):\nB) allows all null duplicates: Nulls bad.\nC) is always text: Type free.\nD) is foreign always: FK references.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Candidate.\n• Composite.\n• Normalization.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• SQL join.\n• Index.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: uniquely identifies row\n\nWHY CORRECT:\nItem 9 asks: “Primary key in DBMS:” For CM-03, uniquely identifies row matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies uniquely identifies row without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) allows all null duplicates: it represents a different definition, connection, sign convention, or operating condition.\nC) is always text: it represents a different definition, connection, sign convention, or operating condition.\nD) is foreign always: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "DBMS"
+    "predictBasis": "CM-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 10,
@@ -227,11 +226,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: steal credentials via deceptive messages\n\nWHY CORRECT:\nSecurity.\n\nCALCULATION:\nSocial eng.\nFinal keyed result: steal credentials via deceptive messages.\n\nTRAP ANALYSIS (every wrong option):\nA) compile code: Thermal.\nC) cool CPU: Dev.\nD) format only HDD always: Wipe not definition.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• 2FA.\n• HTTPS.\n• Spam filters.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Malware.\n• VPN.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: steal credentials via deceptive messages\n\nWHY CORRECT:\nItem 10 asks: “Phishing aims to:” For CM-04, steal credentials via deceptive messages matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies steal credentials via deceptive messages without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) compile code: it represents a different definition, connection, sign convention, or operating condition.\nC) cool CPU: it represents a different definition, connection, sign convention, or operating condition.\nD) format only HDD always: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-04, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Security"
+    "predictBasis": "CM-04 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 11,
@@ -250,18 +249,18 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Part IV\n\nWHY CORRECT:\nDPSP.\n\nCALCULATION:\nPolity.\nFinal keyed result: Part IV.\n\nTRAP ANALYSIS (every wrong option):\nA) Part I: FR.\nB) Part XXII: Union.\nD) Part III: Short.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Non-justiciable.\n• Art 36–51.\n• Gandhian socialist.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• FR conflict.\n• Amendments.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Part IV\n\nWHY CORRECT:\nItem 11 asks: “Directive Principles are in:” For GA-01, Part IV matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Part IV without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Part I: it represents a different definition, connection, sign convention, or operating condition.\nB) Part XXII: it represents a different definition, connection, sign convention, or operating condition.\nD) Part III: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Polity"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 12,
     "subject": "GA · English · Computer",
     "topic": "GA · English · Computer:EN-01",
     "themeId": "EN-01",
-    "question": "Indirect: He said, 'I am ready.' →",
+    "question": "Indirect: He said, 'I am ready.' →:",
     "image": "",
     "options": [
       "He said he is ready yesterday",
@@ -273,884 +272,884 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: He said that he was ready\n\nWHY CORRECT:\nBackshift.\n\nCALCULATION:\nNarration.\nFinal keyed result: He said that he was ready.\n\nTRAP ANALYSIS (every wrong option):\nA) He said he is ready yesterday: Person wrong.\nB) He said ready: Tense mix.\nC) He said that I am ready: Fragment.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Reporting verb.\n• Modals.\n• Imperatives.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Passive narration.\n• Questions.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: He said that he was ready\n\nWHY CORRECT:\nItem 12 asks: “Indirect: He said, 'I am ready.' →:” For EN-01, He said that he was ready matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies He said that he was ready without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) He said he is ready yesterday: it represents a different definition, connection, sign convention, or operating condition.\nB) He said ready: it represents a different definition, connection, sign convention, or operating condition.\nC) He said that I am ready: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 8,
-    "predictBasis": "Direct/Indirect"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 13,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-01",
     "themeId": "EN-01",
-    "question": "In an APTRANSCO-style check on GEC (EN-01), field data give index 22 and factor 4. Which action is most defensible?",
+    "question": "The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore EN-01 and apply an unrelated code clause",
-      "Apply the standard EN-01 check using the recorded data",
-      "Double-count factor 4 inside EN-01",
-      "Replace the measured 22 by a neighbouring round number without basis"
+      "The report is completed by the engineer.",
+      "The report was completed by the engineer.",
+      "The engineer was completed by the report.",
+      "The report had completed the engineer."
     ],
     "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-01 check with recorded data 22, 4.\n\nCALCULATION:\nApply EN-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore EN-01 and apply an unrelated code clause: Skips EN-01 entirely.\nC) Double-count factor 4 inside EN-01: Double-applies factor 4.\nD) Replace the measured 22 by a neighbouring round number without basis: Rounds 22 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-01 with one datum changed.\n• Classic wrong formula paired with EN-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The report was completed by the engineer.\n\nWHY CORRECT:\nItem 13 asks: “The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?” For EN-01, The report was completed by the engineer. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies The report was completed by the engineer. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) The report is completed by the engineer.: it represents a different definition, connection, sign convention, or operating condition.\nC) The engineer was completed by the report.: it represents a different definition, connection, sign convention, or operating condition.\nD) The report had completed the engineer.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-01 reinforcement"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 14,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-02",
     "themeId": "EN-02",
-    "question": "In an APTRANSCO-style check on GEC (EN-02), field data give index 23 and factor 5. Which action is most defensible?",
+    "question": "Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside EN-02",
-      "Replace the measured 23 by a neighbouring round number without basis",
-      "Ignore EN-02 and apply an unrelated code clause",
-      "Apply the standard EN-02 check using the recorded data"
+      "Ravi said that I am preparing for the examination.",
+      "Ravi says he was preparing for the examination.",
+      "Ravi said that he is preparing for the examination.",
+      "Ravi said that he was preparing for the examination."
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-02 check with recorded data 23, 5.\n\nCALCULATION:\nApply EN-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside EN-02: Skips EN-02 entirely.\nB) Replace the measured 23 by a neighbouring round number without basis: Double-applies factor 5.\nC) Ignore EN-02 and apply an unrelated code clause: Rounds 23 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-02 with one datum changed.\n• Classic wrong formula paired with EN-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Ravi said that he was preparing for the examination.\n\nWHY CORRECT:\nItem 14 asks: “Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?” For EN-02, Ravi said that he was preparing for the examination. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Ravi said that he was preparing for the examination. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Ravi said that I am preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nB) Ravi says he was preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nC) Ravi said that he is preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-02 reinforcement"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 15,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-03",
     "themeId": "EN-03",
-    "question": "In an APTRANSCO-style check on GEC (EN-03), field data give index 24 and factor 6. Which action is most defensible?",
+    "question": ", A grammatically correct completion is needed: 'neither the officers nor the operator ___ available.' Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard EN-03 check using the recorded data",
-      "Double-count factor 6 inside EN-03",
-      "Ignore EN-03 and apply an unrelated code clause",
-      "Replace the measured 24 by a neighbouring round number without basis"
+      "is",
+      "are",
+      "were",
+      "have"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-03 check with recorded data 24, 6.\n\nCALCULATION:\nApply EN-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 6 inside EN-03: Skips EN-03 entirely.\nC) Ignore EN-03 and apply an unrelated code clause: Double-applies factor 6.\nD) Replace the measured 24 by a neighbouring round number without basis: Rounds 24 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-03 with one datum changed.\n• Classic wrong formula paired with EN-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: is\n\nWHY CORRECT:\nItem 15 asks: “, A grammatically correct completion is needed: 'neither the officers nor the operator ___ available.' Which statement is correct?” For EN-03, is matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is is, which is option A.\n\nTRAP ANALYSIS:\nB) are: it represents a different definition, connection, sign convention, or operating condition.\nC) were: it represents a different definition, connection, sign convention, or operating condition.\nD) have: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-03 reinforcement"
+    "predictBasis": "EN-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 16,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-01",
     "themeId": "CM-01",
-    "question": "In an APTRANSCO-style check on GEC (CM-01), field data give index 25 and factor 2. Which action is most defensible?",
+    "question": "A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 2 inside CM-01",
-      "Ignore CM-01 and apply an unrelated code clause",
-      "Apply the standard CM-01 check using the recorded data",
-      "Replace the measured 25 by a neighbouring round number without basis"
+      "Monitor",
+      "Keyboard",
+      "ALU",
+      "Printer"
     ],
     "answer": 2,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-01 check with recorded data 25, 2.\n\nCALCULATION:\nApply CM-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 2 inside CM-01: Skips CM-01 entirely.\nB) Ignore CM-01 and apply an unrelated code clause: Double-applies factor 2.\nD) Replace the measured 25 by a neighbouring round number without basis: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-01 with one datum changed.\n• Classic wrong formula paired with CM-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ALU\n\nWHY CORRECT:\nItem 16 asks: “A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?” For CM-01, ALU matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ALU, which is option C.\n\nTRAP ANALYSIS:\nA) Monitor: it represents a different definition, connection, sign convention, or operating condition.\nB) Keyboard: it represents a different definition, connection, sign convention, or operating condition.\nD) Printer: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-01 reinforcement"
+    "predictBasis": "CM-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 17,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-02",
     "themeId": "CM-02",
-    "question": "In an APTRANSCO-style check on GEC (CM-02), field data give index 26 and factor 3. Which action is most defensible?",
+    "question": "An operating-system function is identified. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 3 inside CM-02",
-      "Apply the standard CM-02 check using the recorded data",
-      "Ignore CM-02 and apply an unrelated code clause",
-      "Replace the measured 26 by a neighbouring round number without basis"
+      "Compiling every programming language automatically",
+      "Managing hardware and software resources",
+      "Providing only internet access",
+      "Replacing application data permanently"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-02 check with recorded data 26, 3.\n\nCALCULATION:\nApply CM-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 3 inside CM-02: Skips CM-02 entirely.\nC) Ignore CM-02 and apply an unrelated code clause: Double-applies factor 3.\nD) Replace the measured 26 by a neighbouring round number without basis: Rounds 26 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-02 with one datum changed.\n• Classic wrong formula paired with CM-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Managing hardware and software resources\n\nWHY CORRECT:\nItem 17 asks: “An operating-system function is identified. Which statement is correct?” For CM-02, Managing hardware and software resources matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Managing hardware and software resources without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Compiling every programming language automatically: it represents a different definition, connection, sign convention, or operating condition.\nC) Providing only internet access: it represents a different definition, connection, sign convention, or operating condition.\nD) Replacing application data permanently: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-02 reinforcement"
+    "predictBasis": "CM-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 18,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-03",
     "themeId": "CM-03",
-    "question": "In an APTRANSCO-style check on GEC (CM-03), field data give index 10 and factor 4. Which action is most defensible?",
+    "question": "A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard CM-03 check using the recorded data",
-      "Double-count factor 4 inside CM-03",
-      "Replace the measured 10 by a neighbouring round number without basis",
-      "Ignore CM-03 and apply an unrelated code clause"
+      "It attempts to obtain information by deception.",
+      "It improves network bandwidth.",
+      "It is a hardware backup method.",
+      "It is an operating-system update."
     ],
     "answer": 0,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-03 check with recorded data 10, 4.\n\nCALCULATION:\nApply CM-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 4 inside CM-03: Skips CM-03 entirely.\nC) Replace the measured 10 by a neighbouring round number without basis: Double-applies factor 4.\nD) Ignore CM-03 and apply an unrelated code clause: Rounds 10 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-03 with one datum changed.\n• Classic wrong formula paired with CM-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: It attempts to obtain information by deception.\n\nWHY CORRECT:\nItem 18 asks: “A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?” For CM-03, It attempts to obtain information by deception. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies It attempts to obtain information by deception. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) It improves network bandwidth.: it represents a different definition, connection, sign convention, or operating condition.\nC) It is a hardware backup method.: it represents a different definition, connection, sign convention, or operating condition.\nD) It is an operating-system update.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-03 reinforcement"
+    "predictBasis": "CM-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 19,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-01",
     "themeId": "GA-01",
-    "question": "In an APTRANSCO-style check on GEC (GA-01), field data give index 11 and factor 5. Which action is most defensible?",
+    "question": "During a relay-setting review, The constitution of india is examined for the provision describing equality before law. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore GA-01 and apply an unrelated code clause",
-      "Double-count factor 5 inside GA-01",
-      "Apply the standard GA-01 check using the recorded data",
-      "Replace the measured 11 by a neighbouring round number without basis"
+      "Article 19",
+      "Article 21",
+      "Article 14",
+      "Article 32"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-01 check with recorded data 11, 5.\n\nCALCULATION:\nApply GA-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore GA-01 and apply an unrelated code clause: Skips GA-01 entirely.\nB) Double-count factor 5 inside GA-01: Double-applies factor 5.\nD) Replace the measured 11 by a neighbouring round number without basis: Rounds 11 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-01 with one datum changed.\n• Classic wrong formula paired with GA-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Article 14\n\nWHY CORRECT:\nItem 19 asks: “During a relay-setting review, The constitution of india is examined for the provision describing equality before law. Which statement is correct?” For GA-01, Article 14 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Article 14 without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Article 19: it represents a different definition, connection, sign convention, or operating condition.\nB) Article 21: it represents a different definition, connection, sign convention, or operating condition.\nD) Article 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-01 reinforcement"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 20,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-02",
     "themeId": "GA-02",
-    "question": "In an APTRANSCO-style check on GEC (GA-02), field data give index 12 and factor 6. Which action is most defensible?",
+    "question": "An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 6 inside GA-02",
-      "Replace the measured 12 by a neighbouring round number without basis",
-      "Ignore GA-02 and apply an unrelated code clause",
-      "Apply the standard GA-02 check using the recorded data"
+      "volt",
+      "ampere",
+      "watt",
+      "ohm"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-02 check with recorded data 12, 6.\n\nCALCULATION:\nApply GA-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 6 inside GA-02: Skips GA-02 entirely.\nB) Replace the measured 12 by a neighbouring round number without basis: Double-applies factor 6.\nC) Ignore GA-02 and apply an unrelated code clause: Rounds 12 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-02 with one datum changed.\n• Classic wrong formula paired with GA-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ohm\n\nWHY CORRECT:\nItem 20 asks: “An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?” For GA-02, ohm matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ohm, which is option D.\n\nTRAP ANALYSIS:\nA) volt: it represents a different definition, connection, sign convention, or operating condition.\nB) ampere: it represents a different definition, connection, sign convention, or operating condition.\nC) watt: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-02 reinforcement"
+    "predictBasis": "GA-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 21,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-03",
     "themeId": "GA-03",
-    "question": "In an APTRANSCO-style check on GEC (GA-03), field data give index 13 and factor 2. Which action is most defensible?",
+    "question": "A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard GA-03 check using the recorded data",
-      "Ignore GA-03 and apply an unrelated code clause",
-      "Double-count factor 2 inside GA-03",
-      "Replace the measured 13 by a neighbouring round number without basis"
+      "Bulk transfer of electrical energy at high voltage",
+      "Retail billing of domestic consumers",
+      "Generation of fuel at power stations",
+      "Replacement of distribution transformers"
     ],
     "answer": 0,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-03 check with recorded data 13, 2.\n\nCALCULATION:\nApply GA-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Ignore GA-03 and apply an unrelated code clause: Skips GA-03 entirely.\nC) Double-count factor 2 inside GA-03: Double-applies factor 2.\nD) Replace the measured 13 by a neighbouring round number without basis: Rounds 13 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-03 with one datum changed.\n• Classic wrong formula paired with GA-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Bulk transfer of electrical energy at high voltage\n\nWHY CORRECT:\nItem 21 asks: “A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?” For GA-03, Bulk transfer of electrical energy at high voltage matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Bulk transfer of electrical energy at high voltage, which is option A.\n\nTRAP ANALYSIS:\nB) Retail billing of domestic consumers: it represents a different definition, connection, sign convention, or operating condition.\nC) Generation of fuel at power stations: it represents a different definition, connection, sign convention, or operating condition.\nD) Replacement of distribution transformers: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-03 reinforcement"
+    "predictBasis": "GA-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 22,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-01",
     "themeId": "EN-01",
-    "question": "In an APTRANSCO-style check on GEC (EN-01), field data give index 14 and factor 3. Which action is most defensible?",
+    "question": "The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 14 by a neighbouring round number without basis",
-      "Ignore EN-01 and apply an unrelated code clause",
-      "Double-count factor 3 inside EN-01",
-      "Apply the standard EN-01 check using the recorded data"
+      "The report is completed by the engineer.",
+      "The engineer was completed by the report.",
+      "The report had completed the engineer.",
+      "The report was completed by the engineer."
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-01 check with recorded data 14, 3.\n\nCALCULATION:\nApply EN-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 14 by a neighbouring round number without basis: Skips EN-01 entirely.\nB) Ignore EN-01 and apply an unrelated code clause: Double-applies factor 3.\nC) Double-count factor 3 inside EN-01: Rounds 14 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-01 with one datum changed.\n• Classic wrong formula paired with EN-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The report was completed by the engineer.\n\nWHY CORRECT:\nItem 22 asks: “The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?” For EN-01, The report was completed by the engineer. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies The report was completed by the engineer. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) The report is completed by the engineer.: it represents a different definition, connection, sign convention, or operating condition.\nB) The engineer was completed by the report.: it represents a different definition, connection, sign convention, or operating condition.\nC) The report had completed the engineer.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-01 reinforcement"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 23,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-02",
     "themeId": "EN-02",
-    "question": "In an APTRANSCO-style check on GEC (EN-02), field data give index 15 and factor 4. Which action is most defensible?",
+    "question": "Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 15 by a neighbouring round number without basis",
-      "Apply the standard EN-02 check using the recorded data",
-      "Double-count factor 4 inside EN-02",
-      "Ignore EN-02 and apply an unrelated code clause"
+      "Ravi said that I am preparing for the examination.",
+      "Ravi said that he was preparing for the examination.",
+      "Ravi says he was preparing for the examination.",
+      "Ravi said that he is preparing for the examination."
     ],
     "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-02 check with recorded data 15, 4.\n\nCALCULATION:\nApply EN-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 15 by a neighbouring round number without basis: Skips EN-02 entirely.\nC) Double-count factor 4 inside EN-02: Double-applies factor 4.\nD) Ignore EN-02 and apply an unrelated code clause: Rounds 15 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-02 with one datum changed.\n• Classic wrong formula paired with EN-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Ravi said that he was preparing for the examination.\n\nWHY CORRECT:\nItem 23 asks: “Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?” For EN-02, Ravi said that he was preparing for the examination. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Ravi said that he was preparing for the examination. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Ravi said that I am preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nC) Ravi says he was preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nD) Ravi said that he is preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-02 reinforcement"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 24,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-03",
     "themeId": "EN-03",
-    "question": "In an APTRANSCO-style check on GEC (EN-03), field data give index 16 and factor 5. Which action is most defensible?",
+    "question": "'neither the officers nor the operator ___ available.' Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside EN-03",
-      "Ignore EN-03 and apply an unrelated code clause",
-      "Apply the standard EN-03 check using the recorded data",
-      "Replace the measured 16 by a neighbouring round number without basis"
+      "are",
+      "were",
+      "is",
+      "have"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-03 check with recorded data 16, 5.\n\nCALCULATION:\nApply EN-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside EN-03: Skips EN-03 entirely.\nB) Ignore EN-03 and apply an unrelated code clause: Double-applies factor 5.\nD) Replace the measured 16 by a neighbouring round number without basis: Rounds 16 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-03 with one datum changed.\n• Classic wrong formula paired with EN-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: is\n\nWHY CORRECT:\nItem 24 asks: “'neither the officers nor the operator ___ available.' Which statement is correct?” For EN-03, is matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies is without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) are: it represents a different definition, connection, sign convention, or operating condition.\nB) were: it represents a different definition, connection, sign convention, or operating condition.\nD) have: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-03 reinforcement"
+    "predictBasis": "EN-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 25,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-01",
     "themeId": "CM-01",
-    "question": "In an APTRANSCO-style check on GEC (CM-01), field data give index 17 and factor 6. Which action is most defensible?",
+    "question": "A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 17 by a neighbouring round number without basis",
-      "Apply the standard CM-01 check using the recorded data",
-      "Ignore CM-01 and apply an unrelated code clause",
-      "Double-count factor 6 inside CM-01"
+      "Monitor",
+      "ALU",
+      "Keyboard",
+      "Printer"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-01 check with recorded data 17, 6.\n\nCALCULATION:\nApply CM-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 17 by a neighbouring round number without basis: Skips CM-01 entirely.\nC) Ignore CM-01 and apply an unrelated code clause: Double-applies factor 6.\nD) Double-count factor 6 inside CM-01: Rounds 17 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-01 with one datum changed.\n• Classic wrong formula paired with CM-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ALU\n\nWHY CORRECT:\nItem 25 asks: “A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?” For CM-01, ALU matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is ALU, which is option B.\n\nTRAP ANALYSIS:\nA) Monitor: it represents a different definition, connection, sign convention, or operating condition.\nC) Keyboard: it represents a different definition, connection, sign convention, or operating condition.\nD) Printer: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-01 reinforcement"
+    "predictBasis": "CM-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 26,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-02",
     "themeId": "CM-02",
-    "question": "In an APTRANSCO-style check on GEC (CM-02), field data give index 18 and factor 2. Which action is most defensible?",
+    "question": "An operating-system function is identified. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore CM-02 and apply an unrelated code clause",
-      "Double-count factor 2 inside CM-02",
-      "Replace the measured 18 by a neighbouring round number without basis",
-      "Apply the standard CM-02 check using the recorded data"
+      "Compiling every programming language automatically",
+      "Providing only internet access",
+      "Replacing application data permanently",
+      "Managing hardware and software resources"
     ],
     "answer": 3,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-02 check with recorded data 18, 2.\n\nCALCULATION:\nApply CM-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore CM-02 and apply an unrelated code clause: Skips CM-02 entirely.\nB) Double-count factor 2 inside CM-02: Double-applies factor 2.\nC) Replace the measured 18 by a neighbouring round number without basis: Rounds 18 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-02 with one datum changed.\n• Classic wrong formula paired with CM-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Managing hardware and software resources\n\nWHY CORRECT:\nItem 26 asks: “An operating-system function is identified. Which statement is correct?” For CM-02, Managing hardware and software resources matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Managing hardware and software resources, which is option D.\n\nTRAP ANALYSIS:\nA) Compiling every programming language automatically: it represents a different definition, connection, sign convention, or operating condition.\nB) Providing only internet access: it represents a different definition, connection, sign convention, or operating condition.\nC) Replacing application data permanently: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-02 reinforcement"
+    "predictBasis": "CM-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 27,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-03",
     "themeId": "CM-03",
-    "question": "In an APTRANSCO-style check on GEC (CM-03), field data give index 19 and factor 3. Which action is most defensible?",
+    "question": "A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 19 by a neighbouring round number without basis",
-      "Ignore CM-03 and apply an unrelated code clause",
-      "Apply the standard CM-03 check using the recorded data",
-      "Double-count factor 3 inside CM-03"
+      "It improves network bandwidth.",
+      "It is a hardware backup method.",
+      "It attempts to obtain information by deception.",
+      "It is an operating-system update."
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-03 check with recorded data 19, 3.\n\nCALCULATION:\nApply CM-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 19 by a neighbouring round number without basis: Skips CM-03 entirely.\nB) Ignore CM-03 and apply an unrelated code clause: Double-applies factor 3.\nD) Double-count factor 3 inside CM-03: Rounds 19 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-03 with one datum changed.\n• Classic wrong formula paired with CM-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: It attempts to obtain information by deception.\n\nWHY CORRECT:\nItem 27 asks: “A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?” For CM-03, It attempts to obtain information by deception. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies It attempts to obtain information by deception. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) It improves network bandwidth.: it represents a different definition, connection, sign convention, or operating condition.\nB) It is a hardware backup method.: it represents a different definition, connection, sign convention, or operating condition.\nD) It is an operating-system update.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-03 reinforcement"
+    "predictBasis": "CM-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 28,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-01",
     "themeId": "GA-01",
-    "question": "In an APTRANSCO-style check on GEC (GA-01), field data give index 20 and factor 4. Which action is most defensible?",
+    "question": "The constitution of india is examined for the provision describing equality before law. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard GA-01 check using the recorded data",
-      "Ignore GA-01 and apply an unrelated code clause",
-      "Double-count factor 4 inside GA-01",
-      "Replace the measured 20 by a neighbouring round number without basis"
+      "Article 14",
+      "Article 19",
+      "Article 21",
+      "Article 32"
     ],
     "answer": 0,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-01 check with recorded data 20, 4.\n\nCALCULATION:\nApply GA-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Ignore GA-01 and apply an unrelated code clause: Skips GA-01 entirely.\nC) Double-count factor 4 inside GA-01: Double-applies factor 4.\nD) Replace the measured 20 by a neighbouring round number without basis: Rounds 20 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-01 with one datum changed.\n• Classic wrong formula paired with GA-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Article 14\n\nWHY CORRECT:\nItem 28 asks: “The constitution of india is examined for the provision describing equality before law. Which statement is correct?” For GA-01, Article 14 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Article 14 without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) Article 19: it represents a different definition, connection, sign convention, or operating condition.\nC) Article 21: it represents a different definition, connection, sign convention, or operating condition.\nD) Article 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-01 reinforcement"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 29,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-02",
     "themeId": "GA-02",
-    "question": "In an APTRANSCO-style check on GEC (GA-02), field data give index 21 and factor 5. Which action is most defensible?",
+    "question": "An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 21 by a neighbouring round number without basis",
-      "Double-count factor 5 inside GA-02",
-      "Apply the standard GA-02 check using the recorded data",
-      "Ignore GA-02 and apply an unrelated code clause"
+      "volt",
+      "ampere",
+      "ohm",
+      "watt"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-02 check with recorded data 21, 5.\n\nCALCULATION:\nApply GA-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 21 by a neighbouring round number without basis: Skips GA-02 entirely.\nB) Double-count factor 5 inside GA-02: Double-applies factor 5.\nD) Ignore GA-02 and apply an unrelated code clause: Rounds 21 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-02 with one datum changed.\n• Classic wrong formula paired with GA-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ohm\n\nWHY CORRECT:\nItem 29 asks: “An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?” For GA-02, ohm matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies ohm without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) volt: it represents a different definition, connection, sign convention, or operating condition.\nB) ampere: it represents a different definition, connection, sign convention, or operating condition.\nD) watt: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-02 reinforcement"
+    "predictBasis": "GA-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 30,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-03",
     "themeId": "GA-03",
-    "question": "In an APTRANSCO-style check on GEC (GA-03), field data give index 22 and factor 6. Which action is most defensible?",
+    "question": "A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore GA-03 and apply an unrelated code clause",
-      "Double-count factor 6 inside GA-03",
-      "Replace the measured 22 by a neighbouring round number without basis",
-      "Apply the standard GA-03 check using the recorded data"
+      "Retail billing of domestic consumers",
+      "Generation of fuel at power stations",
+      "Replacement of distribution transformers",
+      "Bulk transfer of electrical energy at high voltage"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-03 check with recorded data 22, 6.\n\nCALCULATION:\nApply GA-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore GA-03 and apply an unrelated code clause: Skips GA-03 entirely.\nB) Double-count factor 6 inside GA-03: Double-applies factor 6.\nC) Replace the measured 22 by a neighbouring round number without basis: Rounds 22 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-03 with one datum changed.\n• Classic wrong formula paired with GA-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Bulk transfer of electrical energy at high voltage\n\nWHY CORRECT:\nItem 30 asks: “A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?” For GA-03, Bulk transfer of electrical energy at high voltage matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Bulk transfer of electrical energy at high voltage, which is option D.\n\nTRAP ANALYSIS:\nA) Retail billing of domestic consumers: it represents a different definition, connection, sign convention, or operating condition.\nB) Generation of fuel at power stations: it represents a different definition, connection, sign convention, or operating condition.\nC) Replacement of distribution transformers: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-03 reinforcement"
+    "predictBasis": "GA-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 31,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-01",
     "themeId": "EN-01",
-    "question": "In an APTRANSCO-style check on GEC (EN-01), field data give index 23 and factor 2. Which action is most defensible?",
+    "question": "The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 2 inside EN-01",
-      "Apply the standard EN-01 check using the recorded data",
-      "Replace the measured 23 by a neighbouring round number without basis",
-      "Ignore EN-01 and apply an unrelated code clause"
+      "The report is completed by the engineer.",
+      "The report was completed by the engineer.",
+      "The engineer was completed by the report.",
+      "The report had completed the engineer."
     ],
     "answer": 1,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-01 check with recorded data 23, 2.\n\nCALCULATION:\nApply EN-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 2 inside EN-01: Skips EN-01 entirely.\nC) Replace the measured 23 by a neighbouring round number without basis: Double-applies factor 2.\nD) Ignore EN-01 and apply an unrelated code clause: Rounds 23 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-01 with one datum changed.\n• Classic wrong formula paired with EN-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The report was completed by the engineer.\n\nWHY CORRECT:\nItem 31 asks: “The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?” For EN-01, The report was completed by the engineer. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is The report was completed by the engineer., which is option B.\n\nTRAP ANALYSIS:\nA) The report is completed by the engineer.: it represents a different definition, connection, sign convention, or operating condition.\nC) The engineer was completed by the report.: it represents a different definition, connection, sign convention, or operating condition.\nD) The report had completed the engineer.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-01 reinforcement"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 32,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-02",
     "themeId": "EN-02",
-    "question": "In an APTRANSCO-style check on GEC (EN-02), field data give index 24 and factor 3. Which action is most defensible?",
+    "question": "Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard EN-02 check using the recorded data",
-      "Replace the measured 24 by a neighbouring round number without basis",
-      "Double-count factor 3 inside EN-02",
-      "Ignore EN-02 and apply an unrelated code clause"
+      "Ravi said that he was preparing for the examination.",
+      "Ravi said that I am preparing for the examination.",
+      "Ravi says he was preparing for the examination.",
+      "Ravi said that he is preparing for the examination."
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-02 check with recorded data 24, 3.\n\nCALCULATION:\nApply EN-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 24 by a neighbouring round number without basis: Skips EN-02 entirely.\nC) Double-count factor 3 inside EN-02: Double-applies factor 3.\nD) Ignore EN-02 and apply an unrelated code clause: Rounds 24 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-02 with one datum changed.\n• Classic wrong formula paired with EN-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Ravi said that he was preparing for the examination.\n\nWHY CORRECT:\nItem 32 asks: “Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?” For EN-02, Ravi said that he was preparing for the examination. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Ravi said that he was preparing for the examination. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) Ravi said that I am preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nC) Ravi says he was preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nD) Ravi said that he is preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-02 reinforcement"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 33,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-03",
     "themeId": "EN-03",
-    "question": "In an APTRANSCO-style check on GEC (EN-03), field data give index 25 and factor 4. Which action is most defensible?",
+    "question": "'neither the officers nor the operator ___ available.' Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 25 by a neighbouring round number without basis",
-      "Apply the standard EN-03 check using the recorded data",
-      "Double-count factor 4 inside EN-03",
-      "Ignore EN-03 and apply an unrelated code clause"
+      "are",
+      "is",
+      "were",
+      "have"
     ],
     "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-03 check with recorded data 25, 4.\n\nCALCULATION:\nApply EN-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 25 by a neighbouring round number without basis: Skips EN-03 entirely.\nC) Double-count factor 4 inside EN-03: Double-applies factor 4.\nD) Ignore EN-03 and apply an unrelated code clause: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-03 with one datum changed.\n• Classic wrong formula paired with EN-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: is\n\nWHY CORRECT:\nItem 33 asks: “'neither the officers nor the operator ___ available.' Which statement is correct?” For EN-03, is matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies is without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) are: it represents a different definition, connection, sign convention, or operating condition.\nC) were: it represents a different definition, connection, sign convention, or operating condition.\nD) have: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-03 reinforcement"
+    "predictBasis": "EN-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 34,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-01",
     "themeId": "CM-01",
-    "question": "In an APTRANSCO-style check on GEC (CM-01), field data give index 26 and factor 5. Which action is most defensible?",
+    "question": "A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside CM-01",
-      "Ignore CM-01 and apply an unrelated code clause",
-      "Apply the standard CM-01 check using the recorded data",
-      "Replace the measured 26 by a neighbouring round number without basis"
+      "Monitor",
+      "Keyboard",
+      "ALU",
+      "Printer"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-01 check with recorded data 26, 5.\n\nCALCULATION:\nApply CM-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside CM-01: Skips CM-01 entirely.\nB) Ignore CM-01 and apply an unrelated code clause: Double-applies factor 5.\nD) Replace the measured 26 by a neighbouring round number without basis: Rounds 26 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-01 with one datum changed.\n• Classic wrong formula paired with CM-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ALU\n\nWHY CORRECT:\nItem 34 asks: “A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?” For CM-01, ALU matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies ALU without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Monitor: it represents a different definition, connection, sign convention, or operating condition.\nB) Keyboard: it represents a different definition, connection, sign convention, or operating condition.\nD) Printer: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-01 reinforcement"
+    "predictBasis": "CM-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 35,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-02",
     "themeId": "CM-02",
-    "question": "In an APTRANSCO-style check on GEC (CM-02), field data give index 10 and factor 6. Which action is most defensible?",
+    "question": "An operating-system function is identified. Which statement is correct?",
     "image": "",
     "options": [
-      "Replace the measured 10 by a neighbouring round number without basis",
-      "Ignore CM-02 and apply an unrelated code clause",
-      "Double-count factor 6 inside CM-02",
-      "Apply the standard CM-02 check using the recorded data"
+      "Compiling every programming language automatically",
+      "Providing only internet access",
+      "Replacing application data permanently",
+      "Managing hardware and software resources"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-02 check with recorded data 10, 6.\n\nCALCULATION:\nApply CM-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Replace the measured 10 by a neighbouring round number without basis: Skips CM-02 entirely.\nB) Ignore CM-02 and apply an unrelated code clause: Double-applies factor 6.\nC) Double-count factor 6 inside CM-02: Rounds 10 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-02 with one datum changed.\n• Classic wrong formula paired with CM-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Managing hardware and software resources\n\nWHY CORRECT:\nItem 35 asks: “An operating-system function is identified. Which statement is correct?” For CM-02, Managing hardware and software resources matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Managing hardware and software resources, which is option D.\n\nTRAP ANALYSIS:\nA) Compiling every programming language automatically: it represents a different definition, connection, sign convention, or operating condition.\nB) Providing only internet access: it represents a different definition, connection, sign convention, or operating condition.\nC) Replacing application data permanently: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-02 reinforcement"
+    "predictBasis": "CM-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 36,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-03",
     "themeId": "CM-03",
-    "question": "In an APTRANSCO-style check on GEC (CM-03), field data give index 11 and factor 2. Which action is most defensible?",
+    "question": "A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard CM-03 check using the recorded data",
-      "Replace the measured 11 by a neighbouring round number without basis",
-      "Double-count factor 2 inside CM-03",
-      "Ignore CM-03 and apply an unrelated code clause"
+      "It attempts to obtain information by deception.",
+      "It improves network bandwidth.",
+      "It is a hardware backup method.",
+      "It is an operating-system update."
     ],
     "answer": 0,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-03 check with recorded data 11, 2.\n\nCALCULATION:\nApply CM-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Replace the measured 11 by a neighbouring round number without basis: Skips CM-03 entirely.\nC) Double-count factor 2 inside CM-03: Double-applies factor 2.\nD) Ignore CM-03 and apply an unrelated code clause: Rounds 11 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-03 with one datum changed.\n• Classic wrong formula paired with CM-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: It attempts to obtain information by deception.\n\nWHY CORRECT:\nItem 36 asks: “A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?” For CM-03, It attempts to obtain information by deception. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is It attempts to obtain information by deception., which is option A.\n\nTRAP ANALYSIS:\nB) It improves network bandwidth.: it represents a different definition, connection, sign convention, or operating condition.\nC) It is a hardware backup method.: it represents a different definition, connection, sign convention, or operating condition.\nD) It is an operating-system update.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-03 reinforcement"
+    "predictBasis": "CM-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 37,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-01",
     "themeId": "GA-01",
-    "question": "In an APTRANSCO-style check on GEC (GA-01), field data give index 12 and factor 3. Which action is most defensible?",
+    "question": "The constitution of india is examined for the provision describing equality before law. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore GA-01 and apply an unrelated code clause",
-      "Apply the standard GA-01 check using the recorded data",
-      "Replace the measured 12 by a neighbouring round number without basis",
-      "Double-count factor 3 inside GA-01"
+      "Article 19",
+      "Article 14",
+      "Article 21",
+      "Article 32"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-01 check with recorded data 12, 3.\n\nCALCULATION:\nApply GA-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore GA-01 and apply an unrelated code clause: Skips GA-01 entirely.\nC) Replace the measured 12 by a neighbouring round number without basis: Double-applies factor 3.\nD) Double-count factor 3 inside GA-01: Rounds 12 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-01 with one datum changed.\n• Classic wrong formula paired with GA-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Article 14\n\nWHY CORRECT:\nItem 37 asks: “The constitution of india is examined for the provision describing equality before law. Which statement is correct?” For GA-01, Article 14 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Article 14 without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Article 19: it represents a different definition, connection, sign convention, or operating condition.\nC) Article 21: it represents a different definition, connection, sign convention, or operating condition.\nD) Article 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-01 reinforcement"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 38,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-02",
     "themeId": "GA-02",
-    "question": "In an APTRANSCO-style check on GEC (GA-02), field data give index 13 and factor 4. Which action is most defensible?",
+    "question": "An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore GA-02 and apply an unrelated code clause",
-      "Double-count factor 4 inside GA-02",
-      "Replace the measured 13 by a neighbouring round number without basis",
-      "Apply the standard GA-02 check using the recorded data"
+      "volt",
+      "ampere",
+      "watt",
+      "ohm"
     ],
     "answer": 3,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-02 check with recorded data 13, 4.\n\nCALCULATION:\nApply GA-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore GA-02 and apply an unrelated code clause: Skips GA-02 entirely.\nB) Double-count factor 4 inside GA-02: Double-applies factor 4.\nC) Replace the measured 13 by a neighbouring round number without basis: Rounds 13 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-02 with one datum changed.\n• Classic wrong formula paired with GA-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ohm\n\nWHY CORRECT:\nItem 38 asks: “An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?” For GA-02, ohm matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies ohm without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) volt: it represents a different definition, connection, sign convention, or operating condition.\nB) ampere: it represents a different definition, connection, sign convention, or operating condition.\nC) watt: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-02 reinforcement"
+    "predictBasis": "GA-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 39,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-03",
     "themeId": "GA-03",
-    "question": "In an APTRANSCO-style check on GEC (GA-03), field data give index 14 and factor 5. Which action is most defensible?",
+    "question": "A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard GA-03 check using the recorded data",
-      "Ignore GA-03 and apply an unrelated code clause",
-      "Double-count factor 5 inside GA-03",
-      "Replace the measured 14 by a neighbouring round number without basis"
+      "Bulk transfer of electrical energy at high voltage",
+      "Retail billing of domestic consumers",
+      "Generation of fuel at power stations",
+      "Replacement of distribution transformers"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-03 check with recorded data 14, 5.\n\nCALCULATION:\nApply GA-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Ignore GA-03 and apply an unrelated code clause: Skips GA-03 entirely.\nC) Double-count factor 5 inside GA-03: Double-applies factor 5.\nD) Replace the measured 14 by a neighbouring round number without basis: Rounds 14 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-03 with one datum changed.\n• Classic wrong formula paired with GA-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Bulk transfer of electrical energy at high voltage\n\nWHY CORRECT:\nItem 39 asks: “A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?” For GA-03, Bulk transfer of electrical energy at high voltage matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Bulk transfer of electrical energy at high voltage without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) Retail billing of domestic consumers: it represents a different definition, connection, sign convention, or operating condition.\nC) Generation of fuel at power stations: it represents a different definition, connection, sign convention, or operating condition.\nD) Replacement of distribution transformers: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-03 reinforcement"
+    "predictBasis": "GA-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 40,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-01",
     "themeId": "EN-01",
-    "question": "In an APTRANSCO-style check on GEC (EN-01), field data give index 15 and factor 6. Which action is most defensible?",
+    "question": "The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 6 inside EN-01",
-      "Replace the measured 15 by a neighbouring round number without basis",
-      "Apply the standard EN-01 check using the recorded data",
-      "Ignore EN-01 and apply an unrelated code clause"
+      "The report is completed by the engineer.",
+      "The engineer was completed by the report.",
+      "The report was completed by the engineer.",
+      "The report had completed the engineer."
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-01 check with recorded data 15, 6.\n\nCALCULATION:\nApply EN-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 6 inside EN-01: Skips EN-01 entirely.\nB) Replace the measured 15 by a neighbouring round number without basis: Double-applies factor 6.\nD) Ignore EN-01 and apply an unrelated code clause: Rounds 15 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-01 with one datum changed.\n• Classic wrong formula paired with EN-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The report was completed by the engineer.\n\nWHY CORRECT:\nItem 40 asks: “The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?” For EN-01, The report was completed by the engineer. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is The report was completed by the engineer., which is option C.\n\nTRAP ANALYSIS:\nA) The report is completed by the engineer.: it represents a different definition, connection, sign convention, or operating condition.\nB) The engineer was completed by the report.: it represents a different definition, connection, sign convention, or operating condition.\nD) The report had completed the engineer.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-01 reinforcement"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 41,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-02",
     "themeId": "EN-02",
-    "question": "In an APTRANSCO-style check on GEC (EN-02), field data give index 16 and factor 2. Which action is most defensible?",
+    "question": "Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore EN-02 and apply an unrelated code clause",
-      "Apply the standard EN-02 check using the recorded data",
-      "Replace the measured 16 by a neighbouring round number without basis",
-      "Double-count factor 2 inside EN-02"
+      "Ravi said that I am preparing for the examination.",
+      "Ravi said that he was preparing for the examination.",
+      "Ravi says he was preparing for the examination.",
+      "Ravi said that he is preparing for the examination."
     ],
     "answer": 1,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-02 check with recorded data 16, 2.\n\nCALCULATION:\nApply EN-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore EN-02 and apply an unrelated code clause: Skips EN-02 entirely.\nC) Replace the measured 16 by a neighbouring round number without basis: Double-applies factor 2.\nD) Double-count factor 2 inside EN-02: Rounds 16 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-02 with one datum changed.\n• Classic wrong formula paired with EN-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Ravi said that he was preparing for the examination.\n\nWHY CORRECT:\nItem 41 asks: “Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?” For EN-02, Ravi said that he was preparing for the examination. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Ravi said that he was preparing for the examination., which is option B.\n\nTRAP ANALYSIS:\nA) Ravi said that I am preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nC) Ravi says he was preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nD) Ravi said that he is preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-02 reinforcement"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 42,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-03",
     "themeId": "EN-03",
-    "question": "In an APTRANSCO-style check on GEC (EN-03), field data give index 17 and factor 3. Which action is most defensible?",
+    "question": "'neither the officers nor the operator ___ available.' Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard EN-03 check using the recorded data",
-      "Double-count factor 3 inside EN-03",
-      "Replace the measured 17 by a neighbouring round number without basis",
-      "Ignore EN-03 and apply an unrelated code clause"
+      "is",
+      "are",
+      "were",
+      "have"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-03 check with recorded data 17, 3.\n\nCALCULATION:\nApply EN-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 3 inside EN-03: Skips EN-03 entirely.\nC) Replace the measured 17 by a neighbouring round number without basis: Double-applies factor 3.\nD) Ignore EN-03 and apply an unrelated code clause: Rounds 17 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-03 with one datum changed.\n• Classic wrong formula paired with EN-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: is\n\nWHY CORRECT:\nItem 42 asks: “'neither the officers nor the operator ___ available.' Which statement is correct?” For EN-03, is matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies is without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) are: it represents a different definition, connection, sign convention, or operating condition.\nC) were: it represents a different definition, connection, sign convention, or operating condition.\nD) have: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-03 reinforcement"
+    "predictBasis": "EN-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 43,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-01",
     "themeId": "CM-01",
-    "question": "In an APTRANSCO-style check on GEC (CM-01), field data give index 18 and factor 4. Which action is most defensible?",
+    "question": "A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 4 inside CM-01",
-      "Ignore CM-01 and apply an unrelated code clause",
-      "Replace the measured 18 by a neighbouring round number without basis",
-      "Apply the standard CM-01 check using the recorded data"
+      "Monitor",
+      "Keyboard",
+      "Printer",
+      "ALU"
     ],
     "answer": 3,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-01 check with recorded data 18, 4.\n\nCALCULATION:\nApply CM-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 4 inside CM-01: Skips CM-01 entirely.\nB) Ignore CM-01 and apply an unrelated code clause: Double-applies factor 4.\nC) Replace the measured 18 by a neighbouring round number without basis: Rounds 18 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-01 with one datum changed.\n• Classic wrong formula paired with CM-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ALU\n\nWHY CORRECT:\nItem 43 asks: “A computer-system item asks which component performs arithmetic and logical operations. Which statement is correct?” For CM-01, ALU matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies ALU without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Monitor: it represents a different definition, connection, sign convention, or operating condition.\nB) Keyboard: it represents a different definition, connection, sign convention, or operating condition.\nC) Printer: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-01 reinforcement"
+    "predictBasis": "CM-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 44,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-02",
     "themeId": "CM-02",
-    "question": "In an APTRANSCO-style check on GEC (CM-02), field data give index 19 and factor 5. Which action is most defensible?",
+    "question": "An operating-system function is identified. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 5 inside CM-02",
-      "Ignore CM-02 and apply an unrelated code clause",
-      "Apply the standard CM-02 check using the recorded data",
-      "Replace the measured 19 by a neighbouring round number without basis"
+      "Compiling every programming language automatically",
+      "Providing only internet access",
+      "Managing hardware and software resources",
+      "Replacing application data permanently"
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-02 check with recorded data 19, 5.\n\nCALCULATION:\nApply CM-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 5 inside CM-02: Skips CM-02 entirely.\nB) Ignore CM-02 and apply an unrelated code clause: Double-applies factor 5.\nD) Replace the measured 19 by a neighbouring round number without basis: Rounds 19 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-02 with one datum changed.\n• Classic wrong formula paired with CM-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Managing hardware and software resources\n\nWHY CORRECT:\nItem 44 asks: “An operating-system function is identified. Which statement is correct?” For CM-02, Managing hardware and software resources matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Managing hardware and software resources without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) Compiling every programming language automatically: it represents a different definition, connection, sign convention, or operating condition.\nB) Providing only internet access: it represents a different definition, connection, sign convention, or operating condition.\nD) Replacing application data permanently: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-02 reinforcement"
+    "predictBasis": "CM-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 45,
     "subject": "GA · English · Computer",
     "topic": "GEC:CM-03",
     "themeId": "CM-03",
-    "question": "In an APTRANSCO-style check on GEC (CM-03), field data give index 20 and factor 6. Which action is most defensible?",
+    "question": "A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 6 inside CM-03",
-      "Replace the measured 20 by a neighbouring round number without basis",
-      "Apply the standard CM-03 check using the recorded data",
-      "Ignore CM-03 and apply an unrelated code clause"
+      "It improves network bandwidth.",
+      "It is a hardware backup method.",
+      "It attempts to obtain information by deception.",
+      "It is an operating-system update."
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard CM-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard CM-03 check with recorded data 20, 6.\n\nCALCULATION:\nApply CM-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard CM-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 6 inside CM-03: Skips CM-03 entirely.\nB) Replace the measured 20 by a neighbouring round number without basis: Double-applies factor 6.\nD) Ignore CM-03 and apply an unrelated code clause: Rounds 20 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key CM-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same CM-03 with one datum changed.\n• Classic wrong formula paired with CM-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: It attempts to obtain information by deception.\n\nWHY CORRECT:\nItem 45 asks: “A network-security check asks for the safest interpretation of a phishing email. Which statement is correct?” For CM-03, It attempts to obtain information by deception. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is It attempts to obtain information by deception., which is option C.\n\nTRAP ANALYSIS:\nA) It improves network bandwidth.: it represents a different definition, connection, sign convention, or operating condition.\nB) It is a hardware backup method.: it represents a different definition, connection, sign convention, or operating condition.\nD) It is an operating-system update.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor CM-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield CM-03 reinforcement"
+    "predictBasis": "CM-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 46,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-01",
     "themeId": "GA-01",
-    "question": "In an APTRANSCO-style check on GEC (GA-01), field data give index 21 and factor 2. Which action is most defensible?",
+    "question": "The constitution of india is examined for the provision describing equality before law. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 2 inside GA-01",
-      "Replace the measured 21 by a neighbouring round number without basis",
-      "Ignore GA-01 and apply an unrelated code clause",
-      "Apply the standard GA-01 check using the recorded data"
+      "Article 19",
+      "Article 21",
+      "Article 32",
+      "Article 14"
     ],
     "answer": 3,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-01 check with recorded data 21, 2.\n\nCALCULATION:\nApply GA-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 2 inside GA-01: Skips GA-01 entirely.\nB) Replace the measured 21 by a neighbouring round number without basis: Double-applies factor 2.\nC) Ignore GA-01 and apply an unrelated code clause: Rounds 21 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-01 with one datum changed.\n• Classic wrong formula paired with GA-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Article 14\n\nWHY CORRECT:\nItem 46 asks: “The constitution of india is examined for the provision describing equality before law. Which statement is correct?” For GA-01, Article 14 matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Article 14, which is option D.\n\nTRAP ANALYSIS:\nA) Article 19: it represents a different definition, connection, sign convention, or operating condition.\nB) Article 21: it represents a different definition, connection, sign convention, or operating condition.\nC) Article 32: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-01 reinforcement"
+    "predictBasis": "GA-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 47,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-02",
     "themeId": "GA-02",
-    "question": "In an APTRANSCO-style check on GEC (GA-02), field data give index 22 and factor 3. Which action is most defensible?",
+    "question": "An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?",
     "image": "",
     "options": [
-      "Double-count factor 3 inside GA-02",
-      "Apply the standard GA-02 check using the recorded data",
-      "Replace the measured 22 by a neighbouring round number without basis",
-      "Ignore GA-02 and apply an unrelated code clause"
+      "volt",
+      "ohm",
+      "ampere",
+      "watt"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-02 check with recorded data 22, 3.\n\nCALCULATION:\nApply GA-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Double-count factor 3 inside GA-02: Skips GA-02 entirely.\nC) Replace the measured 22 by a neighbouring round number without basis: Double-applies factor 3.\nD) Ignore GA-02 and apply an unrelated code clause: Rounds 22 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-02 with one datum changed.\n• Classic wrong formula paired with GA-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: ohm\n\nWHY CORRECT:\nItem 47 asks: “An everyday-science question concerns the si unit of electrical resistance. Which statement is correct?” For GA-02, ohm matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies ohm without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) volt: it represents a different definition, connection, sign convention, or operating condition.\nC) ampere: it represents a different definition, connection, sign convention, or operating condition.\nD) watt: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-02 reinforcement"
+    "predictBasis": "GA-02 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 48,
     "subject": "GA · English · Computer",
     "topic": "GEC:GA-03",
     "themeId": "GA-03",
-    "question": "In an APTRANSCO-style check on GEC (GA-03), field data give index 23 and factor 4. Which action is most defensible?",
+    "question": "A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?",
     "image": "",
     "options": [
-      "Apply the standard GA-03 check using the recorded data",
-      "Double-count factor 4 inside GA-03",
-      "Ignore GA-03 and apply an unrelated code clause",
-      "Replace the measured 23 by a neighbouring round number without basis"
+      "Bulk transfer of electrical energy at high voltage",
+      "Retail billing of domestic consumers",
+      "Generation of fuel at power stations",
+      "Replacement of distribution transformers"
     ],
     "answer": 0,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard GA-03 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard GA-03 check with recorded data 23, 4.\n\nCALCULATION:\nApply GA-03 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard GA-03 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nB) Double-count factor 4 inside GA-03: Skips GA-03 entirely.\nC) Ignore GA-03 and apply an unrelated code clause: Double-applies factor 4.\nD) Replace the measured 23 by a neighbouring round number without basis: Rounds 23 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key GA-03 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same GA-03 with one datum changed.\n• Classic wrong formula paired with GA-03.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Bulk transfer of electrical energy at high voltage\n\nWHY CORRECT:\nItem 48 asks: “A power-system general-awareness item asks for the primary role of a transmission network. Which statement is correct?” For GA-03, Bulk transfer of electrical energy at high voltage matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies Bulk transfer of electrical energy at high voltage without adding an unstated assumption.\n\nTRAP ANALYSIS:\nB) Retail billing of domestic consumers: it represents a different definition, connection, sign convention, or operating condition.\nC) Generation of fuel at power stations: it represents a different definition, connection, sign convention, or operating condition.\nD) Replacement of distribution transformers: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor GA-03, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield GA-03 reinforcement"
+    "predictBasis": "GA-03 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 49,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-01",
     "themeId": "EN-01",
-    "question": "In an APTRANSCO-style check on GEC (EN-01), field data give index 24 and factor 5. Which action is most defensible?",
+    "question": "The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore EN-01 and apply an unrelated code clause",
-      "Replace the measured 24 by a neighbouring round number without basis",
-      "Double-count factor 5 inside EN-01",
-      "Apply the standard EN-01 check using the recorded data"
+      "The report is completed by the engineer.",
+      "The engineer was completed by the report.",
+      "The report had completed the engineer.",
+      "The report was completed by the engineer."
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Practical / site / field",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-01 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-01 check with recorded data 24, 5.\n\nCALCULATION:\nApply EN-01 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-01 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore EN-01 and apply an unrelated code clause: Skips EN-01 entirely.\nB) Replace the measured 24 by a neighbouring round number without basis: Double-applies factor 5.\nC) Double-count factor 5 inside EN-01: Rounds 24 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-01 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-01 with one datum changed.\n• Classic wrong formula paired with EN-01.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: The report was completed by the engineer.\n\nWHY CORRECT:\nItem 49 asks: “The sentence 'the engineer completed the report' is converted to passive voice. Which statement is correct?” For EN-01, The report was completed by the engineer. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nApply the relevant constitutional, language, or computer rule to the stated case; it identifies The report was completed by the engineer. without adding an unstated assumption.\n\nTRAP ANALYSIS:\nA) The report is completed by the engineer.: it represents a different definition, connection, sign convention, or operating condition.\nB) The engineer was completed by the report.: it represents a different definition, connection, sign convention, or operating condition.\nC) The report had completed the engineer.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-01, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-01 reinforcement"
+    "predictBasis": "EN-01 concept assessed through a distinct examiner-language item"
   },
   {
     "id": 50,
     "subject": "GA · English · Computer",
     "topic": "GEC:EN-02",
     "themeId": "EN-02",
-    "question": "In an APTRANSCO-style check on GEC (EN-02), field data give index 25 and factor 6. Which action is most defensible?",
+    "question": "Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?",
     "image": "",
     "options": [
-      "Ignore EN-02 and apply an unrelated code clause",
-      "Apply the standard EN-02 check using the recorded data",
-      "Replace the measured 25 by a neighbouring round number without basis",
-      "Double-count factor 6 inside EN-02"
+      "Ravi said that I am preparing for the examination.",
+      "Ravi said that he was preparing for the examination.",
+      "Ravi says he was preparing for the examination.",
+      "Ravi said that he is preparing for the examination."
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Apply the standard EN-02 check using the recorded data\n\nWHY CORRECT:\nThe stem points to applying the standard EN-02 check with recorded data 25, 6.\n\nCALCULATION:\nApply EN-02 formula/definition; do not invent substitutes.\nFinal keyed result: Apply the standard EN-02 check using the recorded data.\n\nTRAP ANALYSIS (every wrong option):\nA) Ignore EN-02 and apply an unrelated code clause: Skips EN-02 entirely.\nC) Replace the measured 25 by a neighbouring round number without basis: Double-applies factor 6.\nD) Double-count factor 6 inside EN-02: Rounds 25 without engineering basis.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Identify the key EN-02 quantity before computing.\n• Keep units consistent with the recorded field values.\n• Reject options that abandon the named micro-topic.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same EN-02 with one datum changed.\n• Classic wrong formula paired with EN-02.",
-    "source": "ST-HY-v1",
-    "origin": "Inspired-APPSC",
+    "explanation": "CORRECT: Ravi said that he was preparing for the examination.\n\nWHY CORRECT:\nItem 50 asks: “Reported speech is required for: ravi said, 'i am preparing for the examination.' Which statement is correct?” For EN-02, Ravi said that he was preparing for the examination. matches that exact condition; the choice is not obtained by substituting a neighbouring concept.\n\nCALCULATION / CHECK:\nUse the relevant constitutional, language, or computer rule. Insert the quantities printed in the question, retain their units, and simplify before rounding. The resulting value is Ravi said that he was preparing for the examination., which is option B.\n\nTRAP ANALYSIS:\nA) Ravi said that I am preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nC) Ravi says he was preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\nD) Ravi said that he is preparing for the examination.: it represents a different definition, connection, sign convention, or operating condition.\n\nREVISION POINT:\nFor EN-02, identify the requested quantity first and then apply only the relation that matches its units and reference condition.",
+    "source": "ST quality v4 — authored APTRANSCO examiner pool",
+    "origin": "Inspired-APTRANSCO-family",
     "predictScore": 7,
-    "predictBasis": "High-yield EN-02 reinforcement"
+    "predictBasis": "EN-02 concept assessed through a distinct examiner-language item"
   }
 ];
