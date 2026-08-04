@@ -7,11 +7,12 @@ import { initCalculator, showFloatingCalculator, hideFloatingCalculator } from '
 import { saveCurrentAttempt } from './attemptHistory.js';
 import { qs } from './utils.js';
 
-const mockList = [
+const fltList = [
     ...Array.from({ length: 20 }, (_, index) => ({
         id: `civil${String(index + 1).padStart(2, '0')}`,
         title: `FLT-Civil-${String(index + 1).padStart(2, '0')}`,
         category: 'Civil Engineering',
+        kind: 'flt',
         questions: 100,
         marks: 100,
         duration: 180,
@@ -20,11 +21,33 @@ const mockList = [
         id: `electrical${String(index + 1).padStart(2, '0')}`,
         title: `FLT-Electrical-${String(index + 1).padStart(2, '0')}`,
         category: 'Electrical Engineering',
+        kind: 'flt',
         questions: 100,
         marks: 100,
         duration: 180,
     })),
 ];
+
+/** Subject-wise High-Yield packs — 50 Q / 90 min (MASTER ST-HY). */
+const subjectTestList = [
+    { id: 'civil-st-som-01', title: 'ST · Civil · Strength of Materials', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'som', questions: 50, marks: 50, duration: 90 },
+    { id: 'civil-st-rcc-01', title: 'ST · Civil · RCC', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'rcc', questions: 50, marks: 50, duration: 90 },
+    { id: 'civil-st-fm-01', title: 'ST · Civil · Fluid Mechanics & HHM', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'fm', questions: 50, marks: 50, duration: 90 },
+    { id: 'civil-st-steel-01', title: 'ST · Civil · Steel Structures', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'steel', questions: 50, marks: 50, duration: 90 },
+    { id: 'civil-st-fe-01', title: 'ST · Civil · Foundation Engineering', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'fe', questions: 50, marks: 50, duration: 90 },
+    { id: 'civil-st-soil-01', title: 'ST · Civil · Soil Mechanics', category: 'Civil · Subject Test', kind: 'st', subjectKey: 'soil', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-ps-01', title: 'ST · EE · Power Systems + Utilization', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'ps', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-em-01', title: 'ST · EE · Electrical Machines', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'em', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-ec-01', title: 'ST · EE · Electric Circuits', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'ec', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-cs-01', title: 'ST · EE · Control Systems', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'cs', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-pe-01', title: 'ST · EE · Power Electronics & Drives', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'pe', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-meas-01', title: 'ST · EE · Measurements', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'meas', questions: 50, marks: 50, duration: 90 },
+    { id: 'electrical-st-ade-01', title: 'ST · EE · Analog & Digital Electronics', category: 'Electrical · Subject Test', kind: 'st', subjectKey: 'ade', questions: 50, marks: 50, duration: 90 },
+    { id: 'noncore-st-ar-01', title: 'ST · Non-core · Aptitude & Reasoning', category: 'Non-core · Subject Test', kind: 'st', subjectKey: 'ar', questions: 50, marks: 50, duration: 90 },
+    { id: 'noncore-st-gec-01', title: 'ST · Non-core · GA · English · Computer', category: 'Non-core · Subject Test', kind: 'st', subjectKey: 'gec', questions: 50, marks: 50, duration: 90 },
+];
+
+const mockList = [...subjectTestList, ...fltList];
 
 const bindApplicationEvents = () => {
     window.addEventListener('startInstructions', () => {
@@ -67,6 +90,8 @@ const bindApplicationEvents = () => {
 const beginExam = async () => {
     try {
         await loadQuestionBank(appState.selectedFlt);
+        const durationMin = Number(appState.selectedTest?.duration) || 180;
+        appState.remainingTime = durationMin * 60;
         appState.examStarted = true;
         appState.examStartedAt = Date.now();
         appState.submitted = false;

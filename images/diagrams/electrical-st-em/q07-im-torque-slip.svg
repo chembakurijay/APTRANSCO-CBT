@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="240" viewBox="0 0 500 240">
+  <rect width="500" height="240" fill="#fafafa"/>
+  <text x="12" y="22" font-size="14">Induction-motor torque–slip curve (Ns fixed)</text>
+  <line x1="50" y1="200" x2="460" y2="200" stroke="#333"/>
+  <line x1="50" y1="200" x2="50" y2="30" stroke="#333"/>
+  <path d="M50 200 C 120 40, 200 40, 250 90 S 350 180, 450 195" fill="none" stroke="#06c" stroke-width="2"/>
+  <text x="430" y="215" font-size="12">s→1</text>
+  <text x="55" y="215" font-size="12">s=0</text>
+  <text x="200" y="55" font-size="12">Tmax</text>
+  <line x1="50" y1="160" x2="200" y2="160" stroke="#c40" stroke-dasharray="4 3"/>
+  <text x="210" y="164" font-size="12">Tfl</text>
+</svg>

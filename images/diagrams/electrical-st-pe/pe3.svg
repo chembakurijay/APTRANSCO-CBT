@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="260" viewBox="0 0 560 260">
+  <rect width="560" height="260" fill="#f8fafc"/>
+  <text x="24" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Q48 — Semi-converter output waveform</text>
+  
+  <text x="40" y="55" font-family="Segoe UI, Arial, sans-serif" font-size="14">1-φ semi-converter · α = 30° · RL load — Vo waveform</text>
+  <line x1="60" y1="180" x2="520" y2="180" stroke="#94a3b8"/>
+  <path d="M80,180 Q120,60 160,180 Q200,60 240,180" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+  <path d="M160,180 Q200,70 240,180 L280,180 Q320,70 360,180 L400,180" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="170" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#1d4ed8">delayed conduction</text>
+  <text x="40" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#64748b">Vo stays non-negative with firing delay each half-cycle</text>
+
+</svg>

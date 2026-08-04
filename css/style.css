@@ -327,6 +327,55 @@ button, a {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.mock-grid-grouped {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.mock-grid-inner {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.mock-group-heading h3 {
+    margin: 0 0 6px;
+    font-size: 1.15rem;
+}
+
+.mock-group-heading p {
+    margin: 0 0 12px;
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+.section-subhint {
+    margin: 8px 0 0;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.mock-kind-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.mock-kind-badge.is-flt {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.mock-card-st {
+    border-top: 3px solid #059669;
+}
+
 .mock-card {
     display: flex;
     flex-direction: column;

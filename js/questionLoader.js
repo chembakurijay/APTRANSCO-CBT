@@ -1,6 +1,6 @@
 import { appState } from './storage.js';
 
-const CACHE_BUST = '20260804trap';
+const CACHE_BUST = '20260804sthy';
 
 const getPerTestPaths = (fltKey) => {
     const fltMatch = fltKey.match(/^(civil|electrical)(\d{2})$/);

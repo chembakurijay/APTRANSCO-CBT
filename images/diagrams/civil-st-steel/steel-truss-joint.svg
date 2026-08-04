@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc" />
+  <text x="24" y="30" font-family="Arial" font-size="20" fill="#0f172a">Truss Joint Equilibrium</text>
+  <line x1="250" y1="180" x2="450" y2="80" stroke="#334155" stroke-width="5" />
+  <line x1="450" y1="80" x2="650" y2="180" stroke="#334155" stroke-width="5" />
+  <line x1="250" y1="180" x2="650" y2="180" stroke="#334155" stroke-width="5" />
+  <circle cx="450" cy="80" r="10" fill="#0f172a" />
+  <text x="462" y="80" font-family="Arial" font-size="16" fill="#0f172a">Joint J</text>
+  <line x1="450" y1="80" x2="540" y2="80" stroke="#dc2626" stroke-width="3" />
+  <polygon points="540,80 528,74 528,86" fill="#dc2626" />
+  <text x="545" y="85" font-family="Arial" font-size="15" fill="#b91c1c">Fx</text>
+  <line x1="450" y1="80" x2="450" y2="20" stroke="#0ea5e9" stroke-width="3" />
+  <polygon points="450,20 444,32 456,32" fill="#0ea5e9" />
+  <text x="458" y="25" font-family="Arial" font-size="15" fill="#0369a1">Fy</text>
+</svg>
