@@ -469,11 +469,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Detail S\n\nWHY CORRECT / CALCULATION:\nWhy: Detail S provides closed ties/crossties restraining every required longitudinal bar. Trap: P–R leave an intermediate bar inadequately restrained.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: column ties+diagram+detailing",
+    "explanation": "CORRECT: Detail S\n\nWHY CORRECT / CALCULATION:\nWhy: Detail S uses a closed perimeter tie plus both crossties so every corner and mid-face bar is restrained. Trap: P is perimeter-only; Q omits a crosstie direction; R’s diamond leaves corners unrestrained.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: column ties+diagram+detailing",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/DDRC/DDRC_pg0037.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/column-ties-P-S (DDRC core has no column-tie page; slab page was incorrect)"
   },
   {
     "id": 22,
