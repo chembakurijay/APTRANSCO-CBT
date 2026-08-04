@@ -167,14 +167,31 @@ const bindPanelActions = () => {
 
     document.addEventListener('fullscreenchange', () => {
         if (!fullscreenButton) return;
-        fullscreenButton.textContent = document.fullscreenElement ? 'Exit Fullscreen' : 'Fullscreen';
+        const inFs = Boolean(document.fullscreenElement);
+        fullscreenButton.textContent = inFs ? 'Exit Fullscreen' : 'Fullscreen';
+        // Entering fullscreen: keep palette + exam body visible (height:0 FS bug left blank content)
+        if (inFs) {
+            setPanelVisible(palettePanel, paletteToggle, true, 'Show Palette', 'Hide Palette');
+        }
         if (examBody) {
             examBody.style.display = 'flex';
+            examBody.style.visibility = 'visible';
+            examBody.style.minHeight = '';
+            examBody.style.height = '';
             void examBody.offsetWidth;
+        }
+        const card = qs('#questionCard');
+        const footer = qs('#questionCardFooter');
+        if (card) {
+            card.style.visibility = 'visible';
+            card.style.display = '';
+        }
+        if (footer) {
+            footer.style.display = 'flex';
+            footer.style.visibility = 'visible';
         }
     });
 };
-
 const initializeApp = () => {
     resetState();
     populateHomePage(mockList);
