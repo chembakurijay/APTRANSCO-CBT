@@ -1146,6 +1146,18 @@ No paper may contain more than **2 Direct PYQs**.
 - Wording must still pass **Audit Q** + **Audit R** (examiner language, stem bands).
 - Audit **J** (traceability): every Inspired/Modified item lists allowed source class + topic; GATE-inspired CE items must note **“GATE theme → Transco-range rewrite”**.
 
+#### Diagram / Table / Matching Matrix Origin (STRICT — both streams)
+Applies to every question tagged **Diagram**, **Graph**, **Table**, or **Matching / Matching Matrix**:
+
+1. **Do not invent** the primary figure, data table, or List-I/II matrix from thin air when a usable family/core/PYQ source exists.
+2. **Source priority for figures/tables:**  
+   - EE: APTRANSCO-family PYQ figure → core EE diagram book → approved bank figure  
+   - CE: APPSC-family / Transco-range figure → `civil-core-diagrams` / CE topic QB figure → GATE CE figure **only if** cropped and stem rewritten to Transco range  
+3. Stem must be **examiner-rewritten**; figure may be a tight crop of the source (no page chrome / answer keys).
+4. Every such Q must declare in the paper pack:  
+   `Origin figure/table: <source class + path>` and packaging fields `diagramSource` / `matchingMatrix` / `dataTable` as required by CBT rules.
+5. **Fail** if a Diagram/Table/Match item is decorative AI art, a fabricated table with no engineering source pattern, or solvable without the figure/table when tagged Diagram/Table.
+
 Origin mix must also satisfy the **Final Approval Workflow** and the **Acceptance Threshold** below (stream Origin targets replace the old brand-new≥60% primary rule).
 
 ---
@@ -1807,6 +1819,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Answer verification (Gate C) | **100/100** keys reworked; result matches exactly one given option |
 | Original / brand-new questions | **≤ 30%** (gap fill only; no longer the primary target) |
 | Inspired + Modified from allowed sources | **≥ 70%** (EE: APTRANSCO-family PYQ; CE: APPSC Civil family + GATE-in-Transco-range as needed) |
+| Diagram / Table / Matching Matrix sources | Every Diagram/Graph/Table/Match Q declares real family/core/PYQ figure or table pattern; no invented decorative figures; CBT fields `diagramSource` / `matchingMatrix` / `dataTable` as required |
 | Modified PYQs / family papers | Included inside the ≥70% Inspired+Modified budget; cite source class + topic |
 | Direct PYQs | **≤ 2 questions** (CE APTRANSCO Direct typically **0**) |
 | Exact duplicates vs earlier mocks | **0** |
