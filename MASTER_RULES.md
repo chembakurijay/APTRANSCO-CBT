@@ -15,6 +15,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Include **practically able** questions — stems a field / design / substation / site engineer could face in real work, not classroom trivia
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
 - **Stem length:** almost every stem must be a **full exam-style paragraph** (context + data/conditions + ask) — **not one-line** definition plugs (see **Stem Length & Direct Cap**)
+- **Examiner language (STRICT):** technical stems must read like **APTRANSCO examiner writing**, not textbook exercise prompts — no bare “Find / Calculate / Determine …” workbook openers; frame the engineering situation first (see **Golden Rule 2B** and **Audit Q**)
 - **Direct questions ≤ 25%** of the full paper (and of each technical subject) — **≥ 75%** must need multi-step / judgement / diagram / trap thinking (see Golden Rule 2). Observed failure: papers that feel ~90% direct are **Fail** even if Easy count looks OK
 - **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
@@ -51,7 +52,7 @@ Observed failure mode: the agent/setter **states** Easy / Medium / Hard correctl
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
-- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates) and **Acceptance Threshold** met before APPROVED
+- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates → **Audit Q Language & Authenticity**) and **Acceptance Threshold** met before APPROVED
 
 ---
 
@@ -258,7 +259,7 @@ Before finalizing any paper, verify:
 - PYQ Traceability Audit (**J**)
 - Subject Weightage Coverage, PYQ Themes Coverage, and Answer Key & Calculation Verification gates Pass
 - Acceptance Threshold gates all Pass before **APPROVED**
-- Concept Coverage, Bloom’s Taxonomy, Formula Reuse, Distractor Quality, and Key Distribution audits (**K–O**) Pass
+- Concept Coverage, Bloom’s Taxonomy, Formula Reuse, Distractor Quality, Key Distribution, and **Question Language & Exam Authenticity** audits (**K–O and Q**) Pass
 - Non-core Subject Gates (Quant / GA / Reasoning / English / Computer) Pass
 - User has explicitly said **APPROVED**
 
@@ -430,6 +431,33 @@ Valid combinations: Numerical + Diagram, Numerical + Application, Diagram + Conc
 
 **Compliance check:** flag any technical stem under ~**120 characters** or a single short clause with no data/condition; require rewrite unless it is a rare Non-core / allowed Easy Direct within the 25% budget.
 
+### Golden Rule 2B – Examiner Language & Exam Authenticity (STRICT)
+
+**Biggest paper-feel failure mode (even when keys/diagrams/syllabus are correct):** stems that read like **textbook exercise / coaching workbook** prompts instead of **APTRANSCO AEE examiner** writing.
+
+**Required stem shape (technical):**
+1. **Situation first** — commissioning, routine testing, substation / site observation, design check, plate-load / Proctor / load-flow context, contractor observation, LSM beam design, etc.
+2. **Then data / conditions** — ratings, observations, constraints, figure reference.
+3. **Then the ask** in examiner voice — not a bare imperative.
+
+**Forbidden openers / cues (automatic MODIFY unless rare Non-core):**
+- Stem starts with **Find… / Calculate… / Determine… / Compute… / Obtain…**
+- Stem is only a formula trigger with no engineering situation (e.g. “A transformer has 96% efficiency. Find output power.”)
+- Stem **names the exact formula family** the candidate must use (“Using Bernoulli’s equation…”, “Apply τ = 1.5V/bd…”) when the situation alone should cue it
+- Reads as workbook drill: “Find the slip.” / “Calculate bearing capacity.” / “Determine regulation.”
+
+**Preferred ask language:**
+- “Which of the following best represents…”
+- “The most appropriate / closest value is…”
+- “Under these operating / site conditions…”
+- “The engineer should expect…”
+- “The correct interpretation / conclusion is…”
+- “The observed behaviour indicates…”
+
+**Hard difficulty (language rule):** Hard ≠ longer arithmetic. Prefer **one hidden concept + one interpretation / practical condition**, not three pages of math.
+
+**Pass/Fail:** every technical question must pass **Audit Q — Question Language & Exam Authenticity** (score ≥ 8/10; no automatic-reject flags). A paper with correct answers but textbook stems **cannot be APPROVED**.
+
 ### Golden Rule 3 – Distractor Engineering
 At least **70% of distractors** must reflect real engineering mistakes:
 - Unit conversion errors
@@ -450,7 +478,7 @@ At least **70% of distractors** must reflect real engineering mistakes:
 Every `explanation` field must meet the **Detailed Explanation Standard** (next section). One-line keys like `SIL = V²/Zc` alone are **Fail** for APPROVED packaging.
 
 ### Golden Rule 4 – Hard Question Depth
-Every hard question must require **at least two engineering concepts** or **multiple solution steps**.
+Every hard question must require **at least two engineering concepts** or **multiple solution steps**, preferably via **interpretation / hidden condition / practical constraint** — not merely a longer calculation.
 
 ### Golden Rule 5 – APTRANSCO Level Gate
 Before accepting any question, ask:
@@ -783,12 +811,14 @@ Stage 2 — Difficulty Validation (Difficulty Engine + Bias Correction)
   Plan Medium/Hard first at corrected depth; never fill Easy then inflate labels.
   Direct Cap: mark each Q Direct / Non-direct; paper Direct ≤ 25% (Golden Rule 2).
   Stem Length: technical stems must not be one-liners (Golden Rule 2A).
+  Examiner Language: no Find/Calculate/Determine openers; situation-first stems (Rule 2B / Audit Q).
 
 Stage 3 — Pattern Validation
   Confirm the stated pattern (Numerical/Diagram/Conceptual/etc.) is genuine.
   A question claiming "Diagram" without a valid image path is REJECTED.
   A question claiming "Application" that only asks for recall is REJECTED.
   One-line definition / formula-name stems → REJECTED or MODIFY (Rule 2A).
+  Textbook-exercise wording / exposed formula cue → REJECTED or MODIFY (Rule 2B / Audit Q).
 
 Stage 4 — Diagram Validation (Professional + Priority Check)
   ✓ Diagram exists at the declared file path
@@ -1044,6 +1074,7 @@ Only after **all** of the following pass may a paper be marked **APPROVED** (and
 | 16 | **N. Distractor Quality Audit** | Every wrong option is a plausible mistake; no joke/impossible options |
 | 17 | **O. Answer Key Distribution Audit** | A/B/C/D balanced; no long same-letter runs |
 | 18 | **P. Non-core Subject Gates** | Quant / GA / Reasoning / English / Computer each pass detailed checks |
+| 19 | **Q. Question Language & Exam Authenticity Audit** | Technical stems read as APTRANSCO examiner writing — not textbook “Find/Calculate” drills |
 
 **Fail any gate → not APPROVED.** Fix → re-run failed gates (and Human Examiner if stems changed materially).
 
@@ -1554,6 +1585,53 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 
 ---
 
+### Q. Question Language & Exam Authenticity Audit (Mandatory)
+
+**Purpose:** Even when syllabus, keys, diagrams, and originality pass, a paper **still fails APTRANSCO feel** if stems read like short textbook / coaching workbook prompts. This gate often has the **largest impact** on perceived paper quality. Implements **Golden Rule 2B**.
+
+Applies to **all technical questions (Q1–Q70)**. Non-core may be shorter but must not use telegram “Find…” drills when a one-line situation is easy to add.
+
+#### Per-question scorecard ( /10 )
+
+| Criterion | /2 |
+|---|---:|
+| Examiner-style wording (situation → data → ask) | 2 |
+| Engineering context (site / test / design / substation / commissioning / observation) | 2 |
+| Formula not directly exposed (no “use this equation…” cue) | 2 |
+| Natural APTRANSCO recruitment-exam language | 2 |
+| Cognitive challenge (interpret before compute / choose) | 2 |
+
+**Pass per question:** total **≥ 8/10** and **zero automatic-reject flags**.
+
+#### Automatic Reject / MODIFY flags (any one fails the Q)
+- Starts directly with **Calculate… / Find… / Determine… / Compute… / Obtain…**
+- Exposes the required formula or plugs the formula name as the whole task
+- Looks like a textbook end-of-chapter exercise
+- Reads like a coaching workbook one-liner (“Find the slip.” / “Calculate bearing capacity.”)
+- Hard label earned only by **longer arithmetic** with no hidden concept / interpretation / practical condition
+
+#### Style examples (normative)
+
+| ❌ Textbook / Fail | ✅ APTRANSCO examiner / Pass |
+|---|---|
+| Find the bending stress. | A simply supported steel beam is subjected to the loading shown. Neglect self-weight. The maximum bending stress developed in the extreme fibre is |
+| Determine transformer regulation. | A distribution transformer supplies a lagging power-factor load at rated voltage. Based on the given test data, the percentage voltage regulation is closest to |
+| Calculate coefficient of permeability. | During a constant-head permeability test conducted in a soil laboratory, the following observations were recorded. The coefficient of permeability is |
+| A transformer has 96% efficiency at full load. Find the output power. | During the performance test of a 250 kVA distribution transformer, the full-load efficiency is observed to be 96% at unity power factor while delivering rated load. The output power is |
+
+#### Context starters (prefer these flavours)
+During commissioning… / During routine testing… / In a 132/33 kV substation… / A contractor observes… / During load-flow studies… / An RCC beam designed by LSM… / During a plate load test… / While conducting a standard Proctor test… / On the figure shown for the protection / connection / beam…
+
+#### Paper-level Pass rules
+- **≥ 90%** of technical questions score ≥ 8/10
+- **0** technical questions with an automatic-reject flag
+- Compliance must list any Q scoring 6–7 for rewrite before APPROVED
+- Papers that are “correct but workbook-toned” → **Fail Audit Q** (do not APPROVE)
+
+**Report template:** table of Q → score /10 → flags → Pass/Fail; summary % Pass; list of rewrites required.
+
+---
+
 ### Recommended Acceptance Threshold (Mandatory for APPROVED)
 
 Before any paper is **APPROVED** (and before code / CBT packaging), **all Final Approval Workflow gates** must Pass, including:
@@ -1576,6 +1654,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
 | Stem length | Technical stems are full exam paragraphs (context + data/conditions + ask); **not one-liners** (≥90% tech); Rule 2A |
+| Question language / authenticity (Audit Q) | ≥90% tech Qs ≥8/10 on examiner-language scorecard; **0** Find/Calculate/Determine openers or formula-exposed textbook stems; Hard ≠ longer arithmetic only |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
@@ -1616,6 +1695,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 16 N Distractor Quality Audit
 17 O Answer Key Distribution Audit
 18 P Non-core Subject Gates (Quant / GA / Reasoning / English / Computer)
+19 Q Question Language & Exam Authenticity Audit
    → Acceptance Threshold all Pass
    → User APPROVED / MODIFY / REJECT
    → Code + crops only after APPROVED
