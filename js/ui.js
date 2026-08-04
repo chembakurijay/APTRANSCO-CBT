@@ -100,6 +100,7 @@ export const populateHomePage = (mockList) => {
     clearElement(container);
 
     const groups = [
+        { kind: 'elim', label: 'Elimination Drills · CBT (50Q)', hint: 'Playbook rules practice — same CBT timer/palette as FLT & ST. Drill 01–04 cover Rules 1–17.' },
         { kind: 'st', label: 'Subject Tests · High-Yield (50Q)', hint: 'Most-predicted themes per Transco syllabus subject. Civil 6 · Electrical 7 · Non-core 2.' },
         { kind: 'flt', label: 'Full Length Mock Tests (100Q)', hint: 'Official CBT pattern — Technical 70 + Non-core 30 · 180 minutes.' },
     ];

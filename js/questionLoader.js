@@ -1,6 +1,6 @@
 import { appState } from './storage.js';
 
-const CACHE_BUST = '20260804stv4';
+const CACHE_BUST = '20260804elim1';
 
 const getPerTestPaths = (fltKey) => {
     const fltMatch = fltKey.match(/^(civil|electrical)(\d{2})$/);
@@ -53,6 +53,13 @@ const getPerTestPaths = (fltKey) => {
             `../data/noncore/st/nc-st-${key}-${num}.js${q}`,
             `../data/noncore/nc-st-${key}-${num}.js${q}`,
         ];
+    }
+    // Elimination drills: elim-drill-01 → data/elimination/elim-drill-01.js
+    const elim = fltKey.match(/^elim-drill-(\d{2})$/);
+    if (elim) {
+        const num = elim[1];
+        const q = `?v=${CACHE_BUST}`;
+        return [`../data/elimination/elim-drill-${num}.js${q}`];
     }
     return null;
 };
