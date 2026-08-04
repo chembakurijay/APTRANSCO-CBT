@@ -102,9 +102,21 @@ const bindPanelActions = () => {
         panel.style.display = visible ? '' : 'none';
         button.setAttribute('aria-expanded', String(visible));
         button.textContent = visible ? hideLabel : showLabel;
-        // Flex layout auto-expands question; force reflow for stubborn browsers
+        // Do not force display:flex here — fullscreen uses CSS grid for scroll containment
         if (examBody) {
-            examBody.style.display = 'flex';
+            const examPage = qs('#examPage');
+            const inFs = Boolean(document.fullscreenElement) || examPage?.classList.contains('exam-fs-active');
+            if (inFs) {
+                examBody.style.display = 'grid';
+                examBody.style.minHeight = '0';
+                examBody.style.height = '100%';
+                examBody.style.overflow = 'hidden';
+            } else {
+                examBody.style.display = 'flex';
+                examBody.style.minHeight = '';
+                examBody.style.height = '';
+                examBody.style.overflow = '';
+            }
             void examBody.offsetWidth;
         }
     };
@@ -167,28 +179,69 @@ const bindPanelActions = () => {
 
     document.addEventListener('fullscreenchange', () => {
         if (!fullscreenButton) return;
-        const inFs = Boolean(document.fullscreenElement);
+        const examPage = qs('#examPage');
+        const inFs = Boolean(document.fullscreenElement) && document.fullscreenElement === examPage;
         fullscreenButton.textContent = inFs ? 'Exit Fullscreen' : 'Fullscreen';
-        // Entering fullscreen: keep palette + exam body visible (height:0 FS bug left blank content)
+        examPage?.classList.toggle('exam-fs-active', inFs);
+
         if (inFs) {
             setPanelVisible(palettePanel, paletteToggle, true, 'Show Palette', 'Hide Palette');
         }
+
         if (examBody) {
-            examBody.style.display = 'flex';
-            examBody.style.visibility = 'visible';
-            examBody.style.minHeight = '';
-            examBody.style.height = '';
+            if (inFs) {
+                examBody.style.display = 'grid';
+                examBody.style.visibility = 'visible';
+                examBody.style.minHeight = '0';
+                examBody.style.height = '100%';
+                examBody.style.maxHeight = '100%';
+                examBody.style.overflow = 'hidden';
+            } else {
+                examBody.style.display = 'flex';
+                examBody.style.visibility = 'visible';
+                examBody.style.minHeight = '';
+                examBody.style.height = '';
+                examBody.style.maxHeight = '';
+                examBody.style.overflow = '';
+            }
             void examBody.offsetWidth;
         }
+
         const card = qs('#questionCard');
         const footer = qs('#questionCardFooter');
+        const scroll = qs('.question-card-scroll');
         if (card) {
             card.style.visibility = 'visible';
-            card.style.display = '';
+            card.style.display = inFs ? 'flex' : '';
+            card.style.flexDirection = inFs ? 'column' : '';
+            card.style.minHeight = inFs ? '0' : '';
+            card.style.height = inFs ? '100%' : '';
+            card.style.maxHeight = inFs ? '100%' : '';
+            card.style.overflow = inFs ? 'hidden' : '';
+        }
+        if (scroll) {
+            scroll.style.minHeight = inFs ? '0' : '';
+            scroll.style.flex = inFs ? '1 1 0%' : '';
+            scroll.style.overflowY = inFs ? 'auto' : '';
+            scroll.style.overflowX = inFs ? 'hidden' : '';
+        }
+        if (palettePanel && inFs && !palettePanel.hidden) {
+            palettePanel.style.height = '100%';
+            palettePanel.style.maxHeight = '100%';
+            palettePanel.style.minHeight = '0';
+            palettePanel.style.overflowY = 'auto';
+            palettePanel.style.overflowX = 'hidden';
+        } else if (palettePanel && !inFs) {
+            palettePanel.style.height = '';
+            palettePanel.style.maxHeight = '';
+            palettePanel.style.minHeight = '';
+            palettePanel.style.overflowY = '';
+            palettePanel.style.overflowX = '';
         }
         if (footer) {
             footer.style.display = 'flex';
             footer.style.visibility = 'visible';
+            footer.style.flexShrink = inFs ? '0' : '';
         }
     });
 };
