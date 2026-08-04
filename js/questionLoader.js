@@ -1,23 +1,26 @@
-import { appState } from './storage.js';
+﻿import { appState } from './storage.js';
+
+const CACHE_BUST = '20260804ai';
 
 const getPerTestPaths = (fltKey) => {
     const match = fltKey.match(/^(civil|electrical)(\d{2})$/);
     if (!match) return null;
     const folder = match[1];
     const testNumber = match[2];
+    const q = `?v=${CACHE_BUST}`;
     if (folder === 'civil') {
         return [
-            `../data/civil/ce-flt${testNumber}.js`,
-            `../data/civil/flt${testNumber}.js`,
+            `../data/civil/ce-flt${testNumber}.js${q}`,
+            `../data/civil/flt${testNumber}.js${q}`,
         ];
     }
     if (folder === 'electrical') {
         return [
-            `../data/electrical/ee-flt${testNumber}.js`,
-            `../data/electrical/flt${testNumber}.js`,
+            `../data/electrical/ee-flt${testNumber}.js${q}`,
+            `../data/electrical/flt${testNumber}.js${q}`,
         ];
     }
-    return [`../data/${folder}/flt${testNumber}.js`];
+    return [`../data/${folder}/flt${testNumber}.js${q}`];
 };
 
 export const loadQuestionBank = async (fltKey) => {
@@ -39,7 +42,7 @@ export const loadQuestionBank = async (fltKey) => {
     }
 
     if (!Array.isArray(questions)) {
-        const module = await import('../data/questionBanks.js');
+        const module = await import(`../data/questionBanks.js?v=${CACHE_BUST}`);
         questions = module.questionBanks[fltKey];
     }
 
