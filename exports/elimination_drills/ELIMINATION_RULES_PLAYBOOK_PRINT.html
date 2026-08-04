@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/>
+<title>Elimination Rules Playbook</title><style>
+@page { size: A4; margin: 16mm 14mm; }
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: #15202b;
+       font-size: 10.5pt; line-height: 1.45; }
+h1 { font-size: 20pt; margin: 0 0 6pt; }
+h2 { font-size: 14pt; margin: 18pt 0 8pt; border-bottom: 1.5px solid #0b5cab; padding-bottom: 3pt; page-break-after: avoid; }
+h3 { font-size: 12pt; margin: 14pt 0 6pt; color: #0b5cab; page-break-after: avoid; }
+h4 { font-size: 10.5pt; margin: 8pt 0 4pt; }
+p, li { margin: 0 0 6pt; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; color: #5b6b7c; font-size: 9pt; }
+.box { border: 1px solid #cfd8e3; border-radius: 6px; padding: 8pt 10pt; margin: 8pt 0; background: #f7fafc; page-break-inside: avoid; }
+.rule { border: 1px solid #d5dee8; border-radius: 8px; padding: 10pt 12pt; margin: 12pt 0 16pt; page-break-inside: avoid; }
+.meta { color: #5b6b7c; font-size: 9.5pt; }
+table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6pt 0 10pt; }
+th, td { border: 1px solid #d0d7e0; padding: 4pt 5pt; vertical-align: top; }
+th { background: #e8eef6; text-align: left; }
+code { font-family: Consolas, "Courier New", monospace; font-size: 8.5pt; }
+.formula { font-family: Consolas, monospace; background: #eef3f9; padding: 6pt 8pt; border-radius: 4px; margin: 6pt 0; }
+ol.apply { padding-left: 18pt; }
+.footer-note { font-size: 8.5pt; color: #5b6b7c; margin-top: 10pt; }
+.title-block { margin-bottom: 14pt; }
+</style></head><body>
+<div class='title-block'>
+<p class='eyebrow'>APTRANSCO AEE CBT · Study aid</p>
+<h1>Elimination Rules Playbook</h1>
+<p><strong>Evidence-based last-resort heuristics</strong> for Civil, Electrical, and Non-core MCQs.</p>
+<p class='meta'>Publication floor: each established rule has at least 15 independent supporting questions from FLTs, Subject Tests, and VALID PYQs. Target healthy band: 15–20+ examples.</p>
+</div>
+<div class='box'>
+<h3>How to apply these rules (exam workflow)</h3>
+<ol class='apply'>
+<li><strong>Solve normally first</strong> — formula, figure, code clause.</li>
+<li>If stuck between two or three options, <strong>classify the trap family</strong> (geometry, pu base, sequence fault, service vs factored, etc.).</li>
+<li>Open the matching rule below and run the <strong>Application steps</strong>.</li>
+<li><strong>Strike</strong> options that violate the rule; keep only survivors.</li>
+<li>If two remain, use Rule 17 (units / figure consistency). Never use letter-position myths (pick C, longest option, middle value).</li>
+</ol>
+<p class='meta'>Drill practice: 50-question jumbled tests are in the same folder (Test 01 covers Rules 1–5, Test 02 Rules 6–10, Test 03 Rules 11–15, Test 04 Rules 16–17).</p>
+</div>
+<h2>1. Established heuristics — index</h2>
+<table><thead><tr><th>#</th><th>Rule</th><th>Streams</th><th>Evidence</th></tr></thead><tbody>
+<tr><td>1</td><td>Diameter ↔ radius / area geometry slip</td><td>Civil, Electrical</td><td>129</td></tr>
+<tr><td>2</td><td>Service vs factored / partial-factor mix</td><td>Civil</td><td>104</td></tr>
+<tr><td>3</td><td>Gross vs net / hole deduction</td><td>Civil</td><td>95</td></tr>
+<tr><td>4</td><td>Cover vs effective depth</td><td>Civil</td><td>40</td></tr>
+<tr><td>5</td><td>Per-unit base-change scaling</td><td>Electrical</td><td>95</td></tr>
+<tr><td>6</td><td>Sequence-network connection by fault type</td><td>Electrical</td><td>25</td></tr>
+<tr><td>7</td><td>√3 / phase-factor forgotten</td><td>Electrical</td><td>24</td></tr>
+<tr><td>8</td><td>Thevenin / Norton source deactivation</td><td>Electrical</td><td>18</td></tr>
+<tr><td>9</td><td>Resonance / X_L = X_C identity</td><td>Electrical</td><td>47</td></tr>
+<tr><td>10</td><td>Sign / sense / tension–compression flip</td><td>Civil, Electrical</td><td>270</td></tr>
+<tr><td>11</td><td>Figure-dependency: cover the figure test</td><td>Civil, Electrical</td><td>304</td></tr>
+<tr><td>12</td><td>Rankine / Terzaghi / earth-pressure term drop</td><td>Civil</td><td>86</td></tr>
+<tr><td>13</td><td>Mohr / principal-stress pair consistency</td><td>Civil</td><td>26</td></tr>
+<tr><td>14</td><td>SFD↔BMD jump / couple vs point-load confusion</td><td>Civil</td><td>39</td></tr>
+<tr><td>15</td><td>SCR / PE latching vs holding vs firing</td><td>Electrical</td><td>18</td></tr>
+<tr><td>16</td><td>Non-core: option that abandons the asked operation</td><td>Non-core</td><td>37</td></tr>
+<tr><td>17</td><td>Last-resort: dimensional / absurdity cull (evidence-limited)</td><td>Civil, Electrical, Non-core</td><td>232</td></tr>
+</tbody></table>
+<div class='box'><h3>Stream coverage</h3><ul>
+<li><strong>Civil:</strong> R1, R2, R3, R4, R10, R11, R12, R13, R14, R17</li>
+<li><strong>Electrical:</strong> R1, R5, R6, R7, R8, R9, R10, R11, R15, R17</li>
+<li><strong>Non-core:</strong> R16, R17</li>
+</ul><p class='meta'>All three streams are covered by the established set.</p></div>
+<h2>2. Rules — explanation and application</h2>
+<div class='rule'><h3>Elimination Rule 1 — Diameter ↔ radius / area geometry slip</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 129 independent (125 bank + 4 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical</p>
+<h4>What this rule means</h4><p>Circular geometry questions almost always hide a diameter-versus-radius mistake. Area is A = pi*d^2/4. Candidates who treat the given diameter as a radius get areas four times too large (or stresses four times too small).</p>
+<h4>When to use</h4><p>Circular section, shaft, hanger, pipe, or bolt with diameter given in mm.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Circle the numeric diameter in the stem and write r = d/2 on scratch paper.</li>
+<li>Compute A = pi*d^2/4 once; do not reuse a remembered &#x27;pi r^2&#x27; with d plugged in as r.</li>
+<li>Strike any option that matches P/(pi*d^2), P/(pi*r), or 4x/0.25x of the correct stress.</li>
+<li>If net area of a plate with holes is asked, apply hole deductions after the correct gross area.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> A = pi*d^2/4 ; sigma = P/A</div>
+<h4>Core elimination move</h4><p>Compute A = πd²/4 (or r = d/2) once on scratch paper. Eliminate options that match P/(πd²), P/(πr), or treating d as r.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q2</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 125 kN at a section. Nominal shear st…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q6</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 185 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q7</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 130 kN at a section. Nominal shear st…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 2 — Service vs factored / partial-factor mix</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 104 independent (102 bank + 2 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>Limit-state design mixes service loads, factored loads, and material strengths (fy, fck). A classic trap is to treat fy as the computed member stress, or to apply load factors twice.</p>
+<h4>When to use</h4><p>Stem mixes service loads with limit-state options, or quotes fy/fck beside Mu/Vu.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Label the stem: SLS (service) or ULS (factored Mu/Vu).</li>
+<li>If Mu/Vu is already factored, do not multiply by gamma_f again.</li>
+<li>Strike options that equal fy or 0.87 fy when the ask is a computed stress from P/A or M/Z.</li>
+<li>Keep Ast calculations on the factored Mu and design stress 0.87 fy (or the code path stated).</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> ULS actions use gamma_f; design steel stress is typically 0.87 fy (IS 456 path)</div>
+<h4>Core elimination move</h4><p>Ask: is this SLS or ULS? Strike options that apply γf to an already-factored action, or that treat fy as the computed stress.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q3</code></td><td>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The ave…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q2</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 125 kN at a section. Nominal shear st…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q5</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q6</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 185 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 3 — Gross vs net / hole deduction</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 95 independent (95 bank + 0 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>Tension capacity of bolted plates uses net area, not gross. For staggered holes, add s^2/(4g) terms. Options that equal gross area ignore the holes entirely.</p>
+<h4>When to use</h4><p>Tension member, plate with bolt holes, staggered pitch, or chain of holes.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Write Anet = (gross width - n*d_hole)*t (+ stagger terms if shown).</li>
+<li>Strike the gross-area option immediately.</li>
+<li>If stagger is drawn, include s^2/(4g); if chain is transverse only, do not invent stagger credit.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Anet ~ (b - n*dh)*t ; staggered: + sum s^2/(4g)</div>
+<h4>Core elimination move</h4><p>Net = gross − holes (± s²/4g). Eliminate options that equal gross area, or that deduct diameter without adding the staggered term when stagger is shown.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q20</code></td><td>Two short tied columns have the same gross area and longitudinal-steel percentage. Column X alone receives …</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q9</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 900 kN. The average factored stress Pu/Ag i…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q24</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q29</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 900 kN. The average factored stress Pu/Ag i…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q34</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 950 kN. The average factored stress Pu/Ag i…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 4 — Cover vs effective depth</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 40 independent (39 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>RCC flexural and shear formulas use effective depth d, not overall depth D. Cover and bar diameter set d = D - cover - phi/2 (as defined in the stem).</p>
+<h4>When to use</h4><p>RCC beam/slab with overall D, cover, bar dia — options in Ast, τv, or lever arm.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Extract D, cover, and bar size; compute d before Ast or tau_v.</li>
+<li>Strike options that use D in place of d in Mu = 0.87 fy Ast z or tau_v = Vu/(b d).</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> d = D - cover - phi/2 ; tau_v = Vu/(b d)</div>
+<h4>Core elimination move</h4><p>d = D − cover − φ/2 (or as stem defines). Strike options that use overall depth as effective depth.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q16</code></td><td>Before a pour on an RCC beam in moderate exposure, measured cover is below the durability requirement altho…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q16</code></td><td>An RCC beam in moderate exposure is detailed with nominal cover smaller than the durability requirement, th…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q4</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 48 kN. Ignoring eccent…</td></tr>
+<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q9</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 45 kN. Ignoring eccent…</td></tr>
+<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q24</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 48 kN. Ignoring eccent…</td></tr>
+<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q29</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 45 kN. Ignoring eccent…</td></tr>
+<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q34</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 46 kN. Ignoring eccent…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 5 — Per-unit base-change scaling</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 95 independent (95 bank + 0 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>Per-unit impedance scales with the chosen bases: Zpu = Zohm * Sbase / Vbase^2. Changing only Sbase scales Zpu in direct proportion.</p>
+<h4>When to use</h4><p>Zpu / Xpu and base MVA or kV changes.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Note old and new Sbase and Vbase.</li>
+<li>If Sbase doubles and Vbase is unchanged, Zpu halves — strike &#x27;unchanged&#x27;, &#x27;doubles&#x27;, &#x27;squared&#x27;.</li>
+<li>If Vbase also changes, recompute the full ratio.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Zpu = Zohm * Sbase / Vbase^2</div>
+<h4>Core elimination move</h4><p>Zpu ∝ Sbase / Vbase². If Sbase doubles and Vbase fixed → Zpu halves. Eliminate ‘unchanged’, ‘doubles’, or ‘squared’ unless the stem changed Vbase too.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q1</code></td><td>A lossless 400 kV line has Zc = 250 Ω. Its SIL (MW) is closest to:</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q2</code></td><td>On 200 MVA, 400 kV base, a series reactor is 96 ohms. Per-unit reactance is closest to:</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q1</code></td><td>On a common 100 MVA base, if the MVA base is doubled while the base kV is unchanged, a line reactance expre…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q2</code></td><td>On 100 MVA, 220 kV base, a line reactance 48.4 Ω equals how many pu?</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q5</code></td><td>Two identical 50 MVA, 11 kV, Xd″=0.15 pu machines feed a bus. On 100 MVA base, the bus short-circuit MVA fo…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q6</code></td><td>Ferranti rise on a long EHV line is most severe when:</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q9</code></td><td>From the open-conductor / sequence figure shown (use only labelled phase currents; Ic = 0), the zero-sequen…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 6 — Sequence-network connection by fault type</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 25 independent (18 bank + 7 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>Unsymmetrical faults require specific sequence-network connections. Memorising the four classic connections eliminates most wrong options instantly.</p>
+<h4>When to use</h4><p>LG / LL / LLG / 3φ fault; options name sequence networks.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Identify fault type: 3-ph, LG, LL, LLG.</li>
+<li>3-ph → positive only; LG → 1-2-0 in series; LL → 1 parallel 2; LLG → 1 series (2 parallel 0).</li>
+<li>Strike any option that omits a required sequence or uses only zero-sequence.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> LG: Z1+Z2+Z0 ; LL: Z1||Z2 ; LLG: Z1+(Z2||Z0)</div>
+<h4>Core elimination move</h4><p>3φ → positive only. LG → series 1-2-0. LL → 1 parallel 2. LLG → 1 series (2∥0). Eliminate any option that omits a required sequence or uses only zero-sequence.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q3</code></td><td>Solid LG fault: Z1=Z2=j0.15 pu, Z0=j0.60 pu, Vpref=1 pu. |If| (pu) nearest:</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q17</code></td><td>A synchronous generator is being synchronised with live busbars. Which statement is correct?</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q2</code></td><td>For a double line-to-ground fault on an unloaded generator, the sequence networks required for the fault ca…</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q12</code></td><td>Zero-sequence network of grounded-star alternator through Xn uses:</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q24</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q34</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q44</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 7 — √3 / phase-factor forgotten</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 24 independent (18 bank + 6 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>Three-phase power and current conversions carry a root-3 factor. Forgetting it, or using 3 instead of root-3, produces the most common distractors.</p>
+<h4>When to use</h4><p>3-phase power, line vs phase quantities, line current from kVA.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Write P = root3 * VL * IL * cos(phi) (or the form asked).</li>
+<li>Strike options that drop root3 or replace it with 3 without justification.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> P = √3 · VL · IL · cosφ</div>
+<h4>Core elimination move</h4><p>P = √3 VL IL cosφ. Eliminate options that drop √3 or use 3 instead of √3 (or vice versa) without stem justification.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q8</code></td><td>During a bolted three-phase short circuit on an unloaded radial feeder, which sequence network combination …</td></tr>
+<tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q17</code></td><td>A balanced three-phase load is measured with the two-wattmeter method. Which statement is correct?</td></tr>
+<tr><td>Electrical ST-MEAS</td><td><code>data/electrical/st/ee-st-meas-01.js#Q8</code></td><td>Two-wattmeter method pf=:</td></tr>
+<tr><td>Electrical ST-PE</td><td><code>data/electrical/st/ee-st-pe-01.js#Q9</code></td><td>180° mode three-phase VSI line voltage steps:</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q3</code></td><td>Following a severe three-phase disturbance in a single-machine infinite-bus system, the equal-area criterio…</td></tr>
+<tr><td>VALID PYQ · 2022EE.pdf</td><td><code>PYQ:2022EE.pdf#Q21</code></td><td>In the circuit shown below, a three-phase star-connected unbalanced load is connected to a balanced three-p…</td></tr>
+<tr><td>VALID PYQ · 2023EE.pdf</td><td><code>PYQ:2023EE.pdf#Q39</code></td><td>A 3-phase, star-connected, balanced load is supplied from a 3-phase, 400 V (rms), balanced voltage source w…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 8 — Thevenin / Norton source deactivation</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 18 independent (14 bank + 4 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>Thevenin/Norton resistance is found with independent sources deactivated: voltage sources shorted, current sources opened.</p>
+<h4>When to use</h4><p>Req, RN, or Vth with independent sources in the figure.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>For Req/RN, deactivate independent sources first.</li>
+<li>Strike options that leave sources &#x27;on&#x27; while claiming equivalent resistance.</li>
+<li>Do not confuse Vth (open-circuit voltage) with RN.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Independent V → short; independent I → open; then find Req</div>
+<h4>Core elimination move</h4><p>Independent voltage sources → short; current sources → open. Eliminate options that leave sources active while claiming Req/RN.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q29</code></td><td>In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand termi…</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q35</code></td><td>Superposition theorem applies to:</td></tr>
+<tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q3</code></td><td>After independent sources are deactivated, the Norton resistance seen at the output terminals is:</td></tr>
+<tr><td>VALID PYQ · 2021EE.pdf</td><td><code>PYQ:2021EE.pdf#Q4</code></td><td>For the network shown, the equivalent Thevenin voltage and Thevenin impedance as seen across terminals ‘ab’ is</td></tr>
+<tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q24</code></td><td>For the circuit shown, which one of the following options correctly identifies the Thevenin’s equivalent pa…</td></tr>
+<tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q44</code></td><td>The terminal voltage and current of a linear electrical network shown in Figure</td></tr>
+<tr><td>VALID PYQ · AP-GENCO-Tech-2012.pdf</td><td><code>PYQ:AP-GENCO-Tech-2012.pdf#Q56</code></td><td>The Norton&#x27;s resistance of the circuit shown is</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q34</code></td><td>An ideal ammeter is connected between terminals A and B in the circuit shown. The ammeter reading is:</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 9 — Resonance / X_L = X_C identity</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 47 independent (44 bank + 3 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>At series resonance XL = XC so net reactive part is zero and Z = R (minimum). Parallel resonance is the dual (impedance maximum).</p>
+<h4>When to use</h4><p>Series/parallel RLC, ω0, or impedance at resonance.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Confirm series vs parallel from the figure/stem.</li>
+<li>At series resonance strike any option that still carries j(XL-XC) ≠ 0.</li>
+<li>Use omega0 = 1/√(LC) only when that is the ask.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Series resonance: XL = XC → Z = R</div>
+<h4>Core elimination move</h4><p>Series resonance → Z = R (min). Parallel → Z max. Eliminate options that keep j(XL−XC) nonzero at the stated resonance.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q13</code></td><td>In equal-area criterion, for a sudden load rejection on a machine, accelerating area is bounded by:</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q18</code></td><td>From the alternator phasor diagram (Ia leading Vt), the machine is operating as:</td></tr>
+<tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q11</code></td><td>Source-free series RLC underdamped ωd=:</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q3</code></td><td>Sync machine: overexcited on infinite bus behaves as:</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q14</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q20</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q26</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
+<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q32</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 10 — Sign / sense / tension–compression flip</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 270 independent (259 bank + 11 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical</p>
+<h4>What this rule means</h4><p>Many options are numerically close but reverse tension/compression or reaction direction. Equilibrium sense is part of the answer.</p>
+<h4>When to use</h4><p>Reactions, BMD jump, member force T/C, or direction in options.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Fix one free-body sign convention from the figure.</li>
+<li>Eliminate options with correct magnitude but wrong sense (T/C or up/down).</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Sum Fx = 0, Sum Fy = 0, Sum M = 0 (sense matters)</div>
+<h4>Core elimination move</h4><p>Fix one free-body sign convention from the figure. Eliminate options whose magnitude is right but sense (↑/↓, T/C) contradicts equilibrium.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q4</code></td><td>A pile group contains 4 piles. Each pile has ultimate base resistance 600 kPa over toe area 0.2 m²; shaft r…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q4</code></td><td>A horizontal jet of discharge 0.1 m³/s accelerates from 5 m/s to 15 m/s in a vane. Neglecting pressure forc…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q7</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 3 m/s. Discharge is closest to:</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q8</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 11 — Figure-dependency: cover the figure test</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 304 independent (109 bank + 195 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical</p>
+<h4>What this rule means</h4><p>If a figure is attached, the keyed answer usually depends on a labelled length, support, or curve. Solving from the stem alone is a dependency failure.</p>
+<h4>When to use</h4><p>Stem says ‘shown’, ‘figure’, or options name Detail/Curve labels.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Read every dimension and support on the crop before picking.</li>
+<li>Strike options that ignore a labelled overhang, load, or curve name.</li>
+<li>If the stem names Detail/Curve labels, those labels must appear on the figure.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Cover-the-figure test: cannot answer correctly with figure hidden</div>
+<h4>Core elimination move</h4><p>If you can pick the answer without the figure, stop — stem/figure mismatch. Otherwise eliminate options that ignore a labelled dimension, support, or curve on the crop.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q3</code></td><td>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, U…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q3</code></td><td>The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appe…</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q3</code></td><td>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The ave…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q8</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q14</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q19</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 4 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q25</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 4 m/s, the dis…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 12 — Rankine / Terzaghi / earth-pressure term drop</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 86 independent (85 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>Bearing capacity and earth-pressure formulae have multiple additive terms. Dropping Nγ, swapping Ka/Kp, or using dry unit weight under water are classic traps.</p>
+<h4>When to use</h4><p>Bearing capacity or lateral earth pressure with Nc, Nq, Nγ or Ka/Kp.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Write the full Terzaghi or Rankine expression used in the stem.</li>
+<li>Strike options that omit a term or use Ka where Kp is required (or vice versa).</li>
+<li>If submerged, use buoyant unit weight as required.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> qu = c Nc + q Nq + 0.5 γ B Nγ (Terzaghi form)</div>
+<h4>Core elimination move</h4><p>Write the full Terzaghi/Rankine expression. Eliminate options that drop the γBN term, swap Ka↔Kp, or use dry γ when stem says submerged.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q11</code></td><td>During buckling checks for a slender pin-ended strut, a junior engineer proposes to use the classical Euler…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q9</code></td><td>A simply supported deep timber beam develops horizontal cracks near the neutral axis although bending stres…</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q5</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q10</code></td><td>A square footing 2 m by 2 m carries a service column load of 180 kN (self-weight ignored). Average soil pre…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q15</code></td><td>A square footing 2.2 m by 2.2 m carries a service column load of 200 kN (self-weight ignored). Average soil…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q20</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q30</code></td><td>A square footing 2.2 m by 2.2 m carries a service column load of 200 kN (self-weight ignored). Average soil…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 13 — Mohr / principal-stress pair consistency</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 26 independent (23 bank + 3 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>Principal stresses from Mohr&#x27;s circle must satisfy σ1 + σ2 = σx + σy. Treating shear as a normal stress breaks that invariant.</p>
+<h4>When to use</h4><p>σx, σy, τxy given; options are σ1, σ2, or θp.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Compute σ_avg and R; then σ1,2 = σ_avg ± R.</li>
+<li>Strike pairs that violate σ1+σ2 = σx+σy.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> σ1,2 = (σx+σy)/2 ± √[((σx-σy)/2)^2 + τ^2]</div>
+<h4>Core elimination move</h4><p>σavg = (σx+σy)/2; R = √[((σx−σy)/2)²+τ²]. Eliminate pairs that violate σ1+σ2 = σx+σy or that treat τ as a normal stress.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q5</code></td><td>While interpreting a strain-rosette investigation on a critical plane-stress element, the engineer reviews …</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q12</code></td><td>At a point, \(\sigma_x=80\) MPa tension, \(\sigma_y=20\) MPa compression and \(\tau_{xy}=30\) MPa. Determin…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q13</code></td><td>At a point in a plate, σx = 92 MPa, σy = 22 MPa and τxy = 30 MPa. The major principal stress is closest to:</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q18</code></td><td>At a point in a plate, σx = 97 MPa, σy = 22 MPa and τxy = 35 MPa. The major principal stress is closest to:</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q23</code></td><td>At a point in a plate, σx = 102 MPa, σy = 22 MPa and τxy = 34 MPa. The major principal stress is closest to:</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q28</code></td><td>At a point in a plate, σx = 107 MPa, σy = 22 MPa and τxy = 33 MPa. The major principal stress is closest to:</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q33</code></td><td>At a point in a plate, σx = 112 MPa, σy = 22 MPa and τxy = 32 MPa. The major principal stress is closest to:</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 14 — SFD↔BMD jump / couple vs point-load confusion</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 39 independent (34 bank + 5 VALID PYQ) · <strong>Streams:</strong> Civil</p>
+<h4>What this rule means</h4><p>On SFDs/BMDs: a point load causes a shear jump; a couple causes a moment jump (no shear jump).</p>
+<h4>When to use</h4><p>Beam figure with point load, UDL, or couple; options describe jumps.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Identify whether the singularity is a force or a couple.</li>
+<li>Strike options that swap shear-jump and moment-jump rules.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Point load → ΔV ; Couple → ΔM</div>
+<h4>Core elimination move</h4><p>Point load → shear jump; couple → moment jump (no shear jump). Eliminate options that swap those rules.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q9</code></td><td>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finit…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q14</code></td><td>Match loading change with the qualitative SFD/BMD consequence: (1) point load, (2) applied couple, (3) UDL,…</td></tr>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q2</code></td><td>A simply supported beam of span 5 m carries a uniform load of 13 kN/m over the full span. The maximum bendi…</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q7</code></td><td>A simply supported beam of span 4 m carries a uniform load of 14 kN/m over the full span. The maximum bendi…</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q12</code></td><td>A simply supported beam of span 6 m carries a uniform load of 15 kN/m over the full span. The maximum bendi…</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q17</code></td><td>A simply supported beam of span 5 m carries a uniform load of 12 kN/m over the full span. The maximum bendi…</td></tr>
+<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q22</code></td><td>A simply supported beam of span 4 m carries a uniform load of 13 kN/m over the full span. The maximum bendi…</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 15 — SCR / PE latching vs holding vs firing</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 18 independent (14 bank + 4 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
+<h4>What this rule means</h4><p>For SCRs, latching current is larger than holding current. Latching is needed to establish conduction after the gate pulse; holding keeps it on.</p>
+<h4>When to use</h4><p>Thyristor/SCR gate, latching, holding, or commutation options.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Remember IL &gt; IH.</li>
+<li>Strike options that swap latching with holding or that size gate width from holding alone.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Latching current &gt; holding current</div>
+<h4>Core elimination move</h4><p>Latching &gt; holding; latching is the current to *establish* conduction after gate pulse. Eliminate options that swap latching↔holding or that set gate width from holding current alone.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q47</code></td><td>An SCR turns off when which condition is met for sufficient time?</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q47</code></td><td>After latch, SCR stays on until anode current falls below:</td></tr>
+<tr><td>Electrical ST-PE</td><td><code>data/electrical/st/ee-st-pe-01.js#Q1</code></td><td>SCR latching current is:</td></tr>
+<tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q28</code></td><td>Consider the circuit shown in Figure</td></tr>
+<tr><td>VALID PYQ · APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf</td><td><code>PYQ:APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf#Q77</code></td><td>For the converter shown below, firing angle for thyristors `T1` and `T2` is `π/6`; firing angle for thyrist…</td></tr>
+<tr><td>VALID PYQ · APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf</td><td><code>PYQ:APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf#Q78</code></td><td>In the figure shown below, a thyristor-based 1-φ voltage regulator with firing angle `α = 90°`. The rms out…</td></tr>
+<tr><td>VALID PYQ · AP-GENCO-Tech-2012.pdf</td><td><code>PYQ:AP-GENCO-Tech-2012.pdf#Q10</code></td><td>The latching current of T1 is 1 mA. The minimum width of gate pulse required to turn on SCR is</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q53</code></td><td>In field, class-F (line) commutation of SCR succeeds when:</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 16 — Non-core: option that abandons the asked operation</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 37 independent (37 bank + 0 VALID PYQ) · <strong>Streams:</strong> Non-core</p>
+<h4>What this rule means</h4><p>Non-core items often include one option that solves a different operation (CI instead of SI, active instead of passive, wrong percentage base).</p>
+<h4>When to use</h4><p>Quant / reasoning / English — one option changes the operation (%, SI, tense, code).</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Re-state the exact ask in one short sentence.</li>
+<li>Strike any option that changes the operation.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Match the asked operation exactly (%, SI, tense, code rule)</div>
+<h4>Core elimination move</h4><p>Re-state the exact ask (20% of 450; SI for 2 years; passive of present perfect). Eliminate options that solve a different operation (CI instead of SI, active instead of passive).</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q72</code></td><td>A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage…</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q73</code></td><td>A price rises 20%, falls 10%, then attracts 5% tax. Relative to the original pre-tax price, the final amoun…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q72</code></td><td>A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage…</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q77</code></td><td>Contractor buys equipment for Rs 240000 and sells for Rs 276000. Profit percent on cost is:</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q92</code></td><td>Choose passive: The technician calibrated the protection relay.:</td></tr>
+<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q1</code></td><td>A stores ledger records 450 cable drums. The value of 20% of this quantity is:</td></tr>
+<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q2</code></td><td>Simple interest on ₹10,000 at 10% per annum for 2 years is:</td></tr>
+<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q3</code></td><td>Average of 5,7,9,11,13:</td></tr>
+</tbody></table></div>
+<div class='rule'><h3>Elimination Rule 17 — Last-resort: dimensional / absurdity cull (evidence-limited)</h3>
+<p class='meta'><strong>Evidence:</strong> ESTABLISHED — 232 independent (231 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical, Non-core</p>
+<h4>What this rule means</h4><p>When two options remain, cull any survivor whose units cannot equal the asked quantity (mm^2 vs N/mm^2, ohm vs siemens, kN vs kn·m).</p>
+<h4>When to use</h4><p>Time pressure; two options already killed by other established rules; two remain.</p>
+<h4>Application steps</h4><ol class='apply'>
+<li>Write the unit of the asked quantity.</li>
+<li>Strike options whose units cannot match.</li>
+<li>Then prefer consistency with figure boundary conditions — never &#x27;pick C&#x27; myths.</li>
+</ol>
+<div class='formula'><strong>Memory cue:</strong> Units(asked) must equal Units(option)</div>
+<h4>Core elimination move</h4><p>Cull any remaining option whose units cannot match the ask (mm² vs N/mm², Ω vs S, kN vs kN·m). Then prefer the option consistent with the figure’s boundary conditions. Do **not** guess from ‘middle value’ myths — our banks do not support that heuristic.</p>
+<h4>Evidence examples (sample)</h4>
+<table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q41</code></td><td>The plane truss shown carries load W and moment M at apex B. Force in member AB is:</td></tr>
+<tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q47</code></td><td>The design buckling-curve crop plots reduction factor \(\chi\) against nondimensional slenderness for curve…</td></tr>
+<tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q1</code></td><td>A mercury manometer connected to water shows a level difference of 0.4 m. Taking mercury specific gravity a…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q5</code></td><td>A centrifugal pump delivers 0.08 m³/s against 35 m head at overall efficiency 0.75. Water power input conve…</td></tr>
+<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q6</code></td><td>A mercury manometer connected to water shows a level difference of 0.5 m. Taking mercury specific gravity a…</td></tr>
+</tbody></table></div>
+<h2>3. Draft rules (not established — do not teach as heuristics)</h2>
+<p>These candidates have fewer than 15 independent hits. Keep them as a watchlist only.</p><ul>
+<li>Kill the neighbour-formula lookalike — 4 hits</li>
+<li>SIL / surge-impedance identity — 5 hits</li>
+<li>Transformer referral / turns-ratio scaling — 7 hits</li>
+</ul>
+<h2>4. Anti-rules (unsupported myths)</h2><ul>
+<li><strong>Pick C when unsure</strong> — keys are balanced; letter myths fail.</li>
+<li><strong>Longest option is correct</strong> — distractors are equal-length engineering mistakes.</li>
+<li><strong>Always middle numerical value</strong> — middle is often the classic slip (×2 / ÷2).</li>
+<li><strong>Ignore the figure if the stem looks complete</strong> — imaged items are figure-dependent.</li>
+</ul>
+<p class='footer-note'>Generated for APTRANSCO AEE CBT practice. Regenerate: python scripts/build_elimination_playbook_pdf.py</p>
+</body></html>
