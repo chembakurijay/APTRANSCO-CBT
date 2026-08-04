@@ -11,7 +11,7 @@ h4 { font-size: 10.5pt; margin: 8pt 0 4pt; }
 p, li { margin: 0 0 6pt; }
 .eyebrow { text-transform: uppercase; letter-spacing: .08em; color: #5b6b7c; font-size: 9pt; }
 .box { border: 1px solid #cfd8e3; border-radius: 6px; padding: 8pt 10pt; margin: 8pt 0; background: #f7fafc; page-break-inside: avoid; }
-.rule { border: 1px solid #d5dee8; border-radius: 8px; padding: 10pt 12pt; margin: 12pt 0 16pt; page-break-inside: avoid; }
+.rule { border: 1px solid #d5dee8; border-radius: 8px; padding: 10pt 12pt; margin: 12pt 0 16pt; }
 .meta { color: #5b6b7c; font-size: 9.5pt; }
 table { width: 100%; border-collapse: collapse; font-size: 9pt; margin: 6pt 0 10pt; }
 th, td { border: 1px solid #d0d7e0; padding: 4pt 5pt; vertical-align: top; }
@@ -21,12 +21,17 @@ code { font-family: Consolas, "Courier New", monospace; font-size: 8.5pt; }
 ol.apply { padding-left: 18pt; }
 .footer-note { font-size: 8.5pt; color: #5b6b7c; margin-top: 10pt; }
 .title-block { margin-bottom: 14pt; }
+.fig-grid { display: block; margin: 8pt 0; }
+.fig-card { border: 1px solid #cfd8e3; border-radius: 6px; padding: 8pt; margin: 0 0 10pt; page-break-inside: avoid; background: #fff; }
+.fig-card img { max-width: 100%; max-height: 280px; width: auto; height: auto; display: block; margin: 6pt auto; border: 1px solid #e2e8f0; }
+.fig-cap { font-size: 8.5pt; color: #5b6b7c; margin-top: 4pt; }
+.opts { margin: 4pt 0 0; padding-left: 14pt; font-size: 9pt; }
 </style></head><body>
 <div class='title-block'>
 <p class='eyebrow'>APTRANSCO AEE CBT · Study aid</p>
 <h1>Elimination Rules Playbook</h1>
 <p><strong>Evidence-based last-resort heuristics</strong> for Civil, Electrical, and Non-core MCQs.</p>
-<p class='meta'>Publication floor: each established rule has at least 15 independent supporting questions from FLTs, Subject Tests, and VALID PYQs. Target healthy band: 15–20+ examples.</p>
+<p class='meta'>Publication floor: each established rule has at least 15 independent supporting questions from FLTs, Subject Tests, and VALID PYQs. Target healthy band: 15–20+ examples. <strong>Diagram evidence is shown as actual figures</strong> (not filename titles).</p>
 </div>
 <div class='box'>
 <h3>How to apply these rules (exam workflow)</h3>
@@ -77,17 +82,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> A = pi*d^2/4 ; sigma = P/A</div>
 <h4>Core elimination move</h4><p>Compute A = πd²/4 (or r = d/2) once on scratch paper. Eliminate options that match P/(πd²), P/(πr), or treating d as r.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q2</code></td><td>While reviewing a rigid-ended hanger, equal-length steel and brass rods are found to have \(A_s=600\) mm², …</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q13</code></td><td>During beam-section selection, the service moment is 36 kN·m and the allowable bending stress is 150 MPa. D…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
 <tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q2</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 125 kN at a section. Nominal shear st…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q6</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 185 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q7</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 130 kN at a section. Nominal shear st…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q47</code> · Key D</p>
+<p>A bolted tension plate has width b = 240 mm, thickness t = 10 mm and hole diameter dh = 22 mm. Path P is a chain section through 2 holes; path Q zig-zags through 3 holes with two stagger credits s = 30 mm on gauge g = 60</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q47-staggered-net-paths.jpg" alt="Diagram for data/civil/ce-flt01.js#Q47" />
+<ol class='opts' type='A'>
+<li>P, 1960 mm²</li>
+<li>P, 1740 mm²</li>
+<li>Q, 2030 mm²</li>
+<li>Q, 1810 mm²</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q47-staggered-net-paths.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q35</code> · Key C</p>
+<p>The pump and system curves show one pump and two identical pumps in parallel; the operating intersections are labelled only on the crop. Why is the parallel discharge at point C less than twice the single-pump discharge </p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q35-pump-characteristic.jpg" alt="Diagram for data/civil/ce-flt02.js#Q35" />
+<ol class='opts' type='A'>
+<li>Pump speed necessarily halves</li>
+<li>Pipe diameter doubles</li>
+<li>The rising system head shifts each pump to lower individual discharge</li>
+<li>Parallel pumps halve static head</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q35-pump-characteristic.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q41</code> · Key C</p>
+<p>A tension plate has \(A_g=1800\) mm², \(A_n=1450\) mm², \(f_y=250\) MPa, \(f_u=410\) MPa; take \(\gamma_{m0}=1.10,\gamma_{m1}=1.25\). Compare gross yielding \(A_gf_y/\gamma_{m0}\) with net rupture \(0.9A_nf_u/\gamma_{m1}</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q41-plane-truss.jpg" alt="Diagram for data/civil/ce-flt02.js#Q41" />
+<ol class='opts' type='A'>
+<li>yielding 450 kN governs</li>
+<li>rupture 350 kN governs</li>
+<li>yielding 409 kN governs</li>
+<li>rupture 428 kN governs</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q41-plane-truss.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q43</code> · Key D</p>
+<p>The staggered plate crop shows two candidate net-section rupture paths P and Q. Using \(b=240\) mm, \(t=10\) mm, hole diameter 22 mm and the shown stagger/pitch values, which path and net area govern under \(b_n=b-\Sigma</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q43-eccentric-bolts.jpg" alt="Diagram for data/civil/ce-flt02.js#Q43" />
+<ol class='opts' type='A'>
+<li>P, 1960 mm²</li>
+<li>P, 1740 mm²</li>
+<li>Q, 2030 mm²</li>
+<li>Q, 1810 mm²</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q43-eccentric-bolts.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 2 — Service vs factored / partial-factor mix</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 104 independent (102 bank + 2 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>Limit-state design mixes service loads, factored loads, and material strengths (fy, fck). A classic trap is to treat fy as the computed member stress, or to apply load factors twice.</p>
@@ -100,17 +154,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> ULS actions use gamma_f; design steel stress is typically 0.87 fy (IS 456 path)</div>
 <h4>Core elimination move</h4><p>Ask: is this SLS or ULS? Strike options that apply γf to an already-factored action, or that treat fy as the computed stress.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q3</code></td><td>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, U…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q7</code></td><td>During review of a stepped shaft ABC, an end torque of 1000 N·m is applied at C while B is an intermediate …</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q3</code></td><td>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The ave…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q2</code></td><td>A 230 mm wide beam with effective depth 450 mm carries factored shear 125 kN at a section. Nominal shear st…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q5</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q6</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 185 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q3</code> · Key A</p>
+<p>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, UDL w = 10 kN/m over AB, and a tip load P = 20 kN at C (also shown on the figure). Which support-reaction pair (RA</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q03-overhang-reactions.jpg" alt="Diagram for data/civil/ce-flt01.js#Q3" />
+<ol class='opts' type='A'>
+<li>10 kN, 50 kN</li>
+<li>15 kN, 45 kN</li>
+<li>20 kN, 40 kN</li>
+<li>25 kN, 35 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q03-overhang-reactions.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q21</code> · Key D</p>
+<p>At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement b</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q21-column-tie-detail.jpg" alt="Diagram for data/civil/ce-flt01.js#Q21" />
+<ol class='opts' type='A'>
+<li>Detail P</li>
+<li>Detail Q</li>
+<li>Detail R</li>
+<li>Detail S</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q21-column-tie-detail.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q26</code> · Key D</p>
+<p>From the design shear table (also shown), τc = 0.48 MPa at 0.50% tension steel and τc = 0.56 MPa at 0.75%. For pt = 0.625% and nominal shear stress τv = 0.70 MPa, which conclusion is closest?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q26-shear-table.jpg" alt="Diagram for data/civil/ce-flt01.js#Q26" />
+<ol class='opts' type='A'>
+<li>0.48 MPa; minimum stirrups only</li>
+<li>0.56 MPa; no stirrups</li>
+<li>0.70 MPa; concrete alone</li>
+<li>0.52 MPa; stirrups carry the balance, subject to the maximum limit</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q26-shear-table.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q57</code> · Key B</p>
+<p>A pile group in clay uses a closely spaced 3×3 layout of 9 piles at centre-to-centre spacing s = 3D, with the enclosing block failure surface marked on the figure. Which capacity procedure is most defensible?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q57-pile-group.jpg" alt="Diagram for data/civil/ce-flt01.js#Q57" />
+<ol class='opts' type='A'>
+<li>Use individual-pile sum only</li>
+<li>Compare individual sum with block capacity, adopt the lower, then check settlement</li>
+<li>Use block capacity only and ignore settlement</li>
+<li>Assume group efficiency exceeds unity</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q57-pile-group.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 3 — Gross vs net / hole deduction</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 95 independent (95 bank + 0 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>Tension capacity of bolted plates uses net area, not gross. For staggered holes, add s^2/(4g) terms. Options that equal gross area ignore the holes entirely.</p>
@@ -122,17 +225,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Anet ~ (b - n*dh)*t ; staggered: + sum s^2/(4g)</div>
 <h4>Core elimination move</h4><p>Net = gross − holes (± s²/4g). Eliminate options that equal gross area, or that deduct diameter without adding the staggered term when stagger is shown.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q3</code></td><td>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, U…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q7</code></td><td>During review of a stepped shaft ABC, an end torque of 1000 N·m is applied at C while B is an intermediate …</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q20</code></td><td>Two short tied columns have the same gross area and longitudinal-steel percentage. Column X alone receives …</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q9</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 900 kN. The average factored stress Pu/Ag i…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q24</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q29</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 900 kN. The average factored stress Pu/Ag i…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q34</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 950 kN. The average factored stress Pu/Ag i…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q3</code> · Key A</p>
+<p>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, UDL w = 10 kN/m over AB, and a tip load P = 20 kN at C (also shown on the figure). Which support-reaction pair (RA</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q03-overhang-reactions.jpg" alt="Diagram for data/civil/ce-flt01.js#Q3" />
+<ol class='opts' type='A'>
+<li>10 kN, 50 kN</li>
+<li>15 kN, 45 kN</li>
+<li>20 kN, 40 kN</li>
+<li>25 kN, 35 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q03-overhang-reactions.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q21</code> · Key D</p>
+<p>At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement b</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q21-column-tie-detail.jpg" alt="Diagram for data/civil/ce-flt01.js#Q21" />
+<ol class='opts' type='A'>
+<li>Detail P</li>
+<li>Detail Q</li>
+<li>Detail R</li>
+<li>Detail S</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q21-column-tie-detail.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q26</code> · Key D</p>
+<p>From the design shear table (also shown), τc = 0.48 MPa at 0.50% tension steel and τc = 0.56 MPa at 0.75%. For pt = 0.625% and nominal shear stress τv = 0.70 MPa, which conclusion is closest?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q26-shear-table.jpg" alt="Diagram for data/civil/ce-flt01.js#Q26" />
+<ol class='opts' type='A'>
+<li>0.48 MPa; minimum stirrups only</li>
+<li>0.56 MPa; no stirrups</li>
+<li>0.70 MPa; concrete alone</li>
+<li>0.52 MPa; stirrups carry the balance, subject to the maximum limit</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q26-shear-table.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q47</code> · Key D</p>
+<p>A bolted tension plate has width b = 240 mm, thickness t = 10 mm and hole diameter dh = 22 mm. Path P is a chain section through 2 holes; path Q zig-zags through 3 holes with two stagger credits s = 30 mm on gauge g = 60</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q47-staggered-net-paths.jpg" alt="Diagram for data/civil/ce-flt01.js#Q47" />
+<ol class='opts' type='A'>
+<li>P, 1960 mm²</li>
+<li>P, 1740 mm²</li>
+<li>Q, 2030 mm²</li>
+<li>Q, 1810 mm²</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q47-staggered-net-paths.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 4 — Cover vs effective depth</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 40 independent (39 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>RCC flexural and shear formulas use effective depth d, not overall depth D. Cover and bar diameter set d = D - cover - phi/2 (as defined in the stem).</p>
@@ -143,17 +295,42 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> d = D - cover - phi/2 ; tau_v = Vu/(b d)</div>
 <h4>Core elimination move</h4><p>d = D − cover − φ/2 (or as stem defines). Strike options that use overall depth as effective depth.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q16</code></td><td>Before a pour on an RCC beam in moderate exposure, measured cover is below the durability requirement altho…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q17</code></td><td>While checking an Fe415 singly reinforced beam, the trial neutral-axis depth is 225 mm for an effective dep…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q19</code></td><td>Mid-pour on a continuous RCC floor, top bars over an interior support are found displaced downward by about…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q16</code></td><td>An RCC beam in moderate exposure is detailed with nominal cover smaller than the durability requirement, th…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
 <tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q4</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 48 kN. Ignoring eccent…</td></tr>
-<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q9</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 45 kN. Ignoring eccent…</td></tr>
-<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q24</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 48 kN. Ignoring eccent…</td></tr>
-<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q29</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 45 kN. Ignoring eccent…</td></tr>
-<tr><td>Civil ST-STEEL</td><td><code>data/civil/st/ce-st-steel-01.js#Q34</code></td><td>A lap connection has 4 bearing-type bolts, each with governing design shear capacity 46 kN. Ignoring eccent…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q26</code> · Key D</p>
+<p>From the design shear table (also shown), τc = 0.48 MPa at 0.50% tension steel and τc = 0.56 MPa at 0.75%. For pt = 0.625% and nominal shear stress τv = 0.70 MPa, which conclusion is closest?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q26-shear-table.jpg" alt="Diagram for data/civil/ce-flt01.js#Q26" />
+<ol class='opts' type='A'>
+<li>0.48 MPa; minimum stirrups only</li>
+<li>0.56 MPa; no stirrups</li>
+<li>0.70 MPa; concrete alone</li>
+<li>0.52 MPa; stirrups carry the balance, subject to the maximum limit</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q26-shear-table.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q23</code> · Key D</p>
+<p>The crop shows a continuous-beam bar proposed to terminate at section P, with the theoretical cut-off, support face and remaining anchorage marked only in the figure. Which option correctly decides acceptance after check</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q23-bar-curtailment.jpg" alt="Diagram for data/civil/ce-flt02.js#Q23" />
+<ol class='opts' type='A'>
+<li>Accept if cover is adequate</li>
+<li>Reject every curtailment</li>
+<li>Accept solely because P is beyond inflection</li>
+<li>Accept only if all three checks and extension rules pass</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q23-bar-curtailment.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 5 — Per-unit base-change scaling</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 95 independent (95 bank + 0 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>Per-unit impedance scales with the chosen bases: Zpu = Zohm * Sbase / Vbase^2. Changing only Sbase scales Zpu in direct proportion.</p>
@@ -165,17 +342,65 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Zpu = Zohm * Sbase / Vbase^2</div>
 <h4>Core elimination move</h4><p>Zpu ∝ Sbase / Vbase². If Sbase doubles and Vbase fixed → Zpu halves. Eliminate ‘unchanged’, ‘doubles’, or ‘squared’ unless the stem changed Vbase too.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q1</code></td><td>A lossless 400 kV line has Zc = 250 Ω. Its SIL (MW) is closest to:</td></tr>
-<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q2</code></td><td>On 200 MVA, 400 kV base, a series reactor is 96 ohms. Per-unit reactance is closest to:</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q1</code></td><td>On a common 100 MVA base, if the MVA base is doubled while the base kV is unchanged, a line reactance expre…</td></tr>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q2</code></td><td>On 100 MVA, 220 kV base, a line reactance 48.4 Ω equals how many pu?</td></tr>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
-<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q5</code></td><td>Two identical 50 MVA, 11 kV, Xd″=0.15 pu machines feed a bus. On 100 MVA base, the bus short-circuit MVA fo…</td></tr>
-<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q6</code></td><td>Ferranti rise on a long EHV line is most severe when:</td></tr>
-<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q9</code></td><td>From the open-conductor / sequence figure shown (use only labelled phase currents; Ic = 0), the zero-sequen…</td></tr>
-</tbody></table></div>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q2</code></td><td>On 200 MVA, 400 kV base, a series reactor is 96 ohms. Per-unit reactance is closest to:</td></tr>
+<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q1</code></td><td>On a common 100 MVA base, if the MVA base is doubled while the base kV is unchanged, a line reactance expre…</td></tr>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q9</code> · Key A</p>
+<p>From the open-conductor / sequence figure shown (use only labelled phase currents; Ic = 0), the zero-sequence current Ia0 is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q09-open-conductor.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q9" />
+<ol class='opts' type='A'>
+<li>0 A</li>
+<li>5.78 A</li>
+<li>3.33 A</li>
+<li>10 A</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q09-open-conductor.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q18</code> · Key B</p>
+<p>From the alternator phasor diagram shown (Ia leading Vt), the operating power factor is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q18-leading-phasor.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q18" />
+<ol class='opts' type='A'>
+<li>Unity only</li>
+<li>Leading pf load</li>
+<li>Short-circuit only</li>
+<li>Lagging pf load</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q18-leading-phasor.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q22</code> · Key B</p>
+<p>A 50 Hz alternator is connected to a long lossless line open at the receiving end as shown. With field voltage held constant, the generator is disconnected from the line. Steady |Vt|:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q22-ferranti-line.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q22" />
+<ol class='opts' type='A'>
+<li>Unchanged always</li>
+<li>Decreases (Ferranti charging removed)</li>
+<li>Becomes zero always</li>
+<li>Increases always</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q22-ferranti-line.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q33</code> · Key A</p>
+<p>From the frequency-response plot shown (pass band in the middle with stop bands on both sides), the filter type is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q33-filter-plot.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q33" />
+<ol class='opts' type='A'>
+<li>Band-pass</li>
+<li>High-pass</li>
+<li>Band-elimination</li>
+<li>Low-pass</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q33-filter-plot.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 6 — Sequence-network connection by fault type</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 25 independent (18 bank + 7 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>Unsymmetrical faults require specific sequence-network connections. Memorising the four classic connections eliminates most wrong options instantly.</p>
@@ -187,17 +412,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> LG: Z1+Z2+Z0 ; LL: Z1||Z2 ; LLG: Z1+(Z2||Z0)</div>
 <h4>Core elimination move</h4><p>3φ → positive only. LG → series 1-2-0. LL → 1 parallel 2. LLG → 1 series (2∥0). Eliminate any option that omits a required sequence or uses only zero-sequence.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q8</code></td><td>For a symmetrical 3-φ fault, sequence networks are connected in:</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q9</code></td><td>From the open-conductor / sequence figure shown (use only labelled phase currents; Ic = 0), the zero-sequen…</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q3</code></td><td>Solid LG fault: Z1=Z2=j0.15 pu, Z0=j0.60 pu, Vpref=1 pu. |If| (pu) nearest:</td></tr>
 <tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q17</code></td><td>A synchronous generator is being synchronised with live busbars. Which statement is correct?</td></tr>
 <tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q2</code></td><td>For a double line-to-ground fault on an unloaded generator, the sequence networks required for the fault ca…</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q12</code></td><td>Zero-sequence network of grounded-star alternator through Xn uses:</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q24</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q34</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q44</code></td><td>An unsymmetrical line-to-line-to-ground fault is being analysed by symmetrical components. Which statement …</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q9</code> · Key A</p>
+<p>From the open-conductor / sequence figure shown (use only labelled phase currents; Ic = 0), the zero-sequence current Ia0 is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q09-open-conductor.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q9" />
+<ol class='opts' type='A'>
+<li>0 A</li>
+<li>5.78 A</li>
+<li>3.33 A</li>
+<li>10 A</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q09-open-conductor.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-02</strong> · <code>data/electrical/ee-flt02.js#Q9</code> · Key B</p>
+<p>From the sequence-network sketch (open conductor on phase C, Ia=Ib=5 A, Ic=0), the zero-sequence component Ia0 equals:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt02/q09-sequence-network.jpg" alt="Diagram for data/electrical/ee-flt02.js#Q9" />
+<ol class='opts' type='A'>
+<li>5 A</li>
+<li>0 A</li>
+<li>10 A</li>
+<li>3.33 A</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt02/q09-sequence-network.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-EM</strong> · <code>data/electrical/st/ee-st-em-01.js#Q47</code> · Key D</p>
+<p>A synchronous generator is being synchronised with live busbars. Which statement is correct?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-em/q07-im-torque-slip.svg" alt="Diagram for data/electrical/st/ee-st-em-01.js#Q47" />
+<ol class='opts' type='A'>
+<li>Only voltage magnitude needs to match.</li>
+<li>Frequency may differ if kVA ratings match.</li>
+<li>Phase sequence is immaterial.</li>
+<li>Voltage magnitude, frequency, phase sequence, and phase angle must match.</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-em/q07-im-torque-slip.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-PS</strong> · <code>data/electrical/st/ee-st-ps-01.js#Q2</code> · Key D</p>
+<p>For a double line-to-ground fault on an unloaded generator, the sequence networks required for the fault calculation must be connected as:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-ps/ps4.jpg" alt="Diagram for data/electrical/st/ee-st-ps-01.js#Q2" />
+<ol class='opts' type='A'>
+<li>dc only</li>
+<li>zero only</li>
+<li>positive only</li>
+<li>positive+negative+zero sequence networks</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-ps/ps4.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 7 — √3 / phase-factor forgotten</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 24 independent (18 bank + 6 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>Three-phase power and current conversions carry a root-3 factor. Forgetting it, or using 3 instead of root-3, produces the most common distractors.</p>
@@ -208,17 +482,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> P = √3 · VL · IL · cosφ</div>
 <h4>Core elimination move</h4><p>P = √3 VL IL cosφ. Eliminate options that drop √3 or use 3 instead of √3 (or vice versa) without stem justification.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q3</code></td><td>A 3-φ feeder has positive-sequence impedance j0.2 pu and zero-sequence j0.5 pu on same base. For a solid SL…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q5</code></td><td>Two identical 50 MVA, 11 kV, Xd″=0.15 pu machines feed a bus. On 100 MVA base, the bus short-circuit MVA fo…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q8</code></td><td>For a symmetrical 3-φ fault, sequence networks are connected in:</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q8</code></td><td>During a bolted three-phase short circuit on an unloaded radial feeder, which sequence network combination …</td></tr>
 <tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q17</code></td><td>A balanced three-phase load is measured with the two-wattmeter method. Which statement is correct?</td></tr>
 <tr><td>Electrical ST-MEAS</td><td><code>data/electrical/st/ee-st-meas-01.js#Q8</code></td><td>Two-wattmeter method pf=:</td></tr>
-<tr><td>Electrical ST-PE</td><td><code>data/electrical/st/ee-st-pe-01.js#Q9</code></td><td>180° mode three-phase VSI line voltage steps:</td></tr>
-<tr><td>Electrical ST-PS</td><td><code>data/electrical/st/ee-st-ps-01.js#Q3</code></td><td>Following a severe three-phase disturbance in a single-machine infinite-bus system, the equal-area criterio…</td></tr>
-<tr><td>VALID PYQ · 2022EE.pdf</td><td><code>PYQ:2022EE.pdf#Q21</code></td><td>In the circuit shown below, a three-phase star-connected unbalanced load is connected to a balanced three-p…</td></tr>
-<tr><td>VALID PYQ · 2023EE.pdf</td><td><code>PYQ:2023EE.pdf#Q39</code></td><td>A 3-phase, star-connected, balanced load is supplied from a 3-phase, 400 V (rms), balanced voltage source w…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical FLT-02</strong> · <code>data/electrical/ee-flt02.js#Q48</code> · Key A</p>
+<p>From the single-phase semiconverter schematic, average output voltage with firing angle α (0&lt;α&lt;180°) is proportional to:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt02/q48-semi-converter.svg" alt="Diagram for data/electrical/ee-flt02.js#Q48" />
+<ol class='opts' type='A'>
+<li>(1+cosα)</li>
+<li>cos2α</li>
+<li>α in radians</li>
+<li>sinα only</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt02/q48-semi-converter.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-EC</strong> · <code>data/electrical/st/ee-st-ec-01.js#Q47</code> · Key A</p>
+<p>A balanced three-phase load is measured with the two-wattmeter method. Which statement is correct?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-ec/q07-series-rlc.svg" alt="Diagram for data/electrical/st/ee-st-ec-01.js#Q47" />
+<ol class='opts' type='A'>
+<li>The two readings sum to total active power.</li>
+<li>Both wattmeters always read equal.</li>
+<li>Their difference gives reactive power without a factor.</li>
+<li>The method is unusable for balanced loads.</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-ec/q07-series-rlc.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-MEAS</strong> · <code>data/electrical/st/ee-st-meas-01.js#Q8</code> · Key D</p>
+<p>Two-wattmeter method pf=:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-meas/q07-wheatstone.svg" alt="Diagram for data/electrical/st/ee-st-meas-01.js#Q8" />
+<ol class='opts' type='A'>
+<li>1 always</li>
+<li>0</li>
+<li>W1/W2</li>
+<li>cos(tan⁻¹√3(W1−W2)/(W1+W2))</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-meas/q07-wheatstone.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-PE</strong> · <code>data/electrical/st/ee-st-pe-01.js#Q9</code> · Key C</p>
+<p>180° mode three-phase VSI line voltage steps:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-pe/pe3.svg" alt="Diagram for data/electrical/st/ee-st-pe-01.js#Q9" />
+<ol class='opts' type='A'>
+<li>pure sine without filter always</li>
+<li>triangle only</li>
+<li>six-step waveform</li>
+<li>dc only</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-pe/pe3.svg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 8 — Thevenin / Norton source deactivation</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 18 independent (14 bank + 4 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>Thevenin/Norton resistance is found with independent sources deactivated: voltage sources shorted, current sources opened.</p>
@@ -230,17 +553,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Independent V → short; independent I → open; then find Req</div>
 <h4>Core elimination move</h4><p>Independent voltage sources → short; current sources → open. Eliminate options that leave sources active while claiming Req/RN.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q29</code></td><td>In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand termi…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q34</code></td><td>An ideal ammeter is connected between terminals A and B in the circuit shown. The ammeter reading is:</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q56</code></td><td>For the network shown, Norton’s resistance RN seen at the open terminals is:</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q35</code></td><td>Superposition theorem applies to:</td></tr>
 <tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q3</code></td><td>After independent sources are deactivated, the Norton resistance seen at the output terminals is:</td></tr>
 <tr><td>VALID PYQ · 2021EE.pdf</td><td><code>PYQ:2021EE.pdf#Q4</code></td><td>For the network shown, the equivalent Thevenin voltage and Thevenin impedance as seen across terminals ‘ab’ is</td></tr>
-<tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q24</code></td><td>For the circuit shown, which one of the following options correctly identifies the Thevenin’s equivalent pa…</td></tr>
-<tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q44</code></td><td>The terminal voltage and current of a linear electrical network shown in Figure</td></tr>
-<tr><td>VALID PYQ · AP-GENCO-Tech-2012.pdf</td><td><code>PYQ:AP-GENCO-Tech-2012.pdf#Q56</code></td><td>The Norton&#x27;s resistance of the circuit shown is</td></tr>
-<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q34</code></td><td>An ideal ammeter is connected between terminals A and B in the circuit shown. The ammeter reading is:</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q29</code> · Key C</p>
+<p>In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand terminals is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q-extra-req.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q29" />
+<ol class='opts' type='A'>
+<li>5 Ω</li>
+<li>2 Ω</li>
+<li>4 Ω</li>
+<li>6 Ω</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q-extra-req.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q34</code> · Key B</p>
+<p>An ideal ammeter is connected between terminals A and B in the circuit shown. The ammeter reading is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q-extra-ammeter.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q34" />
+<ol class='opts' type='A'>
+<li>0.8 A</li>
+<li>1 A</li>
+<li>0.5 A</li>
+<li>0.6 A</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q-extra-ammeter.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q56</code> · Key B</p>
+<p>For the network shown, Norton’s resistance RN seen at the open terminals is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q56-norton-circuit.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q56" />
+<ol class='opts' type='A'>
+<li>17 Ω</li>
+<li>3 Ω</li>
+<li>4 Ω</li>
+<li>0.9 Ω</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q56-norton-circuit.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-02</strong> · <code>data/electrical/ee-flt02.js#Q56</code> · Key D</p>
+<p>From the Norton equivalent network diagram, after deactivating independent sources, RN across terminals is nearest:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt02/q56-norton-network.jpg" alt="Diagram for data/electrical/ee-flt02.js#Q56" />
+<ol class='opts' type='A'>
+<li>12 ohm</li>
+<li>3 ohm</li>
+<li>0 ohm</li>
+<li>6 ohm</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt02/q56-norton-network.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 9 — Resonance / X_L = X_C identity</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 47 independent (44 bank + 3 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>At series resonance XL = XC so net reactive part is zero and Z = R (minimum). Parallel resonance is the dual (impedance maximum).</p>
@@ -252,17 +624,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Series resonance: XL = XC → Z = R</div>
 <h4>Core elimination move</h4><p>Series resonance → Z = R (min). Parallel → Z max. Eliminate options that keep j(XL−XC) nonzero at the stated resonance.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q13</code></td><td>In equal-area criterion, for a sudden load rejection on a machine, accelerating area is bounded by:</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q19</code></td><td>A separately excited DC motor has Va=220 V, Ra=1 Ω, Ia=20 A, φ constant. If Va is halved and torque kept sa…</td></tr>
+<tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q21</code></td><td>Alternator: Vt=1 pu, Ia=1 pu, Xs=1.0 pu, Ra≈0, pf=0.8 lag. |Ef| ≈:</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q18</code></td><td>From the alternator phasor diagram (Ia leading Vt), the machine is operating as:</td></tr>
 <tr><td>Electrical ST-EC</td><td><code>data/electrical/st/ee-st-ec-01.js#Q11</code></td><td>Source-free series RLC underdamped ωd=:</td></tr>
 <tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q3</code></td><td>Sync machine: overexcited on infinite bus behaves as:</td></tr>
-<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q14</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
-<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q20</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
-<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q26</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
-<tr><td>Electrical ST-EM</td><td><code>data/electrical/st/ee-st-em-01.js#Q32</code></td><td>A synchronous generator is operated at fixed terminal voltage and real power while excitation is varied. Wh…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical FLT-01</strong> · <code>data/electrical/ee-flt01.js#Q32</code> · Key D</p>
+<p>The two-port network shown has series arms Z1 and Z2 with a single shunt Z3 to the common return. It is best classified as:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt01/q32-t-section.jpg" alt="Diagram for data/electrical/ee-flt01.js#Q32" />
+<ol class='opts' type='A'>
+<li>π-section (two shunts, one series)</li>
+<li>Lattice section with crossed arms</li>
+<li>Symmetrical T only if Z1 = Z2; otherwise unsymmetrical T</li>
+<li>Only a series RLC tank</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt01/q32-t-section.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-02</strong> · <code>data/electrical/ee-flt02.js#Q18</code> · Key C</p>
+<p>From the alternator phasor diagram (Ia leading Vt), the machine is operating as:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt02/q18-sync-phasor.jpg" alt="Diagram for data/electrical/ee-flt02.js#Q18" />
+<ol class='opts' type='A'>
+<li>Short-circuit test</li>
+<li>Zero power exchange</li>
+<li>Leading power-factor generator</li>
+<li>Lagging motor only</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt02/q18-sync-phasor.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical FLT-02</strong> · <code>data/electrical/ee-flt02.js#Q30</code> · Key C</p>
+<p>Series R=10 ohm, L=20 mH, C=50 uF at resonance (rad/s), circuit impedance magnitude is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-flt02/q30-series-rlc.svg" alt="Diagram for data/electrical/ee-flt02.js#Q30" />
+<ol class='opts' type='A'>
+<li>20 ohm</li>
+<li>0 ohm</li>
+<li>10 ohm</li>
+<li>50 ohm</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-flt02/q30-series-rlc.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-EC</strong> · <code>data/electrical/st/ee-st-ec-01.js#Q14</code> · Key A</p>
+<p>A series rlc circuit is adjusted to resonance. Which statement is correct?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-ec/q07-series-rlc.svg" alt="Diagram for data/electrical/st/ee-st-ec-01.js#Q14" />
+<ol class='opts' type='A'>
+<li>Its impedance is minimum and power factor is unity.</li>
+<li>Its impedance is maximum and current is zero.</li>
+<li>Inductive reactance exceeds capacitive reactance.</li>
+<li>The supply frequency becomes zero.</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-ec/q07-series-rlc.svg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 10 — Sign / sense / tension–compression flip</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 270 independent (259 bank + 11 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical</p>
 <h4>What this rule means</h4><p>Many options are numerically close but reverse tension/compression or reaction direction. Equilibrium sense is part of the answer.</p>
@@ -273,17 +694,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Sum Fx = 0, Sum Fy = 0, Sum M = 0 (sense matters)</div>
 <h4>Core elimination move</h4><p>Fix one free-body sign convention from the figure. Eliminate options whose magnitude is right but sense (↑/↓, T/C) contradicts equilibrium.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q1</code></td><td>Following a gantry-tie inspection at a substation, the engineer records a 20 mm diameter member under 55 kN…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q3</code></td><td>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, U…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q7</code></td><td>During review of a stepped shaft ABC, an end torque of 1000 N·m is applied at C while B is an intermediate …</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q1</code></td><td>A 2.0 m long steel tie of uniform 500 mm² area carries a gradually applied 50 kN service load. Neglecting s…</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q4</code></td><td>A pile group contains 4 piles. Each pile has ultimate base resistance 600 kPa over toe area 0.2 m²; shaft r…</td></tr>
 <tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q4</code></td><td>A horizontal jet of discharge 0.1 m³/s accelerates from 5 m/s to 15 m/s in a vane. Neglecting pressure forc…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q7</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 3 m/s. Discharge is closest to:</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q8</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q3</code> · Key A</p>
+<p>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, UDL w = 10 kN/m over AB, and a tip load P = 20 kN at C (also shown on the figure). Which support-reaction pair (RA</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q03-overhang-reactions.jpg" alt="Diagram for data/civil/ce-flt01.js#Q3" />
+<ol class='opts' type='A'>
+<li>10 kN, 50 kN</li>
+<li>15 kN, 45 kN</li>
+<li>20 kN, 40 kN</li>
+<li>25 kN, 35 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q03-overhang-reactions.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q9</code> · Key A</p>
+<p>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading in</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q09-bmd-jump.jpg" alt="Diagram for data/civil/ce-flt01.js#Q9" />
+<ol class='opts' type='A'>
+<li>A concentrated couple acts at C</li>
+<li>A point load acts at C</li>
+<li>A UDL starts at C</li>
+<li>The flexural rigidity changes at C</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q09-bmd-jump.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q18</code> · Key C</p>
+<p>An RC slab panel has clear spans lx = 3.5 m (short) and ly = 5.0 m (long), so ly/lx ≈ 1.43, and all four edges are continuously supported (dimensions and edge-support ticks also shown on the figure). Assertion: the panel</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q18-slab-supports.jpg" alt="Diagram for data/civil/ce-flt01.js#Q18" />
+<ol class='opts' type='A'>
+<li>Both true; R does not explain A</li>
+<li>A true, R false</li>
+<li>Both true; R explains A</li>
+<li>A false, R true</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q18-slab-supports.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q21</code> · Key D</p>
+<p>At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement b</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q21-column-tie-detail.jpg" alt="Diagram for data/civil/ce-flt01.js#Q21" />
+<ol class='opts' type='A'>
+<li>Detail P</li>
+<li>Detail Q</li>
+<li>Detail R</li>
+<li>Detail S</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q21-column-tie-detail.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 11 — Figure-dependency: cover the figure test</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 304 independent (109 bank + 195 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical</p>
 <h4>What this rule means</h4><p>If a figure is attached, the keyed answer usually depends on a labelled length, support, or curve. Solving from the stem alone is a dependency failure.</p>
@@ -295,17 +765,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Cover-the-figure test: cannot answer correctly with figure hidden</div>
 <h4>Core elimination move</h4><p>If you can pick the answer without the figure, stop — stem/figure mismatch. Otherwise eliminate options that ignore a labelled dimension, support, or curve on the crop.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q3</code></td><td>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, U…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q9</code></td><td>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finit…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q18</code></td><td>An RC slab panel has clear spans lx = 3.5 m (short) and ly = 5.0 m (long), so ly/lx ≈ 1.43, and all four ed…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q3</code></td><td>The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appe…</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q3</code></td><td>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The ave…</td></tr>
 <tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q8</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q14</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 5 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q19</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 4 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q25</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 4 m/s, the dis…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q3</code> · Key A</p>
+<p>Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, UDL w = 10 kN/m over AB, and a tip load P = 20 kN at C (also shown on the figure). Which support-reaction pair (RA</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q03-overhang-reactions.jpg" alt="Diagram for data/civil/ce-flt01.js#Q3" />
+<ol class='opts' type='A'>
+<li>10 kN, 50 kN</li>
+<li>15 kN, 45 kN</li>
+<li>20 kN, 40 kN</li>
+<li>25 kN, 35 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q03-overhang-reactions.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q9</code> · Key A</p>
+<p>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading in</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q09-bmd-jump.jpg" alt="Diagram for data/civil/ce-flt01.js#Q9" />
+<ol class='opts' type='A'>
+<li>A concentrated couple acts at C</li>
+<li>A point load acts at C</li>
+<li>A UDL starts at C</li>
+<li>The flexural rigidity changes at C</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q09-bmd-jump.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q18</code> · Key C</p>
+<p>An RC slab panel has clear spans lx = 3.5 m (short) and ly = 5.0 m (long), so ly/lx ≈ 1.43, and all four edges are continuously supported (dimensions and edge-support ticks also shown on the figure). Assertion: the panel</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q18-slab-supports.jpg" alt="Diagram for data/civil/ce-flt01.js#Q18" />
+<ol class='opts' type='A'>
+<li>Both true; R does not explain A</li>
+<li>A true, R false</li>
+<li>Both true; R explains A</li>
+<li>A false, R true</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q18-slab-supports.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q21</code> · Key D</p>
+<p>At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement b</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q21-column-tie-detail.jpg" alt="Diagram for data/civil/ce-flt01.js#Q21" />
+<ol class='opts' type='A'>
+<li>Detail P</li>
+<li>Detail Q</li>
+<li>Detail R</li>
+<li>Detail S</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q21-column-tie-detail.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 12 — Rankine / Terzaghi / earth-pressure term drop</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 86 independent (85 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>Bearing capacity and earth-pressure formulae have multiple additive terms. Dropping Nγ, swapping Ka/Kp, or using dry unit weight under water are classic traps.</p>
@@ -317,17 +836,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> qu = c Nc + q Nq + 0.5 γ B Nγ (Terzaghi form)</div>
 <h4>Core elimination move</h4><p>Write the full Terzaghi/Rankine expression. Eliminate options that drop the γBN term, swap Ka↔Kp, or use dry γ when stem says submerged.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q11</code></td><td>During buckling checks for a slender pin-ended strut, a junior engineer proposes to use the classical Euler…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q38</code></td><td>At pump inspection during a commissioning hold, crackling noise, fluctuating delivery head and pitting mark…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q53</code></td><td>Primary consolidation under a shallow footing uses two clay layers (also tabulated on the figure): Layer 1 …</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q9</code></td><td>A simply supported deep timber beam develops horizontal cracks near the neutral axis although bending stres…</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q5</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q10</code></td><td>A square footing 2 m by 2 m carries a service column load of 180 kN (self-weight ignored). Average soil pre…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q15</code></td><td>A square footing 2.2 m by 2.2 m carries a service column load of 200 kN (self-weight ignored). Average soil…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q20</code></td><td>A square footing 2.1 m by 2.1 m carries a service column load of 190 kN (self-weight ignored). Average soil…</td></tr>
-<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q30</code></td><td>A square footing 2.2 m by 2.2 m carries a service column load of 200 kN (self-weight ignored). Average soil…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q53</code> · Key D</p>
+<p>Primary consolidation under a shallow footing uses two clay layers (also tabulated on the figure): Layer 1 — H1 = 2.0 m, e01 = 1.00, Cc1 = 0.20, σ′01 = 100 kPa, Δσ1 = 100 kPa; Layer 2 — H2 = 2.0 m, e02 = 0.90, Cc2 = 0.20</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q53-layered-footing.jpg" alt="Diagram for data/civil/ce-flt01.js#Q53" />
+<ol class='opts' type='A'>
+<li>42 mm</li>
+<li>68 mm</li>
+<li>126 mm</li>
+<li>95 mm</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q53-layered-footing.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q52</code> · Key B</p>
+<p>A footing is called “compensated” when excavation removes soil weight that offsets part of the structural pressure. What is the principal benefit?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q52-portal-frame.jpg" alt="Diagram for data/civil/ce-flt02.js#Q52" />
+<ol class='opts' type='A'>
+<li>zero gross pressure</li>
+<li>reduced net foundation pressure and settlement demand</li>
+<li>no need for bearing check</li>
+<li>guaranteed uplift resistance</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q52-portal-frame.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil ST-FE</strong> · <code>data/civil/st/ce-st-fe-01.js#Q3</code> · Key D</p>
+<p>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The average contact pressure is closest to:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-st-fe/foundation-square-footing.svg" alt="Diagram for data/civil/st/ce-st-fe-01.js#Q3" />
+<ol class='opts' type='A'>
+<li>39.32 kPa</li>
+<li>58.98 kPa</li>
+<li>73.72 kPa</li>
+<li>49.15 kPa</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-st-fe/foundation-square-footing.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil ST-STEEL</strong> · <code>data/civil/st/ce-st-steel-01.js#Q3</code> · Key D</p>
+<p>The shown bolted lap joint transfers the load through 4 identical bolts. If each bolt has governing design capacity 45 kN, the concentric joint capacity is closest to:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-st-steel/steel-bolted-lap.svg" alt="Diagram for data/civil/st/ce-st-steel-01.js#Q3" />
+<ol class='opts' type='A'>
+<li>144 kN</li>
+<li>216 kN</li>
+<li>270 kN</li>
+<li>180 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-st-steel/steel-bolted-lap.svg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 13 — Mohr / principal-stress pair consistency</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 26 independent (23 bank + 3 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>Principal stresses from Mohr&#x27;s circle must satisfy σ1 + σ2 = σx + σy. Treating shear as a normal stress breaks that invariant.</p>
@@ -338,17 +906,42 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> σ1,2 = (σx+σy)/2 ± √[((σx-σy)/2)^2 + τ^2]</div>
 <h4>Core elimination move</h4><p>σavg = (σx+σy)/2; R = √[((σx−σy)/2)²+τ²]. Eliminate pairs that violate σ1+σ2 = σx+σy or that treat τ as a normal stress.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q5</code></td><td>While interpreting a strain-rosette investigation on a critical plane-stress element, the engineer reviews …</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q43</code></td><td>A built-up column reviewed in the design office has different effective lengths and different radii of gyra…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q51</code></td><td>While checking an inclined-roof purlin under combined gravity and wind-reversal actions, the resultant load…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q12</code></td><td>At a point, \(\sigma_x=80\) MPa tension, \(\sigma_y=20\) MPa compression and \(\tau_{xy}=30\) MPa. Determin…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q4</code></td><td>A 300 mm × 300 mm short tied column carries factored axial load 1050 kN. The average factored stress Pu/Ag …</td></tr>
 <tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q13</code></td><td>At a point in a plate, σx = 92 MPa, σy = 22 MPa and τxy = 30 MPa. The major principal stress is closest to:</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q18</code></td><td>At a point in a plate, σx = 97 MPa, σy = 22 MPa and τxy = 35 MPa. The major principal stress is closest to:</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q23</code></td><td>At a point in a plate, σx = 102 MPa, σy = 22 MPa and τxy = 34 MPa. The major principal stress is closest to:</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q28</code></td><td>At a point in a plate, σx = 107 MPa, σy = 22 MPa and τxy = 33 MPa. The major principal stress is closest to:</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q33</code></td><td>At a point in a plate, σx = 112 MPa, σy = 22 MPa and τxy = 32 MPa. The major principal stress is closest to:</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q53</code> · Key D</p>
+<p>Primary consolidation under a shallow footing uses two clay layers (also tabulated on the figure): Layer 1 — H1 = 2.0 m, e01 = 1.00, Cc1 = 0.20, σ′01 = 100 kPa, Δσ1 = 100 kPa; Layer 2 — H2 = 2.0 m, e02 = 0.90, Cc2 = 0.20</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q53-layered-footing.jpg" alt="Diagram for data/civil/ce-flt01.js#Q53" />
+<ol class='opts' type='A'>
+<li>42 mm</li>
+<li>68 mm</li>
+<li>126 mm</li>
+<li>95 mm</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q53-layered-footing.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q52</code> · Key B</p>
+<p>A footing is called “compensated” when excavation removes soil weight that offsets part of the structural pressure. What is the principal benefit?</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q52-portal-frame.jpg" alt="Diagram for data/civil/ce-flt02.js#Q52" />
+<ol class='opts' type='A'>
+<li>zero gross pressure</li>
+<li>reduced net foundation pressure and settlement demand</li>
+<li>no need for bearing check</li>
+<li>guaranteed uplift resistance</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q52-portal-frame.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 14 — SFD↔BMD jump / couple vs point-load confusion</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 39 independent (34 bank + 5 VALID PYQ) · <strong>Streams:</strong> Civil</p>
 <h4>What this rule means</h4><p>On SFDs/BMDs: a point load causes a shear jump; a couple causes a moment jump (no shear jump).</p>
@@ -359,17 +952,30 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Point load → ΔV ; Couple → ΔM</div>
 <h4>Core elimination move</h4><p>Point load → shear jump; couple → moment jump (no shear jump). Eliminate options that swap those rules.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q9</code></td><td>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finit…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q24</code></td><td>In design review, factored moment is 160 kN·m while the limiting singly reinforced capacity of the fixed be…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q25</code></td><td>A design review finds that the factored moment exceeds the limiting capacity of the same section as a singl…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q14</code></td><td>Match loading change with the qualitative SFD/BMD consequence: (1) point load, (2) applied couple, (3) UDL,…</td></tr>
 <tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
 <tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q2</code></td><td>A simply supported beam of span 5 m carries a uniform load of 13 kN/m over the full span. The maximum bendi…</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q7</code></td><td>A simply supported beam of span 4 m carries a uniform load of 14 kN/m over the full span. The maximum bendi…</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q12</code></td><td>A simply supported beam of span 6 m carries a uniform load of 15 kN/m over the full span. The maximum bendi…</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q17</code></td><td>A simply supported beam of span 5 m carries a uniform load of 12 kN/m over the full span. The maximum bendi…</td></tr>
-<tr><td>Civil ST-SOM</td><td><code>data/civil/st/ce-st-som-01.js#Q22</code></td><td>A simply supported beam of span 4 m carries a uniform load of 13 kN/m over the full span. The maximum bendi…</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q9</code> · Key A</p>
+<p>On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading in</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q09-bmd-jump.jpg" alt="Diagram for data/civil/ce-flt01.js#Q9" />
+<ol class='opts' type='A'>
+<li>A concentrated couple acts at C</li>
+<li>A point load acts at C</li>
+<li>A UDL starts at C</li>
+<li>The flexural rigidity changes at C</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q09-bmd-jump.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 15 — SCR / PE latching vs holding vs firing</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 18 independent (14 bank + 4 VALID PYQ) · <strong>Streams:</strong> Electrical</p>
 <h4>What this rule means</h4><p>For SCRs, latching current is larger than holding current. Latching is needed to establish conduction after the gate pulse; holding keeps it on.</p>
@@ -380,17 +986,54 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Latching current &gt; holding current</div>
 <h4>Core elimination move</h4><p>Latching &gt; holding; latching is the current to *establish* conduction after gate pulse. Eliminate options that swap latching↔holding or that set gate width from holding current alone.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q47</code></td><td>An SCR turns off when which condition is met for sufficient time?</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q47</code></td><td>After latch, SCR stays on until anode current falls below:</td></tr>
+<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q53</code></td><td>In field, class-F (line) commutation of SCR succeeds when:</td></tr>
 <tr><td>Electrical ST-PE</td><td><code>data/electrical/st/ee-st-pe-01.js#Q1</code></td><td>SCR latching current is:</td></tr>
 <tr><td>VALID PYQ · 2026EE.pdf</td><td><code>PYQ:2026EE.pdf#Q28</code></td><td>Consider the circuit shown in Figure</td></tr>
 <tr><td>VALID PYQ · APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf</td><td><code>PYQ:APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf#Q77</code></td><td>For the converter shown below, firing angle for thyristors `T1` and `T2` is `π/6`; firing angle for thyrist…</td></tr>
-<tr><td>VALID PYQ · APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf</td><td><code>PYQ:APEPDCL-Assistant-Engineer-2019-Official-Paper.pdf#Q78</code></td><td>In the figure shown below, a thyristor-based 1-φ voltage regulator with firing angle `α = 90°`. The rms out…</td></tr>
-<tr><td>VALID PYQ · AP-GENCO-Tech-2012.pdf</td><td><code>PYQ:AP-GENCO-Tech-2012.pdf#Q10</code></td><td>The latching current of T1 is 1 mA. The minimum width of gate pulse required to turn on SCR is</td></tr>
-<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q53</code></td><td>In field, class-F (line) commutation of SCR succeeds when:</td></tr>
-</tbody></table></div>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Electrical ST-PE</strong> · <code>data/electrical/st/ee-st-pe-01.js#Q1</code> · Key C</p>
+<p>SCR latching current is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-pe/pe3.svg" alt="Diagram for data/electrical/st/ee-st-pe-01.js#Q1" />
+<ol class='opts' type='A'>
+<li>Ig=0</li>
+<li>gate peak</li>
+<li>min on-current to keep latch after gate removed</li>
+<li>holding only identical always</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-pe/pe3.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Electrical ST-PE</strong> · <code>data/electrical/st/ee-st-pe-01.js#Q8</code> · Key A</p>
+<p>Commutation in class B (self) SCR circuit uses:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/electrical-st-pe/q07-single-phase-semi.svg" alt="Diagram for data/electrical/st/ee-st-pe-01.js#Q8" />
+<ol class='opts' type='A'>
+<li>LC resonating current reverse</li>
+<li>only fuse</li>
+<li>only relay</li>
+<li>only line AC</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/electrical-st-pe/q07-single-phase-semi.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>VALID PYQ · AP-GENCO-Tech-2012.pdf</strong> · <code>PYQ:AP-GENCO-Tech-2012.pdf#Q10</code></p>
+<p>The latching current of T1 is 1 mA. The minimum width of gate pulse required to turn on SCR is</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/exports/PYQ_VALID_DIAGRAM_CROPS/AP-GENCO-Tech-2012/AP-GENCO-Tech-2012__p04__Q010.jpg" alt="Diagram for PYQ:AP-GENCO-Tech-2012.pdf#Q10" />
+<ol class='opts' type='A'>
+<li>2 μsec</li>
+<li>1 μsec</li>
+<li>0.5 μsec</li>
+<li>1.5 μsec</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: exports/PYQ_VALID_DIAGRAM_CROPS/AP-GENCO-Tech-2012/AP-GENCO-Tech-2012__p04__Q010.jpg</p>
+</div>
+</div>
+</div>
 <div class='rule'><h3>Elimination Rule 16 — Non-core: option that abandons the asked operation</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 37 independent (37 bank + 0 VALID PYQ) · <strong>Streams:</strong> Non-core</p>
 <h4>What this rule means</h4><p>Non-core items often include one option that solves a different operation (CI instead of SI, active instead of passive, wrong percentage base).</p>
@@ -401,17 +1044,17 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Match the asked operation exactly (%, SI, tense, code rule)</div>
 <h4>Core elimination move</h4><p>Re-state the exact ask (20% of 450; SI for 2 years; passive of present perfect). Eliminate options that solve a different operation (CI instead of SI, active instead of passive).</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q72</code></td><td>A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage…</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q76</code></td><td>A mobilisation advance of ₹5,00,000 is charged simple interest at 12% per annum for 8 months. The interest …</td></tr>
+<tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q77</code></td><td>A contractor’s quoted cost for a bay package is ₹12 lakh. He allows 10% discount on the quote and still mak…</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q73</code></td><td>A price rises 20%, falls 10%, then attracts 5% tax. Relative to the original pre-tax price, the final amoun…</td></tr>
 <tr><td>Electrical FLT-01</td><td><code>data/electrical/ee-flt01.js#Q72</code></td><td>A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage…</td></tr>
 <tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q77</code></td><td>Contractor buys equipment for Rs 240000 and sells for Rs 276000. Profit percent on cost is:</td></tr>
-<tr><td>Electrical FLT-02</td><td><code>data/electrical/ee-flt02.js#Q92</code></td><td>Choose passive: The technician calibrated the protection relay.:</td></tr>
-<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q1</code></td><td>A stores ledger records 450 cable drums. The value of 20% of this quantity is:</td></tr>
-<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q2</code></td><td>Simple interest on ₹10,000 at 10% per annum for 2 years is:</td></tr>
-<tr><td>Non-core ST-AR</td><td><code>data/noncore/st/nc-st-ar-01.js#Q3</code></td><td>Average of 5,7,9,11,13:</td></tr>
-</tbody></table></div>
+</tbody></table>
+<p class='meta'><em>No local diagram files were resolved for this rule’s sample set (text-only evidence). Figure-dependent rules should accumulate imaged bank items.</em></p>
+</div>
 <div class='rule'><h3>Elimination Rule 17 — Last-resort: dimensional / absurdity cull (evidence-limited)</h3>
 <p class='meta'><strong>Evidence:</strong> ESTABLISHED — 232 independent (231 bank + 1 VALID PYQ) · <strong>Streams:</strong> Civil, Electrical, Non-core</p>
 <h4>What this rule means</h4><p>When two options remain, cull any survivor whose units cannot equal the asked quantity (mm^2 vs N/mm^2, ohm vs siemens, kN vs kn·m).</p>
@@ -423,17 +1066,66 @@ ol.apply { padding-left: 18pt; }
 </ol>
 <div class='formula'><strong>Memory cue:</strong> Units(asked) must equal Units(option)</div>
 <h4>Core elimination move</h4><p>Cull any remaining option whose units cannot match the ask (mm² vs N/mm², Ω vs S, kN vs kN·m). Then prefer the option consistent with the figure’s boundary conditions. Do **not** guess from ‘middle value’ myths — our banks do not support that heuristic.</p>
-<h4>Evidence examples (sample)</h4>
+<h4>Evidence examples (sample references)</h4>
 <table><thead><tr><th>Source exam</th><th>Reference</th><th>Stem (truncated)</th></tr></thead><tbody>
 <tr><td>Civil FLT-01</td><td><code>data/civil/ce-flt01.js#Q41</code></td><td>The plane truss shown carries load W and moment M at apex B. Force in member AB is:</td></tr>
 <tr><td>Civil FLT-02</td><td><code>data/civil/ce-flt02.js#Q47</code></td><td>The design buckling-curve crop plots reduction factor \(\chi\) against nondimensional slenderness for curve…</td></tr>
 <tr><td>Civil ST-FE</td><td><code>data/civil/st/ce-st-fe-01.js#Q1</code></td><td>For a strip footing, take c = 20 kPa, Nc = 25, q = 30 kPa, Nq = 12, γ = 18 kN/m³, B = 2 m and Nγ = 8. Terza…</td></tr>
 <tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q1</code></td><td>A mercury manometer connected to water shows a level difference of 0.4 m. Taking mercury specific gravity a…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q2</code></td><td>Water flows in a 0.2 m diameter pipe at mean velocity 4 m/s. Discharge is closest to:</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q3</code></td><td>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the dis…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q5</code></td><td>A centrifugal pump delivers 0.08 m³/s against 35 m head at overall efficiency 0.75. Water power input conve…</td></tr>
-<tr><td>Civil ST-FM</td><td><code>data/civil/st/ce-st-fm-01.js#Q6</code></td><td>A mercury manometer connected to water shows a level difference of 0.5 m. Taking mercury specific gravity a…</td></tr>
-</tbody></table></div>
+<tr><td>Civil ST-RCC</td><td><code>data/civil/st/ce-st-rcc-01.js#Q1</code></td><td>An RCC beam of M25 and Fe500 has factored Mu = 180 kN m, b = 230 mm and d = 450 mm. Using z = 0.9d, the req…</td></tr>
+<tr><td>Civil ST-SOIL</td><td><code>data/civil/st/ce-st-soil-01.js#Q1</code></td><td>A fine-grained soil has liquid limit 48% and plastic limit 22%. Its plasticity index is closest to:</td></tr>
+</tbody></table>
+<h4>Figure evidence (actual diagrams — not path titles)</h4><div class='fig-grid'>
+<div class='fig-card'>
+<p><strong>Civil FLT-01</strong> · <code>data/civil/ce-flt01.js#Q41</code> · Key A</p>
+<p>The plane truss shown carries load W and moment M at apex B. Force in member AB is:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt01/q-extra-truss-ab.jpg" alt="Diagram for data/civil/ce-flt01.js#Q41" />
+<ol class='opts' type='A'>
+<li>5W/6 (compressive)</li>
+<li>W/2 (compressive)</li>
+<li>5W/6 + M/L (compressive)</li>
+<li>W/2 − M/2 (compressive)</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt01/q-extra-truss-ab.jpg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil FLT-02</strong> · <code>data/civil/ce-flt02.js#Q47</code> · Key D</p>
+<p>The design buckling-curve crop plots reduction factor \(\chi\) against nondimensional slenderness for curves a–d. A column’s section/fabrication class and \(\bar\lambda\) are marked on the figure; read \(\chi\) and estim</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-flt02/q47-buckling-curves.svg" alt="Diagram for data/civil/ce-flt02.js#Q47" />
+<ol class='opts' type='A'>
+<li>682 kN</li>
+<li>455 kN</li>
+<li>364 kN</li>
+<li>545 kN</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-flt02/q47-buckling-curves.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil ST-FE</strong> · <code>data/civil/st/ce-st-fe-01.js#Q3</code> · Key D</p>
+<p>The shown square footing distributes a concentric service load of 260 kN over a 2.3 m × 2.3 m base. The average contact pressure is closest to:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-st-fe/foundation-square-footing.svg" alt="Diagram for data/civil/st/ce-st-fe-01.js#Q3" />
+<ol class='opts' type='A'>
+<li>39.32 kPa</li>
+<li>58.98 kPa</li>
+<li>73.72 kPa</li>
+<li>49.15 kPa</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-st-fe/foundation-square-footing.svg</p>
+</div>
+<div class='fig-card'>
+<p><strong>Civil ST-FM</strong> · <code>data/civil/st/ce-st-fm-01.js#Q3</code> · Key D</p>
+<p>The shown venturimeter is installed in a 0.2 m diameter inlet pipe. If the inlet velocity is 3 m/s, the discharge entering the convergent section is closest to:</p>
+<img src="file:///C:/Users/W520531/Downloads/APTRANSCO-CBT-main/APTRANSCO-CBT-main/images/diagrams/civil-st-fm/fluid-venturimeter.svg" alt="Diagram for data/civil/st/ce-st-fm-01.js#Q3" />
+<ol class='opts' type='A'>
+<li>0.08 m³/s</li>
+<li>0.11 m³/s</li>
+<li>0.14 m³/s</li>
+<li>0.09 m³/s</li>
+</ol>
+<p class='fig-cap'>Embedded figure file: images/diagrams/civil-st-fm/fluid-venturimeter.svg</p>
+</div>
+</div>
+</div>
 <h2>3. Draft rules (not established — do not teach as heuristics)</h2>
 <p>These candidates have fewer than 15 independent hits. Keep them as a watchlist only.</p><ul>
 <li>Kill the neighbour-formula lookalike — 4 hits</li>
