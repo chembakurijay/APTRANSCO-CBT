@@ -48,7 +48,7 @@ export const questions = [
     "id": 3,
     "subject": "Strength of Materials",
     "topic": "SOM: beam+diagram+equilibrium",
-    "question": "Proof-load planning for the overhanging beam uses the crop that carries the point load and UDL at the shown locations. Using only the displayed support geometry and load positions, which reaction pair is closest to that expected by the engineer?",
+    "question": "Proof-load planning uses an overhanging beam A–B–C with supports at A and B: AB = 4 m, overhang BC = 2 m, UDL w = 10 kN/m over AB, and a tip load P = 20 kN at C (also shown on the figure). Which support-reaction pair (RA, RB) is closest?",
     "image": "images/diagrams/civil-flt01/q03-overhang-reactions.jpg",
     "options": [
       "10 kN, 50 kN",
@@ -170,7 +170,7 @@ export const questions = [
     "id": 9,
     "subject": "Strength of Materials",
     "topic": "SOM: BMD+graph+diagnosis",
-    "question": "On the plotted bending-moment diagram, the engineer observes a marked vertical jump at section C while shear remains finite on both sides of C and no local section change is recorded. Which loading interpretation is most defensible?",
+    "question": "On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading interpretation is most defensible?",
     "image": "images/diagrams/civil-flt01/q09-bmd-jump.jpg",
     "options": [
       "A concentrated couple acts at C",
@@ -394,7 +394,7 @@ export const questions = [
     "id": 18,
     "subject": "RCC / DDRC",
     "topic": "RCC: slab+diagram+AR",
-    "question": "For the slab panel shown in the crop, edge-support symbols and clear span dimensions are available only from the figure and cannot be recovered from the stem alone. Assertion: the panel should be designed for two-way action. Reason: all four edges support it and the shown longer-to-shorter span ratio is below 2. Which conclusion follows?",
+    "question": "An RC slab panel has clear spans lx = 3.5 m (short) and ly = 5.0 m (long), so ly/lx ≈ 1.43, and all four edges are continuously supported (dimensions and edge-support ticks also shown on the figure). Assertion: the panel should be designed for two-way action. Reason: four-edge support and ly/lx < 2. Which conclusion follows?",
     "image": "images/diagrams/civil-flt01/q18-slab-supports.jpg",
     "options": [
       "Both true; R does not explain A",
@@ -409,8 +409,8 @@ export const questions = [
     "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: both support condition and aspect ratio establish two-way action. Trap: the ratio alone is insufficient without four-edge support.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/DDRC/DDRC_pg0037.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q18"
   },
   {
     "id": 19,
@@ -456,7 +456,7 @@ export const questions = [
     "id": 21,
     "subject": "RCC / DDRC",
     "topic": "RCC: column ties+diagram+detailing",
-    "question": "At reinforcement inspection, the tied-column crop shows the actual longitudinal-bar layout and four proposed tie arrangements labelled P–S. Which marked arrangement best satisfies restraint of corner and intermediate bars?",
+    "question": "At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement best restrains every corner and intermediate bar?",
     "image": "images/diagrams/civil-flt01/q21-column-tie-detail.jpg",
     "options": [
       "Detail P",
@@ -558,7 +558,7 @@ export const questions = [
     "id": 26,
     "subject": "RCC / DDRC",
     "topic": "RCC: table+diagram+interpolation",
-    "question": "From the shear-resistance table crop used in design checking, τc is 0.48 MPa at 0.50% tension steel and 0.56 MPa at 0.75%. For 0.625% steel and nominal shear 0.70 MPa, which conclusion is closest?",
+    "question": "From the design shear table (also shown), τc = 0.48 MPa at 0.50% tension steel and τc = 0.56 MPa at 0.75%. For pt = 0.625% and nominal shear stress τv = 0.70 MPa, which conclusion is closest?",
     "image": "images/diagrams/civil-flt01/q26-shear-table.jpg",
     "options": [
       "0.48 MPa; minimum stirrups only",
@@ -637,7 +637,7 @@ export const questions = [
     "id": 29,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: manometer+diagram",
-    "question": "At commissioning of two interconnected water mains, the differential manometer crop shows mercury interfaces together with the tap elevations needed for a hydrostatic traverse. Following the indicated columns only, which pressure difference is closest?",
+    "question": "A differential mercury manometer between water mains A and B has mercury specific gravity S = 13.6, connecting fluid water, g = 10 m/s², mercury-level difference h = 150 mm, and equal limb elevations x = y = 200 mm (all marked on the figure). Which pressure difference pA − pB is closest?",
     "image": "images/diagrams/civil-flt01/q29-manometer.jpg",
     "options": [
       "8.4 kPa",
@@ -649,7 +649,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: figure gives mercury difference h=150 mm with x=y=200 mm, water and S_Hg=13.6, g=10 m/s². With equal connecting-limb elevations, p_A−p_B = h(ρ_Hg−ρ_w)g = 0.15×(13600−1000)×10 = 18900 Pa = 18.9 kPa. Trap: B = 12.6 kPa uses (S−1)gh with h=0.10 m or drops g; D doubles the mercury head.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
+    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: h=150 mm, x=y=200 mm, S_Hg=13.6, g=10. With equal limbs, p_A−p_B = h(ρ_Hg−ρ_w)g = 0.15×(13600−1000)×10 = 18900 Pa = 18.9 kPa. Trap: B = 12.6 kPa uses wrong h; D doubles mercury head.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
@@ -719,7 +719,7 @@ export const questions = [
     "id": 33,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "HHM: pump curves+graph+operation",
-    "question": "Pumping-station augmentation studies plot the system curve together with one-pump and two-identical-pumps-in-parallel curves on the crop. Which statement best explains why the marked two-pump discharge is less than twice the single-pump duty?",
+    "question": "Pumping-station studies plot the system curve together with one-pump and two-identical-pumps-in-parallel Q–H curves on the same axes (curves labelled on the figure). Which statement best explains why the marked two-pump discharge is less than twice the single-pump duty?",
     "image": "images/diagrams/civil-flt01/q33-pump-system-curves.jpg",
     "options": [
       "The rising system head shifts each pump to a lower individual discharge",
@@ -761,7 +761,7 @@ export const questions = [
     "id": 35,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: laminar profile+diagram",
-    "question": "Interpreting measured profiles in a circular pipe during a laboratory demonstration, the engineer compares the labelled velocity curves (1–3) and shear curves (A–C) in the crop. Which identified pair is consistent with steady Newtonian laminar flow?",
+    "question": "For steady Newtonian flow in a circular pipe, the figure shows velocity profiles labelled 1–3 and shear profiles labelled A–C. Which identified pair is consistent with laminar pipe flow?",
     "image": "images/diagrams/civil-flt01/q35-laminar-profiles.jpg",
     "options": [
       "Flat velocity; maximum centreline shear",
@@ -885,29 +885,29 @@ export const questions = [
     "id": 39,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "HHM: turbine triangles+diagram",
-    "question": "Turbine performance checking relies on the inlet and outlet velocity triangles in the crop, which show blade speed and whirl components at both sections. Using those displayed components only, which specific-work value is closest?",
+    "question": "Turbine velocity triangles give blade speed u = 40 m/s at inlet and outlet, inlet whirl Vw1 = 80 m/s, and outlet whirl Vw2 = 20 m/s in the same sense as blade motion (values also labelled on the figure). Using Euler’s equation W = u(Vw1 − Vw2)/1000, which specific work is closest?",
     "image": "images/diagrams/civil-flt01/q39-turbine-triangles.jpg",
     "options": [
-      "24 kJ/kg",
-      "12 kJ/kg",
-      "36 kJ/kg",
-      "48 kJ/kg"
+      "1.2 kJ/kg",
+      "2.4 kJ/kg",
+      "3.2 kJ/kg",
+      "4.0 kJ/kg"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 24 kJ/kg\n\nWHY CORRECT / CALCULATION:\nCALC: applying the displayed inlet/outlet whirl change with blade speed gives about 24 kJ/kg. Trap: C omits the outlet-whirl sign.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
+    "explanation": "CORRECT: 2.4 kJ/kg\n\nWHY CORRECT / CALCULATION:\nCALC: W = u(Vw1 − Vw2)/1000 = 40×(80 − 20)/1000 = 2.4 kJ/kg. Trap: C = 3.2 omits outlet whirl; D = 4.0 adds Vw2; A = 1.2 halves the whirl change.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0175.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q39"
   },
   {
     "id": 40,
     "subject": "Steel Structures",
     "topic": "Steel: eccentric bolts+diagram",
-    "question": "For the bracket shown in the crop, the load acts eccentrically in the bolt-group plane of the connection. Which bolt should the engineer identify as critical from the displayed coordinates and load direction?",
+    "question": "An eccentric bracket load P = 50 kN acts in the plane of a four-bolt group arranged on a 120 mm × 180 mm rectangle about the CG, with eccentricity e = 250 mm from the CG toward the load line (bolts numbered 1–4 on the figure). Which bolt is critical (largest vector resultant of direct and torsional shear)?",
     "image": "images/diagrams/civil-flt01/q40-eccentric-bolt-group.jpg",
     "options": [
       "Bolt 1",
@@ -919,11 +919,11 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Bolt 3\n\nWHY CORRECT / CALCULATION:\nWhy: Bolt 3 has the largest adverse vector resultant of direct and moment-induced shear. Trap: the farthest bolt is not automatically critical without vector direction.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
+    "explanation": "CORRECT: Bolt 3\n\nWHY CORRECT / CALCULATION:\nWhy: Bolt 3 (lower-right) has the largest adverse vector sum of direct shear P/4 and torsional shear from M = P e. Trap: farthest bolt is not automatic without vector direction.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Steel/Steel_pg0016.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q40"
   },
   {
     "id": 41,
@@ -1049,7 +1049,7 @@ export const questions = [
     "id": 47,
     "subject": "Steel Structures",
     "topic": "Steel: staggered holes+diagram+paths",
-    "question": "Tension-splice review of a bolted plate uses the crop showing two candidate rupture paths through staggered holes. After allowing for the shown stagger credits on gauge lines, which path and net area should the engineer adopt?",
+    "question": "A bolted tension plate has width b = 240 mm, thickness t = 10 mm and hole diameter dh = 22 mm. Path P is a chain section through 2 holes; path Q zig-zags through 3 holes with two stagger credits s = 30 mm on gauge g = 60 mm (paths marked on the figure). Using An = (b − n dh + Σ s²/(4g)) t, which path and net area should be adopted?",
     "image": "images/diagrams/civil-flt01/q47-staggered-net-paths.jpg",
     "options": [
       "P, 1960 mm²",
@@ -1061,11 +1061,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Q, 1810 mm²\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: the displayed hole count, gauge and stagger terms make Q the smaller net area at 1810 mm². Trap: A checks only the straight path. **Hard justification:** competing paths require geometric interpretation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
+    "explanation": "CORRECT: Q, 1810 mm²\n\nWHY CORRECT / CALCULATION:\nCALC: Path P: An=(240−2×22)×10=1960 mm². Path Q: credits 2×(30²)/(4×60)=7.5 mm → An=(240−66+7.5)×10≈1815 mm² ≈1810. Adopt smaller An → Q. Trap: A checks only the straight path.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Steel/Steel_pg0026.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q47"
   },
   {
     "id": 48,
@@ -1171,7 +1171,7 @@ export const questions = [
     "id": 53,
     "subject": "Foundation Engineering",
     "topic": "Foundation: layered settlement+diagram",
-    "question": "In settlement assessment for a shallow footing, the cropped figure provides two compressible layers with thicknesses, initial effective stresses and applied stress increments shown only in the figure. Which total primary consolidation settlement is closest?",
+    "question": "Primary consolidation under a shallow footing uses two clay layers (also tabulated on the figure): Layer 1 — H1 = 2.0 m, e01 = 1.00, Cc1 = 0.20, σ′01 = 100 kPa, Δσ1 = 100 kPa; Layer 2 — H2 = 2.0 m, e02 = 0.90, Cc2 = 0.20, σ′02 = 200 kPa, Δσ2 = 100 kPa. Which total primary consolidation settlement is closest?",
     "image": "images/diagrams/civil-flt01/q53-layered-footing.jpg",
     "options": [
       "42 mm",
@@ -1183,11 +1183,11 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 95 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: summing the two layer contributions shown yields 95 mm. Trap: C applies the larger stress increment to both layers.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
+    "explanation": "CORRECT: 95 mm\n\nWHY CORRECT / CALCULATION:\nCALC: Sc1=0.20×2.0/(1+1.00)×log10(2)=0.0602 m≈60 mm; Sc2=0.20×2.0/(1+0.90)×log10(300/200)≈0.0371 m≈37 mm; total ≈97 mm → closest 95 mm. Trap: C applies the larger stress increment to both layers.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0056.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q53"
   },
   {
     "id": 54,
@@ -1253,7 +1253,7 @@ export const questions = [
     "id": 57,
     "subject": "Foundation Engineering",
     "topic": "Foundation: pile group+diagram+failure",
-    "question": "Pile-group review in clay uses the crop of a closely spaced 3×3 layout together with the enclosing block surface marked for capacity assessment. Which capacity procedure is most defensible for the shown geometry?",
+    "question": "A pile group in clay uses a closely spaced 3×3 layout of 9 piles at centre-to-centre spacing s = 3D, with the enclosing block failure surface marked on the figure. Which capacity procedure is most defensible?",
     "image": "images/diagrams/civil-flt01/q57-pile-group.jpg",
     "options": [
       "Use individual-pile sum only",
@@ -1268,8 +1268,8 @@ export const questions = [
     "explanation": "CORRECT: Compare individual sum with block capacity, adopt the lower, then check settlement\n\nWHY CORRECT / CALCULATION:\nWhy: close spacing permits block action; settlement remains separate. Trap: A ignores the figure’s plausible block mechanism. **Hard/App justification:** two failure models and serviceability compete.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0091.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q57"
   },
   {
     "id": 58,
@@ -1380,7 +1380,7 @@ export const questions = [
     "id": 62,
     "subject": "Soil Mechanics",
     "topic": "Soil: flow net+diagram",
-    "question": "Beneath a sheet-pile cutoff, the seepage crop shows four flow channels, twelve potential drops and a 6 m head loss across the domain. For k = 4×10⁻⁵ m/s per metre width, which seepage discharge is closest?",
+    "question": "Beneath a sheet-pile cutoff, the flow net shows Nf = 4 flow channels, Nd = 12 potential drops and head loss H = 6 m across the domain (counts also readable on the figure). For k = 4×10⁻⁵ m/s per metre width, which seepage discharge q = kH(Nf/Nd) is closest?",
     "image": "images/diagrams/civil-flt01/q62-flow-net.jpg",
     "options": [
       "\\(8×10^{-5}\\) m³/s",
@@ -1502,7 +1502,7 @@ export const questions = [
     "id": 68,
     "subject": "Soil Mechanics",
     "topic": "Soil: Proctor+graph+acceptance",
-    "question": "Embankment quality review uses the cropped Proctor curves for two compactive efforts with field point F marked relative to the peaks. Which conclusion about the field compaction state is closest?",
+    "question": "Embankment QA uses Proctor curves for standard and higher compactive effort with field point F marked (curves and F on the figure). Acceptance requires relative compaction ≥ 95% of MDD of the higher-effort curve. Which conclusion about the field compaction state is closest?",
     "image": "images/diagrams/civil-flt01/q68-proctor-curves.jpg",
     "options": [
       "Higher effort lowers maximum dry density",
@@ -1514,11 +1514,11 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Graph+Application",
     "formula": "",
-    "explanation": "CORRECT: Higher effort gives higher maximum dry density/lower OMC, but F fails the shown relative-compaction criterion\n\nWHY CORRECT / CALCULATION:\nWhy: both peak shift and F’s ratio are read from the graph. Trap: B treats an impossible plotting region as valid. **Hard/Practical/App justification:** laboratory trend and field acceptance are combined.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
+    "explanation": "CORRECT: Higher effort gives higher maximum dry density/lower OMC, but F fails the shown relative-compaction criterion\n\nWHY CORRECT / CALCULATION:\nWhy: higher effort raises MDD and lowers OMC; F is below the 95% MDD acceptance line of the higher-effort curve. Trap: B treats an impossible region above ZAV as valid.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0062.jpg"
+    "diagramSource": "schematic-family",
+    "diagramSourcePath": "schematic-family/dual-params-q68"
   },
   {
     "id": 69,

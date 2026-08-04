@@ -692,6 +692,20 @@ Observed failure mode: stem asks for values / P–S details / labelled curves, b
 | 5. No spoilers | Crop excludes answer keys, solved reactions, option letters of the source PYQ | Candidate can read the printed answer |
 | 6. Dependency re-test | Cover the figure: can the keyed option still be chosen? | WEAK/FAIL dependency |
 | 7. Fallback | If no usable core page exists → **exam-grade schematic** with required labels/numbers + declare `diagramSource=schematic-family` | Shipping a mismatched core crop “because it was nearby” |
+| 8. **Dual parameter presence (STRICT)** | **Every** engineering parameter needed to solve (spans, loads, heads, \(S\), \(g\), bolt pitch/\(e\), \(b,t,d_h,s,g\), layer \(H,e_0,C_c,\sigma'_0,\Delta\sigma\), \(N_f,N_d\), curve labels, Detail P–S, etc.) must appear **in the stem AND on the figure** | Values only in image (“see figure”) **or** only in stem while figure is blank/symbolic/wrong crop |
+
+### Dual Parameter Presence — Stem + Diagram (STRICT)
+
+**Why:** if a crop is imperfect, cut off, or hard to read on a phone, the candidate must still recover every number from the stem. If the stem is skimmed, the figure must still carry the same numbers.
+
+**Rules:**
+1. Build a **parameter inventory** for each Diagram Q (all magnitudes, units, labels, and discrete IDs used in CALC).
+2. Write those values into the **stem** in exam English (do **not** say “shown only in the figure” / “figure-only data”).
+3. Place the **same** values/labels on the **figure** (dimension strings, load callouts, curve IDs P–S / 1–3 / A–C).
+4. Qualitative-only Diagram Qs (e.g. BMD jump signature, pump–system curve shape) still need every **label** referenced by options on both stem and figure.
+5. If a core crop cannot show the required numbers cleanly → redraw an **exam-grade schematic** with those numbers and keep the same values in the stem.
+
+**Automatic Fail:** “values available only from the figure”; stem Numerical while figure is symbolic-only; figure Numerical while stem omits the same magnitudes; crop of wrong topic that cannot hold the stem’s parameters.
 
 **Automatic Fail:** shipping a Diagram Q whose image topic ≠ stem topic (e.g. column-ties stem + slab-strip crop; laminar-profile stem + manometer PYQ page).
 
@@ -1052,6 +1066,8 @@ Diagram dependency check (per Q):
 ```
 
 **Gate Pass rule:** every Diagram Q must be **PASS** or **STRONG**. Any **WEAK** → Modify before APPROVED. Any **FAIL** → Fail Diagram Dependency Audit.
+
+**Dual Parameter Presence vs Dependency:** putting the same numbers in stem **and** figure (Step 8) is mandatory for crop resilience. That does **not** auto-mark the Q as WEAK. Dependency is judged on **layout / topology / labelled curves / Detail P–S / path geometry** that the figure still uniquely provides — not on whether magnitudes are duplicated in text. A Numerical+Diagram Q with dual numbers remains PASS/STRONG if covering the figure removes geometry the options still need (bolt layout, path P vs Q, curve identity, support ticks, etc.).
 
 This is in addition to Stage 4 Diagram Validation (10-point check).
 
@@ -1933,6 +1949,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Diagram-dependent questions | **12–15** meeting Subject-wise Diagram Quota; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2 |
 | EE circuit schematics | Electrical Circuits: **≥2** true circuit-diagram Qs; plus circuit-type figures from Machines / PE / Measurements / Analog as applicable |
 | Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
+| Dual parameter presence | Every Diagram Q: all solve parameters appear **in stem AND on figure** (Stem–Figure Step 8); no “figure-only data” stems |
 | Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
