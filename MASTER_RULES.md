@@ -591,23 +591,23 @@ B) <…>
 C) <…>
 D) <…>   (skip the correct letter; cover all three wrong options)
 
-TOPIC HIGH-YIELD (same micro-topic — high exam probability):
-• <must-know point 1 closely related to this Q>
-• <must-know point 2 (formula / thumb rule / standard value / typical trap)>
-• <must-know point 3 (linked PYQ-style theme candidates often see)>
+TOPIC REVISION NOTES (same micro-topic — learn / quick revise):
+• FORMULAS / KEY RELATIONS: <governing equations, units, sign conventions>
+• REMEMBER: <standard values, code limits, thumb rules, classic comparisons>
+• ALSO ASKED FROM THIS TOPIC: <2–3 other PYQ-style angles a candidate should revise next>
 ```
 
 Optional but preferred: fill `formula` with the governing equation(s) used in CALCULATION.
 
-**Anti-boilerplate rule (STRICT):** the headings WHY / CALC / TRAP / HIGH-YIELD are required **structure**, not a license to paste the same generic paragraphs. Each field must be **tailored to this stem’s numbers, figure, code check, and traps**. Explanations that could be swapped onto another question unchanged → **Fail** packaging for that Q.
+**Anti-boilerplate rule (STRICT):** the headings WHY / CALC / TRAP / REVISION NOTES are required **structure**, not a license to paste the same generic paragraphs. Each field must be **tailored to this stem’s numbers, figure, code check, and traps**. Explanations that could be swapped onto another question unchanged → **Fail** packaging for that Q.
 
 ### Length / depth bar
 | Pattern | Min explanation depth |
 |---|---|
-| Numerical / Diagram+Numerical | Full CALCULATION + all traps + ≥3 topic points |
-| Conceptual / Application / Practical / AR / Matching / Table | WHY CORRECT with real depth + all traps + ≥3 topic points |
+| Numerical / Diagram+Numerical | Full CALCULATION + all traps + ≥3 revision bullets |
+| Conceptual / Application / Practical / AR / Matching / Table | WHY CORRECT with real depth + all traps + ≥3 revision bullets |
 | Non-core Quant | Full arithmetic + exam traps (wrong %, base slip) — still no silly jokes |
-| Other Non-core | WHY + trap mechanism + ≥2 high-yield points for that skill |
+| Other Non-core | WHY + trap mechanism + ≥2 revision bullets for that skill |
 
 Rough length guide: technical explanations typically **≥ 450 characters**; one-liners under ~120 characters are automatic Fail for APPROVED banks.
 
@@ -616,16 +616,19 @@ Rough length guide: technical explanations typically **≥ 450 characters**; one
 - **Do not** teach LKG options as serious traps — rewrite such options in a MODIFY pass; until rewritten, note briefly that the option is non-engineering and state the **real** trap type used in actual exams.
 - Never invent traps that contradict the stem.
 
-### Topic high-yield rules
+### Topic revision-notes rules (replaces old “HIGH-YIELD” label)
 - Points must be from the **same subject micro-topic** as the question.
-- Prefer **high PYQ / AEE probability** items: standard formulas, standard values, classic comparison traps, “what is often asked next” on the same theme.
-- Do **not** paste entire chapter notes — 3 focused bullets tied to this question’s theme.
+- **FORMULAS / KEY RELATIONS** must be usable for revision (not vague slogans).
+- **REMEMBER** = exam-stable facts / limits / comparisons.
+- **ALSO ASKED** = other question angles on the same topic (so the explanation teaches the topic, not only this key).
+- Do **not** paste entire chapter notes — keep focused, but **do** enable quick topic revision.
 
 ### Packaging Fail conditions (explanations)
-- Missing WHY CORRECT, TRAP ANALYSIS (all wrong options), or TOPIC HIGH-YIELD
+- Missing WHY CORRECT, TRAP ANALYSIS (all wrong options), or TOPIC REVISION NOTES
 - Numerical without CALCULATION steps that reach the keyed option
 - LKG-style trap commentary presented as serious engineering teaching
 - Explanation contradicts the keyed answer
+- “TOPIC HIGH-YIELD” boilerplate with no formulas / remember / also-asked content
 
 ### Paper Quality Scoring Weights
 | Dimension                       | Weight |
@@ -674,6 +677,26 @@ Diagram questions must read as **high-professional, exam-grade engineering items
 - Must pass the same technical-correctness checks as a source crop
 - Must **not** be preferred over a usable PYQ/core figure (see priority ranks below)
 
+### Stem–Figure Lock Checklist (STRICT — packaging gate)
+
+Observed failure mode: stem asks for values / P–S details / labelled curves, but the crop is a **wrong page**, **symbolic-only**, or **unrelated slab/manometer** figure.
+
+**Before any Diagram Q is packaged or shipped:**
+
+| Step | Requirement | Fail if |
+|---|---|---|
+| 1. Stem inventory | List every figure-only datum the stem assumes (numbers, labels P–S, curve IDs, support symbols) | Stem promises data the figure cannot show |
+| 2. Source match | Core/PYQ page micro-topic = stem micro-topic | Crop from wrong chapter/page class |
+| 3. Numeric lock | If stem is Numerical+Diagram, figure must show the numbers (or stem must state them explicitly — prefer figure) | Symbolic \(x,y,h\) only while options are kPa values |
+| 4. Label lock | If options name Detail P–S / Curve 1–3, those labels must appear on the figure | Options refer to labels absent from image |
+| 5. No spoilers | Crop excludes answer keys, solved reactions, option letters of the source PYQ | Candidate can read the printed answer |
+| 6. Dependency re-test | Cover the figure: can the keyed option still be chosen? | WEAK/FAIL dependency |
+| 7. Fallback | If no usable core page exists → **exam-grade schematic** with required labels/numbers + declare `diagramSource=schematic-family` | Shipping a mismatched core crop “because it was nearby” |
+
+**Automatic Fail:** shipping a Diagram Q whose image topic ≠ stem topic (e.g. column-ties stem + slab-strip crop; laminar-profile stem + manometer PYQ page).
+
+---
+
 ### Mandatory Selection Criteria
 A diagram may be used ONLY if ALL of the following are true:
 - It represents the exact engineering concept being tested.
@@ -681,6 +704,7 @@ A diagram may be used ONLY if ALL of the following are true:
 - It is clear, complete, and readable.
 - All symbols, dimensions, labels, arrows, values, supports, terminals, or components are visible **and technically correct**.
 - It improves the quality of the question to **Medium–Hard exam depth** (see bar above).
+- It passes the **Stem–Figure Lock Checklist** above.
 - The question and options correspond directly to the diagram.
 - Source was chosen by **stream priority** (do not skip a higher-rank usable figure for a lower-rank or AI sketch).
 
@@ -1622,13 +1646,14 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 | Check | Detail |
 |---|---|
 | Topic spread | Distinct topics across Qs (e.g. %, ratio, time-work, SI/CI, averages, speed-distance, profit-loss, number system) — **no two Qs same micro-topic** in one FLT |
+| **Power-sector PYQ share** | **≥ 50%** of Quant items must be **Inspired / Modified** from APTRANSCO / APGENCO / DISCOM / family AEE Non-core aptitude (or uploaded Non-core PYQ PDFs) — power-utility numbers, outage crews, estimate %, cable lengths, etc. — **not silly puzzle toys** |
 | Calculation load | Solvable in ≤ 90 s; one or two steps preferred |
 | Numbers | Clean integers / standard fractions; avoid calculator-only decimals unless intentional |
 | Options | Equally spaced or error-path based; no “all of these” unless carefully keyed |
 | Traps | Include classic traps (forgot % of %, wrong base, LCM slip) as distractors |
 | Level | SSC/banking AEE Non-core level — not CAT extreme |
 
-**Pass:** topic uniqueness + timeable + Distractor N Pass for all Quant Qs.
+**Pass:** topic uniqueness + **≥50% family PYQ-inspired** + timeable + Distractor N Pass for all Quant Qs.
 
 ---
 
@@ -1636,14 +1661,16 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 
 | Check | Detail |
 |---|---|
-| Recency | Prefer facts stable for exam window; if CA, state year/context in audit notes |
-| Verifiability | Every keyed fact must be checkable from a standard source |
+| **Current affairs floor** | **≥ 4** of the 7 GA Qs must be **current affairs** (exam-window facts), of which **≥ 2 Andhra Pradesh** and **≥ 2 National** — real, high-yield, verifiable |
+| Recency | Prefer facts stable for exam window; state year/context in audit notes / Origin |
+| Verifiability | Every keyed fact must be checkable from a standard source (PIB / state release / standard almanac) |
 | No controversy | Avoid unsettled politics / disputed claims |
-| Utility mix | AP/India polity, geography, economy, science, awards, sports — **not five polity Qs** |
+| Utility mix | Remaining GA may cover polity, geography, economy, science, awards — **not five polity Qs** |
 | Ambiguity | No “best known for” without a clear unique answer |
 | Currency | Units and official names current (ministry renames, state capitals) |
+| **Power-sector CA cap** | Of the **≥4 current-affairs** items, **at most 1** may be power / energy / grid / RE / utility themed; the **other ≥3 CA must be non-power** (AP/national polity, economy, schemes, sports, science, geography, awards, etc.) |
 
-**Pass:** all keys verified; topic diversity ≥ 3 buckets; zero ambiguous keys.
+**Pass:** **≥4 CA (2 AP + 2 National)** with **≤1 power-themed CA**; all keys verified; topic diversity ≥ 3 buckets; zero ambiguous keys.
 
 ---
 
@@ -1652,12 +1679,13 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 | Check | Detail |
 |---|---|
 | Type mix | Across FLTs rotate: series, coding-decoding, blood relation, direction, syllogism, seating, analogy, odd-one — **this FLT: no two identical reasoning templates** |
+| **Power-sector PYQ share** | **≥ 50%** Inspired / Modified from APTRANSCO / APGENCO / DISCOM / family AEE reasoning PYQs (or uploaded Non-core PDFs) — outage scheduling, bay/crew seating, station coding, direction between substations — **not silly party-riddle items** |
 | Diagram independence | Prefer text-only for Non-core; if figure used, apply Diagram Dependency PASS/STRONG |
 | Ambiguity | Syllogism / seating must have unique conclusion under standard exam conventions |
 | Language | Clear premises; no cultural knowledge required |
 | Difficulty | Medium preferred; Hard only if multi-step but still ≤ 90 s |
 
-**Pass:** unique templates in-paper; unique key; no cultural bias.
+**Pass:** unique templates in-paper; **≥50% family PYQ-inspired**; unique key; no cultural bias.
 
 ---
 
@@ -1665,14 +1693,17 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 
 | Check | Detail |
 |---|---|
-| Skill mix | Across English Qs in this FLT: different skills (synonym, antonym, one-word, error spotting, idiom, fill-blank, etc.) — **not multiple synonym-only items** |
+| **Mandatory skill pair** | Among the 5 English Qs, include **at least 2** from this set of 3 exam-critical skills: **(1) Reading passage comprehension**, **(2) Active ↔ Passive voice**, **(3) Direct ↔ Indirect speech**. Rotate A/P and D/I across FLT series (exams alternate these). |
+| Skill mix | Remaining slots: error spotting, vocab-in-context, fillers, para-jumble — **not multiple synonym-only items** |
+| Passage quality | Short formal engineering / admin paragraph (4–6 sentences); question tests inference or stated fact — not trivia outside the passage |
+| Voice / narration | Standard exam transforms; one unambiguous correct option |
 | Dictionary sense | Keyed meaning must match standard usage for the stem context |
-| Distractors | Near-synonyms that fail in context; not random unrelated words |
+| Distractors | Near-synonyms / near-transforms that fail in context |
 | No obsolete slang | Prefer formal/exam English |
 | Cross-stream | **Must not** reuse Civil FLT English stems/options on Electrical (and vice versa) |
 | Spelling | Stem and options free of typos that create a second “correct” reading |
 
-**Pass:** distinct skills; verified key; zero cross-stream clones.
+**Pass:** **≥2 of {Passage, Active-Passive, Direct-Indirect}**; distinct skills; verified key; zero cross-stream clones.
 
 ---
 
@@ -1681,13 +1712,14 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 | Check | Detail |
 |---|---|
 | Topic mix | Across Computer Qs in this FLT: distinct areas (e.g. hardware, OS, MS Office, networking, internet, cybersecurity, shortcuts, file types) — **no duplicate micro-topic** |
-| Currency | Prefer still-true facts (USB, HTTP/HTTPS, RAM/ROM, phishing) over obsolete pack names unless classic |
+| **Standard depth** | SSC/AEE Non-core **standard** items — precise definitions, not joke options or ultra-obscure vendor trivia |
+| Currency | Prefer still-true facts (USB, HTTP/HTTPS, RAM/ROM, phishing, DNS, primary key) |
 | Depth | Awareness level — not programming / GATE CSE |
-| Distractors | Plausible tech confusions (RAM vs ROM, HTTP vs HTTPS, phishing vs spam) |
+| Distractors | Plausible tech confusions (RAM vs ROM, HTTP vs HTTPS, phishing vs spam, relative vs absolute refs) |
 | Cross-stream | **Must not** clone Civil↔Electrical Computer Qs |
 | No vendor trivia | Avoid obscure product version numbers unless widely taught |
 
-**Pass:** distinct topics; awareness-level; zero cross-stream clones.
+**Pass:** distinct topics; standard awareness-level; zero cross-stream clones.
 
 ---
 
