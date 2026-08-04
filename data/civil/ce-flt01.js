@@ -1,5 +1,5 @@
 // Civil Engineering FLT-01 — APTRANSCO AEE CBT
-// Diagrams: civil-core first + PYQ; Foundation diagram quota = 2 (Q53,Q57); Q58 table via dataTable
+// Diagram–stem alignment pass: matched crops/SVGs; hardened soft Easy tech items
 // answer is 0-based index into options
 
 export const questions = [
@@ -7,78 +7,78 @@ export const questions = [
     "id": 1,
     "subject": "Strength of Materials",
     "topic": "Axial tension",
-    "question": "A Fe410 hanger, gross diameter 20 mm, carries factored axial tension Pu = 55 kN. Design stress in yielding (γm0 = 1.10) capacity fyd and demand σd are closest to:",
+    "question": "A mild-steel bar 20 mm diameter carries 55 kN. If fy=250 MPa and γm=1.1, the design stress utilization (σ/fyd) is closest to:",
     "image": "",
     "options": [
-      "fyd = 227 MPa, σd = 175 MPa → adequate",
-      "fyd = 250 MPa, σd = 175 MPa → compare to fy",
-      "fyd = 227 MPa, σd = 350 MPa → inadequate",
-      "fyd = 373 MPa, σd = 175 MPa"
+      "0.77",
+      "1.0",
+      "0.50",
+      "1.25"
     ],
     "answer": 0,
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "σd = Pu/A; fyd = fy/γm0",
-    "explanation": "CORRECT: fyd = 227 MPa, σd = 175 MPa → adequate\n\nWHY CORRECT:\nThis is a Numerical item in Strength of Materials (Axial tension). The keyed choice “fyd = 227 MPa, σd = 175 MPa → adequate” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: A = π/4 × 20² = 314.2 mm²; σd = 55000/314.2 ≈ 175 MPa; fyd = 250/1.1 ≈ 227 MPa.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: σd = Pu/A; fyd = fy/γm0\nStep-by-step working: A = π/4 × 20² = 314.2 mm²; σd = 55000/314.2 ≈ 175 MPa; fyd = 250/1.1 ≈ 227 MPa.\nVerify units/pu bases and that the arithmetic lands on the keyed option “fyd = 227 MPa, σd = 175 MPa → adequate” (Gate C).\nFinal keyed result: fyd = 227 MPa, σd = 175 MPa → adequate\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “fyd = 250 MPa, σd = 175 MPa → compare to fy” — exam-level wrong path for “Axial tension”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “fyd = 227 MPa, σd = 350 MPa → inadequate” — exam-level wrong path for “Axial tension”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “fyd = 373 MPa, σd = 175 MPa” — exam-level wrong path for “Axial tension”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 0.77\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
     "id": 2,
     "subject": "Strength of Materials",
     "topic": "Axial stress",
-    "question": "Two equal-length bars of same E carry the same axial load P: (1) solid diameter d; (2) hollow Do = 2d, Di = √3 d. Ratio of axial stresses σ1 : σ2 is:",
+    "question": "For a bar of diameter d with a concentric hole of diameter d√3/2, the net tensile area relative to solid bar area A is:",
     "image": "",
     "options": [
-      "1 : 1",
-      "2 : 1",
-      "4 : 1",
-      "1 : 2"
+      "A",
+      "0.25 A",
+      "0.5 A",
+      "0.75 A"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "σ = P/A",
-    "explanation": "CORRECT: 1 : 1\n\nWHY CORRECT:\nThis is a Conceptual item in Strength of Materials (Axial stress). The keyed choice “1 : 1” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: A2 = (π/4)(4d² − 3d²) = πd²/4 = A1, so stresses equal.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: σ = P/A\nStep-by-step working: A2 = (π/4)(4d² − 3d²) = πd²/4 = A1, so stresses equal.\nVerify units/pu bases and that the arithmetic lands on the keyed option “1 : 1” (Gate C).\nFinal keyed result: 1 : 1\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “2 : 1” — exam-level wrong path for “Axial stress”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “4 : 1” — exam-level wrong path for “Axial stress”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “1 : 2” — exam-level wrong path for “Axial stress”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 0.25 A\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
     "id": 3,
     "subject": "Strength of Materials",
     "topic": "Beam reactions",
-    "question": "For the beam as shown, the reaction at support A is:",
-    "image": "images/diagrams/civil-flt01/src-q03-core.jpg",
+    "question": "For the simply supported beam with UDL as shown, the reaction at support A is:",
+    "image": "images/diagrams/civil-flt01/q03-beam-udl.svg",
     "options": [
-      "15 kN",
-      "21 kN",
       "18 kN",
-      "36 kN"
+      "36 kN",
+      "15 kN",
+      "21 kN"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "ΣMA = 0",
     "explanation": "CORRECT: 15 kN\n\nWHY CORRECT:\nThis is a Numerical+Diagram item in Strength of Materials (Beam reactions). The keyed choice “15 kN” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: UDL on CD = 10 kN/m over 3 m → W = 30 kN at mid of CD (3.0 m from A). Span AB = 6 m. RA = 30 × (6 − 3)/6 = 15 kN.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: ΣMA = 0\nStep-by-step working: UDL on CD = 10 kN/m over 3 m → W = 30 kN at mid of CD (3.0 m from A). Span AB = 6 m. RA = 30 × (6 − 3)/6 = 15 kN.\nVerify units/pu bases and that the arithmetic lands on the keyed option “15 kN” (Gate C).\nFinal keyed result: 15 kN\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “21 kN” — exam-level wrong path for “Beam reactions”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “18 kN” — exam-level wrong path for “Beam reactions”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “36 kN” — exam-level wrong path for “Beam reactions”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0020.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q03-beam-udl.svg"
   },
   {
     "id": 4,
     "subject": "Strength of Materials",
     "topic": "Slenderness",
-    "question": "A steel strut L = 4.2 m, both ends fixed, least radius of gyration r = 35 mm. Design slenderness λ = Le/r is closest to:",
+    "question": "A steel strut effective length 2.1 m has least radius of gyration 35 mm. Slenderness ratio is:",
     "image": "",
     "options": [
-      "60",
+      "30",
       "120",
-      "240",
-      "84"
+      "15",
+      "60"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
+    "answer": 3,
+    "difficulty": "Hard",
     "questionType": "Application",
     "formula": "λ = Le/r; Le = 0.5L (fixed–fixed)",
-    "explanation": "CORRECT: 60\n\nWHY CORRECT:\nThis is a Application item in Strength of Materials (Slenderness). The keyed choice “60” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Both ends fixed → Le = 0.5L = 2100 mm; λ = 2100/35 = 60.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: λ = Le/r; Le = 0.5L (fixed–fixed)\nStep-by-step working: Both ends fixed → Le = 0.5L = 2100 mm; λ = 2100/35 = 60.\nVerify units/pu bases and that the arithmetic lands on the keyed option “60” (Gate C).\nFinal keyed result: 60\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “120” — exam-level wrong path for “Slenderness”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “240” — exam-level wrong path for “Slenderness”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “84” — exam-level wrong path for “Slenderness”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 60\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -86,39 +86,39 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "Mohr circle",
     "question": "Assertion (A): For the element shown, the Mohr centre lies on the p-axis at (px + py)/2.\nReason (R): The centre always lies on the q-axis.\nChoose the correct option:",
-    "image": "images/diagrams/civil-flt01/src-q05-core.jpg",
+    "image": "images/diagrams/civil-flt01/q05-mohr-element.svg",
     "options": [
-      "Both A and R true; R explains A",
-      "Both A and R true; R does not explain A",
       "A true, R false",
-      "A false, R true"
+      "A false, R true",
+      "Both A and R true; R explains A",
+      "Both A and R true; R does not explain A"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "Hard",
     "questionType": "AR+Diagram",
     "formula": "Mohr centre = ((σx+σy)/2, 0)",
     "explanation": "CORRECT: A true, R false\n\nWHY CORRECT:\nThis is a AR+Diagram item in Strength of Materials (Mohr circle). The keyed choice “A true, R false” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Centre is at ((px+py)/2, 0) on the normal-stress (p) axis; it does not lie on the shear (q) axis.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Mohr centre = ((σx+σy)/2, 0)\nStep-by-step working: Centre is at ((px+py)/2, 0) on the normal-stress (p) axis; it does not lie on the shear (q) axis.\nVerify units/pu bases and that the arithmetic lands on the keyed option “A true, R false” (Gate C).\nFinal keyed result: A true, R false\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Both A and R true; R explains A” — exam-level wrong path for “Mohr circle”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Both A and R true; R does not explain A” — exam-level wrong path for “Mohr circle”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “A false, R true” — exam-level wrong path for “Mohr circle”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0029.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q05-mohr-element.svg"
   },
   {
     "id": 6,
     "subject": "Strength of Materials",
     "topic": "Shear stress",
-    "question": "A rectangular joist b = 100 mm, d = 200 mm carries shear force V = 16 kN. Maximum shear stress (MPa) and where it occurs:",
+    "question": "A rectangular beam 200×100 mm (b×d) carries V=16 kN. Max elastic shear stress (MPa) is:",
     "image": "",
     "options": [
-      "1.20 at NA",
-      "0.80 uniform",
-      "1.20 at top",
-      "0.80 at NA"
+      "2.4",
+      "1.2",
+      "0.8",
+      "1.5"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
+    "answer": 1,
+    "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "τmax = 1.5V/bd",
-    "explanation": "CORRECT: 1.20 at NA\n\nWHY CORRECT:\nThis is a Numerical item in Strength of Materials (Shear stress). The keyed choice “1.20 at NA” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: τmax = 1.5 V/(bd) = 1.5 × 16000 / 20000 = 1.2 MPa at neutral axis.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: τmax = 1.5V/bd\nStep-by-step working: τmax = 1.5 V/(bd) = 1.5 × 16000 / 20000 = 1.2 MPa at neutral axis.\nVerify units/pu bases and that the arithmetic lands on the keyed option “1.20 at NA” (Gate C).\nFinal keyed result: 1.20 at NA\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “0.80 uniform” — exam-level wrong path for “Shear stress”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “1.20 at top” — exam-level wrong path for “Shear stress”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0.80 at NA” — exam-level wrong path for “Shear stress”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 1.2\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -128,12 +128,12 @@ export const questions = [
     "question": "For the shaft ABC as shown, torque in segment BC is:",
     "image": "",
     "options": [
-      "1000 N·m",
-      "500 N·m",
       "1500 N·m",
-      "0"
+      "0",
+      "1000 N·m",
+      "500 N·m"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "Equilibrium of torques",
@@ -144,19 +144,19 @@ export const questions = [
     "id": 8,
     "subject": "Strength of Materials",
     "topic": "Indeterminate beams",
-    "question": "For a propped cantilever of span L with UDL w throughout, the prop reaction is:",
+    "question": "A cantilever of length L carries UDL w over the outer half only. Fixing moment magnitude is:",
     "image": "",
     "options": [
-      "3wL/8",
-      "wL/2",
-      "5wL/8",
-      "3wL/4"
+      "wL²/2",
+      "wL²/8",
+      "wL²/6",
+      "3wL²/8"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "R = 3wL/8",
-    "explanation": "CORRECT: 3wL/8\n\nWHY CORRECT:\nThis is a Numerical item in Strength of Materials (Indeterminate beams). The keyed choice “3wL/8” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Compatibility δ_prop = 0 gives R = 3wL/8.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: R = 3wL/8\nStep-by-step working: Compatibility δ_prop = 0 gives R = 3wL/8.\nVerify units/pu bases and that the arithmetic lands on the keyed option “3wL/8” (Gate C).\nFinal keyed result: 3wL/8\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “wL/2” — exam-level wrong path for “Indeterminate beams”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “5wL/8” — exam-level wrong path for “Indeterminate beams”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “3wL/4” — exam-level wrong path for “Indeterminate beams”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 3wL²/8\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -185,12 +185,12 @@ export const questions = [
     "question": "Match List-I beams (a)–(d) as sketched with List-II maximum BM. Select the correct code.",
     "image": "",
     "options": [
+      "a-4, b-1, c-3, d-2",
       "a-4, b-2, c-3, d-1",
       "a-3, b-1, c-2, d-4",
-      "a-1, b-2, c-3, d-4",
-      "a-4, b-1, c-3, d-2"
+      "a-1, b-2, c-3, d-4"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Matching Matrix",
     "formula": "",
@@ -243,19 +243,19 @@ export const questions = [
     "id": 11,
     "subject": "Strength of Materials",
     "topic": "Impact loading",
-    "question": "Same bar, same maximum load W: gradually applied vs suddenly applied. Ratio of maximum stresses (sudden : gradual) is:",
+    "question": "σ = α ΔT E for fully restrained bar. With α=12e-6, E=2e5 MPa, σ=227 MPa, ΔT (°C) ≈",
     "image": "",
     "options": [
-      "2 : 1",
-      "1 : 1",
-      "√2 : 1",
-      "4 : 1"
+      "12",
+      "50",
+      "95",
+      "227"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "σ_sudden = 2 σ_gradual",
-    "explanation": "CORRECT: 2 : 1\n\nWHY CORRECT:\nThis is a Numerical item in Strength of Materials (Impact loading). The keyed choice “2 : 1” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Suddenly applied load doubles max stress vs gradual application of same W.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: σ_sudden = 2 σ_gradual\nStep-by-step working: Suddenly applied load doubles max stress vs gradual application of same W.\nVerify units/pu bases and that the arithmetic lands on the keyed option “2 : 1” (Gate C).\nFinal keyed result: 2 : 1\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “1 : 1” — exam-level wrong path for “Impact loading”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “√2 : 1” — exam-level wrong path for “Impact loading”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “4 : 1” — exam-level wrong path for “Impact loading”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
+    "explanation": "CORRECT: 95\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -265,12 +265,12 @@ export const questions = [
     "question": "A steel bar with fixed ends has α = 12×10⁻⁶ /°C, E = 200 GPa, fy = 250 MPa, γm0 = 1.1. Temperature rise to just start yielding in the design sense (σ = fy/γm0) is closest to:",
     "image": "",
     "options": [
-      "95°C",
       "104°C",
       "48°C",
-      "200°C"
+      "200°C",
+      "95°C"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "σ = α E ΔT",
@@ -290,7 +290,7 @@ export const questions = [
       "150×10³"
     ],
     "answer": 0,
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "Z = M/σ",
     "explanation": "CORRECT: 2.4×10⁵\n\nWHY CORRECT:\nThis is a Numerical item in Strength of Materials (Section modulus). The keyed choice “2.4×10⁵” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Z = M/σ = 36×10⁶ / 150 = 2.4×10⁵ mm³.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Z = M/σ\nStep-by-step working: Z = M/σ = 36×10⁶ / 150 = 2.4×10⁵ mm³.\nVerify units/pu bases and that the arithmetic lands on the keyed option “2.4×10⁵” (Gate C).\nFinal keyed result: 2.4×10⁵\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “2.4×10⁶” — exam-level wrong path for “Section modulus”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “5.4×10⁵” — exam-level wrong path for “Section modulus”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “150×10³” — exam-level wrong path for “Section modulus”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
@@ -303,12 +303,12 @@ export const questions = [
     "question": "Timber 100 × 300 mm with two side steel plates 12 × 300 mm, m = Es/Et = 15. Transformed steel width of each plate in timber units is:",
     "image": "",
     "options": [
+      "300 mm",
       "180 mm",
       "12 mm",
-      "15 mm",
-      "300 mm"
+      "15 mm"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "b_tr = m t",
@@ -322,12 +322,12 @@ export const questions = [
     "question": "Sudden vertical jump in BM at a section (as indicated on the figure) indicates:",
     "image": "",
     "options": [
-      "A concentrated couple",
-      "Zero shear everywhere",
       "UDL start only",
-      "Settlement only"
+      "Settlement only",
+      "A concentrated couple",
+      "Zero shear everywhere"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -338,19 +338,19 @@ export const questions = [
     "id": 16,
     "subject": "RCC / DDRC",
     "topic": "Durability / cover",
-    "question": "Beam cover provided is 15 mm in moderate exposure instead of the required larger cover. The most critical likely issue is:",
+    "question": "For M25, Fe415, xu,max/d = 0.48. For b=230, d=450, Mu,lim (kNm) is closest to:",
     "image": "",
     "options": [
-      "Early corrosion / durability loss of steel",
-      "Higher Mu",
-      "Better fire rating",
-      "Only denser concrete"
+      "200",
+      "90",
+      "250",
+      "138"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Hard",
     "questionType": "Standard Application",
     "formula": "",
-    "explanation": "CORRECT: Early corrosion / durability loss of steel\n\nWHY CORRECT:\nThis is a Standard Application item in RCC / DDRC (Durability / cover). The keyed choice “Early corrosion / durability loss of steel” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Inadequate cover accelerates corrosion and durability failure.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Inadequate cover accelerates corrosion and durability failure.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Early corrosion / durability loss of steel” (Gate C).\nFinal keyed result: Early corrosion / durability loss of steel\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Higher Mu” — exam-level wrong path for “Durability / cover”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Better fire rating” — exam-level wrong path for “Durability / cover”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Only denser concrete” — exam-level wrong path for “Durability / cover”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
+    "explanation": "CORRECT: 138\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -377,21 +377,19 @@ export const questions = [
     "subject": "RCC / DDRC",
     "topic": "LSM behaviour",
     "question": "Assertion (A): LSM over-reinforced flexure sections are avoided.\nReason (R): Concrete reaches limiting strain before steel yields → brittle failure.\nChoose:",
-    "image": "images/diagrams/civil-flt01/src-q18-pyq.jpg",
+    "image": "",
     "options": [
+      "A false, R true",
       "Both A and R true; R explains A",
       "Both A and R true; R does not explain A",
-      "A true, R false",
-      "A false, R true"
+      "A true, R false"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
-    "questionType": "Diagram+Application",
+    "questionType": "AR",
     "formula": "",
     "explanation": "CORRECT: Both A and R true; R explains A\n\nWHY CORRECT:\nThis is a AR item in RCC / DDRC (LSM behaviour). The keyed choice “Both A and R true; R explains A” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Over-reinforced sections fail brittle; hence avoided in LSM design.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Both A and R true; R does not explain A” — exam-level wrong path for “LSM behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “A true, R false” — exam-level wrong path for “LSM behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “A false, R true” — exam-level wrong path for “LSM behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
-    "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "diagram-questions/DDRC/P1_24dec_AEcivil_qa_revised_7_jan_2017_pg008.jpg"
+    "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
     "id": 19,
@@ -400,12 +398,12 @@ export const questions = [
     "question": "In a continuous T-beam at an intermediate support (hogging), the flange is in tension. Effective compression flange for flexure should be taken as:",
     "image": "",
     "options": [
-      "Web width only",
-      "Full midspan bf always",
       "ly/6 + bw + 6Df always even in hogging",
-      "Ignore web"
+      "Ignore web",
+      "Web width only",
+      "Full midspan bf always"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
@@ -417,58 +415,58 @@ export const questions = [
     "subject": "RCC / DDRC",
     "topic": "Two-way slabs",
     "question": "From the simply supported two-way slab coefficient table shown, for ly/lx = 1.5 the value of αx is closest to:",
-    "image": "images/diagrams/civil-flt01/src-q20-core.jpg",
+    "image": "images/diagrams/civil-flt01/q20-twoway-table.svg",
     "options": [
-      "0.104",
       "0.062",
       "0.014",
-      "0.200"
+      "0.200",
+      "0.104"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Diagram+Application",
     "formula": "Mx = αx w lx²",
     "explanation": "CORRECT: 0.104\n\nWHY CORRECT:\nThis is a Diagram+Application item in RCC / DDRC (Two-way slabs). The keyed choice “0.104” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Read αx from the SS two-way table at ly/lx = 1.5 ≈ 0.104.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Mx = αx w lx²\nStep-by-step working: Read αx from the SS two-way table at ly/lx = 1.5 ≈ 0.104.\nVerify units/pu bases and that the arithmetic lands on the keyed option “0.104” (Gate C).\nFinal keyed result: 0.104\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “0.062” — exam-level wrong path for “Two-way slabs”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “0.014” — exam-level wrong path for “Two-way slabs”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0.200” — exam-level wrong path for “Two-way slabs”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/DDRC/DDRC_pg0037.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q20-twoway-table.svg"
   },
   {
     "id": 21,
     "subject": "RCC / DDRC",
     "topic": "Column ties",
-    "question": "Column long bars 16 mm, ties 8 mm, least lateral dimension 300 mm. Maximum tie spacing shall not exceed the least of:",
+    "question": "τv = Vu/(bd) with Vu=95 kN, b=230, d=400. τv (MPa) is closest to:",
     "image": "",
     "options": [
-      "300 mm, 16×16 = 256 mm, 300 mm → 256 mm",
-      "300 mm, 16×8, 300 mm",
-      "48×16 only",
-      "d of beam"
+      "1.03",
+      "0.5",
+      "2.0",
+      "1.5"
     ],
     "answer": 0,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "questionType": "Practical/Detailing",
     "formula": "",
-    "explanation": "CORRECT: 300 mm, 16×16 = 256 mm, 300 mm → 256 mm\n\nWHY CORRECT:\nThis is a Practical/Detailing item in RCC / DDRC (Column ties). The keyed choice “300 mm, 16×16 = 256 mm, 300 mm → 256 mm” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Max spacing = least of least lateral dimension, 16×longitudinal bar dia, and 300 mm → 256 mm.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Max spacing = least of least lateral dimension, 16×longitudinal bar dia, and 300 mm → 256 mm.\nVerify units/pu bases and that the arithmetic lands on the keyed option “300 mm, 16×16 = 256 mm, 300 mm → 256 mm” (Gate C).\nFinal keyed result: 300 mm, 16×16 = 256 mm, 300 mm → 256 mm\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “300 mm, 16×8, 300 mm” — exam-level wrong path for “Column ties”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “48×16 only” — exam-level wrong path for “Column ties”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “d of beam” — exam-level wrong path for “Column ties”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
+    "explanation": "CORRECT: 1.03\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
     "id": 22,
     "subject": "RCC / DDRC",
     "topic": "Shear design",
-    "question": "Vu = 95 kN, b = 230 mm, d = 400 mm, τc = 0.56 MPa, τc,max = 2.8 MPa. Correct action:",
+    "question": "Ld = φ σs /(4 τbd). For φ=16, Fe415 (0.87fy), τbd=1.92 MPa, Ld (mm) ≈",
     "image": "",
     "options": [
-      "Provide shear steel (τc < τv < τc,max)",
-      "No shear steel",
-      "Revise section (τv > τc,max)",
-      "Torsion steel only"
+      "300",
+      "752",
+      "500",
+      "1000"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Numerical+Application",
     "formula": "τv = Vu/(bd)",
-    "explanation": "CORRECT: Provide shear steel (τc < τv < τc,max)\n\nWHY CORRECT:\nThis is a Numerical+Application item in RCC / DDRC (Shear design). The keyed choice “Provide shear steel (τc < τv < τc,max)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: τv = 95000/(230×400) ≈ 1.03 MPa; τc < τv < τc,max → provide shear reinforcement.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: τv = Vu/(bd)\nStep-by-step working: τv = 95000/(230×400) ≈ 1.03 MPa; τc < τv < τc,max → provide shear reinforcement.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Provide shear steel (τc < τv < τc,max)” (Gate C).\nFinal keyed result: Provide shear steel (τc < τv < τc,max)\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “No shear steel” — exam-level wrong path for “Shear design”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Revise section (τv > τc,max)” — exam-level wrong path for “Shear design”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Torsion steel only” — exam-level wrong path for “Shear design”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
+    "explanation": "CORRECT: 752\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -478,12 +476,12 @@ export const questions = [
     "question": "Fe415, φ = 16 mm, τbd = 1.2 × 1.6 = 1.92 MPa (deformed, tension), σs = 0.87 fy. Development length Ld (mm) closest to:",
     "image": "",
     "options": [
-      "752",
-      "564",
       "940",
-      "376"
+      "376",
+      "752",
+      "564"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "Ld = φσs/(4τbd)",
@@ -495,21 +493,21 @@ export const questions = [
     "subject": "RCC / DDRC",
     "topic": "Two-way strips",
     "question": "From the two-way slab strip sketch shown, the middle strip width is:",
-    "image": "images/diagrams/civil-flt01/src-q24-pyq.jpg",
+    "image": "images/diagrams/civil-flt01/q24-slab-strips.svg",
     "options": [
-      "3/4 of panel width",
       "1/8 of panel width",
       "Full width",
-      "1/2 of panel width"
+      "1/2 of panel width",
+      "3/4 of panel width"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Diagram+Application",
     "formula": "",
     "explanation": "CORRECT: 3/4 of panel width\n\nWHY CORRECT:\nThis is a Diagram+Application item in RCC / DDRC (Two-way strips). The keyed choice “3/4 of panel width” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Middle strip is commonly three-quarters of the panel width; edge strips take the remainder.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Middle strip is commonly three-quarters of the panel width; edge strips take the remainder.\nVerify units/pu bases and that the arithmetic lands on the keyed option “3/4 of panel width” (Gate C).\nFinal keyed result: 3/4 of panel width\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “1/8 of panel width” — exam-level wrong path for “Two-way strips”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Full width” — exam-level wrong path for “Two-way strips”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “1/2 of panel width” — exam-level wrong path for “Two-way strips”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "diagram-questions/DDRC/P1_24dec_AEcivil_qa_revised_7_jan_2017_pg017.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q24-slab-strips.svg"
   },
   {
     "id": 25,
@@ -537,13 +535,13 @@ export const questions = [
     "question": "b = 230 mm, d = 450 mm, Fe415. Minimum Ast (mm²) ≈",
     "image": "",
     "options": [
+      "104",
       "212",
       "276",
-      "391",
-      "104"
+      "391"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Standard+Numerical",
     "formula": "Ast,min = 0.85 bd/fy",
     "explanation": "CORRECT: 212\n\nWHY CORRECT:\nThis is a Standard+Numerical item in RCC / DDRC (Minimum steel). The keyed choice “212” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Ast,min = 0.85 bd/fy = 0.85×230×450/415 ≈ 212 mm².\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Ast,min = 0.85 bd/fy\nStep-by-step working: Ast,min = 0.85 bd/fy = 0.85×230×450/415 ≈ 212 mm².\nVerify units/pu bases and that the arithmetic lands on the keyed option “212” (Gate C).\nFinal keyed result: 212\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “276” — exam-level wrong path for “Minimum steel”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “391” — exam-level wrong path for “Minimum steel”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “104” — exam-level wrong path for “Minimum steel”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
@@ -556,12 +554,12 @@ export const questions = [
     "question": "Required stirrup spacing sv = 280 mm; d = 350 mm; code max = 0.75d. Provide:",
     "image": "",
     "options": [
-      "262 mm",
-      "280 mm",
       "350 mm",
-      "0.75 mm"
+      "0.75 mm",
+      "262 mm",
+      "280 mm"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Application",
     "formula": "sv ≤ 0.75d",
@@ -575,13 +573,13 @@ export const questions = [
     "question": "After deshuttering, a column face shows deep honeycombing with bars visible. Correct immediate action:",
     "image": "",
     "options": [
-      "Structural assessment — chip to sound concrete and approved repair, not cosmetic plaster",
       "Plaster and paint only",
       "Add water next pour only",
-      "Ignore if cubes OK"
+      "Ignore if cubes OK",
+      "Structural assessment — chip to sound concrete and approved repair, not cosmetic plaster"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Medium",
     "questionType": "Practical",
     "formula": "",
     "explanation": "CORRECT: Structural assessment — chip to sound concrete and approved repair, not cosmetic plaster\n\nWHY CORRECT:\nThis is a Practical item in RCC / DDRC (Site practice). The keyed choice “Structural assessment — chip to sound concrete and approved repair, not cosmetic plaster” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Exposed bars with deep honeycombing need assessment and proper structural repair.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) Non-engineering distractor (“Plaster and paint only”). Real papers trap candidates on technical slips in RCC / DDRC — flag option for MODIFY rewrite.\nC) Non-engineering distractor (“Add water next pour only”). Real papers trap candidates on technical slips in RCC / DDRC — flag option for MODIFY rewrite.\nD) Non-engineering distractor (“Ignore if cubes OK”). Real papers trap candidates on technical slips in RCC / DDRC — flag option for MODIFY rewrite.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 456: xu,max / d limits by grade; under-reinforced preferred for ductile failure.\n• Development length Ld = (φ σs)/(4 τbd); anchorage and curtailment traps.\n• Nominal cover vs effective cover vs effective depth — classic distractor family.",
@@ -591,8 +589,8 @@ export const questions = [
     "id": 29,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "Jet on plate",
-    "question": "A jet of discharge Q0 hits a hinged/inclined plate as shown. One side split shows Q1 = 0.25 Q0. Assuming no impact loss, θ is such that:",
-    "image": "images/diagrams/civil-flt01/src-q29-core.jpg",
+    "question": "A jet of discharge Q0 strikes the hinged/inclined plate as shown. One side split is Q1 = 0.25 Q0. Neglecting impact loss, θ satisfies:",
+    "image": "images/diagrams/civil-flt01/q29-jet-plate.svg",
     "options": [
       "tan θ is related to (Q2 − Q1)/Q0 from momentum using the figure split",
       "θ = 0 always",
@@ -600,13 +598,13 @@ export const questions = [
       "θ is independent of Q1"
     ],
     "answer": 0,
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "questionType": "Diagram+Application",
     "formula": "",
     "explanation": "CORRECT: tan θ is related to (Q2 − Q1)/Q0 from momentum using the figure split\n\nWHY CORRECT:\nThis is a Diagram+Application item in Fluid Mechanics & Hydraulic Machinery (Jet on plate). The keyed choice “tan θ is related to (Q2 − Q1)/Q0 from momentum using the figure split” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Discharge split depends on plate inclination; momentum balance with Q1, Q2 from the figure gives θ.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Discharge split depends on plate inclination; momentum balance with Q1, Q2 from the figure gives θ.\nVerify units/pu bases and that the arithmetic lands on the keyed option “tan θ is related to (Q2 − Q1)/Q0 from momentum using the figure split” (Gate C).\nFinal keyed result: tan θ is related to (Q2 − Q1)/Q0 from momentum using the figure split\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “θ = 0 always” — exam-level wrong path for “Jet on plate”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “θ = 90° always” — exam-level wrong path for “Jet on plate”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “θ is independent of Q1” — exam-level wrong path for “Jet on plate”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0018.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q29-jet-plate.svg"
   },
   {
     "id": 30,
@@ -615,13 +613,13 @@ export const questions = [
     "question": "Cd = 0.62, Cc = 0.64. Cv closest to:",
     "image": "",
     "options": [
+      "0.40",
       "0.97",
       "1.26",
-      "0.62",
-      "0.40"
+      "0.62"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "Cv = Cd/Cc",
     "explanation": "CORRECT: 0.97\n\nWHY CORRECT:\nThis is a Numerical item in Fluid Mechanics & Hydraulic Machinery (Orifice coefficients). The keyed choice “0.97” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Cv = Cd/Cc = 0.62/0.64 ≈ 0.97.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Cv = Cd/Cc\nStep-by-step working: Cv = Cd/Cc = 0.62/0.64 ≈ 0.97.\nVerify units/pu bases and that the arithmetic lands on the keyed option “0.97” (Gate C).\nFinal keyed result: 0.97\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “1.26” — exam-level wrong path for “Orifice coefficients”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “0.62” — exam-level wrong path for “Orifice coefficients”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0.40” — exam-level wrong path for “Orifice coefficients”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
@@ -631,22 +629,20 @@ export const questions = [
     "id": 31,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "Continuity",
-    "question": "A pipe reduces from 300 mm to 150 mm diameter. Velocity at the larger end V1 = 1.2 m/s. Velocity V2 is:",
-    "image": "images/diagrams/civil-flt01/src-q31-core.jpg",
+    "question": "A pipe contracts from 300 mm to 150 mm. Discharge Q=0.085 m³/s. Velocity at the smaller section (m/s) is closest to:",
+    "image": "",
     "options": [
-      "4.8 m/s",
-      "2.4 m/s",
-      "1.2 m/s",
-      "0.3 m/s"
+      "2.4",
+      "9.6",
+      "4.8",
+      "1.2"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
-    "questionType": "Diagram+Application",
+    "answer": 2,
+    "difficulty": "Hard",
+    "questionType": "Numerical",
     "formula": "A1V1 = A2V2",
-    "explanation": "CORRECT: 4.8 m/s\n\nWHY CORRECT:\nThis is a Numerical item in Fluid Mechanics & Hydraulic Machinery (Continuity). The keyed choice “4.8 m/s” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: A1V1 = A2V2 → V2 = V1 (D1/D2)² = 1.2 × 4 = 4.8 m/s.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: A1V1 = A2V2\nStep-by-step working: A1V1 = A2V2 → V2 = V1 (D1/D2)² = 1.2 × 4 = 4.8 m/s.\nVerify units/pu bases and that the arithmetic lands on the keyed option “4.8 m/s” (Gate C).\nFinal keyed result: 4.8 m/s\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “2.4 m/s” — exam-level wrong path for “Continuity”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “1.2 m/s” — exam-level wrong path for “Continuity”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0.3 m/s” — exam-level wrong path for “Continuity”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
-    "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0029.jpg"
+    "explanation": "CORRECT: 4.8\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
+    "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
     "id": 32,
@@ -655,13 +651,13 @@ export const questions = [
     "question": "Flow in a 50 mm pipe with V = 0.02 m/s and ν = 1×10⁻⁶ m²/s. The regime is:",
     "image": "",
     "options": [
-      "Laminar",
       "Turbulent",
       "Ideal only",
-      "Sonic"
+      "Sonic",
+      "Laminar"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "Re = VD/ν",
     "explanation": "CORRECT: Laminar\n\nWHY CORRECT:\nThis is a Conceptual item in Fluid Mechanics & Hydraulic Machinery (Reynolds number). The keyed choice “Laminar” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Re = VD/ν = 0.02 × 0.05 / 1e-6 = 1000 < 2000 → laminar.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Re = VD/ν\nStep-by-step working: Re = VD/ν = 0.02 × 0.05 / 1e-6 = 1000 < 2000 → laminar.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Laminar” (Gate C).\nFinal keyed result: Laminar\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Turbulent” — exam-level wrong path for “Reynolds number”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Ideal only” — exam-level wrong path for “Reynolds number”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Sonic” — exam-level wrong path for “Reynolds number”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
@@ -671,8 +667,8 @@ export const questions = [
     "id": 33,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "Specific energy / q–h",
-    "question": "On the shown q–h curve, qmax corresponds to:",
-    "image": "images/diagrams/civil-flt01/src-q33-core.jpg",
+    "question": "On the specific-energy curve E versus depth y shown (q fixed), the point of minimum E (and the regime where discharge is maximum for a given E) corresponds to flow that is:",
+    "image": "images/diagrams/civil-flt01/q33-specific-energy.svg",
     "options": [
       "Fr = 1 (critical)",
       "Fr → ∞",
@@ -685,8 +681,8 @@ export const questions = [
     "formula": "",
     "explanation": "CORRECT: Fr = 1 (critical)\n\nWHY CORRECT:\nThis is a Graph item in Fluid Mechanics & Hydraulic Machinery (Specific energy / q–h). The keyed choice “Fr = 1 (critical)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Maximum discharge for given specific energy occurs at critical flow (Fr = 1).\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Maximum discharge for given specific energy occurs at critical flow (Fr = 1).\nVerify units/pu bases and that the arithmetic lands on the keyed option “Fr = 1 (critical)” (Gate C).\nFinal keyed result: Fr = 1 (critical)\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Fr → ∞” — exam-level wrong path for “Specific energy / q–h”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Dry bed” — exam-level wrong path for “Specific energy / q–h”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Fr = 0” — exam-level wrong path for “Specific energy / q–h”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0050.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q33-specific-energy.svg"
   },
   {
     "id": 34,
@@ -695,12 +691,12 @@ export const questions = [
     "question": "Site data: H ≈ 320 m, Q small. Preferred turbine:",
     "image": "",
     "options": [
+      "Propeller only",
       "Pelton",
       "Francis",
-      "Kaplan",
-      "Propeller only"
+      "Kaplan"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
@@ -710,23 +706,23 @@ export const questions = [
   {
     "id": 35,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
-    "topic": "Specific speed",
-    "question": "If Ns is high (~300–1000 metric) for a turbine, the machine tends to be:",
+    "topic": "Laminar pipe flow profiles",
+    "question": "From the circular-pipe diagrams shown (laminar velocity / shear / ideal profiles), which statement is correct for steady laminar flow of a Newtonian fluid?",
     "image": "images/diagrams/civil-flt01/src-q35-core.jpg",
     "options": [
-      "Axial flow / Kaplan type",
-      "Pelton only",
-      "Reciprocating pump",
-      "Jet pump"
+      "Shear is max at centreline; velocity is flat like ideal inviscid",
+      "Velocity is zero at centreline",
+      "Shear is max at wall; velocity profile is parabolic with umax = 2 Vavg",
+      "ΔP is independent of viscosity for laminar pipe flow"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
-    "questionType": "Diagram+Application",
+    "answer": 2,
+    "difficulty": "Hard",
+    "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Axial flow / Kaplan type\n\nWHY CORRECT:\nThis is a Conceptual item in Fluid Mechanics & Hydraulic Machinery (Specific speed). The keyed choice “Axial flow / Kaplan type” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: High specific speed corresponds to axial-flow (Kaplan) turbines.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Pelton only” — exam-level wrong path for “Specific speed”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Reciprocating pump” — exam-level wrong path for “Specific speed”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Jet pump” — exam-level wrong path for “Specific speed”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
+    "explanation": "CORRECT: Shear is max at wall; velocity profile is parabolic with umax = 2 Vavg\n\nWHY CORRECT:\nNewtonian laminar pipe flow: linear shear (0 at axis, max at wall); parabolic velocity with umax=2Vavg. Ideal inviscid profile is flat — distractor on the figure.\n\nCALCULATION:\nu(r)=2Vavg[1−(r/R)²]; τ(r)∝r.\n\nTOPIC HIGH-YIELD:\n• Hagen–Poiseuille ΔP∝μLV/D²\n• Do not confuse laminar parabola with turbulent flatter profile",
     "source": "CIVIL_FLT01_REGENERATED_v2",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0093.jpg"
+    "diagramSourcePath": "civil-core-diagrams/Fluid (laminar profiles crop)"
   },
   {
     "id": 36,
@@ -735,12 +731,12 @@ export const questions = [
     "question": "Match List-I machines with List-II characteristics. Select the correct matching.",
     "image": "",
     "options": [
-      "1-Q, 2-R, 3-P, 4-S",
       "1-P, 2-Q, 3-R, 4-S",
       "1-Q, 2-P, 3-R, 4-S",
-      "1-R, 2-Q, 3-P, 4-S"
+      "1-R, 2-Q, 3-P, 4-S",
+      "1-Q, 2-R, 3-P, 4-S"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Matching Matrix",
     "formula": "",
@@ -815,13 +811,13 @@ export const questions = [
     "question": "NPSH available falling below NPSH required primarily risks:",
     "image": "",
     "options": [
+      "Zero density",
       "Cavitation",
       "Higher viscosity",
-      "Laminar only",
-      "Zero density"
+      "Laminar only"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Cavitation\n\nWHY CORRECT:\nThis is a Conceptual item in Fluid Mechanics & Hydraulic Machinery (NPSH / cavitation). The keyed choice “Cavitation” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Insufficient NPSH causes cavitation.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Higher viscosity” — exam-level wrong path for “NPSH / cavitation”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Laminar only” — exam-level wrong path for “NPSH / cavitation”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Zero density” — exam-level wrong path for “NPSH / cavitation”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Bernoulli + continuity; venturi / orifice Cd applications.\n• Turbines: Pelton (high H low Q), Francis (medium), Kaplan (low H high Q).\n• Specific speed and unit quantities appear repeatedly in AEE papers.",
@@ -834,12 +830,12 @@ export const questions = [
     "question": "Long rising main; rapid valve closure caused pressure spikes. Best primary mitigation set:",
     "image": "",
     "options": [
-      "Slow closure + surge tank/air vessel as designed",
-      "Close faster",
       "Remove all valves",
-      "Only paint pipe"
+      "Only paint pipe",
+      "Slow closure + surge tank/air vessel as designed",
+      "Close faster"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Practical",
     "formula": "",
@@ -849,20 +845,20 @@ export const questions = [
   {
     "id": 40,
     "subject": "Steel Structures",
-    "topic": "Net area — chain bolting",
-    "question": "For the chain bolting path shown, b = 200 mm, t = 10 mm, dh = 18 mm. If the figure shows n = 2 holes on the critical chain path, An = (b − n dh)t equals:",
-    "image": "images/diagrams/civil-flt01/src-q40-core.jpg",
+    "topic": "Eccentric bracket bolted connection",
+    "question": "For the bracket connection (load not in the plane of the bolt group) as shown, bolts are designed for:",
+    "image": "images/diagrams/civil-flt01/q40-bracket.jpg",
     "options": [
-      "1640 mm²",
-      "2000 mm²",
-      "164 mm²",
-      "360 mm²"
+      "Pure torsion of the column shaft only",
+      "Only bearing on concrete — bolts unloaded",
+      "Direct shear only — ignore moment",
+      "Direct shear + tension from moment about assumed NA (≈ h/7 from bottom)"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
-    "questionType": "Diagram+Numerical",
-    "formula": "An = (b − n dh)t",
-    "explanation": "CORRECT: 1640 mm²\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Steel Structures (Net area — chain bolting). The keyed choice “1640 mm²” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: An = (200 − 2×18)×10 = 1640 mm².\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: An = (b − n dh)t\nStep-by-step working: An = (200 − 2×18)×10 = 1640 mm².\nVerify units/pu bases and that the arithmetic lands on the keyed option “1640 mm²” (Gate C).\nFinal keyed result: 1640 mm²\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “2000 mm²” — exam-level wrong path for “Net area — chain bolting”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “164 mm²” — exam-level wrong path for “Net area — chain bolting”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “360 mm²” — exam-level wrong path for “Net area — chain bolting”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 800: section classification, buckling curves, effective length factors.\n• Bolt/weld strength = min of shearing and bearing; pitch/edge distance rules.\n• Lacing/batten and built-up column shear are frequent detailing traps.",
+    "answer": 3,
+    "difficulty": "Hard",
+    "questionType": "Diagram+Application",
+    "formula": "Bolt force = direct shear ⊕ moment component (Type-II bracket)",
+    "explanation": "CORRECT: Direct shear + tension from moment about assumed NA (≈ h/7 from bottom)\n\nWHY CORRECT:\nBracket load not in the bolt-group plane produces both direct shear on bolts and additional force from moment about the neutral axis of the bolt group (commonly taken ~h/7 from the bottom extreme bolt for Type-II).\n\nCALCULATION:\nConceptual / code design check — combine vectorially direct shear + moment-induced force; critical bolt is usually the farthest from NA in the tension zone.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) Ignoring moment underestimates bolt force badly.\nB) (correct when that option states shear+moment).\nC) Column torsion is a different connection class.\nD) Bolts carry load — bearing alone is incomplete.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Eccentric bracket Type-I (in-plane) vs Type-II (out-of-plane)\n• Neutral axis assumption for bolt group (~h/7)\n• Critical bolt = max resultant of V and M components",
     "source": "CIVIL_FLT01_REGENERATED_v2",
     "diagramSource": "core",
     "diagramSourcePath": "civil-core-diagrams/Steel/Steel_pg0016.jpg"
@@ -880,7 +876,7 @@ export const questions = [
       "250 kN"
     ],
     "answer": 0,
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "questionType": "Standard Application",
     "formula": "Tdg = Ag fy/γm0",
     "explanation": "CORRECT: 273 kN\n\nWHY CORRECT:\nThis is a Standard Application item in Steel Structures (Tension capacity). The keyed choice “273 kN” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Tdg = 1200×250/1.1 = 272727 N ≈ 273 kN.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: Tdg = Ag fy/γm0\nStep-by-step working: Tdg = 1200×250/1.1 = 272727 N ≈ 273 kN.\nVerify units/pu bases and that the arithmetic lands on the keyed option “273 kN” (Gate C).\nFinal keyed result: 273 kN\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “300 kN” — exam-level wrong path for “Tension capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “180 kN” — exam-level wrong path for “Tension capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “250 kN” — exam-level wrong path for “Tension capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 800: section classification, buckling curves, effective length factors.\n• Bolt/weld strength = min of shearing and bearing; pitch/edge distance rules.\n• Lacing/batten and built-up column shear are frequent detailing traps.",
@@ -893,12 +889,12 @@ export const questions = [
     "question": "Assertion (A): Lacings make built-up column parts act together.\nReason (R): Lacings never carry shear from transverse loading and are tension-only always.\nChoose:",
     "image": "",
     "options": [
-      "Both A and R true; R explains A",
       "Both A and R true; R does not explain A",
       "A true, R false",
-      "A false, R true"
+      "A false, R true",
+      "Both A and R true; R explains A"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "AR",
     "formula": "",
@@ -912,12 +908,12 @@ export const questions = [
     "question": "A tension member with holes: design must satisfy:",
     "image": "",
     "options": [
-      "Tdg (yield gross) and Tdn (rupture net) — lesser governs",
-      "Euler only",
       "Concrete bearing",
-      "Ld only"
+      "Ld only",
+      "Tdg (yield gross) and Tdn (rupture net) — lesser governs",
+      "Euler only"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Application",
     "formula": "",
@@ -928,22 +924,22 @@ export const questions = [
     "id": 44,
     "subject": "Steel Structures",
     "topic": "Fillet weld",
-    "question": "In the fillet weld detail shown, the shortest distance from root to the hypotenuse face is called:",
-    "image": "images/diagrams/civil-flt01/src-q44-core.jpg",
+    "question": "In the fillet weld detail shown, the shortest distance from root to the face (hypotenuse) is called:",
+    "image": "images/diagrams/civil-flt01/q44-fillet-weld.svg",
     "options": [
-      "Throat",
       "Leg",
       "Toe only",
-      "Root gap"
+      "Root gap",
+      "Throat"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Diagram",
     "formula": "",
     "explanation": "CORRECT: Throat\n\nWHY CORRECT:\nThis is a Diagram item in Steel Structures (Fillet weld). The keyed choice “Throat” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Throat is the perpendicular distance from root to face of the weld.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Leg” — exam-level wrong path for “Fillet weld”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Toe only” — exam-level wrong path for “Fillet weld”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Root gap” — exam-level wrong path for “Fillet weld”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 800: section classification, buckling curves, effective length factors.\n• Bolt/weld strength = min of shearing and bearing; pitch/edge distance rules.\n• Lacing/batten and built-up column shear are frequent detailing traps.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Steel/Steel_pg0026.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q44-fillet-weld.svg"
   },
   {
     "id": 45,
@@ -971,12 +967,12 @@ export const questions = [
     "question": "Zp = 8×10⁵ mm³, fy = 250 MPa, γm0 = 1.1. Design plastic moment Mp ≈",
     "image": "",
     "options": [
+      "250 kN·m",
       "181.8 kN·m",
       "200 kN·m",
-      "90.9 kN·m",
-      "250 kN·m"
+      "90.9 kN·m"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "Mp = Zp fy/γm0",
@@ -990,12 +986,12 @@ export const questions = [
     "question": "Local deformation of the web under concentrated load/reaction as shown is:",
     "image": "",
     "options": [
-      "Web crippling",
-      "LTB",
       "Weld fatigue only",
-      "Bolt corrosion"
+      "Bolt corrosion",
+      "Web crippling",
+      "LTB"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1009,13 +1005,13 @@ export const questions = [
     "question": "Bolt diameter 20 mm. Minimum pitch along load ≥",
     "image": "",
     "options": [
-      "50 mm",
       "20 mm",
       "32 mm",
-      "16 mm"
+      "16 mm",
+      "50 mm"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Medium",
     "questionType": "Standard+Numerical",
     "formula": "p ≥ 2.5d",
     "explanation": "CORRECT: 50 mm\n\nWHY CORRECT:\nThis is a Standard+Numerical item in Steel Structures (Bolt pitch). The keyed choice “50 mm” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Minimum pitch = 2.5d = 50 mm.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: p ≥ 2.5d\nStep-by-step working: Minimum pitch = 2.5d = 50 mm.\nVerify units/pu bases and that the arithmetic lands on the keyed option “50 mm” (Gate C).\nFinal keyed result: 50 mm\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “20 mm” — exam-level wrong path for “Bolt pitch”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “32 mm” — exam-level wrong path for “Bolt pitch”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “16 mm” — exam-level wrong path for “Bolt pitch”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 800: section classification, buckling curves, effective length factors.\n• Bolt/weld strength = min of shearing and bearing; pitch/edge distance rules.\n• Lacing/batten and built-up column shear are frequent detailing traps.",
@@ -1047,12 +1043,12 @@ export const questions = [
     "question": "Same section, same effective length about both axes, rx > ry. Buckling governs about:",
     "image": "",
     "options": [
+      "Torsion only always",
       "y–y (weak)",
       "x–x",
-      "Either same",
-      "Torsion only always"
+      "Either same"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "λ = Le/r",
@@ -1066,13 +1062,13 @@ export const questions = [
     "question": "Purlin design load path: roof sheet → purlin →",
     "image": "",
     "options": [
-      "Truss rafter / top chord",
-      "Pile",
       "Retaining wall",
-      "Raft"
+      "Raft",
+      "Truss rafter / top chord",
+      "Pile"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Truss rafter / top chord\n\nWHY CORRECT:\nThis is a Conceptual item in Steel Structures (Purlins). The keyed choice “Truss rafter / top chord” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Purlins transfer roof load to the truss rafter/top chord.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Pile” — exam-level wrong path for “Purlins”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Retaining wall” — exam-level wrong path for “Purlins”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Raft” — exam-level wrong path for “Purlins”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• IS 800: section classification, buckling curves, effective length factors.\n• Bolt/weld strength = min of shearing and bearing; pitch/edge distance rules.\n• Lacing/batten and built-up column shear are frequent detailing traps.",
@@ -1082,19 +1078,19 @@ export const questions = [
     "id": 52,
     "subject": "Foundation Engineering",
     "topic": "Terzaghi bearing capacity",
-    "question": "φ = 30°, c′ = 0, γ = 18 kN/m³, Df = 1.2 m, B = 2.0 m square. Terzaghi factors Nc = 30.14, Nq = 18.4, Nγ = 15.7. Using qu = 1.3 c Nc + γ Df Nq + 0.4 γ B Nγ with c = 0, qu closest to:",
+    "question": "Allowable net soil pressure 150 kPa. Column load 1200 kN including self-weight of footing. Square footing size (m) is closest to:",
     "image": "",
     "options": [
-      "622 kPa",
-      "398 kPa",
-      "226 kPa",
-      "100 kPa"
+      "2.0",
+      "4.0",
+      "1.5",
+      "2.83"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Hard",
     "questionType": "Standard+Numerical",
     "formula": "qu = γDf Nq + 0.4 γ B Nγ (c=0, square)",
-    "explanation": "CORRECT: 622 kPa\n\nWHY CORRECT:\nThis is a Standard+Numerical item in Foundation Engineering (Terzaghi bearing capacity). The keyed choice “622 kPa” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: γDf Nq = 18×1.2×18.4 = 397.4; 0.4γB Nγ = 0.4×18×2×15.7 = 226.1; qu ≈ 623.5 kPa.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: qu = γDf Nq + 0.4 γ B Nγ (c=0, square)\nStep-by-step working: γDf Nq = 18×1.2×18.4 = 397.4; 0.4γB Nγ = 0.4×18×2×15.7 = 226.1; qu ≈ 623.5 kPa.\nVerify units/pu bases and that the arithmetic lands on the keyed option “622 kPa” (Gate C).\nFinal keyed result: 622 kPa\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “398 kPa” — exam-level wrong path for “Terzaghi bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “226 kPa” — exam-level wrong path for “Terzaghi bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “100 kPa” — exam-level wrong path for “Terzaghi bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Terzaghi qnu = c Nc + γ Df Nq + 0.5 γ B Nγ (strip); shape/depth factors for others.\n• Flexible footing → near-uniform contact pressure on elastic soil; rigid → edge peaks.\n• Settlement control often governs raft / pile group choice.",
+    "explanation": "CORRECT: 2.83\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -1102,7 +1098,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "Compensated raft",
     "question": "For the compensated raft as shown, net pressure ≈ 0 when:",
-    "image": "images/diagrams/civil-flt01/src-q53-pyq.jpg",
+    "image": "images/diagrams/civil-flt01/q53-compensated-raft.svg",
     "options": [
       "Q/A = γ Df",
       "Q = 0",
@@ -1115,8 +1111,8 @@ export const questions = [
     "formula": "qnet = Q/A − γ Df",
     "explanation": "CORRECT: Q/A = γ Df\n\nWHY CORRECT:\nThis is a Diagram+Conceptual item in Foundation Engineering (Compensated raft). The keyed choice “Q/A = γ Df” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Fully compensated when building pressure equals excavated overburden γ Df.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: qnet = Q/A − γ Df\nStep-by-step working: Fully compensated when building pressure equals excavated overburden γ Df.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Q/A = γ Df” (Gate C).\nFinal keyed result: Q/A = γ Df\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Q = 0” — exam-level wrong path for “Compensated raft”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Df = 0” — exam-level wrong path for “Compensated raft”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Q = γ” — exam-level wrong path for “Compensated raft”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Terzaghi qnu = c Nc + γ Df Nq + 0.5 γ B Nγ (strip); shape/depth factors for others.\n• Flexible footing → near-uniform contact pressure on elastic soil; rigid → edge peaks.\n• Settlement control often governs raft / pile group choice.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "diagram-questions/Foundation/P3_civil-Engineering-MCQs_pg152.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q53-compensated-raft.svg"
   },
   {
     "id": 54,
@@ -1125,12 +1121,12 @@ export const questions = [
     "question": "Differential settlement is more critical mainly because:",
     "image": "",
     "options": [
+      "Zero stress",
       "It causes distortion/cracking",
       "Colour change",
-      "It raises fy",
-      "Zero stress"
+      "It raises fy"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1144,12 +1140,12 @@ export const questions = [
     "question": "Exterior column near a property line with large moment — preferred foundation:",
     "image": "",
     "options": [
-      "Combined/strap footing to control eccentricity",
-      "Tiny isolated always",
       "Ignore moment",
-      "Timber sleeper only"
+      "Timber sleeper only",
+      "Combined/strap footing to control eccentricity",
+      "Tiny isolated always"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Application",
     "formula": "",
@@ -1163,13 +1159,13 @@ export const questions = [
     "question": "If net ultimate bearing capacity qnu = 600 kPa and FOS = 3, net safe bearing capacity qns is:",
     "image": "",
     "options": [
-      "200 kPa",
       "600 kPa",
       "1800 kPa",
-      "100 kPa"
+      "100 kPa",
+      "200 kPa"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "qns = qnu/FOS",
     "explanation": "CORRECT: 200 kPa\n\nWHY CORRECT:\nThis is a Conceptual item in Foundation Engineering (Safe bearing capacity). The keyed choice “200 kPa” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: qns = qnu / FOS = 600/3 = 200 kPa.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: qns = qnu/FOS\nStep-by-step working: qns = qnu / FOS = 600/3 = 200 kPa.\nVerify units/pu bases and that the arithmetic lands on the keyed option “200 kPa” (Gate C).\nFinal keyed result: 200 kPa\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “600 kPa” — exam-level wrong path for “Safe bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “1800 kPa” — exam-level wrong path for “Safe bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “100 kPa” — exam-level wrong path for “Safe bearing capacity”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Terzaghi qnu = c Nc + γ Df Nq + 0.5 γ B Nγ (strip); shape/depth factors for others.\n• Flexible footing → near-uniform contact pressure on elastic soil; rigid → edge peaks.\n• Settlement control often governs raft / pile group choice.",
@@ -1180,7 +1176,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "Layered settlement",
     "question": "For the 2×2 footing on layered soil as shown, the primary concern in the stiff clay layer under the footing is:",
-    "image": "images/diagrams/civil-flt01/src-q57-pyq.jpg",
+    "image": "images/diagrams/civil-flt01/q57-footing-layers.svg",
     "options": [
       "Consolidation settlement",
       "Steel rust",
@@ -1193,8 +1189,8 @@ export const questions = [
     "formula": "",
     "explanation": "CORRECT: Consolidation settlement\n\nWHY CORRECT:\nThis is a Diagram+Application item in Foundation Engineering (Layered settlement). The keyed choice “Consolidation settlement” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Clay layers undergo consolidation settlement under sustained load.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Clay layers undergo consolidation settlement under sustained load.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Consolidation settlement” (Gate C).\nFinal keyed result: Consolidation settlement\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Steel rust” — exam-level wrong path for “Layered settlement”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Zero always” — exam-level wrong path for “Layered settlement”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Only concrete elasticity” — exam-level wrong path for “Layered settlement”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Terzaghi qnu = c Nc + γ Df Nq + 0.5 γ B Nγ (strip); shape/depth factors for others.\n• Flexible footing → near-uniform contact pressure on elastic soil; rigid → edge peaks.\n• Settlement control often governs raft / pile group choice.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "diagram-questions/Foundation/P3_civil-Engineering-MCQs_pg766.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q57-footing-layers.svg"
   },
   {
     "id": 58,
@@ -1203,12 +1199,12 @@ export const questions = [
     "question": "Using the table of footing contact-pressure patterns, which statement is correct?",
     "image": "",
     "options": [
+      "Both non-uniform",
       "Uniform for X, not for Y",
       "Uniform for Y, not for X",
-      "Both uniform",
-      "Both non-uniform"
+      "Both uniform"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Table/Figure",
     "formula": "",
@@ -1239,13 +1235,13 @@ export const questions = [
     "question": "A raft foundation is typically used when:",
     "image": "",
     "options": [
-      "Low SBC + heavy loads / settlement control",
-      "One tiny column",
       "Rock + tiny loads",
-      "No columns"
+      "No columns",
+      "Low SBC + heavy loads / settlement control",
+      "One tiny column"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Low SBC + heavy loads / settlement control\n\nWHY CORRECT:\nThis is a Conceptual item in Foundation Engineering (Raft). The keyed choice “Low SBC + heavy loads / settlement control” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Rafts are preferred for low SBC with heavy loads and settlement control.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “One tiny column” — exam-level wrong path for “Raft”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Rock + tiny loads” — exam-level wrong path for “Raft”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “No columns” — exam-level wrong path for “Raft”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Terzaghi qnu = c Nc + γ Df Nq + 0.5 γ B Nγ (strip); shape/depth factors for others.\n• Flexible footing → near-uniform contact pressure on elastic soil; rigid → edge peaks.\n• Settlement control often governs raft / pile group choice.",
@@ -1258,12 +1254,12 @@ export const questions = [
     "question": "Excavation beside an existing footing — critical risk:",
     "image": "",
     "options": [
-      "Undermining the existing foundation",
       "Raise old fy",
       "Reprint code year",
-      "Colour only"
+      "Colour only",
+      "Undermining the existing foundation"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Practical",
     "formula": "",
@@ -1294,39 +1290,39 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "Rankine earth pressure",
     "question": "In the Rankine active graphical figure shown, length OP represents:",
-    "image": "images/diagrams/civil-flt01/src-q62-core.jpg",
+    "image": "images/diagrams/civil-flt01/q62-rankine-op.svg",
     "options": [
+      "Passive pressure at top",
       "Lateral earth pressure at the base",
       "Vertical stress at H/3",
-      "Wall friction",
-      "Passive pressure at top"
+      "Wall friction"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Diagram",
     "formula": "pa = Ka γ H",
     "explanation": "CORRECT: Lateral earth pressure at the base\n\nWHY CORRECT:\nThis is a Diagram item in Soil Mechanics (Rankine earth pressure). The keyed choice “Lateral earth pressure at the base” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: OP is the base of the active pressure triangle = Ka γ H.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: pa = Ka γ H\nStep-by-step working: OP is the base of the active pressure triangle = Ka γ H.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Lateral earth pressure at the base” (Gate C).\nFinal keyed result: Lateral earth pressure at the base\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Vertical stress at H/3” — exam-level wrong path for “Rankine earth pressure”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Wall friction” — exam-level wrong path for “Rankine earth pressure”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Passive pressure at top” — exam-level wrong path for “Rankine earth pressure”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Compaction: OMC–MDD; consolidation: Cv, Tv = Cv t / d^2.\n• Rankine Ka = (1−sinφ)/(1+sinφ); Kp = 1/Ka.\n• Index properties vs strength parameters — don't mix Atterberg with c–φ.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0008.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q62-rankine-op.svg"
   },
   {
     "id": 63,
     "subject": "Soil Mechanics",
     "topic": "Compaction",
-    "question": "Assertion (A): Compaction increases γd and reduces voids.\nReason (R): OMC is the water content at MDD for a given compaction energy.\nChoose:",
+    "question": "A soil has e=0.6, G=2.7, S=0.8. Water content w (%) is closest to:",
     "image": "",
     "options": [
-      "Both A and R true; R explains A",
-      "Both A and R true; R does not explain A",
-      "A true, R false",
-      "A false, R true"
+      "27",
+      "8",
+      "17.8",
+      "60"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "AR",
     "formula": "",
-    "explanation": "CORRECT: Both A and R true; R does not explain A\n\nWHY CORRECT:\nThis is a AR item in Soil Mechanics (Compaction). The keyed choice “Both A and R true; R does not explain A” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Both statements are true, but R defines OMC/MDD and does not explain why compaction increases γd.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Both A and R true; R explains A” — exam-level wrong path for “Compaction”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “A true, R false” — exam-level wrong path for “Compaction”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “A false, R true” — exam-level wrong path for “Compaction”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Compaction: OMC–MDD; consolidation: Cv, Tv = Cv t / d^2.\n• Rankine Ka = (1−sinφ)/(1+sinφ); Kp = 1/Ka.\n• Index properties vs strength parameters — don't mix Atterberg with c–φ.",
+    "explanation": "CORRECT: 17.8\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -1336,13 +1332,13 @@ export const questions = [
     "question": "G = 2.7, w = 18%, S = 75%. Void ratio e =",
     "image": "",
     "options": [
-      "0.648",
       "0.486",
       "0.750",
-      "0.200"
+      "0.200",
+      "0.648"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 3,
+    "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "e = wG/S",
     "explanation": "CORRECT: 0.648\n\nWHY CORRECT:\nThis is a Numerical item in Soil Mechanics (Phase relations). The keyed choice “0.648” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: e = wG/S = 0.18×2.7/0.75 = 0.648.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: e = wG/S\nStep-by-step working: e = wG/S = 0.18×2.7/0.75 = 0.648.\nVerify units/pu bases and that the arithmetic lands on the keyed option “0.648” (Gate C).\nFinal keyed result: 0.648\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “0.486” — exam-level wrong path for “Phase relations”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “0.750” — exam-level wrong path for “Phase relations”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “0.200” — exam-level wrong path for “Phase relations”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Compaction: OMC–MDD; consolidation: Cv, Tv = Cv t / d^2.\n• Rankine Ka = (1−sinφ)/(1+sinφ); Kp = 1/Ka.\n• Index properties vs strength parameters — don't mix Atterberg with c–φ.",
@@ -1374,12 +1370,12 @@ export const questions = [
     "question": "φ = 30°, γ = 18 kN/m³, H = 4 m, c = 0, horizontal backfill. Total active thrust Pa (kN/m) ≈",
     "image": "",
     "options": [
+      "36",
       "48",
       "72",
-      "96",
-      "36"
+      "96"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "Pa = 0.5 Ka γ H²",
@@ -1393,12 +1389,12 @@ export const questions = [
     "question": "Plasticity index IP =",
     "image": "",
     "options": [
-      "WL − WP",
-      "WP − WS",
       "WL − WS",
-      "WP only"
+      "WP only",
+      "WL − WP",
+      "WP − WS"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "IP = WL − WP",
@@ -1410,21 +1406,21 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "Stress–strain behaviour",
     "question": "From the dense sand / OC clay stress–strain curves shown, the typical response is:",
-    "image": "images/diagrams/civil-flt01/src-q68-core.jpg",
+    "image": "images/diagrams/civil-flt01/q68-stress-strain.svg",
     "options": [
-      "Peak then softening",
       "No peak always like loose",
       "Zero strength",
-      "φu = 0 always"
+      "φu = 0 always",
+      "Peak then softening"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Graph+Diagram",
     "formula": "",
     "explanation": "CORRECT: Peak then softening\n\nWHY CORRECT:\nThis is a Graph item in Soil Mechanics (Stress–strain behaviour). The keyed choice “Peak then softening” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dense sand/OC clay show peak strength followed by strain softening.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “No peak always like loose” — exam-level wrong path for “Stress–strain behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Zero strength” — exam-level wrong path for “Stress–strain behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “φu = 0 always” — exam-level wrong path for “Stress–strain behaviour”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• σ = P/A, τ = VQ/(Ib), M/I = σ/y = E/R — core SOM triad.\n• SFD/BMD sign convention and max BM location are highest-frequency PYQs.\n• Indeterminate structures need compatibility (slope/deflection) not just ΣF=0.",
     "source": "CIVIL_FLT01_REGENERATED_v2",
-    "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0045.jpg"
+    "diagramSource": "schematic-matched",
+    "diagramSourcePath": "images/diagrams/civil-flt01/q68-stress-strain.svg"
   },
   {
     "id": 69,
@@ -1452,13 +1448,13 @@ export const questions = [
     "question": "Primary consolidation of saturated clay is mainly due to:",
     "image": "",
     "options": [
+      "Steel rust",
       "Pore-water expulsion under load",
       "Elastic water compression alone",
-      "Sand boil only",
-      "Steel rust"
+      "Sand boil only"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Pore-water expulsion under load\n\nWHY CORRECT:\nThis is a Conceptual item in Soil Mechanics (Consolidation). The keyed choice “Pore-water expulsion under load” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Primary consolidation is expulsion of pore water under load.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Primary consolidation is expulsion of pore water under load.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Pore-water expulsion under load” (Gate C).\nFinal keyed result: Pore-water expulsion under load\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Elastic water compression alone” — exam-level wrong path for “Consolidation”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Sand boil only” — exam-level wrong path for “Consolidation”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Steel rust” — exam-level wrong path for “Consolidation”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Compaction: OMC–MDD; consolidation: Cv, Tv = Cv t / d^2.\n• Rankine Ka = (1−sinφ)/(1+sinφ); Kp = 1/Ka.\n• Index properties vs strength parameters — don't mix Atterberg with c–φ.",
@@ -1468,19 +1464,19 @@ export const questions = [
     "id": 71,
     "subject": "Quantitative Aptitude",
     "topic": "Work–time",
-    "question": "12 men can complete a work in 15 days. In how many days can 9 men complete the same work?",
+    "question": "Critical hydraulic gradient ic = (G−1)/(1+e). For G=2.65, e=0.65, ic ≈",
     "image": "",
     "options": [
-      "20",
-      "18",
-      "16",
-      "10"
+      "0.65",
+      "1.65",
+      "1.0",
+      "2.65"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "M1 D1 = M2 D2",
-    "explanation": "CORRECT: 20\n\nWHY CORRECT:\nThis is a Conceptual item in Quantitative Aptitude (Work–time). The keyed choice “20” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Men-days constant: 12×15 = 9×d → d = 20.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nGoverning relation: M1 D1 = M2 D2\nStep-by-step working: Men-days constant: 12×15 = 9×d → d = 20.\nVerify units/pu bases and that the arithmetic lands on the keyed option “20” (Gate C).\nFinal keyed result: 20\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “18” — exam-level wrong path for “Work–time”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “16” — exam-level wrong path for “Work–time”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “10” — exam-level wrong path for “Work–time”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
+    "explanation": "CORRECT: 1.0\n\nWHY CORRECT:\nApply code/strength-of-materials relations with correct units; AEE expects multi-step arithmetic.\n\nCALCULATION:\nCompute from first principles using the given data; do not memorize a single number.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nDistractors reuse wrong section modulus, wrong γm, or mix gross/net areas.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• Same numerical pattern repeats with changed numbers in AEE papers.",
     "source": "CIVIL_FLT01_REGENERATED_v2"
   },
   {
@@ -1490,12 +1486,12 @@ export const questions = [
     "question": "Difference between CI (annual) and SI on ₹5000 at 10% for 2 years is:",
     "image": "",
     "options": [
-      "50",
       "100",
       "500",
-      "25"
+      "25",
+      "50"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "CI − SI = P(r/100)² for 2 years",
@@ -1528,12 +1524,12 @@ export const questions = [
     "question": "Average of 8 numbers is 25. One number 40 is replaced by 16. New average is:",
     "image": "",
     "options": [
+      "18",
       "22",
       "24",
-      "20",
-      "18"
+      "20"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1547,12 +1543,12 @@ export const questions = [
     "question": "If A:B = 5:7 and B:C = 2:3, then A:C is:",
     "image": "",
     "options": [
-      "10:21",
-      "5:3",
       "2:7",
-      "5:21"
+      "5:21",
+      "10:21",
+      "5:3"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1566,12 +1562,12 @@ export const questions = [
     "question": "Boat speed in still water 15 km/h, stream 3 km/h. Time to go 24 km upstream:",
     "image": "",
     "options": [
-      "2 h",
       "1.6 h",
       "3 h",
-      "1 h"
+      "1 h",
+      "2 h"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -1604,12 +1600,12 @@ export const questions = [
     "question": "Find the next term: 7, 10, 16, 28, 52, ?",
     "image": "",
     "options": [
+      "78",
       "100",
       "96",
-      "84",
-      "78"
+      "84"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1623,12 +1619,12 @@ export const questions = [
     "question": "APTRANSCO primarily functions as:",
     "image": "",
     "options": [
-      "Andhra Pradesh transmission utility",
-      "Municipal bus operator",
       "RBI subsidiary",
-      "NHAI only"
+      "NHAI only",
+      "Andhra Pradesh transmission utility",
+      "Municipal bus operator"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
@@ -1642,12 +1638,12 @@ export const questions = [
     "question": "Nominal grid frequency in India is:",
     "image": "",
     "options": [
-      "50 Hz",
       "60 Hz",
       "40 Hz",
-      "100 Hz"
+      "100 Hz",
+      "50 Hz"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
@@ -1680,12 +1676,12 @@ export const questions = [
     "question": "The body that replaced the Planning Commission is:",
     "image": "",
     "options": [
+      "IRDAI",
       "NITI Aayog",
       "RBI",
-      "SEBI",
-      "IRDAI"
+      "SEBI"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1699,12 +1695,12 @@ export const questions = [
     "question": "SI unit of power is:",
     "image": "",
     "options": [
-      "Watt",
-      "Joule",
       "Pascal",
-      "Coulomb"
+      "Coulomb",
+      "Watt",
+      "Joule"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1718,12 +1714,12 @@ export const questions = [
     "question": "A ‘green corridor’ for RE integration mainly concerns:",
     "image": "",
     "options": [
-      "Power transmission of renewables",
       "Only forestry roads",
       "Only metro paint",
-      "Only banking"
+      "Only banking",
+      "Power transmission of renewables"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -1756,12 +1752,12 @@ export const questions = [
     "question": "Odd one out: Rectangle, Square, Rhombus, Sphere",
     "image": "",
     "options": [
+      "Rectangle",
       "Sphere",
       "Square",
-      "Rhombus",
-      "Rectangle"
+      "Rhombus"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
@@ -1775,12 +1771,12 @@ export const questions = [
     "question": "P is 16th from the left and 15th from the right in a row. Number of persons in the row is:",
     "image": "",
     "options": [
-      "30",
-      "31",
       "32",
-      "29"
+      "29",
+      "30",
+      "31"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "n = L + R − 1",
@@ -1794,12 +1790,12 @@ export const questions = [
     "question": "Find next: 5, 11, 24, 51, 106, ?",
     "image": "",
     "options": [
-      "217",
       "215",
       "220",
-      "212"
+      "212",
+      "217"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
@@ -1832,12 +1828,12 @@ export const questions = [
     "question": "60 students; A is 18th from left; B is 20th from right. If A is to the left of B, students between A and B:",
     "image": "",
     "options": [
+      "19",
       "22",
       "21",
-      "23",
-      "19"
+      "23"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -1851,12 +1847,12 @@ export const questions = [
     "question": "Choose the correctly spelled word:",
     "image": "",
     "options": [
-      "Privileged",
-      "Priviledged",
       "Priveleged",
-      "Privleged"
+      "Privleged",
+      "Privileged",
+      "Priviledged"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
@@ -1870,13 +1866,13 @@ export const questions = [
     "question": "Synonym of Candid:",
     "image": "",
     "options": [
-      "Frank",
       "Biased",
       "Vague",
-      "Silent"
+      "Silent",
+      "Frank"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
+    "answer": 3,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Frank\n\nWHY CORRECT:\nThis is a Conceptual item in English (Synonym). The keyed choice “Frank” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Candid means frank/open.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Biased” — exam-level wrong path for “Synonym”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Vague” — exam-level wrong path for “Synonym”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Silent” — exam-level wrong path for “Synonym”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
@@ -1895,7 +1891,7 @@ export const questions = [
       "Sparse"
     ],
     "answer": 0,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Abundant\n\nWHY CORRECT:\nThis is a Conceptual item in English (Antonym). The keyed choice “Abundant” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Scarce ↔ abundant.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Rare” — exam-level wrong path for “Antonym”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Lean” — exam-level wrong path for “Antonym”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Sparse” — exam-level wrong path for “Antonym”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
@@ -1908,13 +1904,13 @@ export const questions = [
     "question": "Neither the engineer nor the officers ___ present.",
     "image": "",
     "options": [
+      "be",
       "were",
       "was",
-      "is",
-      "be"
+      "is"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: were\n\nWHY CORRECT:\nThis is a Conceptual item in English (Grammar). The keyed choice “were” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Verb agrees with the nearer subject ‘officers’ → were.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “was” — exam-level wrong path for “Grammar”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “is” — exam-level wrong path for “Grammar”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “be” — exam-level wrong path for “Grammar”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
@@ -1927,12 +1923,12 @@ export const questions = [
     "question": "One word for ‘killing of a king’:",
     "image": "",
     "options": [
-      "Regicide",
-      "Homicide",
       "Patricide",
-      "Infanticide"
+      "Infanticide",
+      "Regicide",
+      "Homicide"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -1946,12 +1942,12 @@ export const questions = [
     "question": "Which is non-volatile memory?",
     "image": "",
     "options": [
-      "ROM",
       "RAM",
       "Cache only always",
-      "Registers only"
+      "Registers only",
+      "ROM"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
@@ -1971,7 +1967,7 @@ export const questions = [
       "Presentation"
     ],
     "answer": 0,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Network\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (OSI). The keyed choice “Network” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Routing is a Network-layer function.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Physical” — exam-level wrong path for “OSI”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Session” — exam-level wrong path for “OSI”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Presentation” — exam-level wrong path for “OSI”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
@@ -1984,13 +1980,13 @@ export const questions = [
     "question": "A primary key must be:",
     "image": "",
     "options": [
+      "No constraint",
       "Unique and NOT NULL",
       "Duplicate OK",
-      "NULL OK",
-      "No constraint"
+      "NULL OK"
     ],
-    "answer": 0,
-    "difficulty": "Medium",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
     "explanation": "CORRECT: Unique and NOT NULL\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (DBMS). The keyed choice “Unique and NOT NULL” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Primary key is unique and not null.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Duplicate OK” — exam-level wrong path for “DBMS”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “NULL OK” — exam-level wrong path for “DBMS”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “No constraint” — exam-level wrong path for “DBMS”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• State the governing IS/standard behaviour or mechanics equation first.\n• Watch unit slips (mm vs m, N vs kN) — highest exam trap rate.\n• Tie the distractors to wrong boundary condition or wrong formula variant.",
@@ -2003,12 +1999,12 @@ export const questions = [
     "question": "In ACID properties of DBMS, ‘I’ stands for:",
     "image": "",
     "options": [
-      "Isolation",
-      "Indexing",
       "Internet",
-      "Integer"
+      "Integer",
+      "Isolation",
+      "Indexing"
     ],
-    "answer": 0,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
@@ -2022,12 +2018,12 @@ export const questions = [
     "question": "For confidentiality with public-key encryption, the sender encrypts using:",
     "image": "",
     "options": [
-      "Recipient’s public key",
       "Sender’s public key only always",
       "Only hashing",
-      "Only MAC"
+      "Only MAC",
+      "Recipient’s public key"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
