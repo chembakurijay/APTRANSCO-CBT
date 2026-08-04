@@ -1,5 +1,6 @@
 // Electrical Engineering FLT-01 — APTRANSCO AEE CBT
-// Diagram–stem alignment pass: tight crops; Circuits schematics Q30+Q32; hardened soft items
+// Technical Q1–70: EE bank
+// Shared Non-core Q71–100: identical to Civil FLT-01 (MASTER P0)
 // answer is 0-based index into options
 
 export const questions = [
@@ -1435,571 +1436,601 @@ export const questions = [
   {
     "id": 71,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "What is 18% of 350?",
+    "topic": "Quant: time-work (maintenance crew)",
+    "question": "A line-maintenance crew can complete a scheduled feeder-bay overhaul in 12 days. After 3 days of work by this single crew, two more identical crews join. How many more days are required to finish the remaining work?",
     "image": "",
     "options": [
-      "70",
-      "45",
-      "63",
-      "54"
+      "2 days",
+      "3 days",
+      "4 days",
+      "6 days"
     ],
-    "answer": 2,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 63\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “63” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: 0.18×350=63. Distractors: 15%, 20%, 350×0.18 slip.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: 0.18×350=63. Distractors: 15%, 20%, 350×0.18 slip.\nVerify units/pu bases and that the arithmetic lands on the keyed option “63” (Gate C).\nFinal keyed result: 63\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “54” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “70” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “45” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "t_rem = W_rem / (n/T)",
+    "explanation": "CORRECT: 3 days\n\nWHY CORRECT:\nOne crew’s rate = 1/12 per day. Work done in 3 days = 3/12 = 1/4. Remaining = 3/4. Three crews rate = 3/12 = 1/4 per day. Days more = (3/4)/(1/4) = 3.\n\nCALCULATION: Rate₁=1/12; done=3/12=1/4; left=3/4; rate₃=3/12=1/4; t=(3/4)/(1/4)=3 days.\n\nTRAP ANALYSIS:\nA) Treats remaining as 1/2. C) Uses total days from start as “more days”. D) Uses one-crew rate on remaining.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Work = rate × time; remaining = 1 − work done; combined rate = n/T for n identical crews.\n• REMEMBER: After partial work, recompute remaining before applying joined rate.\n• ALSO ASKED FROM THIS TOPIC: Efficiency increase mid-job; A+B together finish in n days; pipes fill/empty.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 72,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "Compound interest on ₹8000 at 5% p.a. for 2 years (annual compounding) is:",
+    "topic": "Quant: percentage (estimate revision)",
+    "question": "A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage increase is:",
     "image": "",
     "options": [
-      "₹800",
-      "₹400",
-      "₹840",
-      "₹820"
+      "12%",
+      "15%",
+      "18%",
+      "20%"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: ₹820\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “₹820” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: A=8000(1.05)²=8820; CI=820.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: A=8000(1.05)²=8820; CI=820.\nVerify units/pu bases and that the arithmetic lands on the keyed option “₹820” (Gate C).\nFinal keyed result: ₹820\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “₹800” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “₹400” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “₹840” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "%inc=(Δ/base)×100",
+    "explanation": "CORRECT: 15%\n\nWHY CORRECT:\nIncrease = 1.2 on base 8.0 → (1.2/8)×100 = 15%.\n\nCALCULATION: % increase = (9.2−8.0)/8.0 × 100 = 1.2/8 × 100 = 15%.\n\nTRAP ANALYSIS:\nA) Uses 1.2/10. C) (1.2/6.67). D) Treats absolute 1.2 crore as 20% of 6.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: % change = (new−old)/old × 100.\n• REMEMBER: Always divide by the original base, not the new value.\n• ALSO ASKED FROM THIS TOPIC: Successive % changes; % profit on cost; reverse % (what was original).",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 73,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "A:B = 5:7 and A+B = 96. Find B.",
+    "topic": "Quant: ratio (conductor alloy)",
+    "question": "An overhead-conductor alloy sample contains aluminium and steel by weight in the ratio 5:2 and weighs 28 kg. How much aluminium (kg) must be added to make the ratio 4:1?",
     "image": "",
     "options": [
-      "56",
-      "48",
-      "60",
-      "40"
+      "7",
+      "8",
+      "10",
+      "12"
     ],
-    "answer": 0,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 56\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “56” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Quantitative Aptitude principle for “Numerical”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: B=7/12×96=56.\nVerify units/pu bases and that the arithmetic lands on the keyed option “56” (Gate C).\nFinal keyed result: 56\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “40” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “48” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “60” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "(A+x):S = m:n",
+    "explanation": "CORRECT: 12\n\nWHY CORRECT:\nInitially Al:Steel = 5:2 of 28 kg → Al=20, Steel=8. Add x kg Al: (20+x)/8 = 4/1 → 20+x = 32 → x = 12 kg.\n\nCALCULATION: Al=5/7×28=20; St=8; (20+x)/8=4 ⇒ x=12.\n\nTRAP ANALYSIS:\nA/B) Mis-split 28 kg. C) Solves for 3:1 or average.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: (A+x):S = required ratio; S unchanged if only A added.\n• REMEMBER: Convert ratio to absolute masses before adding.\n• ALSO ASKED FROM THIS TOPIC: Alligation; removal problems; three-component mixtures.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 74,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "Average of 6 numbers is 25. If one number 40 is replaced by 16, new average is:",
+    "topic": "Quant: average (monthly energy)",
+    "question": "Monthly energy sent-out readings (MU) for four months are 42, 38, 45 and 39. The average monthly sent-out is:",
     "image": "",
     "options": [
-      "23",
-      "21",
-      "24",
-      "22"
+      "40 MU",
+      "41 MU",
+      "42 MU",
+      "43 MU"
     ],
     "answer": 1,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 21\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “21” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Sum=150; new sum=126; avg=21.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Sum=150; new sum=126; avg=21.\nVerify units/pu bases and that the arithmetic lands on the keyed option “21” (Gate C).\nFinal keyed result: 21\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “22” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “23” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “24” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "avg=Σx/n",
+    "explanation": "CORRECT: 41 MU\n\nWHY CORRECT:\nSum = 42+38+45+39 = 164; average = 164/4 = 41 MU.\n\nCALCULATION: 164/4 = 41.\n\nTRAP ANALYSIS:\nA) Floors down. C) Uses median-ish 42. D) Adds wrongly.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Average = Σxᵢ / n.\n• REMEMBER: Check sum before dividing; units stay MU.\n• ALSO ASKED FROM THIS TOPIC: Weighted average; moving average; % deviation from mean.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 75,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "A 90 m train at 72 km/h crosses a pole in:",
+    "topic": "Quant: speed-distance (patrol)",
+    "question": "A patrol vehicle covers 120 km to a substation at 40 km/h and returns by the same route at 60 km/h. Its average speed for the round trip is:",
     "image": "",
     "options": [
-      "5 s",
-      "6 s",
-      "4.5 s",
-      "3.5 s"
+      "48 km/h",
+      "50 km/h",
+      "52 km/h",
+      "45 km/h"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 4.5 s\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “4.5 s” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: v=20 m/s; t=90/20=4.5 s.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: v=20 m/s; t=90/20=4.5 s.\nVerify units/pu bases and that the arithmetic lands on the keyed option “4.5 s” (Gate C).\nFinal keyed result: 4.5 s\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “3.5 s” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “5 s” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “6 s” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "v_avg=2ab/(a+b)",
+    "explanation": "CORRECT: 48 km/h\n\nWHY CORRECT:\nEqual distances: harmonic mean. Average = 2ab/(a+b) = 2×40×60/(100) = 48 km/h.\n\nCALCULATION: t₁=120/40=3 h; t₂=120/60=2 h; total dist=240; total t=5; v=240/5=48.\n\nTRAP ANALYSIS:\nB) Arithmetic mean of 40 and 60. C/D) Wrong harmonic setup.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: For equal distances: v_avg = 2ab/(a+b).\n• REMEMBER: Never average the two speeds arithmetically for round trip on same route.\n• ALSO ASKED FROM THIS TOPIC: With stoppage time; three-leg journey; upstream/downstream.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 76,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "(2/5)⁻¹ × (3/4)⁰ =",
+    "topic": "Quant: SI (project mobilisation)",
+    "question": "A mobilisation advance of ₹5,00,000 is charged simple interest at 12% per annum for 8 months. The interest amount is:",
     "image": "",
     "options": [
-      "2/5",
-      "1",
-      "3/4",
-      "5/2"
+      "₹30,000",
+      "₹40,000",
+      "₹48,000",
+      "₹50,000"
     ],
-    "answer": 3,
-    "difficulty": "Medium",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 5/2\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “5/2” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Quantitative Aptitude principle for “Numerical”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: (5/2)×1=5/2.\nVerify units/pu bases and that the arithmetic lands on the keyed option “5/2” (Gate C).\nFinal keyed result: 5/2\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “2/5” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “1” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “3/4” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "SI=PRT/100",
+    "explanation": "CORRECT: ₹40,000\n\nWHY CORRECT:\nSI = P×R×T/100 with T=8/12 year → 500000×12×(8/12)/100 = 500000×0.08 = 40,000.\n\nCALCULATION: SI=500000×12×8/(100×12)=40,000.\n\nTRAP ANALYSIS:\nA) Uses 6%. C) Uses T=1 year on 12% of 4L. D) 10% of principal.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: SI=PRT/100; months → years as m/12.\n• REMEMBER: Distinguish SI vs CI; rate is annual unless stated.\n• ALSO ASKED FROM THIS TOPIC: CI for 2 years; difference CI−SI; banker’s discount.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 77,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "A finishes work in 10 days, B in 15 days. Days together:",
+    "topic": "Quant: profit-loss (contract)",
+    "question": "A contractor’s quoted cost for a bay package is ₹12 lakh. He allows 10% discount on the quote and still makes 20% profit on cost. His cost price is closest to:",
     "image": "",
     "options": [
-      "6",
-      "7.5",
-      "8",
-      "5"
+      "₹8.0 lakh",
+      "₹9.0 lakh",
+      "₹10.0 lakh",
+      "₹11.0 lakh"
     ],
-    "answer": 0,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 6\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “6” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: 1/10+1/15=1/6 → 6 days.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: 1/10+1/15=1/6 → 6 days.\nVerify units/pu bases and that the arithmetic lands on the keyed option “6” (Gate C).\nFinal keyed result: 6\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “5” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “7.5” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “8” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "CP=SP/(1+p)",
+    "explanation": "CORRECT: ₹9.0 lakh\n\nWHY CORRECT:\nSP after 10% discount = 0.9×12 = 10.8 lakh. If profit 20% on CP: SP=1.2 CP → CP=10.8/1.2=9.0 lakh.\n\nCALCULATION: SP=0.9×12=10.8; CP=10.8/1.2=9.\n\nTRAP ANALYSIS:\nA) Uses 25% profit. C) Ignores discount. D) Uses quote as CP.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: SP = quote×(1−d); SP = CP×(1+p); eliminate SP.\n• REMEMBER: Discount is on quoted/marked price; profit is on cost.\n• ALSO ASKED FROM THIS TOPIC: Two successive discounts; false weight; marked-price finding.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 78,
     "subject": "Quantitative Aptitude",
-    "topic": "Numerical",
-    "question": "In 40 L milk–water 5:3, water added to make milk:water 1:1. Water added (L):",
+    "topic": "Quant: number system (LCM outage window)",
+    "question": "Three inspection cycles repeat every 4, 6 and 8 days. If all three fall on the same day today, they next coincide after how many days?",
     "image": "",
     "options": [
-      "15",
-      "10",
-      "8",
-      "5"
+      "12",
+      "18",
+      "24",
+      "48"
     ],
-    "answer": 1,
-    "difficulty": "Hard",
+    "answer": 2,
+    "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 10\n\nWHY CORRECT:\nThis is a Numerical item in Quantitative Aptitude (Numerical). The keyed choice “10” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Milk=25, water=15; need water=25 → add 10 L.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Milk=25, water=15; need water=25 → add 10 L.\nVerify units/pu bases and that the arithmetic lands on the keyed option “10” (Gate C).\nFinal keyed result: 10\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “5” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “15” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “8” — exam-level wrong path for “Numerical”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "formula": "LCM by primes",
+    "explanation": "CORRECT: 24\n\nWHY CORRECT:\nLCM(4,6,8)=24.\n\nCALCULATION: 4=2²; 6=2×3; 8=2³ → LCM=2³×3=24.\n\nTRAP ANALYSIS:\nA) GCD mix-up. B) LCM(6,9)-style. D) Product without reducing.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: LCM via prime factors; coincidence period = LCM of cycle lengths.\n• REMEMBER: LCM ≥ each number; for 2 numbers LCM=a×b/GCD.\n• ALSO ASKED FROM THIS TOPIC: HCF word problems; bells toll together; traffic lights.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 79,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "Which body conducts elections to the Lok Sabha under the Constitution of India?",
+    "topic": "GA: CA-AP power transmission",
+    "question": "As per 2026 state energy reviews reported in the press, Andhra Pradesh planned commissioning of about two dozen APTRANSCO transmission projects in the June–December 2026 window with an aggregate order-of-magnitude investment near:",
     "image": "",
     "options": [
-      "NITI Aayog",
-      "CAG",
-      "Election Commission of India",
-      "Supreme Court"
+      "₹350 crore",
+      "₹3,500 crore",
+      "₹35,000 crore",
+      "₹350,000 crore"
     ],
-    "answer": 2,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Election Commission of India\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Election Commission of India” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Supreme Court” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “NITI Aayog” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “CAG” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: ₹3,500 crore\n\nWHY CORRECT:\nOfficial/press briefings on AP transmission commissioning (2026) cite about 24 projects worth roughly ₹3,507 crore — closest to ₹3,500 crore.\n\nCALCULATION: N/A — current-affairs fact (order-of-magnitude).\n\nTRAP ANALYSIS:\nA) Off by 10× low. C/D) Off by 10×/100× high.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: CA facts: verify year, agency (APTRANSCO), and ₹ crore scale.\n• REMEMBER: Only one power-sector CA is intended in this FLT’s CA set.\n• ALSO ASKED FROM THIS TOPIC: Substation voltage class (400/220/132 kV); MVA addition; ckt-km lines.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 80,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "The SI unit of electric charge is:",
+    "topic": "GA: CA-AP capital region",
+    "question": "In 2025–26 public statements on Andhra Pradesh’s capital works, the state leadership indicated a target horizon around which year for completing major Amaravati capital-development works?",
     "image": "",
     "options": [
-      "Ampere",
-      "Volt",
-      "Ohm",
-      "Coulomb"
+      "2024",
+      "2026",
+      "2028",
+      "2035"
     ],
-    "answer": 3,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Coulomb\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Coulomb” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Q in coulombs; I in amperes.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Ampere” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Volt” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Ohm” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: 2028\n\nWHY CORRECT:\nPress coverage of Amaravati revival works quotes a March 2028 completion horizon for major capital-development works.\n\nCALCULATION: N/A — current-affairs fact.\n\nTRAP ANALYSIS:\nA/B) Too early vs stated horizon. D) Confuses long-term RE/national plans.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: APCA/APCRDA capital works ≠ Transmission project lists.\n• REMEMBER: Separate capital-city infrastructure CA from power-utility CA.\n• ALSO ASKED FROM THIS TOPIC: Land pooling phases; APCRDA role; national-highway links to capital region.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 81,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "APTRANSCO’s core statutory function is:",
+    "topic": "GA: CA-National digital payments",
+    "question": "As per NPCI data widely reported for July 2026, UPI processed on the order of 23+ billion transactions in that month with transaction value near which landmark level?",
     "image": "",
     "options": [
-      "Intra-state power transmission",
-      "Commercial banking",
-      "Telecom spectrum auction",
-      "Retail milk distribution"
+      "About ₹3 lakh crore",
+      "About ₹30 lakh crore",
+      "About ₹300 lakh crore",
+      "About ₹30,000 crore"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Intra-state power transmission\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Intra-state power transmission” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Retail milk distribution” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “Commercial banking” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Telecom spectrum auction” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: About ₹30 lakh crore\n\nWHY CORRECT:\nJuly 2026 NPCI figures reported ~23.66 billion UPI transactions with value about ₹29.9 lakh crore — closest to ₹30 lakh crore.\n\nCALCULATION: N/A — current-affairs fact.\n\nTRAP ANALYSIS:\nA/D) Off by ~10×. C) Off by ~10× high.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: UPI volume vs value; NPCI publishes monthly stats.\n• REMEMBER: UPI ≠ NEFT/RTGS product UX; international UPI linkages are separate CA.\n• ALSO ASKED FROM THIS TOPIC: IMPS; CBDC pilots; QR interoperability.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 82,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "The Montreal Protocol primarily addresses:",
+    "topic": "GA: CA-National space",
+    "question": "India’s human spaceflight programme, aimed at sending Indian astronauts to low Earth orbit on an indigenous mission stack, is known as:",
     "image": "",
     "options": [
-      "Maritime piracy",
-      "Ozone-depleting substances",
-      "WTO tariffs only",
-      "Nuclear non-proliferation"
+      "Chandrayaan",
+      "Gaganyaan",
+      "Aditya-L1",
+      "NISAR"
     ],
     "answer": 1,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Ozone-depleting substances\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Ozone-depleting substances” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Nuclear non-proliferation” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Maritime piracy” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “WTO tariffs only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Gaganyaan\n\nWHY CORRECT:\nGaganyaan is ISRO’s human spaceflight programme. Chandrayaan is lunar; Aditya-L1 is solar observatory; NISAR is Earth-observation (ISRO–NASA).\n\nCALCULATION: N/A — current/static CA.\n\nTRAP ANALYSIS:\nA/C/D) Wrong mission class.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Map mission name → destination/objective.\n• REMEMBER: Crew module vs launch vehicle roles; LEO vs lunar.\n• ALSO ASKED FROM THIS TOPIC: Chandrayaan-3 landing site themes; SSLV; Gaganyaan test flights.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 83,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "Which Indian river is associated with the Hirakud Dam?",
+    "topic": "GA: polity (Money Bill)",
+    "question": "Under the Constitution of India, a Money Bill can be introduced only in the Lok Sabha and requires whose prior recommendation?",
     "image": "",
     "options": [
-      "Godavari",
-      "Krishna",
-      "Mahanadi",
-      "Narmada"
+      "Chief Justice of India",
+      "President of India",
+      "Speaker of the Lok Sabha only",
+      "Chairman of the Rajya Sabha"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Mahanadi\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Mahanadi” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Narmada” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Godavari” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Krishna” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: President of India\n\nWHY CORRECT:\nArt. 117: Money Bill needs President’s recommendation for introduction; Speaker certifies Money Bill character.\n\nCALCULATION: N/A — polity.\n\nTRAP ANALYSIS:\nA) Judicial, not introduction. C) Certification ≠ prior recommendation to introduce. D) Rajya Sabha has limited Money Bill role.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Money Bill: introduction only in LS; President’s recommendation; Speaker’s certificate.\n• REMEMBER: Rajya Sabha can only recommend, not amend/reject finally within timelines.\n• ALSO ASKED FROM THIS TOPIC: Finance Bill vs Money Bill; Annual Financial Statement.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
   },
   {
     "id": 84,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "Article 51A of the Constitution deals with:",
+    "topic": "GA: geography (AP)",
+    "question": "Which of the following is the capital city of Andhra Pradesh (legislative/executive seat as currently designated for the state)?",
     "image": "",
     "options": [
-      "Directive Principles only",
-      "Emergency provisions",
-      "Official language schedule only",
-      "Fundamental Duties"
+      "Visakhapatnam",
+      "Amaravati",
+      "Tirupati",
+      "Kurnool"
     ],
-    "answer": 3,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Fundamental Duties\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Fundamental Duties” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Directive Principles only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Emergency provisions” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Official language schedule only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Amaravati\n\nWHY CORRECT:\nAndhra Pradesh’s planned/greenfield capital is Amaravati (capital-region development ongoing).\n\nCALCULATION: N/A — geography/GK.\n\nTRAP ANALYSIS:\nA) Major port city, not the designated capital project seat. C/D) Important cities, not the capital designation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Distinguish economic hubs vs capital designation.\n• REMEMBER: AP capital debates are exam-sensitive — stick to officially stated capital-region name.\n• ALSO ASKED FROM THIS TOPIC: AP districts reorganisation; coastal vs Rayalaseema.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
   },
   {
     "id": 85,
     "subject": "General Awareness",
-    "topic": "Conceptual",
-    "question": "RBI’s primary mandate among the following is:",
+    "topic": "GA: economy (RBI tool)",
+    "question": "If the Reserve Bank of India raises the repo rate, other things equal, the intended near-term effect is generally to:",
     "image": "",
     "options": [
-      "Monetary policy / currency issuer",
-      "Income-tax assessment",
-      "Railway freight tariffs",
-      "Conducting Lok Sabha polls"
+      "Make borrowing cheaper and boost demand",
+      "Make policy borrowing costlier and cool demand-side pressure",
+      "Directly fix retail petrol prices",
+      "Abolish CRR"
     ],
-    "answer": 0,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Monetary policy / currency issuer\n\nWHY CORRECT:\nThis is a Conceptual item in General Awareness (Conceptual). The keyed choice “Monetary policy / currency issuer” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard General Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Conducting Lok Sabha polls” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “Income-tax assessment” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Railway freight tariffs” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Make policy borrowing costlier and cool demand-side pressure\n\nWHY CORRECT:\nHigher repo raises the policy rate corridor signal → costlier liquidity → tends to moderate demand/inflation pressures.\n\nCALCULATION: N/A — economy.\n\nTRAP ANALYSIS:\nA) Opposite of hike. C) Not RBI’s direct retail fuel mandate. D) Unrelated instrument.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Repo = rate at which RBI lends to banks against collateral.\n• REMEMBER: Hike → tighten; cut → ease. Pair with CRR/SLR/MSF basics.\n• ALSO ASKED FROM THIS TOPIC: CPI inflation targeting; transmission lags; standing deposit facility.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
   },
   {
     "id": 86,
-    "subject": "Reasoning",
-    "topic": "Conceptual",
-    "question": "Find the next term: 3, 8, 15, 24, ?",
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: coding (station code)",
+    "question": "In a certain code used in a mock dispatch sheet, each letter is shifted +1, −1, +1, −1… alternately. The code for BAY is:",
     "image": "",
     "options": [
-      "32",
-      "35",
-      "36",
-      "33"
+      "CBX",
+      "ABZ",
+      "CBZ",
+      "AAX"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 35\n\nWHY CORRECT:\nThis is a Conceptual item in Reasoning (Conceptual). The keyed choice “35” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: +5,+7,+9,+11 → 35.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “33” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “32” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “36” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: CBZ\n\nWHY CORRECT:\nB→C (+1), A→Z (−1 wraps? Standard exam often A−1=Z), Y→Z (+1) → CBZ. If A−1=Z: yes CBZ.\n\nCALCULATION: B+1=C; A−1=Z; Y+1=Z → CBZ.\n\nTRAP ANALYSIS:\nA) Y−1. B) No shift. D) Wrong wrap.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Alternate +1/−1 on successive letters; wrap A↔Z.\n• REMEMBER: Write positions 1–26 before shifting.\n• ALSO ASKED FROM THIS TOPIC: Reverse order coding; +2 constant shift; symbol coding.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 87,
-    "subject": "Reasoning",
-    "topic": "Conceptual",
-    "question": "Odd one out:",
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: scheduling (outage slots)",
+    "question": "Five outage blocks P,Q,R,S,T are scheduled Monday–Friday, one per day. R is immediately after P; Q is before S; T is on Wednesday; P is not Monday. Which is the correct day for R?",
     "image": "",
     "options": [
-      "Square",
-      "Rhombus",
-      "Sphere",
-      "Rectangle"
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Friday"
     ],
-    "answer": 2,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Sphere\n\nWHY CORRECT:\nThis is a Conceptual item in Reasoning (Conceptual). The keyed choice “Sphere” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Only 3-D / curved solid among plane quadrilaterals.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Rectangle” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Square” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Rhombus” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Friday\n\nWHY CORRECT:\nT=Wednesday. Consecutive P,R ⇒ possible (Mon–Tue), (Tue–Wed), (Thu–Fri). (Tue–Wed) hits T. P≠Monday eliminates (Mon–Tue). Hence P=Thursday, R=Friday. Remaining Mon/Tue for Q then S.\n\nCALCULATION: Enumerate consecutive slots; eliminate conflicts with T and P≠Mon.\n\nTRAP ANALYSIS:\nA/B) Consecutive pairs already eliminated. C) Would be P’s day, not R.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Linear day order; ‘immediately after’ = next calendar day in the set.\n• REMEMBER: Place fixed day first; then consecutive pair; then before/after constraints.\n• ALSO ASKED FROM THIS TOPIC: Week seating; two rows; circular order.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 88,
-    "subject": "Reasoning",
-    "topic": "Conceptual",
-    "question": "If in a code, P=16, A=1, T=20, then TAP equals (sum of positions):",
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: syllogism",
+    "question": "Statements: All towers are structures. Some structures are automated. Conclusions: I. Some towers are automated. II. Some structures are towers. Which follows?",
     "image": "",
     "options": [
-      "36",
-      "35",
-      "38",
-      "37"
+      "Only I",
+      "Only II",
+      "Both I and II",
+      "Neither I nor II"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 37\n\nWHY CORRECT:\nThis is a Conceptual item in Reasoning (Conceptual). The keyed choice “37” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Reasoning principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: 20+1+16=37.\nVerify units/pu bases and that the arithmetic lands on the keyed option “37” (Gate C).\nFinal keyed result: 37\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “36” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “35” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “38” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Only II\n\nWHY CORRECT:\nAll towers⊂structures ⇒ some structures are towers (II) follows (conversion of universal affirmative in exam syllogism with ‘some’). I does not follow: ‘some structures automated’ need not intersect towers.\n\nCALCULATION: N/A — Venn syllogism.\n\nTRAP ANALYSIS:\nA/C) Assume illicit distribution. D) Misses II.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: All A are B ⇒ Some B are A (standard bank exam). Some B are C ⇏ Some A are C.\n• REMEMBER: Draw two circles; avoid assuming overlap not forced.\n• ALSO ASKED FROM THIS TOPIC: Possibilities cases; either–or conclusions; negatives.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 89,
-    "subject": "Reasoning",
-    "topic": "Conceptual",
-    "question": "A is brother of B. B is sister of C. C is mother of D. How is A related to D?",
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: direction (feeder route)",
+    "question": "From a control centre, an engineer goes 5 km north, then 3 km east, then 5 km south. How far and in which direction is he from the start?",
     "image": "",
     "options": [
-      "Maternal uncle",
-      "Cousin",
-      "Brother",
-      "Father"
+      "3 km east",
+      "3 km west",
+      "5 km east",
+      "4 km north"
     ],
     "answer": 0,
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Maternal uncle\n\nWHY CORRECT:\nThis is a Conceptual item in Reasoning (Conceptual). The keyed choice “Maternal uncle” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: A is brother of C’s generation → maternal uncle of D.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Father” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “Cousin” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Brother” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: 3 km east\n\nWHY CORRECT:\nNorth 5 and south 5 cancel; net displacement = 3 km east.\n\nCALCULATION: Vector: +5N −5S +3E = 3E.\n\nTRAP ANALYSIS:\nB) Sign error on east. C) Uses north leg. D) Cancels wrongly.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Resolve N/S and E/W separately; net = resultant.\n• REMEMBER: Equal opposite legs cancel.\n• ALSO ASKED FROM THIS TOPIC: Shortest path; directions with turns (left/right facing).",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 90,
-    "subject": "Reasoning",
-    "topic": "Conceptual",
-    "question": "What is the mirror image of 3:40 on a standard clock (exam convention 11:60 − time)?",
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: analogy",
+    "question": "Transformer : Voltage :: Circuit breaker : ?",
     "image": "",
     "options": [
-      "9:20",
-      "8:20",
-      "8:40",
-      "7:20"
+      "Frequency",
+      "Fault current interruption",
+      "Power factor",
+      "Reactive power only"
     ],
     "answer": 1,
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 8:20\n\nWHY CORRECT:\nThis is a Conceptual item in Reasoning (Conceptual). The keyed choice “8:20” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: 11:60 − 3:40 = 8:20.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: 11:60 − 3:40 = 8:20.\nVerify units/pu bases and that the arithmetic lands on the keyed option “8:20” (Gate C).\nFinal keyed result: 8:20\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “7:20” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “9:20” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “8:40” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Fault current interruption\n\nWHY CORRECT:\nAnalogy of primary function: transformer transforms voltage; circuit breaker interrupts fault/load current.\n\nCALCULATION: N/A — analogy.\n\nTRAP ANALYSIS:\nA/C/D) Not CB’s defining analogy pair.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Function-based analogies common in AEE Non-core.\n• REMEMBER: Stay with primary role, not secondary effects.\n• ALSO ASKED FROM THIS TOPIC: Instrument transformer : measurement; isolator : visible isolation (no break load).",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 91,
-    "subject": "English",
-    "topic": "Conceptual",
-    "question": "Synonym of **Precise**:",
+    "subject": "English Language & Comprehension",
+    "topic": "English: passage comprehension",
+    "question": "Passage: “During the pre-monsoon inspection, the team noted that several tower stubs showed early corrosion at the ground line. The report recommended cleaning, recoating, and closer soil-drainage checks before the next storm season, because untreated stubs can lose section capacity faster than expected under wind loads.” According to the passage, untreated corroded stubs are a concern mainly because they may:",
     "image": "",
     "options": [
-      "Rough",
-      "Loose",
-      "Exact",
-      "Vague"
+      "Increase transformer oil acidity",
+      "Lose section capacity faster under wind loads",
+      "Reduce busbar ampacity only",
+      "Eliminate the need for drainage checks"
     ],
-    "answer": 2,
-    "difficulty": "Easy",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Exact\n\nWHY CORRECT:\nThis is a Conceptual item in English (Conceptual). The keyed choice “Exact” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard English principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Vague” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Rough” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Loose” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Lose section capacity faster under wind loads\n\nWHY CORRECT:\nThe last clause states untreated stubs can lose section capacity faster under wind loads — direct comprehension.\n\nCALCULATION: N/A — passage-based.\n\nTRAP ANALYSIS:\nA/C) Not in passage. D) Contradicts recommendation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Answer only from passage; ignore outside technical guesses.\n• REMEMBER: Look for causal ‘because’ clauses.\n• ALSO ASKED FROM THIS TOPIC: Inference vs stated fact; tone questions; vocab-in-context from passage.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 92,
-    "subject": "English",
-    "topic": "Conceptual",
-    "question": "Antonym of **Expand**:",
+    "subject": "English Language & Comprehension",
+    "topic": "English: active-passive",
+    "question": "Choose the correct passive form of: “The engineer verified the relay settings.”",
     "image": "",
     "options": [
-      "Enlarge",
-      "Inflate",
-      "Widen",
-      "Contract"
-    ],
-    "answer": 3,
-    "difficulty": "Medium",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: Contract\n\nWHY CORRECT:\nThis is a Conceptual item in English (Conceptual). The keyed choice “Contract” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard English principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “Enlarge” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Inflate” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Widen” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
-  },
-  {
-    "id": 93,
-    "subject": "English",
-    "topic": "Conceptual",
-    "question": "Choose the correctly spelled word:",
-    "image": "",
-    "options": [
-      "Accommodate",
-      "Acommodate",
-      "Acomodate",
-      "Accomodate"
+      "The relay settings were verified by the engineer.",
+      "The relay settings verified the engineer.",
+      "The relay settings are verify by the engineer.",
+      "The engineer was verified by the relay settings."
     ],
     "answer": 0,
-    "difficulty": "Medium",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: Accommodate\n\nWHY CORRECT:\nThis is a Conceptual item in English (Conceptual). The keyed choice “Accommodate” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard English principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Accomodate” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “Acommodate” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Acomodate” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
-  },
-  {
-    "id": 94,
-    "subject": "English",
-    "topic": "Conceptual",
-    "question": "Fill blank: She is good ___ mathematics.",
-    "image": "",
-    "options": [
-      "on",
-      "at",
-      "over",
-      "in"
-    ],
-    "answer": 1,
-    "difficulty": "Medium",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: at\n\nWHY CORRECT:\nThis is a Conceptual item in English (Conceptual). The keyed choice “at” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard English principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “in” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “on” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “over” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
-  },
-  {
-    "id": 95,
-    "subject": "English",
-    "topic": "Conceptual",
-    "question": "One-word substitution — a person who loves books:",
-    "image": "",
-    "options": [
-      "Philatelist",
-      "Cartographer",
-      "Bibliophile",
-      "Bibliophobe"
-    ],
-    "answer": 2,
-    "difficulty": "Hard",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: Bibliophile\n\nWHY CORRECT:\nThis is a Conceptual item in English (Conceptual). The keyed choice “Bibliophile” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard English principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Bibliophobe” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Philatelist” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Cartographer” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
-  },
-  {
-    "id": 96,
-    "subject": "Computer Awareness",
-    "topic": "Conceptual",
-    "question": "Which device permanently stores data when power is off?",
-    "image": "",
-    "options": [
-      "RAM",
-      "Cache only",
-      "CPU registers only",
-      "HDD / SSD (secondary storage)"
-    ],
-    "answer": 3,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: HDD / SSD (secondary storage)\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (Conceptual). The keyed choice “HDD / SSD (secondary storage)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Computer Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “RAM” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Cache only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “CPU registers only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: The relay settings were verified by the engineer.\n\nWHY CORRECT:\nActive SVO → Passive: object becomes subject; verb = was/were + V3; agent = by + old subject.\n\nCALCULATION: N/A — grammar transform.\n\nTRAP ANALYSIS:\nB) Reversed roles. C) Wrong verb form. D) Nonsense agent swap.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Passive = obj + be + past participle (+ by agent).\n• REMEMBER: Tense of be matches original tense (past → were).\n• ALSO ASKED FROM THIS TOPIC: Direct↔Indirect; subject-verb agreement; voice with modals (must be done).",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
-    "id": 97,
-    "subject": "Computer Awareness",
-    "topic": "Conceptual",
-    "question": "HTTPS primarily adds which security layer over HTTP?",
+    "id": 93,
+    "subject": "English Language & Comprehension",
+    "topic": "English: direct-indirect",
+    "question": "Choose the correct indirect speech: He said, “I am checking the earthing.”",
     "image": "",
     "options": [
-      "TLS/SSL encryption",
-      "Faster DNS only",
-      "Larger MTU only",
-      "Compression only"
+      "He said that he was checking the earthing.",
+      "He said that he is checking the earthing.",
+      "He said that I am checking the earthing.",
+      "He said that he will checking the earthing."
     ],
     "answer": 0,
+    "difficulty": "Easy",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: He said that he was checking the earthing.\n\nWHY CORRECT:\nReporting verb past → backshift present continuous to past continuous; pronoun I→he.\n\nCALCULATION: N/A — narration.\n\nTRAP ANALYSIS:\nB) No backshift. C) Pronoun not changed. D) Wrong verb pattern.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: said + that + backshifted clause; pronouns follow sense.\n• REMEMBER: Universal truths sometimes skip backshift — not applicable here.\n• ALSO ASKED FROM THIS TOPIC: Active↔Passive; interrogative narration; imperative narration.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
+  },
+  {
+    "id": 94,
+    "subject": "English Language & Comprehension",
+    "topic": "English: error spotting",
+    "question": "Identify the part with a grammatical error: “Neither the contractor / nor the supervisors / was willing / to sign the record.”",
+    "image": "",
+    "options": [
+      "Neither the contractor",
+      "nor the supervisors",
+      "was willing",
+      "to sign the record."
+    ],
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: TLS/SSL encryption\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (Conceptual). The keyed choice “TLS/SSL encryption” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Computer Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Compression only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) (correct)\nC) “Faster DNS only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “Larger MTU only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: was willing\n\nWHY CORRECT:\nWith neither…nor, the verb agrees with the nearer subject: supervisors (plural) → were willing.\n\nCALCULATION: N/A — grammar.\n\nTRAP ANALYSIS:\nA/B/D) Grammatically fine; error is verb agreement.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Neither…nor → verb agrees with nearest subject.\n• REMEMBER: Either…or same rule; each/every take singular.\n• ALSO ASKED FROM THIS TOPIC: Subject–verb with collective nouns; tense consistency.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
   },
   {
-    "id": 98,
-    "subject": "Computer Awareness",
-    "topic": "Conceptual",
-    "question": "In MS Excel, a cell reference that does not change when copied uses:",
+    "id": 95,
+    "subject": "English Language & Comprehension",
+    "topic": "English: vocabulary-in-context",
+    "question": "In “The engineer gave a concise account of the failure,” concise most nearly means:",
     "image": "",
     "options": [
-      "Circular ref only",
-      "Absolute ref with $ (e.g. $A$1)",
-      "Array formula only",
-      "Relative ref only"
+      "Lengthy and detailed",
+      "Brief and clear",
+      "Vague and delayed",
+      "Hostile"
+    ],
+    "answer": 1,
+    "difficulty": "Easy",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: Brief and clear\n\nWHY CORRECT:\nConcise = short yet clear; antonym of lengthy/verbose.\n\nCALCULATION: N/A — vocab.\n\nTRAP ANALYSIS:\nA) Opposite. C/D) Unrelated senses.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Use context clues: ‘account of the failure’ suggests clarity + brevity.\n• REMEMBER: Concise ≠ abrupt/rude.\n• ALSO ASKED FROM THIS TOPIC: One-word substitutes; idioms; antonyms in context.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
+  },
+  {
+    "id": 96,
+    "subject": "Computer Knowledge",
+    "topic": "Computer: cybersecurity",
+    "question": "Which control most directly reduces account compromise after a password is stolen?",
+    "image": "",
+    "options": [
+      "Larger monitor",
+      "Multi-factor authentication",
+      "Defragmenting the disk",
+      "Increasing screen brightness"
+    ],
+    "answer": 1,
+    "difficulty": "Easy",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: Multi-factor authentication\n\nWHY CORRECT:\nMFA requires a second factor beyond the password, so a stolen password alone is insufficient.\n\nCALCULATION: N/A — cyber hygiene.\n\nTRAP ANALYSIS:\nA/C/D) Unrelated to authentication.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Factors: knowledge / possession / inherence.\n• REMEMBER: MFA ≠ only longer password; phishing still a risk for OTP.\n• ALSO ASKED FROM THIS TOPIC: Phishing vs vishing; HTTPS padlock meaning; password managers.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
+  },
+  {
+    "id": 97,
+    "subject": "Computer Knowledge",
+    "topic": "Computer: networking",
+    "question": "Which service normally resolves a human-readable domain name into an IP address?",
+    "image": "",
+    "options": [
+      "FTP",
+      "DNS",
+      "SMTP",
+      "DHCP only for printing"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Absolute ref with $ (e.g. $A$1)\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (Conceptual). The keyed choice “Absolute ref with $ (e.g. $A$1)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Computer Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Relative ref only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Circular ref only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) (correct)\nD) “Array formula only” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: DNS\n\nWHY CORRECT:\nDNS maps domain names to IP addresses. FTP=file transfer; SMTP=mail; DHCP=address lease (not name resolution).\n\nCALCULATION: N/A — networking.\n\nTRAP ANALYSIS:\nA/C/D) Wrong application-layer roles.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: DNS query → IP; reverse DNS exists but less tested.\n• REMEMBER: DHCP ≠ DNS though both help hosts join networks.\n• ALSO ASKED FROM THIS TOPIC: HTTP vs HTTPS; TCP vs UDP; private IP ranges.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
+  },
+  {
+    "id": 98,
+    "subject": "Computer Knowledge",
+    "topic": "Computer: spreadsheet",
+    "question": "In a spreadsheet, which reference keeps column A and row 1 fixed when the formula is copied both down and across?",
+    "image": "",
+    "options": [
+      "A1",
+      "$A1",
+      "A$1",
+      "$A$1"
+    ],
+    "answer": 3,
+    "difficulty": "Medium",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: $A$1\n\nWHY CORRECT:\nAbsolute reference $A$1 locks both column and row under fill/copy.\n\nCALCULATION: N/A — Office skill.\n\nTRAP ANALYSIS:\nA) Fully relative. B) Locks column only. C) Locks row only.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: $ before col locks col; $ before row locks row.\n• REMEMBER: Mixed refs ($A1 / A$1) common in exam traps.\n• ALSO ASKED FROM THIS TOPIC: COUNTIF; pivot basics; freeze panes (UI, not formula).",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 99,
-    "subject": "Computer Awareness",
-    "topic": "Conceptual",
-    "question": "Phishing attacks typically aim to:",
+    "subject": "Computer Knowledge",
+    "topic": "Computer: database",
+    "question": "A table requires a field that uniquely identifies every row and cannot be NULL. Which constraint is most appropriate?",
     "image": "",
     "options": [
-      "Increase RAM size",
-      "Defragment disks",
-      "Steal credentials via deceptive messages",
-      "Cool the CPU"
+      "Foreign key only",
+      "Primary key",
+      "Default value only",
+      "Check constraint for colour"
     ],
-    "answer": 2,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Steal credentials via deceptive messages\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (Conceptual). The keyed choice “Steal credentials via deceptive messages” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Computer Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) “Cool the CPU” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nB) “Increase RAM size” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “Defragment disks” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) (correct)\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: Primary key\n\nWHY CORRECT:\nPrimary key uniquely identifies rows and disallows NULL (standard relational definition).\n\nCALCULATION: N/A — DBMS awareness.\n\nTRAP ANALYSIS:\nA) FK references a PK elsewhere. C/D) Don’t guarantee uniqueness+NOT NULL together as PK does.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: PK = unique + not null; FK references PK/UK.\n• REMEMBER: A table has one PK (may be composite).\n• ALSO ASKED FROM THIS TOPIC: Normalization 1NF–3NF slogans; candidate key vs PK.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 100,
-    "subject": "Computer Awareness",
-    "topic": "Conceptual",
-    "question": "IPv4 address size is:",
+    "subject": "Computer Knowledge",
+    "topic": "Computer: OS / files",
+    "question": "Which statement about RAM and a magnetic/SSD hard disk is correct at awareness level?",
     "image": "",
     "options": [
-      "64 bits",
-      "128 bits",
-      "16 bits",
-      "32 bits"
+      "RAM is non-volatile long-term storage; disk is only for CPU registers",
+      "RAM is typically volatile working memory; disk provides persistent storage",
+      "Both are identical in volatility and speed",
+      "Disk contents are erased every time power is on"
     ],
-    "answer": 3,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 32 bits\n\nWHY CORRECT:\nThis is a Conceptual item in Computer Awareness (Conceptual). The keyed choice “32 bits” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Computer Awareness principle for “Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION: N/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (exam-level only — no LKG jokes):\nA) (correct)\nB) “64 bits” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nC) “128 bits” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\nD) “16 bits” — exam-level wrong path for “Conceptual”: applies a neighbouring formula/definition that does not satisfy this stem.\n\nTOPIC HIGH-YIELD (same micro-topic — high exam probability):\n• CT secondary must never be open on load — dangerous voltage.\n• Wattmeter / energy meter connection polarity and phase sequence traps are classic.\n• CRO / bridge questions test sensitivity and null conditions.",
-    "source": "ELECTRICAL_FLT01_REGENERATED_v2"
+    "explanation": "CORRECT: RAM is typically volatile working memory; disk provides persistent storage\n\nWHY CORRECT:\nRAM loses data on power loss (volatile); disk/SSD keeps files persistently.\n\nCALCULATION: N/A — hardware/OS.\n\nTRAP ANALYSIS:\nA) Reversed. C) False. D) Opposite of persistent storage.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Volatile vs non-volatile; primary vs secondary memory.\n• REMEMBER: Cache/registers are faster/smaller than RAM; disk slower/larger.\n• ALSO ASKED FROM THIS TOPIC: Virtual memory basics; file extensions; USB class.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   }
 ];

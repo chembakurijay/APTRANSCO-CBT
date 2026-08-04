@@ -1632,12 +1632,15 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 |---|---|---|
 | Count & order | Exact syllabus counts; order Quant → GA → Reasoning → English → Computer | Wrong count/order |
 | Difficulty | Mix Easy/Medium; at most **1 Hard** in Non-core total | ≥2 Hard or all Easy |
-| Originality | No exact clone of Civil↔Electrical Non-core or prior FLT Non-core | Exact/near-exact stem+options |
+| **Shared Non-core (STRICT)** | For the **same FLT number**, Civil and Electrical **must use identical Non-core Q71–Q100** (same stems, options, keys, explanations). Non-core is stream-agnostic — write once, ship to both `ce-fltN` and `ee-fltN`. | CE FLT-n Non-core ≠ EE FLT-n Non-core |
+| Prior-FLT originality | Do **not** exact-clone Non-core from a **different** FLT number | Exact/near-exact stem+options vs another FLT |
 | Distractors | Same Distractor Audit N rules | Joke / impossible / duplicate options |
 | One key | Unambiguous single correct answer | Two defendable keys |
 | APTRANSCO tone | Short, exam-like; no essay stems | Paragraph-length stems |
-| No tech bleed | Non-core must not require EE/CE core knowledge | Needs engineering syllabus |
-| Freshness | Prefer ≥ **70%** Non-core brand-new vs other published mocks | Heavy reuse |
+| No tech bleed | Non-core must not require EE/CE **core technical** knowledge to answer | Needs engineering syllabus |
+| Freshness across FLT series | Prefer new Non-core when building FLT-02+ vs earlier FLTs | Heavy reuse across FLT numbers |
+
+**Packaging rule:** when Non-core is upgraded, update **both** Civil and Electrical banks for that FLT in the same commit (or maintain a shared `data/noncore/nc-fltXX.js` imported by both).
 
 ---
 
@@ -1700,10 +1703,10 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 | Dictionary sense | Keyed meaning must match standard usage for the stem context |
 | Distractors | Near-synonyms / near-transforms that fail in context |
 | No obsolete slang | Prefer formal/exam English |
-| Cross-stream | **Must not** reuse Civil FLT English stems/options on Electrical (and vice versa) |
+| Cross-stream | **Same FLT number shares identical English** with the other stream (see P0 Shared Non-core). Do **not** invent a second English set for EE vs CE on FLT-n. |
 | Spelling | Stem and options free of typos that create a second “correct” reading |
 
-**Pass:** **≥2 of {Passage, Active-Passive, Direct-Indirect}**; distinct skills; verified key; zero cross-stream clones.
+**Pass:** **≥2 of {Passage, Active-Passive, Direct-Indirect}**; distinct skills; verified key; Shared Non-core P0 satisfied.
 
 ---
 
@@ -1716,10 +1719,10 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 | Currency | Prefer still-true facts (USB, HTTP/HTTPS, RAM/ROM, phishing, DNS, primary key) |
 | Depth | Awareness level — not programming / GATE CSE |
 | Distractors | Plausible tech confusions (RAM vs ROM, HTTP vs HTTPS, phishing vs spam, relative vs absolute refs) |
-| Cross-stream | **Must not** clone Civil↔Electrical Computer Qs |
+| Cross-stream | **Same FLT number shares identical Computer** with the other stream (P0 Shared Non-core) |
 | No vendor trivia | Avoid obscure product version numbers unless widely taught |
 
-**Pass:** distinct topics; standard awareness-level; zero cross-stream clones.
+**Pass:** distinct topics; standard awareness-level; Shared Non-core P0 satisfied.
 
 ---
 
@@ -1946,7 +1949,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech; by-subject rules |
 | Formula reuse (Audit M) | No formula in >2 tech Qs; no clone templates |
 | Key distribution (Audit O) | Each letter ~22–28%; no same-letter run ≥5 |
-| Non-core (Audit P) | All five subject gates Pass; zero Civil↔EE Non-core clones |
+| Non-core (Audit P) | All five subject gates Pass; **same FLT# Civil↔EE Non-core identical** (P0 Shared Non-core) |
 | Matching Matrix CBT | Every Matching / Matching+Diagram Q has `matchingMatrix` and site renders List-I / List-II as HTML tables |
 | Table CBT | Every Table / Table-Based Q has `dataTable` and site renders a real HTML `<table>` (not markdown-only stem) |
 | Explanation depth | Every Q meets Detailed Explanation Standard with **tailored** WHY/CALC/traps/high-yield (anti-boilerplate); no one-liner keys |
