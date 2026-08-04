@@ -45,54 +45,74 @@ export const switchPage = (pageId) => {
     }
 };
 
+const appendMockCard = (container, mock) => {
+    const attempts = getAttemptsForFlt(mock.id);
+    const latest = attempts[0] || null;
+    const attempted = attempts.length > 0;
+    const card = createElement('article', {
+        className: `mock-card${attempted ? ' mock-card-attempted' : ''}${mock.kind === 'st' ? ' mock-card-st' : ''}`,
+    });
+
+    const statusHtml = attempted && latest
+        ? `<div class="mock-attempt-status">
+                <span class="mock-attempt-badge">Attempted ${attempts.length}×</span>
+                <p class="mock-last-score">Last score: <strong>${latest.score}</strong> (${latest.percentage})</p>
+                <p class="mock-last-when">Last attempt: ${latest.completedAtLocal || latest.completedAt}</p>
+           </div>`
+        : `<div class="mock-attempt-status mock-attempt-status-new">
+                <span class="mock-attempt-badge is-new">Not attempted yet</span>
+           </div>`;
+
+    const actionLabel = attempted ? 'Reattempt' : 'Attempt';
+    const badge = mock.kind === 'st'
+        ? '<span class="mock-kind-badge">High-Yield · 50Q</span>'
+        : '<span class="mock-kind-badge is-flt">Full Length · 100Q</span>';
+    card.innerHTML = `
+        <div class="mock-card-header">
+            <span class="mock-title">${mock.title}</span>
+            <span class="mock-meta">${mock.questions} Questions</span>
+        </div>
+        <div class="mock-card-body">
+            ${badge}
+            <p class="mock-category">${mock.category}</p>
+            <p>Marks: ${mock.marks}</p>
+            <p>Duration: ${mock.duration} minutes</p>
+            ${statusHtml}
+        </div>
+        <div class="mock-card-actions">
+            <button class="button button-primary start-test-button" type="button" data-flt="${mock.id}">${actionLabel}</button>
+            ${attempted ? `<button class="button button-secondary view-flt-history" type="button" data-flt="${mock.id}">View History</button>` : ''}
+        </div>
+    `;
+    card.querySelector('.start-test-button')?.addEventListener('click', () => beginTestFromHome(mock));
+    card.querySelector('.view-flt-history')?.addEventListener('click', () => {
+        const section = qs('#attemptHistorySection');
+        renderAttemptHistory(mock.id);
+        section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    container.appendChild(card);
+};
+
 export const populateHomePage = (mockList) => {
     const container = qs('#mockGrid');
     if (!container) return;
     homeMockList = Array.isArray(mockList) ? mockList : homeMockList;
     clearElement(container);
 
-    homeMockList.forEach((mock) => {
-        const attempts = getAttemptsForFlt(mock.id);
-        const latest = attempts[0] || null;
-        const attempted = attempts.length > 0;
-        const card = createElement('article', {
-            className: `mock-card${attempted ? ' mock-card-attempted' : ''}`,
-        });
+    const groups = [
+        { kind: 'st', label: 'Subject Tests · High-Yield (50Q)', hint: 'Most-predicted themes per Transco syllabus subject. Civil 6 · Electrical 7 · Non-core 2.' },
+        { kind: 'flt', label: 'Full Length Mock Tests (100Q)', hint: 'Official CBT pattern — Technical 70 + Non-core 30 · 180 minutes.' },
+    ];
 
-        const statusHtml = attempted && latest
-            ? `<div class="mock-attempt-status">
-                    <span class="mock-attempt-badge">Attempted ${attempts.length}×</span>
-                    <p class="mock-last-score">Last score: <strong>${latest.score}</strong> (${latest.percentage})</p>
-                    <p class="mock-last-when">Last attempt: ${latest.completedAtLocal || latest.completedAt}</p>
-               </div>`
-            : `<div class="mock-attempt-status mock-attempt-status-new">
-                    <span class="mock-attempt-badge is-new">Not attempted yet</span>
-               </div>`;
-
-        const actionLabel = attempted ? 'Reattempt' : 'Attempt';
-        card.innerHTML = `
-            <div class="mock-card-header">
-                <span class="mock-title">${mock.title}</span>
-                <span class="mock-meta">${mock.questions} Questions</span>
-            </div>
-            <div class="mock-card-body">
-                <p class="mock-category">${mock.category}</p>
-                <p>Marks: ${mock.marks}</p>
-                <p>Duration: ${mock.duration} minutes</p>
-                ${statusHtml}
-            </div>
-            <div class="mock-card-actions">
-                <button class="button button-primary start-test-button" type="button" data-flt="${mock.id}">${actionLabel}</button>
-                ${attempted ? `<button class="button button-secondary view-flt-history" type="button" data-flt="${mock.id}">View History</button>` : ''}
-            </div>
-        `;
-        card.querySelector('.start-test-button')?.addEventListener('click', () => beginTestFromHome(mock));
-        card.querySelector('.view-flt-history')?.addEventListener('click', () => {
-            const section = qs('#attemptHistorySection');
-            renderAttemptHistory(mock.id);
-            section?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-        container.appendChild(card);
+    groups.forEach((group) => {
+        const items = homeMockList.filter((m) => (m.kind || 'flt') === group.kind);
+        if (!items.length) return;
+        const heading = createElement('div', { className: 'mock-group-heading' });
+        heading.innerHTML = `<h3>${group.label}</h3><p>${group.hint}</p>`;
+        container.appendChild(heading);
+        const grid = createElement('div', { className: 'mock-grid-inner' });
+        items.forEach((mock) => appendMockCard(grid, mock));
+        container.appendChild(grid);
     });
     renderAttemptHistory();
 };
@@ -158,16 +178,28 @@ export const renderAttemptHistory = (filterFltId = null) => {
 
 const loadQuestionsForFltReview = async (fltId) => {
     if (!fltId) return [];
-    const match = String(fltId).match(/^(civil|electrical)(\d{2})$/);
     const paths = [];
-    if (match) {
-        const folder = match[1];
-        const num = match[2];
+    const fltMatch = String(fltId).match(/^(civil|electrical)(\d{2})$/);
+    if (fltMatch) {
+        const folder = fltMatch[1];
+        const num = fltMatch[2];
         if (folder === 'civil') {
-            paths.push(`../data/civil/ce-flt${num}.js?v=20260804ai`, `../data/civil/flt${num}.js?v=20260804ai`);
+            paths.push(`../data/civil/ce-flt${num}.js?v=20260804trap`, `../data/civil/flt${num}.js?v=20260804trap`);
         } else {
-            paths.push(`../data/electrical/ee-flt${num}.js?v=20260804ai`, `../data/electrical/flt${num}.js?v=20260804ai`);
+            paths.push(`../data/electrical/ee-flt${num}.js?v=20260804trap`, `../data/electrical/flt${num}.js?v=20260804trap`);
         }
+    }
+    const stCivil = String(fltId).match(/^civil-st-([a-z]+)-(\d{2})$/);
+    if (stCivil) {
+        paths.push(`../data/civil/st/ce-st-${stCivil[1]}-${stCivil[2]}.js?v=20260804trap`);
+    }
+    const stEe = String(fltId).match(/^electrical-st-([a-z]+)-(\d{2})$/);
+    if (stEe) {
+        paths.push(`../data/electrical/st/ee-st-${stEe[1]}-${stEe[2]}.js?v=20260804trap`);
+    }
+    const stNc = String(fltId).match(/^noncore-st-([a-z]+)-(\d{2})$/);
+    if (stNc) {
+        paths.push(`../data/noncore/st/nc-st-${stNc[1]}-${stNc[2]}.js?v=20260804trap`);
     }
     for (const path of paths) {
         try {
@@ -178,7 +210,7 @@ const loadQuestionsForFltReview = async (fltId) => {
         }
     }
     try {
-        const module = await import('../data/questionBanks.js?v=20260804ai');
+        const module = await import('../data/questionBanks.js?v=20260804trap');
         const bank = module.questionBanks?.[fltId];
         if (Array.isArray(bank)) return bank;
     } catch {

@@ -1,26 +1,60 @@
-﻿import { appState } from './storage.js';
+import { appState } from './storage.js';
 
-const CACHE_BUST = '20260804ai';
+const CACHE_BUST = '20260804trap';
 
 const getPerTestPaths = (fltKey) => {
-    const match = fltKey.match(/^(civil|electrical)(\d{2})$/);
-    if (!match) return null;
-    const folder = match[1];
-    const testNumber = match[2];
-    const q = `?v=${CACHE_BUST}`;
-    if (folder === 'civil') {
+    const fltMatch = fltKey.match(/^(civil|electrical)(\d{2})$/);
+    if (fltMatch) {
+        const folder = fltMatch[1];
+        const testNumber = fltMatch[2];
+        const q = `?v=${CACHE_BUST}`;
+        if (folder === 'civil') {
+            return [
+                `../data/civil/ce-flt${testNumber}.js${q}`,
+                `../data/civil/flt${testNumber}.js${q}`,
+            ];
+        }
+        if (folder === 'electrical') {
+            return [
+                `../data/electrical/ee-flt${testNumber}.js${q}`,
+                `../data/electrical/flt${testNumber}.js${q}`,
+            ];
+        }
+        return [`../data/${folder}/flt${testNumber}.js${q}`];
+    }
+
+    // Subject-wise High-Yield: civil-st-som-01 → data/civil/st/ce-st-som-01.js
+    const stCivil = fltKey.match(/^civil-st-([a-z]+)-(\d{2})$/);
+    if (stCivil) {
+        const key = stCivil[1];
+        const num = stCivil[2];
+        const q = `?v=${CACHE_BUST}`;
         return [
-            `../data/civil/ce-flt${testNumber}.js${q}`,
-            `../data/civil/flt${testNumber}.js${q}`,
+            `../data/civil/st/ce-st-${key}-${num}.js${q}`,
+            `../data/civil/ce-st-${key}-${num}.js${q}`,
         ];
     }
-    if (folder === 'electrical') {
+    const stEe = fltKey.match(/^electrical-st-([a-z]+)-(\d{2})$/);
+    if (stEe) {
+        const key = stEe[1];
+        const num = stEe[2];
+        const q = `?v=${CACHE_BUST}`;
         return [
-            `../data/electrical/ee-flt${testNumber}.js${q}`,
-            `../data/electrical/flt${testNumber}.js${q}`,
+            `../data/electrical/st/ee-st-${key}-${num}.js${q}`,
+            `../data/electrical/ee-st-${key}-${num}.js${q}`,
         ];
     }
-    return [`../data/${folder}/flt${testNumber}.js${q}`];
+    const stNc = fltKey.match(/^noncore-st-([a-z]+)-(\d{2})$/);
+    if (stNc) {
+        const key = stNc[1];
+        const num = stNc[2];
+        const q = `?v=${CACHE_BUST}`;
+        return [
+            `../data/noncore/st/nc-st-${key}-${num}.js${q}`,
+            `../data/noncore/nc-st-${key}-${num}.js${q}`,
+        ];
+    }
+    return null;
 };
 
 export const loadQuestionBank = async (fltKey) => {
@@ -47,7 +81,7 @@ export const loadQuestionBank = async (fltKey) => {
     }
 
     if (!Array.isArray(questions)) {
-        throw new Error('Invalid question data.');
+        throw new Error('Invalid question data. Bank not found for: ' + fltKey);
     }
 
     appState.questions = questions;
