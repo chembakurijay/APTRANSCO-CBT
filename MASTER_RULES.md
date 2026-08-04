@@ -14,8 +14,8 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Prefer **application, design judgement, numerical multi-step, diagram-dependent, and site/practical** questions over definition recall
 - Include **practically able** questions — stems a field / design / substation / site engineer could face in real work, not classroom trivia
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
-- **Stem length:** almost every stem must be a **full exam-style paragraph** (context + data/conditions + ask) — **not one-line** definition plugs (see **Stem Length & Direct Cap**)
-- **Examiner language (STRICT):** technical stems must read like **APTRANSCO examiner writing**, not textbook exercise prompts — no bare “Find / Calculate / Determine …” workbook openers; frame the engineering situation first (see **Golden Rule 2B** and **Audit Q**)
+- **Stem length (STRICT):** technical default **30–50 words**; workbook one-liners **0**; 80+ words **0**; short 18–25-word stems **≤10%** tech; long 50–70-word scenarios **15–20%** tech (see **Golden Rule 2A** and **Audit R**)
+- **Examiner language (STRICT):** technical stems must read like **APTRANSCO examiner writing**, not textbook exercise prompts — no bare “Find / Calculate / Determine …” workbook openers; frame the engineering situation first; rotate openings (see **Golden Rule 2B**, **Audit Q**, **Audit R**)
 - **Direct questions ≤ 25%** of the full paper (and of each technical subject) — **≥ 75%** must need multi-step / judgement / diagram / trap thinking (see Golden Rule 2). Observed failure: papers that feel ~90% direct are **Fail** even if Easy count looks OK
 - **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
@@ -52,7 +52,7 @@ Observed failure mode: the agent/setter **states** Easy / Medium / Hard correctl
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
-- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates → **Audit Q Language & Authenticity**) and **Acceptance Threshold** met before APPROVED
+- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates → **Audit Q Language & Authenticity** → **Audit R Stem Length / Direct–Indirect / Examiner Flow**) and **Acceptance Threshold** met before APPROVED
 
 ---
 
@@ -414,22 +414,56 @@ Valid combinations: Numerical + Diagram, Numerical + Application, Diagram + Conc
 
 **Aligns with Bloom:** Remember ≤ 15% tech; Direct cap is the **stricter paper-feel gate** (Direct includes some Apply one-step plugs — those still count toward the 25%).
 
-### Golden Rule 2A – Stem Length (STRICT — no one-line stems)
+### Golden Rule 2A – Stem Length Bands (STRICT — APTRANSCO natural flow)
 
-**Almost all questions** must have a **substantive stem**, not a one-liner.
+APTRANSCO stems are **not verbose**, but they are also **not one-line textbook questions**. They have a **natural flow**. Word count is measured on the **stem only** (exclude options, matching lists, and figure captions).
 
-**Minimum stem standard (technical Qs):**
-1. **Not one line** for ≥ **90%** of technical questions (Non-core may stay shorter, but still not telegram-style).
-2. Typical good stem has **≥ 2–3 sentences** or one dense sentence with **multiple clauses**: setup/context → given data or conditions → what is asked.
-3. Include enough **exam context** that a candidate must **read carefully** (system type, assumptions, which quantity, at what condition) — not “What is SIL?” alone.
-4. **Hard / Medium / Application / Diagram / Practical:** stem must carry scenario + constraints; one-line “define / formula name” → **MODIFY**.
-5. **Easy (within Direct ≤ 25%):** may be shorter, but still **exam-plausible** with at least a clear condition or numeric setup — pure “X means?” definition stubs → rewrite.
+#### Stem length levels (technical Q1–Q70)
 
-**Fail examples:**  
-`What is Ferranti effect?` · `SIL equals?` · `Unit of reluctance?` · `Slope of BMD is?`  
-**Pass shape:** give line/system/data/figure reference, state the ask with conditions, then options that trap wrong assumptions.
+| Level | Words | Status | Paper target |
+|---|---:|---|---|
+| **L1 — Workbook** | **8–15** | ❌ **Forbidden** | **0** |
+| **L2 — Short** | **18–25** | ⚠️ Use sparingly | **≤ 10%** of technical |
+| **L3 — APTRANSCO standard** | **30–50** | ✅ **Default** | **≈ 70%** of technical |
+| **L4 — Long scenario** | **50–70** | ✅ For Practical / code / AR / judgement / application | **15–20%** of technical |
+| **L5 — Fatiguing** | **≥ 80** | ❌ **Forbidden** | **0** |
 
-**Compliance check:** flag any technical stem under ~**120 characters** or a single short clause with no data/condition; require rewrite unless it is a rare Non-core / allowed Easy Direct within the 25% budget.
+**L1 Fail examples:** “Find the maximum bending moment.” · “Calculate the slip.” · “Determine the bearing capacity.”
+
+**L2 (minimum acceptable — rare):** “A simply supported beam carries the loading shown. The maximum bending moment is closest to”
+
+**L3 (recommended default):** “During checking of a simply supported reinforced concrete beam, the design office confirms the loading arrangement shown in the figure. Neglecting self-weight and assuming elastic behaviour, the maximum bending moment developed in the beam is closest to”
+
+**L4 (long scenario — selective):** Practical / code / AR / engineering judgement / application only — e.g. inspection after rainfall + records + most probable reason.
+
+#### Sentence structure (mandatory shape)
+
+Prefer:
+
+```
+Context → Observation → Relevant condition / constraint → Examiner question
+```
+
+Not merely Situation → bare Question.
+
+**Golden formula for every technical question:**
+
+```
+Engineering Context
+        ↓
+Engineering Observation
+        ↓
+Constraint / Condition (preferred where applicable)
+        ↓
+Examiner Question
+```
+
+**Hard / Medium / Application / Diagram / Practical:** must carry scenario + constraints; L1 workbook stems → **MODIFY**.  
+**Easy (within Direct ≤ 25%):** may land in L2 only if still exam-plausible with a clear condition or numeric setup — pure “X means?” stubs → rewrite to at least L2–L3.
+
+**Compliance:** every technical stem is tagged L1–L5; publish the **word-count histogram** in the Compliance Dashboard. Fail if L1 > 0, L5 > 0, L2 > 10%, L3 far below ~70%, or L4 outside 15–20% without justification.
+
+**Measurable gate:** **Audit R — Stem Length, Direct/Indirect & Examiner Flow**.
 
 ### Golden Rule 2B – Examiner Language & Exam Authenticity (STRICT)
 
@@ -448,8 +482,8 @@ Engineering situation
 **Forbidden cognitive path:** Given values → formula already in stem → substitute → answer.
 
 **Required stem shape (technical):**
-1. **Situation first** — commissioning, routine testing, cube testing, proof loading, site inspection, checking reinforcement, concreting, plate-load / Proctor, substation / design check, contractor observation, “while analysing the beam shown…”, etc.
-2. **Then data / conditions** — ratings, observations, constraints, figure reference — **without** writing the governing equation.
+1. **Situation / context first** — commissioning, routine testing, cube testing, proof loading, site inspection, checking reinforcement, concreting, plate-load / Proctor, substation / design check, contractor observation, “for the beam shown…”, etc.
+2. **Then observation + data / conditions** — ratings, observations, constraints, figure reference — **without** writing the governing equation.
 3. **Then the ask** in examiner voice — not a bare imperative.
 
 **Forbidden openers / cues (automatic MODIFY unless rare Non-core):**
@@ -461,20 +495,35 @@ Engineering situation
 - Solvable by **immediate direct substitution** with **no** concept selection / interpretation / competing check
 - Reads as workbook drill: “Find the slip.” / “Calculate bearing capacity.” / “Determine regulation.”
 
-**Preferred ask language:**
-- “Which of the following best represents…”
-- “The most appropriate / closest value is…”
-- “Under these operating / site conditions…”
-- “The engineer should expect…”
-- “The correct interpretation / conclusion is…”
-- “The observed behaviour indicates…”
-- “Which conclusion follows…” / “Which action is most defensible…”
+**Preferred ask endings (rotate — do not end every stem with Find/Calculate/Determine):**
+- Which value is closest to…
+- Which conclusion is most appropriate / most defensible…
+- Which interpretation is correct…
+- Which action should be taken first…
+- Which design choice is appropriate…
+- Which statement best explains the observation…
+- Which parameter governs the behaviour…
+- Which recommendation is technically justified…
+- The engineer should expect… / The correct interpretation is…
+
+**Opening variety (STRICT — avoid opener monoculture):**
+Do **not** start ~90% of stems with the same word (`During…` / `While…` / `In…` / `When…`). Aim for **20–30 distinct opening patterns** across a 70-technical paper.
+
+Good starter families (mix freely):
+- During routine inspection… / During design review… / During commissioning… / During quality control… / During proof testing…
+- At a construction site… / At a pumping station… / At a substation…
+- In a laboratory test… / In the design office…
+- For the beam shown… / For the footing shown…
+- Based on field observations… / Based on the test report…
+- Site records indicate… / Laboratory observations show… / The inspection report indicates…
+- The contractor reports… / The supervising engineer observes… / The maintenance engineer notices…
+- An engineer reviewing the design… / A field inspection reveals… / A quality-control engineer records…
 
 **Hard difficulty (language rule):** Hard ≠ longer arithmetic / more digits. Prefer **selecting the right concept**, **interpreting a figure**, **identifying the governing code/limit**, or **eliminating closely competing options**.
 
 **Paper mix (non-negotiable feel):** after a few items, candidates must **not** be able to predict “identify formula → substitute → done.” Enough items must require **comparison, interpretation, judgement, reasoning, or code application**. Direct substitution plugs stay inside the **Direct ≤ 25%** budget only.
 
-**Pass/Fail:** every technical question must pass **Audit Q — Question Language & Exam Authenticity** (score ≥ 8/10; no automatic-reject flags). A paper with correct answers but textbook stems **cannot be APPROVED**.
+**Pass/Fail:** every technical question must pass **Audit Q** (language ≥ 8/10; no auto-reject flags) **and** **Audit R** (word-band mix + Direct/Non-direct register + opening variety + flow). A paper with correct answers but textbook / one-line stems **cannot be APPROVED**.
 
 ### Golden Rule 3 – Distractor Engineering
 At least **70% of distractors** must reflect real engineering mistakes:
@@ -831,15 +880,16 @@ Stage 2 — Difficulty Validation (Difficulty Engine + Bias Correction)
   without judgement → MODIFY (harden stem) or downgrade label (Bias Correction).
   Plan Medium/Hard first at corrected depth; never fill Easy then inflate labels.
   Direct Cap: mark each Q Direct / Non-direct; paper Direct ≤ 25% (Golden Rule 2).
-  Stem Length: technical stems must not be one-liners (Golden Rule 2A).
-  Examiner Language: no Find/Calculate/Determine openers; situation-first stems (Rule 2B / Audit Q).
+  Stem Length Bands: tag L1–L5; L3 ≈70%; L2 ≤10%; L4 15–20%; L1=L5=0 (Golden Rule 2A / Audit R).
+  Examiner Language: no Find/Calculate/Determine openers; Context→Observation→Condition→Ask; rotate openings (Rule 2B / Audit Q / Audit R).
 
 Stage 3 — Pattern Validation
   Confirm the stated pattern (Numerical/Diagram/Conceptual/etc.) is genuine.
   A question claiming "Diagram" without a valid image path is REJECTED.
   A question claiming "Application" that only asks for recall is REJECTED.
-  One-line definition / formula-name stems → REJECTED or MODIFY (Rule 2A).
+  One-line workbook / L1 stems → REJECTED or MODIFY (Rule 2A / Audit R).
   Textbook-exercise wording / exposed formula cue → REJECTED or MODIFY (Rule 2B / Audit Q).
+  Same opener overused (≥ ~40% “During…” etc.) → MODIFY for opening variety (Audit R).
 
 Stage 4 — Diagram Validation (Professional + Priority Check)
   ✓ Diagram exists at the declared file path
@@ -1096,6 +1146,7 @@ Only after **all** of the following pass may a paper be marked **APPROVED** (and
 | 17 | **O. Answer Key Distribution Audit** | A/B/C/D balanced; no long same-letter runs |
 | 18 | **P. Non-core Subject Gates** | Quant / GA / Reasoning / English / Computer each pass detailed checks |
 | 19 | **Q. Question Language & Exam Authenticity Audit** | Technical stems read as APTRANSCO examiner writing — not textbook “Find/Calculate” drills |
+| 20 | **R. Stem Length, Direct/Indirect & Examiner Flow Audit** | Word-band mix (30–50 default); Direct ≤25%; opening variety; Context→Observation→Condition→Ask maintained |
 
 **Fail any gate → not APPROVED.** Fix → re-run failed gates (and Human Examiner if stems changed materially).
 
@@ -1624,7 +1675,7 @@ If a Human Examiner rates the paper approximately like: syllabus high but **APTR
 | APTRANSCO examiner language | 2 |
 | Engineering context | 2 |
 | Formula not exposed (no equation / symbol cue in stem) | 2 |
-| Natural stem flow (situation → data → ask) | 2 |
+| Natural stem flow (Context → Observation → Condition → Ask) | 2 |
 | Cognitive challenge (concept select / interpret / judge — not instant plug-in) | 2 |
 
 **Pass per question:** total **≥ 8/10** and **zero automatic-reject flags**.
@@ -1650,8 +1701,8 @@ If a Human Examiner rates the paper approximately like: syllabus high but **APTR
 | A transformer has 96% efficiency at full load. Find the output power. | During the performance test of a 250 kVA distribution transformer, the full-load efficiency is observed to be 96% at unity power factor while delivering rated load. The output power is |
 | Ast,min = 0.85bd/fy. Minimum steel is… | An RCC beam detailed with Fe415 is checked against IS 456 minimum tension steel before casting. Relative to the code minimum expression for the given b and d, the steel that must be provided is |
 
-#### Context starters (prefer these flavours)
-During commissioning… / During routine testing… / During cube testing… / During proof loading… / While checking reinforcement… / During site inspection… / During concreting… / During a plate load test… / While conducting a standard Proctor test… / In a 132/33 kV substation… / A contractor observes… / During load-flow studies… / An RCC beam designed by LSM… / While analysing the beam shown…
+#### Context starters (prefer these flavours — rotate; see Audit R opening variety)
+During commissioning… / During routine testing… / During cube testing… / During proof loading… / While checking reinforcement… / During site inspection… / During concreting… / During a plate load test… / While conducting a standard Proctor test… / In a 132/33 kV substation… / A contractor observes… / During load-flow studies… / An RCC beam designed by LSM… / While analysing the beam shown… / At a construction site… / Based on the test report… / Site records indicate… / The supervising engineer observes… / For the beam shown…
 
 #### Paper-level Pass rules
 - **≥ 90%** of technical questions score ≥ 8/10
@@ -1661,6 +1712,56 @@ During commissioning… / During routine testing… / During cube testing… / D
 - Priority fix order: **rewrite every technical stem for authenticity** before adding harder calculations or more diagrams
 
 **Report template:** table of Q → score /10 → flags → Pass/Fail; summary % Pass; list of rewrites required.
+
+---
+
+### R. Stem Length, Direct/Indirect & Examiner Flow Audit (Mandatory)
+
+**Purpose:** Quantifies whether technical stems keep **APTRANSCO natural length**, stay inside the **Direct ≤ 25%** budget, and preserve **examiner flow / opening variety** — the craftsmanship band that most improves mock-series feel. Implements **Golden Rule 2**, **2A**, and the measurable half of **2B**.
+
+Run **before** CBT packaging (`ce-flt01.js` / EE banks). Fail Audit R → rewrite stems; do **not** convert to code.
+
+Applies to **all technical questions (Q1–Q70)**. Non-core: no L1 workbook drills; shorter stems allowed but still exam-plausible.
+
+#### Per-question register (mandatory columns)
+
+| Q | Words | Band L1–L5 | Direct / Non-direct | Opening pattern | Flow (C→O→Cond→Ask) Y/N | Ending style OK Y/N | Status |
+|---|---:|---|---|---|---|---|---|
+
+**Word count:** stem prose only (exclude options, List-I/II cells, table cells, LaTeX-only tokens counted as words if spoken aloud).
+
+#### Paper-level Pass rules (all must hold)
+
+| Item | Standard |
+|---|---|
+| Technical stem length default | **≈70%** of tech in **L3 (30–50 words)** |
+| Short stems **L2 (18–25)** | **≤ 10%** of technical |
+| Long scenario **L4 (50–70)** | **15–20%** of technical (Practical / code / AR / judgement / application) |
+| Workbook **L1 (8–15)** | **0** |
+| Fatiguing **L5 (≥80)** | **0** |
+| Engineering context | **Mandatory** on every tech Q |
+| Engineering observation | **Mandatory** on every tech Q |
+| Constraint / condition | **Preferred** where applicable; required for Hard / Practical / Diagram |
+| Examiner-style ending | **Mandatory** (no Find/Calculate/Determine openers or endings as the sole ask) |
+| Find/Calculate/Determine openers | **0** |
+| Direct / Non-direct | Full paper **≤ 25% Direct**; technical **≤ 18 Direct**; each tech subject **≤ 25%** Direct |
+| Opening variety | **≥ 20 distinct opening patterns** across tech Qs; no single opener family (e.g. “During…”) **> 40%** of tech |
+| Examiner flow maintained | **≥ 90%** tech show Context → Observation → (Condition) → Ask |
+
+#### Automatic Fail flags
+- Any L1 or L5 technical stem
+- L2 share > 10% or L3 share grossly under ~60% without rewrite plan
+- Direct > 25% (full or tech or subject)
+- ≥ 40% tech sharing the same first-word opener family
+- Stem is only Situation → bare “Calculate…” with no observation/condition
+- Packaging attempted while Audit R status is Fail
+
+#### Interaction with Audit Q
+- **Audit Q** = language authenticity scorecard / formula-cue ban / Hard craftsmanship
+- **Audit R** = **measurable** length histogram + Direct register + opening/flow checklist  
+Both must Pass. Do not treat a high Audit Q score as a waiver for L1 stems or Direct overrun.
+
+**Report template:** word-band histogram; Direct count; top opening patterns with %; list of Qs failing flow/ending; Pass/Fail.
 
 ---
 ### Recommended Acceptance Threshold (Mandatory for APPROVED)
@@ -1684,8 +1785,10 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
-| Stem length | Technical stems are full exam paragraphs (context + data/conditions + ask); **not one-liners** (≥90% tech); Rule 2A |
+| Stem length bands (Rule 2A / Audit R) | Tech: **L3 30–50 words ≈70%**; L2 18–25 **≤10%**; L4 50–70 **15–20%**; **L1=0**; **L5=0**; Context→Observation→Condition→Ask |
+| Opening variety (Audit R) | ≥20 distinct openings; no single opener family >40% tech |
 | Question language / authenticity (Audit Q) | ≥90% tech ≥8/10; **0** Find/Calculate openers; **0** formula-in-stem cues; no instant plug-in path outside Direct≤25%; Hard = concept/figure/code competition not longer arithmetic; Practical = real decision; explanations tailored not boilerplate |
+| Stem Length / Direct / Flow (Audit R) | Histogram + Direct register + flow checklist all Pass before packaging |
 | Distractor quality (Audit N) | ≥95% Qs with all distractors Good; no absurd non-competitive site options |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
@@ -1727,6 +1830,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 17 O Answer Key Distribution Audit
 18 P Non-core Subject Gates (Quant / GA / Reasoning / English / Computer)
 19 Q Question Language & Exam Authenticity Audit
+20 R Stem Length, Direct/Indirect & Examiner Flow Audit
    → Acceptance Threshold all Pass
    → User APPROVED / MODIFY / REJECT
    → Code + crops only after APPROVED
