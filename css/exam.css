@@ -260,7 +260,7 @@
 
 .exam-page:fullscreen .question-card-scroll,
 .exam-page:-webkit-full-screen .question-card-scroll {
-    flex: 1 1 auto !important;
+    flex: 1 1 0% !important;
     min-height: 0 !important;
     height: auto !important;
     max-height: none;
@@ -382,10 +382,11 @@
     max-width: 240px;
     min-width: 180px;
     align-self: stretch;
-    height: auto !important;
+    height: 100% !important;
     max-height: 100% !important;
-    overflow-x: hidden;
-    overflow-y: auto;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
     visibility: visible;
 }
 
@@ -936,24 +937,16 @@ body.calculator-dragging iframe {
         max-width: none !important;
         min-width: 0 !important;
         max-height: min(30dvh, 240px);
-        order: -1;
-    }
-
-    .exam-page:fullscreen .question-card,
-    .exam-page:-webkit-full-screen .question-card {
-        flex: 1 1 0 !important;
-        width: 100% !important;
+        height: auto !important;
         min-height: 0 !important;
-        height: 100% !important;
-        max-height: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        overflow: hidden !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        order: -1;
     }
 
     .exam-page:fullscreen .question-card-scroll,
     .exam-page:-webkit-full-screen .question-card-scroll {
-        flex: 1 1 auto !important;
+        flex: 1 1 0% !important;
         min-height: 0 !important;
         overflow-y: auto !important;
     }
@@ -1011,3 +1004,176 @@ body.calculator-dragging iframe {
         padding: 16px;
     }
 }
+
+/* ==========================================================================
+   FULLSCREEN SCROLL — authoritative overrides (palette + question)
+   Fixes: height:fit-content / height:auto parents prevent overflow-y:auto.
+   ========================================================================== */
+.exam-page:fullscreen,
+.exam-page:-webkit-full-screen,
+.exam-page.exam-fs-active {
+    display: grid !important;
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-height: 100vh !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+}
+
+.exam-page:fullscreen > .exam-header,
+.exam-page:-webkit-full-screen > .exam-header,
+.exam-page.exam-fs-active > .exam-header {
+    grid-row: 1 !important;
+    flex: none !important;
+    min-height: 0 !important;
+}
+
+.exam-page:fullscreen > .exam-body,
+.exam-page:-webkit-full-screen > .exam-body,
+.exam-page.exam-fs-active > .exam-body {
+    grid-row: 2 !important;
+    display: grid !important;
+    grid-template-columns: 240px minmax(0, 1fr) !important;
+    grid-template-rows: minmax(0, 1fr) !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+.exam-page:fullscreen .palette-panel:not([hidden]):not(.collapsed),
+.exam-page:-webkit-full-screen .palette-panel:not([hidden]):not(.collapsed),
+.exam-page.exam-fs-active .palette-panel:not([hidden]):not(.collapsed) {
+    position: relative !important;
+    top: auto !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 240px !important;
+    max-width: 240px !important;
+    min-width: 180px !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+    align-self: stretch !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+    box-sizing: border-box !important;
+}
+
+.exam-page:fullscreen > .exam-body:has(.palette-panel[hidden]),
+.exam-page:fullscreen > .exam-body:has(.palette-panel.collapsed),
+.exam-page:-webkit-full-screen > .exam-body:has(.palette-panel[hidden]),
+.exam-page:-webkit-full-screen > .exam-body:has(.palette-panel.collapsed),
+.exam-page.exam-fs-active > .exam-body:has(.palette-panel[hidden]),
+.exam-page.exam-fs-active > .exam-body:has(.palette-panel.collapsed) {
+    grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.exam-page:fullscreen > .exam-body:has(.palette-panel[hidden]) .question-card,
+.exam-page:fullscreen > .exam-body:has(.palette-panel.collapsed) .question-card,
+.exam-page:-webkit-full-screen > .exam-body:has(.palette-panel[hidden]) .question-card,
+.exam-page:-webkit-full-screen > .exam-body:has(.palette-panel.collapsed) .question-card,
+.exam-page.exam-fs-active > .exam-body:has(.palette-panel[hidden]) .question-card,
+.exam-page.exam-fs-active > .exam-body:has(.palette-panel.collapsed) .question-card {
+    grid-column: 1 !important;
+}
+
+.exam-page:fullscreen .question-card,
+.exam-page:-webkit-full-screen .question-card,
+.exam-page.exam-fs-active .question-card {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: auto !important;
+    max-width: none !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.exam-page:fullscreen .question-card-scroll,
+.exam-page:-webkit-full-screen .question-card-scroll,
+.exam-page.exam-fs-active .question-card-scroll {
+    flex: 1 1 0% !important;
+    flex-grow: 1 !important;
+    flex-shrink: 1 !important;
+    flex-basis: 0% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+}
+
+.exam-page:fullscreen .question-card-footer,
+.exam-page:-webkit-full-screen .question-card-footer,
+.exam-page.exam-fs-active .question-card-footer {
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    visibility: visible !important;
+}
+
+.exam-page:fullscreen > .calculator-panel,
+.exam-page:-webkit-full-screen > .calculator-panel,
+.exam-page.exam-fs-active > .calculator-panel {
+    position: absolute !important;
+    z-index: 9000 !important;
+}
+
+@media (max-width: 980px) {
+    .exam-page:fullscreen > .exam-body,
+    .exam-page:-webkit-full-screen > .exam-body,
+    .exam-page.exam-fs-active > .exam-body {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: minmax(120px, 28dvh) minmax(0, 1fr) !important;
+    }
+
+    .exam-page:fullscreen .palette-panel:not([hidden]):not(.collapsed),
+    .exam-page:-webkit-full-screen .palette-panel:not([hidden]):not(.collapsed),
+    .exam-page.exam-fs-active .palette-panel:not([hidden]):not(.collapsed) {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        overflow-y: auto !important;
+    }
+
+    .exam-page:fullscreen .question-card,
+    .exam-page:-webkit-full-screen .question-card,
+    .exam-page.exam-fs-active .question-card {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .exam-page:fullscreen .question-card-scroll,
+    .exam-page:-webkit-full-screen .question-card-scroll,
+    .exam-page.exam-fs-active .question-card-scroll {
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        overflow-y: auto !important;
+    }
+}
+
