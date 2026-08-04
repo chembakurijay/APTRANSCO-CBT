@@ -16,6 +16,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
 - **Stem length (STRICT):** technical default **30–50 words**; workbook one-liners **0**; 80+ words **0**; short 18–25-word stems **≤10%** tech; long 50–70-word scenarios **15–20%** tech (see **Golden Rule 2A** and **Audit R**)
 - **Examiner language (STRICT):** technical stems must read like **APTRANSCO examiner writing**, not textbook exercise prompts — no bare “Find / Calculate / Determine …” workbook openers; frame the engineering situation first; rotate openings (see **Golden Rule 2B**, **Audit Q**, **Audit R**)
+- **Origin (STRICT — stream-specific):** inspire **mostly** from allowed past papers — **EE: APTRANSCO-family PYQs**; **CE: APPSC Civil family + GATE CE only if needed, always Transco-range** — target **Inspired+Modified ≥70%**, Direct ≤2 (see **Stream-specific Origin Policy** / Audit G)
 - **Direct questions ≤ 25%** of the full paper (and of each technical subject) — **≥ 75%** must need multi-step / judgement / diagram / trap thinking (see Golden Rule 2). Observed failure: papers that feel ~90% direct are **Fail** even if Easy count looks OK
 - **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
@@ -1112,12 +1113,40 @@ Every question must carry one of these five labels:
 |---|---|
 | **Direct PYQ** | Same question (same values/wording) as a published paper |
 | **Modified PYQ** | Similar question but values or context changed |
-| **Inspired by PYQ** | Same topic/theme appeared in past exams, question freshly written |
-| **AI Generated** | Novel question — concept not seen in collected PYQ database |
+| **Inspired by PYQ / family paper** | Same topic/theme appeared in past exams (see stream source rules below); question freshly written |
+| **AI Generated** | Novel question — concept not seen in collected PYQ / family-paper database |
 | **New Concept** | Topic never tested in any available source paper |
 
 No paper may contain more than **2 Direct PYQs**.  
-Origin mix must also satisfy the **Final Approval Workflow** (Weightage + PYQ Themes + Answer Verification + Audits G–O + Non-core gates) and the **Acceptance Threshold** below (brand-new ≥ 60%, Modified PYQ band per threshold, exact mock duplicates = 0).
+**Prefer inspiration over invention:** papers must be **mostly** Inspired / Modified from allowed sources (see **Stream-specific Origin Policy**). Blind “brand-new ≥60%” is **revoked** as the primary target.
+
+### Stream-specific Origin Policy (STRICT — user rule)
+
+#### Electrical (EE)
+- **Many APTRANSCO / family PYQs are available** — use them.
+- Target: **≥70%** technical + overall preference for **Inspired-from-PYQ** or **Modified-PYQ** (APTRANSCO AEE / APGENCO / TSTRANSCO / APPSC EE family as available in the project source set).
+- Direct / verbatim PYQ: **≤ 2** (prefer **0**).
+- Brand-new / AI-original: **≤ 30%** (fill gaps only).
+- Every Inspired/Modified EE item should cite **source family + topic** (paper/year if known; else question-bank / PYQ-figure path).
+- Diagrams: prefer **PYQ / core EE figures** (`diagramSource=pyq` honesty rules still apply).
+
+#### Civil (CE)
+- **Direct APTRANSCO Civil PYQ papers are generally not available** in this project.
+- Therefore inspire **mostly** from:
+  1. **APPSC AEE Civil** (and closely related AP state AEE Civil) question papers / themes  
+  2. **GATE CE** themes **only when needed** for coverage  
+- **Hard range lock:** even when a theme is taken from GATE, difficulty, wording, and depth must stay in **APTRANSCO AEE CBT range** — not GATE research / obscure theory / multi-hour numericals.
+- Also allowed as supporting inspiration: APTRANSCO-labelled **topic question banks** and **core syllabus diagram books** in `sourcefiles-ce` (Steel / Foundation banks, civil-core-diagrams) — still treated as family sources, not Direct PYQ copies.
+- Target: **≥70%** Inspired / Modified from APPSC-family / (GATE-in-Transco-range) / approved CE source banks.
+- Direct APTRANSCO Civil verbatim PYQ: **0** (typical). Direct copies from APPSC/GATE: **≤ 2** and must be substantially rewritten preferred → prefer Inspired over Direct.
+- Brand-new / AI-original: **≤ 30%**.
+
+#### Both streams
+- **0** exact duplicates of earlier mocks.
+- Wording must still pass **Audit Q** + **Audit R** (examiner language, stem bands).
+- Audit **J** (traceability): every Inspired/Modified item lists allowed source class + topic; GATE-inspired CE items must note **“GATE theme → Transco-range rewrite”**.
+
+Origin mix must also satisfy the **Final Approval Workflow** and the **Acceptance Threshold** below (stream Origin targets replace the old brand-new≥60% primary rule).
 
 ---
 
@@ -1135,7 +1164,7 @@ Only after **all** of the following pass may a paper be marked **APPROVED** (and
 | 6 | **Human Examiner Pass** | Independent Accept / Modify / Reject |
 | 7 | **Diagram Dependency Audit** | Every Diagram Q is **PASS** or **STRONG** (not WEAK/FAIL) |
 | 8 | **Hard / Application Justification Audit** | Every Hard/Application claim has a valid justification line |
-| 9 | **G. Question Origin Audit** | Where each Q came from; Direct ≤2; brand-new ≥60% |
+| 9 | **G. Question Origin Audit** | Where each Q came from; Direct ≤2; **Inspired/Modified ≥70%** per stream source rules |
 | 10 | **H. APTRANSCO Similarity Audit** | Subject-wise match; overall ≥90%; honesty on differences |
 | 11 | **I. Duplicate Audit** | Vs prior FLTs / ST / mini / PYQ use in mocks; exact dups = 0 |
 | 12 | **J. PYQ Traceability Audit** | Every PYQ-derived Q lists source + modification level |
@@ -1289,34 +1318,37 @@ Together with **Subject Weightage (A)**, **PYQ Themes (B)**, **Answer Verificati
 
 ### G. Question Origin Audit (Mandatory)
 
-Shows exactly where every question came from.
+Shows exactly where every question came from. Applies **Stream-specific Origin Policy** (EE = PYQ-first; CE = APPSC / GATE-in-Transco-range).
 
 | Category | Count | % | Status |
 |---|---:|---:|---|
-| Completely New (AI-created) | XX | XX% | Pass |
-| Inspired from textbook concept | XX | XX% | Pass |
-| Modified PYQ | XX | XX% | Pass |
-| Direct PYQ | XX | XX% | Pass/Reject |
-| Modified previous mock | XX | XX% | Review |
+| Inspired (allowed family source) | XX | XX% | Pass if ≥ target with Modified |
+| Modified PYQ / family paper | XX | XX% | Pass |
+| Direct PYQ | XX | XX% | Pass only if ≤2 |
+| Brand-new / AI-original | XX | XX% | Pass if ≤30% |
+| Modified previous mock | XX | XX% | Review (keep ≤10% concept reuse) |
 | Diagram-derived from core PDF / PYQ figure | XX | XX% | Pass |
 
-#### Origin rules
-- Direct PYQs ≤ **2**
-- Modified PYQs preferred ≤ **20%** (approval band: see Acceptance Threshold)
-- Brand-new questions (Completely New + New Concept + fresh AI-original) ≥ **60%**
+#### Origin rules (supersedes old brand-new≥60% primary target)
+- **Inspired + Modified (allowed sources) ≥ 70%** of the paper (prefer higher on technical Qs)
+- **Brand-new / AI-original ≤ 30%**
+- Direct PYQs ≤ **2** (CE APTRANSCO Direct typically **0**)
+- EE: sources = APTRANSCO / family EE PYQs and EE question banks in project sources
+- CE: sources = **APPSC AEE Civil family** first; **GATE CE only if needed** and rewritten to **APTRANSCO AEE range**; plus CE topic banks / core diagrams
 - Diagram-derived questions counted and listed (may overlap other origin labels; declare crop source)
-- Every Modified PYQ must list its source paper/year/topic
+- Every Inspired/Modified item must list source class + topic (and paper/year when known)
+- GATE-inspired Civil items must explicitly state they were **range-limited to Transco AEE**
 
 #### Per-question origin example
 
 | Q | Origin |
 |---|---|
-| Q4 | Modified textbook figure |
-| Q12 | AI-generated numerical |
-| Q22 | Modified APTRANSCO-family PYQ |
-| Q44 | Modified GATE 2022 Bode figure |
-| Q61 | Modified GATE Analog Electronics |
-| Q69 | Completely new application question |
+| Q4 | Inspired — APPSC AEE Civil SOM (beam BM theme); Transco-range rewrite |
+| Q12 | Modified — APTRANSCO-family EE PYQ (machines) |
+| Q22 | Inspired — GATE CE foundation theme → Transco-range rewrite |
+| Q44 | Inspired — EE PYQ Bode figure crop |
+| Q61 | Brand-new application (gap fill) |
+| Q69 | Inspired — APPSC Civil soil / seepage theme |
 
 ---
 
@@ -1773,9 +1805,10 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Subject weightage (Gate A) | Exact subject counts + official sequence |
 | PYQ themes (Gate B) | ≥60% high-frequency themes/subject; no unplanned Missing |
 | Answer verification (Gate C) | **100/100** keys reworked; result matches exactly one given option |
-| Original / brand-new questions | **≥ 60%** |
-| Modified PYQs | **20–35%** (prefer closer to 20% when possible) |
-| Direct PYQs | **≤ 2 questions** |
+| Original / brand-new questions | **≤ 30%** (gap fill only; no longer the primary target) |
+| Inspired + Modified from allowed sources | **≥ 70%** (EE: APTRANSCO-family PYQ; CE: APPSC Civil family + GATE-in-Transco-range as needed) |
+| Modified PYQs / family papers | Included inside the ≥70% Inspired+Modified budget; cite source class + topic |
+| Direct PYQs | **≤ 2 questions** (CE APTRANSCO Direct typically **0**) |
 | Exact duplicates vs earlier mocks | **0** |
 | Repeated concepts vs earlier mocks | **≤ 10%** |
 | APTRANSCO similarity (overall) | **≥ 90%** |
