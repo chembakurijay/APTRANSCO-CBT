@@ -12,6 +12,15 @@
         position: relative !important;
         top: auto !important;
     }
+
+    /* Do not let non-FS mobile rules collapse fullscreen exam body */
+    .exam-page:fullscreen .exam-body,
+    .exam-page:-webkit-full-screen .exam-body {
+        display: flex !important;
+        min-height: 0 !important;
+        height: auto !important;
+        overflow: hidden !important;
+    }
 }
 
 @media (max-width: 760px) {
