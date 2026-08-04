@@ -18,6 +18,7 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - **Examiner language (STRICT):** technical stems must read like **APTRANSCO examiner writing**, not textbook exercise prompts — no bare “Find / Calculate / Determine …” workbook openers; frame the engineering situation first; rotate openings (see **Golden Rule 2B**, **Audit Q**, **Audit R**)
 - **Origin (STRICT — stream-specific):** inspire **mostly** from allowed past papers — **EE: APTRANSCO-family PYQs**; **CE: APPSC Civil family + GATE CE only if needed, always Transco-range** — target **Inspired+Modified ≥70%**, Direct ≤2 (see **Stream-specific Origin Policy** / Audit G)
 - **Direct questions ≤ 25%** of the full paper (and of each technical subject) — **≥ 75%** must need multi-step / judgement / diagram / trap thinking (see Golden Rule 2). Observed failure: papers that feel ~90% direct are **Fail** even if Easy count looks OK
+- **Solve-time floor (STRICT):** official CBT = **180 min**; the paper must **not** be finishable before **150 min (2 hr 30 min)** even by a top student or careful AI — enforce via **Audit S**
 - **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
 
@@ -53,7 +54,7 @@ Observed failure mode: the agent/setter **states** Easy / Medium / Hard correctl
 - Distractors are real engineering mistakes
 - Explanations are complete (why correct + why each wrong + formula/steps)
 - Overall paper would pass a senior APTRANSCO examiner review
-- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates → **Audit Q Language & Authenticity** → **Audit R Stem Length / Direct–Indirect / Examiner Flow**) and **Acceptance Threshold** met before APPROVED
+- **Full Final Approval Workflow** complete (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner → Diagram Dependency → Hard/App Justifications → Audits G–O → Non-core Subject Gates → **Audit Q Language & Authenticity** → **Audit R Stem Length / Direct–Indirect / Examiner Flow** → **Audit S Minimum Solve-Time Floor ≥150 min**) and **Acceptance Threshold** met before APPROVED
 
 ---
 
@@ -93,6 +94,8 @@ Observed failure mode: the agent/setter **states** Easy / Medium / Hard correctl
 - Non-Core Section → 30 questions
 - Total → 100 MCQs
 - CBT Pattern
+- **Official duration:** **180 minutes**
+- **Solve-time floor (STRICT):** even a **top AEE aspirant** or a **careful AI/solver** must need **≥ 150 minutes** of honest work to finish the paper at high accuracy — papers that a strong candidate can clear in under **2 hr 30 min** are **Fail** (see **Audit S**)
 
 ## Official Question Sequence
 
@@ -524,7 +527,7 @@ Good starter families (mix freely):
 
 **Paper mix (non-negotiable feel):** after a few items, candidates must **not** be able to predict “identify formula → substitute → done.” Enough items must require **comparison, interpretation, judgement, reasoning, or code application**. Direct substitution plugs stay inside the **Direct ≤ 25%** budget only.
 
-**Pass/Fail:** every technical question must pass **Audit Q** (language ≥ 8/10; no auto-reject flags) **and** **Audit R** (word-band mix + Direct/Non-direct register + opening variety + flow). A paper with correct answers but textbook / one-line stems **cannot be APPROVED**.
+**Pass/Fail:** every technical question must pass **Audit Q** (language ≥ 8/10; no auto-reject flags), **Audit R** (word-band mix + Direct/Non-direct register + opening variety + flow), **and Audit S** (honest + fast-top/AI solve-time both ≥ 150 min). A paper with correct answers but textbook / one-line stems, or one a top solver clears before **2 hr 30 min**, **cannot be APPROVED**.
 
 ### Golden Rule 3 – Distractor Engineering
 At least **70% of distractors** must reflect real engineering mistakes:
@@ -1061,7 +1064,7 @@ Examiner note: <one-line reason>
 Paper may be shown to the user for approval only after the Human Examiner pass is complete.  
 User approval is still required before converting to code.
 
-**Mandatory before any paper is marked APPROVED:** complete the **Final Approval Workflow** end-to-end (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner through Audits G–O and Non-core Subject Gates). A paper that passes Human Examiner but fails any later audit must not be APPROVED.
+**Mandatory before any paper is marked APPROVED:** complete the **Final Approval Workflow** end-to-end (Subject Weightage → PYQ Themes → Compliance → Setter Rubric → Answer Verification → Examiner through Audits G–O, Non-core Subject Gates, **Audit Q**, **Audit R**, and **Audit S**). A paper that passes Human Examiner but fails any later audit must not be APPROVED.
 
 ---
 
@@ -1143,7 +1146,7 @@ No paper may contain more than **2 Direct PYQs**.
 
 #### Both streams
 - **0** exact duplicates of earlier mocks.
-- Wording must still pass **Audit Q** + **Audit R** (examiner language, stem bands).
+- Wording must still pass **Audit Q** + **Audit R** (examiner language, stem bands); paper must still pass **Audit S** (≥150 min floor).
 - Audit **J** (traceability): every Inspired/Modified item lists allowed source class + topic; GATE-inspired CE items must note **“GATE theme → Transco-range rewrite”**.
 
 #### Diagram / Table / Matching Matrix Origin (STRICT — both streams)
@@ -1188,6 +1191,7 @@ Only after **all** of the following pass may a paper be marked **APPROVED** (and
 | 18 | **P. Non-core Subject Gates** | Quant / GA / Reasoning / English / Computer each pass detailed checks |
 | 19 | **Q. Question Language & Exam Authenticity Audit** | Technical stems read as APTRANSCO examiner writing — not textbook “Find/Calculate” drills |
 | 20 | **R. Stem Length, Direct/Indirect & Examiner Flow Audit** | Word-band mix (30–50 default); Direct ≤25%; opening variety; Context→Observation→Condition→Ask maintained |
+| 21 | **S. Minimum Solve-Time Floor Audit** | Honest + fast-top/AI time estimates both **≥ 150 min**; paper not clearable before 2 hr 30 min |
 
 **Fail any gate → not APPROVED.** Fix → re-run failed gates (and Human Examiner if stems changed materially).
 
@@ -1808,6 +1812,72 @@ Both must Pass. Do not treat a high Audit Q score as a waiver for L1 stems or Di
 **Report template:** word-band histogram; Direct count; top opening patterns with %; list of Qs failing flow/ending; Pass/Fail.
 
 ---
+
+### S. Minimum Solve-Time Floor Audit (Mandatory)
+
+> **Purpose:** Official CBT duration is **180 minutes**. A paper that a **top AEE aspirant** or a **careful AI** can honestly finish with high accuracy in **under 150 minutes (2 hr 30 min)** is too light — **Fail**, even if Easy/Medium/Hard **counts** look correct.
+
+Run **after** Audits Q + R and Difficulty Bias Correction, **before** packaging. Fail Audit S → harden Non-direct / Diagram / Hard craft (or cut Direct) and re-estimate; do **not** convert to code.
+
+#### Mindset (non-negotiable)
+- Design so that **even the strongest human or AI** still needs **≥ 150 min** of real work (read stem → select concept → use figure/table if any → compute / judge → eliminate traps).
+- Do **not** rely on slow typing or exam nerves — estimate for a **fast, accurate** solver.
+- Soft-labelled Medium/Hard, workbook Direct overload, and decorative diagrams all **collapse** solve time and Fail this gate.
+
+#### Mandatory dual estimate (both must Pass)
+
+Build the band table from the paper’s actual Direct register + difficulty labels + media tags:
+
+| Band | Definition | Honest top-solver min/Q | Fast top / careful-AI min/Q |
+|---|---|---:|---:|
+| Easy Direct | Easy ∩ Direct register | 0.6 | 0.4 |
+| Easy Non-direct | Easy ∉ Direct | 1.2 | 0.8 |
+| Medium Direct | Medium ∩ Direct | 1.5 | 1.0 |
+| Medium Non-direct | Medium, no diagram/match/table/graph media | 2.2 | 1.5 |
+| Medium Diagram+ | Medium with figure / Match / Table / Graph | 3.0 | 2.0 |
+| Hard | Hard, no media | 3.5 | 2.5 |
+| Hard Diagram+ | Hard with figure / Match / Table / Graph | 4.5 | 3.5 |
+| Navigation / review buffer | Fixed add-on | **+8** | **+5** |
+
+**Σ Honest** = Σ (count × honest rate) + 8  
+**Σ Fast** = Σ (count × fast rate) + 5  
+
+| Result | Rule |
+|---|---|
+| **Pass** | Σ Honest ≥ **150** **and** Σ Fast ≥ **150** |
+| **Strong Pass** | Σ Fast ≥ **160** and Σ Honest ≤ **175** preferred (uses most of the 180 window without impossible overflow) |
+| **Fail** | Either estimate **< 150**, **or** qualitative feel that a strong solver clears before 2:30 |
+
+#### Automatic Fail flags (even if Σ ≥ 150 on paper)
+- Direct > 25% (full or any tech subject) — already Fail R; also collapses Fast time
+- Soft-labelled Medium/Hard (Bias Correction fail): claimed Hard solvable by recall / single plug-in
+- Diagram Qs that are WEAK/FAIL dependency (guessable without figure) — remove their Diagram+ surcharge and re-run Σ Fast
+- Non-core blastable in < 12–15 min total for a top solver (trivial Quant/GA/Computer clones)
+- Paper finishable by “pattern-match options” without engineering steps (Audit Q / N failure spillover)
+
+#### Hardening levers (when Fail)
+1. Convert Direct → Non-direct (trap / judgement / two-step) without lengthening into L5
+2. Raise true Medium/Hard craft (concept competition, code choice, figure-read) — not longer arithmetic
+3. Ensure every Diagram/Match/Table/Graph Q is **PASS/STRONG** dependency so media time is real
+4. Keep Easy ≤ 25% and Easy Direct as small as possible inside the Direct budget
+5. Re-run Human Examiner if stems change materially
+
+#### Interaction with other gates
+- **Audit R / Direct cap** = primary structural control of Fast time
+- **Bias Correction + Hard craft** = keep Medium/Hard from collapsing to Easy
+- **Diagram Dependency** = protects Diagram+ minutes in the estimate
+- **Audit Q** = blocks instant plug-in paths that AI finishes in seconds
+
+**Report template (required in every approval pack):**
+
+| Band | Count | Honest subtotal | Fast subtotal |
+|---|---:|---:|---:|
+| … | … | … | … |
+| Buffer | — | 8 | 5 |
+| **Σ** | **100** | **…** | **…** |
+| **Audit S** | | Pass/Fail | Pass/Fail |
+
+---
 ### Recommended Acceptance Threshold (Mandatory for APPROVED)
 
 Before any paper is **APPROVED** (and before code / CBT packaging), **all Final Approval Workflow gates** must Pass, including:
@@ -1835,6 +1905,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Opening variety (Audit R) | ≥20 distinct openings; no single opener family >40% tech |
 | Question language / authenticity (Audit Q) | ≥90% tech ≥8/10; **0** Find/Calculate openers; **0** formula-in-stem cues; no instant plug-in path outside Direct≤25%; Hard = concept/figure/code competition not longer arithmetic; Practical = real decision; explanations tailored not boilerplate |
 | Stem Length / Direct / Flow (Audit R) | Histogram + Direct register + flow checklist all Pass before packaging |
+| Minimum solve-time floor (Audit S) | Σ Honest ≥150 **and** Σ Fast (top/AI) ≥150 min; not finishable before **2 hr 30 min**; dual band table required in pack |
 | Distractor quality (Audit N) | ≥95% Qs with all distractors Good; no absurd non-competitive site options |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
@@ -1877,6 +1948,7 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 18 P Non-core Subject Gates (Quant / GA / Reasoning / English / Computer)
 19 Q Question Language & Exam Authenticity Audit
 20 R Stem Length, Direct/Indirect & Examiner Flow Audit
+21 S Minimum Solve-Time Floor Audit (≥150 min honest + fast-top/AI)
    → Acceptance Threshold all Pass
    → User APPROVED / MODIFY / REJECT
    → Code + crops only after APPROVED
