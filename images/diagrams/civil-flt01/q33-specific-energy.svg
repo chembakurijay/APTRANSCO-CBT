@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" fill="#f7fafc"/>
+  <text x="320" y="36" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#0f172a">Specific energy curve E vs y (unit width)</text>
+  <line x1="80" y1="360" x2="580" y2="360" stroke="#334155" stroke-width="2"/>
+  <line x1="80" y1="360" x2="80" y2="50" stroke="#334155" stroke-width="2"/>
+  <text x="330" y="395" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="14">y (depth)</text>
+  <text x="28" y="210" transform="rotate(-90 28,210)" font-family="Segoe UI,sans-serif" font-size="14">E</text>
+  <!-- E = y + q^2/(2gy^2) schematic -->
+  <path d="M120,320 C160,120 220,70 300,70 C380,70 460,140 520,300" fill="none" stroke="#0e7490" stroke-width="3"/>
+  <circle cx="300" cy="70" r="6" fill="#b91c1c"/>
+  <text x="312" y="66" font-family="Segoe UI,sans-serif" font-size="13" fill="#b91c1c">Emin @ yc (Fr=1)</text>
+  <text x="140" y="250" font-family="Segoe UI,sans-serif" font-size="13" fill="#334155">subcritical</text>
+  <text x="430" y="180" font-family="Segoe UI,sans-serif" font-size="13" fill="#334155">supercritical</text>
+  <text x="80" y="410" font-family="Segoe UI,sans-serif" font-size="12" fill="#64748b">q fixed; qmax for given E occurs at critical (Fr=1)</text>
+</svg>
