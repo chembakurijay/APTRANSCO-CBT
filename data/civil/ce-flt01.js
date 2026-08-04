@@ -1,7 +1,6 @@
 // Civil Engineering FLT-01 — APTRANSCO AEE CBT
-// APPROVED pack: CIVIL_FLT01_AUDITQ_REWRITE.md (Audit Q/R/G/S)
-// Diagrams retuned: Q3 SOM_pg0030 overhang; Q9 SOM_pg0026 BMD jump;
-// Q33 family pump Q–H schematic (no core Q–H page); Match Q10/Q36; Table Q26/Q58
+// Non-core upgrade: CA 2AP+2National (≤1 power); English passage/A-P/D-I;
+// Quant/Reasoning family style; TOPIC REVISION NOTES on all Qs
 // answer is 0-based index into options
 
 export const questions = [
@@ -21,7 +20,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Stress ≈175 MPa, below yield\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: area = 314.2 mm²; stress = 55,000/314.2 ≈175 MPa. Trap: C uses radius as diameter; B approximates yield wrongly; D confuses demand with fy/γm0.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: axial stress+service check",
+    "explanation": "CORRECT: Stress ≈175 MPa, below yield\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: area = 314.2 mm²; stress = 55,000/314.2 ≈175 MPa. Trap: C uses radius as diameter; B approximates yield wrongly; D confuses demand with fy/γm0.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -41,7 +40,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 3/7\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: equal strain makes force proportional to \\(AE\\); brass:steel = 900:1200, so brass share = 3/7. Trap: A reverses the stiffness share.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: composite bars+compatibility",
+    "explanation": "CORRECT: 3/7\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: equal strain makes force proportional to \\(AE\\); brass:steel = 900:1200, so brass share = 3/7. Trap: A reverses the stiffness share.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -52,16 +51,16 @@ export const questions = [
     "question": "Proof-load planning for the overhanging beam uses the crop that carries the point load and UDL at the shown locations. Using only the displayed support geometry and load positions, which reaction pair is closest to that expected by the engineer?",
     "image": "images/diagrams/civil-flt01/q03-overhang-reactions.jpg",
     "options": [
-      "15 kN, 45 kN",
       "10 kN, 50 kN",
+      "15 kN, 45 kN",
       "20 kN, 40 kN",
       "25 kN, 35 kN"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 10 kN, 50 kN\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: AB=4 m with 10 kN/m UDL (40 kN) and 20 kN at tip C on 2 m overhang; ΣMA → RB=50 kN; ΣV → RA=10 kN. Trap: A/C shift the UDL centroid or tip lever.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: beam+diagram+equilibrium",
+    "explanation": "CORRECT: 10 kN, 50 kN\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: AB=4 m with 10 kN/m UDL (40 kN) and 20 kN at tip C on 2 m overhang; ΣMA → RB=50 kN; ΣV → RA=10 kN. Trap: A/C shift the UDL centroid or tip lever.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -83,7 +82,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 60\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: λ = Le/r = 2100/35 = 60. Trap: B uses full geometric length without the effective-length factor already embedded in 2.1 m; A/C misplace the decimal.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: slenderness+strut check",
+    "explanation": "CORRECT: 60\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: λ = Le/r = 2100/35 = 60. Trap: B uses full geometric length without the effective-length factor already embedded in 2.1 m; A/C misplace the decimal.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -103,7 +102,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Assertion-Reason",
     "formula": "",
-    "explanation": "CORRECT: A true, R false\n\nWHY CORRECT / CALCULATION:\nWhy: the centre has zero shear ordinate; R is false. Trap: shear changes radius, not the centre’s vertical coordinate. **Hard justification:** distinguishes circle geometry from stress-component presence.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: Mohr circle+AR+interpretation",
+    "explanation": "CORRECT: A true, R false\n\nWHY CORRECT / CALCULATION:\nWhy: the centre has zero shear ordinate; R is false. Trap: shear changes radius, not the centre’s vertical coordinate. **Hard justification:** distinguishes circle geometry from stress-component presence.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -114,16 +113,16 @@ export const questions = [
     "question": "A timber joist 100 mm × 200 mm is checked for 16 kN shear during a floor renovation in an existing building. Which maximum elastic shear stress and location should be expected?",
     "image": "",
     "options": [
-      "0.8 MPa at extreme fibre",
       "1.2 MPa at neutral axis",
+      "0.8 MPa at extreme fibre",
       "0.8 MPa uniformly",
       "1.2 MPa at top fibre"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 1.2 MPa at neutral axis\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: average = 0.8 MPa; rectangular maximum = 1.5×average = 1.2 MPa at NA. Trap: C treats shear as uniform.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: rectangular shear",
+    "explanation": "CORRECT: 1.2 MPa at neutral axis\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: average = 0.8 MPa; rectangular maximum = 1.5×average = 1.2 MPa at NA. Trap: C treats shear as uniform.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -143,7 +142,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 1000 N·m\n\nWHY CORRECT / CALCULATION:\nWhy: free-body of BC must transmit the end torque at C. Trap: D halves the torque without a second load path.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: torsion+shaft equilibrium",
+    "explanation": "CORRECT: 1000 N·m\n\nWHY CORRECT / CALCULATION:\nWhy: free-body of BC must transmit the end torque at C. Trap: D halves the torque without a second load path.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -163,7 +162,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: \\(3wL/16\\)\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: compatibility leaves half the UDL deflection to be cancelled by the prop, giving \\(3wL/16\\). Trap: A is the no-settlement result. **Hard justification:** settlement and force compatibility compete.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: indeterminate beam+settlement",
+    "explanation": "CORRECT: \\(3wL/16\\)\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: compatibility leaves half the UDL deflection to be cancelled by the prop, giving \\(3wL/16\\). Trap: A is the no-settlement result. **Hard justification:** settlement and force compatibility compete.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -174,16 +173,16 @@ export const questions = [
     "question": "On the plotted bending-moment diagram, the engineer observes a marked vertical jump at section C while shear remains finite on both sides of C and no local section change is recorded. Which loading interpretation is most defensible?",
     "image": "images/diagrams/civil-flt01/q09-bmd-jump.jpg",
     "options": [
-      "A point load acts at C",
       "A concentrated couple acts at C",
+      "A point load acts at C",
       "A UDL starts at C",
       "The flexural rigidity changes at C"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "Hard",
     "questionType": "Graph+Application",
     "formula": "",
-    "explanation": "CORRECT: A concentrated couple acts at C\n\nWHY CORRECT / CALCULATION:\nWhy: a concentrated moment causes a BMD discontinuity; a point force jumps shear. Trap: stiffness changes curvature, not equilibrium jumps. **Hard justification:** figure signature must be separated from member-property effects.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: BMD+graph+diagnosis",
+    "explanation": "CORRECT: A concentrated couple acts at C\n\nWHY CORRECT / CALCULATION:\nWhy: a concentrated moment causes a BMD discontinuity; a point force jumps shear. Trap: stiffness changes curvature, not equilibrium jumps. **Hard justification:** figure signature must be separated from member-property effects.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -196,16 +195,16 @@ export const questions = [
     "question": "While preparing a design-aid sheet, match List-I beam cases to List-II max BM (same w, length l): (a) cantilever UDL on outer half; (b) cantilever triangular to free end; (c) SS full UDL on l; (d) SS full UDL on 2l — with (1) wl²/2; (2) wl²/6; (3) wl²/8; (4) 3wl²/8. Which code is correct?",
     "image": "",
     "options": [
-      "a-4, b-1, c-3, d-2",
       "a-4, b-2, c-3, d-1",
+      "a-4, b-1, c-3, d-2",
       "a-3, b-1, c-2, d-4",
       "a-1, b-2, c-3, d-4"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "Medium",
     "questionType": "Matching Matrix",
     "formula": "",
-    "explanation": "CORRECT: a-4, b-2, c-3, d-1\n\nWHY CORRECT / CALCULATION:\nWhy: (a) 3wl²/8; (b) wl²/6; (c) wl²/8; (d) w(2l)²/8 = wl²/2. Trap: A swaps triangular and double-span results.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: matching+beam BM models",
+    "explanation": "CORRECT: a-4, b-2, c-3, d-1\n\nWHY CORRECT / CALCULATION:\nWhy: (a) 3wl²/8; (b) wl²/6; (c) wl²/8; (d) w(2l)²/8 = wl²/2. Trap: A swaps triangular and double-span results.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC",
     "matchingMatrix": {
@@ -267,7 +266,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Sudden ≈ twice gradual\n\nWHY CORRECT / CALCULATION:\nWhy: energy equivalence for sudden loading gives σ_sudden ≈ 2 σ_gradual. Trap: C reverses the factor.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: impact loading+stress ratio",
+    "explanation": "CORRECT: Sudden ≈ twice gradual\n\nWHY CORRECT / CALCULATION:\nWhy: energy equivalence for sudden loading gives σ_sudden ≈ 2 σ_gradual. Trap: C reverses the factor.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -287,7 +286,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 95°C\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: σ = 227.3 MPa = αEΔT → ΔT ≈ 94.7°C. Trap: A uses fy without γm0; B halves the rise.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: temperature stress+yield onset",
+    "explanation": "CORRECT: 95°C\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: σ = 227.3 MPa = αEΔT → ΔT ≈ 94.7°C. Trap: A uses fy without γm0; B halves the rise.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -307,7 +306,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 2.4×10⁵ mm³\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: Z = M/σ = 36×10⁶/150 = 2.4×10⁵ mm³. Trap: B slips a power of ten. **Hard justification:** unit consistency under a fixed stress limit.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: section modulus+governing size",
+    "explanation": "CORRECT: 2.4×10⁵ mm³\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: Z = M/σ = 36×10⁶/150 = 2.4×10⁵ mm³. Trap: B slips a power of ten. **Hard justification:** unit consistency under a fixed stress limit.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -327,7 +326,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 180 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: transformed width = m×12 = 180 mm. Trap: A uses the plate depth; D quotes m alone.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: transformed section+compatibility",
+    "explanation": "CORRECT: 180 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: transformed width = m×12 = 180 mm. Trap: A uses the plate depth; D quotes m alone.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -347,7 +346,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Radius rises; slenderness falls; buckling capacity rises\n\nWHY CORRECT / CALCULATION:\nWhy: larger weak-axis second moment raises radius, lowers slenderness and raises buckling resistance. Trap: C reverses the radius-slenderness relation.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — SOM: column stability+application",
+    "explanation": "CORRECT: Radius rises; slenderness falls; buckling capacity rises\n\nWHY CORRECT / CALCULATION:\nWhy: larger weak-axis second moment raises radius, lowers slenderness and raises buckling resistance. Trap: C reverses the radius-slenderness relation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: σ=P/A; δ=PL/AE; M/I=σ/y=E/R; τ=VQ/(Ib); T/J=τ/r=Gθ/L as applicable.\n• REMEMBER: Sign conventions for BM/SF; ductile yield vs allowable; units N–mm vs N–m.\n• ALSO ASKED FROM THIS TOPIC: Pure bending stress; combined axial+bending; torsion of shafts; Mohr’s circle centre/radius.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -359,15 +358,15 @@ export const questions = [
     "image": "",
     "options": [
       "Accept because depth governs strength",
-      "Restore specified cover before concreting",
       "Increase water-cement ratio",
+      "Restore specified cover before concreting",
       "Replace stirrups with larger spacing"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Restore specified cover before concreting\n\nWHY CORRECT / CALCULATION:\nWhy: durability/fire cover is an independent requirement. Trap: adequate flexural depth cannot waive exposure protection.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: durability+decision",
+    "explanation": "CORRECT: Restore specified cover before concreting\n\nWHY CORRECT / CALCULATION:\nWhy: durability/fire cover is an independent requirement. Trap: adequate flexural depth cannot waive exposure protection.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -387,7 +386,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Under-reinforced because 225 mm is below 240 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: limiting depth = 0.48×500 = 240 mm; trial is lower. Trap: C imports an unrelated limit.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: IS flexure+limit state",
+    "explanation": "CORRECT: Under-reinforced because 225 mm is below 240 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: limiting depth = 0.48×500 = 240 mm; trial is lower. Trap: C imports an unrelated limit.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -407,7 +406,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: both support condition and aspect ratio establish two-way action. Trap: the ratio alone is insufficient without four-edge support.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: slab+diagram+AR",
+    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: both support condition and aspect ratio establish two-way action. Trap: the ratio alone is insufficient without four-edge support.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -421,15 +420,15 @@ export const questions = [
     "image": "",
     "options": [
       "Continue because slab bottom steel is present",
-      "Hold the pour locally, restore chairs/bar level and reverify cover and effective depth",
       "Add extra water for access",
+      "Hold the pour locally, restore chairs/bar level and reverify cover and effective depth",
       "Record it only after stripping"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Hard",
     "questionType": "Practical/Application",
     "formula": "",
-    "explanation": "CORRECT: Hold the pour locally, restore chairs/bar level and reverify cover and effective depth\n\nWHY CORRECT / CALCULATION:\nWhy: displaced negative steel reduces support capacity and changes cover. Trap: A ignores hogging demand. **Hard/Practical/App justification:** an irreversible hold point requires structural and constructability judgement.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: reinforcement+practical+hold point",
+    "explanation": "CORRECT: Hold the pour locally, restore chairs/bar level and reverify cover and effective depth\n\nWHY CORRECT / CALCULATION:\nWhy: displaced negative steel reduces support capacity and changes cover. Trap: A ignores hogging demand. **Hard/Practical/App justification:** an irreversible hold point requires structural and constructability judgement.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -449,7 +448,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Web width, unless another compression flange is specifically present\n\nWHY CORRECT / CALCULATION:\nWhy: the slab flange is not in compression under hogging. Trap: B carries the sagging-region model into the support region.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: T-beam+moment region",
+    "explanation": "CORRECT: Web width, unless another compression flange is specifically present\n\nWHY CORRECT / CALCULATION:\nWhy: the slab flange is not in compression under hogging. Trap: B carries the sagging-region model into the support region.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -469,7 +468,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Detail S\n\nWHY CORRECT / CALCULATION:\nWhy: Detail S uses a closed perimeter tie plus both crossties so every corner and mid-face bar is restrained. Trap: P is perimeter-only; Q omits a crosstie direction; R’s diamond leaves corners unrestrained.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: column ties+diagram+detailing",
+    "explanation": "CORRECT: Detail S\n\nWHY CORRECT / CALCULATION:\nWhy: Detail S uses a closed perimeter tie plus both crossties so every corner and mid-face bar is restrained. Trap: P is perimeter-only; Q omits a crosstie direction; R’s diamond leaves corners unrestrained.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
@@ -483,15 +482,15 @@ export const questions = [
     "image": "",
     "options": [
       "No stirrups in either",
-      "Minimum shear reinforcement in X; designed shear reinforcement in Y",
       "Redesign both sections immediately",
+      "Minimum shear reinforcement in X; designed shear reinforcement in Y",
       "Provide torsion steel only in Y"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Minimum shear reinforcement in X; designed shear reinforcement in Y\n\nWHY CORRECT / CALCULATION:\nWhy: minimum stirrups remain required in X; Y needs the balance carried by shear reinforcement. Trap: C ignores the permitted design range.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: IS shear+design judgement",
+    "explanation": "CORRECT: Minimum shear reinforcement in X; designed shear reinforcement in Y\n\nWHY CORRECT / CALCULATION:\nWhy: minimum stirrups remain required in X; Y needs the balance carried by shear reinforcement. Trap: C ignores the permitted design range.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -511,7 +510,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Extend the bar, provide an allowable hook/bend, or revise curtailment so anchorage and the related moment/shear checks are all satisfied\n\nWHY CORRECT / CALCULATION:\nWhy: inadequate development is a structural limit, not a drafting preference. Trap: A confuses location with anchorage. **Hard justification:** competing detailing remedies under code anchorage rules.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: IS anchorage+governing decision",
+    "explanation": "CORRECT: Extend the bar, provide an allowable hook/bend, or revise curtailment so anchorage and the related moment/shear checks are all satisfied\n\nWHY CORRECT / CALCULATION:\nWhy: inadequate development is a structural limit, not a drafting preference. Trap: A confuses location with anchorage. **Hard justification:** competing detailing remedies under code anchorage rules.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -531,7 +530,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Design the excess moment with compression and additional tension steel\n\nWHY CORRECT / CALCULATION:\nWhy: demand exceeds singly reinforced limit; a steel couple must resist the excess. Trap: D mixes design stages.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: doubly reinforced+capacity decision",
+    "explanation": "CORRECT: Design the excess moment with compression and additional tension steel\n\nWHY CORRECT / CALCULATION:\nWhy: demand exceeds singly reinforced limit; a steel couple must resist the excess. Trap: D mixes design stages.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -551,7 +550,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Introduce a compression-steel couple with additional tension steel to resist the excess, or else change the section/materials\n\nWHY CORRECT / CALCULATION:\nWhy: Mu > Mu,lim requires a steel couple or a larger section. Trap: B misreads limit-state capacity as a service check. **Hard justification:** recognising when doubly reinforced design is mandatory.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: doubly reinforced+concept",
+    "explanation": "CORRECT: Introduce a compression-steel couple with additional tension steel to resist the excess, or else change the section/materials\n\nWHY CORRECT / CALCULATION:\nWhy: Mu > Mu,lim requires a steel couple or a larger section. Trap: B misreads limit-state capacity as a service check. **Hard justification:** recognising when doubly reinforced design is mandatory.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -571,7 +570,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Table+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 0.52 MPa; stirrups carry the balance, subject to the maximum limit\n\nWHY CORRECT / CALCULATION:\nCALC: midpoint interpolation gives 0.52 MPa; demand exceeds it. Trap: B takes the upper row without interpolation.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: table+diagram+interpolation",
+    "explanation": "CORRECT: 0.52 MPa; stirrups carry the balance, subject to the maximum limit\n\nWHY CORRECT / CALCULATION:\nCALC: midpoint interpolation gives 0.52 MPa; demand exceeds it. Trap: B takes the upper row without interpolation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -610,7 +609,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 260 mm\n\nWHY CORRECT / CALCULATION:\nCALC: ceiling = 262.5 mm; adopt 260 mm. Trap: B accepts analysis spacing without the code ceiling.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: IS stirrup spacing",
+    "explanation": "CORRECT: 260 mm\n\nWHY CORRECT / CALCULATION:\nCALC: ceiling = 262.5 mm; adopt 260 mm. Trap: B accepts analysis spacing without the code ceiling.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -630,7 +629,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Practical/Application",
     "formula": "",
-    "explanation": "CORRECT: Barricade and map the defect, assess section/bond, then execute an engineer-approved repair or strengthening method\n\nWHY CORRECT / CALCULATION:\nWhy: cubes do not prove in-situ continuity or anchorage. Trap: B conceals rather than characterises the defect. **Practical/App justification:** evidence, structural consequence and repair governance are integrated.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — RCC: honeycombing+practical+assessment",
+    "explanation": "CORRECT: Barricade and map the defect, assess section/bond, then execute an engineer-approved repair or strengthening method\n\nWHY CORRECT / CALCULATION:\nWhy: cubes do not prove in-situ continuity or anchorage. Trap: B conceals rather than characterises the defect. **Practical/App justification:** evidence, structural consequence and repair governance are integrated.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Limit-state flexure xu,max/d; τv=V/(bd); Ld=φσs/(4τbd); τc from pt table.\n• REMEMBER: Cover ≠ effective depth; min shear steel even if τv<τc; Fe415 xu,max/d≈0.48.\n• ALSO ASKED FROM THIS TOPIC: Doubly reinforced when Mu>Mu,lim; development at cut-off; two-way vs one-way ly/lx.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -650,7 +649,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: figure gives mercury difference h=150 mm with x=y=200 mm, water and S_Hg=13.6, g=10 m/s². With equal connecting-limb elevations, p_A−p_B = h(ρ_Hg−ρ_w)g = 0.15×(13600−1000)×10 = 18900 Pa = 18.9 kPa. Trap: B = 12.6 kPa uses (S−1)gh with h=0.10 m or drops g; D doubles the mercury head.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: manometer+diagram",
+    "explanation": "CORRECT: 18.9 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: figure gives mercury difference h=150 mm with x=y=200 mm, water and S_Hg=13.6, g=10 m/s². With equal connecting-limb elevations, p_A−p_B = h(ρ_Hg−ρ_w)g = 0.15×(13600−1000)×10 = 18900 Pa = 18.9 kPa. Trap: B = 12.6 kPa uses (S−1)gh with h=0.10 m or drops g; D doubles the mercury head.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
@@ -672,7 +671,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 0.97\n\nWHY CORRECT / CALCULATION:\nCALC: velocity coefficient = 0.62/0.64 ≈0.97. Trap: B multiplies the two coefficients.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: orifice coefficients",
+    "explanation": "CORRECT: 0.97\n\nWHY CORRECT / CALCULATION:\nCALC: velocity coefficient = 0.62/0.64 ≈0.97. Trap: B multiplies the two coefficients.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -692,7 +691,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Assertion-Reason",
     "formula": "",
-    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: the momentum relation permits conjugate-depth analysis, while turbulence explains dissipation. Trap: energy is not conserved across the jump.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: hydraulic jump+AR",
+    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: the momentum relation permits conjugate-depth analysis, while turbulence explains dissipation. Trap: energy is not conserved across the jump.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -712,7 +711,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Laminar\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: Re = VD/ν = 0.02×0.05/1e-6 = 1000 < 2300. Trap: A misreads the threshold. **Hard justification:** regime selection before chart use.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: Reynolds regime+interpretation",
+    "explanation": "CORRECT: Laminar\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: Re = VD/ν = 0.02×0.05/1e-6 = 1000 < 2300. Trap: A misreads the threshold. **Hard justification:** regime selection before chart use.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -732,7 +731,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Graph+Application",
     "formula": "",
-    "explanation": "CORRECT: The rising system head shifts each pump to a lower individual discharge\n\nWHY CORRECT / CALCULATION:\nWhy: actual duty is the new pump-system intersection, not arithmetic addition at fixed head. Trap: B treats static head as pump-dependent. **Hard/App justification:** curve interaction governs operating output.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — HHM: pump curves+graph+operation",
+    "explanation": "CORRECT: The rising system head shifts each pump to a lower individual discharge\n\nWHY CORRECT / CALCULATION:\nWhy: actual duty is the new pump-system intersection, not arithmetic addition at fixed head. Trap: B treats static head as pump-dependent. **Hard/App justification:** curve interaction governs operating output.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
@@ -754,7 +753,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Pelton\n\nWHY CORRECT / CALCULATION:\nWhy: an impulse Pelton unit suits high head and low flow. Trap: Francis is the plausible medium-head alternative.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — HHM: turbine selection",
+    "explanation": "CORRECT: Pelton\n\nWHY CORRECT / CALCULATION:\nWhy: an impulse Pelton unit suits high head and low flow. Trap: Francis is the plausible medium-head alternative.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -774,7 +773,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Parabolic velocity; shear rising linearly to a wall maximum\n\nWHY CORRECT / CALCULATION:\nWhy: figure curves 2+C — no-slip Hagen–Poiseuille velocity is parabolic; Newtonian laminar pipe shear is zero on the centreline and rises linearly to a wall maximum. Trap: 1+A is not laminar pipe; 2+B wrongly zeros wall shear; linear/uniform is Couette-type, not pressure-driven pipe flow.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: laminar profile+diagram",
+    "explanation": "CORRECT: Parabolic velocity; shear rising linearly to a wall maximum\n\nWHY CORRECT / CALCULATION:\nWhy: figure curves 2+C — no-slip Hagen–Poiseuille velocity is parabolic; Newtonian laminar pipe shear is zero on the centreline and rises linearly to a wall maximum. Trap: 1+A is not laminar pipe; 2+B wrongly zeros wall shear; linear/uniform is Couette-type, not pressure-driven pipe flow.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
@@ -796,7 +795,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Matching Matrix",
     "formula": "",
-    "explanation": "CORRECT: 1-q,2-r,3-p,4-s\n\nWHY CORRECT / CALCULATION:\nWhy: Pelton-q, Francis-r, Kaplan-p and pump-s. Trap: C interchanges Francis and Kaplan. **Hard justification:** competing machine regimes are distinguished together.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — HHM: matching+selection",
+    "explanation": "CORRECT: 1-q,2-r,3-p,4-s\n\nWHY CORRECT / CALCULATION:\nWhy: Pelton-q, Francis-r, Kaplan-p and pump-s. Trap: C interchanges Francis and Kaplan. **Hard justification:** competing machine regimes are distinguished together.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC",
     "matchingMatrix": {
@@ -858,7 +857,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 785 N, 7.85 kW\n\nWHY CORRECT / CALCULATION:\nCALC: relative speed 20 m/s → ṁ≈39.3 kg/s; F≈785 N; power=Fu≈7.85 kW. Trap: C uses absolute jet speed for ṁ; B halves relative speed inconsistently; A underestimates ṁ on the relative-speed path.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — FM: moving vane+momentum",
+    "explanation": "CORRECT: 785 N, 7.85 kW\n\nWHY CORRECT / CALCULATION:\nCALC: relative speed 20 m/s → ṁ≈39.3 kg/s; F≈785 N; power=Fu≈7.85 kW. Trap: C uses absolute jet speed for ṁ; B halves relative speed inconsistently; A underestimates ṁ on the relative-speed path.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -870,15 +869,15 @@ export const questions = [
     "image": "",
     "options": [
       "Water hammer at delivery valve",
-      "Cavitation",
       "Bearing misalignment only",
+      "Cavitation",
       "Laminar-flow transition"
     ],
-    "answer": 1,
+    "answer": 2,
     "difficulty": "Easy",
     "questionType": "Practical/Application",
     "formula": "",
-    "explanation": "CORRECT: Cavitation\n\nWHY CORRECT / CALCULATION:\nWhy: vapour formation and collapse at the eye produce the observed signature. Trap: bearing faults do not explain pitting at the hydraulic low-pressure zone. **Practical justification:** multiple observations support the diagnosis.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — HHM: cavitation+practical diagnosis",
+    "explanation": "CORRECT: Cavitation\n\nWHY CORRECT / CALCULATION:\nWhy: vapour formation and collapse at the eye produce the observed signature. Trap: bearing faults do not explain pitting at the hydraulic low-pressure zone. **Practical justification:** multiple observations support the diagnosis.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -898,7 +897,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 24 kJ/kg\n\nWHY CORRECT / CALCULATION:\nCALC: applying the displayed inlet/outlet whirl change with blade speed gives about 24 kJ/kg. Trap: C omits the outlet-whirl sign.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — HHM: turbine triangles+diagram",
+    "explanation": "CORRECT: 24 kJ/kg\n\nWHY CORRECT / CALCULATION:\nCALC: applying the displayed inlet/outlet whirl change with blade speed gives about 24 kJ/kg. Trap: C omits the outlet-whirl sign.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Continuity; Bernoulli; ΔP=ρgh; Re=VD/ν; pump/turbine power as applicable.\n• REMEMBER: Mercury S≈13.6; laminar Re≲2000; velocity parabolic & τ∝r in pipe laminar flow.\n• ALSO ASKED FROM THIS TOPIC: Manometer traverse; orifice Cd=CcCv; turbine selection by head; NPSH/cavitation.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -920,7 +919,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Bolt 3\n\nWHY CORRECT / CALCULATION:\nWhy: Bolt 3 has the largest adverse vector resultant of direct and moment-induced shear. Trap: the farthest bolt is not automatically critical without vector direction.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: eccentric bolts+diagram",
+    "explanation": "CORRECT: Bolt 3\n\nWHY CORRECT / CALCULATION:\nWhy: Bolt 3 has the largest adverse vector resultant of direct and moment-induced shear. Trap: the farthest bolt is not automatically critical without vector direction.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -934,15 +933,15 @@ export const questions = [
     "image": "",
     "options": [
       "428 kN rupture",
-      "409 kN yielding",
       "450 kN yielding",
-      "380 kN rupture"
+      "380 kN rupture",
+      "409 kN yielding"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 409 kN yielding\n\nWHY CORRECT / CALCULATION:\nCALC: yielding ≈409 kN; rupture ≈428 kN; lesser governs. Trap: A is a valid non-governing value; C ignores γm0; D understates rupture.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: IS tension limit states",
+    "explanation": "CORRECT: 409 kN yielding\n\nWHY CORRECT / CALCULATION:\nCALC: yielding ≈409 kN; rupture ≈428 kN; lesser governs. Trap: A is a valid non-governing value; C ignores γm0; D understates rupture.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -962,7 +961,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Assertion-Reason",
     "formula": "",
-    "explanation": "CORRECT: A true, R false\n\nWHY CORRECT / CALCULATION:\nWhy: A is true; lacing is designed for transverse shear and may experience compression. Trap: “tension-only” confuses ideal truss action with design forces.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: lacing+AR",
+    "explanation": "CORRECT: A true, R false\n\nWHY CORRECT / CALCULATION:\nWhy: A is true; lacing is designed for transverse shear and may experience compression. Trap: “tension-only” confuses ideal truss action with design forces.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -982,7 +981,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: The axis that produces the larger slenderness ratio Le/r governs the flexural-buckling strength\n\nWHY CORRECT / CALCULATION:\nWhy: buckling strength follows the larger slenderness demand. Trap: A ignores radius; B ignores restraint length. **Hard justification:** competing geometric parameters without a pure numerical plug-in.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: column buckling+governing axis",
+    "explanation": "CORRECT: The axis that produces the larger slenderness ratio Le/r governs the flexural-buckling strength\n\nWHY CORRECT / CALCULATION:\nWhy: buckling strength follows the larger slenderness demand. Trap: A ignores radius; B ignores restraint length. **Hard justification:** competing geometric parameters without a pure numerical plug-in.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1002,7 +1001,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Throat\n\nWHY CORRECT / CALCULATION:\nWhy: this is effective throat geometry. Trap: leg is measured along the connected plate surface.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: fillet weld terminology",
+    "explanation": "CORRECT: Throat\n\nWHY CORRECT / CALCULATION:\nWhy: this is effective throat geometry. Trap: leg is measured along the connected plate surface.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1022,7 +1021,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Section type, axis of buckling and fabrication class together select the buckling curve\n\nWHY CORRECT / CALCULATION:\nWhy: IS curve selection depends on section/axis/imperfection class. Trap: B oversimplifies to fy only.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: buckling curve+section class",
+    "explanation": "CORRECT: Section type, axis of buckling and fabrication class together select the buckling curve\n\nWHY CORRECT / CALCULATION:\nWhy: IS curve selection depends on section/axis/imperfection class. Trap: B oversimplifies to fy only.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1042,7 +1041,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: About 1.12 My\n\nWHY CORRECT / CALCULATION:\nWhy: Mp = Zp fy ≈ (shape factor)×My for the same fy. Trap: D invents a universal factor of 2.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: plastic moment+section capacity",
+    "explanation": "CORRECT: About 1.12 My\n\nWHY CORRECT / CALCULATION:\nWhy: Mp = Zp fy ≈ (shape factor)×My for the same fy. Trap: D invents a universal factor of 2.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -1062,7 +1061,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Q, 1810 mm²\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: the displayed hole count, gauge and stagger terms make Q the smaller net area at 1810 mm². Trap: A checks only the straight path. **Hard justification:** competing paths require geometric interpretation.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: staggered holes+diagram+paths",
+    "explanation": "CORRECT: Q, 1810 mm²\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: the displayed hole count, gauge and stagger terms make Q the smaller net area at 1810 mm². Trap: A checks only the straight path. **Hard justification:** competing paths require geometric interpretation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -1076,15 +1075,15 @@ export const questions = [
     "image": "",
     "options": [
       "Accept 45 mm because it exceeds twice diameter",
-      "Revise pitch to at least 50 mm",
       "Reduce hole diameter only",
-      "Accept if plate is thicker than bolt"
+      "Accept if plate is thicker than bolt",
+      "Revise pitch to at least 50 mm"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: Revise pitch to at least 50 mm\n\nWHY CORRECT / CALCULATION:\nCALC: minimum = 50 mm. Trap: A uses the wrong detailing multiple.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: IS bolt pitch+detailing",
+    "explanation": "CORRECT: Revise pitch to at least 50 mm\n\nWHY CORRECT / CALCULATION:\nCALC: minimum = 50 mm. Trap: A uses the wrong detailing multiple.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1104,7 +1103,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Grind/repair to approved procedure, re-inspect, then accept only if limits are met\n\nWHY CORRECT / CALCULATION:\nWhy: undercut is a rejectable discontinuity on a primary path until repaired to procedure. Trap: B confuses appearance with acceptance criteria. **Hard/Practical justification:** quality limit vs load path.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: weld quality+site acceptance",
+    "explanation": "CORRECT: Grind/repair to approved procedure, re-inspect, then accept only if limits are met\n\nWHY CORRECT / CALCULATION:\nWhy: undercut is a rejectable discontinuity on a primary path until repaired to procedure. Trap: B confuses appearance with acceptance criteria. **Hard/Practical justification:** quality limit vs load path.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1116,15 +1115,15 @@ export const questions = [
     "image": "",
     "options": [
       "Strong-axis curve only",
-      "Weak-axis (larger λ) flexural buckling",
       "Local flange buckling only",
-      "Shear buckling of the web only"
+      "Shear buckling of the web only",
+      "Weak-axis (larger λ) flexural buckling"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Weak-axis (larger λ) flexural buckling\n\nWHY CORRECT / CALCULATION:\nWhy: the larger Le/r governs flexural-buckling strength. Trap: A ignores the weak axis.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: column buckling+slenderness path",
+    "explanation": "CORRECT: Weak-axis (larger λ) flexural buckling\n\nWHY CORRECT / CALCULATION:\nWhy: the larger Le/r governs flexural-buckling strength. Trap: A ignores the weak axis.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1136,15 +1135,15 @@ export const questions = [
     "image": "",
     "options": [
       "Major-axis bending only",
-      "Biaxial bending interaction with stability and serviceability checks",
       "Axial tension only",
-      "Minor-axis bending only"
+      "Minor-axis bending only",
+      "Biaxial bending interaction with stability and serviceability checks"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Biaxial bending interaction with stability and serviceability checks\n\nWHY CORRECT / CALCULATION:\nWhy: oblique loading resolves about both axes, and restraint affects stability. Trap: A ignores the weak-axis component.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Steel: biaxial purlin design",
+    "explanation": "CORRECT: Biaxial bending interaction with stability and serviceability checks\n\nWHY CORRECT / CALCULATION:\nWhy: oblique loading resolves about both axes, and restraint affects stability. Trap: A ignores the weak-axis component.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Tdg/Tdn; block shear; bolt Vsb/Vdb; eccentric √((H/n)²+(Ted/Σr²)²).\n• REMEMBER: Net section with stagger credit s²/4g; critical bolt ≠ always farthest.\n• ALSO ASKED FROM THIS TOPIC: Lug angle; welding strength; column buckling curves χ.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1164,7 +1163,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Reduced net stress increase and settlement demand\n\nWHY CORRECT / CALCULATION:\nWhy: excavated soil weight offsets part of structural pressure; it does not cancel gross pressure or eliminate geotechnical checks. Trap: B confuses reduced net pressure with zero gross pressure.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: compensated raft",
+    "explanation": "CORRECT: Reduced net stress increase and settlement demand\n\nWHY CORRECT / CALCULATION:\nWhy: excavated soil weight offsets part of structural pressure; it does not cancel gross pressure or eliminate geotechnical checks. Trap: B confuses reduced net pressure with zero gross pressure.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -1184,7 +1183,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 95 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: summing the two layer contributions shown yields 95 mm. Trap: C applies the larger stress increment to both layers.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: layered settlement+diagram",
+    "explanation": "CORRECT: 95 mm\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: summing the two layer contributions shown yields 95 mm. Trap: C applies the larger stress increment to both layers.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -1206,7 +1205,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Combined or strap footing designed about the load resultant\n\nWHY CORRECT / CALCULATION:\nWhy: coupling controls eccentricity and soil-pressure distribution without trespass. Trap: A worsens eccentric pressure.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: property line+selection",
+    "explanation": "CORRECT: Combined or strap footing designed about the load resultant\n\nWHY CORRECT / CALCULATION:\nWhy: coupling controls eccentricity and soil-pressure distribution without trespass. Trap: A worsens eccentric pressure.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1226,7 +1225,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Bearing may pass while settlement still governs; enlarge/deepen the footing, improve the ground, or revise until both criteria are satisfied\n\nWHY CORRECT / CALCULATION:\nWhy: bearing capacity and settlement are independent acceptance criteria. Trap: B collapses both into one check. **Hard/Practical/App justification:** identifying the governing serviceability limit.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: bearing vs settlement governing",
+    "explanation": "CORRECT: Bearing may pass while settlement still governs; enlarge/deepen the footing, improve the ground, or revise until both criteria are satisfied\n\nWHY CORRECT / CALCULATION:\nWhy: bearing capacity and settlement are independent acceptance criteria. Trap: B collapses both into one check. **Hard/Practical/App justification:** identifying the governing serviceability limit.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1246,7 +1245,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 200 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: 600/3 = 200 kPa. Trap: B multiplies by the safety factor.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: safe bearing",
+    "explanation": "CORRECT: 200 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: 600/3 = 200 kPa. Trap: B multiplies by the safety factor.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1266,7 +1265,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Diagram+Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Compare individual sum with block capacity, adopt the lower, then check settlement\n\nWHY CORRECT / CALCULATION:\nWhy: close spacing permits block action; settlement remains separate. Trap: A ignores the figure’s plausible block mechanism. **Hard/App justification:** two failure models and serviceability compete.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: pile group+diagram+failure",
+    "explanation": "CORRECT: Compare individual sum with block capacity, adopt the lower, then check settlement\n\nWHY CORRECT / CALCULATION:\nWhy: close spacing permits block action; settlement remains separate. Trap: A ignores the figure’s plausible block mechanism. **Hard/App justification:** two failure models and serviceability compete.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -1288,7 +1287,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Table-Based",
     "formula": "",
-    "explanation": "CORRECT: 307 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: from 11 to 25 mm over 100 kPa, one additional millimetre gives about 7.1 kPa; ≈307 kPa. Trap: A is conservative but not the requested interpolation. **Table item:** values are embedded in the stem.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: plate-load table+interpretation",
+    "explanation": "CORRECT: 307 kPa\n\nWHY CORRECT / CALCULATION:\nCALC: from 11 to 25 mm over 100 kPa, one additional millimetre gives about 7.1 kPa; ≈307 kPa. Trap: A is conservative but not the requested interpolation. **Table item:** values are embedded in the stem.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC",
     "dataTable": {
@@ -1333,7 +1332,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 450 kN\n\nWHY CORRECT / CALCULATION:\nCALC: net =12 mm; settlement criterion ≈750 kN, but separate cap =450 kN. Trap: B ignores the second restriction.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: pile test+criteria",
+    "explanation": "CORRECT: 450 kN\n\nWHY CORRECT / CALCULATION:\nCALC: net =12 mm; settlement criterion ≈750 kN, but separate cap =450 kN. Trap: B ignores the second restriction.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1353,7 +1352,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Practical/Application",
     "formula": "",
-    "explanation": "CORRECT: Pause and secure the work, monitor movement, assess undermining, and design support/underpinning before resuming\n\nWHY CORRECT / CALCULATION:\nWhy: temporary stability and the existing footing’s support must be secured before work resumes. Trap: C treats the symptom, not ground loss. **Practical/App justification:** the evidence requires a construction hold point.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: adjacent excavation+practical",
+    "explanation": "CORRECT: Pause and secure the work, monitor movement, assess undermining, and design support/underpinning before resuming\n\nWHY CORRECT / CALCULATION:\nWhy: temporary stability and the existing footing’s support must be secured before work resumes. Trap: C treats the symptom, not ground loss. **Practical/App justification:** the evidence requires a construction hold point.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1373,7 +1372,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Transfer moment so footing reactions are better centred\n\nWHY CORRECT / CALCULATION:\nWhy: the strap couples footing moments/reactions. Trap: B contradicts the stated isolation from soil.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Foundation: strap action",
+    "explanation": "CORRECT: Transfer moment so footing reactions are better centred\n\nWHY CORRECT / CALCULATION:\nWhy: the strap couples footing moments/reactions. Trap: B contradicts the stated isolation from soil.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1393,7 +1392,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: \\(8×10^{-5}\\) m³/s\n\nWHY CORRECT / CALCULATION:\nCALC: \\(kH(N_f/N_d)=4×10^{-5}×6×4/12=8×10^{-5}\\). Trap: B omits division by drops.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: flow net+diagram",
+    "explanation": "CORRECT: \\(8×10^{-5}\\) m³/s\n\nWHY CORRECT / CALCULATION:\nCALC: \\(kH(N_f/N_d)=4×10^{-5}×6×4/12=8×10^{-5}\\). Trap: B omits division by drops.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -1415,7 +1414,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 16.0 kN/m³, 82%\n\nWHY CORRECT / CALCULATION:\nCALC: dry =16.0; e≈0.655; S≈82.4%. Trap: B understates γd; D fails to remove water mass.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: phase relations+numerical",
+    "explanation": "CORRECT: 16.0 kN/m³, 82%\n\nWHY CORRECT / CALCULATION:\nCALC: dry =16.0; e≈0.655; S≈82.4%. Trap: B understates γd; D fails to remove water mass.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1435,7 +1434,7 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 27%\n\nWHY CORRECT / CALCULATION:\nCALC: 48−21 =27%. Trap: A adds the limits.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: Atterberg limits",
+    "explanation": "CORRECT: 27%\n\nWHY CORRECT / CALCULATION:\nCALC: 48−21 =27%. Trap: A adds the limits.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1455,7 +1454,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Add hydrostatic pressure and recompute effective-stress soil pressure; total lateral demand generally rises markedly\n\nWHY CORRECT / CALCULATION:\nWhy: water pressure is superposed on effective soil pressure. Trap: B notices buoyancy but omits hydrostatic loading. **Hard/App justification:** total and effective stresses must be separated and recombined.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: retaining wall+water pressure",
+    "explanation": "CORRECT: Add hydrostatic pressure and recompute effective-stress soil pressure; total lateral demand generally rises markedly\n\nWHY CORRECT / CALCULATION:\nWhy: water pressure is superposed on effective soil pressure. Trap: B notices buoyancy but omits hydrostatic loading. **Hard/App justification:** total and effective stresses must be separated and recombined.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1475,7 +1474,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 16 years\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: drainage path doubles, so time becomes fourfold =16 years. Trap: B assumes a linear path-time relation.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: consolidation+drainage path",
+    "explanation": "CORRECT: 16 years\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: drainage path doubles, so time becomes fourfold =16 years. Trap: B assumes a linear path-time relation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-GATE→Transco"
   },
@@ -1495,7 +1494,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 1.00\n\nWHY CORRECT / CALCULATION:\nCALC: \\((2.65−1)/(1+0.65)=1.0\\). Trap: C uses only the numerator.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: critical gradient",
+    "explanation": "CORRECT: 1.00\n\nWHY CORRECT / CALCULATION:\nCALC: \\((2.65−1)/(1+0.65)=1.0\\). Trap: C uses only the numerator.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1515,7 +1514,7 @@ export const questions = [
     "difficulty": "Hard",
     "questionType": "Graph+Application",
     "formula": "",
-    "explanation": "CORRECT: Higher effort gives higher maximum dry density/lower OMC, but F fails the shown relative-compaction criterion\n\nWHY CORRECT / CALCULATION:\nWhy: both peak shift and F’s ratio are read from the graph. Trap: B treats an impossible plotting region as valid. **Hard/Practical/App justification:** laboratory trend and field acceptance are combined.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: Proctor+graph+acceptance",
+    "explanation": "CORRECT: Higher effort gives higher maximum dry density/lower OMC, but F fails the shown relative-compaction criterion\n\nWHY CORRECT / CALCULATION:\nWhy: both peak shift and F’s ratio are read from the graph. Trap: B treats an impossible plotting region as valid. **Hard/Practical/App justification:** laboratory trend and field acceptance are combined.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
@@ -1537,7 +1536,7 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Practical/Application",
     "formula": "",
-    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: disturbance directly undermines representative mechanical parameters. Trap: index description may remain usable, but structure-sensitive testing is affected. **Practical/App justification:** evidence controls test suitability.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: sample quality+AR+practical",
+    "explanation": "CORRECT: Both true; R explains A\n\nWHY CORRECT / CALCULATION:\nWhy: disturbance directly undermines representative mechanical parameters. Trap: index description may remain usable, but structure-sensitive testing is affected. **Practical/App justification:** evidence controls test suitability.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
@@ -1557,567 +1556,567 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical",
     "formula": "",
-    "explanation": "CORRECT: 48 kN/m\n\nWHY CORRECT / CALCULATION:\nCALC: Ka=1/3; thrust = 0.5×(1/3)×18×16 = 48 kN/m. Trap: C omits Ka; A uses Ka≈0.375; D uses half wrongly.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Soil: earth pressure+numerical",
+    "explanation": "CORRECT: 48 kN/m\n\nWHY CORRECT / CALCULATION:\nCALC: Ka=1/3; thrust = 0.5×(1/3)×18×16 = 48 kN/m. Trap: C omits Ka; A uses Ka≈0.375; D uses half wrongly.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: τ=c+σtanφ; qnet; consolidation Sc=CcH/(1+e0)log((σ0'+Δσ)/σ0'); seepage q=kH Nf/Nd.\n• REMEMBER: Compaction MDD/OMC; flow-net exit gradient; pile group vs block failure.\n• ALSO ASKED FROM THIS TOPIC: Plate load; Rankine Ka/Kp; Proctor effort effect; liquefaction screening slogans.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
   {
     "id": 71,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: work-rate",
-    "question": "A contractor completes 3/8 of a job in 12 days. After productivity rises by 25%, how many additional days are required?",
+    "topic": "Quant: time-work (maintenance crew)",
+    "question": "A line-maintenance crew can complete a scheduled feeder-bay overhaul in 12 days. After 3 days of work by this single crew, two more identical crews join. How many more days are required to finish the remaining work?",
     "image": "",
     "options": [
-      "16",
-      "12",
-      "14",
-      "20"
+      "2 days",
+      "3 days",
+      "4 days",
+      "6 days"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: 16\n\nWHY CORRECT / CALCULATION:\nOld full-job time 32 days; remaining old-time 20 days; at 1.25 rate, 16 days. Trap: D ignores improved productivity.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: work-rate",
+    "questionType": "Numerical",
+    "formula": "t_rem = W_rem / (n/T)",
+    "explanation": "CORRECT: 3 days\n\nWHY CORRECT:\nOne crew’s rate = 1/12 per day. Work done in 3 days = 3/12 = 1/4. Remaining = 3/4. Three crews rate = 3/12 = 1/4 per day. Days more = (3/4)/(1/4) = 3.\n\nCALCULATION: Rate₁=1/12; done=3/12=1/4; left=3/4; rate₃=3/12=1/4; t=(3/4)/(1/4)=3 days.\n\nTRAP ANALYSIS:\nA) Treats remaining as 1/2. C) Uses total days from start as “more days”. D) Uses one-crew rate on remaining.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Work = rate × time; remaining = 1 − work done; combined rate = n/T for n identical crews.\n• REMEMBER: After partial work, recompute remaining before applying joined rate.\n• ALSO ASKED FROM THIS TOPIC: Efficiency increase mid-job; A+B together finish in n days; pipes fill/empty.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 72,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: percentage",
-    "question": "An estimate rises from ₹8.0 lakh to ₹9.2 lakh. The percentage increase is:",
+    "topic": "Quant: percentage (estimate revision)",
+    "question": "A transmission-estimate package rises from ₹8.0 crore to ₹9.2 crore after a design revision. The percentage increase is:",
     "image": "",
     "options": [
       "12%",
-      "20%",
       "15%",
-      "10%"
+      "18%",
+      "20%"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 15%\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: increase \\(1.2/8.0=15\\%\\). Trap: A divides by the new estimate.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: percentage",
+    "formula": "%inc=(Δ/base)×100",
+    "explanation": "CORRECT: 15%\n\nWHY CORRECT:\nIncrease = 1.2 on base 8.0 → (1.2/8)×100 = 15%.\n\nCALCULATION: % increase = (9.2−8.0)/8.0 × 100 = 1.2/8 × 100 = 15%.\n\nTRAP ANALYSIS:\nA) Uses 1.2/10. C) (1.2/6.67). D) Treats absolute 1.2 crore as 20% of 6.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: % change = (new−old)/old × 100.\n• REMEMBER: Always divide by the original base, not the new value.\n• ALSO ASKED FROM THIS TOPIC: Successive % changes; % profit on cost; reverse % (what was original).",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 73,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: mixture",
-    "question": "An alloy contains copper and zinc in the ratio 3:2 and weighs 40 kg. How much copper must be added to obtain 2:1?",
+    "topic": "Quant: ratio (conductor alloy)",
+    "question": "An overhead-conductor alloy sample contains aluminium and steel by weight in the ratio 5:2 and weighs 28 kg. How much aluminium (kg) must be added to make the ratio 4:1?",
     "image": "",
     "options": [
-      "4 kg",
-      "8 kg",
-      "6 kg",
-      "10 kg"
+      "7",
+      "8",
+      "10",
+      "12"
     ],
-    "answer": 1,
+    "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 8 kg\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: copper 24 kg, zinc 16 kg; target copper 32 kg, so add 8 kg. Trap: D treats 2:1 as a 10 kg addition.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: mixture",
+    "formula": "(A+x):S = m:n",
+    "explanation": "CORRECT: 12\n\nWHY CORRECT:\nInitially Al:Steel = 5:2 of 28 kg → Al=20, Steel=8. Add x kg Al: (20+x)/8 = 4/1 → 20+x = 32 → x = 12 kg.\n\nCALCULATION: Al=5/7×28=20; St=8; (20+x)/8=4 ⇒ x=12.\n\nTRAP ANALYSIS:\nA/B) Mis-split 28 kg. C) Solves for 3:1 or average.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: (A+x):S = required ratio; S unchanged if only A added.\n• REMEMBER: Convert ratio to absolute masses before adding.\n• ALSO ASKED FROM THIS TOPIC: Alligation; removal problems; three-component mixtures.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 74,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: data interpretation",
-    "question": "Planned/actual monthly outputs are Jan 80/68, Feb 100/110, Mar 120/114 and Apr 150/165. Which month has the greatest absolute percentage deviation from plan?",
+    "topic": "Quant: average (monthly energy)",
+    "question": "Monthly energy sent-out readings (MU) for four months are 42, 38, 45 and 39. The average monthly sent-out is:",
     "image": "",
     "options": [
-      "February",
-      "April",
-      "March",
-      "January"
+      "40 MU",
+      "41 MU",
+      "42 MU",
+      "43 MU"
     ],
-    "answer": 3,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: January\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: deviations are 15%, 10%, 5%, 10%. Trap: A compares absolute units rather than percentages. **Hard justification:** deviations require normalization to different bases.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: data interpretation",
+    "formula": "avg=Σx/n",
+    "explanation": "CORRECT: 41 MU\n\nWHY CORRECT:\nSum = 42+38+45+39 = 164; average = 164/4 = 41 MU.\n\nCALCULATION: 164/4 = 41.\n\nTRAP ANALYSIS:\nA) Floors down. C) Uses median-ish 42. D) Adds wrongly.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Average = Σxᵢ / n.\n• REMEMBER: Check sum before dividing; units stay MU.\n• ALSO ASKED FROM THIS TOPIC: Weighted average; moving average; % deviation from mean.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 75,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: average speed",
-    "question": "A vehicle covers half of a 240 km trip at 40 km/h and half at 60 km/h, then stops 15 minutes. Its overall average speed is closest to:",
+    "topic": "Quant: speed-distance (patrol)",
+    "question": "A patrol vehicle covers 120 km to a substation at 40 km/h and returns by the same route at 60 km/h. Its average speed for the round trip is:",
     "image": "",
     "options": [
-      "48.0 km/h",
-      "45.7 km/h",
-      "50.5 km/h",
-      "52.0 km/h"
+      "48 km/h",
+      "50 km/h",
+      "52 km/h",
+      "45 km/h"
     ],
-    "answer": 1,
+    "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 45.7 km/h\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: time \\(=3+2+0.25=5.25\\) h; \\(240/5.25=45.7\\). Trap: A omits the stoppage.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: average speed",
+    "formula": "v_avg=2ab/(a+b)",
+    "explanation": "CORRECT: 48 km/h\n\nWHY CORRECT:\nEqual distances: harmonic mean. Average = 2ab/(a+b) = 2×40×60/(100) = 48 km/h.\n\nCALCULATION: t₁=120/40=3 h; t₂=120/60=2 h; total dist=240; total t=5; v=240/5=48.\n\nTRAP ANALYSIS:\nB) Arithmetic mean of 40 and 60. C/D) Wrong harmonic setup.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: For equal distances: v_avg = 2ab/(a+b).\n• REMEMBER: Never average the two speeds arithmetically for round trip on same route.\n• ALSO ASKED FROM THIS TOPIC: With stoppage time; three-leg journey; upstream/downstream.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 76,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: algebra",
-    "question": "Positive numbers \\(x,y\\) satisfy \\(x+y=10\\) and \\(xy=21\\). The value of \\(x^3+y^3\\) is:",
+    "topic": "Quant: SI (project mobilisation)",
+    "question": "A mobilisation advance of ₹5,00,000 is charged simple interest at 12% per annum for 8 months. The interest amount is:",
     "image": "",
     "options": [
-      "280",
-      "490",
-      "630",
-      "370"
+      "₹30,000",
+      "₹40,000",
+      "₹48,000",
+      "₹50,000"
     ],
-    "answer": 3,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 370\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: \\(1000−3×21×10=370\\). Trap: B omits the factor 3. **Hard justification:** uses symmetric relations without solving both roots.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: algebra",
+    "formula": "SI=PRT/100",
+    "explanation": "CORRECT: ₹40,000\n\nWHY CORRECT:\nSI = P×R×T/100 with T=8/12 year → 500000×12×(8/12)/100 = 500000×0.08 = 40,000.\n\nCALCULATION: SI=500000×12×8/(100×12)=40,000.\n\nTRAP ANALYSIS:\nA) Uses 6%. C) Uses T=1 year on 12% of 4L. D) 10% of principal.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: SI=PRT/100; months → years as m/12.\n• REMEMBER: Distinguish SI vs CI; rate is annual unless stated.\n• ALSO ASKED FROM THIS TOPIC: CI for 2 years; difference CI−SI; banker’s discount.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 77,
     "subject": "Quantitative Aptitude",
-    "topic": "Quant: probability",
-    "question": "Two cards are drawn without replacement from cards numbered 1 to 10. The probability that their sum is even is:",
+    "topic": "Quant: profit-loss (contract)",
+    "question": "A contractor’s quoted cost for a bay package is ₹12 lakh. He allows 10% discount on the quote and still makes 20% profit on cost. His cost price is closest to:",
     "image": "",
     "options": [
-      "1/2",
-      "5/9",
-      "4/9",
-      "2/5"
+      "₹8.0 lakh",
+      "₹9.0 lakh",
+      "₹10.0 lakh",
+      "₹11.0 lakh"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 4/9\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: both odd or both even gives \\([10+10]/45=4/9\\). Trap: A assumes parity is exactly balanced without replacement.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: probability",
-    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
-  },
-  {
-    "id": 78,
-    "subject": "Quantitative Aptitude",
-    "topic": "Quant: compound change",
-    "question": "A price rises 20%, falls 10%, and then attracts 5% tax. Relative to the original price, the final amount is:",
-    "image": "",
-    "options": [
-      "13.4% higher",
-      "8% higher",
-      "2.6% lower",
-      "15% higher"
-    ],
-    "answer": 0,
-    "difficulty": "Hard",
-    "questionType": "Numerical",
-    "formula": "",
-    "explanation": "CORRECT: 13.4% higher\n\nWHY CORRECT / CALCULATION:\nWhy/CALC: \\(1.20×0.90×1.05=1.134\\). Trap: D adds signed percentages. **Hard justification:** sequential changes cannot be added.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Quant: compound change",
+    "formula": "CP=SP/(1+p)",
+    "explanation": "CORRECT: ₹9.0 lakh\n\nWHY CORRECT:\nSP after 10% discount = 0.9×12 = 10.8 lakh. If profit 20% on CP: SP=1.2 CP → CP=10.8/1.2=9.0 lakh.\n\nCALCULATION: SP=0.9×12=10.8; CP=10.8/1.2=9.\n\nTRAP ANALYSIS:\nA) Uses 25% profit. C) Ignores discount. D) Uses quote as CP.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: SP = quote×(1−d); SP = CP×(1+p); eliminate SP.\n• REMEMBER: Discount is on quoted/marked price; profit is on cost.\n• ALSO ASKED FROM THIS TOPIC: Two successive discounts; false weight; marked-price finding.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
   {
-    "id": 79,
-    "subject": "General Awareness",
-    "topic": "GA: APTRANSCO",
-    "question": "APTRANSCO primarily functions as:",
+    "id": 78,
+    "subject": "Quantitative Aptitude",
+    "topic": "Quant: number system (LCM outage window)",
+    "question": "Three inspection cycles repeat every 4, 6 and 8 days. If all three fall on the same day today, they next coincide after how many days?",
     "image": "",
     "options": [
-      "A generation-only company",
-      "A distribution franchisee",
-      "Andhra Pradesh’s state transmission utility",
-      "A national fuel regulator"
+      "12",
+      "18",
+      "24",
+      "48"
     ],
     "answer": 2,
     "difficulty": "Easy",
+    "questionType": "Numerical",
+    "formula": "LCM by primes",
+    "explanation": "CORRECT: 24\n\nWHY CORRECT:\nLCM(4,6,8)=24.\n\nCALCULATION: 4=2²; 6=2×3; 8=2³ → LCM=2³×3=24.\n\nTRAP ANALYSIS:\nA) GCD mix-up. B) LCM(6,9)-style. D) Product without reducing.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: LCM via prime factors; coincidence period = LCM of cycle lengths.\n• REMEMBER: LCM ≥ each number; for 2 numbers LCM=a×b/GCD.\n• ALSO ASKED FROM THIS TOPIC: HCF word problems; bells toll together; traffic lights.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
+  },
+  {
+    "id": 79,
+    "subject": "General Awareness",
+    "topic": "GA: CA-AP power transmission",
+    "question": "As per 2026 state energy reviews reported in the press, Andhra Pradesh planned commissioning of about two dozen APTRANSCO transmission projects in the June–December 2026 window with an aggregate order-of-magnitude investment near:",
+    "image": "",
+    "options": [
+      "₹350 crore",
+      "₹3,500 crore",
+      "₹35,000 crore",
+      "₹350,000 crore"
+    ],
+    "answer": 1,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Andhra Pradesh’s state transmission utility\n\nWHY CORRECT / CALCULATION:\nWhy: it operates the state transmission function. Trap: A confuses transmission with generation.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: APTRANSCO",
+    "explanation": "CORRECT: ₹3,500 crore\n\nWHY CORRECT:\nOfficial/press briefings on AP transmission commissioning (2026) cite about 24 projects worth roughly ₹3,507 crore — closest to ₹3,500 crore.\n\nCALCULATION: N/A — current-affairs fact (order-of-magnitude).\n\nTRAP ANALYSIS:\nA) Off by 10× low. C/D) Off by 10×/100× high.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: CA facts: verify year, agency (APTRANSCO), and ₹ crore scale.\n• REMEMBER: Only one power-sector CA is intended in this FLT’s CA set.\n• ALSO ASKED FROM THIS TOPIC: Substation voltage class (400/220/132 kV); MVA addition; ckt-km lines.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
   },
   {
     "id": 80,
     "subject": "General Awareness",
-    "topic": "GA: power system",
-    "question": "The nominal frequency of India’s interconnected power system is:",
+    "topic": "GA: CA-AP capital region",
+    "question": "In 2025–26 public statements on Andhra Pradesh’s capital works, the state leadership indicated a target horizon around which year for completing major Amaravati capital-development works?",
     "image": "",
     "options": [
-      "50 Hz",
-      "60 Hz",
-      "25 Hz",
-      "100 Hz"
+      "2024",
+      "2026",
+      "2028",
+      "2035"
     ],
-    "answer": 0,
-    "difficulty": "Easy",
+    "answer": 2,
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: 50 Hz\n\nWHY CORRECT / CALCULATION:\nWhy: India operates nominally at 50 Hz. Trap: B is used in some other national systems.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: power system",
+    "explanation": "CORRECT: 2028\n\nWHY CORRECT:\nPress coverage of Amaravati revival works quotes a March 2028 completion horizon for major capital-development works.\n\nCALCULATION: N/A — current-affairs fact.\n\nTRAP ANALYSIS:\nA/B) Too early vs stated horizon. D) Confuses long-term RE/national plans.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: APCA/APCRDA capital works ≠ Transmission project lists.\n• REMEMBER: Separate capital-city infrastructure CA from power-utility CA.\n• ALSO ASKED FROM THIS TOPIC: Land pooling phases; APCRDA role; national-highway links to capital region.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
   },
   {
     "id": 81,
     "subject": "General Awareness",
-    "topic": "GA: economy",
-    "question": "When RBI raises the repo rate while other conditions remain unchanged, the intended immediate direction is generally:",
+    "topic": "GA: CA-National digital payments",
+    "question": "As per NPCI data widely reported for July 2026, UPI processed on the order of 23+ billion transactions in that month with transaction value near which landmark level?",
     "image": "",
     "options": [
-      "Cheaper bank liquidity",
-      "Automatic abolition of CRR",
-      "Mandatory currency replacement",
-      "Costlier liquidity, moderating credit demand and inflation pressure"
+      "About ₹3 lakh crore",
+      "About ₹30 lakh crore",
+      "About ₹300 lakh crore",
+      "About ₹30,000 crore"
     ],
-    "answer": 3,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Costlier liquidity, moderating credit demand and inflation pressure\n\nWHY CORRECT / CALCULATION:\nWhy: tightening raises marginal funding cost; it does not mechanically guarantee the final inflation outcome. Trap: A reverses the intended transmission.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: economy",
+    "explanation": "CORRECT: About ₹30 lakh crore\n\nWHY CORRECT:\nJuly 2026 NPCI figures reported ~23.66 billion UPI transactions with value about ₹29.9 lakh crore — closest to ₹30 lakh crore.\n\nCALCULATION: N/A — current-affairs fact.\n\nTRAP ANALYSIS:\nA/D) Off by ~10×. C) Off by ~10× high.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: UPI volume vs value; NPCI publishes monthly stats.\n• REMEMBER: UPI ≠ NEFT/RTGS product UX; international UPI linkages are separate CA.\n• ALSO ASKED FROM THIS TOPIC: IMPS; CBDC pilots; QR interoperability.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
   {
     "id": 82,
     "subject": "General Awareness",
-    "topic": "GA: environment",
-    "question": "An Indian wetland is recognised under an international convention centred on conservation and wise use. The correct convention is:",
+    "topic": "GA: CA-National space",
+    "question": "India’s human spaceflight programme, aimed at sending Indian astronauts to low Earth orbit on an indigenous mission stack, is known as:",
     "image": "",
     "options": [
-      "Basel",
-      "Ramsar",
-      "Montreal",
-      "Vienna"
+      "Chandrayaan",
+      "Gaganyaan",
+      "Aditya-L1",
+      "NISAR"
     ],
     "answer": 1,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Ramsar\n\nWHY CORRECT / CALCULATION:\nWhy: Ramsar concerns wetlands; Basel concerns hazardous waste. Trap: A assigns the wrong treaty domain.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: environment",
+    "explanation": "CORRECT: Gaganyaan\n\nWHY CORRECT:\nGaganyaan is ISRO’s human spaceflight programme. Chandrayaan is lunar; Aditya-L1 is solar observatory; NISAR is Earth-observation (ISRO–NASA).\n\nCALCULATION: N/A — current/static CA.\n\nTRAP ANALYSIS:\nA/C/D) Wrong mission class.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Map mission name → destination/objective.\n• REMEMBER: Crew module vs launch vehicle roles; LEO vs lunar.\n• ALSO ASKED FROM THIS TOPIC: Chandrayaan-3 landing site themes; SSLV; Gaganyaan test flights.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
   {
     "id": 83,
     "subject": "General Awareness",
-    "topic": "GA: space science",
-    "question": "A communication satellite appears fixed above one longitude because it is in:",
+    "topic": "GA: polity (Money Bill)",
+    "question": "Under the Constitution of India, a Money Bill can be introduced only in the Lok Sabha and requires whose prior recommendation?",
     "image": "",
     "options": [
-      "A circular equatorial orbit matching Earth’s rotation period and direction",
-      "A polar orbit with zero speed",
-      "Any orbit at 24-hour period",
-      "An orbit beyond gravity"
+      "Chief Justice of India",
+      "President of India",
+      "Speaker of the Lok Sabha only",
+      "Chairman of the Rajya Sabha"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: A circular equatorial orbit matching Earth’s rotation period and direction\n\nWHY CORRECT / CALCULATION:\nWhy: equatorial plane, direction and angular period are all required. Trap: C omits plane and direction.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: space science",
+    "explanation": "CORRECT: President of India\n\nWHY CORRECT:\nArt. 117: Money Bill needs President’s recommendation for introduction; Speaker certifies Money Bill character.\n\nCALCULATION: N/A — polity.\n\nTRAP ANALYSIS:\nA) Judicial, not introduction. C) Certification ≠ prior recommendation to introduce. D) Rajya Sabha has limited Money Bill role.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Money Bill: introduction only in LS; President’s recommendation; Speaker’s certificate.\n• REMEMBER: Rajya Sabha can only recommend, not amend/reject finally within timelines.\n• ALSO ASKED FROM THIS TOPIC: Finance Bill vs Money Bill; Annual Financial Statement.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
   {
     "id": 84,
     "subject": "General Awareness",
-    "topic": "GA: polity",
-    "question": "For a bill containing only matters constitutionally permitted in a Money Bill and incidental provisions, who gives the final parliamentary certification of its status?",
+    "topic": "GA: geography (AP)",
+    "question": "Which of the following is the capital city of Andhra Pradesh (legislative/executive seat as currently designated for the state)?",
     "image": "",
     "options": [
-      "President of India",
-      "Chief Justice of India",
-      "Speaker of Lok Sabha",
-      "Finance Commission"
+      "Visakhapatnam",
+      "Amaravati",
+      "Tirupati",
+      "Kurnool"
     ],
-    "answer": 2,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Speaker of Lok Sabha\n\nWHY CORRECT / CALCULATION:\nWhy: the Speaker certifies it. Trap: A gives assent but does not issue this parliamentary certification. **Hard justification:** distinguishes bill content from certifying authority.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: polity",
+    "explanation": "CORRECT: Amaravati\n\nWHY CORRECT:\nAndhra Pradesh’s planned/greenfield capital is Amaravati (capital-region development ongoing).\n\nCALCULATION: N/A — geography/GK.\n\nTRAP ANALYSIS:\nA) Major port city, not the designated capital project seat. C/D) Important cities, not the capital designation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Distinguish economic hubs vs capital designation.\n• REMEMBER: AP capital debates are exam-sensitive — stick to officially stated capital-region name.\n• ALSO ASKED FROM THIS TOPIC: AP districts reorganisation; coastal vs Rayalaseema.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-APPSC"
   },
   {
     "id": 85,
     "subject": "General Awareness",
-    "topic": "GA: history",
-    "question": "Choose the correct chronology: Non-Cooperation Movement, Civil Disobedience Movement, Quit India Movement, Independence.",
+    "topic": "GA: economy (RBI tool)",
+    "question": "If the Reserve Bank of India raises the repo rate, other things equal, the intended near-term effect is generally to:",
     "image": "",
     "options": [
-      "CDM→NCM→Quit India→Independence",
-      "NCM→CDM→Quit India→Independence",
-      "NCM→Quit India→CDM→Independence",
-      "Quit India→NCM→CDM→Independence"
+      "Make borrowing cheaper and boost demand",
+      "Make policy borrowing costlier and cool demand-side pressure",
+      "Directly fix retail petrol prices",
+      "Abolish CRR"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: NCM→CDM→Quit India→Independence\n\nWHY CORRECT / CALCULATION:\nWhy: the years are 1920, 1930, 1942 and 1947. Trap: C places Quit India before Civil Disobedience.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — GA: history",
-    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
-  },
-  {
-    "id": 86,
-    "subject": "Reasoning & General Intelligence",
-    "topic": "Reasoning: coding",
-    "question": "In a code, letters are shifted alternately +2, −1, +2, −1. GRID is coded as:",
-    "image": "",
-    "options": [
-      "IQUC",
-      "HQKC",
-      "ITKF",
-      "IQKC"
-    ],
-    "answer": 3,
-    "difficulty": "Easy",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: IQKC\n\nWHY CORRECT / CALCULATION:\nWhy: G→I, R→Q, I→K, D→C. Trap: A applies the positive shift to every letter.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Reasoning: coding",
+    "explanation": "CORRECT: Make policy borrowing costlier and cool demand-side pressure\n\nWHY CORRECT:\nHigher repo raises the policy rate corridor signal → costlier liquidity → tends to moderate demand/inflation pressures.\n\nCALCULATION: N/A — economy.\n\nTRAP ANALYSIS:\nA) Opposite of hike. C) Not RBI’s direct retail fuel mandate. D) Unrelated instrument.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Repo = rate at which RBI lends to banks against collateral.\n• REMEMBER: Hike → tighten; cut → ease. Pair with CRR/SLR/MSF basics.\n• ALSO ASKED FROM THIS TOPIC: CPI inflation targeting; transmission lags; standing deposit facility.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
   {
-    "id": 87,
+    "id": 86,
     "subject": "Reasoning & General Intelligence",
-    "topic": "Reasoning: scheduling",
-    "question": "Inspections P,Q,R,S,T occur Monday–Friday, one daily. R is immediately after P; Q is before S; T is Wednesday; P is not Monday. Which schedule is possible?",
+    "topic": "Reasoning: coding (station code)",
+    "question": "In a certain code used in a mock dispatch sheet, each letter is shifted +1, −1, +1, −1… alternately. The code for BAY is:",
     "image": "",
     "options": [
-      "S,Q,T,P,R",
-      "Q,P,T,R,S",
-      "P,R,T,Q,S",
-      "Q,S,T,P,R"
+      "CBX",
+      "ABZ",
+      "CBZ",
+      "AAX"
+    ],
+    "answer": 2,
+    "difficulty": "Easy",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: CBZ\n\nWHY CORRECT:\nB→C (+1), A→Z (−1 wraps? Standard exam often A−1=Z), Y→Z (+1) → CBZ. If A−1=Z: yes CBZ.\n\nCALCULATION: B+1=C; A−1=Z; Y+1=Z → CBZ.\n\nTRAP ANALYSIS:\nA) Y−1. B) No shift. D) Wrong wrap.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Alternate +1/−1 on successive letters; wrap A↔Z.\n• REMEMBER: Write positions 1–26 before shifting.\n• ALSO ASKED FROM THIS TOPIC: Reverse order coding; +2 constant shift; symbol coding.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-FamilyQB"
+  },
+  {
+    "id": 87,
+    "subject": "Reasoning & General Intelligence",
+    "topic": "Reasoning: scheduling (outage slots)",
+    "question": "Five outage blocks P,Q,R,S,T are scheduled Monday–Friday, one per day. R is immediately after P; Q is before S; T is on Wednesday; P is not Monday. Which is the correct day for R?",
+    "image": "",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Friday"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Q,S,T,P,R\n\nWHY CORRECT / CALCULATION:\nWhy: T is Wednesday, P-R are Thursday-Friday, and Q precedes S. Trap: A reverses Q and S.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Reasoning: scheduling",
+    "explanation": "CORRECT: Friday\n\nWHY CORRECT:\nT=Wednesday. Consecutive P,R ⇒ possible (Mon–Tue), (Tue–Wed), (Thu–Fri). (Tue–Wed) hits T. P≠Monday eliminates (Mon–Tue). Hence P=Thursday, R=Friday. Remaining Mon/Tue for Q then S.\n\nCALCULATION: Enumerate consecutive slots; eliminate conflicts with T and P≠Mon.\n\nTRAP ANALYSIS:\nA/B) Consecutive pairs already eliminated. C) Would be P’s day, not R.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Linear day order; ‘immediately after’ = next calendar day in the set.\n• REMEMBER: Place fixed day first; then consecutive pair; then before/after constraints.\n• ALSO ASKED FROM THIS TOPIC: Week seating; two rows; circular order.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 88,
     "subject": "Reasoning & General Intelligence",
     "topic": "Reasoning: syllogism",
-    "question": "Statements: All substations are installations. Some installations are automated. No automated system is manual. Which conclusion necessarily follows?",
+    "question": "Statements: All towers are structures. Some structures are automated. Conclusions: I. Some towers are automated. II. Some structures are towers. Which follows?",
     "image": "",
     "options": [
-      "Some substations are automated",
-      "Some installations are not manual",
-      "No substation is manual",
-      "All installations are substations"
+      "Only I",
+      "Only II",
+      "Both I and II",
+      "Neither I nor II"
     ],
     "answer": 1,
-    "difficulty": "Hard",
+    "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Some installations are not manual\n\nWHY CORRECT / CALCULATION:\nWhy: the automated installations are non-manual; they need not be substations. Trap: A assumes the existential set lies inside substations. **Hard justification:** preserves the existential link without reversing premises.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Reasoning: syllogism",
+    "explanation": "CORRECT: Only II\n\nWHY CORRECT:\nAll towers⊂structures ⇒ some structures are towers (II) follows (conversion of universal affirmative in exam syllogism with ‘some’). I does not follow: ‘some structures automated’ need not intersect towers.\n\nCALCULATION: N/A — Venn syllogism.\n\nTRAP ANALYSIS:\nA/C) Assume illicit distribution. D) Misses II.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: All A are B ⇒ Some B are A (standard bank exam). Some B are C ⇏ Some A are C.\n• REMEMBER: Draw two circles; avoid assuming overlap not forced.\n• ALSO ASKED FROM THIS TOPIC: Possibilities cases; either–or conclusions; negatives.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 89,
     "subject": "Reasoning & General Intelligence",
-    "topic": "Reasoning: row arrangement",
-    "question": "Four engineers A,B,C,D face north. A is left of B; C is not at an end; D is immediately right of C; B is at an end. Who must be at the left end?",
+    "topic": "Reasoning: direction (feeder route)",
+    "question": "From a control centre, an engineer goes 5 km north, then 3 km east, then 5 km south. How far and in which direction is he from the start?",
     "image": "",
     "options": [
-      "A",
-      "B",
-      "C",
-      "D"
+      "3 km east",
+      "3 km west",
+      "5 km east",
+      "4 km north"
     ],
     "answer": 0,
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: A\n\nWHY CORRECT / CALCULATION:\nWhy: B must be right end; C-D occupy the middle, leaving A left. Trap: B violates “A left of B.”\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Reasoning: row arrangement",
+    "explanation": "CORRECT: 3 km east\n\nWHY CORRECT:\nNorth 5 and south 5 cancel; net displacement = 3 km east.\n\nCALCULATION: Vector: +5N −5S +3E = 3E.\n\nTRAP ANALYSIS:\nB) Sign error on east. C) Uses north leg. D) Cancels wrongly.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Resolve N/S and E/W separately; net = resultant.\n• REMEMBER: Equal opposite legs cancel.\n• ALSO ASKED FROM THIS TOPIC: Shortest path; directions with turns (left/right facing).",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
+    "origin": "Inspired-FamilyQB"
   },
   {
     "id": 90,
     "subject": "Reasoning & General Intelligence",
-    "topic": "Reasoning: data sufficiency",
-    "question": "What is integer \\(n\\)? I: \\(n^2=49\\). II: \\(n>0\\). Choose the sufficient statement set.",
+    "topic": "Reasoning: analogy",
+    "question": "Transformer : Voltage :: Circuit breaker : ?",
     "image": "",
     "options": [
-      "I alone",
-      "II alone",
-      "Both together, neither alone",
-      "Either alone"
-    ],
-    "answer": 2,
-    "difficulty": "Hard",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: Both together, neither alone\n\nWHY CORRECT / CALCULATION:\nWhy: I gives ±7; II selects +7 only with I. Trap: A overlooks the negative root. **Hard justification:** sufficiency, not merely truth, is tested.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Reasoning: data sufficiency",
-    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
-  },
-  {
-    "id": 91,
-    "subject": "English Language & Comprehension",
-    "topic": "English: grammar",
-    "question": "Choose the grammatically correct sentence.",
-    "image": "",
-    "options": [
-      "Each of the drawings are checked.",
-      "Each of the drawings has been checked.",
-      "Each of the drawings have been checked.",
-      "Each of the drawings were checked."
+      "Frequency",
+      "Fault current interruption",
+      "Power factor",
+      "Reactive power only"
     ],
     "answer": 1,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Each of the drawings has been checked.\n\nWHY CORRECT / CALCULATION:\nWhy: singular “Each” takes “has.” Trap: C agrees with the nearer plural noun instead of the head subject.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — English: grammar",
+    "explanation": "CORRECT: Fault current interruption\n\nWHY CORRECT:\nAnalogy of primary function: transformer transforms voltage; circuit breaker interrupts fault/load current.\n\nCALCULATION: N/A — analogy.\n\nTRAP ANALYSIS:\nA/C/D) Not CB’s defining analogy pair.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Function-based analogies common in AEE Non-core.\n• REMEMBER: Stay with primary role, not secondary effects.\n• ALSO ASKED FROM THIS TOPIC: Instrument transformer : measurement; isolator : visible isolation (no break load).",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
+  },
+  {
+    "id": 91,
+    "subject": "English Language & Comprehension",
+    "topic": "English: passage comprehension",
+    "question": "Passage: “During the pre-monsoon inspection, the team noted that several tower stubs showed early corrosion at the ground line. The report recommended cleaning, recoating, and closer soil-drainage checks before the next storm season, because untreated stubs can lose section capacity faster than expected under wind loads.” According to the passage, untreated corroded stubs are a concern mainly because they may:",
+    "image": "",
+    "options": [
+      "Increase transformer oil acidity",
+      "Lose section capacity faster under wind loads",
+      "Reduce busbar ampacity only",
+      "Eliminate the need for drainage checks"
+    ],
+    "answer": 1,
+    "difficulty": "Medium",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: Lose section capacity faster under wind loads\n\nWHY CORRECT:\nThe last clause states untreated stubs can lose section capacity faster under wind loads — direct comprehension.\n\nCALCULATION: N/A — passage-based.\n\nTRAP ANALYSIS:\nA/C) Not in passage. D) Contradicts recommendation.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Answer only from passage; ignore outside technical guesses.\n• REMEMBER: Look for causal ‘because’ clauses.\n• ALSO ASKED FROM THIS TOPIC: Inference vs stated fact; tone questions; vocab-in-context from passage.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
   },
   {
     "id": 92,
     "subject": "English Language & Comprehension",
-    "topic": "English: vocabulary",
-    "question": "In “The engineer gave a concise account of the failure,” concise most nearly means:",
+    "topic": "English: active-passive",
+    "question": "Choose the correct passive form of: “The engineer verified the relay settings.”",
     "image": "",
     "options": [
-      "Repetitive",
-      "Doubtful",
-      "Confidential",
-      "Brief but complete"
+      "The relay settings were verified by the engineer.",
+      "The relay settings verified the engineer.",
+      "The relay settings are verify by the engineer.",
+      "The engineer was verified by the relay settings."
     ],
-    "answer": 3,
+    "answer": 0,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Brief but complete\n\nWHY CORRECT / CALCULATION:\nWhy: “concise” means clear and brief. Trap: “confidential” concerns access, not length.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — English: vocabulary",
+    "explanation": "CORRECT: The relay settings were verified by the engineer.\n\nWHY CORRECT:\nActive SVO → Passive: object becomes subject; verb = was/were + V3; agent = by + old subject.\n\nCALCULATION: N/A — grammar transform.\n\nTRAP ANALYSIS:\nB) Reversed roles. C) Wrong verb form. D) Nonsense agent swap.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Passive = obj + be + past participle (+ by agent).\n• REMEMBER: Tense of be matches original tense (past → were).\n• ALSO ASKED FROM THIS TOPIC: Direct↔Indirect; subject-verb agreement; voice with modals (must be done).",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
   },
   {
     "id": 93,
     "subject": "English Language & Comprehension",
-    "topic": "English: error detection",
-    "question": "Identify the erroneous part: “Neither the contractor / nor the supervisors / was willing / to sign the record.”",
+    "topic": "English: direct-indirect",
+    "question": "Choose the correct indirect speech: He said, “I am checking the earthing.”",
     "image": "",
     "options": [
-      "First",
-      "Second",
-      "Third",
-      "Fourth"
+      "He said that he was checking the earthing.",
+      "He said that he is checking the earthing.",
+      "He said that I am checking the earthing.",
+      "He said that he will checking the earthing."
     ],
-    "answer": 2,
-    "difficulty": "Medium",
+    "answer": 0,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Third\n\nWHY CORRECT / CALCULATION:\nWhy: the nearer plural subject requires “were willing.” Trap: the opening singular noun does not control agreement across “nor.”\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — English: error detection",
+    "explanation": "CORRECT: He said that he was checking the earthing.\n\nWHY CORRECT:\nReporting verb past → backshift present continuous to past continuous; pronoun I→he.\n\nCALCULATION: N/A — narration.\n\nTRAP ANALYSIS:\nB) No backshift. C) Pronoun not changed. D) Wrong verb pattern.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: said + that + backshifted clause; pronouns follow sense.\n• REMEMBER: Universal truths sometimes skip backshift — not applicable here.\n• ALSO ASKED FROM THIS TOPIC: Active↔Passive; interrogative narration; imperative narration.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
   {
     "id": 94,
     "subject": "English Language & Comprehension",
-    "topic": "English: inference",
-    "question": "“The reservoir level rose after rain, yet operators retained flood cushion because upstream inflow was still increasing.” Which inference is best supported?",
+    "topic": "English: error spotting",
+    "question": "Identify the part with a grammatical error: “Neither the contractor / nor the supervisors / was willing / to sign the record.”",
     "image": "",
     "options": [
-      "Level alone was insufficient; inflow trend influenced the decision",
-      "Rain had ended permanently",
-      "Flood cushion means a full reservoir",
-      "Operators ignored forecasts"
-    ],
-    "answer": 0,
-    "difficulty": "Hard",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: Level alone was insufficient; inflow trend influenced the decision\n\nWHY CORRECT / CALCULATION:\nWhy: the causal phrase links retained capacity to inflow trend. Trap: B claims permanence absent from the passage. **Hard justification:** selects warranted inference over unsupported claims.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — English: inference",
-    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Brand-new"
-  },
-  {
-    "id": 95,
-    "subject": "English Language & Comprehension",
-    "topic": "English: sentence order",
-    "question": "Arrange: P—Consequently, traffic was diverted. Q—Inspection revealed bearing distress. R—The bridge was closed for emergency assessment. S—A replacement plan was then approved.",
-    "image": "",
-    "options": [
-      "P-Q-R-S",
-      "R-Q-S-P",
-      "Q-R-P-S",
-      "Q-P-S-R"
+      "Neither the contractor",
+      "nor the supervisors",
+      "was willing",
+      "to sign the record."
     ],
     "answer": 2,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Q-R-P-S\n\nWHY CORRECT / CALCULATION:\nWhy: detection → closure → diversion → replacement plan. Trap: D diverts traffic before the closure decision.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — English: sentence order",
+    "explanation": "CORRECT: was willing\n\nWHY CORRECT:\nWith neither…nor, the verb agrees with the nearer subject: supervisors (plural) → were willing.\n\nCALCULATION: N/A — grammar.\n\nTRAP ANALYSIS:\nA/B/D) Grammatically fine; error is verb agreement.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Neither…nor → verb agrees with nearest subject.\n• REMEMBER: Either…or same rule; each/every take singular.\n• ALSO ASKED FROM THIS TOPIC: Subject–verb with collective nouns; tense consistency.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Inspired-APPSC"
+  },
+  {
+    "id": 95,
+    "subject": "English Language & Comprehension",
+    "topic": "English: vocabulary-in-context",
+    "question": "In “The engineer gave a concise account of the failure,” concise most nearly means:",
+    "image": "",
+    "options": [
+      "Lengthy and detailed",
+      "Brief and clear",
+      "Vague and delayed",
+      "Hostile"
+    ],
+    "answer": 1,
+    "difficulty": "Easy",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: Brief and clear\n\nWHY CORRECT:\nConcise = short yet clear; antonym of lengthy/verbose.\n\nCALCULATION: N/A — vocab.\n\nTRAP ANALYSIS:\nA) Opposite. C/D) Unrelated senses.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Use context clues: ‘account of the failure’ suggests clarity + brevity.\n• REMEMBER: Concise ≠ abrupt/rude.\n• ALSO ASKED FROM THIS TOPIC: One-word substitutes; idioms; antonyms in context.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-APPSC"
   },
   {
     "id": 96,
     "subject": "Computer Knowledge",
-    "topic": "Computer: cyber hygiene",
+    "topic": "Computer: cybersecurity",
     "question": "Which control most directly reduces account compromise after a password is stolen?",
     "image": "",
     "options": [
+      "Larger monitor",
       "Multi-factor authentication",
-      "Disk defragmentation",
-      "Clearing the print queue",
-      "Increasing monitor resolution"
+      "Defragmenting the disk",
+      "Increasing screen brightness"
     ],
-    "answer": 0,
+    "answer": 1,
     "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Multi-factor authentication\n\nWHY CORRECT / CALCULATION:\nWhy: MFA requires another independent factor. Trap: the other choices do not protect authentication.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Computer: cyber hygiene",
+    "explanation": "CORRECT: Multi-factor authentication\n\nWHY CORRECT:\nMFA requires a second factor beyond the password, so a stolen password alone is insufficient.\n\nCALCULATION: N/A — cyber hygiene.\n\nTRAP ANALYSIS:\nA/C/D) Unrelated to authentication.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Factors: knowledge / possession / inherence.\n• REMEMBER: MFA ≠ only longer password; phishing still a risk for OTP.\n• ALSO ASKED FROM THIS TOPIC: Phishing vs vishing; HTTPS padlock meaning; password managers.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
   },
   {
     "id": 97,
     "subject": "Computer Knowledge",
     "topic": "Computer: networking",
-    "question": "Which service normally resolves a domain name into an IP address?",
+    "question": "Which service normally resolves a human-readable domain name into an IP address?",
     "image": "",
     "options": [
+      "FTP",
       "DNS",
       "SMTP",
-      "FTP",
-      "DHCP"
-    ],
-    "answer": 0,
-    "difficulty": "Medium",
-    "questionType": "Conceptual",
-    "formula": "",
-    "explanation": "CORRECT: DNS\n\nWHY CORRECT / CALCULATION:\nWhy: DNS resolves names; DHCP allocates host configuration. Trap: D confuses addressing with name resolution.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Computer: networking",
-    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
-  },
-  {
-    "id": 98,
-    "subject": "Computer Knowledge",
-    "topic": "Computer: spreadsheet",
-    "question": "A spreadsheet formula will be copied both down and across. Which reference keeps column A and row 1 fixed?",
-    "image": "",
-    "options": [
-      "A1",
-      "$A$1",
-      "A$1",
-      "$A1"
+      "DHCP only for printing"
     ],
     "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: $A$1\n\nWHY CORRECT / CALCULATION:\nWhy: both dollar signs make the reference absolute. Trap: C fixes only the row.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Computer: spreadsheet",
+    "explanation": "CORRECT: DNS\n\nWHY CORRECT:\nDNS maps domain names to IP addresses. FTP=file transfer; SMTP=mail; DHCP=address lease (not name resolution).\n\nCALCULATION: N/A — networking.\n\nTRAP ANALYSIS:\nA/C/D) Wrong application-layer roles.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: DNS query → IP; reverse DNS exists but less tested.\n• REMEMBER: DHCP ≠ DNS though both help hosts join networks.\n• ALSO ASKED FROM THIS TOPIC: HTTP vs HTTPS; TCP vs UDP; private IP ranges.",
+    "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
+    "origin": "Brand-new"
+  },
+  {
+    "id": 98,
+    "subject": "Computer Knowledge",
+    "topic": "Computer: spreadsheet",
+    "question": "In a spreadsheet, which reference keeps column A and row 1 fixed when the formula is copied both down and across?",
+    "image": "",
+    "options": [
+      "A1",
+      "$A1",
+      "A$1",
+      "$A$1"
+    ],
+    "answer": 3,
+    "difficulty": "Medium",
+    "questionType": "Conceptual",
+    "formula": "",
+    "explanation": "CORRECT: $A$1\n\nWHY CORRECT:\nAbsolute reference $A$1 locks both column and row under fill/copy.\n\nCALCULATION: N/A — Office skill.\n\nTRAP ANALYSIS:\nA) Fully relative. B) Locks column only. C) Locks row only.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: $ before col locks col; $ before row locks row.\n• REMEMBER: Mixed refs ($A1 / A$1) common in exam traps.\n• ALSO ASKED FROM THIS TOPIC: COUNTIF; pivot basics; freeze panes (UI, not formula).",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
@@ -2128,37 +2127,37 @@ export const questions = [
     "question": "A table requires a field that uniquely identifies every row and cannot be NULL. Which constraint is most appropriate?",
     "image": "",
     "options": [
-      "Foreign key",
-      "View",
+      "Foreign key only",
       "Primary key",
-      "Non-unique index"
+      "Default value only",
+      "Check constraint for colour"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Medium",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Primary key\n\nWHY CORRECT / CALCULATION:\nWhy: a primary key enforces unique, non-null row identity. Trap: an ordinary index need not enforce either property.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Computer: database",
+    "explanation": "CORRECT: Primary key\n\nWHY CORRECT:\nPrimary key uniquely identifies rows and disallows NULL (standard relational definition).\n\nCALCULATION: N/A — DBMS awareness.\n\nTRAP ANALYSIS:\nA) FK references a PK elsewhere. C/D) Don’t guarantee uniqueness+NOT NULL together as PK does.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: PK = unique + not null; FK references PK/UK.\n• REMEMBER: A table has one PK (may be composite).\n• ALSO ASKED FROM THIS TOPIC: Normalization 1NF–3NF slogans; candidate key vs PK.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Brand-new"
   },
   {
     "id": 100,
     "subject": "Computer Knowledge",
-    "topic": "Computer: security judgement",
-    "question": "An invoice email has attachment `invoice.pdf.exe` and a supplier domain differing by one character from the known domain. Which response is safest?",
+    "topic": "Computer: OS / files",
+    "question": "Which statement about RAM and a magnetic/SSD hard disk is correct at awareness level?",
     "image": "",
     "options": [
-      "Rename and run it",
-      "Forward it for a colleague to test",
-      "Disable antivirus temporarily",
-      "Do not open; verify through a known channel and report/quarantine it"
+      "RAM is non-volatile long-term storage; disk is only for CPU registers",
+      "RAM is typically volatile working memory; disk provides persistent storage",
+      "Both are identical in volatility and speed",
+      "Disk contents are erased every time power is on"
     ],
-    "answer": 3,
-    "difficulty": "Hard",
+    "answer": 1,
+    "difficulty": "Easy",
     "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: Do not open; verify through a known channel and report/quarantine it\n\nWHY CORRECT / CALCULATION:\nWhy: both indicators suggest phishing/malware. Trap: B spreads the risk instead of containing it. **Hard justification:** combines detection, independent verification and containment.\n\nTOPIC HIGH-YIELD:\n• APTRANSCO AEE Civil — Computer: security judgement",
+    "explanation": "CORRECT: RAM is typically volatile working memory; disk provides persistent storage\n\nWHY CORRECT:\nRAM loses data on power loss (volatile); disk/SSD keeps files persistently.\n\nCALCULATION: N/A — hardware/OS.\n\nTRAP ANALYSIS:\nA) Reversed. C) False. D) Opposite of persistent storage.\n\nTOPIC REVISION NOTES (learn / quick revise this micro-topic):\n• FORMULAS / KEY RELATIONS: Volatile vs non-volatile; primary vs secondary memory.\n• REMEMBER: Cache/registers are faster/smaller than RAM; disk slower/larger.\n• ALSO ASKED FROM THIS TOPIC: Virtual memory basics; file extensions; USB class.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
-    "origin": "Inspired-APPSC"
+    "origin": "Brand-new"
   }
 ];
