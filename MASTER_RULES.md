@@ -14,6 +14,8 @@ This overrides “filler”, textbook-LKG, or template-style questions.
 - Prefer **application, design judgement, numerical multi-step, diagram-dependent, and site/practical** questions over definition recall
 - Include **practically able** questions — stems a field / design / substation / site engineer could face in real work, not classroom trivia
 - Difficulty feel: mostly **Medium**, with controlled Hard; Easy capped at **25% only**
+- **Stem length:** almost every stem must be a **full exam-style paragraph** (context + data/conditions + ask) — **not one-line** definition plugs (see **Stem Length & Direct Cap**)
+- **Direct questions ≤ 25%** of the full paper (and of each technical subject) — **≥ 75%** must need multi-step / judgement / diagram / trap thinking (see Golden Rule 2). Observed failure: papers that feel ~90% direct are **Fail** even if Easy count looks OK
 - **Calibrate UP:** historical setter bias labels items **1–2 levels too easy** vs real APTRANSCO AEE — apply the **Difficulty Calibration Bias Correction** below on every paper from now on
 - A serious AEE aspirant should find the paper **exam-like**, not coaching-drill easy and not GATE-research hard
 
@@ -391,8 +393,42 @@ Use for: Comparative properties, Code design values, SPT vs density correlation,
 At least **50% of technical questions must combine two or more patterns**.
 Valid combinations: Numerical + Diagram, Numerical + Application, Diagram + Conceptual, Practical + IS Code, Diagram + Numerical + Application.
 
-### Golden Rule 2 – No Direct Recall Dominance
-No subject should contain more than **25% direct recall** questions.
+### Golden Rule 2 – Direct Cap (STRICT — max 25% direct)
+
+**Definition — Direct question:** solvable by single-formula plug-in, one-line definition recall, or “pick the standard fact” with **no** need for multi-step arithmetic, diagram reading, boundary/trap judgement, code clause application, or two-concept linking.
+
+**Hard caps (all must hold):**
+| Scope | Direct max | Non-direct min |
+|---|---|---|
+| Full paper (100 Q) | **≤ 25 questions (25%)** | **≥ 75%** |
+| Technical section (70 Q) | **≤ 18 questions (~25%)** | **≥ 75%** |
+| Each technical subject (≥ 4 Qs) | **≤ 25% of that subject** | **≥ 75% of that subject** |
+
+**Non-direct** means at least one of: multi-step numerical, diagram-dependent, application/design judgement, Practical/site decision, AR with engineering reasoning, matching/table that needs comparison, or two-pattern combo.
+
+**Fail conditions:**
+- Paper feels ~**90% direct** (coaching worksheet) even if Easy ≤ 25% → **not APPROVED**
+- Easy label used as an excuse to flood Direct stems → Fail (Easy **subset** of Direct; Direct may also hide inside soft Medium — those must be hardened or relabelled)
+- Compliance must publish a **Direct count** next to Easy/Medium/Hard; if Direct > 25% → rewrite until ≤ 25%
+
+**Aligns with Bloom:** Remember ≤ 15% tech; Direct cap is the **stricter paper-feel gate** (Direct includes some Apply one-step plugs — those still count toward the 25%).
+
+### Golden Rule 2A – Stem Length (STRICT — no one-line stems)
+
+**Almost all questions** must have a **substantive stem**, not a one-liner.
+
+**Minimum stem standard (technical Qs):**
+1. **Not one line** for ≥ **90%** of technical questions (Non-core may stay shorter, but still not telegram-style).
+2. Typical good stem has **≥ 2–3 sentences** or one dense sentence with **multiple clauses**: setup/context → given data or conditions → what is asked.
+3. Include enough **exam context** that a candidate must **read carefully** (system type, assumptions, which quantity, at what condition) — not “What is SIL?” alone.
+4. **Hard / Medium / Application / Diagram / Practical:** stem must carry scenario + constraints; one-line “define / formula name” → **MODIFY**.
+5. **Easy (within Direct ≤ 25%):** may be shorter, but still **exam-plausible** with at least a clear condition or numeric setup — pure “X means?” definition stubs → rewrite.
+
+**Fail examples:**  
+`What is Ferranti effect?` · `SIL equals?` · `Unit of reluctance?` · `Slope of BMD is?`  
+**Pass shape:** give line/system/data/figure reference, state the ask with conditions, then options that trap wrong assumptions.
+
+**Compliance check:** flag any technical stem under ~**120 characters** or a single short clause with no data/condition; require rewrite unless it is a rare Non-core / allowed Easy Direct within the 25% budget.
 
 ### Golden Rule 3 – Distractor Engineering
 At least **70% of distractors** must reflect real engineering mistakes:
@@ -745,11 +781,14 @@ Stage 2 — Difficulty Validation (Difficulty Engine + Bias Correction)
   Soft-labelling check: if claimed Medium/Hard but solvable by recall / single formula
   without judgement → MODIFY (harden stem) or downgrade label (Bias Correction).
   Plan Medium/Hard first at corrected depth; never fill Easy then inflate labels.
+  Direct Cap: mark each Q Direct / Non-direct; paper Direct ≤ 25% (Golden Rule 2).
+  Stem Length: technical stems must not be one-liners (Golden Rule 2A).
 
 Stage 3 — Pattern Validation
   Confirm the stated pattern (Numerical/Diagram/Conceptual/etc.) is genuine.
   A question claiming "Diagram" without a valid image path is REJECTED.
   A question claiming "Application" that only asks for recall is REJECTED.
+  One-line definition / formula-name stems → REJECTED or MODIFY (Rule 2A).
 
 Stage 4 — Diagram Validation (Professional + Priority Check)
   ✓ Diagram exists at the declared file path
@@ -1314,10 +1353,12 @@ Checks cognitive level mix for AEE CBT realism (not school recall dominance).
 | Create | Design-from-scratch (rare in CBT) | ≤ 5% |
 
 #### Bloom rules
-- **Remember ≤ 15%** of technical questions (aligns with “no direct recall dominance”)
+- **Remember ≤ 15%** of technical questions
+- **Direct ≤ 25%** of full paper / technical / each subject (Golden Rule 2 — Direct includes one-step Apply plugs, so Direct is **stricter than Remember alone**)
 - **Apply + Analyze ≥ 60%** of technical questions
 - Every **Hard** question must be Analyze and/or Evaluate (not Remember)
 - Every **Application** / **Practical** tagged question must be Apply or Evaluate (Stage 8–9 gates)
+- Stem Length Rule 2A applies regardless of Bloom tag
 
 #### Mandatory: Bloom by subject (not only paper totals)
 
@@ -1533,6 +1574,8 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
 | Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
+| Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
+| Stem length | Technical stems are full exam paragraphs (context + data/conditions + ask); **not one-liners** (≥90% tech); Rule 2A |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
