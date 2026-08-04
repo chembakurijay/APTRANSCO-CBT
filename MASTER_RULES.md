@@ -276,7 +276,8 @@ Final papers must be certified as fully compliant.
 | Question Pattern              | Count  | % of Paper | Priority   |
 |-------------------------------|--------|------------|------------|
 | Numerical (Engineering Calc.) | 21     | 30%        | ★★★★★ |
-| Conceptual                    | 14     | 20%        | ★★★★★ |
+| Conceptual                    | **13** | ~19%       | ★★★★★ |
+| **Theory Assumptions**        | **≥1** | ~1–2%      | ★★★★★ |
 | Diagram / Figure Based        | 12–15  | 17–21%     | ★★★★★ |
 | Application / Design Based    | 10     | 14%        | ★★★★★ |
 | Practical / Site Engineering  | 5      | 7%         | ★★★★☆ |
@@ -284,14 +285,24 @@ Final papers must be certified as fully compliant.
 | IS Code / Standard Based      | 4      | 6%         | ★★★★☆ |
 | Graph / Curve Interpretation  | 3–4    | 5%         | ★★★☆☆ |
 
-> These categories overlap. A single question can combine Numerical + Diagram + Application.
+> These categories overlap. A single question can combine Numerical + Diagram + Application.  
+> **Theory Assumptions ≥1** is carved from the old Conceptual-14 budget (now **13 Conceptual + ≥1 Theory Assumptions**). Never drop Theory Assumptions to keep a soft 14th concept recall.
 
 ### Numerical Questions (21)
 Must not be simple formula substitution. Suggested difficulty split: 5 Easy, 11 Medium, 5 Hard (aligned to overall Easy 25% / Medium 50% / Hard 25%).
 Topics: Stress, Strain, Beam reactions, SFD/BMD, Deflection, Torsion, RCC design, Slab, Footing, Flow, Turbines, Bearing capacity, Settlement.
 
-### Conceptual Questions (14)
-Avoid definition-type questions. Ask: Why? When? Which is most suitable? What happens if? Engineering consequences.
+### Conceptual Questions (13)
+Avoid definition-type questions. Ask: Why? When? Which is most suitable? What happens if? Engineering consequences.  
+Do **not** use a Conceptual slot for “list the assumptions of …” — that belongs under **Theory Assumptions**.
+
+### Theory Assumptions Questions (**≥1 mandatory every FLT / every paper**)
+Every Civil and Electrical paper **must** include **at least one** question whose core skill is recognising **valid / invalid assumptions** of a named classical theory or idealisation in the AEE syllabus.
+
+**Civil (rotate across FLTs):** Euler column; Rankine earth pressure; Bernoulli; Hagen–Poiseuille; Terzaghi 1-D consolidation; Boussinesq; pure bending (plane sections); Darcy; Mohr–Coulomb; Winkler.  
+**Electrical (rotate):** Ideal transformer; sync-machine phasor idealisations; two-wattmeter; symmetrical components; short/medium line; small-signal transistor; Bode asymptotes; max-power-transfer idealisations.
+
+**Quality bar:** stem names the theory; options are **inner-level assumption statements** (homogeneous isotropic, plane sections remain plane, inviscid along streamline, 1-D drainage, weightless backfill, etc.) — **not** topic titles; tag `Theory-Assumptions`; **Fail packaging if count = 0**.
 
 ### Application Questions (10)
 Examples: Which footing is correct? Which turbine is suitable? Which reinforcement detailing is correct? Which section will fail first?
@@ -570,65 +581,71 @@ If diagram quotas, PYQ/core share, or figure quality look short: **full re-scan 
 
 Explanations are part of the **exam product**, not a key footnote. Weak one-liners Fail approval packaging even if the keyed answer is correct.
 
-### Minimum structure (store in `explanation`; use clear line breaks)
+### Required order (store in `explanation`; clear line breaks)
 
 ```
-CORRECT: <option letter/text>
+CORRECT: <full keyed option text>
 
 WHY CORRECT:
-<2–5 sentences of engineering reasoning; cite concept / law / code behaviour>
+<2–6 sentences: the governing idea, why this option uniquely fits the stem, and the decision rule>
 
-CALCULATION:   (mandatory for Numerical / Diagram+Numerical / any Q with numbers)
+CALCULATION:   (mandatory whenever numbers appear; else "N/A — conceptual / AR / matching / theory-assumptions")
 <formula>
-<substituted values>
+<substituted values with units>
 <arithmetic steps>
-<final result matching the keyed option>
-(If non-numerical: write "CALCULATION: N/A — conceptual / matching / AR")
+<final result = keyed option>
 
-TRAP ANALYSIS (exam-level only — no LKG jokes):
-A) <why wrong — name the specific misconception / wrong formula / slip>
-B) <…>
-C) <…>
-D) <…>   (skip the correct letter; cover all three wrong options)
+TRAP ANALYSIS (every wrong option — detailed):
+A) <option text short-ref>: <specific misconception / wrong formula / unit slip / figure misread>
+B) …
+C) …
+D) …   (omit the correct letter; each trap must be exam-plausible, not a joke)
 
-TOPIC REVISION NOTES (same micro-topic — learn / quick revise):
-• FORMULAS / KEY RELATIONS: <governing equations, units, sign conventions>
-• REMEMBER: <standard values, code limits, thumb rules, classic comparisons>
-• ALSO ASKED FROM THIS TOPIC: <2–3 other PYQ-style angles a candidate should revise next>
+WHAT TO REMEMBER (inner content — NOT topic titles):
+• <usable formula / limit / sign / unit / assumption / comparison with numbers where standard>
+• <second inner fact a candidate should memorise for this micro-skill>
+• <third inner fact — classic trap value, code thumb rule, or condition of validity>
+
+ALSO ASKED / HIGH CHANCE (inner angles — NOT chapter names):
+• <concrete alternate stem angle, e.g. “λ = Le/r with both ends fixed → K=0.65; compute λ”>
+• <second concrete angle with the actual quantity tested>
+• <optional third: “which Euler assumption fails if residual stress / crookedness is present?”>
 ```
 
 Optional but preferred: fill `formula` with the governing equation(s) used in CALCULATION.
 
-**Anti-boilerplate rule (STRICT):** the headings WHY / CALC / TRAP / REVISION NOTES are required **structure**, not a license to paste the same generic paragraphs. Each field must be **tailored to this stem’s numbers, figure, code check, and traps**. Explanations that could be swapped onto another question unchanged → **Fail** packaging for that Q.
+**Anti-boilerplate rule (STRICT):** headings are required **structure**, not a license to paste the same SOM/Fluid paragraph on every Q.  
+**Fail if** FORMULAS / REMEMBER / ALSO ASKED could be swapped onto another question in the same subject unchanged.  
+**Fail if** ALSO ASKED / REMEMBER lists only **topic names** (e.g. “Mohr’s circle; torsion of shafts; pure bending”) without **inner working content**.
+
+### Inner-level revision rule (STRICT)
+| Bad (outer labels — Fail) | Good (inner content — Pass) |
+|---|---|
+| “Also asked: Mohr’s circle; combined stress” | “Centre of Mohr circle = (σx+σy)/2 on the σ-axis (τ=0); radius = √[((σx−σy)/2)²+τxy²]” |
+| “Remember: BM/SF sign conventions” | “Hogging BM often taken negative in beams; concentrated couple → jump in BMD, not in SFD” |
+| “Formulas: σ=P/A; τ=VQ/Ib as applicable” on a manometer Q | “ΔP = h(ρm−ρ)g for differential manometer with equal limb elevations; SHg≈13.6” |
 
 ### Length / depth bar
 | Pattern | Min explanation depth |
 |---|---|
-| Numerical / Diagram+Numerical | Full CALCULATION + all traps + ≥3 revision bullets |
-| Conceptual / Application / Practical / AR / Matching / Table | WHY CORRECT with real depth + all traps + ≥3 revision bullets |
-| Non-core Quant | Full arithmetic + exam traps (wrong %, base slip) — still no silly jokes |
-| Other Non-core | WHY + trap mechanism + ≥2 revision bullets for that skill |
+| Numerical / Diagram+Numerical | Full CALCULATION + **all three wrong traps detailed** + ≥3 inner REMEMBER + ≥2 ALSO ASKED angles |
+| Conceptual / Theory-Assumptions / Application / Practical / AR / Matching / Table | WHY with real depth + all traps + ≥3 inner REMEMBER + ≥2 ALSO ASKED |
+| Non-core Quant | Full arithmetic + each wrong option’s slip + skill-level remember |
+| Other Non-core | WHY + each trap + ≥2 inner revision bullets |
 
-Rough length guide: technical explanations typically **≥ 450 characters**; one-liners under ~120 characters are automatic Fail for APPROVED banks.
+Rough length guide: technical explanations typically **≥ 900 characters** with the new trap+inner blocks; under ~300 characters or “Why/CALC one-liner + generic SOM bullets” → automatic Fail.
 
 ### Trap analysis rules (match exam level)
-- Each wrong option must map to a **plausible AEE / GATE-moderate mistake** (forgot √3, used Z instead of Zc, mixed PV/PQ unknowns, gross vs net area, wrong BMD sign, etc.).
-- **Do not** teach LKG options as serious traps — rewrite such options in a MODIFY pass; until rewritten, note briefly that the option is non-engineering and state the **real** trap type used in actual exams.
+- Each wrong option must map to a **plausible AEE / GATE-moderate mistake** (forgot √3, used Z instead of Zc, mixed PV/PQ, gross vs net, wrong BMD jump cause, etc.).
+- Name the **mechanism** (wrong length basis, omitted stagger credit, wrong sign of Vw2, …), not only “incorrect”.
 - Never invent traps that contradict the stem.
 
-### Topic revision-notes rules (replaces old “HIGH-YIELD” label)
-- Points must be from the **same subject micro-topic** as the question.
-- **FORMULAS / KEY RELATIONS** must be usable for revision (not vague slogans).
-- **REMEMBER** = exam-stable facts / limits / comparisons.
-- **ALSO ASKED** = other question angles on the same topic (so the explanation teaches the topic, not only this key).
-- Do **not** paste entire chapter notes — keep focused, but **do** enable quick topic revision.
-
 ### Packaging Fail conditions (explanations)
-- Missing WHY CORRECT, TRAP ANALYSIS (all wrong options), or TOPIC REVISION NOTES
+- Missing CORRECT, WHY CORRECT, TRAP ANALYSIS (all wrong options), WHAT TO REMEMBER, or ALSO ASKED / HIGH CHANCE
 - Numerical without CALCULATION steps that reach the keyed option
-- LKG-style trap commentary presented as serious engineering teaching
+- Outer topic-name bullets instead of inner formulas/limits/angles
+- Identical revision block reused across multiple Qs in the same subject
 - Explanation contradicts the keyed answer
-- “TOPIC HIGH-YIELD” boilerplate with no formulas / remember / also-asked content
 
 ### Paper Quality Scoring Weights
 | Dimension                       | Weight |
@@ -964,12 +981,15 @@ Stage 6 — Distractor Verification
   Random numbers without engineering basis → REJECT all options, rewrite.
 
 Stage 7 — Explanation Verification (Detailed Explanation Standard)
-  The explanation must include ALL of:
-  (a) WHY CORRECT — engineering reason (not a one-liner key)
-  (b) TRAP ANALYSIS — each wrong option tied to a specific exam-level misconception (no LKG joke teaching)
-  (c) Formula / concept used (also prefer `formula` field filled)
-  (d) CALCULATION steps for any numerical / numbered stem — result must match keyed option
-  (e) TOPIC HIGH-YIELD — ≥3 micro-topic points with high exam probability linked to this Q
+  The explanation must include ALL of, in order:
+  (a) CORRECT — full keyed option text
+  (b) WHY CORRECT — engineering reason (not a one-liner key)
+  (c) CALCULATION — full steps for any numerical / numbered stem (else explicit N/A)
+  (d) TRAP ANALYSIS — **each** wrong option with a specific exam-level misconception
+  (e) WHAT TO REMEMBER — **inner** formulas / limits / units / assumptions (not topic titles)
+  (f) ALSO ASKED / HIGH CHANCE — **inner** alternate stem angles (not chapter names)
+  Prefer `formula` field filled for numerical items.
+  Fail if revision bullets are generic subject boilerplate reusable on other Qs unchanged.
   Missing any element → reject / rewrite before APPROVED packaging.
 
 Stage 8 — Practical Question Gate
@@ -1969,7 +1989,8 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Non-core (Audit P) | All five subject gates Pass; **same FLT# Civil↔EE Non-core identical** (P0 Shared Non-core) |
 | Matching Matrix CBT | Every Matching / Matching+Diagram Q has `matchingMatrix` and site renders List-I / List-II as HTML tables |
 | Table CBT | Every Table / Table-Based Q has `dataTable` and site renders a real HTML `<table>` (not markdown-only stem) |
-| Explanation depth | Every Q meets Detailed Explanation Standard with **tailored** WHY/CALC/traps/high-yield (anti-boilerplate); no one-liner keys |
+| Explanation depth | Every Q meets Detailed Explanation Standard: CORRECT → WHY → CALC → detailed traps for **each** wrong option → **inner** WHAT TO REMEMBER → **inner** ALSO ASKED / HIGH CHANCE (no outer topic-name bullets; no cross-Q boilerplate) |
+| Theory Assumptions | **≥1** tagged Theory-Assumptions item per paper (Conceptual budget reduced to 13) |
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
 
