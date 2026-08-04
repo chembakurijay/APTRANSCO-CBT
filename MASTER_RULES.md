@@ -642,6 +642,12 @@ Rough length guide: technical explanations typically **≥ 900 characters** with
 - Each wrong option must map to a **plausible AEE / GATE-moderate mistake** (forgot √3, used Z instead of Zc, mixed PV/PQ, gross vs net, wrong BMD jump cause, etc.).
 - Name the **mechanism** (wrong length basis, omitted stagger credit, wrong sign of Vw2, …), not only “incorrect”.
 - Never invent traps that contradict the stem.
+- **Hard ban — identical filler traps (STRICT Fail):** never write the same sentence on every wrong option. Especially banned:
+  - “Does not satisfy the governing relation that produces …”
+  - “Typical slip: wrong share/basis, unit conversion, or omitted term” (as a universal line)
+  - WHAT TO REMEMBER = only “Governing result for this stem / Keyed answer to lock / Recompute with the same governing relation…”
+  - ALSO ASKED = only “Change one stem number… / complementary check that examiners pair…”
+  Each wrong option needs a **distinct** reason: what that option *actually names/computes*, why a candidate picks it, and why it fails **this** stem.
 
 ### Packaging Fail conditions (explanations)
 - Missing CORRECT, WHY CORRECT, TRAP ANALYSIS (all wrong options), WHAT TO REMEMBER, or ALSO ASKED / HIGH CHANCE
@@ -2029,3 +2035,119 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
    → User APPROVED / MODIFY / REJECT
    → Code + crops only after APPROVED
 ```
+
+---
+
+## Subject-wise High-Yield Tests (ST-HY) — 50 Questions Each
+
+Subject Tests are **syllabus-subject packs** of **50 high-predictability MCQs**, separate from 100-Q FLTs. Same MASTER quality bar (language, Direct≤25%, explanations, diagrams, audits adapted below). Goal: **most-predicted APTRANSCO AEE themes** so a serious candidate who masters these packs is exam-ready for that subject.
+
+### Official subject map (LOCKED — matches Transco / this MASTER weightage)
+
+**Civil technical — 6 subjects (exact FLT technical blocks):**
+| # | Subject | FLT weight | ST-HY id |
+|---|---|---:|---|
+| 1 | Strength of Materials | 15/70 | `civil-st-som-01` |
+| 2 | Reinforced Concrete (RCC) | 13/70 | `civil-st-rcc-01` |
+| 3 | Fluid Mechanics & Hydraulic Machinery | 11/70 | `civil-st-fm-01` |
+| 4 | Steel Structures | 12/70 | `civil-st-steel-01` |
+| 5 | Foundation Engineering | 10/70 | `civil-st-fe-01` |
+| 6 | Soil Mechanics | 9/70 | `civil-st-soil-01` |
+
+**Electrical technical — 7 subject tests (MASTER line-items grouped to 7 packs):**
+| # | Subject pack | MASTER FLT blocks included | ST-HY id |
+|---|---|---|---|
+| 1 | Power Systems **+ Utilization** | Power Systems (14) + Utilization (4) | `electrical-st-ps-01` |
+| 2 | Electrical Machines | Machines (13) | `electrical-st-em-01` |
+| 3 | Electric Circuits | Circuits (11) | `electrical-st-ec-01` |
+| 4 | Control Systems | Control (8) | `electrical-st-cs-01` |
+| 5 | Power Electronics & Drives | PE (7) | `electrical-st-pe-01` |
+| 6 | Measurements | Measurements (6) | `electrical-st-meas-01` |
+| 7 | Analog & Digital Electronics | Analog (4) + Digital (3) | `electrical-st-ade-01` |
+
+> Utilization is **not dropped**: inside Power Systems ST-HY, reserve **≥6 / 50** for Utilization high-yield (SEC, lighting, traction, heating, tariffs) so the official syllabus surface remains covered.
+
+**Non-core — 2 subject tests (shared CE↔EE, same Shared Non-core spirit):**
+| # | Pack | Contents | ST-HY id |
+|---|---|---|---|
+| 1 | Aptitude & Reasoning | Quantitative Aptitude + Reasoning & GI | `noncore-st-ar-01` |
+| 2 | GA · English · Computer | General Awareness + English + Computer | `noncore-st-gec-01` |
+
+Total ST-HY packs = **6 + 7 + 2 = 15**.
+
+### Exam shell (every ST-HY)
+- **Questions:** 50 | **Marks:** 50 | **Duration:** **90 minutes**
+- **Solve-time floor (Audit S scaled):** honest strong candidate / careful solver needs **≥ 75 minutes** at high accuracy — packs clearable in &lt; 60 min = Fail
+- **Negative marking:** none (same as FLT)
+- CBT UX identical to FLT (palette, mark-for-review, calculator)
+
+### Predictability framework (STRICT — how “most predicted” is chosen)
+
+Every ST-HY question must carry `predictScore` (1–10) and `predictBasis` (short evidence string). Prefer themes with score **≥ 7**.
+
+**Score model (sum, cap at 10):**
+| Factor | Points | Evidence sources |
+|---|---:|---|
+| Board-family hit | +3 | Appears in APTRANSCO / APGENCO / AP DISCOM AEE/AE PYQ family |
+| Sister-board hit | +2 | APPSC AEE/AE / TSTRANSCO / TSGENCO / TSPSC AE same micro-topic |
+| Recurring classic | +2 | Same formula/setup appears ≥2 times across allowed banks / Paper Analysis / PYQ Themes |
+| Syllabus-weight boost | +1 | Micro-topic sits in top weightage chapters for that subject |
+| High trap/yield | +1 | Classic distractor path (wrong unit, γm, √3, omitted 2, wrong IS clause) |
+| GATE E–M in-syllabus | +1 | GATE Easy–Moderate only; **never** GATE research fringe outside Transco syllabus |
+
+**Hard rules**
+- Stay **inside official APTRANSCO syllabus** for that subject — external exploration allowed only to **rank themes / craft better traps**, not to invent out-of-syllabus topics
+- Target **Inspired / Modified ≥ 70%**; Direct PYQ clones **≤ 2** per 50-Q pack (same Origin Policy / Audit G spirit)
+- Cover **≥ 80%** of that subject’s **High-Frequency Theme Register** (see `exports/SUBJECT_TEST_FRAMEWORK.md`) — stricter than FLT’s 60% because the whole pack is one subject
+- Prefer **high-yield themes** over rare pedantry; rotate numerical values so packs ≠ FLT clones (Audit I)
+
+### Pattern mix — 50-Q technical ST-HY (Civil / EE)
+
+Scale of FLT mandatory patterns; all types must appear:
+
+| Pattern | Target in 50-Q ST |
+|---|---:|
+| Numerical | 18–22 |
+| Conceptual | 10–12 (includes **≥1 Theory-Assumptions**) |
+| Diagram / Figure | 8–10 (subject diagram flavours from Subject-wise Diagram Quota) |
+| Application | 5–6 |
+| Practical / site / field | 3–4 |
+| Assertion–Reason | 2 |
+| IS Code / Standard value | 2–3 (where subject has codes; else Standards/formula constants) |
+| Matching Matrix | 1 |
+| Table-based | 1 |
+| Graph / Curve | ≥1 (real figure) |
+
+**Difficulty:** Easy **12–13** / Moderate **24–26** / Hard **12–13** (±1).  
+**Direct ≤ 25%** of the pack (≥ 75% multi-step / judgement / diagram / trap).  
+**Key distribution (Audit O scaled):** each of A/B/C/D ideally **22–28%** (≈11–14); Hard Fail if any **> 35%** or **&lt; 15%**; no same-letter run ≥ 5.
+
+**Electrical Circuits ST:** ≥ **2** true circuit-schematic Diagram Qs (Circuit Diagram Mandate).  
+**EE Diagram source:** ≥ **50%** of Diagram Qs `diagramSource=pyq` when pack is EE.  
+**Civil Diagram:** core-first priority unchanged.
+
+### Pattern mix — Non-core ST-HY
+
+**`noncore-st-ar-01` (Aptitude & Reasoning) — 50 Q**
+- Quant ≈ **30** | Reasoning ≈ **20**
+- Quant: distinct micro-topics (no two identical templates); full arithmetic explanations
+- Reasoning: rotate series, coding, blood relation, direction, syllogism, seating, analogy, odd-one, puzzle — no duplicate template
+- Difficulty 12/25/13; Direct ≤ 25%
+
+**`noncore-st-gec-01` (GA · English · Computer) — 50 Q**
+- GA ≈ **20** (mix ≥3 buckets: polity/economy/science/AP-power/current static) | English ≈ **15** (must include reading + Active/Passive and/or Direct/Indirect) | Computer ≈ **15**
+- Same language / depth gates as Audit P; CE↔EE share identical packs (one bank file)
+
+### Audits for ST-HY (same sequence, scaled)
+Run Gates A–S with ST adaptations:
+- **A:** subject map match (single subject or Non-core pack composition above) — not 70/30 FLT weightage
+- **B:** ≥80% high-frequency theme coverage for that subject
+- **S:** ≥75 min floor (not 150)
+- **P:** apply only to Non-core STs (AR or GEC gates as above); technical STs skip P
+- **Shared Non-core P0:** AR and GEC packs are **stream-identical** (one bank for both streams)
+
+### Packaging
+- Paths: `data/civil/st/ce-st-som-01.js`, `data/electrical/st/ee-st-ps-01.js`, `data/noncore/st/nc-st-ar-01.js`, …
+- Export `questions` array length **50**; `id` 1–50
+- Home UI lists ST-HY under **Subject Tests** separate from FLT grid
+- Do **not** exact-clone stems from FLT-01 of the same subject; themes may overlap with fresh numbers/angles
