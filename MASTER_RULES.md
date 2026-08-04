@@ -306,7 +306,7 @@ Must feel like decisions an AEE / site / substation / construction engineer woul
 - Prefer **Medium** difficulty; at most **1 Easy** among the 5 Practical questions
 - May combine with Diagram / IS / Application tags when the figure or code is what the site decision depends on
 
-**Reject as Practical (reclassify):** pure definition, bare code-clause recall, or “name this equipment” with no decision context.
+**Reject as Practical (reclassify):** pure definition, bare code-clause recall, “name this equipment” with no decision context, or a concept MCQ with only a “During site…” costume and no real action/diagnosis.
 
 ### Assertion–Reason Questions (4)
 Distribute across subjects. Never cluster all in one subject.
@@ -435,15 +435,30 @@ Valid combinations: Numerical + Diagram, Numerical + Application, Diagram + Conc
 
 **Biggest paper-feel failure mode (even when keys/diagrams/syllabus are correct):** stems that read like **textbook exercise / coaching workbook** prompts instead of **APTRANSCO AEE examiner** writing.
 
+**Observed weakness (treat as Fail until rewritten):** papers can score high on syllabus/topic mix yet score **~3–5/10** on examiner language, engineering context, and exam feel — because stems convert formulas into MCQs instead of framing recruitment-exam situations.
+
+**Required cognitive path (technical):**
+```
+Engineering situation
+  → identify governing concept / code check
+  → choose applicable relation (not handed in the stem)
+  → interpret data / diagram / competing limits
+  → answer
+```
+**Forbidden cognitive path:** Given values → formula already in stem → substitute → answer.
+
 **Required stem shape (technical):**
-1. **Situation first** — commissioning, routine testing, substation / site observation, design check, plate-load / Proctor / load-flow context, contractor observation, LSM beam design, etc.
-2. **Then data / conditions** — ratings, observations, constraints, figure reference.
+1. **Situation first** — commissioning, routine testing, cube testing, proof loading, site inspection, checking reinforcement, concreting, plate-load / Proctor, substation / design check, contractor observation, “while analysing the beam shown…”, etc.
+2. **Then data / conditions** — ratings, observations, constraints, figure reference — **without** writing the governing equation.
 3. **Then the ask** in examiner voice — not a bare imperative.
 
 **Forbidden openers / cues (automatic MODIFY unless rare Non-core):**
 - Stem starts with **Find… / Calculate… / Determine… / Compute… / Obtain…**
 - Stem is only a formula trigger with no engineering situation (e.g. “A transformer has 96% efficiency. Find output power.”)
-- Stem **names the exact formula family** the candidate must use (“Using Bernoulli’s equation…”, “Apply τ = 1.5V/bd…”) when the situation alone should cue it
+- Stem **prints the formula or symbol cue** the candidate must use (`σ = αEΔT`, `Z = M/σ`, `Cv = Cd/Cc`, `Ast,min = 0.85bd/fy`, `Ld = φσs/(4τbd)`, “Using Bernoulli…”, “Apply τ = 1.5V/bd…”)
+- Naked exercise openers with no role/context: “A mild steel bar…”, “A rectangular beam…”, “Cd = 0.62…” as the whole setup
+- Single-line textbook stubs: “Minimum section modulus required is…”
+- Solvable by **immediate direct substitution** with **no** concept selection / interpretation / competing check
 - Reads as workbook drill: “Find the slip.” / “Calculate bearing capacity.” / “Determine regulation.”
 
 **Preferred ask language:**
@@ -453,8 +468,11 @@ Valid combinations: Numerical + Diagram, Numerical + Application, Diagram + Conc
 - “The engineer should expect…”
 - “The correct interpretation / conclusion is…”
 - “The observed behaviour indicates…”
+- “Which conclusion follows…” / “Which action is most defensible…”
 
-**Hard difficulty (language rule):** Hard ≠ longer arithmetic. Prefer **one hidden concept + one interpretation / practical condition**, not three pages of math.
+**Hard difficulty (language rule):** Hard ≠ longer arithmetic / more digits. Prefer **selecting the right concept**, **interpreting a figure**, **identifying the governing code/limit**, or **eliminating closely competing options**.
+
+**Paper mix (non-negotiable feel):** after a few items, candidates must **not** be able to predict “identify formula → substitute → done.” Enough items must require **comparison, interpretation, judgement, reasoning, or code application**. Direct substitution plugs stay inside the **Direct ≤ 25%** budget only.
 
 **Pass/Fail:** every technical question must pass **Audit Q — Question Language & Exam Authenticity** (score ≥ 8/10; no automatic-reject flags). A paper with correct answers but textbook stems **cannot be APPROVED**.
 
@@ -469,6 +487,7 @@ At least **70% of distractors** must reflect real engineering mistakes:
 
 **Forbidden distractors / trap notes (LKG ban):**
 - Silly / nursery options (“conductor colour”, “only tower height always”, joke options) used as if they were serious traps — either rewrite the option to a real engineering mistake, or if kept for Easy only, the explanation must **not** treat them as high-value traps
+- **Obviously absurd site options** that no engineer would entertain (“Ignore if cubes OK”, “Ignore web”, “Add water next pour only”, “deny causation without readings”) as if they were competitive distractors — rewrite to **technically plausible wrong decisions**
 - Trap explanations that say only “wrong” / “incorrect” with no mechanism
 - Trap explanations that invent mistakes a prepared AEE would never make
 
@@ -526,6 +545,8 @@ TOPIC HIGH-YIELD (same micro-topic — high exam probability):
 ```
 
 Optional but preferred: fill `formula` with the governing equation(s) used in CALCULATION.
+
+**Anti-boilerplate rule (STRICT):** the headings WHY / CALC / TRAP / HIGH-YIELD are required **structure**, not a license to paste the same generic paragraphs. Each field must be **tailored to this stem’s numbers, figure, code check, and traps**. Explanations that could be swapped onto another question unchanged → **Fail** packaging for that Q.
 
 ### Length / depth bar
 | Pattern | Min explanation depth |
@@ -1587,28 +1608,37 @@ Non-core is **10 marks** but often the approval blocker (exact clones across str
 
 ### Q. Question Language & Exam Authenticity Audit (Mandatory)
 
-**Purpose:** Even when syllabus, keys, diagrams, and originality pass, a paper **still fails APTRANSCO feel** if stems read like short textbook / coaching workbook prompts. This gate often has the **largest impact** on perceived paper quality. Implements **Golden Rule 2B**.
+> **Naming note:** Some reviews call this “Question Standard & Examiner Language.” In this project it is **Audit Q** (letter **O** is reserved for Answer Key Distribution). Same mandatory gate.
+
+**Purpose:** Even when syllabus, keys, diagrams, and originality pass, a paper **still fails APTRANSCO feel** if stems read like short textbook / coaching workbook prompts. **Question craftsmanship** often matters more than adding harder arithmetic or more diagrams. Implements **Golden Rule 2B**.
 
 Applies to **all technical questions (Q1–Q70)**. Non-core may be shorter but must not use telegram “Find…” drills when a one-line situation is easy to add.
+
+#### Target feel scores (paper-level — Fail if language/context collapse)
+If a Human Examiner rates the paper approximately like: syllabus high but **APTRANSCO language / examiner wording / engineering context ≤ 5/10** → **Fail Audit Q** and rewrite stems before APPROVED — do not compensate by only raising calculation length.
 
 #### Per-question scorecard ( /10 )
 
 | Criterion | /2 |
 |---|---:|
-| Examiner-style wording (situation → data → ask) | 2 |
-| Engineering context (site / test / design / substation / commissioning / observation) | 2 |
-| Formula not directly exposed (no “use this equation…” cue) | 2 |
-| Natural APTRANSCO recruitment-exam language | 2 |
-| Cognitive challenge (interpret before compute / choose) | 2 |
+| APTRANSCO examiner language | 2 |
+| Engineering context | 2 |
+| Formula not exposed (no equation / symbol cue in stem) | 2 |
+| Natural stem flow (situation → data → ask) | 2 |
+| Cognitive challenge (concept select / interpret / judge — not instant plug-in) | 2 |
 
 **Pass per question:** total **≥ 8/10** and **zero automatic-reject flags**.
 
 #### Automatic Reject / MODIFY flags (any one fails the Q)
-- Starts directly with **Calculate… / Find… / Determine… / Compute… / Obtain…**
-- Exposes the required formula or plugs the formula name as the whole task
-- Looks like a textbook end-of-chapter exercise
-- Reads like a coaching workbook one-liner (“Find the slip.” / “Calculate bearing capacity.”)
-- Hard label earned only by **longer arithmetic** with no hidden concept / interpretation / practical condition
+- Begins with **Calculate… / Find… / Determine… / Compute… / Obtain…**
+- Formula or governing expression is **explicitly given** in the stem (`σ=αEΔT`, `Ast,min=…`, `Ld=…`, etc.)
+- Single-line textbook wording / naked “A mild steel bar…” exercise opener with no role/context
+- Reads like a solved example or end-of-chapter exercise converted to MCQ
+- Can be solved **immediately by direct substitution** with no concept selection
+- No engineering decision, interpretation, comparison, or code-limit judgement required (unless inside Direct ≤25% budget **and** still examiner-phrased)
+- Hard label earned only by **longer arithmetic** with no hidden concept / figure read / governing-check competition
+- Practical tag without a real site/design decision
+- Distractors that are obviously absurd (non-competitive)
 
 #### Style examples (normative)
 
@@ -1618,20 +1648,21 @@ Applies to **all technical questions (Q1–Q70)**. Non-core may be shorter but m
 | Determine transformer regulation. | A distribution transformer supplies a lagging power-factor load at rated voltage. Based on the given test data, the percentage voltage regulation is closest to |
 | Calculate coefficient of permeability. | During a constant-head permeability test conducted in a soil laboratory, the following observations were recorded. The coefficient of permeability is |
 | A transformer has 96% efficiency at full load. Find the output power. | During the performance test of a 250 kVA distribution transformer, the full-load efficiency is observed to be 96% at unity power factor while delivering rated load. The output power is |
+| Ast,min = 0.85bd/fy. Minimum steel is… | An RCC beam detailed with Fe415 is checked against IS 456 minimum tension steel before casting. Relative to the code minimum expression for the given b and d, the steel that must be provided is |
 
 #### Context starters (prefer these flavours)
-During commissioning… / During routine testing… / In a 132/33 kV substation… / A contractor observes… / During load-flow studies… / An RCC beam designed by LSM… / During a plate load test… / While conducting a standard Proctor test… / On the figure shown for the protection / connection / beam…
+During commissioning… / During routine testing… / During cube testing… / During proof loading… / While checking reinforcement… / During site inspection… / During concreting… / During a plate load test… / While conducting a standard Proctor test… / In a 132/33 kV substation… / A contractor observes… / During load-flow studies… / An RCC beam designed by LSM… / While analysing the beam shown…
 
 #### Paper-level Pass rules
 - **≥ 90%** of technical questions score ≥ 8/10
 - **0** technical questions with an automatic-reject flag
 - Compliance must list any Q scoring 6–7 for rewrite before APPROVED
-- Papers that are “correct but workbook-toned” → **Fail Audit Q** (do not APPROVE)
+- Papers that are “correct but workbook-toned” or “formula→MCQ conversions” → **Fail Audit Q** (do not APPROVE)
+- Priority fix order: **rewrite every technical stem for authenticity** before adding harder calculations or more diagrams
 
 **Report template:** table of Q → score /10 → flags → Pass/Fail; summary % Pass; list of rewrites required.
 
 ---
-
 ### Recommended Acceptance Threshold (Mandatory for APPROVED)
 
 Before any paper is **APPROVED** (and before code / CBT packaging), **all Final Approval Workflow gates** must Pass, including:
@@ -1654,19 +1685,19 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
 | Stem length | Technical stems are full exam paragraphs (context + data/conditions + ask); **not one-liners** (≥90% tech); Rule 2A |
-| Question language / authenticity (Audit Q) | ≥90% tech Qs ≥8/10 on examiner-language scorecard; **0** Find/Calculate/Determine openers or formula-exposed textbook stems; Hard ≠ longer arithmetic only |
+| Question language / authenticity (Audit Q) | ≥90% tech ≥8/10; **0** Find/Calculate openers; **0** formula-in-stem cues; no instant plug-in path outside Direct≤25%; Hard = concept/figure/code competition not longer arithmetic; Practical = real decision; explanations tailored not boilerplate |
+| Distractor quality (Audit N) | ≥95% Qs with all distractors Good; no absurd non-competitive site options |
 | Graph with real curve image | ≥1 Graph/Curve Q with attached cropped curve (not stem-only) |
 | Practical questions | **≥5** practically able field/substation decisions; ≤1 Easy among them |
 | Overall originality (Audit I) | **≥ 90%** |
 | Concept coverage (Audit K) | Missing must-cover = 0; over-stack = 0 |
 | Bloom mix (Audit L) | Remember ≤15% tech; Apply+Analyze ≥60% tech; by-subject rules |
 | Formula reuse (Audit M) | No formula in >2 tech Qs; no clone templates |
-| Distractor quality (Audit N) | ≥95% Qs with all distractors Good |
 | Key distribution (Audit O) | Each letter ~22–28%; no same-letter run ≥5 |
 | Non-core (Audit P) | All five subject gates Pass; zero Civil↔EE Non-core clones |
 | Matching Matrix CBT | Every Matching / Matching+Diagram Q has `matchingMatrix` and site renders List-I / List-II as HTML tables |
 | Table CBT | Every Table / Table-Based Q has `dataTable` and site renders a real HTML `<table>` (not markdown-only stem) |
-| Explanation depth | Every Q meets Detailed Explanation Standard (WHY + CALC if needed + exam-level traps + topic high-yield); no one-liner keys |
+| Explanation depth | Every Q meets Detailed Explanation Standard with **tailored** WHY/CALC/traps/high-yield (anti-boilerplate); no one-liner keys |
 
 **Fail any gate → paper cannot be marked APPROVED.** Fix via MODIFY / rewrite, re-run Human Examiner if needed, then re-run failed audits.
 
