@@ -2,7 +2,6 @@
 // Technical Q1–70: Civil bank (fresh vs FLT-01)
 // Non-core Q71–100: quant/GA/AR/English/Computer
 // answer is 0-based index into options
-
 export const questions = [
   {
     "id": 1,
@@ -404,8 +403,8 @@ export const questions = [
     "subject": "RCC / DDRC",
     "topic": "RCC: diagram",
     "themeId": "",
-    "question": "Using only the support symbols and edge labels in the slab-panel crop, assess: Assertion: the panel should be designed as two-way. Reason: load is carried in two directions when the shown aspect ratio is below 2 and all four edges provide support.",
-    "image": "images/diagrams/civil-flt02/q18-rcc-beam-section.jpg",
+    "question": "In the shown slab panel, supports are along the long edges. Assertion (A): the panel should be designed as one-way. Reason (R): Ly/Lx is greater than 2 for the labelled spans.",
+    "image": "images/diagrams/civil-st-rcc/rcc-one-way-slab.svg",
     "options": [
       "A false, R true",
       "A true, R false",
@@ -414,15 +413,16 @@ export const questions = [
     ],
     "answer": 2,
     "difficulty": "Medium",
-    "questionType": "Numerical+Diagram",
+    "questionType": "Diagram+Application",
     "formula": "",
-    "explanation": "CORRECT: Both true, R explains A\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: Both true, R explains A.\n\nTRAP ANALYSIS (every wrong option):\nA) A false, R true: Picks 'Both true, R does not explain A' by mis-applying the stem data — recheck units and the asked quantity.\nB) A true, R false: Picks 'A true, R false' by mis-applying the stem data — recheck units and the asked quantity.\nD) Both true, R does not explain A: Picks 'A false, R true' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: Both true, R explains A.\n• Topic anchor: RCC.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in diagram and recompute.\n• Twin trap: classic wrong sign or share in diagram.",
+    "explanation": "IMAGE FIX: previous file q18-rcc-beam-section.jpg was a multipage crop (tennis/water-treatment/RC text) unrelated to the stem. Replaced with one-way slab figure.\n\nCORRECT: Both true, R explains A\n\nWHY CORRECT:\nOne-way action follows when Ly/Lx > 2 with long-edge supports; R states that ratio test.",
     "source": "CIVIL_FLT02_v1",
     "origin": "Inspired-APPSC",
     "predictScore": 8,
     "predictBasis": "FLT-02 RCC — Diagram",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "APPSC-Civil-2018 beam section"
+    "diagramSource": "core",
+    "diagramSourcePath": "images/diagrams/civil-st-rcc/rcc-one-way-slab.svg",
+    "cropSync": "replaced-bad-multipage-crop"
   },
   {
     "id": 19,
@@ -522,7 +522,7 @@ export const questions = [
     "topic": "RCC: diagram",
     "themeId": "",
     "question": "The crop shows a continuous-beam bar proposed to terminate at section P, with the theoretical cut-off, support face and remaining anchorage marked only in the figure. Which option correctly decides acceptance after checking moment resistance beyond cut-off, development length and shear at P?",
-    "image": "images/diagrams/civil-flt02/q23-bar-curtailment.jpg",
+    "image": "",
     "options": [
       "Accept if cover is adequate",
       "Reject every curtailment",
@@ -531,15 +531,14 @@ export const questions = [
     ],
     "answer": 3,
     "difficulty": "Hard",
-    "questionType": "Numerical+Diagram",
+    "questionType": "Numerical+Application",
     "formula": "",
-    "explanation": "CORRECT: Accept only if all three checks and extension rules pass\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: Accept only if all three checks and extension rules pass.\n\nTRAP ANALYSIS (every wrong option):\nA) Accept if cover is adequate: Picks 'Accept solely because P is beyond inflection' by mis-applying the stem data — recheck units and the asked quantity.\nB) Reject every curtailment: Picks 'Reject every curtailment' by mis-applying the stem data — recheck units and the asked quantity.\nC) Accept solely because P is beyond inflection: Picks 'Accept if cover is adequate' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: Accept only if all three checks and extension rules pass.\n• Topic anchor: RCC.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in diagram and recompute.\n• Twin trap: classic wrong sign or share in diagram.",
+    "explanation": "IMAGE FIX: removed wrong multipage crop `images/diagrams/civil-flt02/q23-bar-curtailment.jpg` that did not match this stem. Stem/options retained as authored.\n\nCORRECT: Accept only if all three checks and extension rules pass\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: Accept only if all three checks and extension rules pass.\n\nTRAP ANALYSIS (every wrong option):\nA) Accept if cover is adequate: Picks 'Accept solely because P is beyond inflection' by mis-applying the stem data — recheck units and the asked quantity.\nB) Reject every curtailment: Picks 'Reject every curtailment' by mis-applying the stem data — recheck units and the asked quantity.\nC) Accept solely because P is beyond inflection: Picks 'Accept if cover is adequate' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: Accept only if all three checks and extension rules pass.\n• Topic anchor: RCC.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in diagram and recompute.\n• Twin trap: classic wrong sign or share in diagram.",
     "source": "CIVIL_FLT02_v1",
     "origin": "Inspired-APPSC",
     "predictScore": 7,
     "predictBasis": "FLT-02 RCC — Diagram",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "APPSC-Civil bar curtailment"
+    "cropSync": "removed-wrong-multipage-crop"
   },
   {
     "id": 24,
@@ -1255,7 +1254,7 @@ export const questions = [
     "topic": "FE: application",
     "themeId": "",
     "question": "Two columns near a property line carry unequal loads; an isolated footing under the exterior column would become highly eccentric. Which arrangement best restores a rational soil-pressure distribution without crossing the boundary?",
-    "image": "images/diagrams/civil-flt02/q54-layered-footing.jpg",
+    "image": "",
     "options": [
       "friction pile under only the interior column",
       "combined footing or strap footing designed from resultant location",
@@ -1264,15 +1263,14 @@ export const questions = [
     ],
     "answer": 1,
     "difficulty": "Medium",
-    "questionType": "Diagram+Conceptual",
+    "questionType": "Conceptual",
     "formula": "",
-    "explanation": "CORRECT: combined footing or strap footing designed from resultant location\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: combined footing or strap footing designed from resultant location.\n\nTRAP ANALYSIS (every wrong option):\nA) friction pile under only the interior column: Picks 'smaller eccentric isolated footing' by mis-applying the stem data — recheck units and the asked quantity.\nC) unsupported pedestal: Picks 'unsupported pedestal' by mis-applying the stem data — recheck units and the asked quantity.\nD) smaller eccentric isolated footing: Picks 'friction pile under only the interior column' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: combined footing or strap footing designed from resultant location.\n• Topic anchor: FE.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in application and recompute.\n• Twin trap: classic wrong sign or share in application.",
+    "explanation": "IMAGE FIX: removed wrong multipage crop `images/diagrams/civil-flt02/q54-layered-footing.jpg` that did not match this stem. Stem/options retained as authored.\n\nCORRECT: combined footing or strap footing designed from resultant location\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: combined footing or strap footing designed from resultant location.\n\nTRAP ANALYSIS (every wrong option):\nA) friction pile under only the interior column: Picks 'smaller eccentric isolated footing' by mis-applying the stem data — recheck units and the asked quantity.\nC) unsupported pedestal: Picks 'unsupported pedestal' by mis-applying the stem data — recheck units and the asked quantity.\nD) smaller eccentric isolated footing: Picks 'friction pile under only the interior column' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: combined footing or strap footing designed from resultant location.\n• Topic anchor: FE.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in application and recompute.\n• Twin trap: classic wrong sign or share in application.",
     "source": "CIVIL_FLT02_v1",
     "origin": "Inspired-APPSC",
     "predictScore": 8,
     "predictBasis": "FLT-02 FE — Application",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "APPSC-Civil layered footing"
+    "cropSync": "removed-wrong-multipage-crop"
   },
   {
     "id": 55,
@@ -1349,7 +1347,7 @@ export const questions = [
     "topic": "FE: diagram",
     "themeId": "",
     "question": "The crop shows a closely spaced 3×3 pile group in clay, with the potential individual cylinders and enclosing block surface marked. Which design interpretation is valid for the shown geometry?",
-    "image": "images/diagrams/civil-flt02/q58-pile-group-layout.jpg",
+    "image": "",
     "options": [
       "block failure is impossible for nine piles",
       "efficiency must exceed unity",
@@ -1358,15 +1356,14 @@ export const questions = [
     ],
     "answer": 2,
     "difficulty": "Medium",
-    "questionType": "Numerical+Diagram",
+    "questionType": "Numerical+Application",
     "formula": "",
-    "explanation": "CORRECT: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement.\n\nTRAP ANALYSIS (every wrong option):\nA) block failure is impossible for nine piles: Picks 'individual-pile sum always governs' by mis-applying the stem data — recheck units and the asked quantity.\nB) efficiency must exceed unity: Picks 'block failure is impossible for nine piles' by mis-applying the stem data — recheck units and the asked quantity.\nD) individual-pile sum always governs: Picks 'efficiency must exceed unity' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement.\n• Topic anchor: FE.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in diagram and recompute.\n• Twin trap: classic wrong sign or share in diagram.",
+    "explanation": "IMAGE FIX: removed wrong multipage crop `images/diagrams/civil-flt02/q58-pile-group-layout.jpg` that did not match this stem. Stem/options retained as authored.\n\nCORRECT: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement\n\nWHY CORRECT:\nN/A — conceptual / judgement (no arithmetic key).\n\nCALCULATION:\nN/A — conceptual / judgement (no arithmetic key).\nFinal keyed result: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement.\n\nTRAP ANALYSIS (every wrong option):\nA) block failure is impossible for nine piles: Picks 'individual-pile sum always governs' by mis-applying the stem data — recheck units and the asked quantity.\nB) efficiency must exceed unity: Picks 'block failure is impossible for nine piles' by mis-applying the stem data — recheck units and the asked quantity.\nD) individual-pile sum always governs: Picks 'efficiency must exceed unity' by mis-applying the stem data — recheck units and the asked quantity.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Key result for this item: compare the sum of individual capacities with enclosing-block capacity and adopt the lower, then check group settlement.\n• Topic anchor: FE.\n• Match option units and basis to the stem before selecting.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Variant: change one numerical datum in diagram and recompute.\n• Twin trap: classic wrong sign or share in diagram.",
     "source": "CIVIL_FLT02_v1",
     "origin": "Inspired-APPSC",
     "predictScore": 8,
     "predictBasis": "FLT-02 FE — Diagram",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "APPSC-Civil pile group"
+    "cropSync": "removed-wrong-multipage-crop"
   },
   {
     "id": 59,

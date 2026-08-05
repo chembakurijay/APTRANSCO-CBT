@@ -1,7 +1,6 @@
 // Elimination Drill Test 01 — CBT bank (strict v2)
 // Elimination Drill 01 — early established rules
 // 50 unique rule-true Q · matched diagrams only · answer 0-based
-
 export const questions = [
   {
     "id": 1,
@@ -579,7 +578,7 @@ export const questions = [
     "topic": "Elim-Rule-4",
     "themeId": "ELIM-R4",
     "question": "The crop shows a continuous-beam bar proposed to terminate at section P, with the theoretical cut-off, support face and remaining anchorage marked only in the figure. Which option correctly decides acceptance after checking moment resistance beyond cut-off, development length and shear at P?",
-    "image": "images/diagrams/civil-flt02/q23-bar-curtailment.jpg",
+    "image": "",
     "options": [
       "Accept solely because P is beyond inflection",
       "Accept only if all three checks and extension rules pass",
@@ -588,20 +587,19 @@ export const questions = [
     ],
     "answer": 1,
     "difficulty": "Medium",
-    "questionType": "Elimination+Diagram",
+    "questionType": "Elimination+Application",
     "formula": "",
     "explanation": "CORRECT: Accept only if all three checks and extension rules pass\n\nWHY CORRECT:\n(under Rule 4):\nIt is the only choice consistent with the rule’s check: d = D − cover − φ/2 (or as stem defines). Strike options that use overall depth as effective depth.\n\nCALCULATION:\nUse elimination Rule 4 as last resort after attempting a direct solve.\nFinal keyed result: Accept only if all three checks and extension rules pass.\n\nTRAP ANALYSIS (every wrong option):\nA) Accept solely because P is beyond inflection: Eliminated under Rule 4 — does not satisfy the governing elimination check for this stem.\nC) Reject every curtailment: Eliminated under Rule 4 — does not satisfy the governing elimination check for this stem.\nD) Accept if cover is adequate: Eliminated under Rule 4 — does not satisfy the governing elimination check for this stem.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Apply Playbook Rule 4: Cover vs effective depth.\n• Strike options that violate the rule before guessing.\n• Source: APTRANSCO CBT · Civil Full-Length Test 02.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same trap family with changed numbers.\n• Combined with a figure-dependency check.\n\nSOURCE EXAM: APTRANSCO CBT · Civil Full-Length Test 02\nSOURCE REFERENCE: data/civil/ce-flt02.js#Q23\nELIMINATION RULE: Playbook Rule 4 — Cover vs effective depth",
     "source": "Elimination-Drill-v2-strict",
     "origin": "Bank-evidence-strict",
     "predictScore": 8,
     "predictBasis": "Elimination Rule 4",
-    "diagramSource": "bank",
-    "diagramSourcePath": "images/diagrams/civil-flt02/q23-bar-curtailment.jpg",
     "sourceExam": "APTRANSCO CBT · Civil Full-Length Test 02",
     "sourceRef": "data/civil/ce-flt02.js#Q23",
     "eliminationRule": 4,
     "eliminationRuleTitle": "Cover vs effective depth",
-    "eliminationRuleId": 5
+    "eliminationRuleId": 5,
+    "cropSync": "removed-wrong-multipage-crop"
   },
   {
     "id": 21,

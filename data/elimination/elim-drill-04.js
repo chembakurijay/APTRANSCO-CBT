@@ -1,7 +1,6 @@
 // Elimination Drill Test 04 — CBT bank (strict v2)
 // Elimination Drill 04 — remaining established rules
 // 50 unique rule-true Q · matched diagrams only · answer 0-based
-
 export const questions = [
   {
     "id": 1,
