@@ -169,7 +169,7 @@ export const questions = [
     "id": 9,
     "subject": "Strength of Materials",
     "topic": "SOM: BMD+graph+diagnosis",
-    "question": "On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading interpretation is most defensible?",
+    "question": "On the plotted bending-moment diagram, a marked vertical jump occurs at section C while shear remains finite on both sides of C and no local section change is recorded (jump labelled at C on the figure). Which loading interpretation is most defensible? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt01/q09-bmd-jump.jpg",
     "options": [
       "A concentrated couple acts at C",
@@ -185,7 +185,8 @@ export const questions = [
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0026.jpg"
+    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0026.jpg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 10,
@@ -455,7 +456,7 @@ export const questions = [
     "id": 21,
     "subject": "RCC / DDRC",
     "topic": "RCC: column ties+diagram+detailing",
-    "question": "At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement best restrains every corner and intermediate bar?",
+    "question": "At reinforcement inspection, a tied column shows the longitudinal-bar layout with intermediate bars on each face, and four proposed tie arrangements labelled Detail P, Q, R and S on the figure. Which marked arrangement best restrains every corner and intermediate bar? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt01/q21-column-tie-detail.jpg",
     "options": [
       "Detail P",
@@ -471,7 +472,8 @@ export const questions = [
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
-    "diagramSourcePath": "schematic-family/column-ties-P-S (DDRC core has no column-tie page; slab page was incorrect)"
+    "diagramSourcePath": "schematic-family/column-ties-P-S (DDRC core has no column-tie page; slab page was incorrect)",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 22,
@@ -718,7 +720,7 @@ export const questions = [
     "id": 33,
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "HHM: pump curves+graph+operation",
-    "question": "Pumping-station studies plot the system curve together with one-pump and two-identical-pumps-in-parallel Q–H curves on the same axes (curves labelled on the figure). Which statement best explains why the marked two-pump discharge is less than twice the single-pump duty?",
+    "question": "Pumping-station studies plot the system curve together with one-pump and two-identical-pumps-in-parallel Q–H curves on the same axes (curves labelled on the figure). Which statement best explains why the marked two-pump discharge is less than twice the single-pump duty? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt01/q33-pump-system-curves.jpg",
     "options": [
       "The rising system head shifts each pump to a lower individual discharge",
@@ -734,7 +736,8 @@ export const questions = [
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
-    "diagramSourcePath": "schematic-family/pump-QH-system-parallel (no core Q–H page in extract)"
+    "diagramSourcePath": "schematic-family/pump-QH-system-parallel (no core Q–H page in extract)",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 34,
@@ -928,7 +931,7 @@ export const questions = [
     "id": 41,
     "subject": "Steel Structures",
     "topic": "Steel/SOM: plane truss+diagram",
-    "question": "The plane truss shown in Fig. 2 carries a point load W and a moment M at location B. Force carried by member AB is",
+    "question": "The plane truss shown in Fig. 2 carries a point load W and a moment M at location B. Force carried by member AB is Figure values (also stated here): point load W and moment M at B as labelled on the figure.",
     "image": "images/diagrams/civil-flt01/q-extra-truss-ab.jpg",
     "options": [
       "5W/6 (compressive)",
@@ -947,7 +950,8 @@ export const questions = [
     "diagramSourcePath": "12Managers Q97",
     "cropSync": "verbatim-csv",
     "cropPdf": "12Managers-CIVIL.pdf",
-    "cropQ": "97"
+    "cropQ": "97",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 42,
@@ -1155,7 +1159,7 @@ export const questions = [
     "id": 52,
     "subject": "Foundation Engineering",
     "topic": "Structural: kinematic indeterminacy+portal+diagram",
-    "question": "The kinematic indeterminacy of the 2-D portal frame shown in Fig. 3 including axial deformations is",
+    "question": "The kinematic indeterminacy of the 2-D portal frame shown in Fig. 3 including axial deformations is Figure values (also stated here): 2-D portal geometry and supports exactly as labelled in Fig. 3 (include axial deformations).",
     "image": "images/diagrams/civil-flt01/q-extra-portal-kd.jpg",
     "options": [
       "6",
@@ -1174,7 +1178,8 @@ export const questions = [
     "diagramSourcePath": "12Managers Q100",
     "cropSync": "verbatim-csv",
     "cropPdf": "12Managers-CIVIL.pdf",
-    "cropQ": "100"
+    "cropQ": "100",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 53,
@@ -1411,7 +1416,7 @@ export const questions = [
     "id": 63,
     "subject": "Soil Mechanics",
     "topic": "SOM: concurrent forces+Lami+diagram",
-    "question": "For the force system shown below, the tension T1 in the rope is",
+    "question": "For the force system shown below, the tension T1 in the rope is Figure values (also stated here): 1000 N vertical load; T1 and T2 at 120° as labelled.",
     "image": "images/diagrams/civil-flt01/q-extra-rope-forces.jpg",
     "options": [
       "500 N",
@@ -1430,13 +1435,14 @@ export const questions = [
     "diagramSourcePath": "3AE-CIVIL Q41",
     "cropSync": "verbatim-csv",
     "cropPdf": "3AE-CIVIL.pdf",
-    "cropQ": "41"
+    "cropQ": "41",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 64,
     "subject": "Soil Mechanics",
     "topic": "Structural: static indeterminacy+diagram",
-    "question": "The static indeterminacy for the continuous beam shown in Fig. 6 is",
+    "question": "The static indeterminacy for the continuous beam shown in Fig. 6 is Figure values (also stated here): fixed–roller–inclined roller continuous beam exactly as labelled in Fig. 6.",
     "image": "images/diagrams/civil-flt01/q-extra-beam-indeterminacy.jpg",
     "options": [
       "6",
@@ -1455,7 +1461,8 @@ export const questions = [
     "diagramSourcePath": "12Managers Q119",
     "cropSync": "verbatim-csv",
     "cropPdf": "12Managers-CIVIL.pdf",
-    "cropQ": "119"
+    "cropQ": "119",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 65,
@@ -1521,7 +1528,7 @@ export const questions = [
     "id": 68,
     "subject": "Soil Mechanics",
     "topic": "Soil: Proctor+graph+acceptance",
-    "question": "Embankment QA uses Proctor curves for standard and higher compactive effort with field point F marked (curves and F on the figure). Acceptance requires relative compaction ≥ 95% of MDD of the higher-effort curve. Which conclusion about the field compaction state is closest?",
+    "question": "Embankment QA uses Proctor curves for standard and higher compactive effort with field point F marked (curves and F on the figure). Acceptance requires relative compaction ≥ 95% of MDD of the higher-effort curve. Which conclusion about the field compaction state is closest? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt01/q68-proctor-curves.jpg",
     "options": [
       "Higher effort lowers maximum dry density",
@@ -1537,7 +1544,8 @@ export const questions = [
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Diagram-Core/Family",
     "diagramSource": "schematic-family",
-    "diagramSourcePath": "schematic-family/dual-params-q68"
+    "diagramSourcePath": "schematic-family/dual-params-q68",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 69,

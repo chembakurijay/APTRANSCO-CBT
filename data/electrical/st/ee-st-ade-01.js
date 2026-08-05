@@ -1,6 +1,5 @@
 // APTRANSCO ST · Analog, Digital and Electronics · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "Analog & Digital Electronics:DG-03:inverting op-amp:inverting op-amp:q07-opamp-inverting",
     "themeId": "DG-03",
-    "question": "For the ideal inverting op-amp shown with Rin and Rf, closed-loop gain is:",
+    "question": "For the ideal inverting op-amp shown with Rin and Rf, closed-loop gain is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-st-ade/q07-opamp-inverting.svg",
     "options": [
       "+Rf/Rin",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/q07-opamp-inverting.svg",
     "why": "Ideal inverting amplifier gain is −Rf/Rin.",
-    "topic_suffix": "q07-opamp-inverting"
+    "topic_suffix": "q07-opamp-inverting",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "Analog & Digital Electronics:DG-02:zener regulator:zener regulator:a1",
     "themeId": "DG-02",
-    "question": "From the logic-gate figure shown, a NAND gate is universal because it can realise:",
+    "question": "From the logic-gate figure shown, a NAND gate is universal because it can realise: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/a1.jpg",
     "options": [
       "Only AND",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/a1.jpg",
     "why": "NAND alone can implement any Boolean expression.",
-    "topic_suffix": "a1"
+    "topic_suffix": "a1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:DG-03:BJT bias circuit:BJT bias circuit:a2",
     "themeId": "DG-03",
-    "question": "In the BJT bias circuit shown, Quiescent point is set mainly by:",
+    "question": "In the BJT bias circuit shown, Quiescent point is set mainly by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/a2.jpg",
     "options": [
       "Only β ignoring resistors",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/a2.jpg",
     "why": "Bias resistors set IB/IC operating point.",
-    "topic_suffix": "a2"
+    "topic_suffix": "a2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:DG-01:NAND realisation:NAND realisation:a3",
     "themeId": "DG-01",
-    "question": "For the flip-flop shown, the primary function is:",
+    "question": "For the flip-flop shown, the primary function is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/a3.jpg",
     "options": [
       "Analogue amplification",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/a3.jpg",
     "why": "Flip-flops store binary state.",
-    "topic_suffix": "a3"
+    "topic_suffix": "a3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:AD-04:flip-flop:flip-flop:a4",
     "themeId": "AD-04",
-    "question": "From the zener regulator figure, zener operates in:",
+    "question": "From the zener regulator figure, zener operates in: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/a4.jpg",
     "options": [
       "Reverse breakdown for regulation",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/a4.jpg",
     "why": "Regulation uses reverse breakdown characteristic.",
-    "topic_suffix": "a4"
+    "topic_suffix": "a4",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:AD-04:binary counter:binary counter:v5-06-binary-counter",
     "themeId": "AD-04",
-    "question": "The binary counter shown divides input frequency by:",
+    "question": "The binary counter shown divides input frequency by: Figure values (also stated here): n flip-flops / mod-2^n as implied by the counter figure.",
     "image": "images/diagrams/electrical-st-ade/v5-06-binary-counter.svg",
     "options": [
       "1 always",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/v5-06-binary-counter.svg",
     "why": "n flip-flops give divide-by-2^n counting.",
-    "topic_suffix": "v5-06-binary-counter"
+    "topic_suffix": "v5-06-binary-counter",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:AD-04:RC oscillator:RC oscillator:v5-07-rc-oscillator",
     "themeId": "AD-04",
-    "question": "In the RC oscillator figure, frequency of oscillation depends on:",
+    "question": "In the RC oscillator figure, frequency of oscillation depends on: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/v5-07-rc-oscillator.svg",
     "options": [
       "Only supply rails",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/v5-07-rc-oscillator.svg",
     "why": "Oscillation frequency is set by the RC feedback network.",
-    "topic_suffix": "v5-07-rc-oscillator"
+    "topic_suffix": "v5-07-rc-oscillator",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "ADE:DG-01:ADC block:ADC block:v5-08-adc-block",
     "themeId": "DG-01",
-    "question": "From the ADC block diagram, quantisation error relates to:",
+    "question": "From the ADC block diagram, quantisation error relates to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/v5-08-adc-block.svg",
     "options": [
       "Only analogue offset forever ignoring bits",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ade/v5-08-adc-block.svg",
     "why": "Quantisation step is set by resolution (LSB).",
-    "topic_suffix": "v5-08-adc-block"
+    "topic_suffix": "v5-08-adc-block",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

@@ -285,7 +285,7 @@ export const questions = [
     "id": 14,
     "subject": "Control Systems",
     "topic": "Control: step response+damping+graph",
-    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is",
+    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is Figure values (also stated here): first peak C(t)≈1.24 at t=0.01 s; settles to 1.0.",
     "image": "images/diagrams/electrical-flt01/q14-graph.jpg",
     "options": [
       "1",
@@ -303,7 +303,8 @@ export const questions = [
     "diagramSourcePath": "AP-GENCO-Tech-2012 Q4 step response",
     "cropSync": "verbatim-csv",
     "cropPdf": "AP-GENCO-Tech-2012.pdf",
-    "cropQ": "4"
+    "cropQ": "4",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -366,7 +367,7 @@ export const questions = [
     "id": 18,
     "subject": "Electrical Machines",
     "topic": "Diagram+Conceptual",
-    "question": "From the alternator phasor diagram shown (Ia leading Vt), the operating power factor is:",
+    "question": "From the alternator phasor diagram shown (Ia leading Vt), the operating power factor is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q18-leading-phasor.jpg",
     "options": [
       "Unity only",
@@ -381,7 +382,8 @@ export const questions = [
     "explanation": "CORRECT: Leading pf load\n\nWHY CORRECT:\nThis is a Diagram+Conceptual item in Electrical Machines (Diagram+Conceptual). The keyed choice “Leading pf load” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electrical Machines principle for “Diagram+Conceptual”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nN/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (every wrong option):\nA) Unity only: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Leading pf load”). Re-derive from the stem quantities before matching an option.\nC) Short-circuit only: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Leading pf load”). Re-derive from the stem quantities before matching an option.\nD) Lagging pf load: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Leading pf load”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “Leading pf load”.\n• For Diagram+Conceptual: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram+Conceptual with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram+Conceptual (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q18-alt-phasor-lead.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q18-alt-phasor-lead.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 19,
@@ -444,7 +446,7 @@ export const questions = [
     "id": 22,
     "subject": "Electrical Machines",
     "topic": "Diagram+Application",
-    "question": "A 50 Hz alternator is connected to a long lossless line open at the receiving end as shown. With field voltage held constant, the generator is disconnected from the line. Steady |Vt|:",
+    "question": "A 50 Hz alternator is connected to a long lossless line open at the receiving end as shown. With field voltage held constant, the generator is disconnected from the line. Steady |Vt|: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q22-ferranti-line.jpg",
     "options": [
       "Unchanged always",
@@ -459,7 +461,8 @@ export const questions = [
     "explanation": "CORRECT: Decreases (Ferranti charging removed)\n\nWHY CORRECT:\nThis is a Diagram+Application item in Electrical Machines (Diagram+Application). The keyed choice “Decreases (Ferranti charging removed)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS (open Rx end & long line on fig)\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nN/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (every wrong option):\nA) Unchanged always: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Decreases (Ferranti charging removed)”). Re-derive from the stem quantities before matching an option.\nC) Becomes zero always: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Decreases (Ferranti charging removed)”). Re-derive from the stem quantities before matching an option.\nD) Increases always: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Decreases (Ferranti charging removed)”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “Decreases (Ferranti charging removed)”.\n• For Diagram+Application: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram+Application with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram+Application (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q22-ferranti-line.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q22-ferranti-line.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 23,
@@ -560,7 +563,7 @@ export const questions = [
     "id": 28,
     "subject": "Electric Circuits",
     "topic": "Circuits: RC parallel power factor+diagram",
-    "question": "The RC circuit shown in fig. is fed from an ac source of frequency ω rad/s. The power factor of the circuit is",
+    "question": "The RC circuit shown in fig. is fed from an ac source of frequency ω rad/s. The power factor of the circuit is Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1, 2012, 59.",
     "image": "images/diagrams/electrical-flt01/q-extra-rc-pf.jpg",
     "options": [
       "ωC/R",
@@ -578,13 +581,14 @@ export const questions = [
     "diagramSourcePath": "AP-Transco-P2-2012__p10__Q059.jpg",
     "cropSync": "verbatim-csv",
     "cropPdf": "AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf",
-    "cropQ": "59"
+    "cropQ": "59",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 29,
     "subject": "Electric Circuits",
     "topic": "Circuits: equivalent resistance+diagram",
-    "question": "In the circuit of fig. below, Req is given by",
+    "question": "In the circuit of fig. below, Req is given by Figure values (also stated here): resistors 4 Ω, 2 Ω, 3 Ω, 2 Ω with source Vs as labelled; Req at right-hand open terminals.",
     "image": "images/diagrams/electrical-flt01/q-extra-req.jpg",
     "options": [
       "5 Ω",
@@ -600,13 +604,14 @@ export const questions = [
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
     "diagramSourcePath": "AP-Transco-P2-2012__p11__Q068.jpg",
-    "cropSync": "verbatim-crop-read"
+    "cropSync": "verbatim-crop-read",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 30,
     "subject": "Electric Circuits",
     "topic": "Circuits: series RL+diagram+phasor",
-    "question": "In the circuit of series RL given in fig., V is given by",
+    "question": "In the circuit of series RL given in fig., V is given by Figure values (also stated here): R=1 Ω, L=1 H, current of the form sin t A; find total V.",
     "image": "images/diagrams/electrical-flt01/q30-series-rl-circuit.jpg",
     "options": [
       "2 sin t",
@@ -627,13 +632,14 @@ export const questions = [
     "predictBasis": "Board-family series RL classic; recurring GATE/Transco",
     "cropSync": "verbatim-csv",
     "cropPdf": "AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf",
-    "cropQ": "30"
+    "cropQ": "30",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 31,
     "subject": "Electric Circuits",
     "topic": "Circuits: star network resistances+diagram",
-    "question": "Consider the star network shown in figure. The resistance between terminals A and B with C open is 6 ohms, between terminals B and C with A open is 11 ohms and between terminals C and A with B open is 9 ohms. Then RA, RB, RC respectively is",
+    "question": "Consider the star network shown in figure. The resistance between terminals A and B with C open is 6 ohms, between terminals B and C with A open is 11 ohms and between terminals C and A with B open is 9 ohms. Then RA, RB, RC respectively is Figure values (also stated here): Rab(C open)=6 Ω, Rbc(A open)=11 Ω, Rca(B open)=9 Ω.",
     "image": "images/diagrams/electrical-flt01/q-extra-star.jpg",
     "options": [
       "4, 2, 5",
@@ -649,7 +655,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
     "diagramSourcePath": "APTRANSCO-EE-2011__p03__Q007.jpg",
-    "cropSync": "verbatim-crop-read"
+    "cropSync": "verbatim-crop-read",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 32,
@@ -676,7 +683,7 @@ export const questions = [
     "id": 33,
     "subject": "Electric Circuits",
     "topic": "Graph+Diagram",
-    "question": "From the frequency-response plot shown (pass band in the middle with stop bands on both sides), the filter type is:",
+    "question": "From the frequency-response plot shown (pass band in the middle with stop bands on both sides), the filter type is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q33-filter-plot.jpg",
     "options": [
       "Band-pass",
@@ -691,13 +698,14 @@ export const questions = [
     "explanation": "CORRECT: Band-pass\n\nWHY CORRECT:\nThis is a Graph+Diagram item in Electric Circuits (Graph+Diagram). The keyed choice “Band-pass” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Electric Circuits principle for “Graph+Diagram”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nN/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (every wrong option):\nB) High-pass: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Band-pass”). Re-derive from the stem quantities before matching an option.\nC) Band-elimination: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Band-pass”). Re-derive from the stem quantities before matching an option.\nD) Low-pass: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Band-pass”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “Band-pass”.\n• For Graph+Diagram: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Graph+Diagram with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Graph+Diagram (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q33-filter-types.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q33-filter-types.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 34,
     "subject": "Electric Circuits",
     "topic": "Circuits: ideal ammeter reading+diagram",
-    "question": "An ideal ammeter is connected between terminals A and B. The reading of the ammeter is:",
+    "question": "An ideal ammeter is connected between terminals A and B. The reading of the ammeter is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0.8, 1, 0.5, 0.6, 2014, 17, 08, 6, 9, 0.",
     "image": "images/diagrams/electrical-flt01/q-extra-ammeter.jpg",
     "options": [
       "0.8 A",
@@ -715,7 +723,8 @@ export const questions = [
     "diagramSourcePath": "APEPDCL-2014__p01__Q001.jpg",
     "cropSync": "verbatim-csv",
     "cropPdf": "APEPDCL-2014-A.ES-QUESTION-PAPER-17-08-2014.pdf",
-    "cropQ": "1"
+    "cropQ": "1",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 35,
@@ -835,7 +844,7 @@ export const questions = [
     "id": 41,
     "subject": "Control Systems",
     "topic": "Diagram+Numerical",
-    "question": "For the closed-loop system shown, the transfer function E(s)/R(s) is:",
+    "question": "For the closed-loop system shown, the transfer function E(s)/R(s) is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-flt01/q41-error-tf.jpg",
     "options": [
       "1/(1+GH)",
@@ -850,7 +859,8 @@ export const questions = [
     "explanation": "CORRECT: 1/(1+GH)\n\nWHY CORRECT:\nE = R − H C and C = G E ⇒ E = R − HG E ⇒ E/R = 1/(1+GH) for negative unity feedback structure shown.\n\nCALCULATION:\nE = R − HC; C = GE → E(1+GH)=R → E/R=1/(1+GH).\n\nTRAP ANALYSIS (every wrong option):\nB) 1/(1+G): Squared a linear quantity to land on “1/(1+G)” — wrong power of the governing variable.\nC) G/(1+GH): Squared a linear quantity to land on “G/(1+GH)” — wrong power of the governing variable.\nD) GH/(1+GH): Squared a linear quantity to land on “GH/(1+GH)” — wrong power of the governing variable.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “1/(1+GH)”.\n• For Diagram+Numerical: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram+Numerical with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram+Numerical (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q41-block-diagram.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q41-block-diagram.svg",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 42,
@@ -894,7 +904,7 @@ export const questions = [
     "id": 44,
     "subject": "Control Systems",
     "topic": "Graph+Diagram",
-    "question": "The Bode magnitude of a first-order stable system is constant vs frequency; high-frequency phase asymptote is −180°. The system has:",
+    "question": "The Bode magnitude of a first-order stable system is constant vs frequency; high-frequency phase asymptote is −180°. The system has: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q44-bode.jpg",
     "options": [
       "LHP pole+LHP zero same f",
@@ -909,7 +919,8 @@ export const questions = [
     "explanation": "CORRECT: One LHP pole and one RHP zero at same frequency\n\nWHY CORRECT:\nThis is a Graph+Diagram item in Control Systems (Graph+Diagram). The keyed choice “One LHP pole and one RHP zero at same frequency” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS (PYQ figure)\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Dep PASS (PYQ figure)\nVerify units/pu bases and that the arithmetic lands on the keyed option “One LHP pole and one RHP zero at same frequency” (Gate C).\nFinal keyed result: One LHP pole and one RHP zero at same frequency\n\nTRAP ANALYSIS (every wrong option):\nA) LHP pole+LHP zero same f: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “One LHP pole and one RHP zero at same frequency”). Re-derive from the stem quantities before matching an option.\nB) Two LHP poles + RHP zero: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “One LHP pole and one RHP zero at same frequency”). Re-derive from the stem quantities before matching an option.\nC) Two RHP poles + LHP zero: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “One LHP pole and one RHP zero at same frequency”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “One LHP pole and one RHP zero at same frequency”.\n• For Graph+Diagram: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Graph+Diagram with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Graph+Diagram (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q44-bode-allpass.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q44-bode-allpass.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 45,
@@ -972,7 +983,7 @@ export const questions = [
     "id": 48,
     "subject": "Power Electronics & Drives",
     "topic": "Diagram",
-    "question": "Single-phase semi-converter, α=30°, RL load — correct Vo waveform is the one that:",
+    "question": "Single-phase semi-converter, α=30°, RL load — correct Vo waveform is the one that: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q48-semi-waveforms.svg",
     "options": [
       "Full negative sine",
@@ -987,7 +998,8 @@ export const questions = [
     "explanation": "CORRECT: Stays non-negative with delayed conduction each half-cycle (option C on source page)\n\nWHY CORRECT:\nThis is a Diagram item in Power Electronics & Drives (Diagram). The keyed choice “Stays non-negative with delayed conduction each half-cycle (option C on source page)” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Dep PASS — pick from waveform options on page crop.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Dep PASS — pick from waveform options on page crop.\nVerify units/pu bases and that the arithmetic lands on the keyed option “Stays non-negative with delayed conduction each half-cycle (option C on source page)” (Gate C).\nFinal keyed result: Stays non-negative with delayed conduction each half-cycle (option C on source page)\n\nTRAP ANALYSIS (every wrong option):\nA) Full negative sine: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Stays non-negative with delayed conduction each half-cycle (option C on source page)”). Re-derive from the stem quantities before matching an option.\nB) Always flat DC at Vm: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Stays non-negative with delayed conduction each half-cycle (option C on source page)”). Re-derive from the stem quantities before matching an option.\nC) Triangular only: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “Stays non-negative with delayed conduction each half-cycle (option C on source page)”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “Stays non-negative with delayed conduction each half-cycle (option C on source page)”.\n• For Diagram: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q48-semi-waveforms.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q48-semi-waveforms.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 49,
@@ -1031,7 +1043,7 @@ export const questions = [
     "id": 51,
     "subject": "Power Electronics & Drives",
     "topic": "Diagram+Application",
-    "question": "For the single-phase controlled converter / RLE waveform figure shown, the allowable firing angle α must lie between:",
+    "question": "For the single-phase controlled converter / RLE waveform figure shown, the allowable firing angle α must lie between: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2, 360, 1, 0.",
     "image": "images/diagrams/electrical-flt01/q51-rle-angles.jpg",
     "options": [
       "θ2 and 360 only",
@@ -1046,7 +1058,8 @@ export const questions = [
     "explanation": "CORRECT: θ1 and θ2\n\nWHY CORRECT:\nThis is a Diagram+Application item in Power Electronics & Drives (Diagram+Application). The keyed choice “θ1 and θ2” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nApply the standard Power Electronics & Drives principle for “Diagram+Application”, then eliminate options that violate definitions, bus/member types, sign convention, or energy/power balance.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nN/A — conceptual / matching / AR / practical / table reading.\n\nTRAP ANALYSIS (every wrong option):\nA) θ2 and 360 only: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “θ1 and θ2”). Re-derive from the stem quantities before matching an option.\nB) Anywhere: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “θ1 and θ2”). Re-derive from the stem quantities before matching an option.\nD) 0 and θ1 only: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “θ1 and θ2”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “θ1 and θ2”.\n• For Diagram+Application: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram+Application with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram+Application (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q51-rle-angles.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q51-rle-angles.svg",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 52,
@@ -1128,7 +1141,7 @@ export const questions = [
     "id": 56,
     "subject": "Electric Circuits",
     "topic": "Circuits: Norton resistance+diagram",
-    "question": "The Norton's resistance of the circuit shown is",
+    "question": "The Norton's resistance of the circuit shown is Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 17, 3, 4, 0.9, 2012, 56, 32, 2, 12, 1.",
     "image": "images/diagrams/electrical-flt01/q56-norton-circuit.jpg",
     "options": [
       "17 Ω",
@@ -1147,7 +1160,8 @@ export const questions = [
     "origin": "Inspired-PYQ-GENCOTech",
     "cropSync": "verbatim-csv",
     "cropPdf": "AP-GENCO-Tech-2012.pdf",
-    "cropQ": "56"
+    "cropQ": "56",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 57,
@@ -1232,7 +1246,7 @@ export const questions = [
     "id": 61,
     "subject": "Analog Electronics",
     "topic": "Diagram+Numerical",
-    "question": "With Vs, Rz, Vz as labelled on the figure, diode current Iz is closest to:",
+    "question": "With Vs, Rz, Vz as labelled on the figure, diode current Iz is closest to: Figure values (also stated here): use the labelled magnitudes on the figure; option-scale numbers for this item include 2, 10, 0, 5.",
     "image": "images/diagrams/electrical-flt01/q61-zener-iz.svg",
     "options": [
       "2 mA",
@@ -1247,7 +1261,8 @@ export const questions = [
     "explanation": "CORRECT: 2 mA\n\nWHY CORRECT:\nThis is a Diagram+Numerical item in Analog Electronics (Diagram+Numerical). The keyed choice “2 mA” is the only option consistent with the governing engineering behaviour for this micro-topic at APTRANSCO AEE depth.\nCore reason: Iz from crop labels (GATE-style worked key ≈ 2 mA). Dep PASS/STRONG.\nA prepared AEE candidate should recognise the concept quickly and still verify units / pu / boundary conditions before locking the option.\n\nCALCULATION:\nStep-by-step working: Iz from crop labels (GATE-style worked key ≈ 2 mA). Dep PASS/STRONG.\nVerify units/pu bases and that the arithmetic lands on the keyed option “2 mA” (Gate C).\nFinal keyed result: 2 mA\n\nTRAP ANALYSIS (every wrong option):\nB) 10 mA: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “2 mA”). Re-derive from the stem quantities before matching an option.\nC) 0 mA: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “2 mA”). Re-derive from the stem quantities before matching an option.\nD) 5 mA: Choosing this option usually means applying the wrong basis/formula for what the stem asks (keyed result is “2 mA”). Re-derive from the stem quantities before matching an option.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Decide from the stem’s asked quantity only — here the keyed result is “2 mA”.\n• For Diagram+Numerical: write the governing formula/definition before looking at options; then match units and basis.\n• If two options look close, check which assumption/sign/share the stem actually forces.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same Diagram+Numerical with one changed datum (length, load, or code factor) — recompute rather than scaling the keyed answer blindly.\n• Examiner twin: name the classic wrong basis for Diagram+Numerical (gross vs net, peak vs RMS, service vs factored, etc.).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q61-zener-iz.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q61-zener-iz.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 62,
@@ -1310,7 +1325,7 @@ export const questions = [
     "id": 65,
     "subject": "Digital Electronics",
     "topic": "Matching+Diagram",
-    "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.:",
+    "question": "Match List-I (gate symbols as labelled) with List-II (Boolean expressions). Select the correct code.: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt01/q65-logic-match.svg",
     "options": [
       "P-NAND, Q-NOR, R-XOR, S-AND",
@@ -1367,7 +1382,8 @@ export const questions = [
       "instruction": "Use the diagram labels with this matrix; choose the correct matching code."
     },
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "images/diagrams/electrical-flt01/q65-logic-match.svg"
+    "diagramSourcePath": "images/diagrams/electrical-flt01/q65-logic-match.svg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 66,

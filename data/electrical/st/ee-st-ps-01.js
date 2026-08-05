@@ -1,6 +1,5 @@
 // APTRANSCO ST · Power Systems · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Power Systems + Utilization:PS-05:equal-area curve:equal-area curve:q07-equal-area",
     "themeId": "PS-05",
-    "question": "On the equal-area stability figure, critical clearing relates accelerating area to:",
+    "question": "On the equal-area stability figure, critical clearing relates accelerating area to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/q07-equal-area.svg",
     "options": [
       "Inertia constant alone",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/q07-equal-area.svg",
     "why": "Equal-area criterion equates accelerating and decelerating areas.",
-    "topic_suffix": "q07-equal-area"
+    "topic_suffix": "q07-equal-area",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Power Systems + Utilization:UT-04:single-line diagram:single-line diagram:ps1",
     "themeId": "UT-04",
-    "question": "From the single-line / network figure shown, fault level at a bus primarily depends on:",
+    "question": "From the single-line / network figure shown, fault level at a bus primarily depends on: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/ps1.jpg",
     "options": [
       "Only cable colour",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/ps1.jpg",
     "why": "Short-circuit current uses pre-fault voltage and Thevenin impedance.",
-    "topic_suffix": "ps1"
+    "topic_suffix": "ps1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "Power Systems + Utilization:PS-05:transmission line:transmission line:ps2",
     "themeId": "PS-05",
-    "question": "Using the transmission-line diagram shown, Ferranti effect is notable when the line is:",
+    "question": "Using the transmission-line diagram shown, Ferranti effect is notable when the line is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/ps2.jpg",
     "options": [
       "Heavily loaded",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/ps2.jpg",
     "why": "Receiving-end voltage rises on light/open long lines.",
-    "topic_suffix": "ps2"
+    "topic_suffix": "ps2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "PS:UT-03:transformer connection:transformer connection:ps3",
     "themeId": "UT-03",
-    "question": "From the transformer connection figure shown, phase displacement between HV and LV depends on:",
+    "question": "From the transformer connection figure shown, phase displacement between HV and LV depends on: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/ps3.jpg",
     "options": [
       "Cooling class",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/ps3.jpg",
     "why": "Vector group sets phase shift between windings.",
-    "topic_suffix": "ps3"
+    "topic_suffix": "ps3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "PS:PS-05:relay characteristic:relay characteristic:ps4",
     "themeId": "PS-05",
-    "question": "On the relay characteristic shown, the operating region is entered when the impedance locus:",
+    "question": "On the relay characteristic shown, the operating region is entered when the impedance locus: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/ps4.jpg",
     "options": [
       "Enters the set characteristic zone",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/ps4.jpg",
     "why": "Distance relays operate when seen Z enters the set zone.",
-    "topic_suffix": "ps4"
+    "topic_suffix": "ps4",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "PS:PS-02:power-angle curve:power-angle curve:v5-06-power-angle-curve",
     "themeId": "PS-02",
-    "question": "From the power-angle curve shown, maximum transferable power occurs at δ closest to:",
+    "question": "From the power-angle curve shown, maximum transferable power occurs at δ closest to: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0, 45, 180, 90.",
     "image": "images/diagrams/electrical-st-ps/v5-06-power-angle-curve.svg",
     "options": [
       "0°",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/v5-06-power-angle-curve.svg",
     "why": "Sinδ peaks at 90° for the simple classical model.",
-    "topic_suffix": "v5-06-power-angle-curve"
+    "topic_suffix": "v5-06-power-angle-curve",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "PS:UT-03:load-flow bus:load-flow bus:v5-02-single-line-diagram",
     "themeId": "UT-03",
-    "question": "On the SLD shown, a bus-bar fault would be cleared by:",
+    "question": "On the SLD shown, a bus-bar fault would be cleared by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/v5-02-single-line-diagram.svg",
     "options": [
       "Only generator AVR",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/v5-02-single-line-diagram.svg",
     "why": "Bus faults require bus differential / zone protection.",
-    "topic_suffix": "v5-02-single-line-diagram"
+    "topic_suffix": "v5-02-single-line-diagram",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Power Systems",
     "topic": "PS:UT-01:surge-impedance line:surge-impedance line:v5-08-surge-impedance-line",
     "themeId": "UT-01",
-    "question": "For the line operated at SIL as indicated by the figure context, reactive generation of the line approximately:",
+    "question": "For the line operated at SIL as indicated by the figure context, reactive generation of the line approximately: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ps/v5-08-surge-impedance-line.svg",
     "options": [
       "Greatly exceeds absorption",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ps/v5-08-surge-impedance-line.svg",
     "why": "At SIL, line charging VARs balance inductive absorption.",
-    "topic_suffix": "v5-08-surge-impedance-line"
+    "topic_suffix": "v5-08-surge-impedance-line",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

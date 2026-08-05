@@ -1,6 +1,5 @@
 // APTRANSCO ST · Soil Mechanics · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-03:compaction curve:compaction curve:soil-compaction-curve",
     "themeId": "SM-03",
-    "question": "On the shown compaction curve, the moisture content at the peak dry density is called:",
+    "question": "On the shown compaction curve, the moisture content at the peak dry density is called: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/soil-compaction-curve.svg",
     "options": [
       "Plastic limit",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/soil-compaction-curve.svg",
     "why": "Peak of γd vs w curve defines MDD and OMC.",
-    "topic_suffix": "soil-compaction-curve"
+    "topic_suffix": "soil-compaction-curve",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-08:flow net:flow net:q62-flow-net",
     "themeId": "SM-08",
-    "question": "From the flow net shown, seepage discharge per unit length is proportional to:",
+    "question": "From the flow net shown, seepage discharge per unit length is proportional to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/q62-flow-net.jpg",
     "options": [
       "Nf/Nd only without kH",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/q62-flow-net.jpg",
     "why": "Darcy seepage through a flow net is q = k H (Nf/Nd).",
-    "topic_suffix": "q62-flow-net"
+    "topic_suffix": "q62-flow-net",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-06:consolidation layer:consolidation layer:soil-active-pressure",
     "themeId": "SM-06",
-    "question": "For the retaining-wall pressure diagram shown with Rankine active triangle, resultant Pa acts at:",
+    "question": "For the retaining-wall pressure diagram shown with Rankine active triangle, resultant Pa acts at: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2, 3.",
     "image": "images/diagrams/civil-st-soil/soil-active-pressure.svg",
     "options": [
       "H/2 above base",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/soil-active-pressure.svg",
     "why": "Triangular active pressure resultant acts at H/3 above the base.",
-    "topic_suffix": "soil-active-pressure"
+    "topic_suffix": "soil-active-pressure",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-03:direct shear box:direct shear box:proctor-core",
     "themeId": "SM-03",
-    "question": "The Proctor compaction figure shown is used in the field to target:",
+    "question": "The Proctor compaction figure shown is used in the field to target: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 95, 100.",
     "image": "images/diagrams/civil-st-soil/proctor-core.jpg",
     "options": [
       "Liquid limit only",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/proctor-core.jpg",
     "why": "Field control compares dry density to laboratory MDD at OMC.",
-    "topic_suffix": "proctor-core"
+    "topic_suffix": "proctor-core",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-01:triaxial specimen:triaxial specimen:flow-net-core",
     "themeId": "SM-01",
-    "question": "In the flow-net figure, equipotential drops are equal. Head loss between adjacent equipotentials is:",
+    "question": "In the flow-net figure, equipotential drops are equal. Head loss between adjacent equipotentials is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/flow-net-core.jpg",
     "options": [
       "H/Nd",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/flow-net-core.jpg",
     "why": "Total head H is divided equally among Nd equipotential drops.",
-    "topic_suffix": "flow-net-core"
+    "topic_suffix": "flow-net-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-08:retaining wall:retaining wall:s1",
     "themeId": "SM-08",
-    "question": "Using the soil-profile / test figure shown, effective vertical stress below the water table uses:",
+    "question": "Using the soil-profile / test figure shown, effective vertical stress below the water table uses: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/s1.jpg",
     "options": [
       "γsat only without pore pressure",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/s1.jpg",
     "why": "Effective stress subtracts pore pressure; submerged unit weight is γsat−γw.",
-    "topic_suffix": "s1"
+    "topic_suffix": "s1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-07:grain-size curve:grain-size curve:s2",
     "themeId": "SM-07",
-    "question": "From the strength-envelope figure shown, cohesion c is the:",
+    "question": "From the strength-envelope figure shown, cohesion c is the: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/s2.jpg",
     "options": [
       "Slope of the envelope",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/s2.jpg",
     "why": "Mohr–Coulomb intercept on the τ-axis is cohesion.",
-    "topic_suffix": "s2"
+    "topic_suffix": "s2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "SOIL:SM-07:pile load test:pile load test:q68-proctor-curves",
     "themeId": "SM-07",
-    "question": "Comparing the two compaction curves shown, the curve with higher MDD typically corresponds to:",
+    "question": "Comparing the two compaction curves shown, the curve with higher MDD typically corresponds to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/q68-proctor-curves.jpg",
     "options": [
       "Lower compactive effort",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-soil/q68-proctor-curves.jpg",
     "why": "Increased compactive effort raises MDD and usually lowers OMC.",
-    "topic_suffix": "q68-proctor-curves"
+    "topic_suffix": "q68-proctor-curves",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

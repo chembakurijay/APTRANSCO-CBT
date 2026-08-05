@@ -1,6 +1,5 @@
 // APTRANSCO ST · Electrical Machines · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Electrical Machines:EM-03:torque-slip curve:torque-slip curve:q07-im-torque-slip",
     "themeId": "EM-03",
-    "question": "On the induction-motor torque–slip curve shown, maximum torque occurs at a slip where:",
+    "question": "On the induction-motor torque–slip curve shown, maximum torque occurs at a slip where: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0, 1, 2.",
     "image": "images/diagrams/electrical-st-em/q07-im-torque-slip.svg",
     "options": [
       "s = 0",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/q07-im-torque-slip.svg",
     "why": "Breakdown slip ≈ R2/X2 for the approximate circuit.",
-    "topic_suffix": "q07-im-torque-slip"
+    "topic_suffix": "q07-im-torque-slip",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Electrical Machines:EM-03:transformer equivalent circuit:transformer equivalent circuit:em1",
     "themeId": "EM-03",
-    "question": "From the transformer equivalent-circuit figure, secondary resistance referred to primary is multiplied by:",
+    "question": "From the transformer equivalent-circuit figure, secondary resistance referred to primary is multiplied by: Figure values (also stated here): a = V1/V2 (or turns ratio) for referral as labelled.",
     "image": "images/diagrams/electrical-st-em/em1.jpg",
     "options": [
       "a",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/em1.jpg",
     "why": "Impedances scale by a² when referred across the ideal transformer.",
-    "topic_suffix": "em1"
+    "topic_suffix": "em1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-02:DC shunt motor:DC shunt motor:em2",
     "themeId": "EM-02",
-    "question": "Using the DC machine connection shown, speed of a shunt motor is primarily controlled by:",
+    "question": "Using the DC machine connection shown, speed of a shunt motor is primarily controlled by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-em/em2.jpg",
     "options": [
       "Only armature resistance forever without limit",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/em2.jpg",
     "why": "Speed control uses flux and armature voltage (with rated limits).",
-    "topic_suffix": "em2"
+    "topic_suffix": "em2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-01:synchronous generator phasor:synchronous generator phasor:em3",
     "themeId": "EM-01",
-    "question": "From the synchronous-machine phasor diagram shown, voltage regulation involves comparing:",
+    "question": "From the synchronous-machine phasor diagram shown, voltage regulation involves comparing: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-em/em3.jpg",
     "options": [
       "Only field current",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/em3.jpg",
     "why": "Regulation uses change from no-load to full-load terminal voltage.",
-    "topic_suffix": "em3"
+    "topic_suffix": "em3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-01:star-delta starter:star-delta starter:em4",
     "themeId": "EM-01",
-    "question": "For the starter scheme shown for an induction motor, star–delta starting reduces line current by a factor of about:",
+    "question": "For the starter scheme shown for an induction motor, star–delta starting reduces line current by a factor of about: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 3, 2, 1.",
     "image": "images/diagrams/electrical-st-em/em4.jpg",
     "options": [
       "3",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/em4.jpg",
     "why": "Star–delta starting cuts line current to roughly one-third.",
-    "topic_suffix": "em4"
+    "topic_suffix": "em4",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-02:OC-SC curves:OC-SC curves:v5-06-oc-sc-curves",
     "themeId": "EM-02",
-    "question": "OC and SC test curves shown are used to obtain:",
+    "question": "OC and SC test curves shown are used to obtain: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-em/v5-06-oc-sc-curves.svg",
     "options": [
       "Only copper loss forever",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/v5-06-oc-sc-curves.svg",
     "why": "OC and SC tests yield Zs and loss components for regulation.",
-    "topic_suffix": "v5-06-oc-sc-curves"
+    "topic_suffix": "v5-06-oc-sc-curves",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-03:rotor circuit:rotor circuit:v5-07-rotor-circuit",
     "themeId": "EM-03",
-    "question": "In the wound-rotor circuit shown, external rotor resistance primarily:",
+    "question": "In the wound-rotor circuit shown, external rotor resistance primarily: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-em/v5-07-rotor-circuit.svg",
     "options": [
       "Changes supply frequency",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/v5-07-rotor-circuit.svg",
     "why": "Added rotor resistance shifts torque–slip and aids starting torque.",
-    "topic_suffix": "v5-07-rotor-circuit"
+    "topic_suffix": "v5-07-rotor-circuit",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "EM:EM-05:transformer test setup:transformer test setup:v5-08-transformer-test-setup",
     "themeId": "EM-05",
-    "question": "In the transformer test setup shown, open-circuit test primarily measures:",
+    "question": "In the transformer test setup shown, open-circuit test primarily measures: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-em/v5-08-transformer-test-setup.svg",
     "options": [
       "Full-load copper loss",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-em/v5-08-transformer-test-setup.svg",
     "why": "OC test at rated voltage gives iron loss and magnetising parameters.",
-    "topic_suffix": "v5-08-transformer-test-setup"
+    "topic_suffix": "v5-08-transformer-test-setup",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

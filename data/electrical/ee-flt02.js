@@ -294,7 +294,7 @@ export const questions = [
     "id": 14,
     "subject": "Control Systems",
     "topic": "Step response graph",
-    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is",
+    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is Figure values (also stated here): first peak C(t)≈1.24 at t=0.01 s; settles to 1.0.",
     "image": "images/diagrams/electrical-flt02/q14-step-response.jpg",
     "options": [
       "1",
@@ -311,7 +311,8 @@ export const questions = [
     "origin": "Inspired-PYQ-GENCO",
     "diagramSource": "pyq",
     "diagramSourcePath": "AP-GENCO-Tech-2012 step response",
-    "cropSync": "verbatim-csv-crop"
+    "cropSync": "verbatim-csv-crop",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -377,7 +378,7 @@ export const questions = [
     "id": 18,
     "subject": "Electrical Machines",
     "topic": "Sync phasor diagram",
-    "question": "From the alternator phasor diagram (Ia leading Vt), the machine is operating as:",
+    "question": "From the alternator phasor diagram (Ia leading Vt), the machine is operating as: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt02/q18-sync-phasor.jpg",
     "options": [
       "Short-circuit test",
@@ -393,7 +394,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-Transco",
     "diagramSource": "pyq",
-    "diagramSourcePath": "APTRANSCO-EE-2011 phasor"
+    "diagramSourcePath": "APTRANSCO-EE-2011 phasor",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 19,
@@ -459,7 +461,7 @@ export const questions = [
     "id": 22,
     "subject": "Electrical Machines",
     "topic": "Ferranti line diagram",
-    "question": "The diagram shows a synchronous generator feeding a long open-ended EHV line. When the generator is disconnected, receiving-end voltage under the prior light-load condition will:",
+    "question": "The diagram shows a synchronous generator feeding a long open-ended EHV line. When the generator is disconnected, receiving-end voltage under the prior light-load condition will: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt02/q22-line-charging.jpg",
     "options": [
       "Always double",
@@ -475,7 +477,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-GENCO",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-GENCO-Tech-2012 line"
+    "diagramSourcePath": "AP-GENCO-Tech-2012 line",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 23,
@@ -687,7 +690,7 @@ export const questions = [
     "id": 33,
     "subject": "Electric Circuits",
     "topic": "Bode plot",
-    "question": "From the Bode magnitude sketch, gain crossover occurs near:",
+    "question": "From the Bode magnitude sketch, gain crossover occurs near: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 90, 0, 1.",
     "image": "images/diagrams/electrical-flt02/q33-bode-plot.jpg",
     "options": [
       "ω where phase=-90 deg only",
@@ -703,7 +706,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-GENCO",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-GENCO Bode sketch"
+    "diagramSourcePath": "AP-GENCO Bode sketch",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 34,
@@ -849,7 +853,7 @@ export const questions = [
     "id": 41,
     "subject": "Control Systems",
     "topic": "Unity feedback block",
-    "question": "In the unity negative feedback block diagram shown, closed-loop transfer function is:",
+    "question": "In the unity negative feedback block diagram shown, closed-loop transfer function is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-flt02/q41-block-diagram.svg",
     "options": [
       "1+G",
@@ -865,7 +869,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-Transco",
     "diagramSource": "schematic-matched",
-    "diagramSourcePath": "ST-CS unity feedback"
+    "diagramSourcePath": "ST-CS unity feedback",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 42,
@@ -1157,7 +1162,7 @@ export const questions = [
     "id": 56,
     "subject": "Electric Circuits",
     "topic": "Norton network",
-    "question": "From the Norton equivalent network diagram, after deactivating independent sources, RN across terminals is nearest:",
+    "question": "From the Norton equivalent network diagram, after deactivating independent sources, RN across terminals is nearest: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 12, 3, 0, 6.",
     "image": "images/diagrams/electrical-flt02/q56-norton-network.jpg",
     "options": [
       "12 ohm",
@@ -1173,7 +1178,8 @@ export const questions = [
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-GENCO",
     "diagramSource": "pyq",
-    "diagramSourcePath": "APEPDCL Norton network"
+    "diagramSourcePath": "APEPDCL Norton network",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 57,
@@ -1343,7 +1349,7 @@ export const questions = [
     "id": 65,
     "subject": "Digital Electronics",
     "topic": "K-map matching",
-    "question": "Match the Karnaugh map cells shown to minimal SOP for the given truth table. Correct pairing code is:",
+    "question": "Match the Karnaugh map cells shown to minimal SOP for the given truth table. Correct pairing code is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-flt02/q65-kmap.jpg",
     "options": [
       "Only corners",
@@ -1401,7 +1407,8 @@ export const questions = [
       ],
       "listIITitle": "List-II (Minterm cover)",
       "listITitle": "List-I (Group)"
-    }
+    },
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 66,

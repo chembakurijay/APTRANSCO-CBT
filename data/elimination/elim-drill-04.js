@@ -217,7 +217,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "Elim-Rule-14",
     "themeId": "ELIM-R14",
-    "question": "For the simply supported beam with full-span UDL shown, maximum bending moment occurs where shear is zero. That location is:",
+    "question": "For the simply supported beam with full-span UDL shown, maximum bending moment occurs where shear is zero. That location is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/beam-udl-core.jpg",
     "options": [
       "Outside the span",
@@ -240,7 +240,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-som-01.js#Q19",
     "eliminationRule": 14,
     "eliminationRuleTitle": "SFD↔BMD jump / couple vs point-load confusion",
-    "eliminationRuleId": 16
+    "eliminationRuleId": 16,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -1117,7 +1118,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "Elim-Rule-14",
     "themeId": "ELIM-R14",
-    "question": "From the BMD shown, a sudden jump in bending moment without a corresponding shear jump indicates presence of a:",
+    "question": "From the BMD shown, a sudden jump in bending moment without a corresponding shear jump indicates presence of a: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/q09-bmd-jump.jpg",
     "options": [
       "Point load",
@@ -1140,7 +1141,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-som-01.js#Q39",
     "eliminationRule": 14,
     "eliminationRuleTitle": "SFD↔BMD jump / couple vs point-load confusion",
-    "eliminationRuleId": 16
+    "eliminationRuleId": 16,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 39,
@@ -1417,7 +1419,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "Elim-Rule-15",
     "themeId": "ELIM-R15",
-    "question": "From the SCR gate-pulse figure shown, latching current must be exceeded to:",
+    "question": "From the SCR gate-pulse figure shown, latching current must be exceeded to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-pe/pe1.jpg",
     "options": [
       "Measure holding only",
@@ -1440,7 +1442,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-pe-01.js#Q14",
     "eliminationRule": 15,
     "eliminationRuleTitle": "SCR / PE latching vs holding vs firing",
-    "eliminationRuleId": 18
+    "eliminationRuleId": 18,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 49,

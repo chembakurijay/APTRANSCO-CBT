@@ -217,7 +217,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "From the logic-gate figure shown, a NAND gate is universal because it can realise:",
+    "question": "From the logic-gate figure shown, a NAND gate is universal because it can realise: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ade/a1.jpg",
     "options": [
       "Only AND",
@@ -240,14 +240,15 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-ade-01.js#Q8",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
     "subject": "Steel Structures",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "For the bracket connection shown, eccentricity increases demand on fasteners mainly by adding:",
+    "question": "For the bracket connection shown, eccentricity increases demand on fasteners mainly by adding: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-steel/q40-bracket.jpg",
     "options": [
       "Additional shear/torsion about the fastener group CG",
@@ -270,7 +271,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-steel-01.js#Q47",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 10,
@@ -367,7 +369,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "On the Nyquist plot shown, encirclements of −1 relate to:",
+    "question": "On the Nyquist plot shown, encirclements of −1 relate to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-cs/v5-07-nyquist-plot.svg",
     "options": [
       "Closed-loop stability (Nyquist criterion)",
@@ -390,7 +392,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-cs-01.js#Q39",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 14,
@@ -457,7 +460,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "For the RL transient circuit shown after switch action, time constant is:",
+    "question": "For the RL transient circuit shown after switch action, time constant is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/ec4.jpg",
     "options": [
       "√(LC)",
@@ -480,7 +483,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-ec-01.js#Q32",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 17,
@@ -517,7 +521,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appear only in the figure. Taking moments about the left support, which listed pair gives the two support reactions in the directions shown?",
+    "question": "The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appear only in the figure. Taking moments about the left support, which listed pair gives the two support reactions in the directions shown? Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 14, 36, 30, 20, 18, 32, 24, 26, 11.",
     "image": "images/diagrams/civil-flt02/q03-cantilever-beam.jpg",
     "options": [
       "14 kN, 36 kN",
@@ -540,7 +544,8 @@ export const questions = [
     "sourceRef": "data/civil/ce-flt02.js#Q3",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 19,
@@ -697,7 +702,7 @@ export const questions = [
     "subject": "Analog, Digital and Electronics",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "The binary counter shown divides input frequency by:",
+    "question": "The binary counter shown divides input frequency by: Figure values (also stated here): n flip-flops / mod-2^n as implied by the counter figure.",
     "image": "images/diagrams/electrical-st-ade/v5-06-binary-counter.svg",
     "options": [
       "1 always",
@@ -720,14 +725,15 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-ade-01.js#Q32",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 25,
     "subject": "Electrical Measurements",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "From the dynamometer wattmeter figure, average deflection is proportional to:",
+    "question": "From the dynamometer wattmeter figure, average deflection is proportional to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/m3.jpg",
     "options": [
       "Voltage only",
@@ -750,7 +756,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-meas-01.js#Q19",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -787,7 +794,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "Elim-Rule-12",
     "themeId": "ELIM-R12",
-    "question": "For the retaining-wall pressure diagram shown with Rankine active triangle, resultant Pa acts at:",
+    "question": "For the retaining-wall pressure diagram shown with Rankine active triangle, resultant Pa acts at: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 3, 2, 12.",
     "image": "images/diagrams/civil-st-soil/soil-active-pressure.svg",
     "options": [
       "H/3 above base",
@@ -810,14 +817,15 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-soil-01.js#Q14",
     "eliminationRule": 12,
     "eliminationRuleTitle": "Rankine / Terzaghi / earth-pressure term drop",
-    "eliminationRuleId": 14
+    "eliminationRuleId": 14,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 28,
     "subject": "Strength of Materials",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "The elastic curve shown for a beam under the stated loading is used to find deflection. The governing relation is:",
+    "question": "The elastic curve shown for a beam under the stated loading is used to find deflection. The governing relation is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/elastic-curve.jpg",
     "options": [
       "σ = My/I only",
@@ -840,7 +848,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-som-01.js#Q32",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 29,
@@ -877,7 +886,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "In the flow-net figure, equipotential drops are equal. Head loss between adjacent equipotentials is:",
+    "question": "In the flow-net figure, equipotential drops are equal. Head loss between adjacent equipotentials is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-soil/flow-net-core.jpg",
     "options": [
       "H/Nf",
@@ -900,7 +909,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-soil-01.js#Q25",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 31,
@@ -1027,7 +1037,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "Elim-Rule-12",
     "themeId": "ELIM-R12",
-    "question": "For the footing on layered soil shown, Terzaghi bearing capacity must use:",
+    "question": "For the footing on layered soil shown, Terzaghi bearing capacity must use: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/fe1.jpg",
     "options": [
       "Strength parameters appropriate to the failure zone",
@@ -1050,7 +1060,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-fe-01.js#Q32",
     "eliminationRule": 12,
     "eliminationRuleTitle": "Rankine / Terzaghi / earth-pressure term drop",
-    "eliminationRuleId": 14
+    "eliminationRuleId": 14,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 36,
@@ -1087,7 +1098,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "For the compensated/raft arrangement shown, net foundation pressure is reduced mainly by:",
+    "question": "For the compensated/raft arrangement shown, net foundation pressure is reduced mainly by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/q53-layered-footing.jpg",
     "options": [
       "Excavation relief (weight of removed soil)",
@@ -1110,7 +1121,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-fe-01.js#Q47",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 38,
@@ -1147,7 +1159,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "Elim-Rule-10",
     "themeId": "ELIM-R10",
-    "question": "Referring to the reinforcement layout shown, development length is required primarily to resist:",
+    "question": "Referring to the reinforcement layout shown, development length is required primarily to resist: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/r2.jpg",
     "options": [
       "Deflection only",
@@ -1170,7 +1182,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-rcc-01.js#Q32",
     "eliminationRule": 10,
     "eliminationRuleTitle": "Sign / sense / tension–compression flip",
-    "eliminationRuleId": 12
+    "eliminationRuleId": 12,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1297,7 +1310,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "Elim-Rule-9",
     "themeId": "ELIM-R9",
-    "question": "At series resonance for the RLC circuit shown, impedance is minimum and equal to:",
+    "question": "At series resonance for the RLC circuit shown, impedance is minimum and equal to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/q07-series-rlc.svg",
     "options": [
       "R",
@@ -1320,14 +1333,15 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-ec-01.js#Q3",
     "eliminationRule": 9,
     "eliminationRuleTitle": "Resonance / X_L = X_C identity",
-    "eliminationRuleId": 11
+    "eliminationRuleId": 11,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 45,
     "subject": "Reinforced Concrete",
     "topic": "Elim-Rule-10",
     "themeId": "ELIM-R10",
-    "question": "From the slab support arrangement shown, main tension steel for one-way action runs primarily:",
+    "question": "From the slab support arrangement shown, main tension steel for one-way action runs primarily: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/q18-slab-supports.jpg",
     "options": [
       "Along the short span",
@@ -1350,7 +1364,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-rcc-01.js#Q14",
     "eliminationRule": 10,
     "eliminationRuleTitle": "Sign / sense / tension–compression flip",
-    "eliminationRuleId": 12
+    "eliminationRuleId": 12,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 46,
@@ -1447,7 +1462,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "Elim-Rule-11",
     "themeId": "ELIM-R11",
-    "question": "For the differential manometer shown connecting two points, the reading directly indicates:",
+    "question": "For the differential manometer shown connecting two points, the reading directly indicates: Figure values (also stated here): limb readings, fluid S.G., and tap elevations as labelled.",
     "image": "images/diagrams/civil-st-fm/q29-manometer.jpg",
     "options": [
       "Velocity head alone",
@@ -1470,7 +1485,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-fm-01.js#Q47",
     "eliminationRule": 11,
     "eliminationRuleTitle": "Figure-dependency: cover the figure test",
-    "eliminationRuleId": 13
+    "eliminationRuleId": 13,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 50,

@@ -1,6 +1,5 @@
 // APTRANSCO ST · Control Systems · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Control Systems:CS-03:unity feedback loop:unity feedback loop:q07-unity-feedback",
     "themeId": "CS-03",
-    "question": "For the unity-feedback system shown with G(s) in the forward path, closed-loop TF is:",
+    "question": "For the unity-feedback system shown with G(s) in the forward path, closed-loop TF is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-st-cs/q07-unity-feedback.svg",
     "options": [
       "1+G",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/q07-unity-feedback.svg",
     "why": "Unity feedback: T = G/(1+G).",
-    "topic_suffix": "q07-unity-feedback"
+    "topic_suffix": "q07-unity-feedback",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "Control Systems:CS-03:root-locus plot:root-locus plot:cs1",
     "themeId": "CS-03",
-    "question": "From the root-locus sketch shown, branches start at open-loop poles and end at:",
+    "question": "From the root-locus sketch shown, branches start at open-loop poles and end at: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-cs/cs1.jpg",
     "options": [
       "Only at origin",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/cs1.jpg",
     "why": "Loci start at poles and terminate at zeros or infinity.",
-    "topic_suffix": "cs1"
+    "topic_suffix": "cs1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-04:Bode plot:Bode plot:cs2",
     "themeId": "CS-04",
-    "question": "On the Bode plot shown, gain margin is read from:",
+    "question": "On the Bode plot shown, gain margin is read from: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0, 180.",
     "image": "images/diagrams/electrical-st-cs/cs2.jpg",
     "options": [
       "Only DC gain",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/cs2.jpg",
     "why": "GM is how far |G| is from 0 dB at phase crossover.",
-    "topic_suffix": "cs2"
+    "topic_suffix": "cs2",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-04:block diagram:block diagram:cs3",
     "themeId": "CS-04",
-    "question": "Using block-diagram reduction on the figure shown, a negative unity feedback around G yields:",
+    "question": "Using block-diagram reduction on the figure shown, a negative unity feedback around G yields: Figure values (also stated here): use the labelled magnitudes on the figure; option-scale numbers for this item include 1.",
     "image": "images/diagrams/electrical-st-cs/cs3.jpg",
     "options": [
       "G(1−G)",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/cs3.jpg",
     "why": "Classic unity negative feedback reduction.",
-    "topic_suffix": "cs3"
+    "topic_suffix": "cs3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-05:signal-flow graph:signal-flow graph:cs4",
     "themeId": "CS-05",
-    "question": "From the step-response plot shown, overshoot increases when damping ratio ζ:",
+    "question": "From the step-response plot shown, overshoot increases when damping ratio ζ: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-st-cs/cs4.jpg",
     "options": [
       "Decreases (underdamped)",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/cs4.jpg",
     "why": "Lower ζ (still underdamped) raises percent overshoot.",
-    "topic_suffix": "cs4"
+    "topic_suffix": "cs4",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-02:step response:step response:v5-05-signal-flow-graph",
     "themeId": "CS-02",
-    "question": "Mason’s gain formula applied to the signal-flow graph shown uses:",
+    "question": "Mason’s gain formula applied to the signal-flow graph shown uses: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-cs/v5-05-signal-flow-graph.svg",
     "options": [
       "Only one forward path ignoring loops",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/v5-05-signal-flow-graph.svg",
     "why": "Mason gain accounts for paths and nontouching loops via Δ.",
-    "topic_suffix": "v5-05-signal-flow-graph"
+    "topic_suffix": "v5-05-signal-flow-graph",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-04:Nyquist plot:Nyquist plot:v5-07-nyquist-plot",
     "themeId": "CS-04",
-    "question": "On the Nyquist plot shown, encirclements of −1 relate to:",
+    "question": "On the Nyquist plot shown, encirclements of −1 relate to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-cs/v5-07-nyquist-plot.svg",
     "options": [
       "Only rise time",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/v5-07-nyquist-plot.svg",
     "why": "Nyquist stability uses encirclements of the critical point.",
-    "topic_suffix": "v5-07-nyquist-plot"
+    "topic_suffix": "v5-07-nyquist-plot",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Control Systems",
     "topic": "CS:CS-02:lead compensator:lead compensator:v5-08-lead-compensator",
     "themeId": "CS-02",
-    "question": "The lead compensator network shown primarily provides:",
+    "question": "The lead compensator network shown primarily provides: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-cs/v5-08-lead-compensator.svg",
     "options": [
       "Phase lag at all ω",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-cs/v5-08-lead-compensator.svg",
     "why": "Lead networks advance phase to improve margins.",
-    "topic_suffix": "v5-08-lead-compensator"
+    "topic_suffix": "v5-08-lead-compensator",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,
