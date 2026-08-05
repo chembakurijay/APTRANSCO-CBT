@@ -1,6 +1,5 @@
 // APTRANSCO ST · Electrical Measurements · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "Measurements:ME-03:Wheatstone bridge:Wheatstone bridge:q07-wheatstone",
     "themeId": "ME-03",
-    "question": "At balance of the Wheatstone bridge shown, galvanometer current is:",
+    "question": "At balance of the Wheatstone bridge shown, galvanometer current is: Figure values (also stated here): bridge arm resistances as labelled.",
     "image": "images/diagrams/electrical-st-meas/q07-wheatstone.svg",
     "options": [
       "Maximum",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/q07-wheatstone.svg",
     "why": "Balance ⇒ no potential difference across galvanometer.",
-    "topic_suffix": "q07-wheatstone"
+    "topic_suffix": "q07-wheatstone",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "Measurements:ME-03:PMMC movement:PMMC movement:m1",
     "themeId": "ME-03",
-    "question": "For the PMMC instrument shown, it is fundamentally suitable for:",
+    "question": "For the PMMC instrument shown, it is fundamentally suitable for: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/m1.jpg",
     "options": [
       "AC only without rectifier",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/m1.jpg",
     "why": "PMMC responds to average/DC; AC needs rectifier.",
-    "topic_suffix": "m1"
+    "topic_suffix": "m1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-04:current transformer:current transformer:m2",
     "themeId": "ME-04",
-    "question": "On the CT connection shown, with primary energised the secondary must never be:",
+    "question": "On the CT connection shown, with primary energised the secondary must never be: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/m2.jpg",
     "options": [
       "Loaded by ammeter/burden",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/m2.jpg",
     "why": "Open CT secondary develops dangerous voltage.",
-    "topic_suffix": "m2"
+    "topic_suffix": "m2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-04:dynamometer wattmeter:dynamometer wattmeter:m3",
     "themeId": "ME-04",
-    "question": "From the dynamometer wattmeter figure, average deflection is proportional to:",
+    "question": "From the dynamometer wattmeter figure, average deflection is proportional to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/m3.jpg",
     "options": [
       "Voltage only",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/m3.jpg",
     "why": "Dynamometer wattmeter measures average active power.",
-    "topic_suffix": "m3"
+    "topic_suffix": "m3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-05:energy meter:energy meter:v5-05-energy-meter",
     "themeId": "ME-05",
-    "question": "In the induction energy-meter figure, disc speed is related to:",
+    "question": "In the induction energy-meter figure, disc speed is related to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/v5-05-energy-meter.svg",
     "options": [
       "Energy / power registration over time",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/v5-05-energy-meter.svg",
     "why": "Disc revolutions integrate energy.",
-    "topic_suffix": "v5-05-energy-meter"
+    "topic_suffix": "v5-05-energy-meter",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-02:CRO block diagram:CRO block diagram:v5-06-cro-block-diagram",
     "themeId": "ME-02",
-    "question": "On the CRO block diagram shown, the time base primarily controls:",
+    "question": "On the CRO block diagram shown, the time base primarily controls: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/v5-06-cro-block-diagram.svg",
     "options": [
       "Vertical amplitude alone",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/v5-06-cro-block-diagram.svg",
     "why": "Time-base generator sweeps the X axis.",
-    "topic_suffix": "v5-06-cro-block-diagram"
+    "topic_suffix": "v5-06-cro-block-diagram",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-04:Megger circuit:Megger circuit:v5-07-megger-circuit",
     "themeId": "ME-04",
-    "question": "The Megger circuit shown is used to measure:",
+    "question": "The Megger circuit shown is used to measure: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/v5-07-megger-circuit.svg",
     "options": [
       "Low resistance of ammeter shunts only",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/v5-07-megger-circuit.svg",
     "why": "Megger applies high DC to measure insulation resistance.",
-    "topic_suffix": "v5-07-megger-circuit"
+    "topic_suffix": "v5-07-megger-circuit",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Electrical Measurements",
     "topic": "ME:ME-02:potentiometer:potentiometer:v5-08-potentiometer",
     "themeId": "ME-02",
-    "question": "A potentiometer null measurement as shown compares unknown emf against:",
+    "question": "A potentiometer null measurement as shown compares unknown emf against: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-meas/v5-08-potentiometer.svg",
     "options": [
       "Random AC mains",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-meas/v5-08-potentiometer.svg",
     "why": "Potentiometer balances unknown against a calibrated voltage.",
-    "topic_suffix": "v5-08-potentiometer"
+    "topic_suffix": "v5-08-potentiometer",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

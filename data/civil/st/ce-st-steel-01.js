@@ -1,6 +1,5 @@
 // APTRANSCO ST · Steel Structures · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -172,7 +171,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-08:fillet weld:fillet weld:fillet-weld-core",
     "themeId": "ST-08",
-    "question": "For the fillet weld shown, design throat thickness is taken as:",
+    "question": "For the fillet weld shown, design throat thickness is taken as: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.414, 0.70, 90.",
     "image": "images/diagrams/civil-st-steel/fillet-weld-core.jpg",
     "options": [
       "Leg size s",
@@ -192,7 +191,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/fillet-weld-core.jpg",
     "why": "Effective throat is K·s with K ≈ 0.70 for 90° fillet.",
-    "topic_suffix": "fillet-weld-core"
+    "topic_suffix": "fillet-weld-core",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 9,
@@ -314,7 +314,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-06:column buckling curve:column buckling curve:q45-buckling-curves",
     "themeId": "ST-06",
-    "question": "From the buckling curves shown, design compressive strength of a column depends on:",
+    "question": "From the buckling curves shown, design compressive strength of a column depends on: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-steel/q45-buckling-curves.svg",
     "options": [
       "fy alone",
@@ -334,7 +334,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/q45-buckling-curves.svg",
     "why": "IS buckling curves reduce fy based on non-dimensional slenderness and section class.",
-    "topic_suffix": "q45-buckling-curves"
+    "topic_suffix": "q45-buckling-curves",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +434,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-03:plate girder:plate girder:q40-eccentric-bolt-group",
     "themeId": "ST-03",
-    "question": "For the eccentric bolt group shown, the most heavily loaded bolt is found by combining:",
+    "question": "For the eccentric bolt group shown, the most heavily loaded bolt is found by combining: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-steel/q40-eccentric-bolt-group.jpg",
     "options": [
       "Direct shear only",
@@ -453,7 +454,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/q40-eccentric-bolt-group.jpg",
     "why": "Eccentric load = direct shear + shear from torque about CG.",
-    "topic_suffix": "q40-eccentric-bolt-group"
+    "topic_suffix": "q40-eccentric-bolt-group",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +577,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-01:roof truss joint:roof truss joint:q47-staggered-net-paths",
     "themeId": "ST-01",
-    "question": "On the staggered bolt-hole figure, net width along a zigzag path adds the term:",
+    "question": "On the staggered bolt-hole figure, net width along a zigzag path adds the term: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 4.",
     "image": "images/diagrams/civil-st-steel/q47-staggered-net-paths.jpg",
     "options": [
       "+s²/(4g) per stagger",
@@ -595,7 +597,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/q47-staggered-net-paths.jpg",
     "why": "Staggered net width includes +s²/(4g) for each staggered gauge.",
-    "topic_suffix": "q47-staggered-net-paths"
+    "topic_suffix": "q47-staggered-net-paths",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +743,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-08:base plate:base plate:steel-truss-joint",
     "themeId": "ST-08",
-    "question": "At the roof-truss joint shown, member forces are typically found by:",
+    "question": "At the roof-truss joint shown, member forces are typically found by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-steel/steel-truss-joint.svg",
     "options": [
       "Ignoring joint equilibrium",
@@ -760,7 +763,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/steel-truss-joint.svg",
     "why": "Truss joints are analysed by concurrent force equilibrium.",
-    "topic_suffix": "steel-truss-joint"
+    "topic_suffix": "steel-truss-joint",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +909,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-07:tension plate:tension plate:bolt-group-core",
     "themeId": "ST-07",
-    "question": "For the bolt group shown under concentric shear, if one bolt capacity is Vdb, n bolts give:",
+    "question": "For the bolt group shown under concentric shear, if one bolt capacity is Vdb, n bolts give: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2.",
     "image": "images/diagrams/civil-st-steel/bolt-group-core.jpg",
     "options": [
       "Vdb/n",
@@ -925,7 +929,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/bolt-group-core.jpg",
     "why": "Concentric equal sharing multiplies single-bolt capacity by n.",
-    "topic_suffix": "bolt-group-core"
+    "topic_suffix": "bolt-group-core",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1098,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "STEEL:ST-07:lateral bracing:lateral bracing:q40-bracket",
     "themeId": "ST-07",
-    "question": "For the bracket connection shown, eccentricity increases demand on fasteners mainly by adding:",
+    "question": "For the bracket connection shown, eccentricity increases demand on fasteners mainly by adding: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-steel/q40-bracket.jpg",
     "options": [
       "Pure axial tension only",
@@ -1113,7 +1118,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-steel/q40-bracket.jpg",
     "why": "Bracket eccentricity produces moment about the bolt-group CG.",
-    "topic_suffix": "q40-bracket"
+    "topic_suffix": "q40-bracket",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

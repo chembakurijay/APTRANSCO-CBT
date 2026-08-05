@@ -1,6 +1,5 @@
 // APTRANSCO ST · Strength of Materials · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -314,7 +313,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-02:Mohr circle:Mohr circle:Mohr circle:mohr-element",
     "themeId": "SOM-02",
-    "question": "Using the plane-stress element in the figure with the labelled σx, σy and τxy, the centre of Mohr’s circle equals:",
+    "question": "Using the plane-stress element in the figure with the labelled σx, σy and τxy, the centre of Mohr’s circle equals: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2.",
     "image": "images/diagrams/civil-st-som/mohr-element.jpg",
     "options": [
       "σx",
@@ -334,7 +333,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/mohr-element.jpg",
     "why": "Mohr-circle centre is the average normal stress (σx+σy)/2.",
-    "topic_suffix": "mohr-element"
+    "topic_suffix": "mohr-element",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 15,
@@ -433,7 +433,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-07:circular shaft:circular shaft:circular shaft:beam-udl-core",
     "themeId": "SOM-07",
-    "question": "For the simply supported beam with full-span UDL shown, maximum bending moment occurs where shear is zero. That location is:",
+    "question": "For the simply supported beam with full-span UDL shown, maximum bending moment occurs where shear is zero. That location is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/beam-udl-core.jpg",
     "options": [
       "At either support",
@@ -453,7 +453,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/beam-udl-core.jpg",
     "why": "For a symmetric full-span UDL, V = 0 at midspan where M is maximum.",
-    "topic_suffix": "beam-udl-core"
+    "topic_suffix": "beam-udl-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +576,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-01:pin-ended column:pin-ended column:pin-ended column:stress-strain-core",
     "themeId": "SOM-01",
-    "question": "On the engineering stress–strain curve shown, the stress at the upper yield point is used to identify:",
+    "question": "On the engineering stress–strain curve shown, the stress at the upper yield point is used to identify: Figure values (also stated here): yield and post-yield coordinates as labelled on the curve.",
     "image": "images/diagrams/civil-st-som/stress-strain-core.jpg",
     "options": [
       "Proof stress of mild steel",
@@ -595,7 +596,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/stress-strain-core.jpg",
     "why": "Upper yield (or 0.2% proof for no clear yield) marks the onset of plasticity on the shown curve.",
-    "topic_suffix": "stress-strain-core"
+    "topic_suffix": "stress-strain-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +742,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-08:stepped bar:stepped bar:stepped bar:elastic-curve",
     "themeId": "SOM-08",
-    "question": "The elastic curve shown for a beam under the stated loading is used to find deflection. The governing relation is:",
+    "question": "The elastic curve shown for a beam under the stated loading is used to find deflection. The governing relation is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/elastic-curve.jpg",
     "options": [
       "σ = My/I only",
@@ -760,7 +762,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/elastic-curve.jpg",
     "why": "Beam curvature is related to moment by EI d²y/dx² = M(x).",
-    "topic_suffix": "elastic-curve"
+    "topic_suffix": "elastic-curve",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +908,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-03:beam shear diagram:beam shear diagram:beam shear diagram:q09-bmd-jump",
     "themeId": "SOM-03",
-    "question": "From the BMD shown, a sudden jump in bending moment without a corresponding shear jump indicates presence of a:",
+    "question": "From the BMD shown, a sudden jump in bending moment without a corresponding shear jump indicates presence of a: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-som/q09-bmd-jump.jpg",
     "options": [
       "Point load",
@@ -925,7 +928,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/q09-bmd-jump.jpg",
     "why": "A concentrated couple produces a jump in BMD; shear does not jump.",
-    "topic_suffix": "q09-bmd-jump"
+    "topic_suffix": "q09-bmd-jump",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1097,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM:SOM-11:strain-gauge rosette:strain-gauge rosette:strain-gauge rosette:q03-overhang-reactions",
     "themeId": "SOM-11",
-    "question": "For the overhang beam arrangement shown, vertical equilibrium requires RA + RB to equal:",
+    "question": "For the overhang beam arrangement shown, vertical equilibrium requires RA + RB to equal: Figure values (also stated here): AB/BC spans and UDL/point-load magnitudes as labelled on the crop.",
     "image": "images/diagrams/civil-st-som/q03-overhang-reactions.jpg",
     "options": [
       "Tip load only",
@@ -1113,7 +1117,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-som/q03-overhang-reactions.jpg",
     "why": "Support reactions balance the total downward load on the free body.",
-    "topic_suffix": "q03-overhang-reactions"
+    "topic_suffix": "q03-overhang-reactions",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

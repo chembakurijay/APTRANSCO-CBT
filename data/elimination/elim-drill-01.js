@@ -517,7 +517,7 @@ export const questions = [
     "subject": "Steel Structures",
     "topic": "Elim-Rule-3",
     "themeId": "ELIM-R3",
-    "question": "On the staggered bolt-hole figure, net width along a zigzag path adds the term:",
+    "question": "On the staggered bolt-hole figure, net width along a zigzag path adds the term: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 4, 3.",
     "image": "images/diagrams/civil-st-steel/q47-staggered-net-paths.jpg",
     "options": [
       "+s²/(4g) per stagger",
@@ -540,7 +540,8 @@ export const questions = [
     "sourceRef": "data/civil/st/ce-st-steel-01.js#Q25",
     "eliminationRule": 3,
     "eliminationRuleTitle": "Gross vs net / hole deduction",
-    "eliminationRuleId": 4
+    "eliminationRuleId": 4,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 19,

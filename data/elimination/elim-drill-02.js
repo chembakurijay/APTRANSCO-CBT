@@ -337,7 +337,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Elim-Rule-8",
     "themeId": "ELIM-R8",
-    "question": "From the Norton equivalent network diagram, after deactivating independent sources, RN across terminals is nearest:",
+    "question": "From the Norton equivalent network diagram, after deactivating independent sources, RN across terminals is nearest: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 12, 6, 0, 3, 8.",
     "image": "images/diagrams/electrical-flt02/q56-norton-network.jpg",
     "options": [
       "12 ohm",
@@ -360,7 +360,8 @@ export const questions = [
     "sourceRef": "data/electrical/ee-flt02.js#Q56",
     "eliminationRule": 8,
     "eliminationRuleTitle": "Thevenin / Norton source deactivation",
-    "eliminationRuleId": 10
+    "eliminationRuleId": 10,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 13,
@@ -667,7 +668,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Elim-Rule-8",
     "themeId": "ELIM-R8",
-    "question": "For the network shown, Norton’s resistance RN seen at the open terminals is:",
+    "question": "For the network shown, Norton’s resistance RN seen at the open terminals is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0.9, 4, 17, 3, 8.",
     "image": "images/diagrams/electrical-flt01/q56-norton-circuit.jpg",
     "options": [
       "0.9 Ω",
@@ -690,7 +691,8 @@ export const questions = [
     "sourceRef": "data/electrical/ee-flt01.js#Q56",
     "eliminationRule": 8,
     "eliminationRuleTitle": "Thevenin / Norton source deactivation",
-    "eliminationRuleId": 10
+    "eliminationRuleId": 10,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 24,
@@ -1027,7 +1029,7 @@ export const questions = [
     "subject": "Electrical Machines",
     "topic": "Elim-Rule-7",
     "themeId": "ELIM-R7",
-    "question": "For the starter scheme shown for an induction motor, star–delta starting reduces line current by a factor of about:",
+    "question": "For the starter scheme shown for an induction motor, star–delta starting reduces line current by a factor of about: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2, 3, 1, 7.",
     "image": "images/diagrams/electrical-st-em/em4.jpg",
     "options": [
       "2",
@@ -1050,7 +1052,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-em-01.js#Q25",
     "eliminationRule": 7,
     "eliminationRuleTitle": "√3 / phase-factor forgotten",
-    "eliminationRuleId": 9
+    "eliminationRuleId": 9,
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 36,
@@ -1177,7 +1180,7 @@ export const questions = [
     "subject": "Electric Circuits",
     "topic": "Elim-Rule-8",
     "themeId": "ELIM-R8",
-    "question": "In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand terminals is:",
+    "question": "In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand terminals is: Figure values (also stated here): use the labelled magnitudes on the figure; option-scale numbers for this item include 4, 2, 6, 5.",
     "image": "images/diagrams/electrical-flt01/q-extra-req.jpg",
     "options": [
       "4 Ω",
@@ -1200,14 +1203,15 @@ export const questions = [
     "sourceRef": "data/electrical/ee-flt01.js#Q29",
     "eliminationRule": 8,
     "eliminationRuleTitle": "Thevenin / Norton source deactivation",
-    "eliminationRuleId": 10
+    "eliminationRuleId": 10,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 41,
     "subject": "Electrical Circuits",
     "topic": "Elim-Rule-8",
     "themeId": "ELIM-R8",
-    "question": "To find Thevenin resistance at the port shown, independent sources are deactivated by:",
+    "question": "To find Thevenin resistance at the port shown, independent sources are deactivated by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/q08-thevenin-bridge.svg",
     "options": [
       "Voltage sources → short; current sources → open",
@@ -1230,7 +1234,8 @@ export const questions = [
     "sourceRef": "data/electrical/st/ee-st-ec-01.js#Q8",
     "eliminationRule": 8,
     "eliminationRuleTitle": "Thevenin / Norton source deactivation",
-    "eliminationRuleId": 10
+    "eliminationRuleId": 10,
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 42,

@@ -1,6 +1,5 @@
 // APTRANSCO ST · Power Electronics · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "Power Electronics & Drives:PE-03:single-phase converter:single-phase converter:q07-single-phase-semi",
     "themeId": "PE-03",
-    "question": "For the single-phase semi-converter shown with firing angle α, average output voltage involves:",
+    "question": "For the single-phase semi-converter shown with firing angle α, average output voltage involves: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1.",
     "image": "images/diagrams/electrical-st-pe/q07-single-phase-semi.svg",
     "options": [
       "Only Vm",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/q07-single-phase-semi.svg",
     "why": "Semi-converter average voltage depends on Vm and α.",
-    "topic_suffix": "q07-single-phase-semi"
+    "topic_suffix": "q07-single-phase-semi",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "Power Electronics & Drives:PE-03:three-phase bridge:three-phase bridge:pe3",
     "themeId": "PE-03",
-    "question": "In the converter/chopper figure shown, freewheeling diode path is needed mainly for:",
+    "question": "In the converter/chopper figure shown, freewheeling diode path is needed mainly for: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-pe/pe3.svg",
     "options": [
       "Increasing source frequency",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/pe3.svg",
     "why": "Inductive current freewheels through the diode when device turns off.",
-    "topic_suffix": "pe3"
+    "topic_suffix": "pe3",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-04:DC chopper:DC chopper:pe1",
     "themeId": "PE-04",
-    "question": "From the SCR gate-pulse figure shown, latching current must be exceeded to:",
+    "question": "From the SCR gate-pulse figure shown, latching current must be exceeded to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-pe/pe1.jpg",
     "options": [
       "Turn off the SCR",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/pe1.jpg",
     "why": "Latching current establishes on-state after gate trigger.",
-    "topic_suffix": "pe1"
+    "topic_suffix": "pe1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-04:PWM inverter:PWM inverter:pe2",
     "themeId": "PE-04",
-    "question": "On the three-phase bridge waveform/figure shown, device conduction intervals follow:",
+    "question": "On the three-phase bridge waveform/figure shown, device conduction intervals follow: Figure values (also stated here): 120° conduction intervals as marked on the waveform.",
     "image": "images/diagrams/electrical-st-pe/pe2.jpg",
     "options": [
       "Random firing",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/pe2.jpg",
     "why": "Each device in a six-pulse bridge conducts 120°.",
-    "topic_suffix": "pe2"
+    "topic_suffix": "pe2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-05:freewheeling diode:freewheeling diode:v5-03-dc-chopper",
     "themeId": "PE-05",
-    "question": "For the chopper shown with duty ratio δ, average output on constant V is approximately:",
+    "question": "For the chopper shown with duty ratio δ, average output on constant V is approximately: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1, 0.",
     "image": "images/diagrams/electrical-st-pe/v5-03-dc-chopper.svg",
     "options": [
       "δ V",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/v5-03-dc-chopper.svg",
     "why": "Buck chopper average output is duty times DC input.",
-    "topic_suffix": "v5-03-dc-chopper"
+    "topic_suffix": "v5-03-dc-chopper",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-02:SCR gate pulse:SCR gate pulse:v5-04-pwm-inverter",
     "themeId": "PE-02",
-    "question": "From the PWM inverter figure, fundamental output voltage is controlled mainly by:",
+    "question": "From the PWM inverter figure, fundamental output voltage is controlled mainly by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-pe/v5-04-pwm-inverter.svg",
     "options": [
       "Only DC link colour",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/v5-04-pwm-inverter.svg",
     "why": "PWM modulation depth sets fundamental AC magnitude.",
-    "topic_suffix": "v5-04-pwm-inverter"
+    "topic_suffix": "v5-04-pwm-inverter",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-04:buck converter:buck converter:v5-07-buck-converter",
     "themeId": "PE-04",
-    "question": "In the buck converter shown, output voltage is:",
+    "question": "In the buck converter shown, output voltage is: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 2.",
     "image": "images/diagrams/electrical-st-pe/v5-07-buck-converter.svg",
     "options": [
       "Higher than input always",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/v5-07-buck-converter.svg",
     "why": "Ideal buck converter steps voltage down.",
-    "topic_suffix": "v5-07-buck-converter"
+    "topic_suffix": "v5-07-buck-converter",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Power Electronics",
     "topic": "PE:PE-02:cycloconverter waveform:cycloconverter waveform:v5-08-cycloconverter-waveform",
     "themeId": "PE-02",
-    "question": "The cycloconverter waveform shown indicates direct:",
+    "question": "The cycloconverter waveform shown indicates direct: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-pe/v5-08-cycloconverter-waveform.svg",
     "options": [
       "DC to higher DC only",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-pe/v5-08-cycloconverter-waveform.svg",
     "why": "Cycloconverters synthesise lower-frequency AC from AC supply.",
-    "topic_suffix": "v5-08-cycloconverter-waveform"
+    "topic_suffix": "v5-08-cycloconverter-waveform",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

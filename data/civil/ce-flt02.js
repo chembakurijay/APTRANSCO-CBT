@@ -54,7 +54,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM: diagram",
     "themeId": "",
-    "question": "The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appear only in the figure. Taking moments about the left support, which listed pair gives the two support reactions in the directions shown?",
+    "question": "The overhanging beam in the crop carries the shown point load and UDL; span lengths and load locations appear only in the figure. Taking moments about the left support, which listed pair gives the two support reactions in the directions shown? Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 14, 36, 18, 32, 24, 26, 30, 20, 50.",
     "image": "images/diagrams/civil-flt02/q03-cantilever-beam.jpg",
     "options": [
       "14 kN, 36 kN",
@@ -72,7 +72,8 @@ export const questions = [
     "predictScore": 8,
     "predictBasis": "FLT-02 SOM — Diagram",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0030.jpg"
+    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0030.jpg",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 4,
@@ -217,7 +218,7 @@ export const questions = [
     "subject": "Strength of Materials",
     "topic": "SOM: diagram",
     "themeId": "",
-    "question": "The plotted bilinear stress–strain curve gives the yield point and post-yield tangent; both coordinates are deliberately available only on the crop. For the loading-unloading path marked P→Q, which option gives permanent strain after complete unloading with initial elastic slope retained?",
+    "question": "The plotted bilinear stress–strain curve gives the yield point and post-yield tangent; both coordinates are deliberately available only on the crop. For the loading-unloading path marked P→Q, which option gives permanent strain after complete unloading with initial elastic slope retained? Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0.10, 0.25, 0.18, 0.30, 0.50, 400, 200000, 0.20.",
     "image": "images/diagrams/civil-flt02/q10-stress-strain-curve.jpg",
     "options": [
       "0.10%",
@@ -235,7 +236,8 @@ export const questions = [
     "predictScore": 7,
     "predictBasis": "FLT-02 SOM — Diagram",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0042.jpg"
+    "diagramSourcePath": "civil-core-diagrams/SOM/SOM_pg0042.jpg",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 11,
@@ -403,7 +405,7 @@ export const questions = [
     "subject": "RCC / DDRC",
     "topic": "RCC: diagram",
     "themeId": "",
-    "question": "In the shown slab panel, supports are along the long edges. Assertion (A): the panel should be designed as one-way. Reason (R): Ly/Lx is greater than 2 for the labelled spans.",
+    "question": "In the shown slab panel, supports are along the long edges. Assertion (A): the panel should be designed as one-way. Reason (R): Ly/Lx is greater than 2 for the labelled spans. Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/rcc-one-way-slab.svg",
     "options": [
       "A false, R true",
@@ -422,7 +424,8 @@ export const questions = [
     "predictBasis": "FLT-02 RCC — Diagram",
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/rcc-one-way-slab.svg",
-    "cropSync": "replaced-bad-multipage-crop"
+    "cropSync": "replaced-bad-multipage-crop",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 19,
@@ -685,7 +688,7 @@ export const questions = [
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: diagram",
     "themeId": "",
-    "question": "The differential manometer crop shows water in a pipe and mercury in the limbs; the tap elevations and three interface-level differences are given only in the figure. Which listed value is the pressure difference \\(p_A-p_B\\)?",
+    "question": "The differential manometer crop shows water in a pipe and mercury in the limbs; the tap elevations and three interface-level differences are given only in the figure. Which listed value is the pressure difference \\(p_A-p_B\\)? Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 12.6, 8.4, 18.9, 25.2.",
     "image": "images/diagrams/civil-flt02/q30-venturi-manometer.jpg",
     "options": [
       "12.6 kPa",
@@ -703,7 +706,8 @@ export const questions = [
     "predictScore": 8,
     "predictBasis": "FLT-02 FM — Diagram",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0029.jpg"
+    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0029.jpg",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 31,
@@ -804,7 +808,7 @@ export const questions = [
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: diagram",
     "themeId": "",
-    "question": "The pump and system curves show one pump and two identical pumps in parallel; the operating intersections are labelled only on the crop. Why is the parallel discharge at point C less than twice the single-pump discharge at A?",
+    "question": "The pump and system curves show one pump and two identical pumps in parallel; the operating intersections are labelled only on the crop. Why is the parallel discharge at point C less than twice the single-pump discharge at A? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt02/q35-pump-characteristic.jpg",
     "options": [
       "Pump speed necessarily halves",
@@ -822,7 +826,8 @@ export const questions = [
     "predictScore": 8,
     "predictBasis": "FLT-02 FM — Diagram",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0035.jpg"
+    "diagramSourcePath": "civil-core-diagrams/Fluid/Fluid_pg0035.jpg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 36,
@@ -898,7 +903,7 @@ export const questions = [
     "subject": "Fluid Mechanics & Hydraulic Machinery",
     "topic": "FM: diagram",
     "themeId": "",
-    "question": "The rising-main layout marks pump, non-return valve, fast isolating valve, high point and a candidate surge vessel location. Following repeated trips and pressure spikes, which intervention/location combination is technically defensible?",
+    "question": "The rising-main layout marks pump, non-return valve, fast isolating valve, high point and a candidate surge vessel location. Following repeated trips and pressure spikes, which intervention/location combination is technically defensible? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt02/q39-turbine-velocity.jpg",
     "options": [
       "faster valve closure at the high point",
@@ -916,7 +921,8 @@ export const questions = [
     "predictScore": 7,
     "predictBasis": "FLT-02 FM — Diagram",
     "diagramSource": "bank",
-    "diagramSourcePath": "civil-flt01/q39-turbine-triangles.jpg"
+    "diagramSourcePath": "civil-flt01/q39-turbine-triangles.jpg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1205,7 +1211,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE: net-pressure effect",
     "themeId": "",
-    "question": "A footing is called “compensated” when excavation removes soil weight that offsets part of the structural pressure. What is the principal benefit?",
+    "question": "A footing is called “compensated” when excavation removes soil weight that offsets part of the structural pressure. What is the principal benefit? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt02/q52-portal-frame.jpg",
     "options": [
       "zero gross pressure",
@@ -1223,7 +1229,8 @@ export const questions = [
     "predictScore": 8,
     "predictBasis": "FLT-02 FE — Net-pressure effect",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/FE/FE_pg0058.jpg"
+    "diagramSourcePath": "civil-core-diagrams/FE/FE_pg0058.jpg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 53,
@@ -1579,7 +1586,7 @@ export const questions = [
     "subject": "Soil Mechanics",
     "topic": "Soil: diagram",
     "themeId": "",
-    "question": "The plotted Proctor curves correspond to two compactive efforts, and a field point F is marked. Which interpretation follows from the actual curve peaks and F’s coordinates?",
+    "question": "The plotted Proctor curves correspond to two compactive efforts, and a field point F is marked. Which interpretation follows from the actual curve peaks and F’s coordinates? Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-flt02/q68-proctor-curves.jpg",
     "options": [
       "higher effort shifts peak to higher dry density/lower OMC; F is below the specified relative-compaction threshold",
@@ -1597,7 +1604,8 @@ export const questions = [
     "predictScore": 7,
     "predictBasis": "FLT-02 Soil — Diagram",
     "diagramSource": "core",
-    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0068.jpg"
+    "diagramSourcePath": "civil-core-diagrams/Soil/Soil_pg0068.jpg",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 69,

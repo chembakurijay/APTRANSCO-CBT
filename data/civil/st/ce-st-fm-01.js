@@ -1,6 +1,5 @@
 // APTRANSCO ST · Fluid Mechanics and Hydraulic Machines · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -172,7 +171,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:HHM-02:pipe profile:pipe profile:manometer-core",
     "themeId": "HHM-02",
-    "question": "Using the manometer arrangement shown with mercury (S = 13.6) and water, pressure head difference relates to manometer reading h by:",
+    "question": "Using the manometer arrangement shown with mercury (S = 13.6) and water, pressure head difference relates to manometer reading h by: Figure values (also stated here): use the labelled magnitudes on the figure; option-scale numbers for this item include 13.6, 12.6.",
     "image": "images/diagrams/civil-st-fm/manometer-core.jpg",
     "options": [
       "h",
@@ -192,7 +191,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/manometer-core.jpg",
     "why": "For Hg–water, Δh_water = 12.6 h.",
-    "topic_suffix": "manometer-core"
+    "topic_suffix": "manometer-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +314,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:FM-04:jet on vane:jet on vane:q33-pump-system-curves",
     "themeId": "FM-04",
-    "question": "On the pump and system curves shown, the operating point is:",
+    "question": "On the pump and system curves shown, the operating point is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fm/q33-pump-system-curves.jpg",
     "options": [
       "Pump shut-off head",
@@ -334,7 +334,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/q33-pump-system-curves.jpg",
     "why": "Duty point is intersection of pump and system head curves.",
-    "topic_suffix": "q33-pump-system-curves"
+    "topic_suffix": "q33-pump-system-curves",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +434,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:HHM-03:centrifugal pump:centrifugal pump:q35-laminar-profiles",
     "themeId": "HHM-03",
-    "question": "From the laminar velocity profile shown in a pipe, maximum velocity is:",
+    "question": "From the laminar velocity profile shown in a pipe, maximum velocity is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fm/q35-laminar-profiles.jpg",
     "options": [
       "Equal to mean velocity",
@@ -453,7 +454,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/q35-laminar-profiles.jpg",
     "why": "Hagen–Poiseuille laminar profile: Vmax = 2 Vavg.",
-    "topic_suffix": "q35-laminar-profiles"
+    "topic_suffix": "q35-laminar-profiles",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +577,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:FM-05:hydraulic jump:hydraulic jump:q39-turbine-triangles",
     "themeId": "FM-05",
-    "question": "From the turbine velocity triangles shown, Euler head involves:",
+    "question": "From the turbine velocity triangles shown, Euler head involves: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fm/q39-turbine-triangles.jpg",
     "options": [
       "Whirl components uVw",
@@ -595,7 +597,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/q39-turbine-triangles.jpg",
     "why": "Euler turbine equation uses whirl velocity components.",
-    "topic_suffix": "q39-turbine-triangles"
+    "topic_suffix": "q39-turbine-triangles",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +743,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:FM-02:open-channel section:open-channel section:venturi-core",
     "themeId": "FM-02",
-    "question": "At the venturi throat shown, continuity requires throat velocity to be:",
+    "question": "At the venturi throat shown, continuity requires throat velocity to be: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fm/venturi-core.jpg",
     "options": [
       "Lower than inlet",
@@ -760,7 +763,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/venturi-core.jpg",
     "why": "Smaller throat area raises velocity for the same discharge.",
-    "topic_suffix": "venturi-core"
+    "topic_suffix": "venturi-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +909,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:HHM-03:turbine runner:turbine runner:qh-core",
     "themeId": "HHM-03",
-    "question": "On the Q–H characteristic shown for a centrifugal pump, head generally:",
+    "question": "On the Q–H characteristic shown for a centrifugal pump, head generally: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fm/qh-core.jpg",
     "options": [
       "Increases linearly with Q forever",
@@ -925,7 +929,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/qh-core.jpg",
     "why": "Typical centrifugal H–Q curve falls with increasing discharge.",
-    "topic_suffix": "qh-core"
+    "topic_suffix": "qh-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1098,7 @@ export const questions = [
     "subject": "Fluid Mechanics and Hydraulic Machines",
     "topic": "FM:HHM-01:orifice tank:orifice tank:q29-manometer",
     "themeId": "HHM-01",
-    "question": "For the differential manometer shown connecting two points, the reading directly indicates:",
+    "question": "For the differential manometer shown connecting two points, the reading directly indicates: Figure values (also stated here): limb readings, fluid S.G., and tap elevations as labelled.",
     "image": "images/diagrams/civil-st-fm/q29-manometer.jpg",
     "options": [
       "Absolute pressure at one point only",
@@ -1113,7 +1118,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fm/q29-manometer.jpg",
     "why": "Differential manometer measures pressure difference between connections.",
-    "topic_suffix": "q29-manometer"
+    "topic_suffix": "q29-manometer",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

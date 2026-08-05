@@ -1,6 +1,5 @@
 // APTRANSCO ST · Reinforced Concrete · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -172,7 +171,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-08:two-way slab:two-way slab:rcc-punching-shear",
     "themeId": "RCC-08",
-    "question": "Using the punching perimeter shown around a column, punching shear is checked on a critical section at:",
+    "question": "Using the punching perimeter shown around a column, punching shear is checked on a critical section at: Figure values (also stated here): column size and effective depth d as used for the d/2 perimeter.",
     "image": "images/diagrams/civil-st-rcc/rcc-punching-shear.svg",
     "options": [
       "Column face only",
@@ -192,7 +191,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/rcc-punching-shear.svg",
     "why": "IS punching check uses a perimeter at d/2 from the column face.",
-    "topic_suffix": "rcc-punching-shear"
+    "topic_suffix": "rcc-punching-shear",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +314,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-04:beam section:beam section:q18-slab-supports",
     "themeId": "RCC-04",
-    "question": "From the slab support arrangement shown, main tension steel for one-way action runs primarily:",
+    "question": "From the slab support arrangement shown, main tension steel for one-way action runs primarily: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/q18-slab-supports.jpg",
     "options": [
       "Along the long span",
@@ -334,7 +334,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/q18-slab-supports.jpg",
     "why": "One-way slabs bend across the short span; main steel follows that direction.",
-    "topic_suffix": "q18-slab-supports"
+    "topic_suffix": "q18-slab-supports",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +434,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-09:column section:column section:q21-column-tie-detail",
     "themeId": "RCC-09",
-    "question": "In the tied-column detail shown, lateral ties primarily prevent:",
+    "question": "In the tied-column detail shown, lateral ties primarily prevent: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/q21-column-tie-detail.jpg",
     "options": [
       "Axial shortening of concrete",
@@ -453,7 +454,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/q21-column-tie-detail.jpg",
     "why": "Ties provide lateral restraint to longitudinal reinforcement.",
-    "topic_suffix": "q21-column-tie-detail"
+    "topic_suffix": "q21-column-tie-detail",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +577,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-05:punching perimeter:punching perimeter:r1",
     "themeId": "RCC-05",
-    "question": "For the RCC beam section shown, effective depth d is measured from:",
+    "question": "For the RCC beam section shown, effective depth d is measured from: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/r1.jpg",
     "options": [
       "Compression face to centroid of tension steel",
@@ -595,7 +597,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/r1.jpg",
     "why": "Effective depth is extreme compression fibre to centroid of tensile reinforcement.",
-    "topic_suffix": "r1"
+    "topic_suffix": "r1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 26,
@@ -740,7 +743,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-02:isolated footing:isolated footing:r2",
     "themeId": "RCC-02",
-    "question": "Referring to the reinforcement layout shown, development length is required primarily to resist:",
+    "question": "Referring to the reinforcement layout shown, development length is required primarily to resist: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/r2.jpg",
     "options": [
       "Shear only",
@@ -760,7 +763,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/r2.jpg",
     "why": "Development length ensures bars do not pull out under design tension.",
-    "topic_suffix": "r2"
+    "topic_suffix": "r2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +909,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-09:stair slab:stair slab:twoway-table-core",
     "themeId": "RCC-09",
-    "question": "Using the two-way slab moment coefficients from the table/figure shown, moments are assigned based on:",
+    "question": "Using the two-way slab moment coefficients from the table/figure shown, moments are assigned based on: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/twoway-table-core.jpg",
     "options": [
       "Concrete grade alone",
@@ -925,7 +929,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/twoway-table-core.jpg",
     "why": "Code coefficient tables depend on aspect ratio and support continuity.",
-    "topic_suffix": "twoway-table-core"
+    "topic_suffix": "twoway-table-core",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1098,7 @@ export const questions = [
     "subject": "Reinforced Concrete",
     "topic": "RCC:RCC-07:retaining wall:retaining wall:q26-shear-table",
     "themeId": "RCC-07",
-    "question": "From the design shear table/figure shown, τc for a given pt and grade is used to decide:",
+    "question": "From the design shear table/figure shown, τc for a given pt and grade is used to decide: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-rcc/q26-shear-table.jpg",
     "options": [
       "Ast for flexure",
@@ -1113,7 +1118,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-rcc/q26-shear-table.jpg",
     "why": "Compare nominal shear τv with concrete τc to size shear reinforcement.",
-    "topic_suffix": "q26-shear-table"
+    "topic_suffix": "q26-shear-table",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

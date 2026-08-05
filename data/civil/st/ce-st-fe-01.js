@@ -1,6 +1,5 @@
 // APTRANSCO ST · Foundation Engineering · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -314,7 +313,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-07:compensated raft:compensated raft:soil-active-pressure",
     "themeId": "FE-07",
-    "question": "Using the Rankine active diagram shown for a vertical wall, Ka for φ = 30° is:",
+    "question": "Using the Rankine active diagram shown for a vertical wall, Ka for φ = 30° is: Figure values (also stated here): wall height H and soil γ, φ (or Ka) as labelled / stated for the triangle.",
     "image": "images/diagrams/civil-st-fe/soil-active-pressure.svg",
     "options": [
       "1/2",
@@ -334,7 +333,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/soil-active-pressure.svg",
     "why": "For φ = 30°, Ka = 1/3.",
-    "topic_suffix": "soil-active-pressure"
+    "topic_suffix": "soil-active-pressure",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +433,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-05:retaining wall base:retaining wall base:q57-pile-group",
     "themeId": "FE-05",
-    "question": "From the pile-group layout shown, centre-to-centre spacing affects:",
+    "question": "From the pile-group layout shown, centre-to-centre spacing affects: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/q57-pile-group.jpg",
     "options": [
       "Only concrete cover of piles",
@@ -453,7 +453,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/q57-pile-group.jpg",
     "why": "Close spacing reduces group efficiency and invites block failure.",
-    "topic_suffix": "q57-pile-group"
+    "topic_suffix": "q57-pile-group",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 20,
@@ -575,7 +576,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-04:bearing-capacity zones:bearing-capacity zones:settlement-curve-core",
     "themeId": "FE-04",
-    "question": "On the settlement–time curve shown, the primary consolidation portion is controlled by:",
+    "question": "On the settlement–time curve shown, the primary consolidation portion is controlled by: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 100, 1.",
     "image": "images/diagrams/civil-st-fe/settlement-curve-core.jpg",
     "options": [
       "Dissipation of excess pore pressure",
@@ -595,7 +596,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/settlement-curve-core.jpg",
     "why": "Primary consolidation follows excess pore-pressure dissipation.",
-    "topic_suffix": "settlement-curve-core"
+    "topic_suffix": "settlement-curve-core",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +742,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-04:settlement curve:settlement curve:fe1",
     "themeId": "FE-04",
-    "question": "For the footing on layered soil shown, Terzaghi bearing capacity must use:",
+    "question": "For the footing on layered soil shown, Terzaghi bearing capacity must use: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/fe1.jpg",
     "options": [
       "Only the top layer φ always",
@@ -760,7 +762,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/fe1.jpg",
     "why": "Bearing capacity uses soil in the shear zone beneath the footing.",
-    "topic_suffix": "fe1"
+    "topic_suffix": "fe1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +908,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-04:well foundation:well foundation:fe2",
     "themeId": "FE-04",
-    "question": "From the retaining-wall foundation figure shown, overturning is checked by taking moments about:",
+    "question": "From the retaining-wall foundation figure shown, overturning is checked by taking moments about: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/fe2.jpg",
     "options": [
       "Top of stem",
@@ -925,7 +928,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/fe2.jpg",
     "why": "Overturning FS uses restoring vs overturning moments about the toe.",
-    "topic_suffix": "fe2"
+    "topic_suffix": "fe2",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1097,7 @@ export const questions = [
     "subject": "Foundation Engineering",
     "topic": "FE:FE-05:slope section:slope section:q53-layered-footing",
     "themeId": "FE-05",
-    "question": "For the compensated/raft arrangement shown, net foundation pressure is reduced mainly by:",
+    "question": "For the compensated/raft arrangement shown, net foundation pressure is reduced mainly by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/civil-st-fe/q53-layered-footing.jpg",
     "options": [
       "Ignoring water table",
@@ -1113,7 +1117,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/civil-st-fe/q53-layered-footing.jpg",
     "why": "Compensation subtracts overburden removed by excavation.",
-    "topic_suffix": "q53-layered-footing"
+    "topic_suffix": "q53-layered-footing",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,

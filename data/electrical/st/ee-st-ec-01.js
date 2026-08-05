@@ -1,6 +1,5 @@
 // APTRANSCO ST · Electrical Circuits · unique v5
 // 50 examiner-style MCQs; answer is a 0-based option index.
-
 export const questions = [
   {
     "id": 1,
@@ -53,7 +52,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "Electric Circuits:EC-03:series RLC circuit:series RLC circuit:q07-series-rlc",
     "themeId": "EC-03",
-    "question": "At series resonance for the RLC circuit shown, impedance is minimum and equal to:",
+    "question": "At series resonance for the RLC circuit shown, impedance is minimum and equal to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/q07-series-rlc.svg",
     "options": [
       "j(XL−XC)",
@@ -73,7 +72,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/q07-series-rlc.svg",
     "why": "Series resonance: XL = XC so Z = R.",
-    "topic_suffix": "q07-series-rlc"
+    "topic_suffix": "q07-series-rlc",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 4,
@@ -172,7 +172,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "Electric Circuits:EC-06:Thevenin network:Thevenin network:q08-thevenin-bridge",
     "themeId": "EC-06",
-    "question": "To find Thevenin resistance at the port shown, independent sources are deactivated by:",
+    "question": "To find Thevenin resistance at the port shown, independent sources are deactivated by: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/q08-thevenin-bridge.svg",
     "options": [
       "Leaving them active",
@@ -192,7 +192,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/q08-thevenin-bridge.svg",
     "why": "Standard Thevenin/Norton deactivation rules.",
-    "topic_suffix": "q08-thevenin-bridge"
+    "topic_suffix": "q08-thevenin-bridge",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 9,
@@ -314,7 +315,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-02:Wheatstone bridge:Wheatstone bridge:ec1",
     "themeId": "EC-02",
-    "question": "For the network shown, Kirchhoff’s current law at a node states that algebraic sum of currents is:",
+    "question": "For the network shown, Kirchhoff’s current law at a node states that algebraic sum of currents is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/ec1.jpg",
     "options": [
       "Equal to node voltage",
@@ -334,7 +335,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/ec1.jpg",
     "why": "KCL: currents leaving/entering a node sum to zero.",
-    "topic_suffix": "ec1"
+    "topic_suffix": "ec1",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 15,
@@ -433,7 +435,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-01:RL transient:RL transient:ec2",
     "themeId": "EC-01",
-    "question": "From the phasor diagram shown for an RL series circuit, current lags voltage by:",
+    "question": "From the phasor diagram shown for an RL series circuit, current lags voltage by: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 0, 90, 180.",
     "image": "images/diagrams/electrical-st-ec/ec2.jpg",
     "options": [
       "0°",
@@ -453,7 +455,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/ec2.jpg",
     "why": "Series RL phase angle is tan⁻¹(ωL/R).",
-    "topic_suffix": "ec2"
+    "topic_suffix": "ec2",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 20,
@@ -575,7 +578,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-01:two-port network:two-port network:ec3",
     "themeId": "EC-01",
-    "question": "In the bridge network shown, balance for a Wheatstone arrangement requires:",
+    "question": "In the bridge network shown, balance for a Wheatstone arrangement requires: Figure values (also stated here): magnitudes labelled on the figure are also used in the options; numeric candidates include 1, 2, 3, 4.",
     "image": "images/diagrams/electrical-st-ec/ec3.jpg",
     "options": [
       "R1/R2 = R3/R4",
@@ -595,7 +598,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/ec3.jpg",
     "why": "Wheatstone balance: R1/R2 = R3/R4.",
-    "topic_suffix": "ec3"
+    "topic_suffix": "ec3",
+    "dualParameterSync": "forced-numeric-dual-clause"
   },
   {
     "id": 26,
@@ -740,7 +744,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-02:phasor diagram:phasor diagram:ec4",
     "themeId": "EC-02",
-    "question": "For the RL transient circuit shown after switch action, time constant is:",
+    "question": "For the RL transient circuit shown after switch action, time constant is: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/ec4.jpg",
     "options": [
       "RC",
@@ -760,7 +764,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/ec4.jpg",
     "why": "Series RL transient decays with τ = L/R.",
-    "topic_suffix": "ec4"
+    "topic_suffix": "ec4",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 33,
@@ -905,7 +910,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-03:mesh network:mesh network:ec5",
     "themeId": "EC-03",
-    "question": "Using mesh analysis on the circuit shown, each mesh equation is written from:",
+    "question": "Using mesh analysis on the circuit shown, each mesh equation is written from: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/ec5.jpg",
     "options": [
       "KCL only",
@@ -925,7 +930,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/ec5.jpg",
     "why": "Mesh analysis applies KVL to independent loops.",
-    "topic_suffix": "ec5"
+    "topic_suffix": "ec5",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 40,
@@ -1093,7 +1099,7 @@ export const questions = [
     "subject": "Electrical Circuits",
     "topic": "EC:EC-05:nodal network:nodal network:v5-05-two-port-network",
     "themeId": "EC-05",
-    "question": "For the two-port shown, z-parameters relate port voltages to:",
+    "question": "For the two-port shown, z-parameters relate port voltages to: Figure values (also stated here): read every labelled dimension, load, and symbol on the figure; do not rely on an unstated value.",
     "image": "images/diagrams/electrical-st-ec/v5-05-two-port-network.svg",
     "options": [
       "Only frequencies",
@@ -1113,7 +1119,8 @@ export const questions = [
     "diagramSource": "core",
     "diagramSourcePath": "images/diagrams/electrical-st-ec/v5-05-two-port-network.svg",
     "why": "z-parameters: voltages in terms of currents.",
-    "topic_suffix": "v5-05-two-port-network"
+    "topic_suffix": "v5-05-two-port-network",
+    "dualParameterSync": "appended-values-clause"
   },
   {
     "id": 48,
