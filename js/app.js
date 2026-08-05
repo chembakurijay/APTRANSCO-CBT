@@ -49,10 +49,10 @@ const subjectTestList = [
 
 /** Elimination drill CBT packs — 50 Q / 90 min (Playbook Rules). */
 const eliminationDrillList = [
-    { id: 'elim-drill-01', title: 'Elim Drill 01 · Rules 1–5', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
-    { id: 'elim-drill-02', title: 'Elim Drill 02 · Rules 6–10', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
-    { id: 'elim-drill-03', title: 'Elim Drill 03 · Rules 11–15', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
-    { id: 'elim-drill-04', title: 'Elim Drill 04 · Rules 16–17', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
+    { id: 'elim-drill-01', title: 'Elim Drill 01 · Rules 1–4', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
+    { id: 'elim-drill-02', title: 'Elim Drill 02 · Rules 5–8', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
+    { id: 'elim-drill-03', title: 'Elim Drill 03 · Rules 9–12', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
+    { id: 'elim-drill-04', title: 'Elim Drill 04 · Rules 13–16', category: 'Elimination · CBT Drill', kind: 'elim', questions: 50, marks: 50, duration: 90 },
 ];
 
 const mockList = [...eliminationDrillList, ...subjectTestList, ...fltList];
