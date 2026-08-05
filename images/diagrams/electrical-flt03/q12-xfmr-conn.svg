@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="310" viewBox="0 0 760 310" role="img" aria-label="transformer connection">
+<rect width="760" height="310" fill="#fff"/>
+<rect x="28" y="25" width="704" height="250" rx="10" fill="#f8fbff" stroke="#173b63" stroke-width="3"/>
+<path d="M95 205 L185 115 L275 205 L365 115 L455 205 L545 115 L635 205" fill="none" stroke="#1f6f8b" stroke-width="5"/>
+<circle cx="185" cy="115" r="12" fill="#e76f51"/><circle cx="365" cy="115" r="12" fill="#e76f51"/><circle cx="545" cy="115" r="12" fill="#e76f51"/>
+<path d="M90 232 H640" stroke="#173b63" stroke-width="3"/><path d="M145 232 v18 M320 232 v18 M500 232 v18" stroke="#173b63" stroke-width="3"/>
+<text x="380" y="63" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#173b63">transformer connection</text>
+<text x="380" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#173b63">Use the figure to assess: phase displacement</text>
+</svg>
