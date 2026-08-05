@@ -185,22 +185,22 @@ const loadQuestionsForFltReview = async (fltId) => {
         const folder = fltMatch[1];
         const num = fltMatch[2];
         if (folder === 'civil') {
-            paths.push(`../data/civil/ce-flt${num}.js?v=20260804trap`, `../data/civil/flt${num}.js?v=20260804trap`);
+            paths.push(`../data/civil/ce-flt${num}.js?v=20260805flt03`, `../data/civil/flt${num}.js?v=20260805flt03`);
         } else {
-            paths.push(`../data/electrical/ee-flt${num}.js?v=20260804trap`, `../data/electrical/flt${num}.js?v=20260804trap`);
+            paths.push(`../data/electrical/ee-flt${num}.js?v=20260805flt03`, `../data/electrical/flt${num}.js?v=20260805flt03`);
         }
     }
     const stCivil = String(fltId).match(/^civil-st-([a-z]+)-(\d{2})$/);
     if (stCivil) {
-        paths.push(`../data/civil/st/ce-st-${stCivil[1]}-${stCivil[2]}.js?v=20260804trap`);
+        paths.push(`../data/civil/st/ce-st-${stCivil[1]}-${stCivil[2]}.js?v=20260805flt03`);
     }
     const stEe = String(fltId).match(/^electrical-st-([a-z]+)-(\d{2})$/);
     if (stEe) {
-        paths.push(`../data/electrical/st/ee-st-${stEe[1]}-${stEe[2]}.js?v=20260804trap`);
+        paths.push(`../data/electrical/st/ee-st-${stEe[1]}-${stEe[2]}.js?v=20260805flt03`);
     }
     const stNc = String(fltId).match(/^noncore-st-([a-z]+)-(\d{2})$/);
     if (stNc) {
-        paths.push(`../data/noncore/st/nc-st-${stNc[1]}-${stNc[2]}.js?v=20260804trap`);
+        paths.push(`../data/noncore/st/nc-st-${stNc[1]}-${stNc[2]}.js?v=20260805flt03`);
     }
     for (const path of paths) {
         try {
@@ -211,7 +211,7 @@ const loadQuestionsForFltReview = async (fltId) => {
         }
     }
     try {
-        const module = await import('../data/questionBanks.js?v=20260804trap');
+        const module = await import('../data/questionBanks.js?v=20260805flt03');
         const bank = module.questionBanks?.[fltId];
         if (Array.isArray(bank)) return bank;
     } catch {
