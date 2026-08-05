@@ -719,6 +719,9 @@ Observed failure mode: stem asks for values / P–S details / labelled curves, b
 | 6. Dependency re-test | Cover the figure: can the keyed option still be chosen? | WEAK/FAIL dependency |
 | 7. Fallback | If no usable core page exists → **exam-grade schematic** with required labels/numbers + declare `diagramSource=schematic-family` | Shipping a mismatched core crop “because it was nearby” |
 | 8. **Dual parameter presence (STRICT)** | **Every** engineering parameter needed to solve (spans, loads, heads, \(S\), \(g\), bolt pitch/\(e\), \(b,t,d_h,s,g\), layer \(H,e_0,C_c,\sigma'_0,\Delta\sigma\), \(N_f,N_d\), curve labels, Detail P–S, etc.) must appear **in the stem AND on the figure** | Values only in image (“see figure”) **or** only in stem while figure is blank/symbolic/wrong crop |
+| 9. **Verbatim full-crop sync (STRICT)** | If the attached image is a **VALID full crop** that already shows **stem + diagram + options**, the CBT bank **must use that exact stem and those exact options** (and matching key). Do **not** rewrite the stem while keeping the crop. Do **not** attach a multipage / unrelated MCQ page as a “diagram”. | Rewritten stem + old crop; options that differ from the crop; tennis/cover/well text-page used as a figure for a different topic |
+
+**Remember (user standing rule):** cropped VALID question (Q + figure + options) ⇒ **same Q + same options in CBT**.
 
 ### Dual Parameter Presence — Stem + Diagram (STRICT)
 
@@ -730,10 +733,14 @@ Observed failure mode: stem asks for values / P–S details / labelled curves, b
 3. Place the **same** values/labels on the **figure** (dimension strings, load callouts, curve IDs P–S / 1–3 / A–C).
 4. Qualitative-only Diagram Qs (e.g. BMD jump signature, pump–system curve shape) still need every **label** referenced by options on both stem and figure.
 5. If a core crop cannot show the required numbers cleanly → redraw an **exam-grade schematic** with those numbers and keep the same values in the stem.
+6. **CBT packaging enforcement:** every Diagram Q in shipped FLT / ST / Elimination banks must have solve-critical numbers in the stem. If the figure already carries them, **still state them in the stem** (append a short `Figure values (also stated here): …` clause when needed — never replace a verbatim full-crop stem; append after it). Options that contain digits while the stem has none → **automatic Fail** until fixed.
+7. Prefer encoding true figure magnitudes (resistor Ω, peak \(C(t)\), \(R_{ab}\), etc.) over generic “numeric candidates from options” filler when the figure is readable.
 
 **Automatic Fail:** “values available only from the figure”; stem Numerical while figure is symbolic-only; figure Numerical while stem omits the same magnitudes; crop of wrong topic that cannot hold the stem’s parameters.
 
 **Automatic Fail:** shipping a Diagram Q whose image topic ≠ stem topic (e.g. column-ties stem + slab-strip crop; laminar-profile stem + manometer PYQ page).
+
+**Automatic Fail:** attaching a **multipage MCQ text page**, book cover, or unrelated scanned sheet as the `image` for a Diagram Q (scrub and retarget or remove — never leave as decorative filler).
 
 ---
 
@@ -753,6 +760,7 @@ A diagram may be used ONLY if ALL of the following are true:
 - Logos, watermarks, QR codes, page numbers
 - Decorative icons, screenshots
 - Paragraphs converted to images
+- **Full / multipage MCQ text pages** (unrelated stems stacked on one scan) used as a “diagram”
 - Tables (unless the question requires table interpretation — then use `dataTable` HTML, not a photo of a table unless needed)
 - Over-cropped or incomplete engineering figures (essential labels/parts missing)
 - Duplicate diagrams
@@ -761,6 +769,7 @@ A diagram may be used ONLY if ALL of the following are true:
 - Images from another engineering subject
 - Simple / decorative AI generations that fail the Professional Quality Bar
 - Technically wrong figures (incorrect polarity, impossible SLD, wrong reinforcement detailing, wrong support symbols)
+- Label-only decorative SVGs reused across many slots (topic name art without solvable geometry)
 
 ### Civil Engineering — Approved Diagram Types
 
@@ -1978,7 +1987,9 @@ Before any paper is **APPROVED** (and before code / CBT packaging), **all Final 
 | Diagram-dependent questions | **12–15** meeting Subject-wise Diagram Quota; Professional Quality Bar; Medium ≥60%, Easy ≤15% / max 2 |
 | EE circuit schematics | Electrical Circuits: **≥2** true circuit-diagram Qs; plus circuit-type figures from Machines / PE / Measurements / Analog as applicable |
 | Diagram source honesty | EE: ≥50% `diagramSource=pyq`; CE: core-first (no AI SVG when core/PYQ exists); every figure tightly cropped |
-| Dual parameter presence | Every Diagram Q: all solve parameters appear **in stem AND on figure** (Stem–Figure Step 8); no “figure-only data” stems |
+| Dual parameter presence | Every Diagram Q: all solve parameters appear **in stem AND on figure** (Stem–Figure Step 8); no “figure-only data” stems; CBT enforcer / numeric-gap gate = 0 |
+| Verbatim full-crop sync | VALID full crops (stem+figure+options in image) use **exact** stem + options in bank (Stem–Figure Step 9); no rewritten stem on that crop |
+| Wrong / multipage crop scrub | Zero Diagram Qs pointing at multipage MCQ text pages or topic-mismatched scans |
 | Diagram gap handling | If quotas/quality thin → documented full re-scan of all sources before any schematic filler |
 | Difficulty calibration | Labels match true AEE feel (Bias Correction); not 1–2 levels soft vs claimed Easy/Medium/Hard |
 | Direct question cap | **≤ 25%** Direct (full paper + each tech subject); ≥75% need multi-step / judgement / diagram / trap thinking — ~90% Direct papers Fail |
@@ -2151,3 +2162,47 @@ Run Gates A–S with ST adaptations:
 - Export `questions` array length **50**; `id` 1–50
 - Home UI lists ST-HY under **Subject Tests** separate from FLT grid
 - Do **not** exact-clone stems from FLT-01 of the same subject; themes may overlap with fresh numbers/angles
+
+### ST / FLT intra-bank uniqueness (STRICT — standing rule)
+
+Observed failure: Subject Test packs built from `n % 5` template builders with the **same SVG reused** on many slots → only ~14 unique stems in a 50-Q bank.
+
+**Hard rules (all ST-HY + FLT banks):**
+1. **Exact stem uniqueness** inside each bank file: no two questions may share the same normalised stem.
+2. **Near-duplicate ban:** stems that differ only by a swapped number / synonym while testing the identical micro-path are Fail (gate with `scripts/gate_question_banks.py` uniqueness checks).
+3. **Image-path uniqueness for Diagram slots:** do **not** reuse one decorative/label SVG (or any single asset) across multiple Diagram Qs in the same pack. Each Diagram slot needs a **matched** figure for *that* stem.
+4. **No template filler:** forbid cyclic builders that mint eight near-clones from one skeleton. Rebuild with unique stems + real figure assets (`build_st_unique_v5` spirit).
+5. Diagram Qs still obey Stem–Figure Lock (Steps 8–9) and Dual Parameter Presence.
+
+**Fail packaging** if uniqueness gate reports exact/near stem dups or repeated Diagram `image` paths inside a bank.
+
+---
+
+## Elimination Rules — Playbook, Drills & CBT Banks (STRICT)
+
+Last-resort MCQ elimination heuristics for stuck candidates. These are **evidence-based**, not folklore (“always pick C”).
+
+### Publication gate (established heuristic)
+- A rule is **established** only if it has **≥ 15 independent evidence questions** from **FLT + Subject Tests + VALID PYQ** inventory.
+- Target healthy band: **15–20+** examples.
+- Rules below 15 hits are **drafts only** — list in a watchlist; **do not teach** as established heuristics.
+- Anti-rules that remain **unsupported myths:** pick C / longest option / middle numerical value / ignore the figure.
+
+### Playbook structure (student PDF / MD)
+1. **Separate by stream:** **Civil** · **Electrical** · **Non-core** (dedicated PDFs plus optional combined master).
+2. For **each** established rule in that stream:
+   - Explain **what / when / application steps / memory cue / core elimination move** first.
+   - Then list **every** matching evidence question **one after another** (no sample cap; do not skip).
+   - Each question must have a **full elimination-only solution**: how *this* rule fires, option KEEP/STRIKE with reasons, and how the keyed option becomes the sole survivor.
+   - Solutions must **not** digress into unrelated syllabus teaching; stay on the elimination path.
+   - Include the figure when the bank/PYQ item has a resolvable image.
+3. Outputs live under `exports/` and `exports/elimination_drills/` (e.g. `ELIMINATION_RULES_CIVIL.pdf`, `…_ELECTRICAL.pdf`, `…_NONCORE.pdf`, combined playbook).
+4. Regenerate with `scripts/build_elimination_playbook_pdf.py` (and evidence MD via `scripts/build_elimination_rules_playbook.py`).
+
+### Elimination CBT drills (in-app)
+- Four × **50-Q** drills (`data/elimination/elim-drill-01.js` … `04.js`), each covering a contiguous group of established playbook rules.
+- Items must be **rule-true** (matcher + handcrafted pads for thin EE rules), **unique** within the drill, and use **matched diagrams** — never random ST filler or a PYQ full-MCQ page scan as the figure.
+- Home titles map to playbook rule bands (e.g. Rules 1–4 / 5–8 / 9–12 / 13–16).
+- Keys / explanations teach **elimination**, not a full alternate syllabus lesson.
+
+**Fail:** publishing a “rule” with &lt;15 evidence; dumping question tables without rule pedagogy; skipping evidence Qs in the student PDF; attaching multipage wrong crops inside elim banks.
