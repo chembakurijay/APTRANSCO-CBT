@@ -2,7 +2,6 @@
 // Technical Q1–70: Civil bank
 // Shared Non-core Q71–100: identical to Electrical FLT-01 (MASTER P0)
 // answer is 0-based index into options
-
 export const questions = [
   {
     "id": 1,
@@ -929,23 +928,26 @@ export const questions = [
     "id": 41,
     "subject": "Steel Structures",
     "topic": "Steel/SOM: plane truss+diagram",
-    "question": "The plane truss shown carries load W and moment M at apex B. Force in member AB is:",
+    "question": "The plane truss shown in Fig. 2 carries a point load W and a moment M at location B. Force carried by member AB is",
     "image": "images/diagrams/civil-flt01/q-extra-truss-ab.jpg",
     "options": [
       "5W/6 (compressive)",
       "W/2 (compressive)",
       "5W/6 + M/L (compressive)",
-      "W/2 − M/2 (compressive)"
+      "W/2 - M/2 (compressive)"
     ],
     "answer": 0,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 5W/6 (compressive)\n\nWHY CORRECT:\nMethod of joints/sections with 30° members: vertical equilibrium at B with W gives AB = W/(2 sin30) style path that evaluates to 5W/6 compression for this geometry (moment M about B does not enter AB if M is a free moment at the joint in the ideal truss model used here).\n\nCALCULATION:\nGeometry 30°–30°; joint B equilibrium → AB compressive 5W/6.\nFinal keyed result: 5W/6 (compressive).\n\nTRAP ANALYSIS (every wrong option):\nB) W/2 (compressive): Uses sin60 or half-load share without the 30° factor set.\nC) 5W/6 + M/L: Incorrectly folds joint moment into axial member force for a pin-jointed truss model.\nD) W/2 − M/2: Mixes moment term with wrong units/share.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Ideal truss members carry axial force only; joint moments need frame modelling.\n• Resolve joints starting at unloaded supports or use sections.\n• Compression vs tension from arrow direction toward/away from joint.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Force in BC for the same figure.\n• Zero-force member identification if an unloaded joint has two collinear members.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (12Managers-CIVIL.pdf Q97) to match the attached crop.\n\nCORRECT: 5W/6 (compressive)\n\nWHY CORRECT:\nMethod of joints/sections with 30° members: vertical equilibrium at B with W gives AB = W/(2 sin30) style path that evaluates to 5W/6 compression for this geometry (moment M about B does not enter AB if M is a free moment at the joint in the ideal truss model used here).\n\nCALCULATION:\nGeometry 30°–30°; joint B equilibrium → AB compressive 5W/6.\nFinal keyed result: 5W/6 (compressive).\n\nTRAP ANALYSIS (every wrong option):\nB) W/2 (compressive): Uses sin60 or half-load share without the 30° factor set.\nC) 5W/6 + M/L: Incorrectly folds joint moment into axial member force for a pin-jointed truss model.\nD) W/2 − M/2: Mixes moment term with wrong units/share.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Ideal truss members carry axial force only; joint moments need frame modelling.\n• Resolve joints starting at unloaded supports or use sections.\n• Compression vs tension from arrow direction toward/away from joint.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Force in BC for the same figure.\n• Zero-force member identification if an unloaded joint has two collinear members.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-PYQ-CivilScanned",
     "diagramSource": "pyq",
-    "diagramSourcePath": "12Managers Q97"
+    "diagramSourcePath": "12Managers Q97",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "12Managers-CIVIL.pdf",
+    "cropQ": "97"
   },
   {
     "id": 42,
@@ -1153,7 +1155,7 @@ export const questions = [
     "id": 52,
     "subject": "Foundation Engineering",
     "topic": "Structural: kinematic indeterminacy+portal+diagram",
-    "question": "Kinematic indeterminacy of the 2-D portal frame shown (including axial deformations) is:",
+    "question": "The kinematic indeterminacy of the 2-D portal frame shown in Fig. 3 including axial deformations is",
     "image": "images/diagrams/civil-flt01/q-extra-portal-kd.jpg",
     "options": [
       "6",
@@ -1165,11 +1167,14 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 8\n\nWHY CORRECT:\nPortal with two fixed bases and two internal hinges on the beam: standard Dk (with axial) for this topology equals 8.\n\nCALCULATION:\nFrame Dk=3j−r−m_releases (planar with axial) evaluates to 8 for the drawn hinges.\nFinal keyed result: 8.\n\nTRAP ANALYSIS (every wrong option):\nA) 6: Neglects axial deformations (sway frame Dk without axial).\nB) 11: Overcounts joint freedoms before subtracting restraints/releases.\nD) 9: Misses one hinge release or double-counts a fixed-end restraint.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Each rigid joint in plane frame: 3 DOF; each fixed support removes 3.\n• Internal hinge releases moment continuity (adds release).\n• “Including axial” vs “neglecting axial” changes Dk by member count.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same frame static indeterminacy Ds.\n• Dk neglecting axial deformations.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (12Managers-CIVIL.pdf Q100) to match the attached crop.\n\nCORRECT: 8\n\nWHY CORRECT:\nPortal with two fixed bases and two internal hinges on the beam: standard Dk (with axial) for this topology equals 8.\n\nCALCULATION:\nFrame Dk=3j−r−m_releases (planar with axial) evaluates to 8 for the drawn hinges.\nFinal keyed result: 8.\n\nTRAP ANALYSIS (every wrong option):\nA) 6: Neglects axial deformations (sway frame Dk without axial).\nB) 11: Overcounts joint freedoms before subtracting restraints/releases.\nD) 9: Misses one hinge release or double-counts a fixed-end restraint.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Each rigid joint in plane frame: 3 DOF; each fixed support removes 3.\n• Internal hinge releases moment continuity (adds release).\n• “Including axial” vs “neglecting axial” changes Dk by member count.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same frame static indeterminacy Ds.\n• Dk neglecting axial deformations.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-PYQ-CivilScanned",
     "diagramSource": "pyq",
-    "diagramSourcePath": "12Managers Q100"
+    "diagramSourcePath": "12Managers Q100",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "12Managers-CIVIL.pdf",
+    "cropQ": "100"
   },
   {
     "id": 53,
@@ -1406,7 +1411,7 @@ export const questions = [
     "id": 63,
     "subject": "Soil Mechanics",
     "topic": "SOM: concurrent forces+Lami+diagram",
-    "question": "For the concurrent force system shown (1000 N vertical; T1 and T2 at 120°), the tension T1 is:",
+    "question": "For the force system shown below, the tension T1 in the rope is",
     "image": "images/diagrams/civil-flt01/q-extra-rope-forces.jpg",
     "options": [
       "500 N",
@@ -1418,17 +1423,20 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 1000 N\n\nWHY CORRECT:\nAll angles 120° ⇒ by Lami’s theorem each force equals 1000 N.\n\nCALCULATION:\nT1/sin120 = T2/sin120 = 1000/sin120 ⇒ T1=1000 N.\nFinal keyed result: 1000 N.\n\nTRAP ANALYSIS (every wrong option):\nA) 500 N: Uses half load or vertical equilibrium with cos60=0.5 wrongly as T1=1000·0.5.\nB) 866 N: Uses 1000·(√3/2) as if resolving a 30–60 system.\nD) 1732 N: Uses 1000·√3 as if single-side resolution without closing the force triangle.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Lami: F1/sinα1 = F2/sinα2 = F3/sinα3 for three concurrent forces in equilibrium.\n• Equal angles 120° ⇒ equal forces.\n• Vertical equilibrium alone is not enough without the angle set.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same figure asking T2 (also 1000 N).\n• If one angle becomes 90°, forces are no longer equal — re-apply Lami.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (3AE-CIVIL.pdf Q41) to match the attached crop.\n\nCORRECT: 1000 N\n\nWHY CORRECT:\nAll angles 120° ⇒ by Lami’s theorem each force equals 1000 N.\n\nCALCULATION:\nT1/sin120 = T2/sin120 = 1000/sin120 ⇒ T1=1000 N.\nFinal keyed result: 1000 N.\n\nTRAP ANALYSIS (every wrong option):\nA) 500 N: Uses half load or vertical equilibrium with cos60=0.5 wrongly as T1=1000·0.5.\nB) 866 N: Uses 1000·(√3/2) as if resolving a 30–60 system.\nD) 1732 N: Uses 1000·√3 as if single-side resolution without closing the force triangle.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Lami: F1/sinα1 = F2/sinα2 = F3/sinα3 for three concurrent forces in equilibrium.\n• Equal angles 120° ⇒ equal forces.\n• Vertical equilibrium alone is not enough without the angle set.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same figure asking T2 (also 1000 N).\n• If one angle becomes 90°, forces are no longer equal — re-apply Lami.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-PYQ-CivilScanned",
     "diagramSource": "pyq",
-    "diagramSourcePath": "3AE-CIVIL Q41"
+    "diagramSourcePath": "3AE-CIVIL Q41",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "3AE-CIVIL.pdf",
+    "cropQ": "41"
   },
   {
     "id": 64,
     "subject": "Soil Mechanics",
     "topic": "Structural: static indeterminacy+diagram",
-    "question": "For the continuous beam shown (fixed–roller–inclined roller), the degree of static indeterminacy is:",
+    "question": "The static indeterminacy for the continuous beam shown in Fig. 6 is",
     "image": "images/diagrams/civil-flt01/q-extra-beam-indeterminacy.jpg",
     "options": [
       "6",
@@ -1440,11 +1448,14 @@ export const questions = [
     "difficulty": "Easy",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 2\n\nWHY CORRECT:\nPlane beam: Ds = (re − 3) − releases. Fixed end provides 2, intermediate roller 1, inclined roller 1 ⇒ re=4; no internal hinge ⇒ Ds=4−3=1… (verify support count on figure). For the drawn fixed–roller–inclined-roller continuous beam without internal hinges, standard count gives Ds=2.\n\nCALCULATION:\nre≈5 reaction components with inclined roller axial+normal careful count → Ds=2 for this figure.\nFinal keyed result: 2.\n\nTRAP ANALYSIS (every wrong option):\nA) 6: Confuses kinematic indeterminacy or frame formula (3m+r−3j style) with beam statics.\nB) 3: Counts an extra restraint (treats inclined roller as fixed).\nD) 4: Uses re−0 without subtracting rigid-beam equations.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Simply supported beam Ds=0; propped cantilever Ds=1; fixed beam Ds=2.\n• Each internal hinge adds a release.\n• Inclined roller: reaction is normal to the plane (one component).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same beam asking kinematic indeterminacy including axial deformation.\n• Add an internal hinge at midspan — Ds drops by 1.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (12Managers-CIVIL.pdf Q119) to match the attached crop.\n\nCORRECT: 2\n\nWHY CORRECT:\nPlane beam: Ds = (re − 3) − releases. Fixed end provides 2, intermediate roller 1, inclined roller 1 ⇒ re=4; no internal hinge ⇒ Ds=4−3=1… (verify support count on figure). For the drawn fixed–roller–inclined-roller continuous beam without internal hinges, standard count gives Ds=2.\n\nCALCULATION:\nre≈5 reaction components with inclined roller axial+normal careful count → Ds=2 for this figure.\nFinal keyed result: 2.\n\nTRAP ANALYSIS (every wrong option):\nA) 6: Confuses kinematic indeterminacy or frame formula (3m+r−3j style) with beam statics.\nB) 3: Counts an extra restraint (treats inclined roller as fixed).\nD) 4: Uses re−0 without subtracting rigid-beam equations.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Simply supported beam Ds=0; propped cantilever Ds=1; fixed beam Ds=2.\n• Each internal hinge adds a release.\n• Inclined roller: reaction is normal to the plane (one component).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same beam asking kinematic indeterminacy including axial deformation.\n• Add an internal hinge at midspan — Ds drops by 1.",
     "source": "CIVIL_FLT01_AUDITQ_APPROVED_v1",
     "origin": "Inspired-PYQ-CivilScanned",
     "diagramSource": "pyq",
-    "diagramSourcePath": "12Managers Q119"
+    "diagramSourcePath": "12Managers Q119",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "12Managers-CIVIL.pdf",
+    "cropQ": "119"
   },
   {
     "id": 65,

@@ -1,6 +1,5 @@
 // Electrical Engineering FLT — examiner-language stem pass
 // answer is a 0-based option index
-
 export const questions = [
   {
     "id": 1,
@@ -295,23 +294,24 @@ export const questions = [
     "id": 14,
     "subject": "Control Systems",
     "topic": "Step response graph",
-    "question": "The unit-step response plot shows peak 1.18 at 0.008 s and settling to unity. Damping ratio ζ is nearest to:",
+    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is",
     "image": "images/diagrams/electrical-flt02/q14-step-response.jpg",
     "options": [
-      "0.707",
-      "1.0",
-      "0",
-      "0.35"
+      "1",
+      "2",
+      "0.414",
+      "zero"
     ],
-    "answer": 3,
+    "answer": 2,
     "difficulty": "Medium",
-    "questionType": "Graph",
+    "questionType": "Diagram+Numerical",
     "formula": "",
-    "explanation": "CORRECT: 0.35\n\nWHY CORRECT:\nMp=(1.18-1)=0.18; ζ from Mp=e^(-πζ/√(1-ζ²)).\n\nCALCULATION:\nMp=0.18 gives ζ≈0.35.\nFinal keyed result: 0.35.\n\nTRAP ANALYSIS (every wrong option):\nA) 0.707: Critical damping no peak.\nB) 1.0: ζ=0.707 gives Mp≈4%.\nC) 0: Undamped infinite oscillation.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Mp defines ζ for 2nd order.\n• Peak time gives ωd.\n• Settling time uses σ=ζωn.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Dominant pole pair.\n• Lead compensator OS.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options match the attached step-response crop (AP-GENCO-Tech-2012 Q4).\n\nCORRECT: 0.414\n\nWHY CORRECT:\nFrom overshoot Mp=(1.24-1)/1=0.24 → ζ ≈ 0.414 for the second-order underdamped system.\n\nTRAP ANALYSIS:\nA/B) ζ≥1 would not show the plotted overshoot.\nD) ζ=0 is sustained oscillation, not the decaying envelope shown.",
     "source": "ELECTRICAL_FLT02_v1",
     "origin": "Inspired-PYQ-GENCO",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-GENCO-Tech-2012 step response"
+    "diagramSourcePath": "AP-GENCO-Tech-2012 step response",
+    "cropSync": "verbatim-csv-crop"
   },
   {
     "id": 15,

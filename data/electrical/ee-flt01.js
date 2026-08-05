@@ -1,6 +1,5 @@
 // Electrical Engineering FLT — examiner-language stem pass
 // answer is a 0-based option index
-
 export const questions = [
   {
     "id": 1,
@@ -286,7 +285,7 @@ export const questions = [
     "id": 14,
     "subject": "Control Systems",
     "topic": "Control: step response+damping+graph",
-    "question": "The unit-step response shown has a first peak of about 1.24 at t=0.01 s and settles to 1.0. The damping ratio of the second-order system is closest to:",
+    "question": "The damping ratio of the second order system which has the unit step response as shown in figure is",
     "image": "images/diagrams/electrical-flt01/q14-graph.jpg",
     "options": [
       "1",
@@ -296,12 +295,15 @@ export const questions = [
     ],
     "answer": 2,
     "difficulty": "Medium",
-    "questionType": "Graph",
+    "questionType": "Diagram+Application",
     "formula": "",
-    "explanation": "CORRECT: 0.414\n\nWHY CORRECT:\nOvershoot Mp≈0.24 ⇒ ζ from Mp=e^(-πζ/√(1-ζ²)). Solving gives ζ≈0.4 (option 0.414).\n\nCALCULATION:\nMp=(1.24-1)/1=0.24; ζ≈0.4.\nFinal keyed result: 0.414.\n\nTRAP ANALYSIS (every wrong option):\nA) 1: Critical damping — no overshoot; figure shows overshoot.\nB) 2: Over-damped / invalid ζ>1 for underdamped formula.\nD) zero: Undamped sustained oscillation — not a decaying ring to 1.0.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Fractional overshoot Mp=e^(-πζ/√(1-ζ²)).\n• ζ=1 critically damped (no OS); ζ=0 undamped.\n• Peak time relates to ωd=ωn√(1-ζ²).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same curve asking settling time Ts≈4/(ζωn).\n• Estimating ωn from peak time tp=π/ωd.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (AP-GENCO-Tech-2012.pdf Q4) to match the attached crop.\n\nCORRECT: 0.414\n\nWHY CORRECT:\nOvershoot Mp≈0.24 ⇒ ζ from Mp=e^(-πζ/√(1-ζ²)). Solving gives ζ≈0.4 (option 0.414).\n\nCALCULATION:\nMp=(1.24-1)/1=0.24; ζ≈0.4.\nFinal keyed result: 0.414.\n\nTRAP ANALYSIS (every wrong option):\nA) 1: Critical damping — no overshoot; figure shows overshoot.\nB) 2: Over-damped / invalid ζ>1 for underdamped formula.\nD) zero: Undamped sustained oscillation — not a decaying ring to 1.0.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Fractional overshoot Mp=e^(-πζ/√(1-ζ²)).\n• ζ=1 critically damped (no OS); ζ=0 undamped.\n• Peak time relates to ωd=ωn√(1-ζ²).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same curve asking settling time Ts≈4/(ζωn).\n• Estimating ωn from peak time tp=π/ωd.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-GENCO-Tech-2012 Q4 step response"
+    "diagramSourcePath": "AP-GENCO-Tech-2012 Q4 step response",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "AP-GENCO-Tech-2012.pdf",
+    "cropQ": "4"
   },
   {
     "id": 15,
@@ -558,7 +560,7 @@ export const questions = [
     "id": 28,
     "subject": "Electric Circuits",
     "topic": "Circuits: RC parallel power factor+diagram",
-    "question": "The RC circuit shown is fed from an AC source of frequency ω rad/s. The power factor of the circuit is:",
+    "question": "The RC circuit shown in fig. is fed from an ac source of frequency ω rad/s. The power factor of the circuit is",
     "image": "images/diagrams/electrical-flt01/q-extra-rc-pf.jpg",
     "options": [
       "ωC/R",
@@ -570,16 +572,19 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: RCω / √(1 + R²C²ω²)\n\nWHY CORRECT:\nParallel R–C admittance Y=1/R + jωC. Power factor = G/|Y| = (1/R)/√((1/R)²+(ωC)²) = 1/√(1+R²C²ω²) … wait — supply pf for parallel RC is cosφ = G/|Y| = 1/√(1+(ωCR)²). Among options, the form matching sinφ·cos style for this printed paper key is RCω/√(1+R²C²ω²) when the stem asks the reactive factor path used in that PYQ keying — verify: |Y|=√(G²+B²), cosφ=G/|Y|=1/√(1+R²ω²C²) which is option C. Re-key to option C.\n\nCALCULATION:\nG=1/R; B=ωC; cosφ=G/√(G²+B²)=1/√(1+R²ω²C²).\nFinal keyed result: 1 / √(1 + R²C²ω²).\n\nTRAP ANALYSIS (every wrong option):\nA) ωC/R: Dimensionless ratio of susceptance to conductance without normalizing by |Y|.\nB) √(1+R²C²ω²): This is 1/cosφ (secφ), not cosφ.\nD) RCω/√(1+R²C²ω²): Equals sinφ (or B/|Y|), the reactive factor — not the power factor.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Parallel RC: pf = cosφ = G/|Y|.\n• Series RC: pf = R/Z = R/√(R²+1/(ωC)²).\n• sinφ = B/|Y| for parallel networks.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same figure asking impedance magnitude.\n• Series vs parallel RC pf formula swap — classic trap.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf Q59) to match the attached crop.\n\nCORRECT: RCω / √(1 + R²C²ω²)\n\nWHY CORRECT:\nParallel R–C admittance Y=1/R + jωC. Power factor = G/|Y| = (1/R)/√((1/R)²+(ωC)²) = 1/√(1+R²C²ω²) … wait — supply pf for parallel RC is cosφ = G/|Y| = 1/√(1+(ωCR)²). Among options, the form matching sinφ·cos style for this printed paper key is RCω/√(1+R²C²ω²) when the stem asks the reactive factor path used in that PYQ keying — verify: |Y|=√(G²+B²), cosφ=G/|Y|=1/√(1+R²ω²C²) which is option C. Re-key to option C.\n\nCALCULATION:\nG=1/R; B=ωC; cosφ=G/√(G²+B²)=1/√(1+R²ω²C²).\nFinal keyed result: 1 / √(1 + R²C²ω²).\n\nTRAP ANALYSIS (every wrong option):\nA) ωC/R: Dimensionless ratio of susceptance to conductance without normalizing by |Y|.\nB) √(1+R²C²ω²): This is 1/cosφ (secφ), not cosφ.\nD) RCω/√(1+R²C²ω²): Equals sinφ (or B/|Y|), the reactive factor — not the power factor.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Parallel RC: pf = cosφ = G/|Y|.\n• Series RC: pf = R/Z = R/√(R²+1/(ωC)²).\n• sinφ = B/|Y| for parallel networks.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same figure asking impedance magnitude.\n• Series vs parallel RC pf formula swap — classic trap.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-Transco-P2-2012__p10__Q059.jpg"
+    "diagramSourcePath": "AP-Transco-P2-2012__p10__Q059.jpg",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf",
+    "cropQ": "59"
   },
   {
     "id": 29,
     "subject": "Electric Circuits",
     "topic": "Circuits: equivalent resistance+diagram",
-    "question": "In the resistor network shown driven by Vs, the equivalent resistance Req looking into the right-hand terminals is:",
+    "question": "In the circuit of fig. below, Req is given by",
     "image": "images/diagrams/electrical-flt01/q-extra-req.jpg",
     "options": [
       "5 Ω",
@@ -587,44 +592,48 @@ export const questions = [
       "4 Ω",
       "6 Ω"
     ],
-    "answer": 2,
+    "answer": 0,
     "difficulty": "Medium",
-    "questionType": "Numerical+Diagram",
+    "questionType": "Diagram+Numerical",
     "formula": "",
-    "explanation": "CORRECT: 4 Ω\n\nWHY CORRECT:\nWith Vs deactivated (short), the 4 Ω top path parallels with the series-parallel of 2–3 Ω and shunt 2 Ω, reducing to Req=4 Ω at the marked port.\n\nCALCULATION:\nDeactivate Vs; reduce bridge/T network → 4 Ω.\nFinal keyed result: 4 Ω.\n\nTRAP ANALYSIS (every wrong option):\nA) 5 Ω: Series-adds 2+3 ignoring the shunt 2 Ω path.\nB) 2 Ω: Takes only the shunt branch.\nD) 6 Ω: Adds 4+2 as if all series.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Req: deactivate independent sources, then combine series/parallel.\n• A shunt at an intermediate node changes the series reduction order.\n• Mark the exact port the stem calls Req.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same network with Vs live asking current into a load at the Req port.\n• Thevenin voltage at those terminals.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options match the attached crop (AP-Transco Paper-II style Req network).\n\nCORRECT: 5 Ω\n\nWHY CORRECT:\nWith Vs deactivated (short), the bridge reduces to Req = 5 Ω at the open terminals.\n\nTRAP ANALYSIS:\nB/C/D) neighbour series/parallel reductions that ignore the deactivated-source topology.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
-    "diagramSourcePath": "AP-Transco-P2-2012__p11__Q068.jpg"
+    "diagramSourcePath": "AP-Transco-P2-2012__p11__Q068.jpg",
+    "cropSync": "verbatim-crop-read"
   },
   {
     "id": 30,
     "subject": "Electric Circuits",
     "topic": "Circuits: series RL+diagram+phasor",
-    "question": "In the series RL circuit shown (1 Ω resistor with VR marked, 1 H inductor, current of the form sin t), the total voltage V across the combination is:",
+    "question": "In the circuit of series RL given in fig., V is given by",
     "image": "images/diagrams/electrical-flt01/q30-series-rl-circuit.jpg",
     "options": [
       "2 sin t",
       "2 cos t",
-      "sin(t + 45°)",
-      "√2 sin(t + 45°)"
+      "sin (t + 45°)",
+      "√2 sin (t + 45°)"
     ],
     "answer": 3,
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "C = (C0/2)(1+εr) for side-by-side half fill",
-    "explanation": "CORRECT: √2 sin(t + 45°)\n\nWHY CORRECT:\nWith i=sin t through series 1 Ω and 1 H, vR=i·1=sin t and vL=L di/dt=cos t. Total v=sin t+cos t=√2 sin(t+45°).\n\nCALCULATION:\nvR=sin t; vL=cos t; amplitude √(1²+1²)=√2; phase +45°.\nFinal keyed result: √2 sin(t + 45°).\n\nTRAP ANALYSIS (every wrong option):\nA) 2 sin t: Adds amplitudes in-phase (1+1) without quadrature; forgets 90° lag of inductor voltage vs current.\nB) 2 cos t: Uses only inductive voltage doubled or swaps sin/cos roles.\nC) sin(t + 45°): Correct phase but missing √2 amplitude from phasor resultant.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Series RL: v=Ri+L di/dt; for i=Im sin ωt with ω=1, L=1 → vL=Im cos ωt.\n• sinθ+cosθ=√2 sin(θ+45°).\n• Inductor voltage leads current by 90° (or current lags voltage by 90°).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same circuit asking instantaneous power or average power (not peak voltage).\n• If ω≠1, vL=ωL Im cos ωt — amplitude ratio changes.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf Q30) to match the attached crop.\n\nCORRECT: √2 sin(t + 45°)\n\nWHY CORRECT:\nWith i=sin t through series 1 Ω and 1 H, vR=i·1=sin t and vL=L di/dt=cos t. Total v=sin t+cos t=√2 sin(t+45°).\n\nCALCULATION:\nvR=sin t; vL=cos t; amplitude √(1²+1²)=√2; phase +45°.\nFinal keyed result: √2 sin(t + 45°).\n\nTRAP ANALYSIS (every wrong option):\nA) 2 sin t: Adds amplitudes in-phase (1+1) without quadrature; forgets 90° lag of inductor voltage vs current.\nB) 2 cos t: Uses only inductive voltage doubled or swaps sin/cos roles.\nC) sin(t + 45°): Correct phase but missing √2 amplitude from phasor resultant.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Series RL: v=Ri+L di/dt; for i=Im sin ωt with ω=1, L=1 → vL=Im cos ωt.\n• sinθ+cosθ=√2 sin(θ+45°).\n• Inductor voltage leads current by 90° (or current lags voltage by 90°).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same circuit asking instantaneous power or average power (not peak voltage).\n• If ω≠1, vL=ωL Im cos ωt — amplitude ratio changes.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
     "diagramSourcePath": "AP-Transco-P2-2012 Q30",
     "origin": "Inspired-PYQ-Transco2012",
     "predictScore": 9,
-    "predictBasis": "Board-family series RL classic; recurring GATE/Transco"
+    "predictBasis": "Board-family series RL classic; recurring GATE/Transco",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "AP-Transco-AEE_ELECTRICAL-ENGINEERING-PAPER-II-2012.pdf",
+    "cropQ": "30"
   },
   {
     "id": 31,
     "subject": "Electric Circuits",
     "topic": "Circuits: star network resistances+diagram",
-    "question": "For the star network shown, resistance between A–B with C open is 6 Ω, B–C with A open is 11 Ω, and C–A with B open is 9 Ω. Then (RA, RB, RC) is:",
+    "question": "Consider the star network shown in figure. The resistance between terminals A and B with C open is 6 ohms, between terminals B and C with A open is 11 ohms and between terminals C and A with B open is 9 ohms. Then RA, RB, RC respectively is",
     "image": "images/diagrams/electrical-flt01/q-extra-star.jpg",
     "options": [
       "4, 2, 5",
@@ -634,12 +643,13 @@ export const questions = [
     ],
     "answer": 1,
     "difficulty": "Medium",
-    "questionType": "Numerical+Diagram",
+    "questionType": "Diagram+Numerical",
     "formula": "",
-    "explanation": "CORRECT: 4, 2, 5\n\nWHY CORRECT:\nRA+RB=6, RB+RC=11, RC+RA=9. Adding all: 2(RA+RB+RC)=26 ⇒ sum=13. Then RA=13−11=2? Wait: RA= (RA+RB+RC)−(RB+RC)=13−11=2 — but option A is 4,2,5. Recompute: RA=(6+9−11)/2=2, RB=(6+11−9)/2=4, RC=(11+9−6)/2=7 → option B.\n\nCALCULATION:\nRA=(Rab+Rac−Rbc)/2=(6+9−11)/2=2; RB=(6+11−9)/2=4; RC=(11+9−6)/2=7.\nFinal keyed result: 2, 4, 7.\n\nTRAP ANALYSIS (every wrong option):\nA) 4, 2, 5: Swaps RA/RB assignment from the pairwise sums.\nC) 3, 3, 4: Assumes nearly equal arms without using measured pair sums.\nD) 5, 1, 10: Inflates RC from Rbc≈11 wrongly as almost all RC.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Rab=RA+RB with C open (series of two star arms).\n• RA=(Rab+Rac−Rbc)/2.\n• Check RA+RB+RC equals half the sum of the three open-circuit readings.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Delta equivalent of the same star.\n• Resistance with one terminal grounded differently.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options match the attached star-network crop.\n\nCORRECT: 2, 4, 7\n\nWHY CORRECT:\nRA=(6+9-11)/2=2, RB=(6+11-9)/2=4, RC=(11+9-6)/2=7.\n\nTRAP ANALYSIS:\nA/C/D) arithmetic slips in the two-leg-sum identity.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
-    "diagramSourcePath": "APTRANSCO-EE-2011__p03__Q007.jpg"
+    "diagramSourcePath": "APTRANSCO-EE-2011__p03__Q007.jpg",
+    "cropSync": "verbatim-crop-read"
   },
   {
     "id": 32,
@@ -687,7 +697,7 @@ export const questions = [
     "id": 34,
     "subject": "Electric Circuits",
     "topic": "Circuits: ideal ammeter reading+diagram",
-    "question": "An ideal ammeter is connected between terminals A and B in the circuit shown. The ammeter reading is:",
+    "question": "An ideal ammeter is connected between terminals A and B. The reading of the ammeter is:",
     "image": "images/diagrams/electrical-flt01/q-extra-ammeter.jpg",
     "options": [
       "0.8 A",
@@ -699,10 +709,13 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 1 A\n\nWHY CORRECT:\nIdeal ammeter shorts the parallel 6 Ω at A–B, so that branch current all goes through the meter. With 9 V and the remaining 6 Ω network, the reduced circuit yields 1 A through the ammeter.\n\nCALCULATION:\nIdeal ammeter ⇒ 0 Ω across A–B; solve resistive network with 9 V → I=1 A.\nFinal keyed result: 1 A.\n\nTRAP ANALYSIS (every wrong option):\nA) 0.8 A: Uses a wrong series-parallel reduction (e.g. keeps the shorted 6 Ω in play).\nC) 0.5 A: Takes half of 1 A from an equal-split assumption.\nD) 0.6 A: From 9V/15Ω style mistaken Req.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Ideal ammeter resistance = 0 ⇒ shorts its branch.\n• Ideal voltmeter resistance = ∞.\n• Re-draw after replacing the ammeter with a short before solving.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same circuit with a real ammeter resistance included.\n• Voltage across A–B with ammeter removed.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (APEPDCL-2014-A.ES-QUESTION-PAPER-17-08-2014.pdf Q1) to match the attached crop.\n\nCORRECT: 1 A\n\nWHY CORRECT:\nIdeal ammeter shorts the parallel 6 Ω at A–B, so that branch current all goes through the meter. With 9 V and the remaining 6 Ω network, the reduced circuit yields 1 A through the ammeter.\n\nCALCULATION:\nIdeal ammeter ⇒ 0 Ω across A–B; solve resistive network with 9 V → I=1 A.\nFinal keyed result: 1 A.\n\nTRAP ANALYSIS (every wrong option):\nA) 0.8 A: Uses a wrong series-parallel reduction (e.g. keeps the shorted 6 Ω in play).\nC) 0.5 A: Takes half of 1 A from an equal-split assumption.\nD) 0.6 A: From 9V/15Ω style mistaken Req.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Ideal ammeter resistance = 0 ⇒ shorts its branch.\n• Ideal voltmeter resistance = ∞.\n• Re-draw after replacing the ammeter with a short before solving.\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same circuit with a real ammeter resistance included.\n• Voltage across A–B with ammeter removed.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
-    "diagramSourcePath": "APEPDCL-2014__p01__Q001.jpg"
+    "diagramSourcePath": "APEPDCL-2014__p01__Q001.jpg",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "APEPDCL-2014-A.ES-QUESTION-PAPER-17-08-2014.pdf",
+    "cropQ": "1"
   },
   {
     "id": 35,
@@ -1115,7 +1128,7 @@ export const questions = [
     "id": 56,
     "subject": "Electric Circuits",
     "topic": "Circuits: Norton resistance+diagram",
-    "question": "For the network shown, Norton’s resistance RN seen at the open terminals is:",
+    "question": "The Norton's resistance of the circuit shown is",
     "image": "images/diagrams/electrical-flt01/q56-norton-circuit.jpg",
     "options": [
       "17 Ω",
@@ -1127,11 +1140,14 @@ export const questions = [
     "difficulty": "Medium",
     "questionType": "Numerical+Diagram",
     "formula": "",
-    "explanation": "CORRECT: 3 Ω\n\nWHY CORRECT:\nDeactivate independent sources (32 V → short, 2 A → open). Left 4 Ω parallels with 12 Ω → 3 Ω, then series 1 Ω would apply only if 1 Ω is in the deactivated path to the port; for the given figure the port RN evaluates to 3 Ω (4∥12).\n\nCALCULATION:\n4∥12=3 Ω; independent sources deactivated as above.\nFinal keyed result: 3 Ω.\n\nTRAP ANALYSIS (every wrong option):\nA) 17 Ω: Adds 4+12+1 series as if all series with sources live.\nC) 4 Ω: Takes only the series resistor next to the source, ignores parallel 12 Ω.\nD) 0.9 Ω: Treats conductances wrongly (e.g. product/sum slip on 4 and 12).\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• RN: deactivate independent sources, then Req at the port.\n• Voltage source → short; current source → open.\n• Parallel: R1R2/(R1+R2).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same network asking IN (Norton current) with sources active.\n• Thevenin equivalent VT looking into the same terminals.",
+    "explanation": "VERBATIM PYQ CROP SYNC: stem/options copied from VALID CSV (AP-GENCO-Tech-2012.pdf Q56) to match the attached crop.\n\nCORRECT: 3 Ω\n\nWHY CORRECT:\nDeactivate independent sources (32 V → short, 2 A → open). Left 4 Ω parallels with 12 Ω → 3 Ω, then series 1 Ω would apply only if 1 Ω is in the deactivated path to the port; for the given figure the port RN evaluates to 3 Ω (4∥12).\n\nCALCULATION:\n4∥12=3 Ω; independent sources deactivated as above.\nFinal keyed result: 3 Ω.\n\nTRAP ANALYSIS (every wrong option):\nA) 17 Ω: Adds 4+12+1 series as if all series with sources live.\nC) 4 Ω: Takes only the series resistor next to the source, ignores parallel 12 Ω.\nD) 0.9 Ω: Treats conductances wrongly (e.g. product/sum slip on 4 and 12).\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• RN: deactivate independent sources, then Req at the port.\n• Voltage source → short; current source → open.\n• Parallel: R1R2/(R1+R2).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same network asking IN (Norton current) with sources active.\n• Thevenin equivalent VT looking into the same terminals.",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
     "diagramSource": "pyq",
     "diagramSourcePath": "AP-GENCO-Tech-2012 Q56",
-    "origin": "Inspired-PYQ-GENCOTech"
+    "origin": "Inspired-PYQ-GENCOTech",
+    "cropSync": "verbatim-csv",
+    "cropPdf": "AP-GENCO-Tech-2012.pdf",
+    "cropQ": "56"
   },
   {
     "id": 57,
@@ -1175,22 +1191,23 @@ export const questions = [
     "id": 59,
     "subject": "Control Systems",
     "topic": "Control: step response+damping+graph",
-    "question": "The unit-step response shown has a first peak of about 1.24 at t=0.01 s and settles to 1.0. The damping ratio of the second-order system is closest to:",
-    "image": "images/diagrams/electrical-flt01/q59-graph.jpg",
+    "question": "For a minimum-phase system, the Bode phase plot at the gain-crossover frequency is used to read:",
+    "image": "",
     "options": [
-      "1",
-      "2",
-      "0.414",
-      "zero"
+      "Gain margin in dB",
+      "Phase margin in degrees",
+      "Steady-state error only",
+      "Sampling period"
     ],
-    "answer": 2,
+    "answer": 1,
     "difficulty": "Hard",
-    "questionType": "Graph",
+    "questionType": "Application",
     "formula": "",
-    "explanation": "CORRECT: 0.414\n\nWHY CORRECT:\nOvershoot Mp≈0.24 ⇒ ζ from Mp=e^(-πζ/√(1-ζ²)). Solving gives ζ≈0.4 (option 0.414).\n\nCALCULATION:\nMp=(1.24-1)/1=0.24; ζ≈0.4.\nFinal keyed result: 0.414.\n\nTRAP ANALYSIS (every wrong option):\nA) 1: Critical damping — no overshoot; figure shows overshoot.\nB) 2: Over-damped / invalid ζ>1 for underdamped formula.\nD) zero: Undamped sustained oscillation — not a decaying ring to 1.0.\n\nWHAT TO REMEMBER (concrete facts — not topic headings):\n• Fractional overshoot Mp=e^(-πζ/√(1-ζ²)).\n• ζ=1 critically damped (no OS); ζ=0 undamped.\n• Peak time relates to ωd=ωn√(1-ζ²).\n\nALSO ASKED / HIGH CHANCE (concrete alternate angles):\n• Same curve asking settling time Ts≈4/(ζωn).\n• Estimating ωn from peak time tp=π/ωd.",
+    "explanation": "CORRECT: Phase margin in degrees\n\nWHY CORRECT:\nPhase margin is measured from the phase at gain-crossover (where |G|=0 dB).\n\nTRAP ANALYSIS:\nA) Gain margin is read at phase crossover.\nC) Steady-state error needs error constants / type.\nD) Sampling period is discrete-time, not Bode PM.\n\nNOTE: Replaced duplicate of Q14 step-response PYQ crop (same figure was used twice).",
     "source": "ELECTRICAL_FLT01_REGENERATED_v2",
-    "diagramSource": "pyq",
-    "diagramSourcePath": "AP-GENCO-Tech-2012 Q4 step response"
+    "cropSync": "deduped-from-q14",
+    "cropPdf": "AP-GENCO-Tech-2012.pdf",
+    "cropQ": "4"
   },
   {
     "id": 60,
